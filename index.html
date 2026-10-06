@@ -4468,6 +4468,23 @@ function tfLoanOpts(){const L=[];for(const id in S.ps){const q=S.ps[id];if(q&&q.
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-loex],[data-lono]');if(!b||!S)return;e.stopPropagation();e.preventDefault();const m=S.inbox.find(x=>x.id===+(b.dataset.loex||b.dataset.lono));if(!m)return;const q=S.ps[m.lo];if(!q||!q.loanOpt)return;
   if(b.dataset.loex){if(q.loanOpt.fee>spendable()){toast('예산이 부족합니다');return}q.loanOpt.ex=true;m.result='옵션 행사 — 7월 1일 완전 영입';toast('구매 옵션을 행사했습니다')}else{q.loanOpt=null;m.result='원소속팀으로 복귀 예정';toast('7월 1일 원소속팀으로 돌아갑니다')}
   m.done=true;m.read=true;save();render()},true);
+// ---- 계약 제안 중복 방지(v91, 사용자 보고) ----
+// 재계약 합의 뒤에도 재계약 창의 '제시' 버튼과 재계약 요청 메시지가 그대로 살아 있어 다시 제안할 수 있었음 → 합의하면 버튼을 없애고 요청 메시지 종료
+{const _rs=renewSheet;renewSheet=function(id){const r=_rs.apply(this,arguments);try{const R=UI.ren;if(R&&R.id===id&&R.resp&&R.resp.k==='ok'){const b=document.querySelector('[data-act="sendRenew"]');if(b)b.outerHTML=`<button class="btn" data-close>재계약 완료 · 닫기</button>`;
+  (S.inbox||[]).forEach(m=>{if(m.type==='renewreq'&&m.pid===id&&!m.done){m.done=true;m.read=true;m.result='재계약 합의'}});const q=S.ps[id];if(q){q.renReq=null}}}catch(e){console.error(e)}return r}}
+{const _rv=renewSheet;renewSheet=function(id){if(UI.ren&&UI.ren.id===id&&UI.ren.resp&&UI.ren.resp.k==='ok'&&UI.ren.doneAt&&UI.ren.doneAt!==S.date)UI.ren=null;const r=_rv.apply(this,arguments);if(UI.ren&&UI.ren.resp&&UI.ren.resp.k==='ok'&&!UI.ren.doneAt)UI.ren.doneAt=S.date;return r}}
+{const _mh=msgHTML;msgHTML=function(m){if(m.type==='renewreq'&&m.done)return `<div class="msg ${m.read?'':'new'}"><div class="h"><span>${fmtD(m.d)}</span><span>재계약</span></div><b>${esc(m.title)}</b><p>${esc(m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p></div>`;return _mh(m)}}
+// 같은 선수에 대한 다른 영입 제안·바이아웃 메시지: 한 건을 받아들여 이적하면 나머지는 종료, 이미 떠난 선수면 처리하지 않음
+{const _hm=handleMsg;handleMsg=function(m,act){try{if((m.type==='offer'||m.type==='clause')&&!m.done&&clubOf(m.pid)!==S.club){m.done=true;m.read=true;m.result='이미 팀을 떠난 선수입니다';save();render();toast(m.result);return}}catch(e){}
+  const r=_hm.apply(this,arguments);try{if(clubOf(m.pid)!==S.club)(S.inbox||[]).forEach(x=>{if(x!==m&&(x.type==='offer'||x.type==='clause'||x.type==='request')&&x.pid===m.pid&&!x.done){x.done=true;x.read=true;x.result='선수 이적으로 종료'}});save();render()}catch(e){}return r}}
+// 사전 계약을 마친 선수(7월 1일 합류 예정)는 원소속팀에 남아 있어 영입 제안 창이 다시 열렸음 → 완료 안내로 대체
+{const _os2=offerSheet;offerSheet=function(id,step){const pre=(S.pre||[]).find(x=>x.id===id);if(pre){const p=pl(id);sheet(`<button class="x" data-close>닫기</button><div class="note" style="margin:0">사전 계약 완료</div><h3>${esc(p.name)}</h3><p class="note">7월 1일에 자유계약으로 합류합니다 · 연봉 ${money(pre.wage)} · ${pre.cEnd.slice(0,4)}년 6월까지. 추가 제안은 필요 없습니다.</p>`);return}return _os2.apply(this,arguments)}}
+// ---- 재계약 바이아웃(v91): 재계약 창에서도 바이아웃 수준 선택(연봉 요구 ×0.97/×1/×1.06) ----
+{const _rs3=renewSheet;renewSheet=function(id){const R0=UI.ren;const r=_rs3.apply(this,arguments);try{const R=UI.ren;if(!R||R.id!==id)return r;if(R._w!=null){R.wage=R._w;R._w=null}if(R.cl==null)R.cl=2;const p=pl(id);
+  const b=document.querySelector('[data-act="sendRenew"]');if(b){b.insertAdjacentHTML('beforebegin',`<div class="lbl">바이아웃 조항 <span style="font-weight:400">(현재 ${p.clause?'€'+p.clause+'M':'없음'})</span></div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${Object.entries(TF_CL).map(([k,v])=>`<button data-rcl="${k}" aria-pressed="${+k===R.cl}">${v[2]} €${tfClauseVal(p,+k)}M</button>`).join('')}</div><p class="note">높게 걸수록 다른 구단이 빼 가기 어렵지만 선수 측 연봉 요구가 오릅니다(낮음 −3%, 높음 +6%).</p>`)}}catch(e){console.error(e)}return r}}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-rcl]');if(!b||!UI.ren)return;e.stopPropagation();e.preventDefault();UI.ren.cl=+b.dataset.rcl;UI.ren.resp=null;renewSheet(UI.ren.id)},true);
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-act="sendRenew"]');if(!b||!UI.ren)return;const R=UI.ren;const m=(TF_CL[R.cl||2]||TF_CL[2])[1];R._w=R.wage;R._cl=R.cl||2;R.wage=Math.round(R.wage/m);
+  setTimeout(()=>{try{if(R._w!=null){R.wage=R._w;R._w=null}if(R.resp&&R.resp.k==='ok'&&!R.clSet){R.clSet=1;const p=pl(R.id);setP(R.id,{wage:R.wage,clause:tfClauseVal(p,R._cl)});save()}}catch(err){}},0)},true);
 
 // ================= 유스 아카데미 이야기(v90): 출신 구단 기록 · 1군 데뷔/첫 골/출전 이정표 · 시즌 유스 리포트 · 선수 정보 표시 =================
 {const _my=makeYouth;makeYouth=function(c,y,o){const p=_my.apply(this,arguments);try{if(p&&p.youth)p.youth.c=c}catch(e){}return p}}
@@ -4481,9 +4498,9 @@ function ythMine(){return squadOf(S.club).filter(p=>ythOf(p)===S.club)}
     if((q.apps||0)>a0){q.ythApps=(q.ythApps||0)+1;
       if(!q.ythDebut){q.ythDebut=S.date;q.ythDebutVs=opp.short;S.yth=S.yth||{debuts:[]};S.yth.debuts.push({id:+id,n:p.name,d:S.date,age:ageOf(p),g:p.youth.grade});
         inbox('news','',`유스 출신 ${p.name} 1군 데뷔`,`${ageOf(p)}세 ${GN[p.g]} · ${opp.name}전. 아카데미 ${p.youth.y}년 입단(추정 등급 ${p.youth.est||p.youth.grade}).`);
-        S.news.unshift({d:S.date,t:`${CLUBS[S.club].short} 유스 출신 ${p.name}(${ageOf(p)}세) 1군 데뷔`,v:0})}
-      if([50,100,200,300].includes(q.ythApps))inbox('news','',`${p.name} 1군 ${q.ythApps}경기`,`유스 출신으로 우리 팀에서 ${q.ythApps}번째 경기를 뛰었습니다.`)}
-    if((q.gl||0)>g0&&!q.ythGoal){q.ythGoal=S.date;inbox('news','',`유스 출신 ${p.name} 1군 첫 골`,`${opp.name}전에서 데뷔 골을 넣었습니다.`);S.news.unshift({d:S.date,t:`${p.name}, 1군 데뷔 골`,v:0})}}}}catch(e){console.error(e)}return r}}
+        S.news.unshift({d:S.date,t:`${CLUBS[S.club].short} 유스 출신 ${p.name}(${ageOf(p)}세) 1군 데뷔`,v:0});if(typeof mlog==='function')mlog(`유스 출신 ${p.name} 1군 데뷔 (${ageOf(p)}세, ${opp.short}전)`)}
+      if([50,100,200,300].includes(q.ythApps)){inbox('news','',`${p.name} 1군 ${q.ythApps}경기`,`유스 출신으로 우리 팀에서 ${q.ythApps}번째 경기를 뛰었습니다.`);if(typeof mlog==='function')mlog(`유스 출신 ${p.name} 1군 ${q.ythApps}경기`)}}
+    if((q.gl||0)>g0&&!q.ythGoal){q.ythGoal=S.date;inbox('news','',`유스 출신 ${p.name} 1군 첫 골`,`${opp.name}전에서 데뷔 골을 넣었습니다.`);S.news.unshift({d:S.date,t:`${p.name}, 1군 데뷔 골`,v:0});if(typeof mlog==='function')mlog(`유스 출신 ${p.name} 1군 첫 골 (${opp.short}전)`)}}}}catch(e){console.error(e)}return r}}
 // 시즌 끝(6월 1일): 유스 아카데미 리포트
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{if(S.date.endsWith('-06-01')&&!(typeof unemp==='function'&&unemp())){const L=ythMine();if(L.length){
   const rows=L.map(p=>{const q=S.ps[p.id]||{};return {p,a:q.apps||0,g:q.gl||0,m:q.mins||0}}).sort((a,b)=>b.m-a.m);const deb=(S.yth&&S.yth.debuts||[]).filter(x=>x.d>=`${S.season}-07-01`);
@@ -4515,14 +4532,18 @@ function mdAnswer(m,o){const md=m.md,p=pl(md.pid),q=S.ps[md.pid]=S.ps[md.pid]||{
   else{if(o==='back'){mgHappy(6,[md.pid]);mgHappy(-1,squadOf(S.club).filter(x=>x.id!==md.pid).map(x=>x.id));res='선수는 누그러졌지만 다른 선수들은 특별 대우로 봅니다(본인 +6, 나머지 −1)'}
     else if(o==='quiet'){mgHappy(3,[md.pid]);res='면담으로 수습했습니다(만족도 +3)'}
     else{mgHappy(-10,[md.pid]);mgHappy(1,squadOf(S.club).filter(x=>x.id!==md.pid).map(x=>x.id));if(typeof mgMorale==='function')try{mgMorale(-2)}catch(e){};res='기강을 잡았지만 선수와의 관계가 크게 틀어졌습니다(본인 −10, 나머지 +1)'}}
-  m.done=true;m.read=true;m.result=res;save();render();toast(res)}
+  m.done=true;m.read=true;m.result=res;mlog(`${m.title} → ${res}`);save();render();toast(res)}
 // 실제 제안으로 이어짐(대응에 따라 확률)
 function mdOffers(){squadOf(S.club).forEach(p=>{const q=S.ps[p.id];if(!q||!q.rumor||!q.rumor.at||q.rumor.at>S.date)return;const c=q.rumor.c;q.rumor=null;if(S.inbox.some(m=>m.type==='offer'&&m.pid===p.id&&!m.done))return;
   const fee=Math.round(p.val*AGEK(ageOf(p))*(.95+.25*Math.random())/1e5)*1e5;if((S.aiBudget[c]||0)<fee*.8)return;
-  inbox('offer','',`${CLUBS[c].name}의 ${p.name} 영입 제안`,`이적설이 현실이 됐습니다. 이적료 ${money(fee)} 제안이 들어왔습니다.`,{pid:p.id,from:c,fee,max:Math.round(p.val*AGEK(ageOf(p))*1.2)})})}
+  mlog(`이적설 현실화 · ${CLUBS[c].name}, ${p.name} 공식 제안`);inbox('offer','',`${CLUBS[c].name}의 ${p.name} 영입 제안`,`이적설이 현실이 됐습니다. 이적료 ${money(fee)} 제안이 들어왔습니다.`,{pid:p.id,from:c,fee,max:Math.round(p.val*AGEK(ageOf(p))*1.2)})})}
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{if(S&&S.club>=0&&!(typeof unemp==='function'&&unemp())){mdOffers();if(D(S.date).getUTCDay()===1){if(Math.random()<.12)mdRumor();mdMoan()}}}catch(e){console.error(e)}return r}}
 {const _mh=msgHTML;msgHTML=function(m){if(m.type!=='media')return _mh(m);const md=m.md;return `<div class="msg ${m.read?'':'new'}"><div class="h"><span>${fmtD(m.d)}</span><span>언론</span></div><b>${esc(m.title)}</b><p>${esc(m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p>${m.done?'':`<div class="acts" style="flex-wrap:wrap">${md.opts.map(([k,l])=>`<button class="btn sm ghost" data-md="${k}" data-msg="${m.id}">${esc(l)}</button>`).join('')}</div>`}</div>`}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-md]');if(!b||!S)return;e.stopPropagation();e.preventDefault();const m=S.inbox.find(x=>x.id===+b.dataset.msg);if(!m||m.done)return;mdAnswer(m,b.dataset.md)},true);
+
+// 기록: 언론 대응·유스 이정표 모아 보기(선수 관리 화면 아래)
+function mlog(t){S.mlog=S.mlog||[];S.mlog.unshift({d:S.date,t});S.mlog=S.mlog.slice(0,80)}
+{const _mv=mgView;mgView=function(){const h=_mv.apply(this,arguments);try{const L=S.mlog||[];return h+`<section class="card pad" style="margin-top:12px"><h2 style="margin-top:0">언론·이정표 기록</h2>${L.length?L.slice(0,40).map(x=>`<div class="li" style="padding:6px 0;border-bottom:1px solid var(--line)"><span class="nm"><span><b style="font-weight:600">${esc(x.t)}</b><span>${fmtD(x.d)}</span></span></span></div>`).join(''):'<p class="note">아직 기록이 없습니다. 이적설 대응, 선수 불만 대응, 유스 출신 데뷔·첫 골 등이 여기에 쌓입니다.</p>'}</section>`}catch(e){return h}}}
 
 // ================= 시즌 목표·이사회 평가(v90) =================
 // 리그 목표(기존 S.exp, 신뢰도는 기존 주간 평가가 담당) + 국내 컵·유럽대항전 단계 목표(리그 내 전력 순위 기준: 1~2위 결승·4강, 3~4위 4강·8강 …) + 재정(운영 손익 ≥ 기대) + 젊은 선수 기용(21세 이하 리그 출전 분)
