@@ -4826,9 +4826,10 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   const camFor=(m,bx,bz,by)=>{const fo=window.__r3&&window.__r3.focus;if(fo&&P[fo]){const o=P[fo].g.position;cp.set(o.x+4,2.2,o.z+4);lk.set(o.x,.9,o.z);return}
     const por=innerHeight>innerWidth*1.2;if(m==='auto'){if(cel&&cel.id&&P[cel.id]&&t>es+1.7)m='cel';else m=t>es-2.2?'goal':'tv'}
     if(m==='cel'){const o=P[cel.id].g.position;const L0=Math.hypot(o.x,o.z)||1;cp.set(o.x-o.x/L0*8,3.2,o.z-o.z/L0*8);lk.set(o.x,1.1,o.z)}
-    else if(m==='tv'){const ax=bx*.6+CEN[0]*.4,az=bz*.6+CEN[1]*.4;if(por)cp.set(Math.max(-48,Math.min(48,ax*.9)),12,Math.min(30,az*.5+24));else cp.set(Math.max(-45,Math.min(45,ax*.85)),17,40);lk.set(Math.max(-50,Math.min(50,ax+dir*2)),0,az*.7)}
-    else if(m==='goal'){const az=Math.abs(bx-gX)<25?bz*.5+CEN[1]*.5:bz;cp.set(gX+dir*8.5,4.6,az*.25);lk.set(gX-dir*20,1,az*.6)}
-    else{const ex=Math.max(-50,Math.min(50,bx+dir*10));cp.set(bx-dir*11,5.5,bz*.85+(bz>0?-3:3));lk.set(ex*.6+gX*.4,1+by*.3,bz*.5)}};
+    // 공 중심(v92, 사용자 요청): 모든 카메라가 공을 화면 가운데에 두도록 바라보는 점 = 공
+    else if(m==='tv'){const cl=(v,a,b)=>Math.max(a,Math.min(b,v));if(por){const zc=bz+26,h=13+Math.max(0,zc-36)*.6;cp.set(cl(bx*.92,-48,48),h,Math.min(36,zc))}else{const zc=bz+40,h=17+Math.max(0,zc-38)*.5;cp.set(cl(bx*.85,-45,45),h,Math.min(38,zc))}lk.set(bx,.3+by*.4,bz)}
+    else if(m==='goal'){cp.set(gX+dir*8.5,4.6,bz*.3);lk.set(bx,.8+by*.5,bz)}
+    else{cp.set(bx-dir*11,5.5,bz*.85+(bz>0?-3:3));lk.set(bx+dir*4,.8+by*.3,bz)}};
   const RP={},RV={},CEN=[0,0];const SEP=.8;
   // 공 위치: 공을 가진 선수가 있으면 그 선수 발 앞(드리블 터치), 없으면 엔진 공 궤적
   const feet=id=>{const o=P[id]&&P[id].g;if(!o)return null;const ry=o.rotation.y,u=o.userData;const dr=.36+((u.dv||0)>1.2?.28*(.5+.5*Math.sin(t*9+(+id%7))):0);return [o.position.x+Math.cos(ry)*dr+52.5,o.position.z-Math.sin(ry)*dr+34,0]};
@@ -4884,8 +4885,8 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
       if(e.t==='goal'&&t>es+.55&&(isSh||actors.as&&actors.as.g===o)){u.arms[0].rotation.z=2.6;u.arms[1].rotation.z=-2.6;if(isSh)o.position.y=Math.abs(Math.sin((t-es)*7))*.22}
     });
     const B=ballAt(tt);const bx=B[0]-52.5,bz=B[1]-34,by=Math.max(0,B[2]);const pb=ball.position;const mvb=Math.hypot(bx-pb.x,bz-pb.z);ball.position.set(bx,.2+by*1.05,bz);ball.rotation.x+=mvb*5;bsh.position.set(bx,.02,bz);
-    camFor(mode,bx,bz,by);if(first){cpS.copy(cp);lkS.copy(lk);first=false}cpS.lerp(cp,Math.min(1,dt*2.2));lkS.lerp(lk,Math.min(1,dt*3));cam.position.copy(cpS);cam.lookAt(lkS);ren.render(sc,cam)};
-  window.__r3={setT:x=>{t=x},getT:()=>t,setSpd:x=>{spd=x},SCH,fr,es,t0,tE,P,cam};
+    camFor(mode,bx,bz,by);if(first){cpS.copy(cp);lkS.copy(lk);first=false}cpS.lerp(cp,Math.min(1,dt*2.6));lkS.lerp(lk,Math.min(1,dt*7));cam.position.copy(cpS);cam.lookAt(lkS);ren.render(sc,cam)};
+  window.__r3={setT:x=>{t=x},getT:()=>t,setSpd:x=>{spd=x},SCH,fr,es,t0,tE,P,cam,ball};
   raf=requestAnimationFrame(loop);
   const onR=()=>{ren.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};addEventListener('resize',onR);
   const close=()=>{done=true;window.__r3=null;cancelAnimationFrame(raf);removeEventListener('resize',onR);sc.traverse(o=>{if(o.geometry)o.geometry.dispose();if(o.material){(Array.isArray(o.material)?o.material:[o.material]).forEach(m=>{if(m.map)m.map.dispose();m.dispose()})}});ren.dispose();ov.remove();
