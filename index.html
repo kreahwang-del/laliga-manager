@@ -1641,10 +1641,10 @@ function habOf(p){const M=G.tendM&&G.tendM[p.g];if(!M)return null;const A=G.attr
 function dhOf(p){const M=G.dtM&&G.dtM[p.g];if(!M)return null;const A=G.attrs.slice(0,10);const z=zShape(A.map((k,i)=>((p[k]??10)-M.mu[i])/M.sd[i]));
   return [0,1].map(j=>{const m=M['k'+j];const h=hsh(p.id+'dh'+j),h2=hsh(p.id+'dh2'+j);let v=m.b[0];for(let i=0;i<z.length;i++)v+=m.b[i+1]*z[i];v+=Math.sqrt(-2*Math.log(Math.max(1e-9,h)))*Math.cos(2*Math.PI*h2)*m.e*.8;return Math.max(.4,Math.min(2.5,+Math.exp(v).toFixed(2)))})}
 {const _pl0=pl;pl=function(id){const p=_pl0(id);if(p&&!p.hab&&p.g!=='GK'){const b=BASE[id];if(b&&!b.habC){b.habC=1;b.hab=habOf(p)}p.hab=b?b.hab:habOf(p)}if(p&&!p.dh&&p.g!=='GK'){const b=BASE[id];if(b&&!b.dhC){b.dhC=1;b.dh=dhOf(p)}p.dh=b?b.dh:dhOf(p)}return p}}
-// 자동 선발 주전 연속성(v92): 우리 팀만 — 최근 5경기 중 3경기 이상 뛴 선수에 보너스(GK +6%, 필드 +1.5%).
+// 자동 선발 주전 보너스(v92→v95): 우리 팀만 — GK는 능력 1위 GK에 +6%(v92의 '최근 출전' 기준은 한번 후보 GK가 뛰면 그 GK가 계속 보너스를 받는 악순환), 필드는 최근 5경기 중 3경기 이상 출전 +1.5%.
 // 근거: 주전 GK는 리그 출전 시간 대부분을 소화(로테이션이 드묾) → 컨디션 한두 단계 차이(±4%)로 주전 GK가 바뀌지 않게. 필드 선수는 작은 차이로 매주 바뀌는 것 방지
-{const _ap=E3.autoPick;E3.autoPick=function(players,form){try{if(typeof S!=='undefined'&&S&&players&&players.length&&players.some(p=>p&&clubOf(p.id)===S.club)){players=players.map(p=>{if(!p)return p;const q=S.ps[p.id]||{};const ra=(q.recentApps||[]).slice(-5);const n=ra.reduce((a,b)=>a+b,0);
-  return Object.assign({},p,{_inc:n>=3?(p.g==='GK'?.06:.015):0})})}}catch(e){}return _ap.call(this,players,form)}}
+{const _ap=E3.autoPick;E3.autoPick=function(players,form){try{if(typeof S!=='undefined'&&S&&players&&players.length&&players.some(p=>p&&clubOf(p.id)===S.club)){const gkTop=players.filter(p=>p&&p.g==='GK'&&!((p.injD||0)>0)).sort((a,b)=>(b.ovr||0)-(a.ovr||0))[0];players=players.map(p=>{if(!p)return p;const q=S.ps[p.id]||{};const ra=(q.recentApps||[]).slice(-5);const n=ra.reduce((a,b)=>a+b,0);
+  return Object.assign({},p,{_inc:p.g==='GK'?(gkTop&&p.id===gkTop.id?.06:0):(n>=3?.015:0)})})}}catch(e){}return _ap.call(this,players,form)}}
 
 // ================= 4단계: 성장·노쇠·은퇴·유망주·레전드 후계자 =================
 // 근거
