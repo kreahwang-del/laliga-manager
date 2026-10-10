@@ -4969,6 +4969,13 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   const bsh=new T.Mesh(new T.CircleGeometry(.24,16),new T.MeshBasicMaterial({color:'#000',transparent:true,opacity:.35}));bsh.rotation.x=-Math.PI/2;bsh.position.y=.02;sc.add(bsh);
   // 보간(캣멀롬)
   let fr=rep.fr;const es=e.sec;let cel=null;
+  // v105: ① 세트피스 대기 등으로 몇 초간 아무도 안 움직이는 앞부분은 1.5초만 남기고 자름
+  try{const same=(f,g)=>Object.keys(f.p).every(id=>!g.p[id]||Math.abs(f.p[id][0]-g.p[id][0])+Math.abs(f.p[id][1]-g.p[id][1])<.05)&&Math.abs(f.b[0]-g.b[0])+Math.abs(f.b[1]-g.b[1])<.05;
+    let i=1;while(i<fr.length&&fr[i].t<es-1&&same(fr[0],fr[i]))i++;if(i>4&&fr[i-1].t-fr[0].t>2){fr=fr.slice(Math.max(0,i-4))}}catch(er){}
+  // ② 순간이동 보정: 엔진이 세트피스·경합에서 선수를 목표 지점으로 바로 옮기는 경우(0.5초에 4.5m 초과 = 9m/s 초과) 이전 프레임들에 나눠 달려오게 함(슈팅 순간까지만)
+  try{fr=fr.map(f=>Object.assign({},f,{p:Object.assign({},f.p)}));const ids0=Object.keys(fr[0].p);
+    for(const id of ids0){for(let i=1;i<fr.length;i++){if(fr[i].t>es)break;const a=fr[i-1].p[id],c=fr[i].p[id];if(!a||!c)continue;const d=Math.hypot(c[0]-a[0],c[1]-a[1]),dt=fr[i].t-fr[i-1].t||.5;if(d<=9*dt||d>40)continue;
+      const k=Math.min(i,Math.ceil(d/(7*dt)));const j=i-k;const s0=fr[j].p[id];if(!s0)continue;for(let q=j+1;q<i;q++){const u=(q-j)/k;fr[q].p[id]=[s0[0]+(c[0]-s0[0])*u,s0[1]+(c[1]-s0[1])*u]}}}}catch(er){console.error(er)}
   // 페널티킥(v87): 엔진은 키커만 순간이동시키므로(주변 선수는 파울 위치 그대로) 장면을 합성 — 다른 선수는 박스 밖, GK는 골라인, 키커는 2.6m 도움닫기
   if(e.type==='pen'){const f0=fr.filter(f=>f.t<es);const lf=f0[f0.length-1]||fr[0];const dg=e.s===0?1:-1;const spot=dg>0?94:11,gl=dg>0?105:0;const ros=rep.ros;
     const ids0=Object.keys(lf.p);const kId=ids0.find(id=>ros[id]&&ros[id].n===e.p);const kS=kId?ros[kId].s:e.s;const gkId=ids0.find(id=>ros[id]&&ros[id].gk&&ros[id].s!==kS);
