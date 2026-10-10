@@ -5018,7 +5018,13 @@ function r3ShirtMat(T,kit){if(!kit.pat||!kit.patCol)return new T.MeshStandardMat
   if(kit.pat===1){for(let i=0;i<4;i++)g.fillRect(i*16+4,0,8,64)}else{for(let i=0;i<4;i++)g.fillRect(0,i*16+4,64,8)}
   const tx=new T.CanvasTexture(c);tx.wrapS=tx.wrapT=T.RepeatWrapping;tx.repeat.set(2,1);return new T.MeshStandardMaterial({map:tx,roughness:.72})}
 function r3Look(id){const L=typeof LOOK3D!=='undefined'&&LOOK3D[id];if(!L||L.length<13)return {skin:'#d9a77f',hair:'#2a2420',st:1};
-  return {skin:'#'+L.slice(0,6),hair:'#'+L.slice(6,12),st:+L[12]||0}}
+  /* v111: 경기장 조명(특히 야간·녹색 반사광)에서 피부·머리색이 어둡고 비슷하게 보여 표시용으로 보정 — 피부 8단계 간격을 넓히고 밝게, 머리색은 명도 ×1.35(검은 머리는 유지) */
+  const SK={'f6d7c4':'#fff0e6','ecc3a5':'#ffe6d2','dcae8a':'#ffdcbf','c5976e':'#f0c39c','a87a55':'#cf9a6c','8a5f3f':'#9d6a44','6e462c':'#6a3f24','50301d':'#40240f'};const sk=SK[L.slice(0,6)]||'#'+L.slice(0,6);
+  const hx=L.slice(6,12);let r=parseInt(hx.slice(0,2),16)/255,g=parseInt(hx.slice(2,4),16)/255,b=parseInt(hx.slice(4,6),16)/255;const mx=Math.max(r,g,b),mn=Math.min(r,g,b);let h=0,sat=0,l=(mx+mn)/2;
+  if(mx!==mn){const d=mx-mn;sat=l>.5?d/(2-mx-mn):d/(mx+mn);h=mx===r?(g-b)/d+(g<b?6:0):mx===g?(b-r)/d+2:(r-g)/d+4;h/=6}
+  if(l>.1){l=Math.min(.82,l*1.35);sat=Math.min(1,sat*1.1)}const f=(p,q,t)=>{if(t<0)t+=1;if(t>1)t-=1;return t<1/6?p+(q-p)*6*t:t<.5?q:t<2/3?p+(q-p)*(2/3-t)*6:p};const q2=l<.5?l*(1+sat):l+sat-l*sat,p2=2*l-q2;
+  const to=v=>Math.round(v*255).toString(16).padStart(2,'0');const hair=sat===0?'#'+to(l)+to(l)+to(l):'#'+to(f(p2,q2,h+1/3))+to(f(p2,q2,h))+to(f(p2,q2,h-1/3));
+  return {skin:sk,hair,st:+L[12]||0}}
 function r3Player(T,kit,gk,look,shirtMat){const G=new T.Group();const gkc=gk?(kit.gkc||'#E8C547'):null;
   const shirt=gk?new T.MeshStandardMaterial({color:gkc,roughness:.72}):shirtMat;
   const sleeve=gk?shirt:new T.MeshStandardMaterial({color:kit.arms,roughness:.72});
