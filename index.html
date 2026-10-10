@@ -2815,18 +2815,18 @@ function recTactics(){const O=oppTeam();const xi=S.xi.map(pl).slice(1);const os=
   const sm=E3.styleMap(S.xi.map(pl));
   return Object.keys(E3.PRESETS).map(k=>{const fitv=sm[k]||0;const counter=(E3.BEATS[k]||[]).includes(os)?1:(E3.BEATS[os]||[]).includes(k)?-1:0;
     const fam=S.tac.preset===k?S.tac.fam:Math.min(S.tac.fam,35);const score=fitv*2+counter*.8+fam*.01;const why=[fitv>0?`선발 구성과 잘 맞음(${E3.NEEDS[k].map(n=>AN[n]).join('·')}가 상대적 강점) · 보너스 ${Math.round(fitv*100)}%`:fitv<0?`선발 구성과 안 맞음(${E3.NEEDS[k].map(n=>AN[n]).join('·')}가 상대적 약점) · 불이익 ${Math.round(-fitv*100)}%`:(k==='균형'?'보너스·불이익 없는 기본 전술':'선발 구성 적합도 보통(보너스·불이익 없음)')];
-    if(counter>0)why.push(`상대 ${O?CLUBS[O.club].short:''}의 ${os}에 상성 우위`);if(counter<0)why.push(`상대의 ${os}에 상성 불리`);if(S.tac.preset===k)why.push(`숙련도 ${S.tac.fam}`);return {k,score,why}}).sort((a,b)=>b.score-a.score)}
+    if(counter>0)why.push(`상대 ${O?CLUBS[O.club].short:''}의 ${os}에 상성 우위`);if(counter<0)why.push(`상대의 ${os}에 상성 불리`);if(S.tac.preset===k)why.push(`숙련도 ${Math.round(S.tac.fam)}`);return {k,score,why}}).sort((a,b)=>b.score-a.score)}
 function recLineup(){const sq=squadOf(S.club).filter(canUse),keys=E3.FORMS[S.tac.form.base],used=new Set(),xi=[];const ds=new Set(defSlots());
   const bonus=(p,i)=>{if(!ds.has(i))return 0;const q=expectedFor(i);if(!q)return 0;const [c]=duel(p,q.p);return c==='up'?2:c==='dn'?-2:0};
   const order=keys.map((k,i)=>i).sort((a,b)=>(keys[a]==='GK'?-1:0)-(keys[b]==='GK'?-1:0));
   order.forEach(i=>{let b=null,bv=-1e9;sq.forEach(p=>{if(used.has(p.id)||p.injD>0||p.ban>0)return;const v=effSlot(p,keys[i])+bonus(p,i);if(v>bv){bv=v;b=p}});xi[i]=b.id;used.add(b.id)});return xi}
 function tacView(){
-  if(TAC.phase==='sp'){ensureXI();const on=oppNext(),O=oppTeam();return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b> <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${S.tac.fam}</span></div>`:''}<div class="seg" style="grid-template-columns:repeat(4,1fr)">${[['base','기본'],['atk','공격 시'],['def','수비 시'],['sp','세트피스']].map(([k,l])=>`<button data-phase="${k}" aria-pressed="${'sp'===k}">${l}</button>`).join('')}</div>${spView()}`}
+  if(TAC.phase==='sp'){ensureXI();const on=oppNext(),O=oppTeam();return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(S.tac.fam)}</span></div>`:''}<div class="seg" style="grid-template-columns:repeat(4,1fr)">${[['base','기본'],['atk','공격 시'],['def','수비 시'],['sp','세트피스']].map(([k,l])=>`<button data-phase="${k}" aria-pressed="${'sp'===k}">${l}</button>`).join('')}</div>${spView()}`}
   ensureXI();const T=S.tac,ph=TAC.phase,xi=S.xi,keys=slotKeys(ph),coords=coordsOf(ph),O=oppTeam(),on=oppNext();
   const pv=E3.PRESETS[T.preset],devs=T.ti.map((v,i)=>Math.abs(v-pv[i])).filter(d=>d>1).length;
   const sup=O?superiority(ph,coords):null;const bench=squadOf(S.club).filter(p=>!xi.includes(p.id)&&canUse(p)).sort((a,b)=>b.ovr-a.ovr);const shp=E3.shapeOf(T,ph);
   const note={base:'한 번 누르면 정보·교체 버튼이 나오고, 길게 눌러 끌면 선수끼리 교체하거나 위치를 옮깁니다.',atk:'공을 가졌을 때의 대형입니다. 길게 눌러 끌어서 미세 조정할 수 있습니다.',def:'공을 잃었을 때의 대형입니다. 길게 눌러 끌어서 미세 조정할 수 있습니다.'}[ph];
-  return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b> <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${T.fam}</span></div>`:''}
+  return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(T.fam)}</span></div>`:''}
   <div class="seg" style="grid-template-columns:repeat(4,1fr)">${[['base','기본'],['atk','공격 시'],['def','수비 시'],['sp','세트피스']].map(([k,l])=>`<button data-phase="${k}" aria-pressed="${ph===k}">${l}</button>`).join('')}</div>
   <div class="chips">${Object.keys(E3.FORMS).map(k=>`<button class="chip" data-shape="${k}" aria-pressed="${T.form[ph]===k}">${k}</button>`).join('')}</div>
   <div class="tools"><button class="chip" data-tsets>전술 저장·불러오기</button><button class="chip" data-zones aria-pressed="${TAC.showZones}">15칸 수적 우위</button>${T.pos[ph]?'<button class="chip" data-resetpos>위치 초기화</button>':''}<button class="chip" data-act="auto">자동 선발</button></div>
@@ -2846,7 +2846,7 @@ function tacView(){
   <p class="note">줄을 누르면 맨마킹을 설정할 수 있습니다.</p></section>`:''}
   <section class="card pad"><h2 style="margin-top:0">세트피스 키커</h2>${[['cornerL','왼쪽 코너',p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='right'?1.06:1)],['cornerR','오른쪽 코너',p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='left'?1.06:1)],['fk','프리킥',p=>p.fk??10],['pen','페널티킥',p=>(p.pen??10)*.7+(p.comp??12)*.3]].map(([k,l,f])=>{const cur=T.setp&&T.setp[k]&&xi.includes(T.setp[k])?pl(T.setp[k]):null;const auto=xi.map(pl).filter(p=>p.g!=='GK').sort((a,b)=>f(b)-f(a))[0];
     return `<button class="mu" data-kick="${k}"><span class="k">${l}</span><span><b>${esc((cur||auto).name)}</b><div class="meta">${cur?'직접 지정':'자동 선택'} · ${k.startsWith('corner')?`크로스 ${(cur||auto).cross} · ${({right:'오른발',left:'왼발',both:'양발'})[(cur||auto).foot]||''}${((k==='cornerL'&&(cur||auto).foot==='right')||(k==='cornerR'&&(cur||auto).foot==='left'))?' · 인스윙':''}`:k==='fk'?`프리킥 ${(cur||auto).fk??'-'}`:`페널티 ${(cur||auto).pen??'-'} · 침착성 ${(cur||auto).comp??'-'}`}</div></span><span class="vd eq">변경</span></button>`}).join('')}</section>
-  <section class="card pad"><h2 style="margin-top:0">전술 성향 · 숙련도 ${T.fam}</h2>
+  <section class="card pad"><h2 style="margin-top:0">전술 성향 · 숙련도 ${Math.round(T.fam)}</h2>
     ${(()=>{const sm=E3.styleMap(xi.map(pl));const up=Object.keys(sm).filter(k=>sm[k]>0),dn=Object.keys(sm).filter(k=>sm[k]<0);
       return `<div class="chips" style="margin-top:0">${Object.keys(E3.PRESETS).map(k=>`<button class="chip" data-preset="${k}" aria-pressed="${T.preset===k}">${k}${sm[k]>0?' <b style="color:var(--good)">▲</b>':sm[k]<0?' <b style="color:var(--bad)">▼</b>':''}</button>`).join('')}</div>
       <p class="note" style="margin:4px 0 0">선수 구성 적합도 · ▲ 잘 맞음: ${up.join(', ')||'없음'} · ▼ 안 맞음: ${dn.join(', ')||'없음'}${sm[T.preset]?` · 현재 전술 ${sm[T.preset]>0?'보너스':'불이익'} ${Math.round(Math.abs(sm[T.preset])*100)}%`:''}</p>`})()}
@@ -4680,6 +4680,14 @@ let MTH=null;
 function mtApply(){const d=document.getElementById('match');if(!d||!M||!M.fx)return;const t=MTH=matchTheme(M.fx);if(!t)return;d.classList.add('mth');d.style.setProperty('--mta',t.a);d.style.setProperty('--mtb',t.b);d.style.setProperty('--mton',t.on);
   const inn=d.querySelector('.in');if(inn&&!inn.querySelector('.mtbadge'))inn.insertAdjacentHTML('afterbegin',`<div class="mtbadge"><i></i>${esc(t.n)}</div>`)}
 {const _sm=startMatch;startMatch=function(fx){MTH=null;const r=_sm.apply(this,arguments);try{mtApply()}catch(e){console.error(e)}return r}}
+// ---- 순위 표시(v104): 경기 화면 팀 이름 아래·전술 화면 다음 상대 배너에 리그 순위 ----
+function lgRank(c){try{const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return null;const fx=typeof fxLg==='function'?fxLg(lg):[];const T={};let any=0;
+  for(const f of fx){if(!f.res||!f.res.sc)continue;any=1;[[f.h,0],[f.a,1]].forEach(([id,s])=>{const t=T[id]=T[id]||{id,pts:0,gd:0,gf:0,p:0};const g=f.res.sc[s],o=f.res.sc[1-s];t.p++;t.gf+=g;t.gd+=g-o;t.pts+=g>o?3:g===o?1:0})}
+  if(!any)return null;fx.forEach(f=>{[f.h,f.a].forEach(id=>{if(!T[id])T[id]={id,pts:0,gd:0,gf:0,p:0}})});
+  const L=Object.values(T).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf);const i=L.findIndex(t=>t.id===c);return i<0?null:{r:i+1,n:L.length,pts:L[i].pts,lg}}catch(e){return null}}
+function lgRankTxt(c,short){const k=lgRank(c);if(!k)return '';const lgn=typeof mtLgName==='function'?mtLgName(k.lg):k.lg;return short?`${k.r}위`:`${lgn} ${k.r}위 · ${k.pts}점`}
+(function(){const s=document.createElement('style');s.textContent=`#match .board .team .mrk{display:block;font:600 11px/1.2 sans-serif;color:var(--muted);margin-top:2px}`;document.head.appendChild(s)})();
+{const _sm=startMatch;startMatch=function(fx){const r=_sm.apply(this,arguments);try{const d=document.getElementById('match');if(d&&M&&M.fx){const ts=d.querySelectorAll('.board .team');[M.fx.h,M.fx.a].forEach((c,i)=>{const t=lgRankTxt(c);if(ts[i]&&t&&!ts[i].querySelector('.mrk'))ts[i].insertAdjacentHTML('beforeend',`<small class="mrk">${esc(t)}</small>`)})}}catch(e){console.error(e)}return r}}
 
 // ================= 트레이드(v102): 선수+현금 거래 — 내가 제안 / AI도 제안 =================
 // 상대 구단의 선수 평가 = 시장가(가치×나이 계수) × 필요도(받는 팀에서의 예상 역할: 주전 1.05·로테이션 0.8·백업 0.5) × 연봉 부담(받는 팀 최고 연봉의 1배 초과분만큼 감액, 1.6배 넘으면 0) × 32세 이상 0.8
@@ -5052,10 +5060,10 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
       else{fx=tbx;fz=tbz}
       if(Math.abs(fx)+Math.abs(fz)>.01){const ang=Math.atan2(-fz,fx);let d=ang-o.rotation.y;d=Math.atan2(Math.sin(d),Math.cos(d));o.rotation.y+=d*Math.min(1,dt*(sx?14:8))}
       if(u.sk){let ev=null;
-        if(isSh0){const hd=/^(header|corner|cross|fkx)$/.test(e.type||'');const k=hd?'header':e.type==='pen'?'pen':v>2.2?'shootRun':'shoot';const imp={header:.95,pen:.72,shootRun:.40,shoot:.15}[k];const st=es-imp,cl=R3.model.clips[k];if(cl&&t>=st&&t<=st+cl.duration+.3)ev={k,time:t-st}}
+        if(isSh0){const hd=/^(header|corner|cross|fkx)$/.test(e.type||'');const k=hd?'header':e.type==='pen'?'pen':v>2.2?'shootRun':'shoot';const imp={header:.95,pen:.72,shootRun:.40,shoot:.15}[k];const st=es-imp,cl=R3.model.clips[k];const w0=k==='header'?es-.45:st,w1=k==='header'?es+.5:st+(cl?cl.duration:0)+.3;/* v104: 헤더 동작은 접촉 전후 0.45~0.5초만 — 그 밖에는 속도에 맞는 달리기 동작(저자세로 미끄러지던 문제) */if(cl&&t>=w0&&t<=w1)ev={k,time:t-st}}
         if(isGk0&&e.t!=='miss'){const bl=at(Math.min(es+.5,tE),f=>f.b)||[52.5,34,0];const dz=(bl[1]-34)-o.position.z;const hb=(at(Math.min(es+.35,tE),f=>f.b)||[0,0,0])[2];const k=e.t==='save'&&aerialE&&hb>1?'gkBlock':e.t==='save'&&Math.abs(dz)<1.3?'gkCatch':'gkDive';const st=es+.02,cl=R3.model.clips[k];
           if(cl&&t>=st&&t<=st+cl.duration){ev={k,time:t-st};if(k==='gkDive'){const want=dz>=0?1:-1;const lx=-Math.sin(o.rotation.y);const sideNow=R3.model.diveSign*(lx>=0?1:-1);u.inner.scale.x=Math.abs(u.inner.scale.x)*(sideNow===want?1:-1)}}}
-        if(!ev&&id===duelId){const cl=R3.model.clips.header,st=es-.95-.06;if(cl&&t>=st&&t<=st+cl.duration)ev={k:'header',time:t-st}}
+        if(!ev&&id===duelId){const cl=R3.model.clips.header,st=es-.95-.06;if(cl&&t>=es-.5&&t<=es+.45)ev={k:'header',time:t-st}}
         if(!ev&&sx){const cl=R3.model.clips[sx.k];if(cl)ev={k:sx.k,time:Math.max(0,Math.min(t-sx.s,cl.duration-.001))}}
         if(ev){const a=r3Act(u,ev.k,{once:true,fade:.1});if(a){a.timeScale=0;a.time=Math.min(ev.time,a.getClip().duration-.001)}}
         else{if(!isGk0)u.inner.scale.x=Math.abs(u.inner.scale.x);
