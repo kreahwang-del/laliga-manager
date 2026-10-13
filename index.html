@@ -1977,9 +1977,14 @@ function devMonthly(){const season=S.season;const done=[];
       q.af[k]=Math.round(Math.max(1,Math.min(20,q.af[k]+v))*100)/100;const w=W[k]||0;wsum+=w;wd+=w*v}
     q.ovrF=Math.max(40,Math.min(95,q.ovrF+(wsum?wd/wsum:0)*4.15));
     DEV_KEYS.forEach(k=>{if(q.af[k]!=null)q[k]=Math.round(q.af[k])});q.ovr=Math.round(q.ovrF);
-    const b=BASE[id];q.val=Math.round(b.val*Math.pow(10,.06*(q.ovrF-b.ovr))*valAge(ageAt(p,S.date))/valAge(ageAt(b,SEASON_START))*(q.pm||1))}
+    const b=BASE[id];q.val=Math.round(b.val*Math.pow(10,.06*(q.ovrF-b.ovr))*valAge2(ageAt(p,S.date))/valAge2(ageAt(b,SEASON_START))*(q.pm||1))}
 }
 function valAge(a){return a<=24?1:a<=28?1-(a-24)*.05:Math.max(.15,.8-(a-28)*.1)}
+/* v145 시장가치 나이 경로 보정: 성과항을 뺀 1시즌 가치 변화(능력치 성장·노화 포함)가 실측 Transfermarkt 1년 변화(€2M 이상, 기하평균)보다 나이마다 5~25% 후했음
+   (예: 25세 게임 1.08 vs 실측 0.97, 30세 0.82 vs 0.67) → 나이별 보정 배수 c(a)를 기존 곡선의 연간 비율에 곱한 누적 곡선. 새 선수 생성 가치는 기존 valAge 그대로 */
+const VA_C={15:.87,16:.87,17:.87,18:.87,19:.86,20:.82,21:.84,22:.86,23:.91,24:.95,25:.91,26:.9,27:.91,28:.9,29:.85,30:.82,31:.8,32:.83,33:.9,34:.75,35:.75};
+const VA2=(()=>{const v={15:1};for(let a=15;a<42;a++){const r=valAge(a+1)/valAge(a);v[a+1]=v[a]*r*(VA_C[a]??.75)}return v})();
+function valAge2(a){const A=Math.max(15,Math.min(41.99,a)),i=Math.floor(A),f=A-i;return VA2[i]*(1-f)+VA2[i+1]*f}
 // ---- 은퇴(시즌 종료) ----
 const RET_REG=[.08,.12,.17,.22,.25,.30,.35,.45,.6,.8],RET_BACK=[.45,.55,.62,.72,.75,.82,.85,.9,.95,1]; // 31~40세
 function retireProb(p){let a=Math.floor(ageAt(p,S.date));if(p.g==='GK')a-=2;if(a<33)return 0; // 31~32세 이탈은 대부분 다른 리그 이적 → 무소속일 때만 처리
