@@ -5888,7 +5888,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   const bEnd=fr[fr.length-1].b,bS=at(es,f=>f.b)||bEnd;const dir=((e.s===0)!==H2D?1:-1),gX=(dir>0?105:0)-52.5;
   // 동작 일정(v86): 엔진이 남긴 킥(패스·롱패스·크로스·걷어내기)·태클·파울 태그 → 해당 선수가 공이 떠나는 순간에 맞춰 킥/태클/넘어짐 동작
   const SCH={};const addS=(id,o)=>{(SCH[id]||(SCH[id]=[])).push(o)};
-  if(R3.model){const CL=R3.model.clips,OFF={pass:.12,shoot:.15,tackle:.62};
+  if(R3.model){const CL=R3.model.clips,OFF={pass:.47,shoot:.2,tackle:.62}/* v153 클립 발 속도 최고점(접촉) 실측: shoot .20·pass .47·shootRun .47초 */;
     fr.forEach((f,fi)=>{(f.g||[]).forEach(g=>{const tg=f.t,r=rep.ros[g[1]];
       if(g[0]==='kk'){if(r&&r.n===e.p&&tg>es-1)return;const k=(g[2]==='long'||g[2]==='cross'||g[2]==='clear'||g[2]==='fkd'||g[3]>=.9)?'shoot':'pass';if(!CL[k])return;const imp=tg-(g[4]!=null?g[4]:.5);if(SCH[g[1]]&&SCH[g[1]].some(x=>Math.abs(x.imp-imp)<1))return;const nx=fr[Math.min(fr.length-1,fi+1)].b;addS(g[1],{k,s:imp-OFF[k],e:imp-OFF[k]+CL[k].duration,imp,tx:[nx[0]-52.5,nx[1]-34]})}
       else if((g[0]==='tk'||g[0]==='fo'||g[0]==='tm')&&CL.tackle){if(f.g.some(q=>q[0]==='kk'&&q[1]===g[1]))return;if(SCH[g[1]]&&SCH[g[1]].some(x=>Math.abs(x.imp-tg)<2))return;const imp=tg-.3;addS(g[1],{k:'tackle',s:imp-OFF.tackle,e:imp-OFF.tackle+Math.min(2.6,CL.tackle.duration-.02),imp,face:g[2]});
@@ -5910,6 +5910,8 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   // 공 위치: 공을 가진 선수가 있으면 그 선수 발 앞(드리블 터치), 없으면 엔진 공 궤적
   const feet=id=>{const o=P[id]&&P[id].g;if(!o)return null;const ry=o.rotation.y,u=o.userData;const dr=.36+((u.dv||0)>1.2?.28*(.5+.5*Math.sin(t*9+(+id%7))):0);return [o.position.x+Math.cos(ry)*dr+52.5,o.position.z-Math.sin(ry)*dr+34,0]};
   const anc=j=>{const f=fr[Math.max(0,Math.min(fr.length-1,j))];if(f.o!=null&&P[f.o])return feet(f.o)||f.b;return f.b};
+  /* v153 슈터가 슈팅 직전(es-1~es)에 공을 가진 경우만(원터치·헤더·PK 제외) */
+  const kick=(()=>{try{if(e.type==='pen'||aerC||/^(header|corner|cross|fkx|lowcross)$/.test(e.type||''))return null;const id=ids.find(x=>rep.ros[x]&&rep.ros[x].n===e.p);if(!id)return null;let t0=null;for(const f of fr){if(f.t>=es)break;if(f.t>=es-1&&String(f.o)===String(id))t0=t0==null?f.t:t0}return t0==null?null:{id,t0,last:null}}catch(er){return null}})();
   const ballAt=tt=>{const i=idxAt(tt),f1=fr[i],f2=fr[Math.min(fr.length-1,i+1)];const k=f2.t>f1.t?Math.max(0,Math.min(1,(tt-f1.t)/(f2.t-f1.t))):0;
     if(f1.o!=null&&f1.o===f2.o&&P[f1.o])return feet(f1.o)||f1.b;const A=anc(i),B=anc(i+1);
     if(Math.abs(A[0]-B[0])+Math.abs(A[1]-B[1])+Math.abs((A[2]||0)-(B[2]||0))<.03)return A;
@@ -5932,7 +5934,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
       else{fx=tbx;fz=tbz}
       if(Math.abs(fx)+Math.abs(fz)>.01){const ang=Math.atan2(-fz,fx);let d=ang-o.rotation.y;d=Math.atan2(Math.sin(d),Math.cos(d));o.rotation.y+=d*Math.min(1,dt*(sx?14:8))}
       if(u.sk){let ev=null;
-        if(isSh0){const hd=/^(header|corner|cross|fkx)$/.test(e.type||'');const k=hd?'header':e.type==='pen'?'pen':v>2.2?'shootRun':'shoot';const imp={header:.95,pen:.72,shootRun:.40,shoot:.15}[k];const st=es-imp,cl=R3.model.clips[k];const w0=k==='header'?es-.45:st,w1=k==='header'?es+.5:st+(cl?cl.duration:0)+.3;/* v104: 헤더 동작은 접촉 전후 0.45~0.5초만 — 그 밖에는 속도에 맞는 달리기 동작(저자세로 미끄러지던 문제) */if(cl&&t>=w0&&t<=w1)ev={k,time:t-st}}
+        if(isSh0){const hd=/^(header|corner|cross|fkx)$/.test(e.type||'');const k=hd?'header':e.type==='pen'?'pen':v>2.2?'shootRun':'shoot';const imp={header:.95,pen:.72,shootRun:.47,shoot:.2}[k];const st=es-imp,cl=R3.model.clips[k];const w0=k==='header'?es-.45:st,w1=k==='header'?es+.5:st+(cl?cl.duration:0)+.3;/* v104: 헤더 동작은 접촉 전후 0.45~0.5초만 — 그 밖에는 속도에 맞는 달리기 동작(저자세로 미끄러지던 문제) */if(cl&&t>=w0&&t<=w1)ev={k,time:t-st}}
         if(isGk0&&e.t!=='miss'){const bl=at(Math.min(es+.5,tE),f=>f.b)||[52.5,34,0];const dz=(bl[1]-34)-o.position.z;const hb=(at(Math.min(es+.35,tE),f=>f.b)||[0,0,0])[2];const k=e.t==='save'&&aerialE&&hb>1?'gkBlock':e.t==='save'&&Math.abs(dz)<1.3?'gkCatch':'gkDive';const st=es+.02,cl=R3.model.clips[k];
           if(cl&&t>=st&&t<=st+cl.duration){ev={k,time:t-st};if(k==='gkDive'){const want=dz>=0?1:-1;const lx=-Math.sin(o.rotation.y);const sideNow=R3.model.diveSign*(lx>=0?1:-1);u.inner.scale.x=Math.abs(u.inner.scale.x)*(sideNow===want?1:-1)}}}
         if(!ev&&id===duelId){const cl=R3.model.clips.header,st=es-.95-.06;if(cl&&t>=es-.5&&t<=es+.45)ev={k:'header',time:t-st}}
@@ -5961,7 +5963,9 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
       // 골 세리머니
       if(e.t==='goal'&&t>es+.55&&(isSh||actors.as&&actors.as.g===o)){u.arms[0].rotation.z=2.6;u.arms[1].rotation.z=-2.6;if(isSh)o.position.y=Math.abs(Math.sin((t-es)*7))*.22}
     });
-    const B=ballAt(tt);const bx=B[0]-52.5,bz=B[1]-34,by=Math.max(0,B[2]);const pb=ball.position;const mvb=Math.hypot(bx-pb.x,bz-pb.z);ball.position.set(bx,.2+by*1.05,bz);ball.rotation.x+=mvb*5;bsh.position.set(bx,.02,bz);
+    let B=ballAt(tt);/* v153 슈팅 공 타이밍: 엔진 프레임은 0.5초 간격이라 공이 마지막 소유 프레임(es-0.5)부터 이미 날아가기 시작해 슈팅 동작(접촉 = es)보다 먼저 출발했음 → es까지 슈터 발에 붙여 두고, es부터 0.5초 동안 발→다음 궤적 지점으로 */
+    if(kick&&kick.id&&P[kick.id]){if(tt<es&&tt>=kick.t0){const q=feet(kick.id);if(q){B=q;kick.last=q}}else if(tt>=es&&tt<es+.5&&kick.last){const B1=ballAt(Math.min(tE,es+.5));const u=(tt-es)/.5;B=kick.last.map((v,j)=>v+((B1[j]||0)-v)*u)}}
+    const bx=B[0]-52.5,bz=B[1]-34,by=Math.max(0,B[2]);const pb=ball.position;const mvb=Math.hypot(bx-pb.x,bz-pb.z);ball.position.set(bx,.2+by*1.05,bz);ball.rotation.x+=mvb*5;bsh.position.set(bx,.02,bz);
     fpsN++;if(now-fpsT>1000){fpsV=Math.round(fpsN*1000/(now-fpsT));fpsN=0;fpsT=now;const dg=document.getElementById('r3diag');if(dg){let ani='';try{const u=Object.values(P)[0].g.userData;ani=u.sk?(u.cur||'-'):'인형'}catch(e){}dg.textContent=`${R3.model?'선수 모델 OK':'단순 인형'+(R3.err?' ('+R3.err+')':'')} · ${ren.capabilities.isWebGL2?'WebGL2':'WebGL1'}${ren.capabilities.floatVertexTextures?'':' · 뼈텍스처X'} · ${fpsV}fps · 동작 ${ani}${R3.aerr?' · 오류 '+R3.aerr:''}`}}
     camFor(mode,bx,bz,by);if(first){cpS.copy(cp);lkS.copy(lk);first=false}cpS.lerp(cp,Math.min(1,dt*2.6));lkS.lerp(lk,Math.min(1,dt*7));cam.position.copy(cpS);cam.lookAt(lkS);ren.render(sc,cam)};
   window.__r3={setT:x=>{t=x},getT:()=>t,setSpd:x=>{spd=x},SCH,fr,es,t0,tE,P,cam,ball};
