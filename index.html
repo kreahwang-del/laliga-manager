@@ -5269,6 +5269,14 @@ function mvSeasonEnd(){if(!S||!S.ps)return;const y=S.season,tbl={},eu={},rep=[];
     const up=rep.filter(r=>r[1]>=.05).slice(0,5),dn=rep.filter(r=>r[1]<=-.05).slice(-5).reverse();
     inbox('board','',`시즌 성과 반영 시장가치 재평가`,`리그 출전 시간·공격 포인트·팀 순위·유럽대회 출전을 반영해 선수 가치를 다시 매겼습니다(실제 이적시장 변동 경향 기준).${up.length?'<br><b>상승</b><br>'+up.map(fmt).join('<br>'):''}${dn.length?'<br><b>하락</b><br>'+dn.map(fmt).join('<br>'):''}`)}}
 {const _roMV=rollover;rollover=function(){try{mvSeasonEnd()}catch(e){console.error(e)}return _roMV.apply(this,arguments)}}
+// v145 빠른 경기(다른 리그) 출전 시간 현실화: 교체 없이 선발 11명 90분만 기록되던 것을 실제 분포에 가깝게
+//  (실측 5대 리그: 교체 5명 시대 경기당 팀 교체 약 4.5명, 교체 투입 평균 약 25분) — 선발 중 4~5명을 60~80분으로, 그 시간을 벤치 상위 선수에게
+{const _fm=fastMatch;fastMatch=function(f){const lgM=f.cup==null&&!f.eu&&!f.po&&!f.ko&&!f.md;if(!lgM||!S)return _fm.apply(this,arguments);const snap={};
+  [f.h,f.a].forEach(c=>{if(c===S.club||!CLUBS[c])return;squadOf(c).forEach(p=>{const q=S.ps[p.id];snap[p.id]=q?(q.mins||0):0})});const r=_fm.apply(this,arguments);
+  try{[f.h,f.a].forEach(c=>{if(c===S.club||!CLUBS[c])return;const sq=squadOf(c);const st=sq.filter(p=>((S.ps[p.id]||{}).mins||0)-(snap[p.id]||0)===90&&p.g!=='GK');if(st.length<8)return;
+    const bench=sq.filter(p=>((S.ps[p.id]||{}).mins||0)===(snap[p.id]||0)&&!(p.injD>0)&&p.g!=='GK'&&!((S.ps[p.id]||{}).res&&ageOf(p)>=23)).sort((a,b)=>b.ovr-a.ovr).slice(0,7);if(!bench.length)return;
+    const k=4+(hsh(f.d+':'+c+'n')<.5?1:0);const w=p=>(p.g==='ST'||p.g==='W'||p.g==='AM'?3:p.g==='CM'||p.g==='DM'?2:1);const pick=st.slice().sort((a,b)=>w(b)*hsh(f.d+b.id)-w(a)*hsh(f.d+a.id)).slice(0,Math.min(k,bench.length));
+    pick.forEach((p,i)=>{const off=Math.round(60+hsh(f.d+':o'+p.id)*25);const sub=bench[i];const q=S.ps[p.id];q.mins-=90-off;const qb=S.ps[sub.id]=S.ps[sub.id]||{};qb.mins=(qb.mins||0)+(90-off);qb.apps=(qb.apps||0)+1;qb.played=S.date})})}catch(e){console.error(e)}return r}}
 
 // ================= 임대 명단·임대 제안(v136) =================
 // 이전: '임대 보내기'를 누르면 평판 낮은 아무 구단으로 즉시 이적 → 실제 관행과 다름
@@ -5365,6 +5373,24 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
   S.fin.budget-=c;S.fin.log.unshift({d:S.date,t:`${p.name} 계약 해지 위로금`,v:-c});setP(id,{club:FA,listed:false,loanList:false,res:false,promise:null,cEnd:S.date});if(S.xi)S.xi=S.xi.filter(x=>x!==id);SQC=null;
   S.news.unshift({d:S.date,t:`${p.name}: ${CLUBS[S.club].name}와 계약 해지 (자유계약)`,v:0});save();closeSheet();render();toast(`${p.name} 방출 · 위로금 ${money(c)}`)},true);
 {const _ps=playerSheet;playerSheet=function(id){const r=_ps.apply(this,arguments);try{if(clubOf(id)===S.club&&!document.querySelector('[data-relopen]')){const q=S.ps[id]||{};if(q.loanFrom!=null&&q.loanFrom!==S.club)return r;const b=document.querySelector('[data-act="loanout"]');const row=b&&b.parentElement;if(row){const d=document.createElement('div');d.className='row2';d.innerHTML=`<button class="btn ghost" data-relopen="${id}">계약 해지(방출)</button>`;(document.querySelector('[data-res]')?.parentElement||row).after(d)}}}catch(e){console.error(e)}return r}}
+// ---- AI 구단끼리 임대(v144): 이적시장 기간 매주 월요일, AI 구단의 23세 이하 출전 기회 적은 선수(팀 내 19위 밖 또는 2군)를 평판이 낮은 구단에 임대 ----
+// 실제 경향: 5대 리그 구단은 시즌마다 유망주를 하위 구단·하위 리그로 여러 명 임대(FIFA 한도 6명, 21세 이하·자체 육성 제외). 받는 구단은 로테이션 이상 역할을 줄 수 있는 경우만
+function aiLnOutCnt(c){return (S.aiLn||[]).filter(id=>{const q=S.ps[id];return q&&q.loanFrom===c&&clubOf(id)!==c&&!(ageOf(pl(id))<=21)}).length}
+function aiLoanWeek(){S.aiLn=S.aiLn||[];const lenders=CLUBS.filter(c=>c&&c.i!==S.club&&c.i!=null&&fxLg(c.lg).length&&!(c.par!=null));let made=0;
+  for(const L of lenders){if(hsh(S.date+'al'+L.i)>.35)continue;const sq=squadOf(L.i).slice().sort((a,b)=>b.ovr-a.ovr);
+    const cand=sq.filter((p,i)=>{const q=S.ps[p.id]||{};return ageOf(p)<=23&&(i>=18||q.res)&&q.loanFrom==null&&!(p.injD>0)});if(!cand.length)continue;
+    const p=cand[Math.floor(hsh(S.date+'ac'+L.i)*cand.length)];if(!(ageOf(p)<=21)&&aiLnOutCnt(L.i)>=LN_MAX)continue;
+    const NE=new Set(['AR','BR','US','MX','KR','JP','CN','SA']),eu=x=>!NE.has(x);const B=CLUBS.filter(c=>c&&c.i!==L.i&&c.i!==S.club&&c.i!=null&&!(c.par!=null)&&eu(c.lg)===eu(L.lg)&&c.rep<L.rep-4&&c.rep>=L.rep-45&&fxLg(c.lg).filter(f=>!f.res&&f.d>S.date&&(f.h===c.i||f.a===c.i)).length>=8).map(c=>[c,lnRole(p,c.i)]).filter(x=>x[1]>=1);
+    if(!B.length)continue;const [to,role]=B[Math.floor(hsh(S.date+'ab'+p.id)*B.length)];if((S.aiLn||[]).filter(id=>(S.ps[id]||{}).loanFrom===L.i&&clubOf(id)===to.i).length>=LN_PER)continue;
+    if(typeof sqSize==='function'&&sqSize(L.i)<=20)continue;
+    completeTransfer(p.id,to.i,0,{loan:true});const q=S.ps[p.id];q.loanFrom=L.i;q.lnRole=role;q.res=false;S.aiLn.push(p.id);made++;
+    if(made<=3||CLUBS[L.i].lg==='ES')S.news.unshift({d:S.date,t:`${p.name}: ${CLUBS[L.i].name} → ${to.name} (임대)`,v:0})}SQC=null}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{const w=winNow();if(S&&w&&D(S.date).getUTCDay()===1&&S.date<addD(w.to,-2))aiLoanWeek()}catch(e){console.error(e)}return r}}
+{const _ro=rollover;rollover=function(){const r=_ro.apply(this,arguments);try{S.aiLn=[]}catch(e){}return r}}
+// 받는 구단은 AI 임대 선수에게도 약속 역할 이행
+{const _tf=teamFor;teamFor=function(c){const T=_tf.apply(this,arguments);try{if(!S||c===S.club||!T||!T.xi||!S.aiLn||!S.aiLn.length)return T;
+  for(const id of S.aiLn){if(clubOf(id)!==c)continue;const q=S.ps[id];if(!q||q.injD>0||T.xi.some(x=>x.id===id))continue;const role=q.lnRole??1;if(role===0||(role===1&&hsh(S.date+':'+id)>.45))continue;
+    const p=pl(id);let k=-1,lo=99;T.xi.forEach((x,i)=>{if(x.g===p.g&&x.ovr<lo){lo=x.ovr;k=i}});if(k>=0)T.xi[k]=p}}catch(e){console.error(e)}return T}}
 
 // ================= 2군(리저브 스쿼드, v136 — C방식 1단계) =================
 // 실제 규정: 라리가 1군은 등번호 1~25번 등록, 2군(필리알)에 등록된 23세 미만 선수는 1~25번 없이 1군 경기에 나설 수 있음
@@ -5479,7 +5505,7 @@ function es3Exchange(t2){if(!S.genC3||!S.genC3.length||!t2||t2.length<8)return;c
   // 3부 B팀의 1군이 3부로 오면(가상 상황) B팀은 대기 명단으로
   [...gA,...gB].forEach(c=>{const C=CLUBS[c];if(C.par!=null&&down.includes(C.par)){gA.delete(c);gB.delete(c);setLg(c,'X3')}});
   // 4부에서 채우기: 대기 명단(X3, 이전 강등 팀) + 후보 목록
-  const fill=(G,lg)=>{while(G.size<20){let pool=CLUBS.filter(C=>C&&C.lg==='X3'&&!relA.includes(C.i)&&!relB.includes(C.i)&&!(C.par!=null&&!['ES','ES2'].includes(CLUBS[C.par].lg)));let c=null;
+  const fill=(G,lg)=>{let guard=0;while(G.size<20&&guard++<60){let pool=CLUBS.filter(C=>C&&C.lg==='X3'&&!gA.has(C.i)&&!gB.has(C.i)&&!relA.includes(C.i)&&!relB.includes(C.i)&&!(C.par!=null&&!['ES','ES2'].includes(CLUBS[C.par].lg)));let c=null;
       if(pool.length&&hsh(S.season+lg+G.size)<.6){c=pool[Math.floor(hsh(S.season+'p'+lg+G.size)*pool.length)].i}else{const row=ES3_POOL.find(r=>!CLUBS.some(C=>C&&C.name===r[0])&&(r[2]!=='B'||(()=>{const pi=es3Par(r[3]);return pi!=null&&['ES','ES2'].includes(CLUBS[pi].lg)})()));if(row){c=es3MakeClub(row[0],row[1],row[2],row[3],lg).i}else if(pool.length)c=pool[0].i}
       if(c==null)break;G.add(c)}};
   relA.concat(relB).forEach(c=>setLg(c,'X3'));fill(gA,'ES3A');fill(gB,'ES3B');gA.forEach(c=>setLg(c,'ES3A'));gB.forEach(c=>setLg(c,'ES3B'));
