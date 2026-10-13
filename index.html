@@ -5330,6 +5330,11 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
   for(const id of lnOut()){if(clubOf(id)!==c)continue;const q=S.ps[id];if(q.injD>0||T.xi.some(x=>x.id===id))continue;const role=q.lnRole??1;
     if(role===0||(role===1&&hsh(S.date+':'+id)>.45))continue;const p=pl(id);let k=-1,lo=99;T.xi.forEach((x,i)=>{if(x.g===p.g&&x.ovr<lo){lo=x.ovr;k=i}});
     if(k<0)T.xi.forEach((x,i)=>{if(x.g!=='GK'&&p.g!=='GK'&&x.ovr<lo){lo=x.ovr;k=i}});if(k>=0){T.xi[k]=p;if(T.bench)T.bench=T.bench.filter(b=>b.id!==id)}}}catch(e){console.error(e)}return T}}
+// ---- 이적 협상 인내심(v141): 3번 거절이면 결렬 → 제안이 요구액에 가까울수록 적게 소모(요구액 90% 이상 1/3번, 80~90% 1/2번, 그 아래 1번), 직전보다 3% 이상 올리면 소모 25% 감소 ----
+{const _cr=clubRespond;clubRespond=function(p,o){if(!o||o.loan)return _cr.apply(this,arguments);const n=S.negs[p.id]||(S.negs[p.id]={stage:'club',tries:0});
+  if(n.stage!=='club')return _cr.apply(this,arguments);let ask=0,e=0;try{ask=asking(p,S.club);e=effOffer(o)}catch(err){return _cr.apply(this,arguments)}
+  let w=e>=ask*.9?1/3:e>=ask*.8?.5:1;if(n.lastE&&e>=n.lastE*1.03)w*=.75;const t0=n.tries||0;n.tries=t0-1+w;const pre=n.tries;const r=_cr.apply(this,arguments);
+  try{if(n.tries===pre)n.tries=t0;n.lastE=e;if(r&&r.msg){r.msg=r.msg.replace('세 번의 제안이 모두 부족해','여러 번의 제안이 모두 부족해');if(n.stage==='club'&&r.k!=='ok'){const left=Math.max(0,Math.floor((3-n.tries)/(e>=ask*.9?1/3:e>=ask*.8?.5:1)+1e-9));r.msg+=` (비슷한 금액이면 약 ${left}번 더 제안 가능)`}}}catch(err){}return r}}
 
 // ================= 2군(리저브 스쿼드, v136 — C방식 1단계) =================
 // 실제 규정: 라리가 1군은 등번호 1~25번 등록, 2군(필리알)에 등록된 23세 미만 선수는 1~25번 없이 1군 경기에 나설 수 있음
