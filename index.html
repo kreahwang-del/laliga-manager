@@ -2355,12 +2355,16 @@ function tick(){
   /* v140 경기 중 전술 화면을 열었다 돌아올 때 이전 재생이 끝나기 전에 다시 tick이 불려 진행 고리가 2개가 되던 문제(재생이 서로 끊겨 뚝뚝 끊기고 시간이 2배로 흐름): 재생 중이면 그 재생이 끝난 뒤 이어서 진행 */
   if(M.animating)return;
   M.animating=true;const id=M.chain=(M.chain||0)+1;
-  const evs=M.m.step(); if(evs===null){M.animating=false;finish();return}
-  evs.forEach(feed); updateBoard();
-  if(M.skipping){afterPlay();return}
-  playEvents(evs).then(()=>{if(M&&M.chain===id)afterPlay()});
+  M.min0=M.m.min;const evs=M.m.step(); if(evs===null){M.animating=false;finish();return}
+  /* v155 중계 동기화: 이전엔 1분 단위 계산 직후 문자 중계·점수·시계를 먼저 바꾸고 그 1분을 재생 → 느린 속도에서 골 표시가 장면보다 수십 초 먼저 나왔음. 이제 시각(sec)이 있는 이벤트는 재생 시점에 표시 */
+  const v4=!M.skipping&&M.m.v===4&&(M.m.st.frames||[]).length;M.evQ=v4?evs.filter(e=>e.sec!=null):[];M.clk=v4?M.m.st.frames[0].t:null;
+  evs.forEach(e=>{if(!M.evQ.includes(e))feed(e)}); updateBoard();
+  if(M.skipping){evFlush();afterPlay();return}
+  playEvents(evs).then(()=>{evFlush();if(M&&M.chain===id)afterPlay()});
 }
-function updateBoard(){const st=M.m.st;M.subsLeft=Math.max(0,5-st.subs[M.me].length);{const el=$('#msl');if(el)el.textContent=M.subsLeft}$('#msc').textContent=`${st.sc[0]} : ${st.sc[1]}`;$('#mck').textContent=`${M.m.min}'`;mstats();mpst()}
+function evFlush(t){if(!M||!M.evQ)return;let ch=false;while(M.evQ.length&&(t==null||M.evQ[0].sec<=t)){feed(M.evQ.shift());ch=true}if(t==null){M.evQ=[];M.clk=null}else M.clk=t;if(ch||t==null)updateBoard();else{const el=$('#mck');if(el)el.textContent=`${clkMin()}'`}}
+function clkMin(){const m=M.m.min;if(M.clk==null||M.min0==null)return m;return Math.min(m,M.min0)}
+function updateBoard(){const st=M.m.st;M.subsLeft=Math.max(0,5-st.subs[M.me].length);{const el=$('#msl');if(el)el.textContent=M.subsLeft}{const q=M.evQ||[],g=x=>st.sc[x]-q.filter(e=>e.t==='goal'&&e.s===x).length;$('#msc').textContent=`${g(0)} : ${g(1)}`}$('#mck').textContent=`${clkMin()}'`;mstats();mpst()}
 function mstats(){const st=M.m.st,tp=st.pos[0]+st.pos[1]||1,po=[Math.round(st.pos[0]/tp*100)];po[1]=100-po[0];
   const row=(l,a,b,f=x=>x)=>{const m=Math.max(a,b,.01);return `<div class="cmp"><div class="row"><span class="v">${f(a)}</span><div class="bar l"><i style="width:${a/m*100}%;background:${a>=b?'var(--amber)':'var(--faint)'}"></i></div><span class="lab">${l}</span><div class="bar"><i style="width:${b/m*100}%;background:${b>=a?'var(--amber)':'var(--faint)'}"></i></div><span class="v">${f(b)}</span></div></div>`};
   $('#mst').innerHTML=row('점유율',po[0],po[1])+row('슈팅',st.sh[0],st.sh[1])+row('xG',st.xg[0],st.xg[1],x=>x.toFixed(2))}
@@ -2695,6 +2699,7 @@ function play4(frames,evs){return new Promise(res=>{if(!M||M.skipping||!frames.l
   const rate=t=>{const base=20*(M.speed||1);let r=base;for(const w of hl)if(t>=w.a&&t<=w.b)r=Math.min(r,w.r*Math.sqrt(M.speed||1));if(r===base&&rsAt(t))r=base*((M.speed||1)<1?2:4); /* v152 느린 속도에선 재개 구간 빨리감기를 2배로만 */return r};
   const loop=now=>{if(A2.token!==tok||!M){A2.busy=false;return res()}const dt=Math.min(.1,(now-last)/1000);last=now;gt+=dt*rate(gt);
     if(M.skipping){A2.busy=false;return res()}
+    if(M.evQ&&M.evQ.length&&typeof evFlush==='function')evFlush(gt);else if(M.clk!=null&&typeof evFlush==='function'&&(gt-M.clk)>2)evFlush(gt);
     while(ci<caps.length&&caps[ci].t<=gt){const c=caps[ci++].c;cap(c[0],c[1])}
     if(gt>=t1){const f=frames[frames.length-1];draw4(f,null,0);A2.busy=false;return res()}
     let i=0;while(i<frames.length-1&&frames[i+1].t<gt)i++;const f0=frames[i],f1=frames[i+1];const k=f1?Math.max(0,Math.min(1,(gt-f0.t)/(f1.t-f0.t||1))):0;draw4(f0,f1,k);
