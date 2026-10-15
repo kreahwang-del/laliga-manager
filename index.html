@@ -6254,7 +6254,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
         if(ev&&/^(pass|shoot|shootRun|pen)$/.test(ev.k)&&!isGk0){const lf=r3LeftFoot(id,isSh0&&!!e.weak);u.inner.scale.x=Math.abs(u.inner.scale.x)*(lf?-1:1)}
         else{if(!isGk0)u.inner.scale.x=Math.abs(u.inner.scale.x);
           if(v>.6){const a=r3Act(u,back?'jogB':'jog',{fade:.22});if(a)a.timeScale=Math.max(.5,Math.min(3.2,v/(back?1.7:2)))}else{const a=r3Act(u,u.gk?'gkIdle':'idle',{fade:.3});if(a)a.timeScale=1}}
-        try{u.mixer.update(dA)}catch(er){R3.aerr=String(er.message||er).slice(0,60)}o.position.y=0;
+        try{u.mixer.update(dA)}catch(er){R3.aerr=String(er.message||er).slice(0,60)}o.position.y=0;/* v168 헤딩 점프: 접촉 0.35초 전~0.35초 뒤 포물선. 높이 = 접촉 순간 공 높이 − 1.6m(0.3~0.65m, 실제 공중볼 경합 점프 대략 0.3~0.7m), 헤딩 클립엔 점프가 없음 */if(ev&&ev.k==='header'&&t>es-.35&&t<es+.35){const hb=.2+Math.max(0,((at(es,f=>f.b)||[0,0,0])[2]||0))*1.05;const jh=Math.max(.3,Math.min(.65,hb-1.6));o.position.y=jh*Math.sin(Math.PI*(t-(es-.35))/.7)}
         // 득점자 비행기 세리머니: 팔을 옆으로 쭉 편 기본 자세로 서서히 덮어씀
         if(ev&&ev.thr!=null&&u.arms)r3Throw(u,ev.thr,ev.thrImp);
         if(cel&&id===cel.id&&t>es+1.1&&u.arms){const w=Math.min(1,(t-es-1.1)/.5);['LeftArm','RightArm','LeftForeArm','RightForeArm'].forEach(k=>{const A=u.arms[k];if(A)A.o.quaternion.slerp(A.q,w)})}
