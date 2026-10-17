@@ -2359,6 +2359,7 @@ function table(){const t={};LIGA.forEach(id=>t[id]={id,p:0,w:0,d:0,l:0,gf:0,ga:0
     if(a>b){H.w++;Aw.l++;H.pts+=3}else if(a<b){Aw.w++;H.l++;Aw.pts+=3}else{H.d++;Aw.d++;H.pts++;Aw.pts++}});
   return Object.values(t).sort((x,y)=>y.pts-x.pts||(y.gf-y.ga)-(x.gf-x.ga)||y.gf-x.gf)}
 
+function rnd0(v){return v==null||isNaN(v)?'-':Math.round(v)}
 // v150 속도 버튼은 '지금 속도'를 표시(이전엔 다음 단계 이름이 보여, 3배속인데 '느리게'로 보였음). 고른 속도는 다음 경기에도 유지
 function spdLbl(v){return v===3?'속도: 빠르게':v===.5?'속도: 느리게':v===.25?'속도: 아주 느리게':'속도: 보통'} // v152 아주 느리게(¼) 추가
 // ================= 경기 화면(실시간 진행·결정적 순간) =================
@@ -2451,7 +2452,7 @@ function momentSheet(kind,data){
   const opt=(id,l,sub)=>`<button class="btn ghost" data-mo="${id}" style="text-align:left;display:block"><b>${l}</b>${sub?`<div class="note" style="margin:2px 0 0">${sub}</div>`:''}</button>`;
   let h='';
   if(k==='pen'){const T=M.m.T[me];const c=T.xi.filter(p=>p.g!=='GK').sort((a,b)=>((b.pen??10)*.7+(b.comp??12)*.3)-((a.pen??10)*.7+(a.comp??12)*.3));const d0=S.tac.setp&&S.tac.setp.pen;
-    h=`<div class="note" style="margin:0">${M.m.min}' · 페널티킥을 얻었습니다</div><h3>키커를 고르세요</h3>${c.slice(0,6).map(p=>`<button class="li" data-pk="${p.id}">${avatar(p,'sm')}<span class="pos ${p.g}">${p.g}</span><span class="nm"><b>${esc(p.name)}${p.id===d0?' <span style="color:var(--amber);font-size:11px">지정 키커</span>':''}</b><span>페널티 ${p.pen??'-'} · 침착성 ${p.comp??'-'} · 오늘 평점 ${(M.m.st.pr[p.id]||{r:6.5}).r.toFixed(1)}</span></span></button>`).join('')}`}
+    h=`<div class="note" style="margin:0">${M.m.min}' · 페널티킥을 얻었습니다</div><h3>키커를 고르세요</h3>${c.slice(0,6).map(p=>`<button class="li" data-pk="${p.id}">${avatar(p,'sm')}<span class="pos ${p.g}">${p.g}</span><span class="nm"><b>${esc(p.name)}${p.id===d0?' <span style="color:var(--amber);font-size:11px">지정 키커</span>':''}</b><span>페널티 ${rnd0(p.pen)} · 침착성 ${rnd0(p.comp)} · 오늘 평점 ${(M.m.st.pr[p.id]||{r:6.5}).r.toFixed(1)}</span></span></button>`).join('')}`}
   else if(k==='half'){M.halfOpen=true;h=`<div class="note" style="margin:0">하프타임 · ${st.sc[0]} : ${st.sc[1]}</div><h3>팀토크</h3>
     ${opt('t_praise','칭찬','"잘하고 있다, 이대로 가자" — 앞서고 있을 때 효과적')}${opt('t_calm','침착','"서두르지 말고 우리 플레이" — 접전에서 안정')}${opt('t_angry','질책','"이 정도로는 안 된다" — 뒤질 때 프로의식 높은 팀에 효과, 반발 위험')}
     <div class="row2" style="margin-top:12px"><button class="btn ghost" data-act="msubs">교체</button><button class="btn ghost" data-act="mtac">전술 변경</button></div>
@@ -3168,7 +3169,7 @@ function tacView(){
     return `<button class="mu" data-mslot="${i}"><span class="k">${keys[i]}</span><span><b>${esc(shortName(me.name))} ↔ ${esc(shortName(q.p.name))}</b>${mk&&mk.on?' <span class="mbadge" style="position:static;display:inline-grid">M</span>':''}<div class="meta">속도 ${me.pace} vs ${q.p.pace} · 태클 ${me.tackle} vs 드리블 ${q.p.drib}</div></span><span class="vd ${c}">${t}</span></button>`}).join('')}
   <p class="note">줄을 누르면 맨마킹을 설정할 수 있습니다.</p></section>`:''}
   <section class="card pad"><h2 style="margin-top:0">세트피스 키커</h2>${[['cornerL','왼쪽 코너',p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='right'?1.06:1)],['cornerR','오른쪽 코너',p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='left'?1.06:1)],['fk','프리킥',p=>p.fk??10],['pen','페널티킥',p=>(p.pen??10)*.7+(p.comp??12)*.3]].map(([k,l,f])=>{const cur=T.setp&&T.setp[k]&&xi.includes(T.setp[k])?pl(T.setp[k]):null;const auto=xi.map(pl).filter(p=>p.g!=='GK').sort((a,b)=>f(b)-f(a))[0];
-    return `<button class="mu" data-kick="${k}"><span class="k">${l}</span><span><b>${esc((cur||auto).name)}</b><div class="meta">${cur?'직접 지정':'자동 선택'} · ${k.startsWith('corner')?`크로스 ${(cur||auto).cross} · ${({right:'오른발',left:'왼발',both:'양발'})[(cur||auto).foot]||''}${((k==='cornerL'&&(cur||auto).foot==='right')||(k==='cornerR'&&(cur||auto).foot==='left'))?' · 인스윙':''}`:k==='fk'?`프리킥 ${(cur||auto).fk??'-'}`:`페널티 ${(cur||auto).pen??'-'} · 침착성 ${(cur||auto).comp??'-'}`}</div></span><span class="vd eq">변경</span></button>`}).join('')}</section>
+    return `<button class="mu" data-kick="${k}"><span class="k">${l}</span><span><b>${esc((cur||auto).name)}</b><div class="meta">${cur?'직접 지정':'자동 선택'} · ${k.startsWith('corner')?`크로스 ${(cur||auto).cross} · ${({right:'오른발',left:'왼발',both:'양발'})[(cur||auto).foot]||''}${((k==='cornerL'&&(cur||auto).foot==='right')||(k==='cornerR'&&(cur||auto).foot==='left'))?' · 인스윙':''}`:k==='fk'?`프리킥 ${(cur||auto).fk??'-'}`:`페널티 ${rnd0((cur||auto).pen)} · 침착성 ${rnd0((cur||auto).comp)}`}</div></span><span class="vd eq">변경</span></button>`}).join('')}</section>
   <section class="card pad"><h2 style="margin-top:0">전술 성향 · 숙련도 ${Math.round(T.fam)}</h2>
     ${(()=>{const sm=E3.styleMap(xi.map(pl));const up=Object.keys(sm).filter(k=>sm[k]>0),dn=Object.keys(sm).filter(k=>sm[k]<0);
       return `<div class="chips" style="margin-top:0">${Object.keys(E3.PRESETS).map(k=>`<button class="chip" data-preset="${k}" aria-pressed="${T.preset===k}">${k}${sm[k]>0?' <b style="color:var(--good)">▲</b>':sm[k]<0?' <b style="color:var(--bad)">▼</b>':''}</button>`).join('')}</div>
@@ -3276,7 +3277,7 @@ document.addEventListener('contextmenu',e=>{if(e.target.closest('.slot,.bch'))e.
 function kickSheet(kind){const f={cornerL:p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='right'?1.06:1),cornerR:p=>(p.cross*.5+(p.fk??10)*.5)*(p.foot==='left'?1.06:1),fk:p=>p.fk??10,pen:p=>(p.pen??10)*.7+(p.comp??12)*.3}[kind];const L={cornerL:'왼쪽 코너킥',cornerR:'오른쪽 코너킥',fk:'프리킥',pen:'페널티킥'}[kind];
   const list=S.xi.map(pl).filter(p=>p.g!=='GK').sort((a,b)=>f(b)-f(a));
   sheet(`<button class="x" data-close>닫기</button><h3>${L} 키커</h3><button class="li" data-kickset="${kind}" data-v=""><span class="nm"><b>자동 선택</b><span>경기마다 가장 적합한 선수</span></span></button>
-   ${list.map(p=>`<button class="li" data-kickset="${kind}" data-v="${p.id}">${avatar(p,'sm')}<span class="pos ${p.g}">${p.g}</span><span class="nm"><b>${esc(p.name)}</b><span>${kind.startsWith('corner')?`크로스 ${p.cross} · ${({right:'오른발',left:'왼발',both:'양발'})[p.foot]||''}${((kind==='cornerL'&&p.foot==='right')||(kind==='cornerR'&&p.foot==='left'))?' · 인스윙':''}`:kind==='fk'?`프리킥 ${p.fk??'-'} · ${({right:'오른발',left:'왼발',both:'양발'})[p.foot]||''}`:`페널티 ${p.pen??'-'} · 침착성 ${p.comp??'-'}`}</span></span><span class="ovr num">${Math.round(f(p))}</span></button>`).join('')}`)}
+   ${list.map(p=>`<button class="li" data-kickset="${kind}" data-v="${p.id}">${avatar(p,'sm')}<span class="pos ${p.g}">${p.g}</span><span class="nm"><b>${esc(p.name)}</b><span>${kind.startsWith('corner')?`크로스 ${p.cross} · ${({right:'오른발',left:'왼발',both:'양발'})[p.foot]||''}${((kind==='cornerL'&&p.foot==='right')||(kind==='cornerR'&&p.foot==='left'))?' · 인스윙':''}`:kind==='fk'?`프리킥 ${p.fk??'-'} · ${({right:'오른발',left:'왼발',both:'양발'})[p.foot]||''}`:`페널티 ${rnd0(p.pen)} · 침착성 ${rnd0(p.comp)}`}</span></span><span class="ovr num">${Math.round(f(p))}</span></button>`).join('')}`)}
 
 document.addEventListener('click',e=>{if(UI.tab!=='tac'||suppressClick)return;if(e.target.closest('[data-pinfo]'))return;const b=e.target.closest('.bch');
   if(b){const id=+b.dataset.bench;TAC.bsel=TAC.bsel===id?null:id;TAC.sel=null;render();return}
@@ -3332,7 +3333,7 @@ function spView(){SPR=null;const g=spGEff(),sp=S.tac.sp;const an=spAutoN(),rc=sp
    <button class="mu" data-spdef="1"><span class="k">마크 방식</span><span><b>${ML[g.dMark||'mixed']}${g.auto?' <span class="note">경기마다 자동</span>':''}</b><div class="meta">골포스트 ${g.posts??0}명 · 역습 대기 ${g.outlet??1}명 · 프리킥 수비벽 ${g.wall??4}명</div></span><span class="vd eq">변경</span></button></section>
   <section class="card pad"><h2 style="margin-top:0">스로인·페널티킥</h2>
    <button class="mu" data-splt="1"><span class="k">롱 스로인</span><span><b>${lt?'사용':'사용 안 함'}</b><div class="meta">${lt?`상대 진영 3분의 1 스로인을 박스로 · 투척 ${esc((thr||{name:'자동(힘 최고)'}).name)}`:'상대 진영 3분의 1에서 스로인을 박스 안으로 던집니다'}</div></span><span class="vd eq">변경</span></button>
-   <button class="mu" data-kick="pen"><span class="k">페널티킥</span><span><b>${esc((pens||pauto).name)}</b><div class="meta">${pens?'직접 지정':'자동 선택'} · 페널티 ${(pens||pauto).pen??'-'} · 침착성 ${(pens||pauto).comp??'-'}</div></span><span class="vd eq">변경</span></button></section>`}
+   <button class="mu" data-kick="pen"><span class="k">페널티킥</span><span><b>${esc((pens||pauto).name)}</b><div class="meta">${pens?'직접 지정':'자동 선택'} · 페널티 ${rnd0((pens||pauto).pen)} · 침착성 ${rnd0((pens||pauto).comp)}</div></span><span class="vd eq">변경</span></button></section>`}
 function spPreview(sit){const x=spEff(sit),k=SP_SIT[sit][1],side=sit.slice(-1),nsg=side==='L'?-1:1;const atk=x.atk??5;
   /* 공격 배치 슬롯(엔진과 동일): [골라인에서 거리, 니어 방향 오프셋] */
   const sl=[[4.5,2.5],[10.5,1],[7,-4.5],[12,-2],[14,.5],[5.5,5.5],[1.7,0]].slice(0,atk);const P=(d,o)=>[34+nsg*o,d];
