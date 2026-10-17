@@ -3714,7 +3714,15 @@ function careerWeekly(){if(!S.mg||!S.exp)return;const rd=(typeof fxOf==='functio
     if(w<w0&&w===0)inbox('eval','','이사회 신뢰 회복','최근 성적으로 이사회의 우려가 해소됐습니다.');
     S.me.warn=w}
 }
-function spellRec(c,since){const r=recOf(c,since);return {P:r.length,W:r.filter(x=>x===3).length,D:r.filter(x=>x===1).length,L:r.filter(x=>x===0).length}}
+/* v172: 지난 시즌 리그 기록 누적 — S.fixtures는 시즌마다 새로 만들어져, 예전엔 여러 시즌 부임해도 마지막 시즌 기록만 남았음. 시즌 넘김 직전에 지휘 중인 부임(구단|부임일)별로 S.spAcc에 더해 둠 */
+function recRaw(c,since){const r=recOf(c,since);return {P:r.length,W:r.filter(x=>x===3).length,D:r.filter(x=>x===1).length,L:r.filter(x=>x===0).length}}
+function spellRec(c,since){const o=recRaw(c,since),a=S.spAcc&&S.spAcc[c+'|'+since];if(a){o.P+=a.P;o.W+=a.W;o.D+=a.D;o.L+=a.L}o.full=1;return o}
+function spAccSnap(){const nx={},old=S.spAcc||{},all=[...LIGA,...LIGA2];
+  const cnt=(c,since)=>{const o={P:0,W:0,D:0,L:0};[S.fixtures||[],S.fixO||[]].forEach(L=>L.forEach(f=>{if(!f.res||f.d<since||(f.h!==c&&f.a!==c))return;const [x,y]=f.res.sc,g=f.h===c?x-y:y-x;o.P++;g>0?o.W++:g===0?o.D++:o.L++}));return o};
+  all.forEach(c=>{let since=null;if(c===S.club&&!unemp())since=S.me.since;else{const m=mgrOf(c);if(m)since=m.since}if(!since)return;const k=c+'|'+since,a=old[k]||{P:0,W:0,D:0,L:0},n=cnt(c,since);
+    nx[k]={P:a.P+n.P,W:a.W+n.W,D:a.D+n.D,L:a.L+n.L}});S.spAcc=nx}
+const ssOf=d=>+d.slice(0,4)-(+d.slice(5,7)<7?1:0);
+function histRec(h){const multi=!h.full&&ssOf(h.from)!==ssOf(h.to);return `<span class="num" style="font-size:13px;text-align:right">${h.W}승 ${h.D}무 ${h.L}패${multi?'<br><span class="note" style="font-size:11px">마지막 시즌 리그만</span>':''}</span>`}
 function sackAI(m,why){const c=m.c;m.hist.push(Object.assign({c,from:m.since,to:S.date,why},spellRec(c,m.since)));m.c=null;m.free=S.date;m.rep=Math.max(10,m.rep-3);m.trust=65;m.warn=0;
   S.news.unshift({d:S.date,t:`${CLUBS[c].name}, ${m.n} 감독 ${why==='성적 부진'?'경질':why}`,v:0,big:true,mg:1});vacate(c)}
 function vacate(c){if(S.vac.some(v=>v.c===c))return;S.vac.push({c,d:S.date,fill:addD(S.date,4+Math.floor(rnd()*10)),app:false,pend:null});delete S.aiTac[c];
@@ -3786,7 +3794,7 @@ function careerSeasonEnd(){if(!S.mg||!S.exp)return;const tb=typeof tableOf==='fu
 }
 // ---- 훅 ----
 {const _ns=newSeason;newSeason=function(y,first){_ns(y,first);if(S.mg&&!first)careerSeasonStart()}}
-{const _ro=rollover;rollover=function(){careerSeasonEnd();_ro()}}
+{const _ro=rollover;rollover=function(){careerSeasonEnd();try{spAccSnap()}catch(e){console.error(e)}_ro()}}
 /* AI 구단 베테랑(33세+) 재계약: 이전엔 33세 이상은 무조건 계약 만료 → 리그 33세+ 비율 7%→1~2%로 급감.
    팀 내 능력 순위로 1년 재계약(주전 11위 안 70%, 16위 안 35%, 그 밖 5%) */
 {const _roV=rollover;rollover=function(){try{const y=S.season+1;for(const id in BASE){const c=clubOf(+id);if(c<0||c===S.club)continue;const p=pl(+id);if(!p||!(p.cEnd<`${y}-07-01`)||ageOf(p)<33)continue;
@@ -3834,11 +3842,11 @@ function careerView(){const me=S.me,emp=!unemp();
     <div class="note">${emp?esc(CLUBS[S.club].name)+' 감독 · 계약 '+fmtD(me.cEnd):'무소속'} · 우승 ${me.titles}회${me.sacked?` · 경질 ${me.sacked}회`:''}</div>
     <div style="margin-top:10px"><b>평판 ${me.rep}</b> <span class="note">${tierOf(me.rep)}</span>${tbar(me.rep,'var(--c2)')}</div>
     ${emp?`<div style="margin-top:10px"><b>이사회 신뢰도 ${Math.round(me.trust)}</b> <span class="note">${me.warn===2?'최후통첩':me.warn===1?'경고':'안정'} · 목표 ${S.exp[S.club].lb}</span>${tbar(me.trust,trustCol(me.trust))}</div>
-    <p class="note" style="margin-top:8px">이번 부임 ${cur.P}경기 ${cur.W}승 ${cur.D}무 ${cur.L}패</p>`:''}
+    <p class="note" style="margin-top:8px">이번 부임 리그 ${cur.P}경기 ${cur.W}승 ${cur.D}무 ${cur.L}패</p>`:''}
     <p class="note" style="margin-top:8px;line-height:1.55">신뢰도는 매주 전력 순위 기대 승점 대비 성적(누적 60% + 최근 5경기 40%)으로 움직입니다. 38 미만 경고, 24 미만 최후통첩, 14 미만(6경기 이상 지휘) 경질. 빅클럽(평판 70+)은 부진에 1.4배 민감합니다.</p>
     ${emp?`<button class="btn sm ghost" data-resign="1" style="margin-top:6px">사임</button>`:''}</section>
   <h2>${esc((typeof LGN!=='undefined'&&typeof hl==='function'&&LGN[hl()])||'라리가')} 공석 ${S.vac.length}곳</h2><div class="card list">${vac||'<div class="li"><span class="note">지금은 공석이 없습니다.</span></div>'}</div>
-  <h2>경력</h2><div class="card list">${hist.length?hist.map(h=>`<div class="li"><span class="nm">${crest(h.c)}<span><b>${esc(CLUBS[h.c].name)}</b><span>${fmtD(h.from)} ~ ${fmtD(h.to)} · ${h.why}</span></span></span><span class="num" style="font-size:13px">${h.W}-${h.D}-${h.L}</span></div>`).join(''):'<div class="li"><span class="note">첫 부임 중</span></div>'}</div>
+  <h2>경력 <span class="note" style="font-size:12px;font-weight:400">리그 승·무·패</span></h2><div class="card list">${hist.length?hist.map(h=>`<div class="li"><span class="nm">${crest(h.c)}<span><b>${esc(CLUBS[h.c].name)}</b><span>${fmtD(h.from)} ~ ${fmtD(h.to)} · ${h.why}</span></span></span>${histRec(h)}</div>`).join(''):'<div class="li"><span class="note">첫 부임 중</span></div>'}</div>
   <h2>${esc((typeof LGN!=='undefined'&&typeof hl==='function'&&LGN[hl()])||'라리가')} 감독</h2><div class="card list">${mgs}</div>
   ${S.champs.length?`<h2>역대 우승</h2><div class="card list">${[...S.champs].reverse().map(x=>`<div class="li"><span class="nm">${crest(x.c)}<span><b>${x.y}-${String(x.y+1).slice(2)} ${esc(CLUBS[x.c].name)}</b><span>${esc(x.m)}</span></span></span></div>`).join('')}</div>`:''}
   <p class="note" style="margin-top:14px;line-height:1.55">AI 감독: 2025-26 시즌 종료 시점 실제 라리가 감독과 최근 라리가 경력 감독(Transfermarkt 경기 기록). 평판은 최근 지휘 구단 수준과 같은 수준 구단 평균 대비 승점으로 산정했습니다. 나이는 공개 프로필 기준이며 일부(승격팀 감독 3명)는 추정입니다.</p>`}
@@ -5992,7 +6000,7 @@ function abCard(){if(!S.me)return '';const lgs=abLgs();if(!lgs.length)return '';
       ${pref===lg?`<button class="btn sm ghost" data-abpref="">희망 해제</button>`:`<button class="btn sm ghost" data-abpref="${lg}">${esc(LGN[lg]||lg)}를 희망 국가로</button>`}</div>
     <p class="note" style="margin-top:6px;line-height:1.55">${S.pendJob?`부임 예정: ${esc(CLUBS[S.pendJob.c].name)}(7월 1일). 그 전에는 지원할 수 없습니다.`:`지원 중 ${napp}/${AB_MAX}곳 · 결과는 3~7일 뒤 메일로 옵니다. 합격하면 제안 메일에서 수락 → 7월 1일 부임.`} 희망 국가를 정하면 6월 시즌 종료 제안과 무소속 제안에서 그 나라 구단이 먼저 오고 제안 확률도 오릅니다.</p></section>
     <div class="card list" style="margin-top:8px">${rows||'<div class="li"><span class="note">구단 없음</span></div>'}</div>`}
-{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if(UI.cv&&UI.cv!=='mgr')return h;const k=h.indexOf('<h2>경력</h2>');const c=abCard();return k>=0?h.slice(0,k)+c+h.slice(k):h+c}catch(e){console.error(e);return h}}}
+{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if(UI.cv&&UI.cv!=='mgr')return h;const k=h.indexOf('<h2>경력');const c=abCard();return k>=0?h.slice(0,k)+c+h.slice(k):h+c}catch(e){console.error(e);return h}}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-ablg],[data-abpref],[data-abapp]');if(!b||!S)return;const d=b.dataset;
   if(d.ablg!==undefined){UI.abLg=d.ablg;render();return}
   if(d.abpref!==undefined){S.abPref=d.abpref||null;save();render();toast(d.abpref?`희망 국가: ${LGN[d.abpref]||d.abpref}`:'희망 국가 해제');return}
