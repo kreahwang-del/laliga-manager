@@ -6055,7 +6055,11 @@ const DERBY_N=[['Roma','Lazio','로마 더비'],['Inter','Milan','밀라노 더�
  ['Galatasaray','Fenerbahce','이스탄불 더비'],['Fenerbahce','Beşiktaş Jimnastik Kulübü','이스탄불 더비'],['Galatasaray','Beşiktaş Jimnastik Kulübü','이스탄불 더비'],
  ['Club Atlético Boca Juniors','Club Atlético River Plate','수페르클라시코'],['Clube de Regatas do Flamengo','Fluminense Football Club','플라-플루'],['Sport Club Corinthians Paulista','Sociedade Esportiva Palmeiras','파울리스타 더비'],
  ['Club América','Club Guadalajara','수페르 클라시코'],['Al Hilal','Al Nassr','리야드 더비'],['Los Angeles Galaxy','Los Angeles Football Club','엘 트라피코'],['RSC Anderlecht','Club Brugge KV','벨기에 클라시코'],['RSC Anderlecht','Standard Liège','벨기에 클라시코'],
- ['Rapid Vienna','Austria Vienna','빈 더비'],['Shanghai Port FC','Shanghai Shenhua','상하이 더비']];
+ ['Rapid Vienna','Austria Vienna','빈 더비'],['Shanghai Port FC','Shanghai Shenhua','상하이 더비'],
+ ['Ulsan Hyundai Football Club','Jeonbuk Hyundai Motors','현대가 더비'],['Ulsan Hyundai Football Club','Football Club Pohang Steelers','동해안 더비'],['Football Club Seoul','Football Club Anyang','연고지 더비'],
+ ['Suwon Samsung Bluewings','Football Club Seoul','슈퍼매치'],['Suwon Samsung Bluewings','Suwon FC','수원 더비'],['Suwon Samsung Bluewings','Football Club Anyang','지지대 더비'],
+ ['Gamba Osaka','Cerezo Osaka','오사카 더비'],['Kawasaki Frontale','Tokyo Football Club','다마가와 클라시코'],['Yokohama Marinos','Kawasaki Frontale','가나가와 더비'],['Tokyo Football Club','Tokyo Verdy','도쿄 더비'],
+ ['Hitachi Kashiwa Reysol','JEF United','지바 더비'],['Kashima Antlers FC','Football Club Mito HollyHock','이바라키 더비'],['S-Pulse','Júbilo Iwata','시즈오카 더비']];
 const DERBY_M={};DERBY_N.forEach(([a,b,n])=>{DERBY_M[a+'|'+b]=n;DERBY_M[b+'|'+a]=n});
 {const _do=derbyOf;derbyOf=function(h,a){const r=_do(h,a);if(r)return r;const x=CLUBS[h]&&CLUBS[h].name,y=CLUBS[a]&&CLUBS[a].name;return (x&&y&&DERBY_M[x+'|'+y])||null}}
 {const _dy=daily;daily=function(){const r=_dy.apply(this,arguments);try{if(!S||!S.club||S.club<0||(typeof unemp==='function'&&unemp()))return r;const lim=addD(S.date,2);
