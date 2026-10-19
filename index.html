@@ -6449,9 +6449,9 @@ function chMat(T,kit,gk,look,num){const mo=R3.model,ch=mo.ch;const C=h=>new T.Co
   const trim=kit.pat&&kit.patCol?kit.patCol:r3Trim(T,body);const n=Math.max(1,Math.min(99,num||7));const sk=C(look.skin||'#d9a77f'),df=C('#d9a77f');
   const U={uShirt:{value:C(body)},uSleeve:{value:C(gk?body:(kit.arms||body))},uShorts:{value:C(gk?'#20252c':kit.shorts)},uSocks:{value:C(gk?body:kit.socks)},uTrim:{value:C(trim)},uNumC:{value:C(r3Trim(T,body))},
     uSkin:{value:sk},uSkinR:{value:new T.Vector3(sk.r/df.r,sk.g/df.g,sk.b/df.b)},uPat:{value:gk?0:(kit.pat||0)},uPatCol:{value:C(kit.patCol||kit.body)},uGk:{value:gk?1:0},uShort:{value:chSleeveShort(look,gk)?1:0},
-    uMin:{value:mo.bbMin},uSize:{value:mo.bbSize},uDig:{value:r3DigTex(T)},uNum:{value:new T.Vector2(n>=10?Math.floor(n/10):-1,n%10)},uNB:{value:new T.Vector4(CH.nb[0],CH.nb[1],CH.nb[2],CH.nb[3])}};
+    uMin:{value:mo.bbMin},uSize:{value:mo.bbSize},uDig:{value:r3DigTex(T)},uNum:{value:new T.Vector2(n>=10?Math.floor(n/10):-1,n%10)},uNB:{value:new T.Vector4(CH.nb[0],CH.nb[1],CH.nb[2],CH.nb[3])},uBuild:{value:look.build||0},uJ:{value:chJ()}};
   m.onBeforeCompile=sh=>{Object.assign(sh.uniforms,U);
-    sh.vertexShader='attribute float aPart;varying float vPart;varying vec3 vBP;\n'+sh.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvBP=position;vPart=aPart;');
+    sh.vertexShader='attribute float aPart;varying float vPart;varying vec3 vBP;uniform vec3 uMin,uSize;uniform float uBuild;uniform vec4 uJ;\n'+sh.vertexShader.replace('#include <begin_vertex>','#include <begin_vertex>\nvBP=position;vPart=aPart;'+CH_BUILD_GLSL);
     sh.fragmentShader='varying float vPart;varying vec3 vBP;uniform vec3 uShirt,uSleeve,uShorts,uSocks,uTrim,uNumC,uSkin,uSkinR,uPatCol,uMin,uSize;uniform float uPat,uGk,uShort;uniform sampler2D uDig;uniform vec2 uNum;uniform vec4 uNB;\n'+sh.fragmentShader.replace('#include <map_fragment>',`#include <map_fragment>
       vec3 tx=diffuseColor.rgb;float L=dot(tx,vec3(.2126,.7152,.0722));float H=uSize.y;float xs=(vBP.x-(uMin.x+uSize.x*.5))/H;float x=abs(xs);float y=(vBP.y-uMin.y)/H;
       float sh=clamp(L/.56,.3,1.22);vec3 c=tx;int P=int(vPart+.5);
@@ -6463,11 +6463,22 @@ function chMat(T,kit,gk,look,num){const mo=R3.model,ch=mo.ch;const C=h=>new T.Co
       else if(P==2)c=uShorts*sh;
       else if(P==3)c=uSocks*sh;
       else if(P==0){ float k=smoothstep(.5,.3,L);c=mix(tx,tx*uSkinR,k); if(uGk>.5&&x>.37&&y>.5)c=vec3(.93)*clamp(L/.2,.6,1.1); }
-      diffuseColor.rgb=c;`)};m.customProgramCacheKey=()=>'ch38m1';return m}
+      diffuseColor.rgb=c;`)};m.customProgramCacheKey=()=>'ch38m2';return m}
 CH.nb=[.528,.19,.578,.295];
+/* v183 체격: 바인드 자세(T자) 정점을 스키닝 전에 부위별로 굵게/가늘게 — 몸통(엉덩이~목) 좌우·앞뒤, 다리 각자 축 기준, 팔은 팔 축(높이·앞뒤) 기준. 길이는 그대로(키는 전체 크기로). uJ = (팔 높이, 엉덩이 높이, 목 높이, 다리 중심 x) / 키 */
+const CH_BUILD_GLSL=`{float Hh=uSize.y;vec3 q=transformed;float yn=(q.y-uMin.y)/Hh;float xc=uMin.x+uSize.x*.5,zc=uMin.z+uSize.z*.5;float xs=(q.x-xc)/Hh;float ax=abs(xs);float k=uBuild;
+  if(ax>.105&&yn>uJ.x-.09){float w=smoothstep(.105,.13,ax)*(1.-smoothstep(.33,.37,ax));float s=1.+.07*k*w;float ay=uMin.y+uJ.x*Hh;q.y=ay+(q.y-ay)*s;q.z=zc+(q.z-zc)*s;}
+  else if(yn>uJ.y-.03&&yn<uJ.z){float w=smoothstep(uJ.y-.03,uJ.y+.03,yn)*(1.-smoothstep(uJ.z-.05,uJ.z,yn));float s=1.+.085*k*w;q.x=xc+(q.x-xc)*s;q.z=zc+(q.z-zc)*(1.+.1*k*w);}
+  else if(yn<=uJ.y+.03){float w=smoothstep(.06,.14,yn)*(1.-smoothstep(uJ.y-.02,uJ.y+.03,yn));float lc=xc+sign(q.x-xc)*uJ.w*Hh;float s=1.+.08*k*w;q.x=lc+(q.x-lc)*s;q.z=zc+(q.z-zc)*s;}
+  transformed=q;}`;
+function chJ(){const J=(R3.model&&R3.model.J)||{};const g=(k,i,d)=>J[k]?J[k][i]:d;return new THREE.Vector4(g('LeftArm',1,.8),g('LeftUpLeg',1,.49),g('Neck',1,.84),g('LeftUpLeg',0,.05))}
+/* 키(cm): 데이터 있으면 그대로(150 미만 오류값 무시), 없으면 포지션 평균 ± 해시. 체격: 근력(1~20, 중앙값 9) + 포지션(CB·ST·GK 두껍게, W·AM 가늘게) → −1~1 */
+const CH_HPOS={GK:189,CB:187,ST:183,DM:181,CM:179,FB:178,AM:176,W:175};
+function chBody(id){let P=null;try{P=id!=null?pl(id):null}catch(e){}const g=P&&P.g||'CM';let h=P&&P.h>=150&&P.h<=210?P.h:(CH_HPOS[g]||180)+Math.round((hsh('ht'+id)-.5)*8);
+  const st=P&&P.str!=null?P.str:9;const pb={CB:.2,ST:.15,GK:.1,DM:.05,W:-.2,AM:-.15,FB:-.05}[g]||0;const k=Math.max(-1,Math.min(1,(st-9)/6*.8+pb+(h-182)/40));return {h,k}}
 function chHairMat(T,look){const ch=R3.model.ch;const m=new T.MeshStandardMaterial({color:look.hair||'#2a2420',map:ch.tH,alphaTest:.45,side:T.DoubleSide,roughness:.9,metalness:0});return m}
 {const _ps=r3PlayerSk;r3PlayerSk=function(T,kit,gk,look,num){const mo=R3.model;if(!mo||!mo.ch)return _ps(T,kit,gk,look,num);
-  const G=new T.Group();const inner=THREE_X.SkeletonUtils.clone(mo.scene);inner.scale.setScalar(mo.scale);inner.rotation.y=Math.PI/2;G.add(inner);
+  const bd=chBody(look.id);look=Object.assign({},look,{build:bd.k});const G=new T.Group();const inner=THREE_X.SkeletonUtils.clone(mo.scene);inner.scale.setScalar(mo.scale*bd.h/180);inner.rotation.y=Math.PI/2;G.add(inner);G.userData_h=bd.h;
   const mat=chMat(T,kit,gk,look,num),hm=chHairMat(T,look);const st=look.st??1;
   inner.traverse(o=>{if(!o.isSkinnedMesh)return;o.castShadow=true;o.frustumCulled=false;if(o.name==='hair'){o.material=hm;o.visible=st>0&&st!==4;if(st===3)o.scale.multiplyScalar(1.04)}else o.material=mat});
   if(st===2||st===4)r3Hair(T,inner,Object.assign({},look,{st}));
