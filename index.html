@@ -2960,7 +2960,7 @@ function pstHTML(R,side){const L=R.pst&&R.pst[side];if(!L)return '';const fr=(a,
   const rows=L.map(x=>{const s=x.s;return `<tr><td class="n">${esc(shortName(x.n))}${x.sub?' <span class="note">교체</span>':''}</td><td>${x.nr?'<span class="note">–</span>':x.r.toFixed(1)}</td><td>${s[13]?`<b style="color:var(--amber)">${s[13]}</b>`:'<span class="note">0</span>'}</td><td>${s[14]?`<b style="color:var(--amber)">${s[14]}</b>`:'<span class="note">0</span>'}</td><td>${x.g==='GK'?`<b>${s[16]||0}</b>`:'<span class="note">–</span>'}</td><td>${s[0]}</td><td>${fr(s[1],s[2])}</td><td>${fr(s[3],s[4])}</td><td>${s[19].toFixed(2)}</td><td>${s[20].toFixed(2)}</td><td>${s[15]||0}</td><td>${fr(s[5],s[6])}</td><td>${fr(s[7],s[8])}</td><td>${fr(s[9],s[10])}</td><td>${s[11]||0}</td><td>${s[12]||0}</td>${x.g==='GK'?'':''}</tr>`}).join('');
   return `<div class="pstw"><table class="pst"><thead><tr><th class="n">선수</th><th>평점</th><th>골</th><th>도움</th><th>선방</th><th>터치</th><th>패스</th><th>슈팅<small>유효/전체</small></th><th>xG</th><th>xA</th><th>키패스</th><th>드리블</th><th>태클</th><th>공중볼</th><th>차단</th><th>파울</th></tr></thead><tbody>${rows}</tbody></table></div>`}
 function reportSheet(R){if(!R){toast('리포트가 없습니다');return}sheet(reportHTML(R))}
-{const _hv0=homeView;homeView=function(){const h=_hv0();const R=S.reports&&S.reports[0];if(!R)return h;const them=R.me===0?R.fx.a:R.fx.h;
+{const _hv0=homeView;homeView=function(){const h=_hv0();const R=S.reports&&S.reports[0];if(!R)return h;const mine=R.me===0?R.fx.h:R.fx.a;if(mine!==S.club||(S.me&&S.me.since&&R.d&&R.d<S.me.since))return h;/* v192 새 구단 부임 뒤엔 예전 구단 경기 리포트 카드 숨김 */const them=R.me===0?R.fx.a:R.fx.h;
   const card=`<section class="card pad" style="margin-top:12px;display:flex;align-items:center;gap:10px">${crest(them)}<div style="flex:1;min-width:0"><b>지난 경기 ${R.sc[0]}:${R.sc[1]}</b> <span class="note">xG ${R.xg[0].toFixed(2)}-${R.xg[1].toFixed(2)}</span><div class="note" style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis">${esc(R.head)}</div></div><button class="btn sm ghost" data-act="lastrep" data-i="0">리포트</button></section>`;
   const i=h.indexOf('<h2>받은 소식</h2>');return i>=0?h.slice(0,i)+card+h.slice(i):h+card}}
 // ---- 리그: 도움 순위 탭 ----
@@ -3697,7 +3697,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=191;
+const APPV=192;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
