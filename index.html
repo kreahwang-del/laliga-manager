@@ -3697,7 +3697,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=190;
+const APPV=191;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -4629,10 +4629,11 @@ function trView(){stInit();const t=S.trn,pool=UI.stHire?stPool():null;const me=S
       <button class="btn sm ghost" data-sthire="" style="margin-top:8px">닫기</button><p class="note">후보는 매달 1일 바뀝니다. 영입 시 새 코치 계약금(연봉의 25%)과 기존 코치 위약금(연봉의 50%)을 이적 예산에서 냅니다.</p>`}
   return `${sqTabs()}<h2>훈련 초점</h2><div class="chips">${Object.entries(TR_FOC).map(([k,v])=>`<button class="chip" data-trf="${k}" aria-pressed="${t.f===k}">${v[0]}</button>`).join('')}</div>
     <h2>훈련 강도</h2><div class="chips">${TR_INT.map((v,i)=>`<button class="chip" data-tri="${i}" aria-pressed="${(t.i??1)===i}">${v[0]}</button>`).join('')}</div>
-    <div class="card list" style="margin-top:10px">${grp.map(([g,l,k])=>`<div class="li"><span class="nm"><span><b>${l}</b><span>성장 속도</span></span></span>${pct(k)}</div>`).join('')}
-    <div class="li"><span class="nm"><span><b>체력 회복</b><span>경기 없는 날 기본 +3%</span></span></span><b>${(trRec()>=0?'+':'')+trRec().toFixed(1)}%/일</b></div>
+    <div class="card list" style="margin-top:10px">${grp.map(([g,l,k])=>`<div class="li"><span class="nm"><span><b>${l}</b><span>성장 속도 · 기본 대비</span></span></span>${pct(k)}</div>`).join('')}
+    <div class="li"><span class="nm"><span><b>체력 회복</b><span>훈련·체력 코치 보정 · 기본 회복(하루 +3 + 남은 피로의 22%)에 더해짐</span></span></span><b>${(trRec()>=0?'+':'')+trRec().toFixed(1)}/일</b></div>
     <div class="li"><span class="nm"><span><b>부상 위험</b><span>훈련 강도·초점</span></span></span><b style="color:${trInjF()>1?'var(--bad)':trInjF()<1?'var(--good)':'var(--muted)'}">×${trInjF().toFixed(2)}</b></div>
     <div class="li"><span class="nm"><span><b>전술 숙련(현재 전술)</b><span>매주 월요일 · 경기 출전과 별도</span></span></span><b>+${Math.max(0,.4+(stOf('AST')-10)*.08+(t.f==='tac'?1.6:0)).toFixed(1)}/주</b></div></div>
+    <p class="note" style="margin-top:8px;line-height:1.55">성장 속도 %는 기본(초점 균형·강도 보통·코치 능력 10) 대비 빠르기입니다. −는 성장이 줄어든다는 뜻이 아니라 덜 빨리 자란다는 뜻이고, 나이에 따른 하락은 따로 계산합니다(체력 코치가 좋으면 피지컬 하락이 완만).</p>
     ${hire}
     <h2>코치진</h2><div class="card list">${S.staff.map(stRow).join('')}</div>
     <p class="note" style="margin-top:10px;line-height:1.55">성장 배율은 그 능력치가 오를 때만 적용되고(나이로 떨어지는 폭은 피지컬 코치만 일부 완화), 월마다 반영됩니다. 코치 능력 10·균형·보통이면 이전과 같습니다. 효과 크기는 게임 설계 가정입니다(코치·훈련 효과의 공개 실측 자료가 없음).</p>`}
