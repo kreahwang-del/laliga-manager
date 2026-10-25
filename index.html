@@ -3200,7 +3200,7 @@ function hzLayout(ph){const C=hzCoords(ph),bx=hzBx(ph);const disp=C.map(c=>[Math
   return {disp,bx,ballT:100-bx/1.05}}
 function hzLines(){return `<rect x="0" y="0" width="105" height="68"/><line x1="52.5" y1="0" x2="52.5" y2="68"/><circle cx="52.5" cy="34" r="9.15"/><rect x="0" y="13.84" width="16.5" height="40.32"/><rect x="0" y="24.84" width="5.5" height="18.32"/><rect x="88.5" y="13.84" width="16.5" height="40.32"/><rect x="99.5" y="24.84" width="5.5" height="18.32"/><circle cx="11" cy="34" r=".4"/><circle cx="94" cy="34" r=".4"/>`}
 function hzApply(){if(!hzOn())return;const ph=TAC.phase,Ly=hzLayout(ph);const pc=$('#pitch');if(!pc)return;
-  pc.querySelectorAll('.slot').forEach(n=>{const d=Ly.disp[+n.dataset.slot];if(!d)return;n.style.left=d[0]+'%';n.style.top=d[1]+'%'});const b=$('#hzball');if(b)b.style.top=Ly.ballT+'%';{const od=oppDots(ph);pc.querySelectorAll('.oslot').forEach(n=>{const d=od[+n.dataset.os];if(!d)return;n.style.left=Math.max(3,Math.min(97,d.x))+'%';n.style.top=Math.max(2,Math.min(98,d.y))+'%'})}const lb=$('#hzbxl');if(lb)lb.textContent=Math.round(Ly.bx)+'m';const sb=pc.querySelector('.sbub');if(sb&&TAC.sel!=null){const d=Ly.disp[TAC.sel];sb.style.left=Math.min(80,Math.max(20,d[0]))+'%';sb.style.top=d[1]+'%'}}
+  pc.querySelectorAll('.slot').forEach(n=>{const d=Ly.disp[+n.dataset.slot];if(!d)return;n.style.left=d[0]+'%';n.style.top=d[1]+'%'});const b=$('#hzball');if(b)b.style.top=Ly.ballT+'%';pc.querySelectorAll('svg.chemlines line').forEach(l=>{const i=+l.dataset.ci,j=+l.dataset.cj,A=Ly.disp[i],B=Ly.disp[j];if(!A||!B)return;l.setAttribute('x1',A[0]);l.setAttribute('y1',A[1]);l.setAttribute('x2',B[0]);l.setAttribute('y2',B[1])});{const od=oppDots(ph);pc.querySelectorAll('.oslot').forEach(n=>{const d=od[+n.dataset.os];if(!d)return;n.style.left=Math.max(3,Math.min(97,d.x))+'%';n.style.top=Math.max(2,Math.min(98,d.y))+'%'})}const lb=$('#hzbxl');if(lb)lb.textContent=Math.round(Ly.bx)+'m';const sb=pc.querySelector('.sbub');if(sb&&TAC.sel!=null){const d=Ly.disp[TAC.sel];sb.style.left=Math.min(80,Math.max(20,d[0]))+'%';sb.style.top=d[1]+'%'}}
 document.addEventListener('input',e=>{const t=e.target;if(!t||!t.dataset||t.dataset.hzbx==null)return;TAC.bx=TAC.bx||{};TAC.bx[TAC.phase]=+t.value;hzApply()});
 /* v209 예상 상대 대형을 우리 경기장 위에 연하게: 기본 탭 = 상대 기본 배치도, 공격·수비 탭 = 슬라이더 공 위치에서 상대의 실제 위치(우리가 공격이면 상대는 수비, 공 위치는 상대 기준 105−m) */
 function oppDots(ph){const O=oppTeam();if(!O||TAC.showOpp===false)return [];try{if(ph==='base')return oppCoords('base').map(q=>({x:q.x,y:q.y,k:q.key,n:q.p&&q.p.name}));
@@ -3784,7 +3784,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=209;
+const APPV=210;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -5879,10 +5879,10 @@ if(typeof moveTo==='function'){const _mt=moveTo;moveTo=function(){const r=_mt.ap
 // ---- 화면 1: 전술 화면 포메이션 위 호흡 선 ----
 TAC.chemOn=TAC.chemOn??false;
 {const _tv=tacView;tacView=function(){let h=_tv.apply(this,arguments);try{if(TAC.phase==='sp')return h;
-  h=h.replace('<button class="chip" data-zones',`<button class="chip" data-chem aria-pressed="${!!TAC.chemOn}">호흡 선</button><button class="chip" data-zones`);
-  if(TAC.chemOn&&S.xi){relInit();const ph=TAC.phase,co=coordsOf(ph),xi=S.xi;const L=[];
+  h=h.replace('<button class="chip" data-tsets>전술 저장·불러오기</button>',`<button class="chip" data-tsets>전술 저장·불러오기</button><button class="chip" data-chem aria-pressed="${!!TAC.chemOn}">호흡 선</button>`);
+  if(TAC.chemOn&&S.xi){relInit();const ph=TAC.phase,xi=S.xi;/* v210 화면에 그려진 선수 위치(공격·수비 탭은 슬라이더 공 위치·겹침 풀기 반영)로 선을 그림 — 이전엔 기준 위치로 그려 선수와 선이 따로 놀았음 */const co=(typeof hzOn==='function'&&hzOn()&&typeof hzLayout==='function')?hzLayout(ph).disp:coordsOf(ph);const L=[];
     for(let i=0;i<xi.length;i++)for(let j=i+1;j<xi.length;j++){if(xi[i]==null||xi[j]==null)continue;const d=Math.hypot(co[i][0]-co[j][0],(co[i][1]-co[j][1])*1.3);if(d>34)continue;const c=relScore(xi[i],xi[j]);L.push([i,j,c])}
-    const svg=`<svg class="chemlines" viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">${L.map(([i,j,c])=>`<line x1="${co[i][0]}" y1="${co[i][1]}" x2="${co[j][0]}" y2="${co[j][1]}" stroke="${c>=62?'#4CB782':c>=48?'#ffffff':'#E0685A'}" stroke-width="${c>=75?3.5:c>=62?2.4:c>=48?1.2:1.8}" ${c<48?'stroke-dasharray="5 4"':''} stroke-linecap="round" opacity="${c>=48&&c<62?.35:.9}" vector-effect="non-scaling-stroke"/>`).join('')}</svg>`;
+    const svg=`<svg class="chemlines" viewBox="0 0 100 100" preserveAspectRatio="none" style="position:absolute;inset:0;width:100%;height:100%;pointer-events:none">${L.map(([i,j,c])=>`<line data-ci="${i}" data-cj="${j}" x1="${co[i][0]}" y1="${co[i][1]}" x2="${co[j][0]}" y2="${co[j][1]}" stroke="${c>=62?'#4CB782':c>=48?'#ffffff':'#E0685A'}" stroke-width="${c>=75?3.5:c>=62?2.4:c>=48?1.2:1.8}" ${c<48?'stroke-dasharray="5 4"':''} stroke-linecap="round" opacity="${c>=48&&c<62?.35:.9}" vector-effect="non-scaling-stroke"/>`).join('')}</svg>`;
     h=h.replace('<div class="zones" id="zones"',svg+'<div class="zones" id="zones"');
     h=h.replace('<div class="legend">',`<div class="note" style="margin:6px 0 0">호흡 선: <b style="color:var(--good)">초록</b> 호흡 좋음(굵을수록 찰떡) · 흐린 흰색 보통 · <b style="color:var(--bad)">빨간 점선</b> 아직 어색함(새로 합류·함께 뛴 시간이 적음). 가까운 자리끼리만 표시. 호흡이 좋은 두 선수 사이의 패스는 덜 빗나갑니다.</div><div class="legend">`)}}catch(e){console.error(e)}return h}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-chem]');if(!b)return;TAC.chemOn=!TAC.chemOn;render()},true);
