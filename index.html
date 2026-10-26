@@ -3804,7 +3804,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=235;
+const APPV=236;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -6423,15 +6423,23 @@ const LGW={EN:3.38,ES:2.49,IT:1.72,DE:1.58,FR:1.12,TR:.74,BR:.58,MX:.35,US:.30,P
 function lgW(c){const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return .3;return LGW[lg]??LGW[baseLg?baseLg(lg):lg]??.08}
 // R = 지금 리그 연봉 수준 ÷ 갈 리그 연봉 수준. 하위 리그로(R>1): R^0.3배 더 요구(최대 2.5배; 예: 프리미어→에레디비시 2.1배, 프리미어→K리그 2.5배, 라리가→에레디비시 1.9배)
 // 상위 리그로(R<1): R^0.06배로 조금 덜 요구(최저 0.85배; 예: 에레디비시→프리미어 0.86배, 라리가→프리미어 0.98배). 같은 수준이면 1배
-function lgWageMul(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return 1;const R=lgW(fr)/lgW(to);return R>1?Math.min(2.5,Math.pow(R,.3)):Math.max(.85,Math.pow(R,.06))}
-// 이적 의향: log10(갈 리그/지금 리그) × 15점(−30~+10). 예: 프리미어→K리그 −22, 에레디비시→프리미어 +10, 라리가→세리에A −3
-function lgIntAdj(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return 0;return Math.max(-30,Math.min(10,15*Math.log10(lgW(to)/lgW(fr))))}
-// 이적료: 연봉 수준이 높은 리그 구단이 사면 프리미엄 +15%×log10(배율), 최대 +25%(예: 프리미어가 에레디비시 선수 +16%, K리그 선수 +22%, 라리가 선수 +2%). 반대 방향 할인은 없음(판매 구단 기준)
+// v236 예외(사용자 요청): 하위 리그 할증을 줄이는 계수 s(0~1) — 출전 시간·나이·고향 복귀
+//  출전: 팀 내 능력 순위 11위 안 1, 12~16위 .25, 17위 밖 .1. 만족도 40 미만이면서 비주전이면 연봉 삭감(×.85)도 받아들임(출전 시간을 위해)
+//  나이: 31~32세 ×.5, 33세 이상 ×.15(커리어 말년). 고향 복귀(국적 = 갈 리그 나라): 할증 없음 + 이적 의향 +8
+const LGNAT={EN:['ENG'],ES:['ESP','SPA'],IT:['ITA'],DE:['GER'],FR:['FRA'],PT:['POR'],NL:['NED','HOL','NET'],BE:['BEL'],TR:['TUR','TÜR'],SC:['SCO'],CH:['SWI','SUI'],AT:['AUT','AUS'],DK:['DEN'],KR:['KOR'],JP:['JAP','JPN'],CN:['CHI','CHN'],SA:['SAU','KSA'],US:['USA','UNI'],MX:['MEX'],AR:['ARG'],BR:['BRA']};
+function lgHome(p,to){try{const lg=CLUBS[to].lg,b=(typeof baseLg==='function'?baseLg(lg):lg);return (LGNAT[b]||LGNAT[lg]||[]).includes(p.nat)}catch(e){return false}}
+function lgSoft(p,to){if(lgHome(p,to))return 0;let s=1;let rk=11;try{rk=rankInClub(p)}catch(e){}s*=rk<=11?1:rk<=16?.25:.1;const a=ageOf(p);if(a>=33)s*=.15;else if(a>=31)s*=.5;return s}
+// R = 지금 리그 연봉 수준 ÷ 갈 리그. 하위 리그로(R>1): R^(0.3×s)배(최대 2배). 상위 리그로(R<1): R^0.06배(최저 0.85배). 같은 수준이면 1배
+function lgWageMul(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return 1;const R=lgW(fr)/lgW(to);if(R<=1)return Math.max(.85,Math.pow(R,.06));
+  const s=lgSoft(p,to);let m=Math.min(2,Math.pow(R,.3*s));let rk=11;try{rk=rankInClub(p)}catch(e){}const h=(S.ps[p.id]||{}).happy??65;if(rk>11&&h<40)m=Math.min(m,.85);return m}
+// 이적 의향: log10(갈 리그/지금 리그) × 15점(−30~+10) — 하위 리그로 갈 때 감점에도 계수 s 적용, 고향 복귀면 +8
+function lgIntAdj(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return 0;if(lgHome(p,to)&&CLUBS[fr].lg!==CLUBS[to].lg)return 8;const L=15*Math.log10(lgW(to)/lgW(fr));return Math.max(-30,Math.min(10,L<0?L*Math.max(.25,lgSoft(p,to)):L))}
+// 이적료: 연봉 수준이 높은 리그 구단이 사면 프리미엄 +15%×log10(배율), 최대 +25%. 반대 방향 할인은 없음(판매 구단 기준)
 function lgFeeMul(p,buyer){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[buyer])return 1;const L=Math.log10(lgW(buyer)/lgW(fr));return L>0?1+Math.min(.25,.15*L):1}
-// AI 이적: 연봉 수준이 1/3 이하인 리그로는 선수가 대부분 거절(25%만 수락 — 큰돈을 받는 경우로 봄), 시즌·선수별 고정
-function lgMoveOK(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return true;const R=lgW(fr)/lgW(to);if(R<3)return true;return hsh(p.id+'lgmv'+to+S.season)<.25}
+// AI 이적: 연봉 수준 1/3 이하 리그로는 대부분 거절 — 수락 확률 25% + (1−s)×60%(비주전·노장·고향 복귀일수록 수락), 시즌·선수별 고정
+function lgMoveOK(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||!CLUBS[to])return true;const R=lgW(fr)/lgW(to);if(R<3)return true;return hsh(p.id+'lgmv'+to+S.season)<.25+.6*(1-lgSoft(p,to))}
 {const _wd5=wageDemand;wageDemand=function(p,club){let v=_wd5.apply(this,arguments);try{const fr=clubOf(p.id);if(fr!=null&&fr!==FA&&CLUBS[fr]&&CLUBS[club]&&fr!==club&&CLUBS[fr].lg!==CLUBS[club].lg){
-  /* 기존 구단 평판 할증(1점당 1%)은 리그 차이와 겹치므로 리그가 다르면 절반만 남김 */const diff=Math.max(0,(CLUBS[fr].rep||40)-CLUBS[club].rep);v=v/(1+diff/100)*(1+diff/200);const m=lgWageMul(p,club);v=Math.round(v*m/1e4)*1e4;/* 상위 리그로 가도 지금 연봉보다 낮게는 요구하지 않음 */if(m<1)v=Math.max(v,Math.round(p.wage/1e4)*1e4)}}catch(e){}return v}}
+  /* 기존 구단 평판 할증(1점당 1%)은 리그 차이와 겹치므로 리그가 다르면 절반만 남김 */const diff=Math.max(0,(CLUBS[fr].rep||40)-CLUBS[club].rep);v=v/(1+diff/100)*(1+diff/200);const m=lgWageMul(p,club);/* v236: 하위 리그로는 '지금 연봉×1.15×배율'과 기본 요구 중 큰 쪽(시장가 연봉에 배율을 또 곱하던 이중 할증 제거), 상위 리그로는 기본 요구×배율 */v=m>1?Math.max(v,Math.round(p.wage*1.15*m/1e4)*1e4):Math.round(v*m/1e4)*1e4;/* 상위 리그로 가도 지금 연봉보다 낮게는 요구하지 않음 */if(m<1)v=Math.max(v,Math.round(p.wage/1e4)*1e4)}}catch(e){}return v}}
 {const _in5=interest;interest=function(p,club){const v=_in5.apply(this,arguments);try{return v+lgIntAdj(p,club)}catch(e){return v}}}
 {const _as5=asking;asking=function(p,buyer){const a=_as5.apply(this,arguments);try{if(!a||buyer==null)return a;const m=lgFeeMul(p,buyer);return m>1?Math.round(a*m/1e5)*1e5:a}catch(e){return a}}}
 
