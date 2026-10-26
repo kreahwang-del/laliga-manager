@@ -3809,7 +3809,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=244;
+const APPV=245;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -6356,7 +6356,7 @@ function aiBuyDay_(w,_rk){const summer=w.k!=='winter';
       if(c!==FA){const sc=CLUBS[c];if(!sc||sc.rep>b.rep+8||sqSize(c)<=18||RIVAL(c,b.i))continue;if(!big5&&LG5.has(sc.lg)&&a<27&&rkOf(p)<=16)continue;const rk=rkOf(p);if(rk<=3&&b.rep<sc.rep+8)continue;if(b.rep<sc.rep+15&&nfsOf(p,b.i))continue;if(rk<=11){const sellLg=!(typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF)&&typeof SELL_LG!=='undefined'&&SELL_LG.has(sc.lg)&&typeof lgW==='function'&&lgW(b.i)>lgW(c)*1.5;/* v240 판매 리그(포르투갈·네덜란드 등) 주전은 연봉 수준이 1.5배 이상 높은 리그 구단이면 평판이 조금 낮아도(−5까지) 팔고, 창마다 3명까지 */if(sellLg?b.rep<sc.rep-5:(b.rep<sc.rep+3||(!LG5.has(b.lg)&&b.rep<sc.rep+10)))continue;const SS=S.aiSold||(S.aiSold={});const kk=S.season+':'+(summer?'s':'w')+':'+c;if((SS[kk]||0)>=(sellLg?3:2))continue;if(MKON()&&!mkSellOK(p,c,b.i,dLeft,sellLg))continue}}C.push(p);if(C.length>=60)break}
     /* 보강감이 없거나 30%: 유망주(22세 이하, 잠재력이 팀 수준+3 이상) 영입 — v240 30세+ 주전을 판 구단은 70% */const yRot=MKON()&&S.aiYth&&S.aiYth[b.i]===wk;if(!C.length||rnd()<(yRot?.7:.3)){const P2=[];for(const ln2 in idx){const A2=idx[ln2];for(let ii=aiFrom(A2,L+2);ii<A2.length;ii++){const p=A2[ii];if(p.ovr<L-8)break;const c=clubOf(p.id);if(c===b.i||c===S.club||c===RET)continue;const a=ageOf(p);if(a>22||(p.pa||0)<L+3)continue;if(c!==FA){const sc=CLUBS[c];if(!sc||sc.rep>b.rep+8||sqSize(c)<=18||RIVAL(c,b.i))continue;if(!big5&&LG5.has(sc.lg))continue;if(rkOf(p)<=11&&b.rep<sc.rep+3)continue}P2.push(p);if(P2.length>=40)break}}if(P2.length){C.length=0;P2.forEach(p=>C.push(p))}}
     if(!C.length)continue;
-    const sc=p=>{const a=ageOf(p);return (p.ovr-v)*2-Math.max(0,a-27)*.8-Math.max(0,22-a)*.3+hsh(p.id+S.date+b.i)*2};const pick=C.sort((x,y)=>sc(y)-sc(x)).slice(0,typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF?12:30);/* v240 후보 12 → 30명: 예산이 작은 리그는 상위 후보가 모두 비싸 아무도 못 사던 문제(얼어붙음) → 예산 안의 저가·자유계약 선수까지 봄 */
+    const sc=p=>{const a=ageOf(p);return (p.ovr-v)*2-Math.max(0,a-27)*.8-Math.max(0,22-a)*.3+hsh(p.id+S.date+b.i)*2+(MKON()?mkPref(p,b,a):0)};const pick=C.sort((x,y)=>sc(y)-sc(x)).slice(0,typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF?12:30);/* v240 후보 12 → 30명: 예산이 작은 리그는 상위 후보가 모두 비싸 아무도 못 사던 문제(얼어붙음) → 예산 안의 저가·자유계약 선수까지 봄 */
     let best=null,bs=-1e9;for(const p of pick){if(typeof lgMoveOK==='function'&&!lgMoveOK(p,b.i))continue;let fee=clubOf(p.id)===FA?0:asking(p,b.i);/* v240 패닉 바잉: 마지막 3일, 급한 공백이거나 그 포지션이 팀 수준보다 5 이상 낮으면 +15% */if(MKON()&&fee&&dLeft<=3&&(urg||L-v>=5))fee=Math.round(fee*1.15/1e5)*1e5;if(fee>bud*.9)continue;const s=sc(p)-fee/bb*2.5;if(s>bs){bs=s;best=[p,fee]}}
     if(!best)continue;const [p,fee]=best;{const c0=clubOf(p.id);if(MKON()&&c0!==FA&&CLUBS[c0]&&rkOf(p)<=11){const U=S.aiUrg||(S.aiUrg={});U[c0]={k:wk,ln:LINE[p.g]};if(ageOf(p)>=30){(S.aiYth||(S.aiYth={}))[c0]=wk}}if(c0!==FA&&rkOf(p)<=11){const SS=S.aiSold||(S.aiSold={});const kk=S.season+':'+(summer?'s':'w')+':'+c0;SS[kk]=(SS[kk]||0)+1}}const a=ageOf(p),y0=S.season+1;const yrs=a<26?4:a<30?3:2;
     {const c0=clubOf(p.id);if(!SQC)buildSQ();const keep=SQC;completeTransfer(p.id,b.i,fee,{cEnd:`${y0+yrs-1}-06-30`,wage:typeof lgWageMul==='function'?Math.round(Math.max(p.wage*1.05,p.wage*1.15*lgWageMul(p,b.i))/1e4)*1e4:Math.round(p.wage*1.15)});if(!SQC&&keep){SQC=keep;const A=SQC[c0];if(A){const k=A.indexOf(p.id);if(k>=0)A.splice(k,1)}(SQC[b.i]=SQC[b.i]||[]).push(p.id)}delete RK[c0];delete RK[b.i]}if(urg&&LINE[p.g]===urg.ln&&S.aiUrg)delete S.aiUrg[b.i];made++;D0[S.season]=(D0[S.season]||0)+1}
@@ -6467,12 +6467,13 @@ function lgMoveOK(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||
 
 var LGMKT_OFF=true; /* 10시즌 시뮬 검증 전까지 끔 */
 // ---- v240: 리그별 이적시장 규모(AI 구단 예산 배율) · EPL 구매 프리미엄 · 판매 리그 ----
+// v245 2차: 1차(이탈리아 .8·독일 .8·스페인 .8·프랑스 .9)로는 10시즌 평균 지출이 EPL의 57~86%(실제 24~41%) → .55·.5·.45·.5
 // 근거: Transfermarkt 2022 여름(Football365): 지출 EPL £1.33bn · 세리에A £540m · 분데스 £424m · 라리가 £369m · 리그1 £336m · 포르투갈 £134m · 에레디비시 £123m · 튀르키예 £79m · 벨기에 £70m · 챔피언십 £68m
 //  (EPL=100 → 41·32·28·25·10·9·6·5·5), 2024 여름 EPL €2.33bn vs 라리가 €556m(24), 사우디 2023 여름 $957m(Deloitte)
 //  게임 기본 예산 합(EPL=100): 세리에A 51·분데스 40·라리가 32·리그1 33·포르투갈 34·에레디비시 28·튀르키예 28·벨기에 22·챔피언십 22·브라질 39·MLS 33·아르헨 23 → 실제 비율에 맞춰 배율
 //  자료가 없는 리그(브라질·MLS·아르헨·멕시코·북유럽·아시아·2부)는 추정. 사우디는 2023년 이후 지출 확대로 상향
 // 적용: AI 구단 이적 예산(시즌 초 재설정)과 영입 빈도 기준(bb)에 같은 배율 → 영입 시도 빈도는 그대로, 비싼 영입 대신 자유계약·유망주·저가 영입 비중이 늘어남. 사용자 구단 예산은 그대로
-const LBS={EN:1,IT:.8,DE:.8,ES:.8,FR:.9,PT:.3,NL:.32,BE:.23,TR:.3,EN2:.35,BR:.26,US:.18,AR:.09,MX:.3,SA:1.8,DK:.3,CH:.3,AT:.3,SC:.3,JP:.2,CN:.3,KR:.3,IT2:.5,DE2:.5,FR2:.5,ES2:.5};
+const LBS={EN:1,IT:.55,DE:.5,ES:.45,FR:.5,PT:.3,NL:.32,BE:.23,TR:.3,EN2:.35,BR:.26,US:.18,AR:.09,MX:.3,SA:1.8,DK:.3,CH:.3,AT:.3,SC:.3,JP:.2,CN:.3,KR:.3,IT2:.5,DE2:.5,FR2:.5,ES2:.5};
 function lbsOf(c){if(typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF)return 1;const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return 1;return LBS[lg]??LBS[typeof baseLg==='function'?baseLg(lg):lg]??.3}
 const SELL_LG=new Set(['PT','NL','BE','BR','AR','DK','AT','CH','SC','US','TR','MX']);
 // 예산 재설정: 기존 '이월(최대 1년치)+기본×순위 배수'를 배율 적용 기본으로 다시 계산(사용자 구단 제외)
@@ -6509,6 +6510,22 @@ function ssHTML(id){const p=pl(id),q=S.ps[id]||{},ss=q.ss||{};const ap=q.apps||0
   if(p.g==='GK'&&has)rows.push(['선방',`${ss.sv||0}`]);
   return `<h3 style="margin:14px 0 6px">이번 시즌 기록 <span class="note" style="font-weight:400">리그 경기${has?'':' · 세부 기록은 경기 엔진으로 치른 경기만'}</span></h3><div class="card" style="padding:4px 10px">${rows.map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px"><span class="note" style="margin:0">${k}</span><span>${v}</span></div>`).join('')}</div>`}
 {const _psS=playerSheet;playerSheet=function(id){const r=_psS.apply(this,arguments);try{const sh=document.querySelector('.sheet');if(sh&&!sh.querySelector('.ssw')){const h=ssHTML(id);if(h){const w=sh.querySelector('.pshw');const div=`<div class="ssw">${h}</div>`;if(w)w.insertAdjacentHTML('beforebegin',div);else{const sm=[...sh.querySelectorAll('small')].find(e=>e.textContent.trim()==='능력치');const g=sm?sm.closest('.grid,div[style*="grid"]')||sm.parentElement.parentElement:null;if(g)g.insertAdjacentHTML('afterend',div);else sh.insertAdjacentHTML('beforeend',div)}}}}catch(e){console.error(e)}return r}}
+
+// ---- v245 2차 조정: 선수 흐름 방향 · 최소 스쿼드 20명 · 자유계약 선수 활용 ----
+// 1차 10시즌 결과: 포르투갈·네덜란드·브라질이 여전히 순지출(+) — 5대 리그가 남는 선수를 내려보내기만 하고, 그 리그 유망주를 사 오는 일은 드묾
+// 후보 점수 보정: 5대 리그 구단 → 판매 리그 24세 이하 +2.5(스카우팅·재판매 가치), 5대 리그 밖 구단 → 5대 리그 소속 선수 −2(비싸고 연봉 높음, 국내·저가 선호), 자유계약 +1.5(이적료 없음)
+function mkPref(p,b,a){const c=clubOf(p.id);let v=0;if(c===FA)return 1.5;const sl=CLUBS[c]&&CLUBS[c].lg;if(LG5.has(b.lg)&&SELL_LG.has(sl)&&a<=24)v+=2.5;if(!LG5.has(b.lg)&&LG5.has(sl))v-=2;return v}
+// 최소 스쿼드: AI 구단 선수가 20명 미만이면 매일 자유계약 선수로 채움(이적시장 밖도 자유계약은 가능 — 실제 규정). 팀 수준 −12 ~ +2, 33세 이하, 하루 2명까지
+// 자유계약 활용: 이적시장 기간과 시즌 중 매일, 능력치 70 이상 자유계약 선수 중 일부(하루 15% 확률로 검토)를 그 포지션 주전 기준보다 나은 AI 구단이 영입
+function mkFAday(){if(!MKON())return;try{const fa=squadOf(FA).filter(p=>ageOf(p)<=33&&LINE[p.g]).sort((a,b)=>b.ovr-a.ovr);if(!fa.length)return;const used=new Set();const y0=S.season+1;
+  const sign=(p,c)=>{const a=ageOf(p),yrs=a<26?3:a<30?2:1;const w=Math.round(Math.max(p.wage*.9,(typeof mktWage==='function'?mktWage(p):p.wage)*.8)*(typeof lgWageMul==='function'?Math.min(1.5,lgWageMul(p,c)):1)/1e4)*1e4;completeTransfer(p.id,c,0,{cEnd:`${y0+yrs-1}-06-30`,wage:w});used.add(p.id)};
+  const lvOf=c=>{const sq=squadOf(c);const top=sq.map(p=>p.ovr).sort((a,b)=>b-a);const L=top.length?top.slice(0,16).reduce((a,v)=>a+v,0)/Math.min(16,top.length):60;const lv={};for(const ln in AIQ){const v=sq.filter(p=>LINE[p.g]===ln).map(p=>p.ovr).sort((a,b)=>b-a);lv[ln]=v[AIQ[ln]-1]??(L-12)}return {sq,L,lv}};
+  for(const b of CLUBS){if(!b||b.i===S.club||b.i===FA||b.i===RET||S.aiBudget[b.i]===undefined)continue;const n=sqSize(b.i);if(n>=20)continue;const {L,lv}=lvOf(b.i);let k=0;
+    const need=Object.keys(AIQ).sort((x,y)=>(lv[x]-L)-(lv[y]-L));for(const ln of need){if(k>=2||n+k>=20)break;const p=fa.find(q=>!used.has(q.id)&&LINE[q.g]===ln&&q.ovr>=L-12&&q.ovr<=L+2&&(typeof lgMoveOK!=='function'||lgMoveOK(q,b.i)));if(p){sign(p,b.i);k++}}}
+  for(const p of fa){if(used.has(p.id)||p.ovr<70)continue;if(hsh(p.id+'fad'+S.date)>.15)continue;const ln=LINE[p.g];
+    const C=CLUBS.filter(b=>b&&b.i!==S.club&&b.i!==FA&&b.i!==RET&&S.aiBudget[b.i]!==undefined&&sqSize(b.i)<28).map(b=>{const {L,lv}=lvOf(b.i);return [b,p.ovr-lv[ln],L]}).filter(x=>x[1]>=1&&p.ovr<=x[2]+4&&(typeof lgMoveOK!=='function'||lgMoveOK(p,x[0].i))).sort((x,y)=>(y[0].rep-x[0].rep)||(y[1]-x[1]));
+    if(C.length){sign(p,C[0][0].i)}}}catch(e){console.error(e)}}
+{const _dFA=daily;daily=function(){const r=_dFA.apply(this,arguments);try{mkFAday()}catch(e){}return r}}
 
 // ================= v239 2D 경기 복기: 전체 타임라인 + 골·빅찬스 표시 (사용자 요청) =================
 // 기록: 엔진이 0.5초마다 남기는 22명·공 위치(st.frames, 매 분 새로 채워짐)를 1초 간격으로 모아 둠 → 경기 전체 약 5,400장
@@ -6554,7 +6571,7 @@ function rpOpen(o,live){if(!o||!o.n){toast('복기할 기록이 없습니다');r
     <g id="rpP"></g><circle id="rpB" r="1" fill="#fff" stroke="#111" stroke-width=".25"/></svg>
    <div class="rptl"><div class="rpmk">${mk.map((x,i)=>`<button class="rpm ${x.k}" data-rpm="${i}" style="left:${pos(x.t)}%" title="${esc(lab(x).replace(/<[^>]*>/g,''))}">${mkI(x)}</button>`).join('')}<i class="rpht" style="left:${pos(RV.t0+(RV.t1-RV.t0)/2)}%"></i></div>
     <input type="range" id="rpr" min="${RV.t0}" max="${RV.t1}" step="1" value="${RV.t0}"></div>
-   <div class="rpfine"><span class="note">정밀 ±60초</span><input type="range" id="rpf" min="-60" max="60" step="0.5" value="0"></div>
+   <div class="rpfine"><span class="note">정밀 ±15초</span><input type="range" id="rpf" min="-15" max="15" step="0.1" value="0"></div>
    <div class="rpctl"><button class="chip" data-rpj="-15">−15초</button><button class="chip" data-rpj="-3">−3초</button><button class="chip" data-rpplay="1" id="rpplay">▶ 재생</button><button class="chip" data-rpj="3">+3초</button><button class="chip" data-rpj="15">+15초</button><button class="chip" data-rpspd="1" id="rpspd">${RV.spd}배속</button><button class="chip" data-rplbl="1" aria-pressed="${RV.lbl}">이름</button></div>
    <div class="rplist">${mk.length?mk.map((x,i)=>`<button class="li rpli ${x.k}" data-rpm="${i}"><span>${lab(x)}</span></button>`).join(''):'<div class="note">골·빅찬스가 아직 없습니다.</div>'}</div>
    <p class="note" style="margin:6px 2px 0">● 빅찬스 = xG 0.15 이상 슈팅 · 장면을 누르면 8초 전부터 재생 · 1배속 = 실제 시간${live?' · 닫으면 경기가 이어집니다':''}</p></div>`;
@@ -6589,7 +6606,7 @@ document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest
   if(d.rplbl){RV.lbl=!RV.lbl;t.setAttribute('aria-pressed',RV.lbl);(RV.tx||[]).forEach(x=>x.style.display=RV.lbl?'':'none');return}},true);
 function R_KEY_OK(k){return M&&M.rpObj&&M.fx&&k==='rp:'+M.fx.d+':'+M.fx.h+':'+M.fx.a}
 document.addEventListener('input',e=>{if(!e.target)return;if(e.target.id==='rpr'){RV.drag=true;RV.t=+e.target.value;RV.fb=null;const f=document.getElementById('rpf');if(f)f.value=0;rpDraw(RV.t);RV.drag=false}
-  /* v244 정밀 슬라이더: 놓은 지점 기준 ±60초를 0.5초 단위로(전체 슬라이더는 한 칸이 약 15초라 너무 빠름) */if(e.target.id==='rpf'){if(RV.fb==null)RV.fb=RV.t;RV.t=Math.max(RV.t0,Math.min(RV.t1,RV.fb+(+e.target.value)));rpDraw(RV.t)}});
+  /* v245 정밀 슬라이더: 놓은 지점 기준 ±15초를 0.1초 단위로(v244 ±60초도 빠르다는 의견)(전체 슬라이더는 한 칸이 약 15초라 너무 빠름) */if(e.target.id==='rpf'){if(RV.fb==null)RV.fb=RV.t;RV.t=Math.max(RV.t0,Math.min(RV.t1,RV.fb+(+e.target.value)));rpDraw(RV.t)}});
 document.addEventListener('change',e=>{if(e.target&&e.target.id==='rpf'){RV.fb=null;e.target.value=0}});
 // 리포트에 버튼
 {const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(R&&R.rpk&&(S.rpKeys||[]).includes(R.rpk))h=`<button class="btn ghost" data-rpopen="${esc(R.rpk)}" style="width:100%;margin:0 0 10px">⏪ 2D 경기 복기 (전체 타임라인 · 골 · 빅찬스)</button>`+h}catch(e){}return h}}
