@@ -3269,9 +3269,10 @@ function tacView(){
   const note={base:'점은 자리·역할 배치도입니다(실제 경기 위치는 아래 「공격·수비 위치 세부 조정」). 한 번 누르면 정보·교체 버튼, 길게 눌러 끌면 선수끼리 교체하거나 다른 자리로 옮깁니다.',atk:'점 = 공 위치별 실제 서는 자리. 길게 눌러 끌거나, 선수를 누르고 화살표로 1m씩 옮깁니다.',def:'점 = 공 위치별 실제 서는 자리. 길게 눌러 끌거나, 선수를 누르고 화살표로 1m씩 옮깁니다.'}[ph];
   return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(T.fam)}</span></div>`:''}
   ${tacSeg(ph)}
+  ${(()=>{const fo=tacFold(ph);return `<button class="chip" data-tfold="1" style="margin-top:8px;width:100%;justify-content:space-between;display:flex"><span>대형 <b>${T.form[ph]}</b> · 저장·상대 대형·자동 선발</span><span>${fo?'펼치기 ▼':'접기 ▲'}</span></button>`})()}<div ${tacFold(ph)?'hidden':''}>
   ${typeof M!=='undefined'&&M&&M.edit&&TAC.showOpp!==false&&O?`<div class="note" style="margin:6px 0 0;color:#ffb4b4">경기 중: 상대 점은 최근 10분(재시작 제외) ${ph==='base'?'평균 위치':ph==='atk'?'우리가 공을 가졌을 때 상대 평균 위치':'상대가 공을 가졌을 때 평균 위치'}입니다. 버튼을 한 번 더 누르면 포지션 글자를 표시합니다.</div>`:''}${ph!=='base'?`<div class="lbl" style="margin-top:10px">${ph==='atk'?'공격 시':'수비 시'} 대형 (기본 ${T.form.base}과 다르게 둘 수 있음)</div>`:''}<div class="chips">${Object.keys(E3.FORMS).map(k=>`<button class="chip" data-shape="${k}" aria-pressed="${T.form[ph]===k}">${k}</button>`).join('')}</div>
   <div class="tools"><button class="chip" data-tsets>전술 저장·불러오기</button>${O?`<button class="chip" data-showopp aria-pressed="${TAC.showOpp!==false}">${typeof M!=='undefined'&&M&&M.edit?'상대 대형 (최근 10분 평균)':'상대 대형 (예상)'}${TAC.showOpp==='lbl'?' · 글자':''}</button>`:''}${HZL?'':`<button class="chip" data-zones aria-pressed="${TAC.showZones}">15칸 수적 우위</button>`}${(ph==='base'?T.pos[ph]:(T.posZ&&T.posZ[ph]&&Object.keys(T.posZ[ph]).length))?'<button class="chip" data-resetpos>위치 초기화</button>':''}<button class="chip" data-act="auto">자동 선발</button></div>
-  ${shp!==T.form[ph]?`<div class="okline" style="margin-top:8px">배치 기준 대형 <b>${shp}</b> (${T.form[ph]}에서 위치를 옮김)</div>`:''}<div class="phase-note">${note}</div>
+  ${shp!==T.form[ph]?`<div class="okline" style="margin-top:8px">배치 기준 대형 <b>${shp}</b> (${T.form[ph]}에서 위치를 옮김)</div>`:''}<div class="phase-note">${note}</div></div>
   ${HZL?`<div class="hzctl"><span class="note" style="margin:0">공 위치 · 우리 골문에서 <b id="hzbxl">${Math.round(HZL.bx)}m</b></span><input type="range" min="5" max="98" step="1" value="${Math.round(HZL.bx)}" data-hzbx aria-label="공 위치"></div><div class="zchips">${ZN.map(([k,b,l])=>`<button class="chip" data-zsel="${b}" aria-pressed="${Math.round(HZL.bx)===b}">${l} ${b}m${zHas(ph,k)?' <span class="zdot">●</span>':''}</button>`).join('')}</div><div class="note" style="margin:4px 0 0">● 직접 지정한 구간 · 구간 사이는 자연스럽게 이어집니다${ZN.some(([k,b])=>b===Math.round(HZL.bx)&&zHas(ph,k))?` <button class="chip" style="padding:2px 8px;font-size:11px" data-zreset="${zNear(HZL.bx)[0]}">이 구간 초기화</button>`:''}</div>`:''}
   <div class="pitch" id="pitch"><svg class="lines" viewBox="0 0 68 90" preserveAspectRatio="none" fill="none" stroke="rgba(255,255,255,.28)" stroke-width=".4"><rect x="2" y="2" width="64" height="86"/><line x1="2" y1="45" x2="66" y2="45"/><circle cx="34" cy="45" r="7"/><rect x="16" y="72" width="36" height="16"/><rect x="26" y="82" width="16" height="6"/><rect x="16" y="2" width="36" height="16"/><rect x="26" y="2" width="16" height="6"/></svg>${HZL?`<div class="hzball" id="hzball" style="top:${HZL.ballT}%"></div>`:''}${HZL&&TAC.sel!=null&&TAC.sel>0&&xi[TAC.sel]!=null?(()=>{const low=HZL.disp.slice(1).filter(c=>c[1]>50).length;const top=low>=5;const z=zNear(HZL.bx);return `<div class="znud" style="${top?'top:8px':'bottom:8px'}"><div class="zt"><b>${esc(shortName(pl(xi[TAC.sel]).name))}</b> · ${zPosTxt(hzCoordsAt(ph,z[1])[TAC.sel])}</div><div class="zb"><span></span><button data-znudge="0,1" aria-label="앞으로 1m">▲</button><span></span><button data-znudge="-1,0" aria-label="왼쪽 1m">◀</button><button data-znudge="0,-1" aria-label="뒤로 1m">▼</button><button data-znudge="1,0" aria-label="오른쪽 1m">▶</button></div><small>1m씩 · ${z[2]} 구간에 저장</small></div>`})():''}
     ${oppDotsHTML(ph)}<div class="zones" id="zones" ${TAC.showZones&&sup&&!HZL?'':'hidden'}>${sup?zonesHTML(sup,null):''}</div>
@@ -3539,6 +3540,10 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 /* v209 상대 대형 표시 켜기/끄기 */
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-showopp]');if(!b)return;e.stopPropagation();TAC.showOpp=TAC.showOpp===false?true:TAC.showOpp==='lbl'?false:'lbl';render()},true);
 
+/* v229 대형·도구 줄 접기: 세부 조정(공격·수비)은 기본 접힘, 기본 대형은 기본 펼침 — 한 화면에 경기장까지 보이게. 선택은 국면별로 기억 */
+function tacFold(ph){const F=TAC.fold||(TAC.fold={});return F[ph]!=null?F[ph]:ph!=='base'}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-tfold]');if(!b)return;e.stopPropagation();const ph=TAC.phase||'base';const F=TAC.fold||(TAC.fold={});F[ph]=!tacFold(ph);render()},true);
+
 // ---- 이적 ----
 function transView(){
   const w=winNow(),t=UI.tt;
@@ -3797,7 +3802,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=228;
+const APPV=229;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
