@@ -1,0 +1,6 @@
+{
+  "enabledMcpjsonServers": ["ruflo"],
+  "env": {
+    "MCP_TIMEOUT": "180000"
+  }
+}
