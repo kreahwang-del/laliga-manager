@@ -2869,7 +2869,7 @@ function buildReport(res,me,fx){const o=1-me,T=res.T,st=res.stats,sc=res.sc;
    const all=[0,1].flatMap(x=>T[x].xi.concat((res.subs&&res.subs[x]||[]).flatMap(q=>[q.out,q.inP]).filter(Boolean)).map(p=>({p,x})));const seen=new Set();R.rat=all.filter(q=>{if(seen.has(q.p.id)||!res.ratings[q.p.id])return false;seen.add(q.p.id);return true}).map(q=>({id:q.p.id,n:q.p.name,w:mine(q.x),r:res.ratings[q.p.id].r,g:res.ratings[q.p.id].g,a:res.ratings[q.p.id].a})).sort((a,b)=>b.r-a.r);}
   {const rt=res.ratings;const has=Object.values(rt).some(x=>x.tc!=null);if(has){const subIn=new Set([0,1].flatMap(x=>(res.subs&&res.subs[x]||[]).map(q=>q.inP.id)));
     R.pst=[0,1].map(x=>{const seen=new Set();return T[x].xi.concat((res.subs&&res.subs[x]||[]).flatMap(q=>[q.out,q.inP]).filter(Boolean)).filter(p=>{if(seen.has(p.id)||!rt[p.id])return false;seen.add(p.id);return true}).map(p=>{const q=rt[p.id];return {id:p.id,n:p.name,g:p.g,sub:subIn.has(p.id),r:q.r,nr:q.nr,s:[q.tc,q.pc,q.pa,q.so,q.sh,q.dw,q.da,q.tkw,q.ta,q.aw,q.at,q.it,q.fc,q.g,q.a,q.kp,q.sv,q.crc,q.cr,q.xg||0,q.xa||0]}})}).map((L,x)=>x===me?L:L).slice();R.pst=[R.pst[me],R.pst[o]]}}
-  /* v223 선수별 경기 포지션(선발 자리, 교체 투입은 나간 선수 자리) */try{R.pos={};[0,1].forEach(x=>{const t=T[x];let ks=null;try{ks=slotKeysLR(t)}catch(e){}t.xi.forEach((p,i)=>{if(p)R.pos[p.id]=(ks&&ks[i])||p.g});(res.subs&&res.subs[x]||[]).forEach(q=>{if(q.out&&q.inP)R.pos[q.out.id]=R.pos[q.inP.id]||q.out.g})})}catch(e){console.error(e)}
+  /* v223 선수별 경기 포지션(선발 자리, 교체 투입은 나간 선수 자리) */try{R.pos={};[0,1].forEach(x=>{const t=T[x];let ks=null;try{ks=slotKeysLR(t)}catch(e){console.error(e)}if(!ks){try{const k2=t.k?t.k('base'):null;if(k2)ks=k2.map(q=>q.slotKey||q.key)}catch(e){}}t.xi.forEach((p,i)=>{if(p)R.pos[p.id]=(ks&&ks[i])||p.g});(res.subs&&res.subs[x]||[]).forEach(q=>{if(q.out&&q.inP)R.pos[q.out.id]=R.pos[q.inP.id]||q.out.g})})}catch(e){console.error(e)}
   const beats=(a,b)=>(E3.BEATS[a]||[]).includes(b);
   R.matchup=beats(R.pre[0],R.pre[1])?1:beats(R.pre[1],R.pre[0])?-1:0;
   // 한 줄 평가
@@ -2986,7 +2986,7 @@ function logHTML(R){if(!R.log.length)return '';const ic={goal:'⚽',yellow:'<i c
   return `<div class="tl">${R.log.map(e=>`<div class="${e.w?'r':'l'}${e.t==='goal'?' g':''}"><span class="m num">${e.m}'</span><span class="i">${ic[e.t]||''}</span><span class="t">${tx(e)}</span></div>`).join('')}</div>`}
 /* 같은 이름 자리가 둘 이상이면(예: 4-2-3-1의 AM 둘, 수비형 미드필더 둘) 화면 좌우로 L/R을 붙임 */
 function slotKeysLR(t){const sl=E3.phaseSlots(t,'base');const keys=sl.map(q=>q.key);const cnt={};keys.forEach(k=>cnt[k]=(cnt[k]||0)+1);return sl.map((q,i)=>{const k=keys[i];if(cnt[k]<2||/^[LR]/.test(k)||k==='GK')return k;return (q.x<50?'L':'R')+k})}
-function repPos(R,id,g){let k=R.pos&&R.pos[id];if(!k){try{k=g||(BASE[id]&&pl(id).g)}catch(e){}}return k?` <span class="note" style="font-size:10px">${esc(String(k))}</span>`:''}
+function repPos(R,id,g){let k=R.pos&&R.pos[id];/* v225 자리 기록이 없는 예전 리포트: 우리 선수가 지금 선발 명단에 있으면 현재 전술의 자리로 대신 표시 */if(!k&&!(R.pos&&Object.keys(R.pos).length)){try{const i=(S.xi||[]).indexOf(id);if(i>=0){const tt=teamFor(S.club);const ks=slotKeysLR(tt);const j=tt.xi.findIndex(p=>p&&p.id===id);if(j>=0&&ks[j])k=ks[j]}}catch(e){}}if(!k){try{k=g||(BASE[id]&&pl(id).g)}catch(e){}}return k?` <span class="note" style="font-size:10px">${esc(String(k))}</span>`:''}
 function ratHTML(R){const top=R.rat[0];const us=R.rat.filter(x=>!x.w);
   return `<div class="lbl">평점</div><div class="note" style="margin-bottom:6px">경기 최우수 <b style="color:var(--amber)">${esc(shortName(top.n))}</b> ${top.r.toFixed(1)}${top.w?' (상대)':''}</div>
   <div class="rt">${us.map(x=>`<div><span>${esc(shortName(x.n))}${repPos(R,x.id)}${x.g?` <b style="color:var(--amber)">${x.g}골</b>`:''}${x.a?` <span class="note">${x.a}도움</span>`:''}</span><span class="num" style="color:${x.r>=7.5?'var(--good)':x.r<6?'var(--bad)':'inherit'}">${x.r.toFixed(1)}</span></div>`).join('')}</div>`}
@@ -3797,7 +3797,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=224;
+const APPV=225;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
