@@ -3809,7 +3809,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=243;
+const APPV=244;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -6500,6 +6500,15 @@ function ycOf(id){const q=S.ps[id]||{};if(q.yc!=null)return q.yc;const b=BASE[id
     if(y===S.club){S.fin.budget+=sol;S.fin.log.unshift({d:S.date,t:`${pl(id).name} 이적 연대 기금 수입`,v:sol})}else if(S.aiBudget[y]!==undefined)S.aiBudget[y]+=sol}}}catch(e){}return r}}
 // 유스 출신(게임 생성 유망주)의 육성 구단 기록
 {const _mY=makeYouth;makeYouth=function(c,y,o){const r=_mY.apply(this,arguments);try{const id=9000000+S.genSeq;const q=S.ps[id]=S.ps[id]||{};if(q.yc==null)q.yc=c}catch(e){}return r}}
+// ---- v244: 선수 화면에 이번 시즌 세부 기록(리그 경기) — 검색 필터에 쓰는 지표를 선수 화면에서도 확인 ----
+function ssHTML(id){const p=pl(id),q=S.ps[id]||{},ss=q.ss||{};const ap=q.apps||0;if(!ap)return '';const has=(ss.pa||0)+(ss.ta||0)+(ss.at||0)>0;const pc=(w,t)=>(ss[t]||0)>0?`${Math.round((ss[w]||0)/ss[t]*100)}% <span class="note">(${ss[w]||0}/${ss[t]})</span>`:'–';
+  const pg=k=>((ss[k]||0)/ap).toFixed(2);const avg=ap?((q.rs||0)/ap).toFixed(2):'–';
+  const rows=[['경기 · 출전 시간',`${ap}경기 · ${q.mins||0}분`],['골 · 도움',`${q.gl||0} · ${q.as||0}`],['평균 평점',avg]];
+  if(has)rows.push(['슈팅 (유효)',`${q.shs||0} (${ss.so||0})`],['xG · xA',`${(ss.xg||0).toFixed(2)} · ${(ss.xa||0).toFixed(2)}`],['키패스 (경기당)',`${ss.kp||0} (${pg('kp')})`],['빅찬스 메이킹 (경기당)',`${ss.bc||0} (${pg('bc')})`],
+    ['패스 성공률',pc('pc','pa')],['크로스 성공률',pc('crc','cr')],['드리블 성공률',pc('dw','da')],['태클 성공률',pc('tkw','ta')],['공중볼 승률',pc('aw','at')],['차단 (경기당)',`${ss.it||0} (${pg('it')})`],['파울',`${ss.fc||0}`]);
+  if(p.g==='GK'&&has)rows.push(['선방',`${ss.sv||0}`]);
+  return `<h3 style="margin:14px 0 6px">이번 시즌 기록 <span class="note" style="font-weight:400">리그 경기${has?'':' · 세부 기록은 경기 엔진으로 치른 경기만'}</span></h3><div class="card" style="padding:4px 10px">${rows.map(([k,v])=>`<div style="display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px"><span class="note" style="margin:0">${k}</span><span>${v}</span></div>`).join('')}</div>`}
+{const _psS=playerSheet;playerSheet=function(id){const r=_psS.apply(this,arguments);try{const sh=document.querySelector('.sheet');if(sh&&!sh.querySelector('.ssw')){const h=ssHTML(id);if(h){const w=sh.querySelector('.pshw');const div=`<div class="ssw">${h}</div>`;if(w)w.insertAdjacentHTML('beforebegin',div);else{const sm=[...sh.querySelectorAll('small')].find(e=>e.textContent.trim()==='능력치');const g=sm?sm.closest('.grid,div[style*="grid"]')||sm.parentElement.parentElement:null;if(g)g.insertAdjacentHTML('afterend',div);else sh.insertAdjacentHTML('beforeend',div)}}}}catch(e){console.error(e)}return r}}
 
 // ================= v239 2D 경기 복기: 전체 타임라인 + 골·빅찬스 표시 (사용자 요청) =================
 // 기록: 엔진이 0.5초마다 남기는 22명·공 위치(st.frames, 매 분 새로 채워짐)를 1초 간격으로 모아 둠 → 경기 전체 약 5,400장
@@ -6512,7 +6521,7 @@ function rpNew(){const m=M&&M.m;if(!m||m.v!==4)return null;const me=M.me;const K
 function rpColOf(R,id){let c=R.col[id];if(c!=null)return c;if(R.cols.length>=RP_NC)return -1;c=R.cols.length;let s=0,p=null;for(const q of [0,1]){const a=(M.m.P[q]||[]).find(a=>String(a.p.id)===String(id));if(a){s=q;p=a;break}}
   if(!p){for(const q of [0,1]){const x=(M.m.T[q].xi||[]).concat(M.m.T[q].bench||[]).find(z=>z&&String(z.id)===String(id));if(x){s=q;p={p:x,gk:x.g==='GK'}}}}
   R.cols.push({id:String(id),n:p&&p.p?p.p.name:'',s,gk:!!(p&&(p.gk||p.p&&p.p.g==='GK'))});R.col[id]=c;return c}
-function rpAdd(R,frames){for(const f of frames||[]){if(!f||f.t==null)continue;const ti=Math.floor(f.t);if(ti<=R.lastT)continue;R.lastT=ti;const a=new Int16Array(RP_W).fill(RP_NA);
+function rpAdd(R,frames){for(const f of frames||[]){if(!f||f.t==null)continue;const ti=Math.round(f.t*2);/* v244 0.5초 간격(시간×2 저장) — 1초 간격이면 슈팅처럼 빠른 공이 다음 장면(킥오프)으로 바로 넘어가 보였음 */if(ti<=R.lastT)continue;R.lastT=ti;const a=new Int16Array(RP_W).fill(RP_NA);
     a[0]=ti;a[1]=Math.round(f.b[0]*10);a[2]=Math.round(f.b[1]*10);a[3]=Math.round((f.b[2]||0)*100);a[4]=f.o!=null?rpColOf(R,f.o):-1;a[5]=f.ps==null?-1:f.ps;a[6]=f.rs?1:0;
     for(const id in f.p){const c=rpColOf(R,id);if(c<0)continue;const q=f.p[id];a[7+c*2]=Math.round(q[0]*10);a[8+c*2]=Math.round(q[1]*10)}R.F.push(a)}}
 function rpMarks(ev){const out=[];(ev||[]).forEach(e=>{if(e.sec==null)return;const sh=['goal','save','miss','block','post','fkShot'].includes(e.t);
@@ -6521,9 +6530,9 @@ function rpMarks(ev){const out=[];(ev||[]).forEach(e=>{if(e.sec==null)return;con
     else if(e.t==='red')out.push({t:e.sec,k:'red',s:e.s,p:e.p,m:e.m})});return out}
 // 진행 중 경기 기록: 매 분(step) 뒤 그 분의 프레임을 모음
 {const _sm=startMatch;startMatch=function(fx){const r=_sm.apply(this,arguments);try{if(M&&M.m&&M.m.v===4){M.rp=rpNew();const st0=M.m.step;M.m.step=function(){const o=st0.apply(this,arguments);try{if(M&&M.rp&&M.m)rpAdd(M.rp,M.m.st.frames)}catch(e){}return o};
-    const tb=document.getElementById('mptab');if(tb&&!tb.querySelector('[data-rpopen]'))tb.insertAdjacentHTML('beforeend','<button data-rpopen="live" title="경기 복기">⏪ 복기</button>')}}catch(e){console.error(e)}return r}}
+    const tb=document.getElementById('mptab');if(tb&&!tb.querySelector('[data-rpopen]'))tb.insertAdjacentHTML('beforeend','<button data-rpopen="live" title="경기 복기">복기</button>')}}catch(e){console.error(e)}return r}}
 // 경기 종료: IndexedDB 보관(최근 5경기), 리포트에 열쇠
-function rpPack(R,ev){const n=R.F.length,buf=new Int16Array(n*RP_W);R.F.forEach((a,i)=>buf.set(a,i*RP_W));return {v:1,fx:R.fx,me:R.me,cols:R.cols,kc:R.kc,n,mk:rpMarks(ev),buf:buf.buffer}}
+function rpPack(R,ev){const n=R.F.length,buf=new Int16Array(n*RP_W);R.F.forEach((a,i)=>buf.set(a,i*RP_W));return {v:2,ts:2,fx:R.fx,me:R.me,cols:R.cols,kc:R.kc,n,mk:rpMarks(ev),buf:buf.buffer}}
 function rpPut(key,obj){try{if(!IDB||!IDB.db)return;const os=IDB.db.transaction('s','readwrite').objectStore('s');os.put(obj,key);
   S.rpKeys=(S.rpKeys||[]).filter(k=>k!==key);S.rpKeys.unshift(key);const old=S.rpKeys.slice(5);S.rpKeys=S.rpKeys.slice(0,5);old.forEach(k=>{try{os.delete(k)}catch(e){}})}catch(e){console.error(e)}}
 function rpGet(key){return new Promise(res=>{try{if(!IDB||!IDB.db)return res(null);const q=IDB.db.transaction('s','readonly').objectStore('s').get(key);q.onsuccess=()=>res(q.result||null);q.onerror=()=>res(null)}catch(e){res(null)}})}
@@ -6531,8 +6540,8 @@ function rpGet(key){return new Promise(res=>{try{if(!IDB||!IDB.db)return res(nul
     try{rpAdd(M.rp,M.m.st.frames)}catch(e){}const ob=rpPack(M.rp,res.ev||M.m.st.ev);M.rpObj=ob;rpPut(key,ob)}}catch(e){console.error(e)}return R}}
 // ---- 보기 화면 ----
 const RV={on:false,o:null,t:0,play:false,spd:4,raf:0,last:0,lbl:false,live:false};
-function rpLiveObj(){const R=M&&M.rp;if(!R)return null;try{rpAdd(R,M.m.st.frames)}catch(e){}const n=R.F.length,buf=new Int16Array(n*RP_W);R.F.forEach((a,i)=>buf.set(a,i*RP_W));return {v:1,fx:R.fx,me:R.me,cols:R.cols,kc:R.kc,n,mk:rpMarks(M.m.st.ev),buf:buf.buffer}}
-function rpOpen(o,live){if(!o||!o.n){toast('복기할 기록이 없습니다');return}RV.o=o;RV.A=new Int16Array(o.buf);RV.live=!!live;RV.t0=RV.A[0];RV.t1=RV.A[(o.n-1)*RP_W];RV.t=RV.t0;RV.play=false;RV.on=true;
+function rpLiveObj(){const R=M&&M.rp;if(!R)return null;try{rpAdd(R,M.m.st.frames)}catch(e){}const n=R.F.length,buf=new Int16Array(n*RP_W);R.F.forEach((a,i)=>buf.set(a,i*RP_W));return {v:2,ts:2,fx:R.fx,me:R.me,cols:R.cols,kc:R.kc,n,mk:rpMarks(M.m.st.ev),buf:buf.buffer}}
+function rpOpen(o,live){if(!o||!o.n){toast('복기할 기록이 없습니다');return}RV.o=o;RV.A=new Int16Array(o.buf);RV.live=!!live;RV.ts=o.ts||1;RV.t0=RV.A[0]/RV.ts;RV.t1=RV.A[(o.n-1)*RP_W]/RV.ts;RV.t=RV.t0;RV.play=false;RV.on=true;
   if(live&&M&&!M.done){RV.wasRun=!M.paused;M.paused=true;clearTimeout(M.timer);try{if(typeof stopAnim==='function')stopAnim()}catch(e){}}
   const H=CLUBS[o.fx.h],Aw=CLUBS[o.fx.a];const dur=Math.max(1,RV.t1-RV.t0);const pos=t=>((t-RV.t0)/dur*100).toFixed(2);
   const mk=o.mk.filter(x=>x.t>=RV.t0&&x.t<=RV.t1+5);
@@ -6545,20 +6554,28 @@ function rpOpen(o,live){if(!o||!o.n){toast('복기할 기록이 없습니다');r
     <g id="rpP"></g><circle id="rpB" r="1" fill="#fff" stroke="#111" stroke-width=".25"/></svg>
    <div class="rptl"><div class="rpmk">${mk.map((x,i)=>`<button class="rpm ${x.k}" data-rpm="${i}" style="left:${pos(x.t)}%" title="${esc(lab(x).replace(/<[^>]*>/g,''))}">${mkI(x)}</button>`).join('')}<i class="rpht" style="left:${pos(RV.t0+(RV.t1-RV.t0)/2)}%"></i></div>
     <input type="range" id="rpr" min="${RV.t0}" max="${RV.t1}" step="1" value="${RV.t0}"></div>
-   <div class="rpctl"><button class="chip" data-rpj="-15">−15초</button><button class="chip" data-rpplay="1" id="rpplay">▶ 재생</button><button class="chip" data-rpj="15">+15초</button><button class="chip" data-rpspd="1" id="rpspd">${RV.spd}배속</button><button class="chip" data-rplbl="1" aria-pressed="${RV.lbl}">이름</button></div>
+   <div class="rpfine"><span class="note">정밀 ±60초</span><input type="range" id="rpf" min="-60" max="60" step="0.5" value="0"></div>
+   <div class="rpctl"><button class="chip" data-rpj="-15">−15초</button><button class="chip" data-rpj="-3">−3초</button><button class="chip" data-rpplay="1" id="rpplay">▶ 재생</button><button class="chip" data-rpj="3">+3초</button><button class="chip" data-rpj="15">+15초</button><button class="chip" data-rpspd="1" id="rpspd">${RV.spd}배속</button><button class="chip" data-rplbl="1" aria-pressed="${RV.lbl}">이름</button></div>
    <div class="rplist">${mk.length?mk.map((x,i)=>`<button class="li rpli ${x.k}" data-rpm="${i}"><span>${lab(x)}</span></button>`).join(''):'<div class="note">골·빅찬스가 아직 없습니다.</div>'}</div>
    <p class="note" style="margin:6px 2px 0">● 빅찬스 = xG 0.15 이상 슈팅 · 장면을 누르면 8초 전부터 재생 · 1배속 = 실제 시간${live?' · 닫으면 경기가 이어집니다':''}</p></div>`;
-  document.body.appendChild(d);RV.mk=mk;rpBuild();rpDraw(RV.t)}
+  document.body.appendChild(d);RV.mk=mk;RV.ga=rpGoalAnim(mk);rpBuild();rpDraw(RV.t)}
+function g_tJ(g){return g.tJ}
+function rpGoalAnim(mk){const A=RV.A,n=RV.o.n,ts=RV.ts,out=[];mk.filter(m=>m.k==='goal').forEach(m=>{let jx=-1;for(let i=Math.max(0,rpIdx(m.t-4));i<n-1&&A[i*RP_W]/ts<=m.t+4;i++){if(Math.hypot(A[(i+1)*RP_W+1]-A[i*RP_W+1],A[(i+1)*RP_W+2]-A[i*RP_W+2])>150){jx=i;break}}if(jx<0)return;
+  let s0=jx;while(s0>0&&A[jx*RP_W]/ts-A[(s0-1)*RP_W]/ts<4&&Math.abs(A[(s0-1)*RP_W+1]-A[jx*RP_W+1])<8&&Math.abs(A[(s0-1)*RP_W+2]-A[jx*RP_W+2])<8)s0--;const x0=A[s0*RP_W+1]/10,y0=A[s0*RP_W+2]/10;out.push({tS:Math.min(A[s0*RP_W]/ts,A[jx*RP_W]/ts-.6),tJx:A[jx*RP_W]/ts,tJ:A[(jx+1)*RP_W]/ts,x0,y0,gx:x0<52.5?-1.2:106.2,gy:Math.max(31,Math.min(37,y0))})});return out}
 function rpBuild(){const o=RV.o,g=document.getElementById('rpP');if(!g)return;g.innerHTML=o.cols.map((c,i)=>`<g class="rpp" data-c="${i}" style="display:none"><circle r="1.6" fill="${c.gk?(c.s===0?'#E8C547':'#9C6ADE'):o.kc[c.s]}" stroke="${c.s===o.me?'#F0B429':'rgba(0,0,0,.5)'}" stroke-width="${c.s===o.me?.45:.3}"/><text y="-2.1" text-anchor="middle" font-size="2" fill="#fff" stroke="rgba(0,0,0,.6)" stroke-width=".25" paint-order="stroke" class="rpn">${esc(shortName(c.n||''))}</text></g>`).join('');
   RV.el=[...g.querySelectorAll('.rpp')];RV.tx=[...g.querySelectorAll('.rpn')];RV.tx.forEach(t=>t.style.display=RV.lbl?'':'none')}
-function rpIdx(t){const A=RV.A,n=RV.o.n;let lo=0,hi=n-1;while(lo<hi){const m=(lo+hi+1)>>1;if(A[m*RP_W]<=t)lo=m;else hi=m-1}return lo}
-function rpDraw(t){const A=RV.A,o=RV.o;if(!A)return;const i=rpIdx(t),j=Math.min(o.n-1,i+1),b0=i*RP_W,b1=j*RP_W;const ta=A[b0],tb=A[b1];const k=tb>ta?Math.max(0,Math.min(1,(t-ta)/(tb-ta))):0;
+function rpIdx(t){const A=RV.A,n=RV.o.n;let lo=0,hi=n-1;while(lo<hi){const m=(lo+hi+1)>>1;if(A[m*RP_W]/RV.ts<=t)lo=m;else hi=m-1}return lo}
+function rpDraw(t){const A=RV.A,o=RV.o;if(!A)return;const t_=t;const gw=(RV.ga||[]).find(g=>t>=g.tS&&t<g.tJ+2.2);if(gw&&t>=g_tJ(gw))t=gw.tJx;const i=rpIdx(t),j=Math.min(o.n-1,i+1),b0=i*RP_W,b1=j*RP_W;const ta=A[b0]/RV.ts,tb=A[b1]/RV.ts;const k=tb>ta?Math.max(0,Math.min(1,(t-ta)/(tb-ta))):0;
   for(let c=0;c<o.cols.length;c++){const el=RV.el[c];if(!el)continue;const x0=A[b0+7+c*2],y0=A[b0+8+c*2];if(x0===RP_NA){el.style.display='none';continue}let x1=A[b1+7+c*2],y1=A[b1+8+c*2];if(x1===RP_NA){x1=x0;y1=y0}
     el.style.display='';el.setAttribute('transform',`translate(${((x0+(x1-x0)*k)/10).toFixed(2)} ${((y0+(y1-y0)*k)/10).toFixed(2)})`)}
-  const bx=(A[b0+1]+(A[b1+1]-A[b0+1])*k)/10,by=(A[b0+2]+(A[b1+2]-A[b0+2])*k)/10,bh=(A[b0+3]+(A[b1+3]-A[b0+3])*k)/100;const B=document.getElementById('rpB');if(B){B.setAttribute('cx',bx.toFixed(2));B.setAttribute('cy',(by-bh*1.2).toFixed(2));B.setAttribute('r',(1+bh*.6).toFixed(2))}
-  const g=[0,0];RV.mk.forEach(x=>{if(x.k==='goal'&&x.t<=t)g[x.s]++});const sc=document.getElementById('rpsc');if(sc)sc.textContent=`${CLUBS[o.fx.h].short} ${g[0]} - ${g[1]} ${CLUBS[o.fx.a].short}`;
-  const mm=Math.floor(t/60),ss=Math.floor(t%60);const ck=document.getElementById('rpclk');if(ck)ck.textContent=`${mm}:${String(ss).padStart(2,'0')}`;
-  const r=document.getElementById('rpr');if(r&&!RV.drag)r.value=Math.round(t)}
+  let bx=(A[b0+1]+(A[b1+1]-A[b0+1])*k)/10,by=(A[b0+2]+(A[b1+2]-A[b0+2])*k)/10,bh=(A[b0+3]+(A[b1+3]-A[b0+3])*k)/100;
+  /* v244 골 장면: 엔진은 슈팅 순간 공을 멈춘 채 판정 → 몇 초 뒤 킥오프 위치로 순간이동. 복기에선 멈춘 순간부터 0.7초 동안 공을 가까운 골문 안으로 보내고, 킥오프 전까지 골망에 둠 */
+  /* 골 뒤 2.2초는 골 직전 장면에 멈춰 공을 골망에 둠(엔진은 곧바로 킥오프 위치로 옮김) */if(gw){const kk=Math.min(1,(t_-gw.tS)/.6);bx=gw.x0+(gw.gx-gw.x0)*kk;by=gw.y0+(gw.gy-gw.y0)*kk;bh=kk<1?.8*Math.sin(kk*Math.PI):0}
+  /* 그 밖의 재개(골킥·스로인 등) 순간이동은 미끄러지듯 옮기지 않음 */
+  if(j>i&&Math.hypot(A[b1+1]-A[b0+1],A[b1+2]-A[b0+2])>150&&!gw){bx=A[b0+1]/10;by=A[b0+2]/10;bh=A[b0+3]/100}const B=document.getElementById('rpB');if(B){B.setAttribute('cx',bx.toFixed(2));B.setAttribute('cy',(by-bh*1.2).toFixed(2));B.setAttribute('r',(1+bh*.6).toFixed(2))}
+  const g=[0,0];RV.mk.forEach(x=>{if(x.k==='goal'&&x.t<=t_)g[x.s]++});const sc=document.getElementById('rpsc');if(sc)sc.textContent=`${CLUBS[o.fx.h].short} ${g[0]} - ${g[1]} ${CLUBS[o.fx.a].short}`;
+  const mm=Math.floor(t_/60),ss=Math.floor(t_%60);const ck=document.getElementById('rpclk');if(ck)ck.textContent=`${mm}:${String(ss).padStart(2,'0')}`;
+  const r=document.getElementById('rpr');if(r&&!RV.drag)r.value=Math.round(t_)}
 function rpLoop(now){if(!RV.on)return;const dt=Math.min(.1,(now-RV.last)/1000);RV.last=now;if(RV.play){RV.t+=dt*RV.spd;if(RV.t>=RV.t1){RV.t=RV.t1;rpSetPlay(false)}rpDraw(RV.t)}RV.raf=requestAnimationFrame(rpLoop)}
 function rpSetPlay(v){RV.play=v;const b=document.getElementById('rpplay');if(b)b.textContent=v?'❚❚ 멈춤':'▶ 재생';if(v){RV.last=performance.now();cancelAnimationFrame(RV.raf);RV.raf=requestAnimationFrame(rpLoop)}}
 function rpClose(){RV.on=false;RV.play=false;cancelAnimationFrame(RV.raf);const d=document.getElementById('rpv');if(d)d.remove();if(RV.live&&M&&!M.done&&RV.wasRun){try{resume()}catch(e){}}RV.live=false}
@@ -6571,7 +6588,9 @@ document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest
   if(d.rpspd){const L=[1,2,4,8,16];RV.spd=L[(L.indexOf(RV.spd)+1)%L.length];t.textContent=RV.spd+'배속';return}
   if(d.rplbl){RV.lbl=!RV.lbl;t.setAttribute('aria-pressed',RV.lbl);(RV.tx||[]).forEach(x=>x.style.display=RV.lbl?'':'none');return}},true);
 function R_KEY_OK(k){return M&&M.rpObj&&M.fx&&k==='rp:'+M.fx.d+':'+M.fx.h+':'+M.fx.a}
-document.addEventListener('input',e=>{if(e.target&&e.target.id==='rpr'){RV.drag=true;RV.t=+e.target.value;rpDraw(RV.t);RV.drag=false}});
+document.addEventListener('input',e=>{if(!e.target)return;if(e.target.id==='rpr'){RV.drag=true;RV.t=+e.target.value;RV.fb=null;const f=document.getElementById('rpf');if(f)f.value=0;rpDraw(RV.t);RV.drag=false}
+  /* v244 정밀 슬라이더: 놓은 지점 기준 ±60초를 0.5초 단위로(전체 슬라이더는 한 칸이 약 15초라 너무 빠름) */if(e.target.id==='rpf'){if(RV.fb==null)RV.fb=RV.t;RV.t=Math.max(RV.t0,Math.min(RV.t1,RV.fb+(+e.target.value)));rpDraw(RV.t)}});
+document.addEventListener('change',e=>{if(e.target&&e.target.id==='rpf'){RV.fb=null;e.target.value=0}});
 // 리포트에 버튼
 {const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(R&&R.rpk&&(S.rpKeys||[]).includes(R.rpk))h=`<button class="btn ghost" data-rpopen="${esc(R.rpk)}" style="width:100%;margin:0 0 10px">⏪ 2D 경기 복기 (전체 타임라인 · 골 · 빅찬스)</button>`+h}catch(e){}return h}}
 {const cs=document.createElement('style');cs.textContent=`#rpv{position:fixed;inset:0;z-index:80;background:var(--bg,#0B1016);display:flex;align-items:flex-start;justify-content:center;overflow:auto;padding:max(10px,env(safe-area-inset-top)) 8px 16px}
@@ -6579,7 +6598,7 @@ document.addEventListener('input',e=>{if(e.target&&e.target.id==='rpr'){RV.drag=
 #rpv svg{width:100%;height:auto;display:block;border-radius:8px;background:#2f7a3b}#rpv .rptl{position:relative;margin:22px 4px 4px}#rpv .rpmk{position:absolute;left:0;right:0;top:-20px;height:20px}
 #rpv .rpm{position:absolute;transform:translateX(-50%);border:0;background:none;padding:0;font-size:13px;line-height:20px;cursor:pointer;color:#cfd6de}#rpv .rpm.big{color:#9fb3c8;font-size:10px}#rpv .rpm.goal{font-size:14px;z-index:2}
 #rpv .rpht{position:absolute;top:4px;width:1px;height:14px;background:rgba(255,255,255,.35)}#rpv input[type=range]{width:100%;accent-color:var(--amber,#F0B429)}
-#rpv .rpctl{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}#rpv .rplist{max-height:30vh;overflow:auto;background:rgba(255,255,255,.04);border-radius:8px}#rpv .rpli{width:100%;text-align:left;font-size:13px;padding:8px 10px}#rpv .rpli.goal{font-weight:700}#rpv .rpli.big{color:#c9d3dd}`;document.head.appendChild(cs)}
+#mptab{display:flex!important;flex-wrap:nowrap!important;gap:6px}#mptab>button{flex:1 1 0!important;min-width:0!important;white-space:nowrap;padding-left:4px!important;padding-right:4px!important;font-size:14px}#rpv .rpfine{display:flex;align-items:center;gap:8px;margin:6px 4px 0}#rpv .rpfine input{flex:1;accent-color:#9fb3c8}#rpv .rpfine .note{margin:0;white-space:nowrap;font-size:11px}#rpv .rpctl{display:flex;gap:6px;flex-wrap:wrap;margin:8px 0}#rpv .rplist{max-height:30vh;overflow:auto;background:rgba(255,255,255,.04);border-radius:8px}#rpv .rpli{width:100%;text-align:left;font-size:13px;padding:8px 10px}#rpv .rpli.goal{font-weight:700}#rpv .rpli.big{color:#c9d3dd}`;document.head.appendChild(cs)}
 
 // ================= v241 모든 리그 경기 엔진(세부 기록) — 사용자 요청 =================
 // 이전: 우리 리그만 경기 엔진, 다른 리그(2부·해외 리그)는 빠른 결과(점수·골·도움·평점만)
