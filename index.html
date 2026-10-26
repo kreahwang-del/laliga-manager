@@ -2682,14 +2682,14 @@ function mpst(){const box=document.getElementById('mpst');if(!box||!M||!M.m)retu
     return `<tr style="${out?'opacity:.5':''}"><td class="n">${esc(shortName(p.name))}${(()=>{try{const t=M.m.T[side];const ks=slotKeysLR(t);const i=t.xi.findIndex(x=>x&&x.id===p.id);const k=i>=0&&ks&&ks[i]?ks[i]:p.g;return ` <span class="note" style="font-size:10px">${esc(String(k||p.g))}</span>`}catch(e){return ''}})()}${inIds.has(p.id)?' <span class="note">↑교체</span>':''}${out?' <span class="note">↓아웃</span>':''}${card?` <i class="yc" style="display:inline-block;width:7px;height:10px;background:${card>=2?'var(--bad)':'#F0B429'};border-radius:1px;vertical-align:-1px"></i>`:''}</td>
       <td>${q.r!=null?q.r.toFixed(1):'–'}</td><td>${q.g?`<b style="color:var(--amber)">${q.g}</b>`:'<span class="note">0</span>'}</td><td>${q.a?`<b style="color:var(--amber)">${q.a}</b>`:'<span class="note">0</span>'}</td>
       <td>${p.g==='GK'?`<b>${q.sv||0}</b>`:'<span class="note">–</span>'}</td><td>${fr(q.so||0,q.sh||0)}</td><td>${(q.xg||0).toFixed(2)}</td><td>${fr(q.pc||0,q.pa||0)}</td><td>${q.kp||0}</td><td>${fr(q.dw||0,q.da||0)}</td><td>${fr(q.tkw||0,q.ta||0)}</td><td>${fr(q.aw||0,q.at||0)}</td><td>${q.it||0}</td><td>${q.fc||0}</td><td style="color:${col}">${out?'–':sta+'%'}</td></tr>`}).join('');
-  /* v194 갱신 때마다 표가 맨 위·맨 왼쪽으로 돌아가던 문제: 스크롤 위치 저장·복원, 내용이 같으면 다시 그리지 않음 */const _st=box.scrollTop,_pw=box.querySelector('.pstw'),_sl=_pw?_pw.scrollLeft:0,_sy=window.scrollY;
-  const _html=`<div class="pstw"><table class="pst"><thead><tr><th class="n">${esc(CLUBS[side===0?M.fx.h:M.fx.a].short)}</th><th>평점</th><th>골</th><th>도움</th><th>선방</th><th>슈팅<small>유효/전체</small></th><th>xG</th><th>패스</th><th>키패스</th><th>드리블</th><th>태클</th><th>공중볼</th><th>차단</th><th>파울</th><th>체력</th></tr></thead><tbody>${rows}</tbody></table></div>`;if(box._h===_html)return;box._h=_html;box.innerHTML=_html;box.scrollTop=_st;const _pw2=box.querySelector('.pstw');if(_pw2)_pw2.scrollLeft=_sl;if(Math.abs(window.scrollY-_sy)>2)window.scrollTo(0,_sy)}
+  /* v194 갱신 때마다 표가 맨 위·맨 왼쪽으로 돌아가던 문제: 스크롤 위치 저장·복원, 내용이 같으면 다시 그리지 않음 */const _st=box.scrollTop,_pw=box.querySelector('.pstw'),_sl=_pw?_pw.scrollLeft:0,_pt=_pw?_pw.scrollTop:0,_sy=window.scrollY;
+  const _html=`<div class="pstw"><table class="pst"><thead><tr><th class="n">${esc(CLUBS[side===0?M.fx.h:M.fx.a].short)}</th><th>평점</th><th>골</th><th>도움</th><th>선방</th><th>슈팅<small>유효/전체</small></th><th>xG</th><th>패스</th><th>키패스</th><th>드리블</th><th>태클</th><th>공중볼</th><th>차단</th><th>파울</th><th>체력</th></tr></thead><tbody>${rows}</tbody></table></div>`;if(box._h===_html)return;box._h=_html;box.innerHTML=_html;box.scrollTop=_st;const _pw2=box.querySelector('.pstw');if(_pw2){_pw2.scrollLeft=_sl;_pw2.scrollTop=_pt};if(Math.abs(window.scrollY-_sy)>2)window.scrollTo(0,_sy)}
 document.addEventListener('click',e=>{const b=e.target.closest('[data-mpst]');if(!b)return;UI.mpst=b.dataset.mpst;document.querySelectorAll('#mptab [data-mpst]').forEach(x=>x.setAttribute('aria-pressed',x===b));mpst()});
 {const cs=document.createElement('style');cs.textContent=`.mptab{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;padding:6px 0 4px;border-top:1px solid var(--line)}
 .mptab button{font:inherit;font-size:12px;padding:6px 0;border-radius:8px;border:1px solid var(--line);background:transparent;color:var(--muted)}
 .mptab button[aria-pressed="true"]{background:var(--amber);color:#111;border-color:var(--amber);font-weight:700}
 .mpst{flex:1.25;min-height:0;overflow:auto;font-size:12px}.mpst .pst td,.mpst .pst th{padding:4px 5px;white-space:nowrap}.mpst .pst td.n{text-align:left;position:sticky;left:0;background:var(--bg)}
-.mpst .pst th.n{position:sticky;left:0;background:var(--bg);text-align:left}.match .feed{min-height:64px}.match.mp-on .feed{display:none}.mpst{flex:1}`;document.head.appendChild(cs)}
+.mpst .pst th.n{position:sticky;left:0;background:var(--bg);text-align:left}/*v232: 맨 윗줄(평점·골·도움…) 고정 — 표 상자가 가로·세로 스크롤을 함께 맡아 머리행이 위에 붙음*/.mpst{overflow:hidden;display:flex;flex-direction:column}.mpst .pstw{flex:1;min-height:0;overflow:auto;margin:0}.mpst .pst thead th{position:sticky;top:0;background:var(--bg);z-index:2;box-shadow:0 1px 0 var(--line)}.mpst .pst thead th.n{left:0;z-index:3}.mpst[hidden]{display:none}.match .feed{min-height:64px}.match.mp-on .feed{display:none}.mpst{flex:1}`;document.head.appendChild(cs)}
 
 // ================= 2D 중계(공격 전개 애니메이션) =================
 // 엔진이 남긴 공격 추적(tr)을 따라 공을 움직이고, 슈팅·골 같은 결정적 장면은 천천히 보여줌
@@ -3802,7 +3802,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=231;
+const APPV=232;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
