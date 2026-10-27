@@ -3809,7 +3809,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=245;
+const APPV=246;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -6348,16 +6348,18 @@ function aiBuyDay_(w,_rk){const summer=w.k!=='winter';
   const D0=S.aiBuyLog||(S.aiBuyLog={});const base=summer?.05:.025;const RK={};const rkOf=p=>{const c=clubOf(p.id);if(!RK[c])RK[c]=squadOf(c).sort((a,b)=>b.ovr-a.ovr).map(q=>q.id);return RK[c].indexOf(p.id)+1};rankInClub=rkOf;let made=0;
   for(const b of CLUBS){if(!b||b.i===S.club||b.i===FA||b.i===RET||S.aiBudget[b.i]===undefined)continue;const bud=S.aiBudget[b.i]||0;const bb=Math.max(1e6,(b.budget||1)*1e6*(typeof lbsOf==='function'?lbsOf(b.i):1));
     const big5=LG5.has(b.lg);const dLeft=daysBetween(S.date,w.to);const wk=S.season+(summer?'s':'w');const urg=MKON()&&S.aiUrg&&S.aiUrg[b.i]&&S.aiUrg[b.i].k===wk?S.aiUrg[b.i]:null;
-    /* v240 마감 효과: 마감 7일 전부터 시도 빈도가 점차 2배까지. 급한 공백(주전 판매 직후) 구단은 4배 */const pAct=base*(big5?1.3:.6)*Math.max(.4,Math.min(3.5,bud/bb))*(MKON()&&dLeft<=7?1+(7-dLeft)/7:1)*(urg?4:1);if(rnd()>pAct)continue;const sq=squadOf(b.i);if(sq.length>=30||sq.length<11)continue;
+    /* v240 마감 효과: 마감 7일 전부터 시도 빈도가 점차 2배까지. 급한 공백(주전 판매 직후) 구단은 4배 */const pAct=base*(big5?1.3:.6)*Math.max(.4,Math.min(3.5,bud/bb))*(MKON()&&dLeft<=7?1+(7-dLeft)/7:1)*(urg?4:1)*(MKON()&&sqSize(b.i)<20?3:1);if(rnd()>pAct)continue;const sq=squadOf(b.i);if(sq.length>=30||sq.length<11)continue;
     const top=sq.map(p=>p.ovr).sort((a,b)=>b-a);const L=top.slice(0,16).reduce((a,v)=>a+v,0)/Math.min(16,top.length);
     const lv={};for(const ln in AIQ){const v=sq.filter(p=>LINE[p.g]===ln).map(p=>p.ovr).sort((a,b)=>b-a);lv[ln]=v[AIQ[ln]-1]??(L-12)}
     const ln=urg&&AIQ[urg.ln]?urg.ln:Object.keys(AIQ).sort((x,y)=>(L-lv[y])-(L-lv[x]))[0];const v=lv[ln];const tmin=Math.round(v+(urg?0:2)),tmax=Math.round(Math.max(L,v)+(bud>1.5*bb?6:4));
-    const C=[];const A1=idx[ln];for(let ii=aiFrom(A1,tmax);ii<A1.length;ii++){const p=A1[ii];if(p.ovr<tmin)break;const c=clubOf(p.id);if(c===b.i||c===S.club||c===RET)continue;{const q=S.ps[p.id];if(q&&q.joined&&daysBetween(q.joined,S.date)<120)continue}const a=ageOf(p);if(a>32)continue;
-      if(c!==FA){const sc=CLUBS[c];if(!sc||sc.rep>b.rep+8||sqSize(c)<=18||RIVAL(c,b.i))continue;if(!big5&&LG5.has(sc.lg)&&a<27&&rkOf(p)<=16)continue;const rk=rkOf(p);if(rk<=3&&b.rep<sc.rep+8)continue;if(b.rep<sc.rep+15&&nfsOf(p,b.i))continue;if(rk<=11){const sellLg=!(typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF)&&typeof SELL_LG!=='undefined'&&SELL_LG.has(sc.lg)&&typeof lgW==='function'&&lgW(b.i)>lgW(c)*1.5;/* v240 판매 리그(포르투갈·네덜란드 등) 주전은 연봉 수준이 1.5배 이상 높은 리그 구단이면 평판이 조금 낮아도(−5까지) 팔고, 창마다 3명까지 */if(sellLg?b.rep<sc.rep-5:(b.rep<sc.rep+3||(!LG5.has(b.lg)&&b.rep<sc.rep+10)))continue;const SS=S.aiSold||(S.aiSold={});const kk=S.season+':'+(summer?'s':'w')+':'+c;if((SS[kk]||0)>=(sellLg?3:2))continue;if(MKON()&&!mkSellOK(p,c,b.i,dLeft,sellLg))continue}}C.push(p);if(C.length>=60)break}
+    const C=[];const A1=idx[ln];const yS=MKON()&&big5;for(let ii=aiFrom(A1,tmax);ii<A1.length;ii++){const p=A1[ii];if(p.ovr<tmin-(yS?4:0))break;const c=clubOf(p.id);if(c===b.i||c===S.club||c===RET)continue;
+      /* v246 5대 리그 구단은 판매 리그의 23세 이하 유망주를 능력치가 목표보다 4 낮아도 잠재력이 목표 이상이면 후보로 */if(p.ovr<tmin&&!(CLUBS[c]&&SELL_LG.has(CLUBS[c].lg)&&ageOf(p)<=23&&(p.pa||0)>=tmin))continue;
+      /* v246 5대 리그 밖 구단이 5대 리그 선수를 사는 건 29세 이상 아니면 30%만 */if(MKON()&&!big5&&CLUBS[c]&&LG5.has(CLUBS[c].lg)&&ageOf(p)<29&&hsh(p.id+'dn'+b.i+S.season)>.3)continue;{const q=S.ps[p.id];if(q&&q.joined&&daysBetween(q.joined,S.date)<120)continue}const a=ageOf(p);if(a>32)continue;
+      if(c!==FA){const sc=CLUBS[c];if(!sc||sc.rep>b.rep+8||sqSize(c)<=18||RIVAL(c,b.i))continue;if(!big5&&LG5.has(sc.lg)&&a<27&&rkOf(p)<=16)continue;const rk=rkOf(p);/* v247 판매 리그 구단(연봉 수준이 1.5배 이상 높은 리그의 제안)은 핵심 3명도 평판 −3까지 팔고, '판매 불가'는 절반만 적용 — 실제 벤피카·포르투·아약스의 주전 판매 */const sl0=MKON()&&SELL_LG.has(sc.lg)&&lgW(b.i)>lgW(c)*1.5;if(rk<=3&&b.rep<sc.rep+(sl0?-3:8))continue;if(b.rep<sc.rep+15&&nfsOf(p,b.i)&&!(sl0&&hsh(p.id+'nfs'+b.i+S.season)<.5))continue;if(rk<=11){const sellLg=!(typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF)&&typeof SELL_LG!=='undefined'&&SELL_LG.has(sc.lg)&&typeof lgW==='function'&&lgW(b.i)>lgW(c)*1.5;/* v240 판매 리그(포르투갈·네덜란드 등) 주전은 연봉 수준이 1.5배 이상 높은 리그 구단이면 평판이 조금 낮아도(−5까지) 팔고, 창마다 3명까지 */if(sellLg?b.rep<sc.rep-5:(b.rep<sc.rep+3||(!LG5.has(b.lg)&&b.rep<sc.rep+10)))continue;const SS=S.aiSold||(S.aiSold={});const kk=S.season+':'+(summer?'s':'w')+':'+c;if((SS[kk]||0)>=(sellLg?3:2))continue;if(MKON()&&!mkSellOK(p,c,b.i,dLeft,sellLg))continue}}C.push(p);if(C.length>=60)break}
     /* 보강감이 없거나 30%: 유망주(22세 이하, 잠재력이 팀 수준+3 이상) 영입 — v240 30세+ 주전을 판 구단은 70% */const yRot=MKON()&&S.aiYth&&S.aiYth[b.i]===wk;if(!C.length||rnd()<(yRot?.7:.3)){const P2=[];for(const ln2 in idx){const A2=idx[ln2];for(let ii=aiFrom(A2,L+2);ii<A2.length;ii++){const p=A2[ii];if(p.ovr<L-8)break;const c=clubOf(p.id);if(c===b.i||c===S.club||c===RET)continue;const a=ageOf(p);if(a>22||(p.pa||0)<L+3)continue;if(c!==FA){const sc=CLUBS[c];if(!sc||sc.rep>b.rep+8||sqSize(c)<=18||RIVAL(c,b.i))continue;if(!big5&&LG5.has(sc.lg))continue;if(rkOf(p)<=11&&b.rep<sc.rep+3)continue}P2.push(p);if(P2.length>=40)break}}if(P2.length){C.length=0;P2.forEach(p=>C.push(p))}}
     if(!C.length)continue;
     const sc=p=>{const a=ageOf(p);return (p.ovr-v)*2-Math.max(0,a-27)*.8-Math.max(0,22-a)*.3+hsh(p.id+S.date+b.i)*2+(MKON()?mkPref(p,b,a):0)};const pick=C.sort((x,y)=>sc(y)-sc(x)).slice(0,typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF?12:30);/* v240 후보 12 → 30명: 예산이 작은 리그는 상위 후보가 모두 비싸 아무도 못 사던 문제(얼어붙음) → 예산 안의 저가·자유계약 선수까지 봄 */
-    let best=null,bs=-1e9;for(const p of pick){if(typeof lgMoveOK==='function'&&!lgMoveOK(p,b.i))continue;let fee=clubOf(p.id)===FA?0:asking(p,b.i);/* v240 패닉 바잉: 마지막 3일, 급한 공백이거나 그 포지션이 팀 수준보다 5 이상 낮으면 +15% */if(MKON()&&fee&&dLeft<=3&&(urg||L-v>=5))fee=Math.round(fee*1.15/1e5)*1e5;if(fee>bud*.9)continue;const s=sc(p)-fee/bb*2.5;if(s>bs){bs=s;best=[p,fee]}}
+    let best=null,bs=-1e9;for(const p of pick){if(typeof lgMoveOK==='function'&&!lgMoveOK(p,b.i))continue;let fee=clubOf(p.id)===FA?0:asking(p,b.i);/* v240 패닉 바잉: 마지막 3일, 급한 공백이거나 그 포지션이 팀 수준보다 5 이상 낮으면 +15% */if(MKON()&&fee&&dLeft<=3&&(urg||L-v>=5))fee=Math.round(fee*1.15/1e5)*1e5;if(fee>bud*.9)continue;if(typeof scrOK==='function'&&!scrOK(p,b.i,fee))continue;const s=sc(p)-fee/bb*2.5;if(s>bs){bs=s;best=[p,fee]}}
     if(!best)continue;const [p,fee]=best;{const c0=clubOf(p.id);if(MKON()&&c0!==FA&&CLUBS[c0]&&rkOf(p)<=11){const U=S.aiUrg||(S.aiUrg={});U[c0]={k:wk,ln:LINE[p.g]};if(ageOf(p)>=30){(S.aiYth||(S.aiYth={}))[c0]=wk}}if(c0!==FA&&rkOf(p)<=11){const SS=S.aiSold||(S.aiSold={});const kk=S.season+':'+(summer?'s':'w')+':'+c0;SS[kk]=(SS[kk]||0)+1}}const a=ageOf(p),y0=S.season+1;const yrs=a<26?4:a<30?3:2;
     {const c0=clubOf(p.id);if(!SQC)buildSQ();const keep=SQC;completeTransfer(p.id,b.i,fee,{cEnd:`${y0+yrs-1}-06-30`,wage:typeof lgWageMul==='function'?Math.round(Math.max(p.wage*1.05,p.wage*1.15*lgWageMul(p,b.i))/1e4)*1e4:Math.round(p.wage*1.15)});if(!SQC&&keep){SQC=keep;const A=SQC[c0];if(A){const k=A.indexOf(p.id);if(k>=0)A.splice(k,1)}(SQC[b.i]=SQC[b.i]||[]).push(p.id)}delete RK[c0];delete RK[b.i]}if(urg&&LINE[p.g]===urg.ln&&S.aiUrg)delete S.aiUrg[b.i];made++;D0[S.season]=(D0[S.season]||0)+1}
   return made}
@@ -6465,7 +6467,7 @@ function lgMoveOK(p,to){const fr=clubOf(p.id);if(fr==null||fr===FA||!CLUBS[fr]||
 {const _in5=interest;interest=function(p,club){const v=_in5.apply(this,arguments);try{return v+lgIntAdj(p,club)}catch(e){return v}}}
 {const _as5=asking;asking=function(p,buyer){const a=_as5.apply(this,arguments);try{if(!a||buyer==null)return a;const m=lgFeeMul(p,buyer);return m>1?Math.round(a*m/1e5)*1e5:a}catch(e){return a}}}
 
-var LGMKT_OFF=true; /* 10시즌 시뮬 검증 전까지 끔 */
+var LGMKT_OFF=false; /* 10시즌 시뮬 검증 전까지 끔 */
 // ---- v240: 리그별 이적시장 규모(AI 구단 예산 배율) · EPL 구매 프리미엄 · 판매 리그 ----
 // v245 2차: 1차(이탈리아 .8·독일 .8·스페인 .8·프랑스 .9)로는 10시즌 평균 지출이 EPL의 57~86%(실제 24~41%) → .55·.5·.45·.5
 // 근거: Transfermarkt 2022 여름(Football365): 지출 EPL £1.33bn · 세리에A £540m · 분데스 £424m · 라리가 £369m · 리그1 £336m · 포르투갈 £134m · 에레디비시 £123m · 튀르키예 £79m · 벨기에 £70m · 챔피언십 £68m
@@ -6473,7 +6475,7 @@ var LGMKT_OFF=true; /* 10시즌 시뮬 검증 전까지 끔 */
 //  게임 기본 예산 합(EPL=100): 세리에A 51·분데스 40·라리가 32·리그1 33·포르투갈 34·에레디비시 28·튀르키예 28·벨기에 22·챔피언십 22·브라질 39·MLS 33·아르헨 23 → 실제 비율에 맞춰 배율
 //  자료가 없는 리그(브라질·MLS·아르헨·멕시코·북유럽·아시아·2부)는 추정. 사우디는 2023년 이후 지출 확대로 상향
 // 적용: AI 구단 이적 예산(시즌 초 재설정)과 영입 빈도 기준(bb)에 같은 배율 → 영입 시도 빈도는 그대로, 비싼 영입 대신 자유계약·유망주·저가 영입 비중이 늘어남. 사용자 구단 예산은 그대로
-const LBS={EN:1,IT:.55,DE:.5,ES:.45,FR:.5,PT:.3,NL:.32,BE:.23,TR:.3,EN2:.35,BR:.26,US:.18,AR:.09,MX:.3,SA:1.8,DK:.3,CH:.3,AT:.3,SC:.3,JP:.2,CN:.3,KR:.3,IT2:.5,DE2:.5,FR2:.5,ES2:.5};
+const LBS={EN:1,IT:.55,DE:.4,ES:.45,FR:.5,PT:.3,NL:.32,BE:.23,TR:.3,EN2:.35,BR:.2,US:.18,AR:.09,MX:.3,SA:1.8,DK:.3,CH:.3,AT:.3,SC:.3,JP:.2,CN:.3,KR:.3,IT2:.5,DE2:.5,FR2:.5,ES2:.5};
 function lbsOf(c){if(typeof LGMKT_OFF!=='undefined'&&LGMKT_OFF)return 1;const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return 1;return LBS[lg]??LBS[typeof baseLg==='function'?baseLg(lg):lg]??.3}
 const SELL_LG=new Set(['PT','NL','BE','BR','AR','DK','AT','CH','SC','US','TR','MX']);
 // 예산 재설정: 기존 '이월(최대 1년치)+기본×순위 배수'를 배율 적용 기본으로 다시 계산(사용자 구단 제외)
@@ -6515,16 +6517,21 @@ function ssHTML(id){const p=pl(id),q=S.ps[id]||{},ss=q.ss||{};const ap=q.apps||0
 // 1차 10시즌 결과: 포르투갈·네덜란드·브라질이 여전히 순지출(+) — 5대 리그가 남는 선수를 내려보내기만 하고, 그 리그 유망주를 사 오는 일은 드묾
 // 후보 점수 보정: 5대 리그 구단 → 판매 리그 24세 이하 +2.5(스카우팅·재판매 가치), 5대 리그 밖 구단 → 5대 리그 소속 선수 −2(비싸고 연봉 높음, 국내·저가 선호), 자유계약 +1.5(이적료 없음)
 function mkPref(p,b,a){const c=clubOf(p.id);let v=0;if(c===FA)return 1.5;const sl=CLUBS[c]&&CLUBS[c].lg;if(LG5.has(b.lg)&&SELL_LG.has(sl)&&a<=24)v+=2.5;if(!LG5.has(b.lg)&&LG5.has(sl))v-=2;return v}
-// 최소 스쿼드: AI 구단 선수가 20명 미만이면 매일 자유계약 선수로 채움(이적시장 밖도 자유계약은 가능 — 실제 규정). 팀 수준 −12 ~ +2, 33세 이하, 하루 2명까지
-// 자유계약 활용: 이적시장 기간과 시즌 중 매일, 능력치 70 이상 자유계약 선수 중 일부(하루 15% 확률로 검토)를 그 포지션 주전 기준보다 나은 AI 구단이 영입
-function mkFAday(){if(!MKON())return;try{const fa=squadOf(FA).filter(p=>ageOf(p)<=33&&LINE[p.g]).sort((a,b)=>b.ovr-a.ovr);if(!fa.length)return;const used=new Set();const y0=S.season+1;
-  const sign=(p,c)=>{const a=ageOf(p),yrs=a<26?3:a<30?2:1;const w=Math.round(Math.max(p.wage*.9,(typeof mktWage==='function'?mktWage(p):p.wage)*.8)*(typeof lgWageMul==='function'?Math.min(1.5,lgWageMul(p,c)):1)/1e4)*1e4;completeTransfer(p.id,c,0,{cEnd:`${y0+yrs-1}-06-30`,wage:w});used.add(p.id)};
+// 최소 스쿼드(v245 사용자 기준): 이적시장 기간만. 20명 미만 구단은 먼저 이적료 영입(시도 3배), 마감 3일 전까지 안 되면 최후 수단으로 자유계약 → 없으면 임대(하루 2명)
+// 자유계약 활용: 이적시장 기간에 능력치 70+ 자유계약을 그 포지션 주전 기준보다 나은 AI 구단이 영입(하루 15%, 마감 10일 전부터 40%·36세까지·팀 수준 +8까지)
+function mkFAday(){if(!MKON())return;const w=winNow();if(!w)return;try{const dLeft=daysBetween(S.date,w.to);const late=dLeft<=10;const fa=squadOf(FA).filter(p=>ageOf(p)<=(late?36:33)&&LINE[p.g]).sort((a,b)=>b.ovr-a.ovr);const used=new Set();const y0=S.season+1;
+  const sign=(p,c)=>{const a=ageOf(p),yrs=a<26?3:a<30?2:1;const cut=faCut(p);const wg=Math.round(Math.max(p.wage*.9*cut,(typeof mktWage==='function'?mktWage(p,c):p.wage)*.8*cut)*(typeof lgWageMul==='function'?Math.min(1.5,lgWageMul(p,c)):1)/1e4)*1e4;completeTransfer(p.id,c,0,{cEnd:`${y0+yrs-1}-06-30`,wage:wg});used.add(p.id)};
   const lvOf=c=>{const sq=squadOf(c);const top=sq.map(p=>p.ovr).sort((a,b)=>b-a);const L=top.length?top.slice(0,16).reduce((a,v)=>a+v,0)/Math.min(16,top.length):60;const lv={};for(const ln in AIQ){const v=sq.filter(p=>LINE[p.g]===ln).map(p=>p.ovr).sort((a,b)=>b-a);lv[ln]=v[AIQ[ln]-1]??(L-12)}return {sq,L,lv}};
-  for(const b of CLUBS){if(!b||b.i===S.club||b.i===FA||b.i===RET||S.aiBudget[b.i]===undefined)continue;const n=sqSize(b.i);if(n>=20)continue;const {L,lv}=lvOf(b.i);let k=0;
-    const need=Object.keys(AIQ).sort((x,y)=>(lv[x]-L)-(lv[y]-L));for(const ln of need){if(k>=2||n+k>=20)break;const p=fa.find(q=>!used.has(q.id)&&LINE[q.g]===ln&&q.ovr>=L-12&&q.ovr<=L+2&&(typeof lgMoveOK!=='function'||lgMoveOK(q,b.i)));if(p){sign(p,b.i);k++}}}
-  for(const p of fa){if(used.has(p.id)||p.ovr<70)continue;if(hsh(p.id+'fad'+S.date)>.15)continue;const ln=LINE[p.g];
-    const C=CLUBS.filter(b=>b&&b.i!==S.club&&b.i!==FA&&b.i!==RET&&S.aiBudget[b.i]!==undefined&&sqSize(b.i)<28).map(b=>{const {L,lv}=lvOf(b.i);return [b,p.ovr-lv[ln],L]}).filter(x=>x[1]>=1&&p.ovr<=x[2]+4&&(typeof lgMoveOK!=='function'||lgMoveOK(p,x[0].i))).sort((x,y)=>(y[0].rep-x[0].rep)||(y[1]-x[1]));
+  if(dLeft<=3)for(const b of CLUBS){if(!b||b.i===S.club||b.i===FA||b.i===RET||S.aiBudget[b.i]===undefined)continue;const n=sqSize(b.i);if(n>=20)continue;const {L,lv}=lvOf(b.i);let k=0;
+    const need=Object.keys(AIQ).sort((x,y)=>(lv[x]-L)-(lv[y]-L));for(const ln of need){if(k>=2||n+k>=20)break;let p=fa.find(q=>!used.has(q.id)&&LINE[q.g]===ln&&q.ovr>=L-12&&q.ovr<=L+2&&(typeof lgMoveOK!=='function'||lgMoveOK(q,b.i)));if(p){sign(p,b.i);k++;continue}
+      const L2=CLUBS.filter(c=>c&&c.i!==b.i&&c.i!==S.club&&c.rep>b.rep&&S.aiBudget[c.i]!==undefined&&sqSize(c.i)>22).slice(0,60);
+      for(const c of L2){const sq=squadOf(c.i).sort((x,y)=>y.ovr-x.ovr);const q=sq.slice(19).find(x=>LINE[x.g]===ln&&!x.loanFrom&&x.ovr>=L-8&&x.ovr<=L+2&&!used.has(x.id));if(q){completeTransfer(q.id,b.i,0,{loan:true});const qq=S.ps[q.id];qq.lnRole=1;qq.res=false;(S.aiLn=S.aiLn||[]).push(q.id);used.add(q.id);k++;break}}}}
+  for(const p of fa){if(used.has(p.id)||p.ovr<70)continue;if(hsh(p.id+'fad'+S.date)>(late?.4:.15))continue;const ln=LINE[p.g];
+    const C=CLUBS.filter(b=>b&&b.i!==S.club&&b.i!==FA&&b.i!==RET&&S.aiBudget[b.i]!==undefined&&sqSize(b.i)<28).map(b=>{const {L,lv}=lvOf(b.i);return [b,p.ovr-lv[ln],L]}).filter(x=>x[1]>=1&&p.ovr<=x[2]+(late?8:4)&&(typeof lgMoveOK!=='function'||lgMoveOK(p,x[0].i))).sort((x,y)=>(y[0].rep-x[0].rep)||(y[1]-x[1]));
     if(C.length){sign(p,C[0][0].i)}}}catch(e){console.error(e)}}
+// v246 자유계약 몸값 양보: 이적시장 진행률에 따라 연봉 요구 하향(30세+ 최대 −35%, 그 아래 −15%) — 우리 협상·AI 영입 모두
+function faCut(p){try{if(clubOf(p.id)!==FA)return 1;const w=winNow();if(!w)return 1;const tot=Math.max(1,daysBetween(w.from,w.to)),pr=Math.max(0,Math.min(1,daysBetween(w.from,S.date)/tot));return 1-pr*(ageOf(p)>=30?.35:.15)}catch(e){return 1}}
+{const _wdF=wageDemand;wageDemand=function(p,c){const v=_wdF.apply(this,arguments);try{if(!MKON())return v;const k=faCut(p);return k<1?Math.round(v*k/1e4)*1e4:v}catch(e){return v}}}
 {const _dFA=daily;daily=function(){const r=_dFA.apply(this,arguments);try{mkFAday()}catch(e){}return r}}
 
 // ================= v239 2D 경기 복기: 전체 타임라인 + 골·빅찬스 표시 (사용자 요청) =================
@@ -6650,6 +6657,68 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 
 // v242 미리 계산을 더 일찍: 진행이 멈출 때마다(메일·이적 제안 등으로 멈춘 날 포함) 다음 우리 경기 날까지 미리 계산 시작 → 메뉴를 보는 시간도 계산에 씀
 {const _rdE=render;render=function(){const r=_rdE.apply(this,arguments);try{if(S&&S.club!=null&&!(typeof M!=='undefined'&&M&&!M.done)&&!document.querySelector('.busy')){clearTimeout(EA.pt);EA.pt=setTimeout(eaPrefetch,2500)}}catch(e){}return r}}
+
+// ---- v248 AI 재정 관리: 이적시장 기간에 선수단 비용 비율이 한도 −3%p를 넘은 AI 구단은 하루 1명씩 고액 연봉 비주전(팀 내 14위 밖, 24세 이상)과 계약 해지(자유계약으로) — 스쿼드 22명 초과일 때만
+//  (4차 10시즌 시뮬: 매 시즌 약 40% 구단이 한도 초과 — 이적료 상각이 쌓여도 고액 연봉자를 정리하지 않았음)
+function scrTrimDay(){if(!SCRON()||!winNow())return;try{for(const c of CLUBS){if(!c||c.i===S.club||c.i===FA||c.i===RET||S.aiBudget[c.i]===undefined||!c.rev)continue;const L=scrLim(c.i);if(scrRatio(c.i)<=L-.03)continue;if(sqSize(c.i)<=22)continue;
+  const sq=squadOf(c.i).sort((a,b)=>b.ovr-a.ovr);const cand=sq.slice(13).filter(p=>ageOf(p)>=24&&!p.loanFrom).sort((a,b)=>b.wage-a.wage)[0];if(!cand)continue;completeTransfer(cand.id,FA,0,{wage:cand.wage})}}catch(e){console.error(e)}}
+{const _dTr=daily;daily=function(){const r=_dTr.apply(this,arguments);try{scrTrimDay()}catch(e){}return r}}
+
+// ---- v247 리그별 시장 연봉: 시장 연봉(가치→연봉 회귀)은 리그 구분 없이 맞춘 값이라, 5대 리그 밖 구단의 재계약·자유계약 연봉이 실제보다 크게 나옴
+//  (10시즌 시뮬: 포르투갈 연봉 총액 €321M → 4시즌 만에 €858M, 매출 대비 선수단 비용 58% → 168%) → 소속(또는 갈) 구단 리그 연봉 수준으로 낮춤: ×min(1, (리그 평균 연봉/€2.0M)^0.6) — 예: 포르투갈 ×0.43, 에레디비시 ×0.41, 리그1 ×0.71, 라리가·EPL ×1
+{const _mwL=mktWage;mktWage=function(p,c){const v=_mwL.apply(this,arguments);try{if(typeof MKON==='function'&&!MKON())return v;const cl=c!=null?c:clubOf(p.id);if(cl==null||cl<0||!CLUBS[cl]||typeof lgW!=='function')return v;return v*Math.min(1,Math.pow(lgW(cl)/2.0,.6))}catch(e){return v}}}
+
+// ================= v247 구단 매출 보정 · 선수단 비용 비율 규정(SCR) — 사용자 요청 =================
+// ① 매출 보정: 딜로이트 머니리그에 없는 구단 매출은 '스쿼드 가치 추정'이라 5대 리그 밖이 크게 부풀려져 있었음(예: 벤피카 €718M·아약스 €700M·갈라타사라이 €792M → 리그 전체가 실제의 5~14배)
+//    리그 실제 매출(2023/24)에 맞춰 딜로이트 외 구단 매출·연봉 한도에 배율: 5대 리그 = Deloitte Annual Review 2025(EPL £6.3bn·분데스 €3.8bn·라리가 €3.8bn·세리에A €2.9bn·리그1 €2.6bn)에서 딜로이트 머니리그 구단 몫을 뺀 나머지
+//    스코틀랜드 €378M(UEFA 2025), 포르투갈 약 €600M·덴마크 약 €230M(UEFA 입장 수입과 그 비중으로 역산), 그 밖의 리그는 추정(표시: 추정)
+//    벤피카는 딜로이트 머니리그 2026(2024/25) €283.4M으로 고정(이름 불일치로 빠져 있었음)
+const RVF={EN:.48,ES:.48,IT:.44,DE:.77,FR:.67,PT:.072,NL:.13,TR:.19,BE:.17,SC:.30,DK:.15,AT:.25,CH:.21,BR:.28,AR:.12,US:.29,MX:.26,SA:.3,EN2:.26,DE2:.43,IT2:.16,FR2:.25,ES2:.47,JP:.49,KR:.33,CN:.53};
+/* 리그 평균 연봉/매출 비율(Deloitte 2025 기준 근사: EPL 63%·라리가 62%·분데스 55%·세리에A 68%·리그1 70%, 그 밖 60% 추정) */const WRT={EN:.63,ES:.62,DE:.55,IT:.68,FR:.70};
+const W0={};(function(){try{for(const id in BASE){const p=BASE[id];if(p&&p.club!=null)W0[p.club]=(W0[p.club]||0)+(p.wage||0)}}catch(e){}})();
+(function(){try{CLUBS.forEach(c=>{if(!c)return;if(/Benfica/.test(c.name)){const f=283.4/c.rev;c.rev=283.4;c.revSrc='딜로이트 2026';c.wageCap=Math.round(c.wageCap*f*10)/10;return}
+  if(/딜로이트/.test(c.revSrc||''))return;const f=RVF[c.lg]??RVF[typeof baseLg==='function'?baseLg(c.lg):c.lg]??.3;c.rev0=c.rev;const w0=(W0[c.i]||0)/1e6,tr=WRT[c.lg]??.6;
+    /* 단, 시작 연봉 총액 ÷ 리그 평균 연봉 비율보다 낮게 잡지 않음 — 5대 리그 중위권은 연봉이 리그 평균 수준이라 배율만 쓰면 매출보다 연봉이 큰 구단이 생김(레알 소시에다드·나폴리 등) */
+    c.rev=Math.round(Math.max(c.rev*f,w0/tr)*10)/10;c.wageCap=Math.round(Math.max(c.wageCap*(c.rev/c.rev0),w0*1.08)*10)/10;c.revSrc=(c.revSrc||'')+' · 리그 실제 매출 보정'})}catch(e){console.error(e)}})();
+function rvfOf(c){const C=CLUBS[c];if(!C||C.rev0==null)return /Benfica/.test(C&&C.name||'')?null:1;return C.rev/C.rev0}
+// 기존 세이브: 저장된 연봉 한도(S.wcap·S.wc0)도 같은 배율로 한 번 — 우리 구단은 이번 시즌엔 지금 연봉 총액 아래로 내리지 않음(다음 시즌부터 적용, 안내 메일)
+{const _dlR=devLoad;devLoad=function(){const r=_dlR.apply(this,arguments);try{if(S&&!S.rvf247){S.rvf247=1;const bf=CLUBS.find(c=>c&&/Benfica/.test(c.name));
+    const fac=c=>{const C=CLUBS[c];if(!C)return 1;if(C.rev0!=null)return C.rev/C.rev0;return 1};
+    for(const k of ['wcap','wc0'])if(S[k])for(const c in S[k]){const f=fac(+c);if(f!==1)S[k][c]=Math.round(S[k][c]*f*10)/10}
+    if(S.club!=null&&S.club>=0&&CLUBS[S.club]){const wb=wageBill(S.club)/1e6;if(CLUBS[S.club].wageCap<wb){S.scrGrace=S.season;CLUBS[S.club].wageCap=Math.ceil(wb);(S.wcap=S.wcap||{})[S.club]=Math.ceil(wb)}
+      inbox('board','',`재정 기준 변경: 구단 매출·연봉 한도 재산정`,`리그 실제 매출 수준에 맞춰 구단 매출을 다시 계산했습니다. ${esc(CLUBS[S.club].name)} 연 매출 €${Math.round(CLUBS[S.club].rev)}M · 선수단 비용 한도 ${Math.round(scrLim(S.club)*100)}%${S.scrGrace===S.season?'<br>지금 연봉 총액이 새 한도를 넘어, 이번 시즌은 유예하고 다음 시즌부터 규정을 적용합니다. 연봉 총액을 줄여 두세요.':''}`)}}}catch(e){console.error(e)}return r}}
+// ② 선수단 비용 비율(SCR) = (선수 연봉 + 이적료 상각) ÷ 매출
+//  한도: EPL 85%(2026/27부터, 115% 넘으면 승점 6 + £6.5M(약 €7.6M)마다 1점 삭감) · 유럽대항전 출전 구단 70%(UEFA) · 라리가 70%(구단별 비용 한도를 비율로 근사, 넘으면 판매 수입의 20%만 재투자) · 그 밖의 리그 80%(추정, 리그 라이선스)
+//  이적료 상각 = 이적료 ÷ 계약 연수(게임 시작 뒤 이적만 기록). 우리 구단은 시즌 종료 때 정산, AI 구단은 영입 때마다 검사
+function scrInEu(c){try{if(!S.eu||S.eu.y!==S.season)return false;for(const k in S.eu.comp)if((S.eu.comp[k].teams||[]).includes(c))return true}catch(e){}return false}
+function scrLim(c){const lg=CLUBS[c]&&CLUBS[c].lg;let L=lg==='EN'?.85:lg==='ES'?.70:.80;if(scrInEu(c))L=Math.min(L,.70);return L}
+function scrAm(c){let a=0;const y=S.season;for(const id in (S.am||{})){const x=S.am[id];if(x.c===c&&y<=x.u)a+=x.a}return a}
+function scrCost(c){return wageBill(c)+scrAm(c)}
+function scrRatio(c){const R=(CLUBS[c].rev||1)*1e6;return scrCost(c)/R}
+function SCRON(){return !(typeof SCR_OFF!=='undefined'&&SCR_OFF)}
+{const _ctA=completeTransfer;completeTransfer=function(id,to,fee,o){const fr=clubOf(id);const over=SCRON()&&fr>=0&&CLUBS[fr]&&CLUBS[fr].lg==='ES'&&scrRatio(fr)>scrLim(fr);if(over){o=Object.assign({},o||{});o._w0=pl(id).wage||0;o._wb0=wageBill(fr)}const r=_ctA.apply(this,arguments);try{if(!SCRON())return r;const A=S.am=S.am||{};delete A[id];
+    if(fee>0&&!(o&&o.loan)&&to>=0&&CLUBS[to]){const ce=(o&&o.cEnd)||pl(id).cEnd||`${S.season+3}-06-30`;const yrs=Math.max(1,Math.min(5,+String(ce).slice(0,4)-S.season));A[id]={c:to,a:fee/yrs,u:S.season+yrs-1}}
+    /* 라리가 재투자 제한(v248 보강): 한도를 넘은 구단은 판매 수입의 20%만(원래 70% 반영), 팀 연봉 총액의 5%를 넘게 받던 핵심 선수 판매는 30% */if(over&&fee>0){const fr5=(o&&o._w0!=null?o._w0:0)>(o&&o._wb0||Infinity)*.05;const keep=fr5?.3:.2;const cut=fee*(.7-keep);if(fr===S.club){S.fin.budget-=cut;S.fin.log.unshift({d:S.date,t:`라리가 비용 한도 초과 — 판매 수입 재투자 ${Math.round(keep*100)}%만 허용${fr5?'(핵심 선수)':''}`,v:-cut})}else if(S.aiBudget[fr]!==undefined)S.aiBudget[fr]-=cut}
+    /* 비용 절감분 재투자: 한도를 넘은 라리가 구단에서 선수가 나가면(판매·방출) 줄어든 연봉 1년치의 60%(핵심 선수 70%)를 이적 예산에 */if(over&&o&&o._w0>0&&!(o.loan)){const fr5=o._w0>(o._wb0||Infinity)*.05;const sv=o._w0*(fr5?.7:.6);if(fr===S.club){S.fin.budget+=sv;S.fin.log.unshift({d:S.date,t:`라리가 비용 절감분 재투자 ${fr5?70:60}%`,v:sv})}else if(S.aiBudget[fr]!==undefined)S.aiBudget[fr]+=sv}}catch(e){console.error(e)}return r}}
+// AI 영입 검사: 영입 뒤 SCR이 한도를 넘으면 그 영입은 하지 않음(연봉 = 지금 연봉 × 1.15 × 리그 배율, 상각 = 이적료 ÷ 계약 연수)
+function scrOK(p,c,fee){if(!SCRON())return true;try{const yrs=4;const w=p.wage*1.15*(typeof lgWageMul==='function'?lgWageMul(p,c):1);const add=w+(fee||0)/yrs;return (scrCost(c)+add)<=scrLim(c)*CLUBS[c].rev*1e6}catch(e){return true}}
+// 시즌 종료 정산(모든 구단): 위반 기록 → 우리 구단 메일·제재, AI 구단 다음 시즌 예산 감액
+function scrSettle(){if(!SCRON())return;const out=[];const y=S.season;S.pen=S.pen||{};CLUBS.forEach(c=>{if(!c||c.i===FA||c.i===RET||!c.rev)return;if(c.i!==S.club&&S.aiBudget[c.i]===undefined)return;const R=c.rev*1e6,cost=scrCost(c.i),r=cost/R,L=scrLim(c.i);if(r<=L)return;/* v248 유예 구간: EPL은 규정대로(85% 넘으면 부담금), 그 밖은 한도 +5%p까지 경고만 */if(c.lg!=='EN'&&r<=L+.05){if(c.i===S.club)inbox('board','',`선수단 비용 비율 경고 (${Math.round(r*100)}% / 한도 ${Math.round(L*100)}%)`,'한도를 조금 넘었습니다. +5%p를 넘으면 제재를 받습니다.');return}
+  if(c.i===S.club&&S.scrGrace===y){out.push([c.i,r,L,'유예']);return}
+  let msg='';if(c.lg==='EN'){const red=L+.30;if(r>red){const pts=6+Math.floor((cost-red*R)/7.6e6);(S.pen[y+1]=S.pen[y+1]||{})[c.i]=pts;msg=`승점 ${pts}점 삭감(다음 시즌)`}else{const lev=(cost-L*R)*(r-L);msg=`부담금 €${(lev/1e6).toFixed(1)}M`;if(c.i===S.club){S.fin.budget-=lev;S.fin.log.unshift({d:S.date,t:'선수단 비용 비율 부담금',v:-lev})}else S.aiBudget[c.i]=(S.aiBudget[c.i]||0)-lev}}
+  else if(scrInEu(c.i)){const fine=(cost-L*R)*.1;msg=`UEFA 벌금 €${(fine/1e6).toFixed(1)}M(초과분 10%)`;if(c.i===S.club){S.fin.budget-=fine;S.fin.log.unshift({d:S.date,t:'UEFA 재정 규정 벌금',v:-fine})}else S.aiBudget[c.i]=(S.aiBudget[c.i]||0)-fine}
+  else if(c.lg==='ES'){msg='비용 한도 초과 — 다음 시즌 판매 수입 재투자 20%로 제한'}
+  else{msg='리그 라이선스 — 다음 시즌 이적 예산 절반';if(c.i===S.club){S.fin.budget=Math.min(S.fin.budget,S.fin.budget*.5)}else S.aiBudget[c.i]=(S.aiBudget[c.i]||0)*.5}
+  out.push([c.i,r,L,msg])});
+  const me=out.find(x=>x[0]===S.club);if(me)inbox('board','',`선수단 비용 비율 초과 (${Math.round(me[1]*100)}% / 한도 ${Math.round(me[2]*100)}%)`,`${me[3]==='유예'?'이번 시즌은 유예입니다. 다음 시즌부터 제재가 적용됩니다.':esc(me[3])}<br>선수단 비용 = 선수 연봉 + 이적료 상각, 매출 €${Math.round(CLUBS[S.club].rev)}M 기준.`);
+  S.scrLog=(S.scrLog||[]).concat([{y,n:out.length,top:out.slice(0,10).map(x=>[x[0],Math.round(x[1]*100),x[3]])}]).slice(-12)}
+{const _roS=rollover;rollover=function(){try{if(S.seasonDone)scrSettle()}catch(e){console.error(e)}return _roS.apply(this,arguments)}}
+// 승점 삭감 반영(우리 리그 순위표·다른 리그 순위표)
+{const _tb=table;table=function(){const t=_tb.apply(this,arguments);try{const P=S.pen&&S.pen[S.season];if(P&&Object.keys(P).length){t.forEach(r=>{if(P[r.id])r.pts-=P[r.id]});t.sort((x,y)=>y.pts-x.pts||(y.gf-y.ga)-(x.gf-x.ga)||y.gf-x.gf)}}catch(e){}return t}}
+if(typeof tableLg==='function'){const _tl=tableLg;tableLg=function(lg){const t=_tl.apply(this,arguments);try{const P=S.pen&&S.pen[S.season];if(P&&Object.keys(P).length){t.forEach(r=>{if(P[r.id])r.pts-=P[r.id]});t.sort((x,y)=>y.pts-x.pts||(y.gf-y.ga)-(x.gf-x.ga)||y.gf-x.gf)}}catch(e){}return t}}
+// 재정 화면에 선수단 비용 비율
+{const _fsS=finSheet;finSheet=function(){const r=_fsS.apply(this,arguments);try{if(S.club<0||!SCRON())return r;const sh=document.querySelector('#scrim .sheet');if(!sh||sh.querySelector('.scrw'))return r;const c=S.club,R=CLUBS[c].rev,ra=scrRatio(c),L=scrLim(c);const P=S.pen&&S.pen[S.season]&&S.pen[S.season][c];
+  sh.insertAdjacentHTML('beforeend',`<div class="scrw"><h3 style="margin:14px 0 6px">선수단 비용 비율 (재정 규정)</h3><div class="card pad" style="font-size:13px;line-height:1.6">매출 €${Math.round(R)}M · 선수단 비용 €${Math.round(scrCost(c)/1e6)}M(연봉 €${Math.round(wageBill(c)/1e6)}M + 이적료 상각 €${Math.round(scrAm(c)/1e6)}M)<br><b style="color:${ra>L?'var(--bad)':'var(--good)'}">${Math.round(ra*100)}%</b> / 한도 ${Math.round(L*100)}% (${CLUBS[c].lg==='EN'?'EPL 85%':CLUBS[c].lg==='ES'?'라리가 비용 한도(비율 근사)':'리그 라이선스 80%(추정)'}${scrInEu(c)?' · 유럽대항전 출전 UEFA 70%':''})${S.scrGrace===S.season?'<br>이번 시즌은 재정 기준 변경으로 유예':''}${P?`<br>승점 삭감 ${P}점 적용 중`:''}<p class="note" style="margin:6px 0 0">시즌 종료 때 정산 — 넘으면 EPL 부담금(115% 넘으면 승점 삭감), UEFA 벌금, 라리가 재투자 20% 제한, 그 밖의 리그 다음 시즌 이적 예산 절반</p></div></div>`)}catch(e){console.error(e)}return r}}
 
 // ---- v243 컵·유럽대항전도 엔진(사용자 제안: 대진이 정해진 경기는 미리 계산) ----
 // 대진이 나온 다른 팀 컵·유럽대항전 경기(국내 컵·챔스·유로파·컨퍼런스, 1·2차전 모두)를 리그 경기와 함께 미리 계산 → 그날 결과(점수)를 엔진 결과로
