@@ -1,0 +1,46 @@
+462|Cesena|IT2
+465|Entella|IT2
+467|L. R. Vicenza|IT2
+468|Mantova|IT2
+469|Modena|IT2
+470|Padova|IT2
+473|SS Juve Stabia|IT2
+475|Südtirol|IT2
+239|Incheon United Football Club|KR
+382|Atlético de San Luis|MX
+392|FC Juárez|MX
+124|Feyenoord Rotterdam|NL
+142|Fortuna Sittardia Combinatie|NL
+150|NEC Nijmegen|NL
+172|Excelsior Rotterdam|NL
+208|SC Telstar|NL
+209|Go Ahead Eagles|NL
+350|Willem II|NL
+362|Abha Club|SA
+364|Al Diriyah|SA
+365|Al Ettifaq|SA
+366|Al Faisaly|SA
+367|Al Fateh|SA
+368|Al Fayha|SA
+369|Al Hazem|SA
+371|Al Ittihad|SA
+372|Al Khaleej|SA
+373|Al Kholood|SA
+374|Al Nassr|SA
+377|Al Shabab|SA
+378|Al Taawoun|SA
+379|Neom|SA
+98|Fenerbahce|TR
+102|Beşiktaş Jimnastik Kulübü|TR
+103|Kocaelispor|TR
+106|Caykur Rizespor|TR
+109|Samsunspor|TR
+174|Gençlerbirliği Spor Kulübü|TR
+212|Göztepe|TR
+238|Gaziantep FK|TR
+271|Basaksehir FK|TR
+273|Eyüpspor|TR
+284|Kasimpasa|TR
+287|Alanyaspor|TR
+317|Austin FC|US
+319|St. Louis City Soccer Club|US

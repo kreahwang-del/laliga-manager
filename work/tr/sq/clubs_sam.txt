@@ -1,0 +1,50 @@
+114|Club Atlético Boca Juniors|AR
+116|Sport Club Corinthians Paulista|BR
+120|Club Atlético River Plate|AR
+121|Grêmio Foot-Ball Porto Alegrense|BR
+123|Santos Futebol Clube|BR
+129|Club Estudiantes de La Plata|AR
+136|Clube Atlético Mineiro|BR
+137|Club Atlético Lanús|AR
+157|S. A. F. Botafogo|BR
+158|São Paulo Futebol Clube|BR
+162|Cruzeiro Esporte Clube|BR
+163|Clube de Regatas do Flamengo|BR
+168|Clube Atlético Paranaense|BR
+171|Coritiba Foot Ball Club|BR
+176|Club Atlético Banfield|AR
+179|Club Atlético Platense|AR
+182|Club de Regatas Vasco da Gama|BR
+187|Sociedade Esportiva Palmeiras|BR
+188|Club Atlético Vélez Sársfield|AR
+189|Asociación Atlética Argentinos Juniors|AR
+197|Club de Gimnasia y Esgrima La Plata|AR
+201|Club Atlético Independiente de Avellaneda|AR
+205|Club Atlético Newell’s Old Boys|AR
+207|Club Atlético Rosario Central|AR
+210|Racing Club Asociación Civil de Avellaneda|AR
+214|Club Atlético San Lorenzo de Almagro|AR
+215|Instituto Atlético Central Córdoba|AR
+216|Club Atlético Huracán|AR
+217|Esporte Clube Vitória|BR
+222|Club Social y Deportivo Defensa y Justicia|AR
+223|Club Atlético Belgrano|AR
+231|Fluminense Football Club|BR
+249|Mirasol Futebol Clube|BR
+251|Club Atlético Talleres|AR
+266|Sport Club Internacional|BR
+272|Club Atlético Unión|AR
+276|Red Bull Bragantino|BR
+283|Esporte Clube Bahia|BR
+285|Clube do Remo|BR
+288|Club Atlético Tigre|AR
+289|Club Sportivo Independiente Rivadavia|AR
+290|Club Atlético Aldosivi|AR
+291|Club Atlético Sarmiento|AR
+292|Club Atlético Tucumán|AR
+293|Asociación Atlética Estudiantes|AR
+294|Club Atlético Gimnasia y Esgrima de Mendoza|AR
+295|Associação Chapecoense de Futebol|BR
+297|Asociación de Fomento Deportivo Riestra Barrio Colón|AR
+303|Club Atlético Barracas Central|AR
+306|Club Atlético Central Córdoba|AR

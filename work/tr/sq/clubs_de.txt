@@ -1,0 +1,36 @@
+0|Bayern Munich|DE
+1|Dortmund|DE
+2|RB Leipzig|DE
+3|Leverkusen|DE
+4|Stuttgart|DE
+5|Hoffenheim|DE
+6|Frankfurt|DE
+7|Freiburg|DE
+8|Augsburg|DE
+9|Köln|DE
+10|Hamburger SV|DE
+11|Mainz 05|DE
+12|Gladbach|DE
+13|Paderborn 07|DE
+14|Werder Bremen|DE
+15|Union Berlin|DE
+16|Schalke 04|DE
+17|Elversberg|DE
+438|1. FC Magdeburg|DE2
+439|1. FC Nürnberg|DE2
+440|Arminia Bielefeld|DE2
+441|Braunschweig|DE2
+442|Dynamo Dresden|DE2
+443|Energie Cottbus|DE2
+444|FC St. Pauli|DE2
+445|Fürth|DE2
+446|Hannover 96|DE2
+447|Heidenheim|DE2
+448|Hertha BSC|DE2
+449|Holstein Kiel|DE2
+450|Kaiserslautern|DE2
+451|Karlsruher SC|DE2
+452|SV Darmstadt 98|DE2
+453|VfL Bochum 1848|DE2
+454|VfL Osnabrück|DE2
+455|VfL Wolfsburg|DE2

@@ -1,0 +1,1707 @@
+club_id|club|status|number|pos|nat|player|note
+114|Club Atlético Boca Juniors|squad|1|GK|COL|Álvaro Montero|
+114|Club Atlético Boca Juniors|squad|2|DF|ARG|Lautaro Di Lollo|
+114|Club Atlético Boca Juniors|squad|3|DF|ARG|Lautaro Blanco|
+114|Club Atlético Boca Juniors|squad|4|DF|ARG|Nicolás Figal|
+114|Club Atlético Boca Juniors|squad|5|MF|ARG|Leandro Paredes|captain
+114|Club Atlético Boca Juniors|squad|6|MF|ARG|Rodrigo Battaglia|
+114|Club Atlético Boca Juniors|squad|7|MF|CHI|Carlos Palacios|
+114|Club Atlético Boca Juniors|squad|8|MF|ARG|Tomás Belmonte|
+114|Club Atlético Boca Juniors|squad|9|FW|ARG|Milton Giménez|
+114|Club Atlético Boca Juniors|squad|10|MF|ARG|Tomás Aranda|
+114|Club Atlético Boca Juniors|squad|11|FW|PAR|Ángel Romero|
+114|Club Atlético Boca Juniors|squad|12|GK|ARG|Leandro Brey|
+114|Club Atlético Boca Juniors|squad|13|GK|ARG|Javier García|
+114|Club Atlético Boca Juniors|squad|15|MF|CHI|Williams Alarcón|
+114|Club Atlético Boca Juniors|squad|16|FW|URU|Miguel Merentiel|
+114|Club Atlético Boca Juniors|squad|17|DF|URU|Leandro Lozano|
+114|Club Atlético Boca Juniors|squad|18|MF|ARG|Milton Delgado|
+114|Club Atlético Boca Juniors|squad|19|FW|ARG|Leonel Flores|
+114|Club Atlético Boca Juniors|squad|20|MF|ARG|Alan Velasco|
+114|Club Atlético Boca Juniors|squad|21|MF|ARG|Kevin Zenón|
+114|Club Atlético Boca Juniors|squad|22|MF|COL|Sebastián Villa|
+114|Club Atlético Boca Juniors|squad|23|MF|ARG|Camilo Rey Domenech|
+114|Club Atlético Boca Juniors|squad|24|DF|ARG|Dylan Gorosito|
+114|Club Atlético Boca Juniors|squad|25|MF|ARG|Santiago Ascacíbar|
+114|Club Atlético Boca Juniors|squad|26|DF|ARG|Marco Pellegrino|
+114|Club Atlético Boca Juniors|squad|27|MF|ARG|Malcom Braida|
+114|Club Atlético Boca Juniors|squad|28|FW|PAR|Adam Bareiro|
+114|Club Atlético Boca Juniors|squad|30|FW|ECU|Enner Valencia|
+114|Club Atlético Boca Juniors|squad|32|DF|ARG|Ayrton Costa|
+114|Club Atlético Boca Juniors|squad||GK|ARG|Agustín Marchesín|
+114|Club Atlético Boca Juniors|loaned_out||||Sebastián Díaz Robles|San Martín-SJ
+114|Club Atlético Boca Juniors|loaned_out||||Ramiro García|Argentino-Q
+114|Club Atlético Boca Juniors|loaned_out||||Agustín Lastra|Estudiantes-RC
+114|Club Atlético Boca Juniors|loaned_out||||Gabriel Aranda|Racing-C
+114|Club Atlético Boca Juniors|loaned_out||||Balthazar Bernardi|Estudiantes
+114|Club Atlético Boca Juniors|loaned_out||||Lucas Blondel|Huracán
+114|Club Atlético Boca Juniors|loaned_out||||Nahuel Génez|Patronato
+114|Club Atlético Boca Juniors|loaned_out||||Renzo Giampaoli|Gimnasia-LP
+114|Club Atlético Boca Juniors|loaned_out||||Mateo Mendía|Platense
+114|Club Atlético Boca Juniors|loaned_out||||Pedro Velurtas|Almirante Brown
+114|Club Atlético Boca Juniors|loaned_out||||Santiago Zampieri|M.C. Torque
+114|Club Atlético Boca Juniors|loaned_out||||Julián Ceballos|Gimnasia-M
+114|Club Atlético Boca Juniors|loaned_out||||Brandon Cortés|Patronato
+114|Club Atlético Boca Juniors|loaned_out||||Santiago Dalmasso|Platense
+114|Club Atlético Boca Juniors|loaned_out||||Tomás Díaz|Los Andes
+114|Club Atlético Boca Juniors|loaned_out||||Gonzalo Maroni|Barracas Central
+114|Club Atlético Boca Juniors|loaned_out||||Agustín Martegani|Independiente Medellín
+114|Club Atlético Boca Juniors|loaned_out||||Rodrigo Montes|Deportivo Rincón
+114|Club Atlético Boca Juniors|loaned_out||||Simón Rivero|Tigre
+114|Club Atlético Boca Juniors|loaned_out||||Jabes Saralegui|Tigre
+114|Club Atlético Boca Juniors|loaned_out||||Gabriel Vega|Nueva Chicago
+114|Club Atlético Boca Juniors|loaned_out||||Brian Aguirre|Estudiantes-LP
+114|Club Atlético Boca Juniors|loaned_out||||Federico Aguirre|Camioneros
+114|Club Atlético Boca Juniors|loaned_out||||Norberto Briasco|Barracas Central
+114|Club Atlético Boca Juniors|loaned_out||||Lucas Brochero|San Miguel
+114|Club Atlético Boca Juniors|loaned_out||||Lucas Janson|Gimnasia-LP
+114|Club Atlético Boca Juniors|loaned_out||||Gonzalo Morales|Barracas Central
+114|Club Atlético Boca Juniors|loaned_out||||Agustín Obando|Atlético de Rafaela
+114|Club Atlético Boca Juniors|loaned_out||||Ignacio Rodríguez|Atlanta
+114|Club Atlético Boca Juniors|loaned_out||||Valentino Simoni|Gimnasia-M
+114|Club Atlético Boca Juniors|loaned_out||||Maximiliano Zalazar|Gimnasia-LP
+114|Club Atlético Boca Juniors|loaned_out||||Iker Zufiaurre|Albion
+116|Sport Club Corinthians Paulista|squad|1|GK|BRA|Hugo Souza|
+116|Sport Club Corinthians Paulista|squad|2|DF|BRA|Matheuzinho|
+116|Sport Club Corinthians Paulista|squad|3|DF|BRA|Gabriel Paulista|
+116|Sport Club Corinthians Paulista|squad|4|DF|BRA|João Pedro|
+116|Sport Club Corinthians Paulista|squad|5|DF|BRA|André Ramalho|
+116|Sport Club Corinthians Paulista|squad|7|MF|BRA|Breno Bidon|
+116|Sport Club Corinthians Paulista|squad|8|MF|ARG|Rodrigo Garro|captain
+116|Sport Club Corinthians Paulista|squad|9|FW|BRA|Yuri Alberto|
+116|Sport Club Corinthians Paulista|squad|10|FW|NED|Memphis Depay|
+116|Sport Club Corinthians Paulista|squad|11|MF|BRA|Vitinho|
+116|Sport Club Corinthians Paulista|squad|13|DF|BRA|Gustavo Henrique|vice-captain
+116|Sport Club Corinthians Paulista|squad|14|MF|BRA|Raniele|
+116|Sport Club Corinthians Paulista|squad|18|FW|BRA|Pedro Raul|
+116|Sport Club Corinthians Paulista|squad|19|MF|PER|André Carrillo|
+116|Sport Club Corinthians Paulista|squad|20|DF|URU|Pedro Milans|
+116|Sport Club Corinthians Paulista|squad|21|DF|BRA|Matheus Bidu|
+116|Sport Club Corinthians Paulista|squad|23|MF|BRA|Matheus Pereira|on loan from Fortaleza
+116|Sport Club Corinthians Paulista|squad|26|DF|ARG|Fabrizio Angileri|
+116|Sport Club Corinthians Paulista|squad|29|MF|BRA|Allan|on loan from Flamengo
+116|Sport Club Corinthians Paulista|squad|31|FW|BRA|Kayke|
+116|Sport Club Corinthians Paulista|squad|35|MF|BRA|Charles|
+116|Sport Club Corinthians Paulista|squad|37|FW|BRA|Kaio César|on loan from Al-Hilal
+116|Sport Club Corinthians Paulista|squad|40|GK|BRA|Felipe Longo|
+116|Sport Club Corinthians Paulista|squad|46|DF|BRA|Hugo Farias|
+116|Sport Club Corinthians Paulista|squad|49|MF|BRA|André|
+116|Sport Club Corinthians Paulista|squad|51|GK|BRA|Kauê|
+116|Sport Club Corinthians Paulista|squad|52|MF|MAR|Zakaria Labyad|
+116|Sport Club Corinthians Paulista|squad|54|MF|BRA|Luiz Gustavo|
+116|Sport Club Corinthians Paulista|squad|56|FW|BRA|Gui Negão|
+116|Sport Club Corinthians Paulista|squad|61|FW|BRA|Dieguinho|
+116|Sport Club Corinthians Paulista|squad|77|MF|ENG|Jesse Lingard|
+116|Sport Club Corinthians Paulista|squad|80|MF|BRA|Alex Santana|
+116|Sport Club Corinthians Paulista|loaned_out||||Matheus Donelli|Shabab Al-Ahli
+116|Sport Club Corinthians Paulista|loaned_out||||Félix Torres|Internacional
+116|Sport Club Corinthians Paulista|loaned_out||||Diego Palacios|Universidad Católica
+116|Sport Club Corinthians Paulista|loaned_out||||Cacá|Vitória
+116|Sport Club Corinthians Paulista|loaned_out||||Ryan|Fortaleza
+120|Club Atlético River Plate|squad|2|DF|ARG|Tobías Ramírez|
+120|Club Atlético River Plate|squad|3|DF|ARG|Francisco Ortega|
+120|Club Atlético River Plate|squad|5|DF|ARG|Juan Carlos Portillo|
+120|Club Atlético River Plate|squad|6|MF|ARG|Aníbal Moreno|
+120|Club Atlético River Plate|squad|8|MF|URU|Mauro Arambarri|
+120|Club Atlético River Plate|squad|9|FW|ARG|Sebastián Driussi|
+120|Club Atlético River Plate|squad|10|FW|ARG|Ángel Correa|
+120|Club Atlético River Plate|squad|13|DF|ARG|Lautaro Rivero|
+120|Club Atlético River Plate|squad|15|MF|ARG|Fausto Vera|on loan from Atlético Mineiro
+120|Club Atlético River Plate|squad|18|FW|ARG|Lucas Beltrán|on loan from Fiorentina
+120|Club Atlético River Plate|squad|19|FW|COL|Rafael Santos Borré|
+120|Club Atlético River Plate|squad|20|DF|URU|Giovanni González|
+120|Club Atlético River Plate|squad|21|DF|ARG|Marcos Acuña|
+120|Club Atlético River Plate|squad|23|MF|ARG|Thiago Almada|
+120|Club Atlético River Plate|squad|24|MF|ARG|Juan Cruz Meza|
+120|Club Atlético River Plate|squad|25|FW|ARG|Lautaro Pereyra|
+120|Club Atlético River Plate|squad|26|MF|ARG|Tomás Galván|
+120|Club Atlético River Plate|squad|28|DF|ARG|Lucas Martínez Quarta|vice-captain
+120|Club Atlético River Plate|squad|29|DF|ARG|Gonzalo Montiel|
+120|Club Atlético River Plate|squad|30|DF|ARG|Nicolás Otamendi|captain
+120|Club Atlético River Plate|squad|31|DF|ARG|Facundo González|
+120|Club Atlético River Plate|squad|32|FW|ARG|Agustín Ruberto|
+120|Club Atlético River Plate|squad|33|GK|ARG|Ezequiel Centurión|
+120|Club Atlético River Plate|squad|41|GK|ARG|Santiago Beltrán|
+120|Club Atlético River Plate|squad|44|MF|ARG|Lucas Silva|
+120|Club Atlético River Plate|squad|50|MF|ARG|Tobías Andrada|
+120|Club Atlético River Plate|squad|57|GK|ARG|Jeremías Martinet|
+120|Club Atlético River Plate|loaned_out||||David Martínez|Defensa y Justicia
+120|Club Atlético River Plate|loaned_out||||Ulises Giménez|Sarmiento
+120|Club Atlético River Plate|loaned_out||||Brian Gutiérrez|Montevideo City Torque
+120|Club Atlético River Plate|loaned_out||||Daniel Zabala|Huracán
+120|Club Atlético River Plate|loaned_out||||Tiago Serrago|Tigre
+120|Club Atlético River Plate|loaned_out||||Leonel Jaime|Peñarol
+120|Club Atlético River Plate|loaned_out||||Juan Sayago|Flamengo
+120|Club Atlético River Plate|loaned_out||||Santiago Lencina|Burgos
+120|Club Atlético River Plate|loaned_out||||Matías Galarza|Inter Miami
+120|Club Atlético River Plate|loaned_out||||Giuliano Galoppo|Atlanta United
+120|Club Atlético River Plate|loaned_out||||Tomás Nasif|Platense
+120|Club Atlético River Plate|loaned_out||||Bautista Dadín|Aldosivi
+120|Club Atlético River Plate|loaned_out||||Maximiliano Salas|Independiente Rivadavia
+120|Club Atlético River Plate|loaned_out||||Ian Subiabre|Tigre
+120|Club Atlético River Plate|loaned_out||||Joaquín Flores|Central Córdoba
+121|Grêmio Foot-Ball Porto Alegrense|squad|1|GK|BRA|Weverton|
+121|Grêmio Foot-Ball Porto Alegrense|squad|2|DF|PAR|Fabián Balbuena|
+121|Grêmio Foot-Ball Porto Alegrense|squad|3|DF|BRA|Wagner Leonardo|
+121|Grêmio Foot-Ball Porto Alegrense|squad|4|DF|ARG|Walter Kannemann|captain
+121|Grêmio Foot-Ball Porto Alegrense|squad|5|MF|ARG|Juan Nardoni|
+121|Grêmio Foot-Ball Porto Alegrense|squad|6|DF|BRA|Gustavo Martins|
+121|Grêmio Foot-Ball Porto Alegrense|squad|7|FW|ARG|Cristian Pavon|
+121|Grêmio Foot-Ball Porto Alegrense|squad|8|MF|PER|Erick Noriega|
+121|Grêmio Foot-Ball Porto Alegrense|squad|9|FW|GHA|Francis Amuzu|
+121|Grêmio Foot-Ball Porto Alegrense|squad|10|MF|CRO|Filip Krovinović|
+121|Grêmio Foot-Ball Porto Alegrense|squad|11|FW|BRA|Tetê|
+121|Grêmio Foot-Ball Porto Alegrense|squad|12|GK|BRA|Gabriel Grando|
+121|Grêmio Foot-Ball Porto Alegrense|squad|14|DF|BRA|Marcos Rocha|
+121|Grêmio Foot-Ball Porto Alegrense|squad|15|MF|BRA|Danilo Barbosa|
+121|Grêmio Foot-Ball Porto Alegrense|squad|17|MF|BRA|Dodi|
+121|Grêmio Foot-Ball Porto Alegrense|squad|18|DF|BRA|João Pedro|
+121|Grêmio Foot-Ball Porto Alegrense|squad|20|MF|PAR|Mathías Villasanti|vice-captain
+121|Grêmio Foot-Ball Porto Alegrense|squad|22|FW|DEN|Martin Braithwaite|
+121|Grêmio Foot-Ball Porto Alegrense|squad|23|DF|BRA|Marlon|3rd captain
+121|Grêmio Foot-Ball Porto Alegrense|squad|24|GK|BRA|Thiago Beltrame|
+121|Grêmio Foot-Ball Porto Alegrense|squad|27|DF|BRA|Diego Caito|on loan from Goiás
+121|Grêmio Foot-Ball Porto Alegrense|squad|30|FW|BRA|Matheus Nascimento|
+121|Grêmio Foot-Ball Porto Alegrense|squad|31|GK|BRA|Gabriel Menegon|
+121|Grêmio Foot-Ball Porto Alegrense|squad|37|MF|BRA|Gabriel Mec|
+121|Grêmio Foot-Ball Porto Alegrense|squad|38|DF|BRA|Caio Paulista|on loan from Palmeiras
+121|Grêmio Foot-Ball Porto Alegrense|squad|39|MF|BRA|Tiago|
+121|Grêmio Foot-Ball Porto Alegrense|squad|43|DF|BRA|Luis Eduardo|
+121|Grêmio Foot-Ball Porto Alegrense|squad|47|FW|BRA|Roger|
+121|Grêmio Foot-Ball Porto Alegrense|squad|54|DF|BRA|Pedro Gabriel|
+121|Grêmio Foot-Ball Porto Alegrense|squad|65|MF|BRA|Riquelme|
+121|Grêmio Foot-Ball Porto Alegrense|squad|77|FW|CPV|Jovane Cabral|
+121|Grêmio Foot-Ball Porto Alegrense|squad|82|DF|BRA|Wallace|
+121|Grêmio Foot-Ball Porto Alegrense|squad|95|FW|BRA|Carlos Vinícius|
+121|Grêmio Foot-Ball Porto Alegrense|squad|99|FW|COL|José Enamorado|
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Ygor|Anápolis
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||João Lucas|Remo
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Camilo|Chapecoense
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Miguel Monsalve|Estudiantes-LP
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Leonel Pérez|Racing Avellaneda
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Ronald|Fortaleza
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Alexander Aravena|Portland Timbers
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Cristian Olivera|Bahia
+121|Grêmio Foot-Ball Porto Alegrense|loaned_out||||Jardiel|Novorizontino
+123|Santos Futebol Clube|squad|1|GK|BRA|Diógenes|
+123|Santos Futebol Clube|squad|3|DF|BRA|Vinicius Lira|
+123|Santos Futebol Clube|squad|4|DF|BRA|Lucas Veríssimo|
+123|Santos Futebol Clube|squad|5|MF|BRA|João Schmidt|
+123|Santos Futebol Clube|squad|6|MF|BRA|Arthur|
+123|Santos Futebol Clube|squad|7|FW|BRA|Everton Cebolinha|
+123|Santos Futebol Clube|squad|8|MF|BRA|Gabriel Bontempo|
+123|Santos Futebol Clube|squad|9|FW|BRA|Gabriel Barbosa|on loan from Cruzeiro
+123|Santos Futebol Clube|squad|10|MF|BRA|Neymar|captain
+123|Santos Futebol Clube|squad|11|MF|BRA|Philippe Coutinho|
+123|Santos Futebol Clube|squad|14|DF|BRA|Luan Peres|
+123|Santos Futebol Clube|squad|15|MF|BRA|Willian Arão|
+123|Santos Futebol Clube|squad|16|FW|BRA|Thaciano|
+123|Santos Futebol Clube|squad|17|FW|PAR|Gustavo Caballero|
+123|Santos Futebol Clube|squad|18|DF|BRA|Igor Vinícius|
+123|Santos Futebol Clube|squad|20|MF|BRA|Pepê Fermino|
+123|Santos Futebol Clube|squad|21|FW|BRA|Moisés|
+123|Santos Futebol Clube|squad|22|FW|ARG|Álvaro Barreal|
+123|Santos Futebol Clube|squad|23|DF|BRA|Rodinei|
+123|Santos Futebol Clube|squad|25|DF|BRA|Gabriel Menino|on loan from Atlético Mineiro
+123|Santos Futebol Clube|squad|26|DF|BRA|João Ananias|
+123|Santos Futebol Clube|squad|27|DF|BRA|Davizinho|
+123|Santos Futebol Clube|squad|28|MF|URU|Christian Oliva|
+123|Santos Futebol Clube|squad|30|MF|BOL|Miguel Terceros|
+123|Santos Futebol Clube|squad|31|DF|ARG|Gonzalo Escobar|
+123|Santos Futebol Clube|squad|32|MF|ARG|Benjamín Rollheiser|
+123|Santos Futebol Clube|squad|33|FW|BRA|Rony|
+123|Santos Futebol Clube|squad|34|GK|BRA|João Paulo|
+123|Santos Futebol Clube|squad|38|DF|BRA|Rafael Gonzaga|
+123|Santos Futebol Clube|squad|42|DF|BRA|João Alencar|
+123|Santos Futebol Clube|squad|45|MF|BRA|Lima|on loan from Fluminense
+123|Santos Futebol Clube|squad|48|MF|BRA|Gustavo Henrique|
+123|Santos Futebol Clube|squad|57|FW|BRA|Nadson|
+123|Santos Futebol Clube|squad|67|GK|BRA|Rodrigo Falcão|
+123|Santos Futebol Clube|squad|77|GK|BRA|Gabriel Brazão|
+123|Santos Futebol Clube|squad|79|GK|BRA|João Pedro|
+123|Santos Futebol Clube|squad|81|MF|BRA|Samuel Pierri|
+123|Santos Futebol Clube|loaned_out||||João Fernandes|Confiança
+123|Santos Futebol Clube|loaned_out||||Alexis Duarte|Libertad
+123|Santos Futebol Clube|loaned_out||||Hayner|Vila Nova
+123|Santos Futebol Clube|loaned_out||||JP Chermont|Coritiba
+123|Santos Futebol Clube|loaned_out||||Kevyson|Ponte Preta
+123|Santos Futebol Clube|loaned_out||||Luisão|Goiás
+123|Santos Futebol Clube|loaned_out||||Nathan Santos|Juventude
+123|Santos Futebol Clube|loaned_out||||Zé Ivaldo|Remo
+123|Santos Futebol Clube|loaned_out||||Bernardo|Amazonas
+123|Santos Futebol Clube|loaned_out||||Hyan|Avaí
+123|Santos Futebol Clube|loaned_out||||Patrick|Remo
+123|Santos Futebol Clube|loaned_out||||Andrey Quintino|Confiança
+123|Santos Futebol Clube|loaned_out||||Enzo Monteiro|Chungbuk Cheongju
+123|Santos Futebol Clube|loaned_out||||Felipe Laurindo|Cianorte
+123|Santos Futebol Clube|loaned_out||||Robinho Júnior|Genoa
+129|Club Estudiantes de La Plata|squad|1|GK|ARG|Fabricio Iacovich|
+129|Club Estudiantes de La Plata|squad|4|DF|ARG|Santiago Núñez|
+129|Club Estudiantes de La Plata|squad|7|MF|ARG|José Sosa|
+129|Club Estudiantes de La Plata|squad|8|MF|URU|Gabriel Neves|
+129|Club Estudiantes de La Plata|squad|9|FW|ARG|Guido Carrillo|captain
+129|Club Estudiantes de La Plata|squad|10|FW|URU|Tiago Palacios|
+129|Club Estudiantes de La Plata|squad|12|GK|ARG|Rodrigo Borzone|
+129|Club Estudiantes de La Plata|squad|13|DF|ARG|Gastón Benedetti|
+129|Club Estudiantes de La Plata|squad|14|DF|ARG|Leandro González Pírez|
+129|Club Estudiantes de La Plata|squad|15|DF|PAR|Santiago Arzamendia|
+129|Club Estudiantes de La Plata|squad|16|GK|URU|Fernando Muslera|
+129|Club Estudiantes de La Plata|squad|17|FW|ARG|Joaquín Tobio Burgos|
+129|Club Estudiantes de La Plata|squad|18|FW|COL|Edwuin Cetré|
+129|Club Estudiantes de La Plata|squad|19|FW|ARG|Adolfo Gaich|
+129|Club Estudiantes de La Plata|squad|20|DF|ARG|Eric Meza|
+129|Club Estudiantes de La Plata|squad|21|MF|ARG|Ezequiel Piovi|
+129|Club Estudiantes de La Plata|squad|22|MF|ARG|Alexis Castro|
+129|Club Estudiantes de La Plata|squad|24|DF|ARG|Tomás Palacios|on loan from Inter Milan
+129|Club Estudiantes de La Plata|squad|26|DF|ARG|Ramiro Funes Mori|
+129|Club Estudiantes de La Plata|squad|27|FW|ARG|Lucas Alario|
+129|Club Estudiantes de La Plata|squad|28|FW|ARG|Brian Aguirre|on loan from Boca Juniors
+129|Club Estudiantes de La Plata|squad|29|FW|ARG|Fabricio Pérez|
+129|Club Estudiantes de La Plata|squad|31|MF|ARG|Baltasar Rodríguez|
+129|Club Estudiantes de La Plata|squad|32|FW|ARG|Joaquín Correa|
+129|Club Estudiantes de La Plata|squad|34|MF|COL|Miguel Monsalve|on loan from Grêmio
+129|Club Estudiantes de La Plata|squad|35|DF|ARG|Valente Pierani|
+129|Club Estudiantes de La Plata|squad|36|DF|ARG|Joaquín Pereyra|
+129|Club Estudiantes de La Plata|squad|39|MF|SYR|Jalil Elías|
+129|Club Estudiantes de La Plata|squad|40|DF|ARG|Eros Mancuso|on loan from Fortaleza
+129|Club Estudiantes de La Plata|squad|52|MF|ARG|Bautista Kociubinski|
+129|Club Estudiantes de La Plata|loaned_out||||Facundo Rodríguez|CSKA Sofia
+129|Club Estudiantes de La Plata|loaned_out||||Facundo Farías|San Lorenzo
+129|Club Estudiantes de La Plata|loaned_out||||Matías Mansilla|Unión Santa Fe
+129|Club Estudiantes de La Plata|loaned_out||||Juan Cruz Guasone|Cerro
+129|Club Estudiantes de La Plata|loaned_out||||Alexis Manyoma|Deportivo Cali
+129|Club Estudiantes de La Plata|loaned_out||||Matías Godoy|Aldosivi
+129|Club Estudiantes de La Plata|loaned_out||||Ezequiel Naya|Central Córdoba
+129|Club Estudiantes de La Plata|loaned_out||||Gonzalo Piñeiro|Kalamata
+129|Club Estudiantes de La Plata|loaned_out||||Juan Pablo Zozaya|Magallanes
+129|Club Estudiantes de La Plata|loaned_out||||Agustín Palavecino|Aldosivi
+129|Club Estudiantes de La Plata|loaned_out||||Axel Atum|Racing de Montevideo
+129|Club Estudiantes de La Plata|loaned_out||||Emanuel Dall'Aglio|Cerrito
+129|Club Estudiantes de La Plata|loaned_out||||Luciano Giménez|Platense
+136|Clube Atlético Mineiro|squad|1|GK|BRA|Gabriel Delfim|
+136|Clube Atlético Mineiro|squad|2|DF|BRA|Natanael|
+136|Clube Atlético Mineiro|squad|3|DF|CHI|Iván Román|
+136|Clube Atlético Mineiro|squad|4|DF|BRA|Ruan Tressoldi|
+136|Clube Atlético Mineiro|squad|5|MF|BRA|Alexsander|
+136|Clube Atlético Mineiro|squad|6|DF|PAR|Júnior Alonso|
+136|Clube Atlético Mineiro|squad|8|MF|BRA|Maycon|
+136|Clube Atlético Mineiro|squad|9|FW|COL|Mateo Cassierra|
+136|Clube Atlético Mineiro|squad|10|MF|BRA|Gustavo Scarpa|
+136|Clube Atlético Mineiro|squad|11|MF|BRA|Bernard|
+136|Clube Atlético Mineiro|squad|13|DF|BRA|Lyanco|
+136|Clube Atlético Mineiro|squad|14|DF|BRA|Vitor Hugo|
+136|Clube Atlético Mineiro|squad|16|DF|BRA|Renan Lodi|
+136|Clube Atlético Mineiro|squad|17|MF|BRA|Igor Gomes|
+136|Clube Atlético Mineiro|squad|19|MF|BRA|Reinier|
+136|Clube Atlético Mineiro|squad|20|MF|BRA|Patrick|
+136|Clube Atlético Mineiro|squad|21|MF|ECU|Alan Franco|
+136|Clube Atlético Mineiro|squad|22|GK|BRA|Everson|captain
+136|Clube Atlético Mineiro|squad|23|DF|ECU|Ángelo Preciado|
+136|Clube Atlético Mineiro|squad|25|MF|ARG|Tomás Pérez|on loan from Porto
+136|Clube Atlético Mineiro|squad|27|FW|ECU|Alan Minda|
+136|Clube Atlético Mineiro|squad|28|FW|ARG|Tomás Cuello|
+136|Clube Atlético Mineiro|squad|29|FW|BRA|Cauã Soares|
+136|Clube Atlético Mineiro|squad|30|MF|BRA|Victor Hugo|
+136|Clube Atlético Mineiro|squad|31|GK|BRA|Robert|
+136|Clube Atlético Mineiro|squad|36|DF|BRA|Kauã Pascini|
+136|Clube Atlético Mineiro|squad|38|MF|BRA|Índio|
+136|Clube Atlético Mineiro|squad|39|MF|GUI|Mamady Cissé|
+136|Clube Atlético Mineiro|squad|40|DF|BRA|Vitão|
+136|Clube Atlético Mineiro|squad|46|GK|BRA|Pedro Cobra|
+136|Clube Atlético Mineiro|squad|48|MF|BRA|Mateus Iseppe|
+136|Clube Atlético Mineiro|squad|92|FW|BRA|Dudu|
+136|Clube Atlético Mineiro|loaned_out||||Rômulo|Sporting CP B
+136|Clube Atlético Mineiro|loaned_out||||Vitor Gabriel|Caxias
+136|Clube Atlético Mineiro|loaned_out||||Daniel Penha|Avaí
+136|Clube Atlético Mineiro|loaned_out||||David Kauã|Cianorte
+136|Clube Atlético Mineiro|loaned_out||||Gabriel Menino|Santos
+136|Clube Atlético Mineiro|loaned_out||||Kauan Guilherme|Anápolis
+136|Clube Atlético Mineiro|loaned_out||||Robert Santos|Chapecoense
+136|Clube Atlético Mineiro|loaned_out||||Fausto Vera|River Plate
+136|Clube Atlético Mineiro|loaned_out||||Paulo Vitor|Avaí
+136|Clube Atlético Mineiro|loaned_out||||Cadu|Goiás
+136|Clube Atlético Mineiro|loaned_out||||Caio Maia|Londrina
+136|Clube Atlético Mineiro|loaned_out||||João Marcelo|Shabab Al Ahli
+136|Clube Atlético Mineiro|loaned_out||||Júnior Santos|Botafogo
+137|Club Atlético Lanús|squad|1|GK|ARG|Franco Petroli|
+137|Club Atlético Lanús|squad|2|DF|ARG|Luciano Romero|
+137|Club Atlético Lanús|squad|3|DF|ARG|Nicolás Morgantini|
+137|Club Atlético Lanús|squad|4|DF|URU|Gonzalo Pérez|
+137|Club Atlético Lanús|squad|5|MF|ARG|Felipe Peña Biafore|
+137|Club Atlético Lanús|squad|6|DF|ARG|Sasha Marcich|
+137|Club Atlético Lanús|squad|8|MF|ARG|Franco Watson|
+137|Club Atlético Lanús|squad|10|MF|ARG|Marcelino Moreno|
+137|Club Atlético Lanús|squad|11|FW|ARG|Eduardo Salvio|
+137|Club Atlético Lanús|squad|13|DF|PAR|José Canale|
+137|Club Atlético Lanús|squad|15|MF|COL|Raúl Loaiza|
+137|Club Atlético Lanús|squad|16|MF|CHI|Matías Sepúlveda|
+137|Club Atlético Lanús|squad|17|MF|ARG|Agustín Medina|
+137|Club Atlético Lanús|squad|18|FW|ARG|Jeremías Chavero|
+137|Club Atlético Lanús|squad|19|FW|COL|Yoshan Valois|
+137|Club Atlético Lanús|squad|20|FW|PAR|Allan Wlk|
+137|Club Atlético Lanús|squad|22|DF|ARG|Alexis González|
+137|Club Atlético Lanús|squad|23|MF|ARG|Ramiro Carrera|
+137|Club Atlético Lanús|squad|24|DF|ARG|Carlos Izquierdoz|captain
+137|Club Atlético Lanús|squad|26|GK|ARG|Nahuel Losada|
+137|Club Atlético Lanús|squad|27|MF|ARG|Facundo Sánchez|
+137|Club Atlético Lanús|squad|28|DF|ARG|Octavio Ontivero|
+137|Club Atlético Lanús|squad|30|MF|ARG|Agustín Cardozo|
+137|Club Atlético Lanús|squad|33|DF|ARG|Tomás Guidara|
+137|Club Atlético Lanús|squad|35|DF|PAR|Ronaldo Dejesús|
+137|Club Atlético Lanús|squad|37|FW|ARG|Thomás De Martis|
+137|Club Atlético Lanús|squad|38|FW|ARG|Benjamín Acosta|
+137|Club Atlético Lanús|squad|39|MF|ARG|Thiago Laplace|
+137|Club Atlético Lanús|squad|77|FW|ARG|Lucas Besozzi|
+137|Club Atlético Lanús|loaned_out||||Walter Bou|O'Higgins
+137|Club Atlético Lanús|loaned_out||||Nicolás Cláa|Godoy Cruz
+137|Club Atlético Lanús|loaned_out||||Lautaro Morales|Universidad Central
+137|Club Atlético Lanús|loaned_out||||Maximiliano González|Deportivo Maldonado
+137|Club Atlético Lanús|loaned_out||||Pity Rodríguez|Rhode Island FC
+137|Club Atlético Lanús|loaned_out||||Franco Orozco|Newell's Old Boys
+137|Club Atlético Lanús|loaned_out||||Facundo Pérez|AEL
+137|Club Atlético Lanús|loaned_out||||Alexis Segovia|Atlético Tucumán
+137|Club Atlético Lanús|loaned_out||||Edwin Schulz|Villa Dálmine
+137|Club Atlético Lanús|loaned_out||||Bruno Cabrera|San Martín de Tucumán
+137|Club Atlético Lanús|loaned_out||||Mariano Gerez|Marko
+157|S. A. F. Botafogo|squad|2|DF|BRA|Vitinho|
+157|S. A. F. Botafogo|squad|3|DF|BRA|Arthur Chaves|on loan from Hoffenheim
+157|S. A. F. Botafogo|squad|4|DF|URU|Mateo Ponte|
+157|S. A. F. Botafogo|squad|5|DF|VEN|Nahuel Ferraresi|
+157|S. A. F. Botafogo|squad|6|MF|ARG|Cristian Medina|
+157|S. A. F. Botafogo|squad|7|FW|BRA|Júnior Santos|on loan from Atlético Mineiro
+157|S. A. F. Botafogo|squad|8|MF|BRA|Danilo Santos|
+157|S. A. F. Botafogo|squad|9|FW|BRA|Tiquinho Soares|
+157|S. A. F. Botafogo|squad|10|MF|ARG|Álvaro Montoro|
+157|S. A. F. Botafogo|squad|11|FW|BRA|Matheus Martins|
+157|S. A. F. Botafogo|squad|12|GK|BRA|Gabriel Batista|
+157|S. A. F. Botafogo|squad|13|DF|BRA|Alex Telles|captain
+157|S. A. F. Botafogo|squad|14|MF|COL|Jordan Barrera|
+157|S. A. F. Botafogo|squad|17|GK|BRA|Warleson|
+157|S. A. F. Botafogo|squad|19|FW|BRA|Arthur Cabral|
+157|S. A. F. Botafogo|squad|21|DF|BRA|Marçal|
+157|S. A. F. Botafogo|squad|22|FW|MAR|Hakim Ziyech|
+157|S. A. F. Botafogo|squad|25|MF|BRA|Allan|
+157|S. A. F. Botafogo|squad|26|DF|BRA|Anthony|
+157|S. A. F. Botafogo|squad|29|DF|BRA|Paulinho|
+157|S. A. F. Botafogo|squad|31|DF|BRA|Kaio Pantaleão|
+157|S. A. F. Botafogo|squad|33|DF|URU|Lucas Monzón|
+157|S. A. F. Botafogo|squad|34|DF|BRA|Gabriel Justino|
+157|S. A. F. Botafogo|squad|37|FW|PAN|Kadir Barría|
+157|S. A. F. Botafogo|squad|40|GK|ECU|Cristhian Loor|
+157|S. A. F. Botafogo|squad|55|MF|BRA|Wallace Davi|
+157|S. A. F. Botafogo|squad|59|FW|BRA|Kauan Toledo|
+157|S. A. F. Botafogo|squad|67|DF|COL|Jhoan Hernández|on loan from Millonarios
+157|S. A. F. Botafogo|squad|75|MF|BRA|Huguinho|
+157|S. A. F. Botafogo|squad|77|FW|URU|Lucas Villalba|
+157|S. A. F. Botafogo|squad|88|MF|BRA|Edenilson|
+157|S. A. F. Botafogo|squad|90|FW|BRA|Danilo Pereira|on loan from Rangers
+157|S. A. F. Botafogo|squad|91|MF|ANG|Domingos Andrade|
+157|S. A. F. Botafogo|loaned_out||||Léo Linck|Estrela da Amadora
+157|S. A. F. Botafogo|loaned_out||||JP Galvão|Paysandu
+157|S. A. F. Botafogo|loaned_out||||Kauan Lindes|Athletic-MG
+157|S. A. F. Botafogo|loaned_out||||Patrick de Paula|Remo
+157|S. A. F. Botafogo|loaned_out||||Artur|São Paulo
+157|S. A. F. Botafogo|loaned_out||||Jeffinho|Liaoning Tieren
+157|S. A. F. Botafogo|loaned_out||||Kayke|Kawasaki Frontale
+157|S. A. F. Botafogo|loaned_out||||Nathan Fernandes|Ludogorets Razgrad
+157|S. A. F. Botafogo|loaned_out||||Chris Ramos|Oviedo
+157|S. A. F. Botafogo|loaned_out||||Rwan Cruz|Ludogorets Razgrad
+157|S. A. F. Botafogo|loaned_out||||Matías Segovia|América Mineiro
+158|São Paulo Futebol Clube|squad|2|DF|ITA|Rafael Tolói|
+158|São Paulo Futebol Clube|squad|5|DF|ECU|Robert Arboleda|
+158|São Paulo Futebol Clube|squad|7|MF|BRA|Lucas Moura|vice-captain
+158|São Paulo Futebol Clube|squad|8|MF|BRA|Marcos Antônio|
+158|São Paulo Futebol Clube|squad|9|FW|ARG|Jonathan Calleri|captain
+158|São Paulo Futebol Clube|squad|10|FW|BRA|Luciano|
+158|São Paulo Futebol Clube|squad|11|FW|BRA|Ferreira|
+158|São Paulo Futebol Clube|squad|12|DF|BRA|Iago Borduchi|on loan from Bahia
+158|São Paulo Futebol Clube|squad|13|DF|ARG|Enzo Díaz|
+158|São Paulo Futebol Clube|squad|16|MF|PAR|Damián Bobadilla|
+158|São Paulo Futebol Clube|squad|17|FW|BRA|André Silva|
+158|São Paulo Futebol Clube|squad|18|DF|BRA|Wendell|
+158|São Paulo Futebol Clube|squad|19|DF|BRA|Lucas Ramon|
+158|São Paulo Futebol Clube|squad|20|DF|POR|Aurélio Buta|
+158|São Paulo Futebol Clube|squad|21|DF|POR|Cédric Soares|
+158|São Paulo Futebol Clube|squad|22|DF|POR|Domingos Duarte|
+158|São Paulo Futebol Clube|squad|23|GK|BRA|Rafael|3rd captain
+158|São Paulo Futebol Clube|squad|27|FW|BRA|Victor Sá|
+158|São Paulo Futebol Clube|squad|28|MF|BRA|Newton|
+158|São Paulo Futebol Clube|squad|29|MF|BRA|Pablo Maia|
+158|São Paulo Futebol Clube|squad|31|GK|PAR|Carlos Coronel|
+158|São Paulo Futebol Clube|squad|32|DF|BRA|Pedro Lima|on loan from Wolverhampton Wanderers
+158|São Paulo Futebol Clube|squad|34|FW|BRA|Tetê|
+158|São Paulo Futebol Clube|squad|35|DF|BRA|Sabino|
+158|São Paulo Futebol Clube|squad|37|FW|BRA|Artur|on loan from Botafogo
+158|São Paulo Futebol Clube|squad|41|GK|BRA|João Pedro|
+158|São Paulo Futebol Clube|squad|43|FW|BRA|Gustavo Santana|
+158|São Paulo Futebol Clube|squad|45|FW|BRA|Lucca Marques|
+158|São Paulo Futebol Clube|squad|46|MF|BRA|Pedro Ferreira|
+158|São Paulo Futebol Clube|squad|48|MF|BRA|Djhordney|
+158|São Paulo Futebol Clube|squad|49|FW|BRA|Ryan Francisco|
+158|São Paulo Futebol Clube|squad|50|GK|BRA|Young|
+158|São Paulo Futebol Clube|squad|52|GK|BRA|Felipe Preis|
+158|São Paulo Futebol Clube|squad|53|DF|BRA|Isac|
+158|São Paulo Futebol Clube|squad|54|DF|BRA|Luis Osorio|
+158|São Paulo Futebol Clube|squad|56|DF|BRA|Nicolas|
+158|São Paulo Futebol Clube|squad|80|MF|BRA|Cauly|on loan from Bahia
+158|São Paulo Futebol Clube|squad|94|MF|BRA|Danielzinho|
+158|São Paulo Futebol Clube|loaned_out||||Jandrei|Juventude
+158|São Paulo Futebol Clube|loaned_out||||Alan Franco|Tigres
+158|São Paulo Futebol Clube|loaned_out||||Maik|Dukla Banská Bystrica
+158|São Paulo Futebol Clube|loaned_out||||Maílton|Fortaleza
+158|São Paulo Futebol Clube|loaned_out||||Patryck Lanza|Juventude
+158|São Paulo Futebol Clube|loaned_out||||Alisson|Fluminense
+158|São Paulo Futebol Clube|loaned_out||||Cauã Lucca|Luverdense
+158|São Paulo Futebol Clube|loaned_out||||Felipe Negrucci|Athletic-MG
+158|São Paulo Futebol Clube|loaned_out||||Hugo Leonardo|Mito HollyHock
+158|São Paulo Futebol Clube|loaned_out||||Iba Ly|Juventude
+158|São Paulo Futebol Clube|loaned_out||||Cauã Lucas|Villa Nova
+158|São Paulo Futebol Clube|loaned_out||||Gonzalo Tapia|Columbus Crew
+158|São Paulo Futebol Clube|loaned_out||||Paulinho|Torreense
+162|Cruzeiro Esporte Clube|squad|1|GK|BRA|Cássio|
+162|Cruzeiro Esporte Clube|squad|2|DF|BRA|Kauã Moraes|
+162|Cruzeiro Esporte Clube|squad|5|MF|BRA|Zé Lucas|
+162|Cruzeiro Esporte Clube|squad|6|DF|URU|Matías Viña|on loan from Flamengo
+162|Cruzeiro Esporte Clube|squad|7|MF|BRA|Matheus Henrique|
+162|Cruzeiro Esporte Clube|squad|8|MF|BRA|Gerson|
+162|Cruzeiro Esporte Clube|squad|9|FW|BRA|Bruno Rodrigues|on loan from Palmeiras
+162|Cruzeiro Esporte Clube|squad|10|MF|BRA|Matheus Pereira|
+162|Cruzeiro Esporte Clube|squad|11|FW|BRA|Marquinhos|
+162|Cruzeiro Esporte Clube|squad|12|DF|BRA|William|
+162|Cruzeiro Esporte Clube|squad|15|DF|BRA|Fabrício Bruno|
+162|Cruzeiro Esporte Clube|squad|16|MF|BRA|Lucas Silva|captain
+162|Cruzeiro Esporte Clube|squad|17|FW|COL|Luis Sinisterra|
+162|Cruzeiro Esporte Clube|squad|19|FW|BRA|Kaio Jorge|
+162|Cruzeiro Esporte Clube|squad|20|FW|BRA|Wesley|on loan from Al Nassr
+162|Cruzeiro Esporte Clube|squad|22|FW|COL|Néiser Villarreal|
+162|Cruzeiro Esporte Clube|squad|23|DF|BRA|Fagner|
+162|Cruzeiro Esporte Clube|squad|24|GK|BRA|Marcelo Eráclito|
+162|Cruzeiro Esporte Clube|squad|25|DF|ARG|Lucas Villalba|
+162|Cruzeiro Esporte Clube|squad|27|DF|ARG|Gabriel Rojas|
+162|Cruzeiro Esporte Clube|squad|29|MF|ARG|Lucas Romero|vice-captain
+162|Cruzeiro Esporte Clube|squad|34|DF|BRA|Jonathan Jesus|
+162|Cruzeiro Esporte Clube|squad|40|MF|BRA|Rhuan Gabriel|
+162|Cruzeiro Esporte Clube|squad|41|GK|BRA|Léo Aragão|
+162|Cruzeiro Esporte Clube|squad|43|DF|BRA|João Marcelo|
+162|Cruzeiro Esporte Clube|squad|51|GK|BRA|Vitor Lamounier|
+162|Cruzeiro Esporte Clube|squad|57|FW|BRA|Rayan Lelis|
+162|Cruzeiro Esporte Clube|squad|67|FW|POR|João Costa|on loan from Al-Ettifaq
+162|Cruzeiro Esporte Clube|squad|70|FW|BRA|Kaique Kenji|
+162|Cruzeiro Esporte Clube|squad|77|FW|BRA|Gabriel Pec|
+162|Cruzeiro Esporte Clube|squad|81|GK|BRA|Otávio|
+162|Cruzeiro Esporte Clube|squad|94|FW|BEL|Wanderson|
+162|Cruzeiro Esporte Clube|squad|97|FW|URU|Luciano Rodríguez|on loan from Neom
+162|Cruzeiro Esporte Clube|squad|99|FW|ECU|Keny Arroyo|
+162|Cruzeiro Esporte Clube|loaned_out||||Matheus Cunha|Internacional
+162|Cruzeiro Esporte Clube|loaned_out||||Bruno Alves|Norwich
+162|Cruzeiro Esporte Clube|loaned_out||||Japa|Mirassol
+162|Cruzeiro Esporte Clube|loaned_out||||Murilo Rhikman|Sport Recife
+162|Cruzeiro Esporte Clube|loaned_out||||Walace|Vitória
+162|Cruzeiro Esporte Clube|loaned_out||||Chico da Costa|Fortaleza
+162|Cruzeiro Esporte Clube|loaned_out||||Lautaro Díaz|Racing
+162|Cruzeiro Esporte Clube|loaned_out||||Gabriel Barbosa|Santos
+162|Cruzeiro Esporte Clube|loaned_out||||Gui Meira|Feirense
+162|Cruzeiro Esporte Clube|loaned_out||||Rodriguinho|Fortaleza
+162|Cruzeiro Esporte Clube|loaned_out||||Ruan Índio|Radomiak Radom
+162|Cruzeiro Esporte Clube|loaned_out||||Tevis|Yokohama Marinos
+163|Clube de Regatas do Flamengo|squad|1|GK|ARG|Agustín Rossi|
+163|Clube de Regatas do Flamengo|squad|42|GK|BRA|Andrew|
+163|Clube de Regatas do Flamengo|squad|49|GK|BRA|Dyogo Alves|
+163|Clube de Regatas do Flamengo|squad|2|DF|URU|Guillermo Varela|
+163|Clube de Regatas do Flamengo|squad|3|DF|BRA|Léo Ortiz|
+163|Clube de Regatas do Flamengo|squad|4|DF|BRA|Léo Pereira|3rd vice-captain
+163|Clube de Regatas do Flamengo|squad|6|DF|BRA|Ayrton Lucas|
+163|Clube de Regatas do Flamengo|squad|13|DF|BRA|Danilo|
+163|Clube de Regatas do Flamengo|squad|22|DF|BRA|Emerson Royal|
+163|Clube de Regatas do Flamengo|squad|26|DF|BRA|Alex Sandro|2nd vice-captain
+163|Clube de Regatas do Flamengo|squad|44|DF|BRA|Vitão|
+163|Clube de Regatas do Flamengo|squad|61|DF|BRA|João Victor|
+163|Clube de Regatas do Flamengo|squad|5|MF|CHI|Erick Pulgar|
+163|Clube de Regatas do Flamengo|squad|8|MF|ESP|Saúl Ñíguez|
+163|Clube de Regatas do Flamengo|squad|10|MF|URU|Giorgian de Arrascaeta|vice-captain
+163|Clube de Regatas do Flamengo|squad|11|MF|BRA|Lucas Paquetá|
+163|Clube de Regatas do Flamengo|squad|15|MF|COL|Jorge Carrascal|
+163|Clube de Regatas do Flamengo|squad|18|MF|URU|Nicolás de la Cruz|
+163|Clube de Regatas do Flamengo|squad|21|MF|ITA|Jorginho|
+163|Clube de Regatas do Flamengo|squad|52|MF|BRA|Evertton Araújo|
+163|Clube de Regatas do Flamengo|squad|7|FW|BRA|Luiz Araújo|
+163|Clube de Regatas do Flamengo|squad|9|FW|BRA|Pedro|
+163|Clube de Regatas do Flamengo|squad|14|FW|ECU|Anthony Valencia|
+163|Clube de Regatas do Flamengo|squad|16|FW|BRA|Samuel Lino|
+163|Clube de Regatas do Flamengo|squad|19|FW|ECU|Gonzalo Plata|
+163|Clube de Regatas do Flamengo|squad|27|FW|BRA|Bruno Henrique|captain
+163|Clube de Regatas do Flamengo|squad|30|FW|ARG|Joaquín Freitas|
+163|Clube de Regatas do Flamengo|loaned_out||||Carlinhos|Remo
+163|Clube de Regatas do Flamengo|loaned_out||||Matías Viña|River Plate
+163|Clube de Regatas do Flamengo|loaned_out||||Allan|Corinthians
+163|Clube de Regatas do Flamengo|loaned_out||||Gusttavo|Estoril Praia
+168|Clube Atlético Paranaense|squad|1|GK|BRA|Mycael|
+168|Clube Atlético Paranaense|squad|2|DF|BRA|Gilberto dos Santos|on loan from Palmeiras
+168|Clube Atlético Paranaense|squad|3|DF|BRA|Léo Pelé|
+168|Clube Atlético Paranaense|squad|4|DF|BRA|Arthur Dias|
+168|Clube Atlético Paranaense|squad|5|MF|BRA|Felipinho|
+168|Clube Atlético Paranaense|squad|6|DF|BRA|Léo Derik|
+168|Clube Atlético Paranaense|squad|7|FW|COL|Stiven Mendoza|
+168|Clube Atlético Paranaense|squad|8|MF|BRA|João Cruz|
+168|Clube Atlético Paranaense|squad|9|FW|COL|Kevin Viveros|
+168|Clube Atlético Paranaense|squad|10|MF|ARG|Bruno Zapelli|
+168|Clube Atlético Paranaense|squad|12|DF|BRA|Gilberto Moraes|
+168|Clube Atlético Paranaense|squad|14|MF|BRA|Luiz Gustavo|
+168|Clube Atlético Paranaense|squad|16|MF|BRA|Jadson|
+168|Clube Atlético Paranaense|squad|17|MF|COL|Alejandro García|
+168|Clube Atlético Paranaense|squad|18|FW|COL|Kerwin Vargas|
+168|Clube Atlético Paranaense|squad|19|FW|COL|Jorge Rivaldo|
+168|Clube Atlético Paranaense|squad|21|FW|BRA|Leozinho|
+168|Clube Atlético Paranaense|squad|22|DF|COL|Carlos Terán|
+168|Clube Atlético Paranaense|squad|23|GK|BRA|Santos|captain; on loan from Fortaleza
+168|Clube Atlético Paranaense|squad|25|DF|BRA|Dantas|on loan from Novorizontino
+168|Clube Atlético Paranaense|squad|26|DF|BRA|Claudinho|
+168|Clube Atlético Paranaense|squad|27|MF|COL|Juan Portilla|
+168|Clube Atlético Paranaense|squad|29|DF|ARG|Gastón Benavídez|
+168|Clube Atlético Paranaense|squad|33|DF|COL|Juan Felipe Aguirre|
+168|Clube Atlético Paranaense|squad|37|DF|ARG|Lucas Esquivel|
+168|Clube Atlético Paranaense|squad|42|GK|BRA|Matheus Soares|
+168|Clube Atlético Paranaense|squad|47|FW|BRA|Felipe Chiqueti|
+168|Clube Atlético Paranaense|squad|50|FW|BRA|Renan Viana|
+168|Clube Atlético Paranaense|squad|53|MF|BRA|Dudu Kogitzki|
+168|Clube Atlético Paranaense|squad|63|MF|BRA|Riquelme|
+168|Clube Atlético Paranaense|squad|70|FW|BRA|Renan Peixoto|
+168|Clube Atlético Paranaense|loaned_out||||Mateo Gamarra|Olimpia
+168|Clube Atlético Paranaense|loaned_out||||Habraão|Sport Recife
+168|Clube Atlético Paranaense|loaned_out||||Hayen Palacios|Independiente Medellín
+168|Clube Atlético Paranaense|loaned_out||||Raul|Cuiabá
+168|Clube Atlético Paranaense|loaned_out||||Romeo Benítez|Olimpia
+168|Clube Atlético Paranaense|loaned_out||||Isaac|Maccabi Netanya
+168|Clube Atlético Paranaense|loaned_out||||Walace França|Gil Vicente
+168|Clube Atlético Paranaense|loaned_out||||Gonzalo Mastriani|América Mineiro
+171|Coritiba Foot Ball Club|squad|1|GK|BRA|Pedro Morisco|
+171|Coritiba Foot Ball Club|squad|2|DF|BRA|Tinga|
+171|Coritiba Foot Ball Club|squad|3|DF|BRA|Maicon|
+171|Coritiba Foot Ball Club|squad|4|DF|BRA|Rodrigo Moledo|
+171|Coritiba Foot Ball Club|squad|5|MF|URU|Nicolás Fonseca|on loan from León
+171|Coritiba Foot Ball Club|squad|6|DF|BRA|Felipe Jonatan|
+171|Coritiba Foot Ball Club|squad|7|FW|URU|Joaquín Lavega|on loan from Fluminense
+171|Coritiba Foot Ball Club|squad|10|MF|POR|Josué Pesqueira|
+171|Coritiba Foot Ball Club|squad|11|FW|BRA|Lucas Ronier|
+171|Coritiba Foot Ball Club|squad|13|GK|BRA|Keiller|on loan from Internacional
+171|Coritiba Foot Ball Club|squad|17|FW|URU|Brian Ocampo|
+171|Coritiba Foot Ball Club|squad|18|FW|BRA|Paulo Roberto|
+171|Coritiba Foot Ball Club|squad|19|MF|COL|Sebastián Gómez|captain
+171|Coritiba Foot Ball Club|squad|20|FW|BRA|Keno|on loan from Fluminense
+171|Coritiba Foot Ball Club|squad|21|DF|BRA|Thiago Santos|
+171|Coritiba Foot Ball Club|squad|22|GK|BRA|Pedro Rangel|
+171|Coritiba Foot Ball Club|squad|23|DF|BRA|Tiago Cóser|
+171|Coritiba Foot Ball Club|squad|25|MF|BRA|Richard|
+171|Coritiba Foot Ball Club|squad|26|DF|BRA|Bruno Melo|
+171|Coritiba Foot Ball Club|squad|28|FW|BRA|Fabinho|
+171|Coritiba Foot Ball Club|squad|32|FW|BRA|Pedro Rocha|
+171|Coritiba Foot Ball Club|squad|36|MF|BRA|Vini Paulista|
+171|Coritiba Foot Ball Club|squad|39|MF|BRA|Gustavo Silva|
+171|Coritiba Foot Ball Club|squad|44|DF|BRA|JP Chermont|on loan from Santos
+171|Coritiba Foot Ball Club|squad|55|DF|BRA|Jacy Maranhão|
+171|Coritiba Foot Ball Club|squad|67|GK|BRA|Benassi|
+171|Coritiba Foot Ball Club|squad|77|FW|BRA|Breno Lopes|
+171|Coritiba Foot Ball Club|squad|78|FW|BRA|Renato Marques|on loan from Mirassol
+171|Coritiba Foot Ball Club|squad|99|FW|BRA|Rodrigo Rodrigues|
+171|Coritiba Foot Ball Club|loaned_out||||Felipe Guimarães|Atlético Goianiense
+171|Coritiba Foot Ball Club|loaned_out||||Guilherme Aquino|Avaí
+171|Coritiba Foot Ball Club|loaned_out||||Jamerson Bahia|Vitória
+171|Coritiba Foot Ball Club|loaned_out||||João Almeida|Le Mans
+171|Coritiba Foot Ball Club|loaned_out||||Lucas Perez|Independiente Juniors
+171|Coritiba Foot Ball Club|loaned_out||||Rodrigo Gelado|Athletic-MG
+171|Coritiba Foot Ball Club|loaned_out||||Thalisson Gabriel|Ceará
+171|Coritiba Foot Ball Club|loaned_out||||Geovane Meurer|Londrina
+171|Coritiba Foot Ball Club|loaned_out||||Jean Gabriel|Figueirense
+171|Coritiba Foot Ball Club|loaned_out||||Matheus Bianqui|Novorizontino
+171|Coritiba Foot Ball Club|loaned_out||||Brayan|Independiente Juniors
+171|Coritiba Foot Ball Club|loaned_out||||David da Hora|Ponte Preta
+171|Coritiba Foot Ball Club|loaned_out||||Enzo Vagner|Le Mans
+171|Coritiba Foot Ball Club|loaned_out||||Iury Castilho|Sport Recife
+176|Club Atlético Banfield|squad|1|GK|ARG|Facundo Sanguinetti|captain
+176|Club Atlético Banfield|squad|2|DF|COL|Danilo Arboleda|
+176|Club Atlético Banfield|squad|4|DF|ARG|Juan Luis Alfaro|
+176|Club Atlético Banfield|squad|5|MF|ARG|Santiago Esquivel|
+176|Club Atlético Banfield|squad|6|DF|ARG|Nicolás Meriano|on loan from Belgrano
+176|Club Atlético Banfield|squad|7|FW|ARG|Lisandro Piñero|
+176|Club Atlético Banfield|squad|8|MF|ARG|Lautaro Ríos|
+176|Club Atlético Banfield|squad|9|FW|ARG|Bruno Sepúlveda|
+176|Club Atlético Banfield|squad|10|MF|ARG|Lautaro Gómez|
+176|Club Atlético Banfield|squad|11|MF|ARG|Favio Álvarez|
+176|Club Atlético Banfield|squad|12|DF|ARG|Marcos López|
+176|Club Atlético Banfield|squad|13|DF|ARG|Brandon Oviedo|
+176|Club Atlético Banfield|squad|14|DF|ARG|Sergio Vittor|
+176|Club Atlético Banfield|squad|16|FW|URU|Mauro Méndez|on loan from Estudiantes
+176|Club Atlético Banfield|squad|17|FW|ARG|Tiziano Perrotta|
+176|Club Atlético Banfield|squad|18|MF|ARG|Federico Medina|
+176|Club Atlético Banfield|squad|19|DF|ARG|Nicolás Colazo|
+176|Club Atlético Banfield|squad|20|MF|ARM|Tomás Adoryán|
+176|Club Atlético Banfield|squad|21|MF|ARG|Lautaro Villegas|
+176|Club Atlético Banfield|squad|23|MF|ARG|Lucas Palavecino|
+176|Club Atlético Banfield|squad|24|MF|ARG|Santiago López García|
+176|Club Atlético Banfield|squad|25|GK|ARG|Gino Santilli|
+176|Club Atlético Banfield|squad|26|DF|ARG|Mateo Mendizabal|
+176|Club Atlético Banfield|squad|27|DF|SYR|Ignacio Abraham|
+176|Club Atlético Banfield|squad|28|GK|ARG|Thiago Cano|
+176|Club Atlético Banfield|squad|29|DF|ARG|Juan Iribarren|
+176|Club Atlético Banfield|squad|30|FW|ARG|Federico Anselmo|
+176|Club Atlético Banfield|squad|31|GK|ARG|Joaquín Molina|
+176|Club Atlético Banfield|squad|32|MF|ARG|Valentín González|
+176|Club Atlético Banfield|squad|33|MF|COL|Neyder Moreno|
+176|Club Atlético Banfield|squad|34|DF|ARG|Santiago Daniele|on loan from Chacarita Juniors
+176|Club Atlético Banfield|squad|35|MF|ARG|Nacho Pais|
+176|Club Atlético Banfield|squad|40|MF|ARG|David Zalazar|on loan from Talleres
+176|Club Atlético Banfield|squad|77|MF|CHI|Thomas Rodríguez|
+176|Club Atlético Banfield|loaned_out||||Alejandro Cabrera|Estudiantes (RC)
+176|Club Atlético Banfield|loaned_out||||Mauricio Roldán|Rubio Ñú
+176|Club Atlético Banfield|loaned_out||||Marcos Echeverría|Temperley
+179|Club Atlético Platense|squad|1|GK|ARG|Brian Bustos|
+179|Club Atlético Platense|squad|3|DF|ARG|Tomás Silva|
+179|Club Atlético Platense|squad|4|DF|ARG|Agustín Lagos|on loan from Vélez Sarsfield
+179|Club Atlético Platense|squad|5|MF|ARG|Iván Gómez|
+179|Club Atlético Platense|squad|6|DF|ARG|Eugenio Raggio|
+179|Club Atlético Platense|squad|7|FW|ARG|Guido Mainero|
+179|Club Atlético Platense|squad|8|MF|ARG|Marcos Portillo|on loan from Talleres
+179|Club Atlético Platense|squad|9|FW|ARG|Tomás Nasif|on loan from River Plate
+179|Club Atlético Platense|squad|10|MF|ARG|Franco Zapiola|
+179|Club Atlético Platense|squad|11|FW|URU|Agustín Ocampo|
+179|Club Atlético Platense|squad|12|DF|ARG|Jonathan Bay|
+179|Club Atlético Platense|squad|13|DF|ARG|Ignacio Vázquez|captain
+179|Club Atlético Platense|squad|15|MF|ARG|Maximiliano Amarfil|on loan from Cipolletti
+179|Club Atlético Platense|squad|16|MF|ARG|Mauro Luna Diale|on loan from Akhmat Grozny
+179|Club Atlético Platense|squad|17|MF|ARG|Felipe Bussio|on loan from Vélez Sarsfield
+179|Club Atlético Platense|squad|18|FW|ARG|Bautista Merlini|
+179|Club Atlético Platense|squad|19|FW|PAR|Héctor Bobadilla|on loan from Cerro Porteño
+179|Club Atlético Platense|squad|20|GK|ARG|Matías Borgogno|on loan from San Martín SJ
+179|Club Atlético Platense|squad|21|FW|ARG|Augusto Lotti|
+179|Club Atlético Platense|squad|22|GK|ARG|Nicolás Sumavil|
+179|Club Atlético Platense|squad|23|MF|ARG|Leonardo Heredia|on loan from Argentinos Juniors
+179|Club Atlético Platense|squad|24|MF|URU|Martín Barrios|on loan from Racing Club
+179|Club Atlético Platense|squad|25|DF|ARG|Juan Ignacio Saborido|
+179|Club Atlético Platense|squad|26|MF|ARG|Pablo Ferreira|
+179|Club Atlético Platense|squad|27|MF|ARG|Santiago Dalmasso|on loan from Boca Juniors
+179|Club Atlético Platense|squad|28|FW|ARG|Manuel Tucker|
+179|Club Atlético Platense|squad|29|FW|ARG|Franco Minerva|
+179|Club Atlético Platense|squad|31|DF|ARG|Víctor Cuesta|
+179|Club Atlético Platense|squad|32|DF|ARG|Santiago Quirós|on loan from Racing Club
+179|Club Atlético Platense|squad|33|FW|ARG|Juan Carlos Gauto|on loan from Basel
+179|Club Atlético Platense|squad|34|DF|ARG|Mateo Mendía|on loan from Boca Juniors
+179|Club Atlético Platense|squad|42|DF|ARG|Gonzalo Goñi|
+179|Club Atlético Platense|squad|43|FW|ARG|Nicolás Retamar|on loan from Ferro Carril Oeste
+179|Club Atlético Platense|squad|47|FW|ARG|Benjamín Bosch|on loan from Vélez Sarsfield
+179|Club Atlético Platense|squad|99|FW|ARG|Gonzalo Lencina|
+179|Club Atlético Platense|loaned_out||||Juan Pablo Pignani|Central Córdoba
+179|Club Atlético Platense|loaned_out||||Fernando Juárez|Central Córdoba
+179|Club Atlético Platense|loaned_out||||Santiago Postel|Deportivo Cuenca
+179|Club Atlético Platense|loaned_out||||Agustín Alonso|Chaco For Ever
+179|Club Atlético Platense|loaned_out||||Juan Pablo Cozzani|Al-Kholood
+179|Club Atlético Platense|loaned_out||||Gonzalo Valdivia|Mitre
+182|Club de Regatas Vasco da Gama|squad|1|GK|BRA|Léo Jardim|
+182|Club de Regatas Vasco da Gama|squad|2|DF|URU|Puma Rodríguez|
+182|Club de Regatas Vasco da Gama|squad|3|MF|BRA|Tchê Tchê|
+182|Club de Regatas Vasco da Gama|squad|4|DF|URU|Alan Saldivia|
+182|Club de Regatas Vasco da Gama|squad|6|DF|BRA|Lucas Piton|
+182|Club de Regatas Vasco da Gama|squad|7|FW|BRA|David|
+182|Club de Regatas Vasco da Gama|squad|8|MF|BRA|Jair|
+182|Club de Regatas Vasco da Gama|squad|9|FW|BRA|Matheus França|on loan from Crystal Palace
+182|Club de Regatas Vasco da Gama|squad|10|MF|COL|Johan Rojas|on loan from Monterrey
+182|Club de Regatas Vasco da Gama|squad|11|FW|COL|Andrés Gómez|
+182|Club de Regatas Vasco da Gama|squad|13|GK|BRA|Daniel Fuzato|
+182|Club de Regatas Vasco da Gama|squad|17|FW|POR|Nuno Moreira|
+182|Club de Regatas Vasco da Gama|squad|18|FW|COL|Marino Hinestroza|
+182|Club de Regatas Vasco da Gama|squad|20|FW|BRA|Brenner|
+182|Club de Regatas Vasco da Gama|squad|23|MF|BRA|Thiago Mendes|captain
+182|Club de Regatas Vasco da Gama|squad|25|MF|BRA|Hugo Moura|
+182|Club de Regatas Vasco da Gama|squad|28|FW|BRA|Adson|
+182|Club de Regatas Vasco da Gama|squad|30|DF|BRA|Robert Renan|on loan from Zenit
+182|Club de Regatas Vasco da Gama|squad|37|GK|BRA|Pablo|
+182|Club de Regatas Vasco da Gama|squad|43|DF|BRA|Lucas Freitas|
+182|Club de Regatas Vasco da Gama|squad|46|DF|COL|Carlos Cuesta|on loan from Galatasaray
+182|Club de Regatas Vasco da Gama|squad|60|FW|BRA|João Vitor|
+182|Club de Regatas Vasco da Gama|squad|64|DF|BRA|Walace Falcão|
+182|Club de Regatas Vasco da Gama|squad|66|DF|BRA|Cuiabano|on loan from Nottingham Forest
+182|Club de Regatas Vasco da Gama|squad|77|FW|ARG|Claudio Spinelli|
+182|Club de Regatas Vasco da Gama|squad|83|MF|BRA|Ramon Rique|
+182|Club de Regatas Vasco da Gama|squad|85|MF|BRA|Mateus Carvalho|
+182|Club de Regatas Vasco da Gama|squad|88|MF|BRA|Cauan Barros|
+182|Club de Regatas Vasco da Gama|squad|96|DF|BRA|Paulo Henrique|
+182|Club de Regatas Vasco da Gama|squad|98|MF|BRA|JP|
+182|Club de Regatas Vasco da Gama|loaned_out||||Lyncon|CRB
+182|Club de Regatas Vasco da Gama|loaned_out||||Riquelme|Panserraikos
+182|Club de Regatas Vasco da Gama|loaned_out||||Guilherme Estrella|CRB
+182|Club de Regatas Vasco da Gama|loaned_out||||Juan Sforza|Talleres
+182|Club de Regatas Vasco da Gama|loaned_out||||Ray Breno|Juventude
+182|Club de Regatas Vasco da Gama|loaned_out||||Benjamín Garré|Aris
+182|Club de Regatas Vasco da Gama|loaned_out||||GB|Fortaleza
+182|Club de Regatas Vasco da Gama|loaned_out||||Loide Augusto|Çaykur Rizespor
+187|Sociedade Esportiva Palmeiras|squad|1|GK|BRA|Carlos Miguel|
+187|Sociedade Esportiva Palmeiras|squad|2|DF|ARG|Alexander Barboza|
+187|Sociedade Esportiva Palmeiras|squad|3|DF|BRA|Bruno Fuchs|
+187|Sociedade Esportiva Palmeiras|squad|4|DF|ARG|Agustín Giay|
+187|Sociedade Esportiva Palmeiras|squad|6|DF|BRA|Jefté|
+187|Sociedade Esportiva Palmeiras|squad|7|MF|BRA|Felipe Anderson|
+187|Sociedade Esportiva Palmeiras|squad|8|MF|BRA|Andreas Pereira|
+187|Sociedade Esportiva Palmeiras|squad|9|FW|BRA|Vitor Roque|
+187|Sociedade Esportiva Palmeiras|squad|10|FW|BRA|Paulinho|
+187|Sociedade Esportiva Palmeiras|squad|11|FW|COL|Jhon Arias|
+187|Sociedade Esportiva Palmeiras|squad|12|DF|BRA|Khellven|
+187|Sociedade Esportiva Palmeiras|squad|14|GK|BRA|Marcelo Lomba|
+187|Sociedade Esportiva Palmeiras|squad|15|DF|PAR|Gustavo Gómez|captain
+187|Sociedade Esportiva Palmeiras|squad|17|MF|BRA|Marlon Freitas|
+187|Sociedade Esportiva Palmeiras|squad|18|MF|PAR|Maurício|
+187|Sociedade Esportiva Palmeiras|squad|19|FW|PAR|Ramón Sosa|
+187|Sociedade Esportiva Palmeiras|squad|21|GK|BRA|Bruno Bertinato|
+187|Sociedade Esportiva Palmeiras|squad|22|DF|URU|Joaquín Piquerez|
+187|Sociedade Esportiva Palmeiras|squad|26|DF|BRA|Murilo|
+187|Sociedade Esportiva Palmeiras|squad|30|MF|BRA|Lucas Evangelista|
+187|Sociedade Esportiva Palmeiras|squad|32|MF|URU|Emiliano Martínez|
+187|Sociedade Esportiva Palmeiras|squad|42|FW|ARG|José Manuel López|
+187|Sociedade Esportiva Palmeiras|squad|43|DF|BRA|Luiz Benedetti|
+187|Sociedade Esportiva Palmeiras|squad|48|MF|BRA|Larson|
+187|Sociedade Esportiva Palmeiras|squad|56|DF|BRA|Arthur Gabriel|
+187|Sociedade Esportiva Palmeiras|loaned_out||||Aranha|Moreirense
+187|Sociedade Esportiva Palmeiras|loaned_out||||Caio Paulista|Grêmio
+187|Sociedade Esportiva Palmeiras|loaned_out||||Gilberto|Athletico Paranaense
+187|Sociedade Esportiva Palmeiras|loaned_out||||Micael|Inter Miami
+187|Sociedade Esportiva Palmeiras|loaned_out||||Raphael Veiga|América
+187|Sociedade Esportiva Palmeiras|loaned_out||||Rômulo|Novorizontino
+187|Sociedade Esportiva Palmeiras|loaned_out||||Bruno Rodrigues|Cruzeiro
+187|Sociedade Esportiva Palmeiras|loaned_out||||Luighi|New York City FC
+187|Sociedade Esportiva Palmeiras|loaned_out||||Sorriso|Avaí
+188|Club Atlético Vélez Sársfield|squad|1|GK|ARG|Tomás Marchiori|
+188|Club Atlético Vélez Sársfield|squad|2|DF|ARG|Emanuel Mammana|
+188|Club Atlético Vélez Sársfield|squad|3|DF|ARG|Elías Gómez|captain
+188|Club Atlético Vélez Sársfield|squad|4|DF|ARG|Joaquín García|
+188|Club Atlético Vélez Sársfield|squad|5|MF|CHI|Claudio Baeza|
+188|Club Atlético Vélez Sársfield|squad|8|MF|ARG|Lucas Robertone|on loan from Almería
+188|Club Atlético Vélez Sársfield|squad|10|MF|CHI|Diego Valdés|
+188|Club Atlético Vélez Sársfield|squad|11|MF|ARG|Matías Pellegrini|
+188|Club Atlético Vélez Sársfield|squad|15|FW|ARG|Dilan Godoy|
+188|Club Atlético Vélez Sársfield|squad|16|DF|ARG|Lisandro Magallán|
+188|Club Atlético Vélez Sársfield|squad|17|FW|ARG|Álex Verón|
+188|Club Atlético Vélez Sársfield|squad|18|DF|ARG|Simón Escobar|
+188|Club Atlético Vélez Sársfield|squad|19|DF|PAR|Leo Cristaldo|
+188|Club Atlético Vélez Sársfield|squad|21|DF|ARG|Jano Gordon|
+188|Club Atlético Vélez Sársfield|squad|22|MF|ARG|Manuel Lanzini|
+188|Club Atlético Vélez Sársfield|squad|29|MF|ARG|Rodrigo Aliendro|
+188|Club Atlético Vélez Sársfield|squad|32|DF|ARG|Thiago Silvero|
+188|Club Atlético Vélez Sársfield|squad|34|GK|ARG|Álvaro Busso|
+188|Club Atlético Vélez Sársfield|squad|35|MF|ARG|Matías Arias|
+188|Club Atlético Vélez Sársfield|squad|39|FW|ARG|Thiago Aguirre|
+188|Club Atlético Vélez Sársfield|squad|48|MF|ARG|Luca Feler|
+188|Club Atlético Vélez Sársfield|loaned_out||||Aarón Quirós|Atlante
+188|Club Atlético Vélez Sársfield|loaned_out||||Michael Santos|Central Córdoba
+188|Club Atlético Vélez Sársfield|loaned_out||||Francisco Pozzo|Unión La Calera
+188|Club Atlético Vélez Sársfield|loaned_out||||Elías Cabrera|Atlético Nacional
+188|Club Atlético Vélez Sársfield|loaned_out||||Agustín Lagos|Platense
+188|Club Atlético Vélez Sársfield|loaned_out||||Manuel Fernández|Tigre
+188|Club Atlético Vélez Sársfield|loaned_out||||Leonel Roldán|Juventud
+188|Club Atlético Vélez Sársfield|loaned_out||||Patricio Pernicone|Juventud
+188|Club Atlético Vélez Sársfield|loaned_out||||Jonathan Berón|Tristán Suárez
+188|Club Atlético Vélez Sársfield|loaned_out||||Kevin Vázquez|Independiente Rivadavia
+188|Club Atlético Vélez Sársfield|loaned_out||||Tomás Cavanagh|Danubio
+188|Club Atlético Vélez Sársfield|loaned_out||||Benjamín Bosch|Orenburg
+188|Club Atlético Vélez Sársfield|loaned_out||||Demián Domínguez|Defensa y Justicia
+188|Club Atlético Vélez Sársfield|loaned_out||||Maximiliano Porcel|Defensa y Justicia
+189|Asociación Atlética Argentinos Juniors|squad|1|GK|ARG|Agustín Mangiaut|
+189|Asociación Atlética Argentinos Juniors|squad|3|DF|ARG|Luciano Sánchez|
+189|Asociación Atlética Argentinos Juniors|squad|4|DF|ARG|Érik Godoy|
+189|Asociación Atlética Argentinos Juniors|squad|5|MF|ARG|Facundo Carrizo|
+189|Asociación Atlética Argentinos Juniors|squad|6|DF|ARG|Franco Vázquez|
+189|Asociación Atlética Argentinos Juniors|squad|7|FW|ARG|Diego Porcel|
+189|Asociación Atlética Argentinos Juniors|squad|8|MF|ARG|Hernán López Muñoz|
+189|Asociación Atlética Argentinos Juniors|squad|9|FW|ARG|Gastón Verón|
+189|Asociación Atlética Argentinos Juniors|squad|10|MF|ARG|Gabriel Florentín|
+189|Asociación Atlética Argentinos Juniors|squad|11|MF|ARG|Nicolás Oroz|captain
+189|Asociación Atlética Argentinos Juniors|squad|12|GK|ARG|Gonzalo Siri|
+189|Asociación Atlética Argentinos Juniors|squad|13|DF|ARG|Santino Gianini|
+189|Asociación Atlética Argentinos Juniors|squad|14|DF|ARG|Kevin Coronel|
+189|Asociación Atlética Argentinos Juniors|squad|15|MF|ARG|Facundo Gutiérrez|
+189|Asociación Atlética Argentinos Juniors|squad|16|DF|ARG|Francisco Álvarez|
+189|Asociación Atlética Argentinos Juniors|squad|17|DF|ARG|Franco Paredes|on loan from Independiente
+189|Asociación Atlética Argentinos Juniors|squad|18|MF|ARG|Federico Mancuello|
+189|Asociación Atlética Argentinos Juniors|squad|19|FW|ARG|Matías Giménez|
+189|Asociación Atlética Argentinos Juniors|squad|20|DF|ARG|Sebastián Prieto|
+189|Asociación Atlética Argentinos Juniors|squad|23|DF|ARG|Mateo Mendoza|on loan from Godoy Cruz
+189|Asociación Atlética Argentinos Juniors|squad|25|GK|CHI|Brayan Cortés|on loan from Colo-Colo
+189|Asociación Atlética Argentinos Juniors|squad|26|DF|ARG|Claudio Bravo|
+189|Asociación Atlética Argentinos Juniors|squad|27|FW|ARG|Tomás Molina|
+189|Asociación Atlética Argentinos Juniors|squad|28|MF|ARG|Joaquín Gho|
+189|Asociación Atlética Argentinos Juniors|squad|29|FW|ARG|Emiliano Viveros|
+189|Asociación Atlética Argentinos Juniors|squad|30|DF|PAR|Alan Núñez|on loan from Cerro Porteño
+189|Asociación Atlética Argentinos Juniors|squad|32|MF|ARG|Gino Infantino|on loan from Fiorentina
+189|Asociación Atlética Argentinos Juniors|squad|35|FW|ARG|Alan Alcaraz|
+189|Asociación Atlética Argentinos Juniors|squad|36|MF|ARG|Gastón Bouhier|
+189|Asociación Atlética Argentinos Juniors|squad|41|DF|ARG|Santiago Silveira|
+189|Asociación Atlética Argentinos Juniors|squad|48|FW|ARG|Facundo Jainikoski|
+189|Asociación Atlética Argentinos Juniors|squad|49|FW|JPN|Ryōga Kida|on loan from Nagoya Grampus
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Juan Cardozo|Central Córdoba
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Lautaro Giaccone|Columbus Crew
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Lucas Gómez|Newell's Old Boys
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Leonel Mosevich|Instituto
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Juan Román Pucheta|Atlético Guayaquil
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Luciano Gómez|Independiente Rivadavia
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Iván Morales|Independiente
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Manuel Guillén|Tristán Suárez
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Manuel Brondo|Atlético Tucumán
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Leandro Finochietto|Güemes
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Matías Lugo|Barcelona SC
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Yair González|Boston River
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Mateo Antoni|Alianza Lima
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Lautaro Ovando|San Martín de Tucumán
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Juan Manuel Cabrera|Sarmiento (Junín)
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Jonatan Galván|Instituto
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Pablo Minissale|Mitre
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Thiago Santamaría|Sarmiento (Junín)
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Nicolás Tolosa|Almagro
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Leonardo Heredia|Platense
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Lucas Ambrogio|Nueva Chicago
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Joaquín Ardáiz|Sarmiento (Junín)
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Santiago Rodríguez|Gimnasia-M
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Maximiliano Romero|Colo-Colo
+189|Asociación Atlética Argentinos Juniors|loaned_out||||Damián Batallini|Bolívar
+197|Club de Gimnasia y Esgrima La Plata|squad|1|GK|ARG|Máximo Cabrera|
+197|Club de Gimnasia y Esgrima La Plata|squad|2|DF|ARG|Gonzalo González|
+197|Club de Gimnasia y Esgrima La Plata|squad|4|DF|ARG|Renzo Giampaoli|on loan from Boca Juniors
+197|Club de Gimnasia y Esgrima La Plata|squad|5|MF|ARG|Ignacio Miramón|on loan from Lille
+197|Club de Gimnasia y Esgrima La Plata|squad|6|DF|ARG|Diego Mastrángelo|
+197|Club de Gimnasia y Esgrima La Plata|squad|7|FW|ARG|Manuel Panaro|
+197|Club de Gimnasia y Esgrima La Plata|squad|8|MF|ARG|Nacho Fernández|captain
+197|Club de Gimnasia y Esgrima La Plata|squad|9|FW|ARG|Ivo Mammini|
+197|Club de Gimnasia y Esgrima La Plata|squad|10|MF|ARG|Nicolás Barros Schelotto|
+197|Club de Gimnasia y Esgrima La Plata|squad|11|FW|ARG|Jeremías Merlo|
+197|Club de Gimnasia y Esgrima La Plata|squad|12|GK|IRL|Patricio Schroeder|
+197|Club de Gimnasia y Esgrima La Plata|squad|13|DF|ARG|Germán Conti|on loan from Racing Club
+197|Club de Gimnasia y Esgrima La Plata|squad|14|DF|ARG|Gonzalo Errecalde|
+197|Club de Gimnasia y Esgrima La Plata|squad|15|DF|ARG|Alejo Gelsomino|
+197|Club de Gimnasia y Esgrima La Plata|squad|16|MF|ARG|Augusto Max|
+197|Club de Gimnasia y Esgrima La Plata|squad|18|MF|ARG|Mateo Seoane|
+197|Club de Gimnasia y Esgrima La Plata|squad|19|MF|ARG|Lucas Castro|
+197|Club de Gimnasia y Esgrima La Plata|squad|20|FW|COL|Juan Pérez|on loan from Deportivo Pereira
+197|Club de Gimnasia y Esgrima La Plata|squad|21|DF|URU|Enzo Martínez|
+197|Club de Gimnasia y Esgrima La Plata|squad|22|DF|ARG|Matías Melluso|
+197|Club de Gimnasia y Esgrima La Plata|squad|23|GK|ARG|Nelson Insfrán|
+197|Club de Gimnasia y Esgrima La Plata|squad|24|DF|ARG|Pedro Silva Torrejón|
+197|Club de Gimnasia y Esgrima La Plata|squad|25|DF|ARG|Alexis Steimbach|
+197|Club de Gimnasia y Esgrima La Plata|squad|26|FW|ARG|Franco Torres|
+197|Club de Gimnasia y Esgrima La Plata|squad|27|GK|ARG|Julián Kadijević|
+197|Club de Gimnasia y Esgrima La Plata|squad|28|FW|ARG|Cayetano Bolzán|
+197|Club de Gimnasia y Esgrima La Plata|squad|29|FW|ARG|Agustín Auzmendi|on loan from Godoy Cruz
+197|Club de Gimnasia y Esgrima La Plata|squad|30|FW|ARG|Jorge de Asís|
+197|Club de Gimnasia y Esgrima La Plata|squad|31|DF|ARG|Bautista Barros Schelotto|
+197|Club de Gimnasia y Esgrima La Plata|squad|32|FW|ARG|Marcelo Torres|
+197|Club de Gimnasia y Esgrima La Plata|squad|33|MF|PAR|Pablo Aguiar|
+197|Club de Gimnasia y Esgrima La Plata|squad|34|MF|ARG|Leandro Mamut|
+197|Club de Gimnasia y Esgrima La Plata|squad|35|DF|ARG|Juan Cortazzo|
+197|Club de Gimnasia y Esgrima La Plata|squad|39|MF|ARG|Facundo Di Biasi|
+197|Club de Gimnasia y Esgrima La Plata|squad|42|MF|ARG|Santiago Villarreal|
+197|Club de Gimnasia y Esgrima La Plata|squad|43|FW|ARG|Maximiliano Zalazar|on loan from Boca Juniors
+197|Club de Gimnasia y Esgrima La Plata|loaned_out||||Alan Sosa|Aldosivi
+197|Club de Gimnasia y Esgrima La Plata|loaned_out||||Juan Pintado|Nacional
+201|Club Atlético Independiente de Avellaneda|squad|1|GK|ARG|Joaquín Blázquez|on loan from Talleres
+201|Club Atlético Independiente de Avellaneda|squad|2|DF|ARG|Franco Calderón|on loan from Universidad de Chile
+201|Club Atlético Independiente de Avellaneda|squad|3|DF|ARG|Jonathan De Irastorza|
+201|Club Atlético Independiente de Avellaneda|squad|4|DF|COL|Santiago Arias|
+201|Club Atlético Independiente de Avellaneda|squad|6|FW|ARG|Chimy Ávila|
+201|Club Atlético Independiente de Avellaneda|squad|7|FW|ARG|Santiago Montiel|
+201|Club Atlético Independiente de Avellaneda|squad|8|FW|ARG|Maximiliano Meza|
+201|Club Atlético Independiente de Avellaneda|squad|10|MF|CHI|Luciano Cabral|
+201|Club Atlético Independiente de Avellaneda|squad|11|MF|ARG|Federico Mancuello|
+201|Club Atlético Independiente de Avellaneda|squad|13|DF|ARG|Juan Fedorco|
+201|Club Atlético Independiente de Avellaneda|squad|14|MF|CHI|Lautaro Millán|
+201|Club Atlético Independiente de Avellaneda|squad|15|FW|ARG|Imanol Machuca|
+201|Club Atlético Independiente de Avellaneda|squad|16|MF|ARG|Mateo Pérez Curci|
+201|Club Atlético Independiente de Avellaneda|squad|18|FW|ARG|Facundo Valdez|
+201|Club Atlético Independiente de Avellaneda|squad|19|FW|URU|Matías Abaldo|
+201|Club Atlético Independiente de Avellaneda|squad|22|DF|ARG|Facundo Zabala|
+201|Club Atlético Independiente de Avellaneda|squad|23|MF|ARG|Iván Marcone|vice-captain
+201|Club Atlético Independiente de Avellaneda|squad|28|FW|CHI|Maximiliano Gutiérrez|on loan from Huachipato
+201|Club Atlético Independiente de Avellaneda|squad|29|DF|ARG|Leonardo Godoy|
+201|Club Atlético Independiente de Avellaneda|squad|30|MF|ARG|Tomás Parmo|
+201|Club Atlético Independiente de Avellaneda|squad|33|GK|ARG|Rodrigo Rey|captain
+201|Club Atlético Independiente de Avellaneda|squad|34|FW|ARG|Felipe Tempone|
+201|Club Atlético Independiente de Avellaneda|squad|36|DF|ARG|Sebastián Valdez|
+201|Club Atlético Independiente de Avellaneda|squad|37|MF|ARG|Joel Medina|
+201|Club Atlético Independiente de Avellaneda|squad|40|MF|ARG|Ignacio Malcorra|
+201|Club Atlético Independiente de Avellaneda|squad|77|GK|URU|Santiago Mele|on loan from Monterrey
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Federico Vera|Huracán
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Patricio Ostachuk|Atlanta
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Rodrigo Fernández Cedrés|Huracán
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Kevin López|San Martín de Tucumán
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Walter Mazzantti|Newell's Old Boys
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Ignacio Maestro Puch|Puebla
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Tomás Rambert|Ciudad de Bolívar
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Lucas Román|Atlético Tucumán
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Rodrigo Márquez|Aldosivi
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Chaco Martínez|Everton
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Santiago López|Tigre
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Ignacio Pussetto|Huracán
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Diego Segovia|Deportivo Maldonado
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Jhonny Quiñónez|Barcelona SC
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Enzo Taborda|Barracas Central
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Franco Paredes|Argentinos Juniors
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Santiago Salle|Sarmiento (Junín)
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Agustín Quiroga|Central Córdoba
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Sergio Ortíz|Los Andes
+201|Club Atlético Independiente de Avellaneda|loaned_out||||Alan Daian Laprida|Central Córdoba
+205|Club Atlético Newell’s Old Boys|squad|2|DF|ARG|Ian Glavinovich|
+205|Club Atlético Newell’s Old Boys|squad|3|DF|ARG|Martín Luciano|
+205|Club Atlético Newell’s Old Boys|squad|4|DF|ARG|Alejo Montero|
+205|Club Atlético Newell’s Old Boys|squad|5|MF|ARG|Luca Regiardo|captain
+205|Club Atlético Newell’s Old Boys|squad|6|DF|ARG|Martín Ortega|
+205|Club Atlético Newell’s Old Boys|squad|7|FW|ARG|Walter Mazzantti|on loan from Independiente
+205|Club Atlético Newell’s Old Boys|squad|8|MF|ARG|David Sotelo|
+205|Club Atlético Newell’s Old Boys|squad|9|FW|URU|Matías Cóccaro|
+205|Club Atlético Newell’s Old Boys|squad|10|MF|ARG|Valentino Acuña|
+205|Club Atlético Newell’s Old Boys|squad|15|MF|USA|Alan Soñora|
+205|Club Atlético Newell’s Old Boys|squad|16|DF|ARG|Lucas Carrizo|
+205|Club Atlético Newell’s Old Boys|squad|17|DF|ARG|Lautaro Giannetti|
+205|Club Atlético Newell’s Old Boys|squad|18|FW|ARG|Mateo García|
+205|Club Atlético Newell’s Old Boys|squad|19|MF|ARG|Jerónimo Gómez Mattar|
+205|Club Atlético Newell’s Old Boys|squad|20|MF|ARG|Facundo Guch|
+205|Club Atlético Newell’s Old Boys|squad|21|GK|CHI|Gabriel Arias|
+205|Club Atlético Newell’s Old Boys|squad|22|DF|ARG|Oscar Salomón|
+205|Club Atlético Newell’s Old Boys|squad|23|DF|ARG|Nicolás Goitea|on loan from Mitre
+205|Club Atlético Newell’s Old Boys|squad|24|DF|ARG|Franco Escobar|
+205|Club Atlético Newell’s Old Boys|squad|25|DF|ARG|Bruno Cabrera|
+205|Club Atlético Newell’s Old Boys|squad|26|MF|ARG|Rodrigo Herrera|
+205|Club Atlético Newell’s Old Boys|squad|27|MF|ARG|Lucas Gómez|on loan from Argentinos Juniors
+205|Club Atlético Newell’s Old Boys|squad|28|FW|ARG|Santiago Solari|on loan from Racing Avellaneda
+205|Club Atlético Newell’s Old Boys|squad|29|MF|ARG|Marcelo Esponda|
+205|Club Atlético Newell’s Old Boys|squad|30|GK|ARG|Josué Reinatti|
+205|Club Atlético Newell’s Old Boys|squad|33|FW|ARG|Walter Núñez|on loan from Montevideo City Torque
+205|Club Atlético Newell’s Old Boys|squad|36|FW|ARG|Francisco Scarpeccio|
+205|Club Atlético Newell’s Old Boys|squad|39|FW|ARG|Thomas Rios|
+205|Club Atlético Newell’s Old Boys|squad|99|FW|URU|Ignacio Ramírez|
+205|Club Atlético Newell’s Old Boys|loaned_out||||Juan Espínola|Barracas Central
+205|Club Atlético Newell’s Old Boys|loaned_out||||Armando Méndez|Guaraní
+205|Club Atlético Newell’s Old Boys|loaned_out||||Luciano Herrera|UNAM
+205|Club Atlético Newell’s Old Boys|loaned_out||||Faustino Piotti|Sol de América
+205|Club Atlético Newell’s Old Boys|loaned_out||||Giovani Chiaverano|Audax Italiano
+205|Club Atlético Newell’s Old Boys|loaned_out||||Julián Contrera|Sarmiento (Junín)
+207|Club Atlético Rosario Central|squad|1|GK|ARG|Axel Werner|on loan from Elche
+207|Club Atlético Rosario Central|squad|2|DF|PAR|Sebastián Zaracho|
+207|Club Atlético Rosario Central|squad|3|DF|PAR|Agustín Sández|
+207|Club Atlético Rosario Central|squad|4|DF|ARG|Ulises Ciccioli|
+207|Club Atlético Rosario Central|squad|5|MF|ARG|Franco Ibarra|
+207|Club Atlético Rosario Central|squad|6|DF|ARG|Juan Cruz Komar|
+207|Club Atlético Rosario Central|squad|8|FW|COL|Jáminton Campaz|
+207|Club Atlético Rosario Central|squad|9|FW|ARG|Marco Ruben|page also lists him as #29 (duplicate entry)
+207|Club Atlético Rosario Central|squad|10|FW|ARG|Franco Cervi|
+207|Club Atlético Rosario Central|squad|11|FW|ARG|Ángel Di María|captain
+207|Club Atlético Rosario Central|squad|13|DF|ARG|Gastón Ávila|on loan from Ajax
+207|Club Atlético Rosario Central|squad|15|DF|URU|Facundo Mallo|
+207|Club Atlético Rosario Central|squad|16|FW|ARG|Tomás Badaloni|
+207|Club Atlético Rosario Central|squad|18|FW|ARG|Julián Fernández|on loan from New York City
+207|Club Atlético Rosario Central|squad|19|MF|ARG|Santiago Segovia|
+207|Club Atlético Rosario Central|squad|20|MF|CHI|Vicente Pizarro|
+207|Club Atlético Rosario Central|squad|22|FW|ARG|Enzo Copetti|
+207|Club Atlético Rosario Central|squad|23|GK|ARG|Conan Ledesma|on loan from River Plate
+207|Club Atlético Rosario Central|squad|24|DF|ARG|Juan Giménez|
+207|Club Atlético Rosario Central|squad|26|FW|ARG|Giovanni Cantizano|
+207|Club Atlético Rosario Central|squad|27|FW|ARG|Gaspar Duarte|
+207|Club Atlético Rosario Central|squad|28|MF|ARG|Pol Fernández|
+207|Club Atlético Rosario Central|squad|31|MF|ARG|Federico Navarro|
+207|Club Atlético Rosario Central|squad|32|DF|ARG|Emanuel Coronel|
+207|Club Atlético Rosario Central|squad|33|DF|ARG|Alexis Soto|on loan from Defensa y Justicia
+207|Club Atlético Rosario Central|squad|38|GK|ARG|Damián Fernández|
+207|Club Atlético Rosario Central|squad|39|FW|ARG|Fabricio Oviedo|
+207|Club Atlético Rosario Central|squad|46|DF|ARG|Ignacio Ovando|
+207|Club Atlético Rosario Central|squad|47|DF|ARG|Luca Raffin|
+207|Club Atlético Rosario Central|squad|88|MF|URU|Alan Rodríguez|on loan from Internacional
+207|Club Atlético Rosario Central|loaned_out|7|FW|ARG|Maximiliano Lovera|Independiente Santa Fe
+207|Club Atlético Rosario Central|loaned_out|9|FW|SYR|Tobías Cervera|2 de Mayo
+207|Club Atlético Rosario Central|loaned_out|11|FW|ARG|Luciano Ferreyra|San Martín-T
+207|Club Atlético Rosario Central|loaned_out|16|DF|PAR|Alan Rodríguez|Olimpia
+207|Club Atlético Rosario Central|loaned_out|17|FW|ARG|Franco Frías|Cobresal
+207|Club Atlético Rosario Central|loaned_out|19|DF|ARG|Agustín Bravo|Instituto
+207|Club Atlético Rosario Central|loaned_out|23|MF|PAR|Giovanni Bogado|Sportivo Luqueño
+207|Club Atlético Rosario Central|loaned_out|27|MF|PAR|Marcelo Acosta|2 de Mayo
+207|Club Atlético Rosario Central|loaned_out|30|MF|ARG|Tomás O'Connor|Gimnasia-M
+207|Club Atlético Rosario Central|loaned_out|37|DF|ARG|Elías Ocampo|Colegiales
+207|Club Atlético Rosario Central|loaned_out|45|MF|ARG|Kevin Ortiz|Atlético Tucumán
+207|Club Atlético Rosario Central|loaned_out|49|DF|ARG|Kevin Silva|Montevideo City Torque
+210|Racing Club Asociación Civil de Avellaneda|squad|1|GK|ARG|Francisco Gómez|
+210|Racing Club Asociación Civil de Avellaneda|squad|2|DF|ARG|Agustín García Basso|
+210|Racing Club Asociación Civil de Avellaneda|squad|3|DF|ARG|Marco Di Césare|
+210|Racing Club Asociación Civil de Avellaneda|squad|4|DF|ARG|Ezequiel Cannavo|on loan from Defensa y Justicia
+210|Racing Club Asociación Civil de Avellaneda|squad|6|DF|ARG|Marcos Rojo|
+210|Racing Club Asociación Civil de Avellaneda|squad|7|FW|COL|Duván Vergara|
+210|Racing Club Asociación Civil de Avellaneda|squad|8|MF|ARG|Alan Forneris|
+210|Racing Club Asociación Civil de Avellaneda|squad|9|FW|ARG|Adrián Martínez|
+210|Racing Club Asociación Civil de Avellaneda|squad|10|MF|USA|Matko Miljević|
+210|Racing Club Asociación Civil de Avellaneda|squad|11|MF|ARG|Matías Zaracho|
+210|Racing Club Asociación Civil de Avellaneda|squad|12|GK|ARG|Thiago De Bellis|
+210|Racing Club Asociación Civil de Avellaneda|squad|13|MF|ARG|Santiago Sosa|captain
+210|Racing Club Asociación Civil de Avellaneda|squad|14|FW|CHI|Damián Pizarro|on loan from Udinese
+210|Racing Club Asociación Civil de Avellaneda|squad|15|DF|URU|Gastón Martirena|
+210|Racing Club Asociación Civil de Avellaneda|squad|17|FW|ARG|Tomás Conechny|
+210|Racing Club Asociación Civil de Avellaneda|squad|18|DF|ARG|Franco Pardo|
+210|Racing Club Asociación Civil de Avellaneda|squad|19|DF|ARG|Ignacio Rodríguez|
+210|Racing Club Asociación Civil de Avellaneda|squad|20|MF|ARG|Baltasar Rodríguez|
+210|Racing Club Asociación Civil de Avellaneda|squad|21|FW|ARG|Valentín Carboni|on loan from Inter Milan
+210|Racing Club Asociación Civil de Avellaneda|squad|22|FW|ARG|Elías Torres|
+210|Racing Club Asociación Civil de Avellaneda|squad|23|DF|ARG|Nazareno Colombo|
+210|Racing Club Asociación Civil de Avellaneda|squad|24|MF|ARG|Adrián Fernández|
+210|Racing Club Asociación Civil de Avellaneda|squad|25|GK|ARG|Facundo Cambeses|
+210|Racing Club Asociación Civil de Avellaneda|squad|28|FW|ARG|Santiago Solari|
+210|Racing Club Asociación Civil de Avellaneda|squad|30|GK|ARG|Matías Tagliamonte|
+210|Racing Club Asociación Civil de Avellaneda|squad|34|DF|ARG|Tobías Rubio|
+210|Racing Club Asociación Civil de Avellaneda|squad|36|MF|ARG|Bruno Zuculini|
+210|Racing Club Asociación Civil de Avellaneda|squad|43|DF|ARG|Gonzalo Escudero|
+210|Racing Club Asociación Civil de Avellaneda|squad|44|MF|ARG|Gonzalo Sosa|
+210|Racing Club Asociación Civil de Avellaneda|squad||MF|CHI|Ulises Ortegoza|
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Maico Quiroz|Güemes
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Martín Barrios|Platense
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Juan Elordi|Independiente Rivadavia
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Germán Conti|Gimnasia-LP
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Héctor Fértoli|Universitario
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Richard Sánchez|Olimpia
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Evelio Cardozo|Nueva Chicago
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Santiago Quirós|Platense
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Matías Bergara|Nueva Chicago
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Emiliano Saliadarre|Miramar
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Ramiro Degregorio|Liverpool (Montevideo)
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Patricio Tanda|Guaraní
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||Ignacio Galván|Atlético Tucumán
+210|Racing Club Asociación Civil de Avellaneda|loaned_out||||David González|Deportivo Cuenca
+214|Club Atlético San Lorenzo de Almagro|squad|1|GK|ARG|Mateo Clemente|
+214|Club Atlético San Lorenzo de Almagro|squad|3|DF|ARG|Teo Rodríguez Pagano|
+214|Club Atlético San Lorenzo de Almagro|squad|4|DF|COL|Jhohan Romaña|
+214|Club Atlético San Lorenzo de Almagro|squad|5|MF|ARG|Ignacio Perruzzi|
+214|Club Atlético San Lorenzo de Almagro|squad|6|DF|URU|Mathías De Ritis|
+214|Club Atlético San Lorenzo de Almagro|squad|7|FW|ARG|Ezequiel Cerutti|
+214|Club Atlético San Lorenzo de Almagro|squad|8|MF|ARG|Manuel Insaurralde|
+214|Club Atlético San Lorenzo de Almagro|squad|9|FW|ARG|Alexis Cuello|
+214|Club Atlético San Lorenzo de Almagro|squad|10|MF|ARG|Facundo Gulli|
+214|Club Atlético San Lorenzo de Almagro|squad|11|FW|ARG|Matías Reali|
+214|Club Atlético San Lorenzo de Almagro|squad|12|GK|PAR|Orlando Gill|
+214|Club Atlético San Lorenzo de Almagro|squad|13|MF|ARG|Juan Rattalino|
+214|Club Atlético San Lorenzo de Almagro|squad|14|FW|ARG|Agustín Ladstatter|
+214|Club Atlético San Lorenzo de Almagro|squad|15|MF|ARG|Mauricio Cardillo|
+214|Club Atlético San Lorenzo de Almagro|squad|16|DF|URU|Guzmán Corujo|
+214|Club Atlético San Lorenzo de Almagro|squad|17|FW|ARG|Gregorio Rodríguez|on loan from FBC Melgar
+214|Club Atlético San Lorenzo de Almagro|squad|18|FW|COL|Diego Herazo|
+214|Club Atlético San Lorenzo de Almagro|squad|19|FW|ARG|Luciano Vietto|
+214|Club Atlético San Lorenzo de Almagro|squad|20|GK|ARG|Facundo Altamirano|
+214|Club Atlético San Lorenzo de Almagro|squad|21|MF|ARG|Francisco Perruzzi|
+214|Club Atlético San Lorenzo de Almagro|squad|22|FW|ARG|Branco Salinardi|
+214|Club Atlético San Lorenzo de Almagro|squad|23|DF|ARG|Gastón Hernández|captain
+214|Club Atlético San Lorenzo de Almagro|squad|24|MF|ARG|Nicolás Tripichio|
+214|Club Atlético San Lorenzo de Almagro|squad|25|GK|ARG|José Devecchi|
+214|Club Atlético San Lorenzo de Almagro|squad|26|MF|ARG|Gonzalo Abrego|on loan from Godoy Cruz
+214|Club Atlético San Lorenzo de Almagro|squad|28|MF|ARG|Nahuel Barrios|
+214|Club Atlético San Lorenzo de Almagro|squad|29|FW|ARG|Rodrigo Auzmendi|on loan from Querétaro
+214|Club Atlético San Lorenzo de Almagro|squad|30|DF|ARG|Nahuel Arias|
+214|Club Atlético San Lorenzo de Almagro|squad|32|DF|ARG|Ezequiel Herrera|
+214|Club Atlético San Lorenzo de Almagro|squad|34|DF|ARG|Fabricio López|on loan from Deportivo Armenio
+214|Club Atlético San Lorenzo de Almagro|squad|35|DF|ARG|Alejo Córdoba|
+214|Club Atlético San Lorenzo de Almagro|squad|36|DF|ARG|Daniel Herrera|
+214|Club Atlético San Lorenzo de Almagro|squad|39|MF|ARG|Uriel Ojeda|
+214|Club Atlético San Lorenzo de Almagro|squad|42|DF|ARG|Franco Lorenzón|
+214|Club Atlético San Lorenzo de Almagro|squad|44|FW|ARG|Matías Hernández|
+214|Club Atlético San Lorenzo de Almagro|squad|51|DF|ARG|Maximiliano Zelaya|
+214|Club Atlético San Lorenzo de Almagro|squad|53|DF|ARG|Ramiro Pedroza|
+214|Club Atlético San Lorenzo de Almagro|squad|54|DF|ARG|Nicolás Blanco|
+214|Club Atlético San Lorenzo de Almagro|squad|55|DF|ARG|Lautaro Montenegro|
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Lautaro López Kaleniuk|Atlanta
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Jeremías James|Magallanes
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Francisco Flores|Deportivo Morón
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Facundo Bruera|Barracas Central
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Agustín Lamosa|Central Norte
+214|Club Atlético San Lorenzo de Almagro|loaned_out||||Mauro Pérez|Nueva Chicago
+216|Club Atlético Huracán|squad|1|GK|ECU|Hernán Galíndez|captain
+216|Club Atlético Huracán|squad|2|DF|SUI|Lucas Blondel|on loan from Boca Juniors
+216|Club Atlético Huracán|squad|3|DF|ARG|Lucas Carrizo|
+216|Club Atlético Huracán|squad|4|DF|ARG|Federico Vera|on loan from Independiente
+216|Club Atlético Huracán|squad|5|MF|URU|Rodrigo Fernández Cedrés|on loan from Independiente
+216|Club Atlético Huracán|squad|6|DF|ARG|Fabio Pereyra|
+216|Club Atlético Huracán|squad|7|FW|COL|Óscar Cortés|on loan from Rangers
+216|Club Atlético Huracán|squad|8|MF|CHI|Leonardo Gil|
+216|Club Atlético Huracán|squad|9|FW|ECU|Jordy Caicedo|on loan from Atlas
+216|Club Atlético Huracán|squad|10|MF|PAR|Óscar Romero|
+216|Club Atlético Huracán|squad|11|MF|ARG|Thaiel Peralta|
+216|Club Atlético Huracán|squad|15|MF|URU|Facundo Waller|
+216|Club Atlético Huracán|squad|17|FW|ARG|Juan Bisanz|
+216|Club Atlético Huracán|squad|19|DF|ARG|Leandro Lescano|
+216|Club Atlético Huracán|squad|20|MF|ARG|Emmanuel Ojeda|
+216|Club Atlético Huracán|squad|21|DF|ARG|Hugo Nervo|
+216|Club Atlético Huracán|squad|22|DF|ARG|Daniel Zabala|on loan from River Plate
+216|Club Atlético Huracán|squad|23|FW|ARG|Ignacio Pussetto|on loan from Independiente
+216|Club Atlético Huracán|squad|25|DF|ARG|César Ibáñez|
+216|Club Atlético Huracán|squad|27|GK|ARG|Nazareno Durán|
+216|Club Atlético Huracán|squad|32|GK|ARG|Sebastián Meza|
+216|Club Atlético Huracán|squad|33|FW|CHI|Bruno Barticciotto|on loan from Talleres
+216|Club Atlético Huracán|squad|34|DF|ARG|Ignacio Campo|
+216|Club Atlético Huracán|squad|35|DF|ARG|Máximo Palazzo|
+216|Club Atlético Huracán|squad|41|MF|ARG|Lautaro Mora|
+216|Club Atlético Huracán|squad|49|FW|ARG|Tomás Uribe|
+216|Club Atlético Huracán|squad|52|MF|ARG|Facundo Kalinger|
+216|Club Atlético Huracán|loaned_out||||Santiago Moya|Aldosivi
+216|Club Atlético Huracán|loaned_out||||Nehuén Paz|Banfield
+216|Club Atlético Huracán|loaned_out||||Luca Babino|Fénix
+216|Club Atlético Huracán|loaned_out||||Gabriel Alanís|Estudiantes RC
+216|Club Atlético Huracán|loaned_out||||Matías Gómez|Los Andes
+216|Club Atlético Huracán|loaned_out||||Milton Ríos|San Martín de Tucumán
+216|Club Atlético Huracán|loaned_out||||Rodrigo Cabral|Audax Italiano
+216|Club Atlético Huracán|loaned_out||||Leandro Garate|Colon
+216|Club Atlético Huracán|loaned_out||||Sebastián Ramírez|Chacarita Juniors
+216|Club Atlético Huracán|loaned_out||||Leonardo Sequeira|Central Córdoba
+216|Club Atlético Huracán|loaned_out||||Marcelo Pérez|Juventud
+217|Esporte Clube Vitória|squad|1|GK|BRA|Lucas Arcanjo|
+217|Esporte Clube Vitória|squad|2|DF|ARG|Emanuel Brítez|
+217|Esporte Clube Vitória|squad|4|DF|BRA|Camutanga|
+217|Esporte Clube Vitória|squad|6|MF|ARG|Emmanuel Martínez|
+217|Esporte Clube Vitória|squad|7|FW|BRA|Marinho|
+217|Esporte Clube Vitória|squad|8|MF|ARG|Tomás Pochettino|on loan from Fortaleza
+217|Esporte Clube Vitória|squad|9|FW|BRA|Alex Bruno|on loan from ASA
+217|Esporte Clube Vitória|squad|10|MF|BRA|Matheuzinho|
+217|Esporte Clube Vitória|squad|11|FW|BRA|Osvaldo|
+217|Esporte Clube Vitória|squad|12|FW|ARG|Diego Tarzia|
+217|Esporte Clube Vitória|squad|13|DF|BRA|Ramon|on loan from Internacional
+217|Esporte Clube Vitória|squad|15|MF|BRA|Walace|on loan from Cruzeiro
+217|Esporte Clube Vitória|squad|16|MF|POR|Rúben Ismael|
+217|Esporte Clube Vitória|squad|18|DF|BRA|Kauan Coutinho|
+217|Esporte Clube Vitória|squad|20|FW|BRA|Lucas Silva|on loan from FC Seoul
+217|Esporte Clube Vitória|squad|21|MF|BRA|Dudu|
+217|Esporte Clube Vitória|squad|23|FW|BRA|Fabrí|
+217|Esporte Clube Vitória|squad|25|DF|BRA|Cacá|on loan from Corinthians
+217|Esporte Clube Vitória|squad|26|DF|BRA|Edenilson|
+217|Esporte Clube Vitória|squad|28|FW|BRA|Anderson Pato|
+217|Esporte Clube Vitória|squad|33|FW|BRA|Erick|
+217|Esporte Clube Vitória|squad|35|GK|BRA|Fintelman|
+217|Esporte Clube Vitória|squad|36|DF|BRA|Luan Cândido|on loan from Red Bull Bragantino
+217|Esporte Clube Vitória|squad|41|MF|BRA|Wendell Santos|
+217|Esporte Clube Vitória|squad|43|DF|BRA|Edu Ribeiro|
+217|Esporte Clube Vitória|squad|44|MF|BRA|Gabriel Baralhas|captain
+217|Esporte Clube Vitória|squad|45|DF|BRA|Nathan Mendes|on loan from Red Bull Bragantino
+217|Esporte Clube Vitória|squad|70|DF|BRA|Fabiano|on loan from Moreirense
+217|Esporte Clube Vitória|squad|71|GK|BRA|Yuri Sena|
+217|Esporte Clube Vitória|squad|79|FW|BRA|Renato Kayzer|
+217|Esporte Clube Vitória|squad|83|DF|BRA|Jamerson|on loan from Coritiba
+217|Esporte Clube Vitória|squad|88|MF|BRA|Zé Vitor|on loan from Maringá
+217|Esporte Clube Vitória|squad|91|FW|BRA|Renê|
+217|Esporte Clube Vitória|squad|95|MF|BRA|Caíque Gonçalves|
+217|Esporte Clube Vitória|squad|98|DF|BRA|Mateusinho|
+217|Esporte Clube Vitória|squad||FW|URU|Ignacio Laquintana|on loan from Red Bull Bragantino
+217|Esporte Clube Vitória|loaned_out||||Claudinho|Sport Recife
+217|Esporte Clube Vitória|loaned_out||||Zé Marcos|Sport Recife
+217|Esporte Clube Vitória|loaned_out||||Neris|Fortaleza
+217|Esporte Clube Vitória|loaned_out||||Paulo Roberto|Cianorte
+217|Esporte Clube Vitória|loaned_out||||Willean Lepo|Criciúma
+217|Esporte Clube Vitória|loaned_out||||Dudu Miraíma|São Bernardo
+217|Esporte Clube Vitória|loaned_out||||Filipe Machado|Goiás
+217|Esporte Clube Vitória|loaned_out||||Léo Naldi|Novorizontino
+217|Esporte Clube Vitória|loaned_out||||Luis Aucélio|Londrina
+217|Esporte Clube Vitória|loaned_out||||Pablo Baianinho|Paysandu
+217|Esporte Clube Vitória|loaned_out||||Pepê|Cuiabá
+217|Esporte Clube Vitória|loaned_out||||Ronald|Criciúma
+217|Esporte Clube Vitória|loaned_out||||Zé Breno|Torreense
+217|Esporte Clube Vitória|loaned_out||||Lawan|Botafogo-PB
+217|Esporte Clube Vitória|loaned_out||||Luis Miguel|Caxias
+217|Esporte Clube Vitória|loaned_out||||Ruan Gabriel|Göztepe
+217|Esporte Clube Vitória|loaned_out||||Wellington Rato|Goiás
+223|Club Atlético Belgrano|squad|2|DF|ARG|Alexis Maldonado|
+223|Club Atlético Belgrano|squad|3|DF|ARG|Adrián Spörle|
+223|Club Atlético Belgrano|squad|5|MF|ARG|Santiago Longo|
+223|Club Atlético Belgrano|squad|9|FW|ARG|Lucas Passerini|
+223|Club Atlético Belgrano|squad|10|MF|ARM|Lucas Zelarayán|captain
+223|Club Atlético Belgrano|squad|11|MF|ARG|Francisco González Metilli|
+223|Club Atlético Belgrano|squad|13|DF|ARG|Álvaro Ocampo|
+223|Club Atlético Belgrano|squad|14|DF|ARG|Leonardo Morales|
+223|Club Atlético Belgrano|squad|16|DF|URU|Federico Ricca|
+223|Club Atlético Belgrano|squad|17|DF|ARG|Lisandro López|
+223|Club Atlético Belgrano|squad|20|MF|ARG|Franco Vázquez|
+223|Club Atlético Belgrano|squad|21|MF|ARG|Adrián Sánchez|
+223|Club Atlético Belgrano|squad|22|FW|ARG|Nicolás Fernández|
+223|Club Atlético Belgrano|squad|23|GK|ARG|Manuel Vicentini|
+223|Club Atlético Belgrano|squad|24|MF|ARG|Emiliano Rigoni|
+223|Club Atlético Belgrano|squad|25|GK|URU|Thiago Cardozo|on loan from Unión de Santa Fe
+223|Club Atlético Belgrano|squad|26|DF|PAR|Alcides Benítez|
+223|Club Atlético Belgrano|squad|28|GK|ARG|Matías Daniele|
+223|Club Atlético Belgrano|squad|29|FW|ARG|Agustín Melano|
+223|Club Atlético Belgrano|squad|30|MF|ARG|Gonzalo Zelarayán|
+223|Club Atlético Belgrano|squad|32|MF|ARG|Julián Mavilla|
+223|Club Atlético Belgrano|squad|37|FW|ARG|Lautaro Gutiérrez|
+223|Club Atlético Belgrano|squad|42|FW|ARG|Jeremías Lucco|
+223|Club Atlético Belgrano|squad|51|MF|ARG|Ramiro Hernandes|
+223|Club Atlético Belgrano|squad|53|DF|ARG|Juan Velázquez|
+223|Club Atlético Belgrano|squad|59|MF|ARG|Tomás Castro|
+223|Club Atlético Belgrano|loaned_out||||Elías Calderón|Central Norte
+223|Club Atlético Belgrano|loaned_out||||Bryan Reyna|Universitario
+223|Club Atlético Belgrano|loaned_out||||Lautaro Pastrán|Colo-Colo
+223|Club Atlético Belgrano|loaned_out||||Francisco Monticelli|Racing (Córdoba)
+223|Club Atlético Belgrano|loaned_out||||Matías Marín|La Serena
+223|Club Atlético Belgrano|loaned_out||||Ignacio Tapia|Ñublense
+223|Club Atlético Belgrano|loaned_out||||Ulises Sánchez|Gimnasia-M
+223|Club Atlético Belgrano|loaned_out||||Nicolás Meriano|Banfield
+223|Club Atlético Belgrano|loaned_out||||Tiago Cravero|Central Córdoba
+223|Club Atlético Belgrano|loaned_out||||Gerónimo Tomasetti|Temperley
+223|Club Atlético Belgrano|loaned_out||||Gerónimo Heredia|Delfín
+223|Club Atlético Belgrano|loaned_out||||Francisco Facello|Chacarita Juniors
+223|Club Atlético Belgrano|loaned_out||||Juan Strumia|Godoy Cruz
+223|Club Atlético Belgrano|loaned_out||||Franco Rami|Ñublense
+223|Club Atlético Belgrano|loaned_out||||Agustín Baldi|Tristán Suárez
+231|Fluminense Football Club|squad|1|GK|BRA|Fábio|vice-captain
+231|Fluminense Football Club|squad|2|DF|BRA|Samuel Xavier|2nd vice-captain
+231|Fluminense Football Club|squad|3|DF|BRA|Thiago Silva|captain
+231|Fluminense Football Club|squad|4|DF|BRA|Ignácio|
+231|Fluminense Football Club|squad|6|DF|BRA|Renê|
+231|Fluminense Football Club|squad|7|FW|BRA|Hulk|
+231|Fluminense Football Club|squad|8|MF|BRA|Matheus Martinelli|
+231|Fluminense Football Club|squad|9|FW|BRA|John Kennedy|
+231|Fluminense Football Club|squad|10|MF|BRA|Ganso|
+231|Fluminense Football Club|squad|11|MF|VEN|Jefferson Savarino|
+231|Fluminense Football Club|squad|13|DF|BRA|Guilherme Arana|
+231|Fluminense Football Club|squad|14|FW|ARG|Germán Cano|
+231|Fluminense Football Club|squad|16|MF|BRA|Nonato|
+231|Fluminense Football Club|squad|17|FW|URU|Agustín Canobbio|
+231|Fluminense Football Club|squad|19|FW|ARG|Rodrigo Castillo|
+231|Fluminense Football Club|squad|21|DF|BRA|Igor Rabello|
+231|Fluminense Football Club|squad|22|DF|ARG|Juan Pablo Freytes|
+231|Fluminense Football Club|squad|23|DF|BRA|Guga|
+231|Fluminense Football Club|squad|25|MF|BRA|Alisson|on loan from São Paulo
+231|Fluminense Football Club|squad|27|GK|BRA|Marcelo Pitaluga|
+231|Fluminense Football Club|squad|28|FW|BRA|Riquelme|
+231|Fluminense Football Club|squad|29|DF|COL|Julián Millán|
+231|Fluminense Football Club|squad|30|FW|VEN|Yeferson Soteldo|
+231|Fluminense Football Club|squad|32|MF|ARG|Lucho Acosta|
+231|Fluminense Football Club|squad|35|MF|BRA|Hércules|
+231|Fluminense Football Club|squad|44|DF|BRA|Jemmes|
+231|Fluminense Football Club|squad|46|DF|BRA|Júlio Fidelis|
+231|Fluminense Football Club|squad|90|FW|COL|Kevin Serna|
+231|Fluminense Football Club|squad|94|MF|BRA|Otávio|
+231|Fluminense Football Club|squad|98|GK|BRA|Vitor Eudes|
+231|Fluminense Football Club|loaned_out||||Kayky Almeida|Sport Recife
+231|Fluminense Football Club|loaned_out||||Gabriel Fuentes|Fortaleza
+231|Fluminense Football Club|loaned_out||||Gustavo Cintra|Itabaiana
+231|Fluminense Football Club|loaned_out||||João Loiola|New York City FC II
+231|Fluminense Football Club|loaned_out||||Lucas Justen|Ponte Preta
+231|Fluminense Football Club|loaned_out||||Freitas|Remo
+231|Fluminense Football Club|loaned_out||||Miguel Sampaio|Inter de Limeira
+231|Fluminense Football Club|loaned_out||||Rubén Lezcano|Olimpia
+231|Fluminense Football Club|loaned_out||||Lima|Santos
+231|Fluminense Football Club|loaned_out||||Luis Fernando|Caxias
+231|Fluminense Football Club|loaned_out||||David Terans|Atlético Goianiense
+231|Fluminense Football Club|loaned_out||||Everaldo|Bahia
+231|Fluminense Football Club|loaned_out||||Keno|Coritiba
+231|Fluminense Football Club|loaned_out||||Joaquín Lavega|Coritiba
+231|Fluminense Football Club|loaned_out||||Lelê|Pafos
+231|Fluminense Football Club|loaned_out||||Santi Moreno|Dallas
+231|Fluminense Football Club|loaned_out||||João Neto|CRB
+231|Fluminense Football Club|loaned_out||||Marlon|Juazeirense
+249|Mirasol Futebol Clube|squad|1|GK|BRA|Georgemy|
+249|Mirasol Futebol Clube|squad|2|DF|BRA|Lucas Oliveira|
+249|Mirasol Futebol Clube|squad|3|DF|BRA|Willian Machado|
+249|Mirasol Futebol Clube|squad|5|MF|BRA|Japa|on loan from Cruzeiro
+249|Mirasol Futebol Clube|squad|6|DF|BRA|Reinaldo|captain
+249|Mirasol Futebol Clube|squad|7|MF|BRA|Shaylon|
+249|Mirasol Futebol Clube|squad|8|MF|BRA|Denilson|
+249|Mirasol Futebol Clube|squad|9|FW|BRA|Zé Roberto|
+249|Mirasol Futebol Clube|squad|10|MF|BRA|Chico Kim|
+249|Mirasol Futebol Clube|squad|11|FW|BRA|Negueba|
+249|Mirasol Futebol Clube|squad|12|DF|BRA|Victor Luis|
+249|Mirasol Futebol Clube|squad|16|FW|BRA|Gustavo Silva|
+249|Mirasol Futebol Clube|squad|17|FW|BRA|Fernandinho|
+249|Mirasol Futebol Clube|squad|18|DF|BRA|Elias|on loan from Vila Nova
+249|Mirasol Futebol Clube|squad|20|DF|BRA|Daniel Borges|
+249|Mirasol Futebol Clube|squad|21|MF|BRA|José Aldo|
+249|Mirasol Futebol Clube|squad|22|GK|BRA|Walter|
+249|Mirasol Futebol Clube|squad|23|GK|BRA|Alex Muralha|
+249|Mirasol Futebol Clube|squad|25|MF|BRA|Neto Moura|
+249|Mirasol Futebol Clube|squad|30|FW|BRA|Bruno Santos|
+249|Mirasol Futebol Clube|squad|32|DF|BRA|Igor Formiga|
+249|Mirasol Futebol Clube|squad|33|MF|BRA|Eduardo|
+249|Mirasol Futebol Clube|squad|34|DF|BRA|João Victor|
+249|Mirasol Futebol Clube|squad|44|DF|BRA|Gabriel Knesowitsch|on loan from Cuiabá
+249|Mirasol Futebol Clube|squad|53|DF|BRA|Marcelinho|
+249|Mirasol Futebol Clube|squad|55|MF|BRA|Gustavo Cazonatti|
+249|Mirasol Futebol Clube|squad|77|FW|BRA|Alesson|
+249|Mirasol Futebol Clube|squad|80|MF|BRA|Wallisson|
+249|Mirasol Futebol Clube|squad|90|GK|BRA|Thomazella|
+249|Mirasol Futebol Clube|squad|95|FW|BRA|Edson Carioca|
+249|Mirasol Futebol Clube|squad|96|FW|BRA|Carlos Eduardo|
+249|Mirasol Futebol Clube|squad|99|FW|BRA|André Luis|
+249|Mirasol Futebol Clube|loaned_out||||Igor Cariús|Vila Nova
+249|Mirasol Futebol Clube|loaned_out||||Renato Marques|Coritiba
+249|Mirasol Futebol Clube|loaned_out||||Rodrigo Rodrigues|Cuiabá
+251|Club Atlético Talleres|squad|1|GK|ARG|Santino Barbi|
+251|Club Atlético Talleres|squad|2|DF|ARG|Timoteo Chamorro|
+251|Club Atlético Talleres|squad|3|DF|PAR|Alexandro Maidana|
+251|Club Atlético Talleres|squad|4|DF|CHI|Matías Catalán|
+251|Club Atlético Talleres|squad|5|MF|ARG|Matías Galarza|
+251|Club Atlético Talleres|squad|6|DF|ARG|Román Riquelme|
+251|Club Atlético Talleres|squad|7|FW|COL|Diego Valoyes|on loan from Juárez
+251|Club Atlético Talleres|squad|8|MF|ARG|Federico Fattori|
+251|Club Atlético Talleres|squad|10|MF|ARG|Giovanni Baroni|
+251|Club Atlético Talleres|squad|11|FW|ARG|Valentín Depietri|
+251|Club Atlético Talleres|squad|13|DF|ARG|Valentín Fascendini|
+251|Club Atlético Talleres|squad|17|FW|URU|Agustín Álvarez|on loan from Sassuolo
+251|Club Atlético Talleres|squad|19|MF|ARG|Franco Cristaldo|
+251|Club Atlético Talleres|squad|20|DF|ARG|Augusto Schott|captain
+251|Club Atlético Talleres|squad|21|MF|ARG|Matías Gómez|
+251|Club Atlético Talleres|squad|23|DF|ARG|Gabriel Báez|
+251|Club Atlético Talleres|squad|24|FW|ARG|Ignacio Alastra|
+251|Club Atlético Talleres|squad|26|MF|ARG|Mateo Cáceres|
+251|Club Atlético Talleres|squad|32|GK|ARG|Ezequiel Unsain|
+251|Club Atlético Talleres|squad|36|FW|ARG|Emiliano Chiavassa|
+251|Club Atlético Talleres|squad|37|FW|BRA|Rick|
+251|Club Atlético Talleres|squad|44|DF|ARG|Santiago Fernández|
+251|Club Atlético Talleres|squad|46|MF|ARG|Jeremías Gallard|
+251|Club Atlético Talleres|squad|49|FW|ARG|Valentín Dávila|
+251|Club Atlético Talleres|squad|77|FW|PAR|Ronaldo Martínez|
+251|Club Atlético Talleres|loaned_out||||Lucas Suárez|Sarmiento (Junín)
+251|Club Atlético Talleres|loaned_out||||Nahuel Bustos|Independiente Santa Fe
+251|Club Atlético Talleres|loaned_out||||Laureano Martínez|Güemes
+251|Club Atlético Talleres|loaned_out||||Luis Sequeira|Independiente Rivadavia
+251|Club Atlético Talleres|loaned_out||||Alejandro Martínez|Nacional
+251|Club Atlético Talleres|loaned_out||||Miguel Navarro|Colorado Rapids
+251|Club Atlético Talleres|loaned_out||||Joaquín Mosqueira|Tigre
+251|Club Atlético Talleres|loaned_out||||Luis Angulo|Peñarol
+251|Club Atlético Talleres|loaned_out||||Franco Moyano|Instituto
+251|Club Atlético Talleres|loaned_out||||Gonzalo Álvez|Central Norte
+251|Club Atlético Talleres|loaned_out||||David Zalazar|Banfield
+251|Club Atlético Talleres|loaned_out||||Marcos Portillo|Platense
+251|Club Atlético Talleres|loaned_out||||Carlos Villalba|Sarmiento (Junín)
+251|Club Atlético Talleres|loaned_out||||Diego Barrera|Central Córdoba
+251|Club Atlético Talleres|loaned_out||||Emanuel Reynoso|Deportivo Cali
+251|Club Atlético Talleres|loaned_out||||Joaquín Blázquez|Independiente
+251|Club Atlético Talleres|loaned_out||||Agustín Venezia|Deportes Iquique
+251|Club Atlético Talleres|loaned_out||||Martín Río|San Lorenzo
+251|Club Atlético Talleres|loaned_out||||Bruno Barticciotto|Huracán
+266|Sport Club Internacional|squad|1|GK|URU|Sergio Rochet|
+266|Sport Club Internacional|squad|4|DF|ECU|Félix Torres|on loan from Corinthians
+266|Sport Club Internacional|squad|5|MF|ARG|Rodrigo Villagra|on loan from CSKA Moscow
+266|Sport Club Internacional|squad|6|DF|BRA|Matheus Bahia|
+266|Sport Club Internacional|squad|7|FW|COL|Johan Carbonero|
+266|Sport Club Internacional|squad|8|MF|BRA|Bruno Henrique|
+266|Sport Club Internacional|squad|9|FW|BRA|Alerrandro|on loan from CSKA Moscow
+266|Sport Club Internacional|squad|10|MF|BRA|Alan Patrick|captain
+266|Sport Club Internacional|squad|11|FW|BRA|Kayky|on loan from Bahia
+266|Sport Club Internacional|squad|12|GK|BRA|Anthoni|
+266|Sport Club Internacional|squad|14|MF|URU|Alan Rodríguez|
+266|Sport Club Internacional|squad|15|DF|BRA|Bruno Gomes|
+266|Sport Club Internacional|squad|16|MF|BRA|Ronaldo|
+266|Sport Club Internacional|squad|17|MF|BRA|Bruno Tabata|
+266|Sport Club Internacional|squad|18|DF|BRA|Juninho|
+266|Sport Club Internacional|squad|19|FW|COL|Rafael Santos Borré|
+266|Sport Club Internacional|squad|20|DF|BRA|Clayton Sampaio|
+266|Sport Club Internacional|squad|22|GK|BRA|Kauan Jesus|
+266|Sport Club Internacional|squad|25|DF|ARG|Gabriel Mercado|vice-captain
+266|Sport Club Internacional|squad|26|DF|ARG|Alexandro Bernabei|
+266|Sport Club Internacional|squad|27|MF|BRA|Paulinho|
+266|Sport Club Internacional|squad|28|FW|BRA|Vitinho|on loan from Dynamo Kyiv
+266|Sport Club Internacional|squad|29|MF|BRA|Thiago Maia|
+266|Sport Club Internacional|squad|32|GK|BRA|Diego Esser|
+266|Sport Club Internacional|squad|35|DF|ARG|Braian Aguirre|
+266|Sport Club Internacional|squad|36|MF|BRA|Richard|
+266|Sport Club Internacional|squad|41|DF|BRA|Victor Gabriel|
+266|Sport Club Internacional|loaned_out||||Keiller|Coritiba
+266|Sport Club Internacional|loaned_out||||Ramon|Vitória
+266|Sport Club Internacional|loaned_out||||Gustavo Prado|Ceará
+266|Sport Club Internacional|loaned_out||||Gabriel Barros|América Mineiro
+272|Club Atlético Unión|squad|2|DF|URU|Maizon Rodríguez|
+272|Club Atlético Unión|squad|3|DF|ARG|Claudio Corvalán|captain
+272|Club Atlético Unión|squad|4|DF|URU|Emiliano Álvarez|
+272|Club Atlético Unión|squad|5|MF|ARG|Lucas Menossi|
+272|Club Atlético Unión|squad|7|FW|ARG|Franco Fragapane|
+272|Club Atlético Unión|squad|8|MF|ARG|Nicolás Palavecino|on loan from Defensa y Justicia
+272|Club Atlético Unión|squad|9|FW|ARG|Agustín Colazo|
+272|Club Atlético Unión|squad|10|FW|ARG|Tomás González|
+272|Club Atlético Unión|squad|11|DF|ARG|Mateo Del Blanco|
+272|Club Atlético Unión|squad|12|DF|ARG|Bruno Pittón|
+272|Club Atlético Unión|squad|13|DF|ARG|Valentín Fascendini|
+272|Club Atlético Unión|squad|19|FW|ARG|Marcelo Estigarribia|
+272|Club Atlético Unión|squad|20|MF|ARG|Julián Palacios|
+272|Club Atlético Unión|squad|21|GK|ARG|Matías Mansilla|on loan from Estudiantes
+272|Club Atlético Unión|squad|22|MF|ARG|Brahian Cuello|
+272|Club Atlético Unión|squad|23|MF|ARG|Augusto Solari|
+272|Club Atlético Unión|squad|24|MF|ARG|Rafael Profini|
+272|Club Atlético Unión|squad|25|FW|ARG|Cristian Tarragona|
+272|Club Atlético Unión|squad|26|DF|ARG|Juan Pablo Ludueña|
+272|Club Atlético Unión|squad|27|MF|ARG|Enzo Roldán|
+272|Club Atlético Unión|squad|28|GK|ARG|Federico Gomes Gerth|
+272|Club Atlético Unión|squad|29|FW|ARG|Diego Díaz|
+272|Club Atlético Unión|squad|30|MF|ARG|Mauro Pittón|
+272|Club Atlético Unión|squad|31|FW|ARG|Misael Aguirre|
+272|Club Atlético Unión|squad|32|DF|ARG|Nicolás Paz|
+272|Club Atlético Unión|squad|35|DF|ARG|Lautaro Vargas|
+272|Club Atlético Unión|squad|40|GK|ARG|Lucas Meuli|
+272|Club Atlético Unión|squad|43|MF|ARG|Emilio Giaccone|
+272|Club Atlético Unión|squad|46|MF|ARG|Santiago Grella|
+272|Club Atlético Unión|squad|44|DF|ARG|Tomas Fagioli|
+272|Club Atlético Unión|loaned_out||||José Vanetta|Progreso
+272|Club Atlético Unión|loaned_out||||Junior Marabel|Sarmiento (Junín)
+272|Club Atlético Unión|loaned_out||||Lionel Verde|Baniyas
+272|Club Atlético Unión|loaned_out||||Fernando Díaz|Nacional
+272|Club Atlético Unión|loaned_out||||Gastón Arturia|Sarmiento (Junín)
+272|Club Atlético Unión|loaned_out||||Franco Godoy|Deportivo Madryn
+272|Club Atlético Unión|loaned_out||||Thiago Cardozo|Belgrano
+272|Club Atlético Unión|loaned_out||||Daniel Juárez|San Miguel
+272|Club Atlético Unión|loaned_out||||Pablo Palacio|Almagro
+276|Red Bull Bragantino|squad|1|GK|BRA|Cleiton|captain
+276|Red Bull Bragantino|squad|2|DF|URU|Guzmán Rodríguez|
+276|Red Bull Bragantino|squad|3|DF|BRA|Eduardo Santos|
+276|Red Bull Bragantino|squad|4|DF|BRA|Alix Vinicius|
+276|Red Bull Bragantino|squad|5|MF|BRA|Fabinho|
+276|Red Bull Bragantino|squad|6|MF|BRA|Gabriel|
+276|Red Bull Bragantino|squad|7|MF|BRA|Eric Ramires|
+276|Red Bull Bragantino|squad|8|FW|BRA|Eduardo Sasha|
+276|Red Bull Bragantino|squad|9|FW|PAR|Isidro Pitta|
+276|Red Bull Bragantino|squad|11|FW|BRA|Fernando|
+276|Red Bull Bragantino|squad|12|DF|BRA|Vanderlan|
+276|Red Bull Bragantino|squad|15|MF|URU|Nacho Sosa|
+276|Red Bull Bragantino|squad|16|DF|BRA|Gustavo Marques|on loan from Benfica
+276|Red Bull Bragantino|squad|17|FW|BRA|Vinicinho|
+276|Red Bull Bragantino|squad|18|GK|BRA|Tiago Volpi|
+276|Red Bull Bragantino|squad|20|MF|BRA|Rodriguinho|
+276|Red Bull Bragantino|squad|21|FW|BRA|Lucas Barbosa|
+276|Red Bull Bragantino|squad|22|MF|BRA|Gustavo Neves|
+276|Red Bull Bragantino|squad|23|DF|URU|Agustín Sant'Anna|
+276|Red Bull Bragantino|squad|27|FW|BRA|Davi Gomes|
+276|Red Bull Bragantino|squad|29|DF|BRA|Juninho Capixaba|
+276|Red Bull Bragantino|squad|30|FW|COL|Henry Mosquera|
+276|Red Bull Bragantino|squad|32|FW|ARG|José María Herrera|
+276|Red Bull Bragantino|squad|34|DF|ECU|Andrés Hurtado|
+276|Red Bull Bragantino|squad|35|MF|BRA|Matheus Fernandes|
+276|Red Bull Bragantino|squad|37|GK|BRA|Fabrício|
+276|Red Bull Bragantino|squad|51|DF|BRA|Cauê Nascimento|
+276|Red Bull Bragantino|squad|56|GK|BRA|Gustavo Reis|
+276|Red Bull Bragantino|squad|57|FW|BRA|Marcelinho Braz|
+276|Red Bull Bragantino|loaned_out||||Dija|XV de Piracicaba
+276|Red Bull Bragantino|loaned_out||||Guilherme Lopes|Atlético Goianiense
+276|Red Bull Bragantino|loaned_out||||Luan Cândido|Vitória
+276|Red Bull Bragantino|loaned_out||||Nathan Mendes|Vitória
+276|Red Bull Bragantino|loaned_out||||Sergio Palacios|Ponte Preta
+276|Red Bull Bragantino|loaned_out||||Alexandre Pena|Pouso Alegre
+276|Red Bull Bragantino|loaned_out||||André Cardoso|Londrina
+276|Red Bull Bragantino|loaned_out||||Arthur Sousa|Houston Dynamo 2
+276|Red Bull Bragantino|loaned_out||||Caetano|Hercílio Luz
+276|Red Bull Bragantino|loaned_out||||Nathan Camargo|Vila Nova
+276|Red Bull Bragantino|loaned_out||||Riquelme|FC Liefering
+276|Red Bull Bragantino|loaned_out||||Thiago Borbas|Atlético Mineiro
+276|Red Bull Bragantino|loaned_out||||Vitinho Mota|Londrina
+276|Red Bull Bragantino|loaned_out||||Yuri Leles|FC Liefering
+283|Esporte Clube Bahia|squad|1|GK|BRA|Ronaldo|
+283|Esporte Clube Bahia|squad|3|DF|ESP|Marco Moreno|
+283|Esporte Clube Bahia|squad|4|DF|BRA|Kanu|
+283|Esporte Clube Bahia|squad|5|MF|URU|Nicolás Acevedo|
+283|Esporte Clube Bahia|squad|6|MF|BRA|Jean Lucas|vice-captain
+283|Esporte Clube Bahia|squad|7|FW|BRA|Ademir|
+283|Esporte Clube Bahia|squad|8|MF|BRA|Caio Alexandre|
+283|Esporte Clube Bahia|squad|9|FW|ARG|Alejo Véliz|
+283|Esporte Clube Bahia|squad|10|MF|BRA|Éverton Ribeiro|captain
+283|Esporte Clube Bahia|squad|11|MF|BRA|Rodrigo Nestor|
+283|Esporte Clube Bahia|squad|12|FW|BRA|Willian José|
+283|Esporte Clube Bahia|squad|14|MF|BRA|Erick|
+283|Esporte Clube Bahia|squad|15|MF|URU|Michel Araújo|
+283|Esporte Clube Bahia|squad|16|FW|BRA|Erick Pulga|
+283|Esporte Clube Bahia|squad|17|GK|ARG|Guido Herrera|
+283|Esporte Clube Bahia|squad|18|MF|ARG|Lautaro López|on loan from Montevideo City Torque
+283|Esporte Clube Bahia|squad|22|GK|BRA|Léo Vieira|
+283|Esporte Clube Bahia|squad|23|FW|ARG|Mateo Sanabria|
+283|Esporte Clube Bahia|squad|27|FW|BRA|Everaldo|on loan from Fluminense
+283|Esporte Clube Bahia|squad|31|DF|ARG|Román Gómez|
+283|Esporte Clube Bahia|squad|33|DF|BRA|David Duarte|
+283|Esporte Clube Bahia|squad|43|DF|BRA|Luiz Gustavo|
+283|Esporte Clube Bahia|squad|44|DF|BRA|Marcos Victor|
+283|Esporte Clube Bahia|squad|46|DF|BRA|Luciano Juba|
+283|Esporte Clube Bahia|squad|57|FW|BRA|Kauê Furquim|
+283|Esporte Clube Bahia|squad|63|MF|BRA|David Martins|
+283|Esporte Clube Bahia|squad|66|DF|BRA|Zé Guilherme|
+283|Esporte Clube Bahia|squad|77|FW|BRA|Ruan Pablo|
+283|Esporte Clube Bahia|squad|99|FW|URU|Kike Olivera|on loan from Grêmio
+283|Esporte Clube Bahia|loaned_out||||Iago|São Paulo
+283|Esporte Clube Bahia|loaned_out||||Gabriel Xavier|Shenzhen Peng City
+283|Esporte Clube Bahia|loaned_out||||Cauly|São Paulo
+283|Esporte Clube Bahia|loaned_out||||Caio Suassuna|Avaí
+283|Esporte Clube Bahia|loaned_out||||Kayky|Internacional
+283|Esporte Clube Bahia|loaned_out||||Vitinho|Santa Cruz
+285|Clube do Remo|squad|1|GK|BRA|Alexandre|
+285|Clube do Remo|squad|2|DF|BRA|Matheus Alexandre|on loan from Sport
+285|Clube do Remo|squad|4|DF|BRA|Matheus Felipe|
+285|Clube do Remo|squad|5|DF|BRA|Léo Andrade|
+285|Clube do Remo|squad|6|DF|BRA|Marlon|
+285|Clube do Remo|squad|7|FW|BRA|Jajá|
+285|Clube do Remo|squad|8|MF|BRA|Patrick|on loan from Santos
+285|Clube do Remo|squad|9|FW|BRA|Gabriel Poveda|on loan from Primavera
+285|Clube do Remo|squad|10|MF|BRA|Jáderson|
+285|Clube do Remo|squad|11|FW|BRA|Alef Manga|
+285|Clube do Remo|squad|13|DF|BRA|Marllon|captain
+285|Clube do Remo|squad|14|MF|ARG|Leonel Picco|
+285|Clube do Remo|squad|15|MF|BRA|Vitor Bueno|
+285|Clube do Remo|squad|17|DF|URU|Cristian Tassano|
+285|Clube do Remo|squad|18|DF|CMR|Duplexe Tchamba|
+285|Clube do Remo|squad|19|FW|BRA|Gabriel Taliari|
+285|Clube do Remo|squad|21|FW|PAR|Antonio Galeano|
+285|Clube do Remo|squad|22|FW|BRA|Yago Pikachu|
+285|Clube do Remo|squad|23|MF|URU|Franco Catarozzi|
+285|Clube do Remo|squad|26|MF|BRA|David Braga|
+285|Clube do Remo|squad|27|DF|BRA|Zé Ivaldo|on loan from Santos
+285|Clube do Remo|squad|28|MF|BRA|Zé Welison|
+285|Clube do Remo|squad|30|GK|BRA|João Victor|
+285|Clube do Remo|squad|35|MF|BRA|Edson Fernando|on loan from Karpaty Lviv
+285|Clube do Remo|squad|39|FW|BRA|Eduardo Melo|
+285|Clube do Remo|squad|55|MF|BRA|Zé Ricardo|
+285|Clube do Remo|squad|61|FW|BRA|Tico|
+285|Clube do Remo|squad|77|DF|BRA|Mayk|
+285|Clube do Remo|squad|79|DF|BRA|Marcelinho|
+285|Clube do Remo|squad|88|GK|BRA|Marcelo Rangel|
+285|Clube do Remo|squad|94|GK|BRA|Ygor Vinhas|
+285|Clube do Remo|squad|97|GK|BRA|Ivan|
+285|Clube do Remo|squad||DF|BRA|João Lucas|on loan from Grêmio
+285|Clube do Remo|loaned_out||DF|ARG|Iván Alvariño|Novorizontino
+285|Clube do Remo|loaned_out||DF|BRA|Kadu|Botafogo
+285|Clube do Remo|loaned_out||MF|BRA|Dodô|Vila Nova
+285|Clube do Remo|loaned_out||MF|BRA|Guty|Brasil de Pelotas
+285|Clube do Remo|loaned_out||FW|BRA|Marrony|Atlético Goianiense
+288|Club Atlético Tigre|squad|2|DF|ARG|Joaquín Laso|captain
+288|Club Atlético Tigre|squad|3|DF|ARG|Nahuel Banegas|
+288|Club Atlético Tigre|squad|4|DF|ARG|Valentín Moreno|
+288|Club Atlético Tigre|squad|5|MF|ARG|Bruno Leyes|on loan from Godoy Cruz
+288|Club Atlético Tigre|squad|7|MF|ARG|Simón Rivero|on loan from Boca Juniors
+288|Club Atlético Tigre|squad|8|DF|ARG|Martín Garay|
+288|Club Atlético Tigre|squad|10|MF|ARG|Jabes Saralegui|on loan from Boca Juniors
+288|Club Atlético Tigre|squad|11|MF|ARG|Tiago Serrago|on loan from River Plate
+288|Club Atlético Tigre|squad|12|GK|ARG|Felipe Zenobio|
+288|Club Atlético Tigre|squad|15|DF|ARG|Ángelo Marchese|
+288|Club Atlético Tigre|squad|16|MF|ARG|Nicolás Dubersarsky|on loan from Austin
+288|Club Atlético Tigre|squad|17|DF|CHI|Guillermo Soto|on loan from Universidad Católica
+288|Club Atlético Tigre|squad|18|FW|ARG|Manuel Fernández|on loan from Vélez Sarsfield
+288|Club Atlético Tigre|squad|19|FW|PAR|Alfio Oviedo|
+288|Club Atlético Tigre|squad|20|DF|ARG|Alan Barrionuevo|
+288|Club Atlético Tigre|squad|21|MF|ARG|Sebastián Medina|
+288|Club Atlético Tigre|squad|22|FW|ARG|Santiago López|on loan from Independiente
+288|Club Atlético Tigre|squad|23|DF|ARG|Gonzalo Requena|on loan from Instituto
+288|Club Atlético Tigre|squad|24|DF|ARG|Federico Álvarez|
+288|Club Atlético Tigre|squad|25|MF|ARG|Ian Subiabre|
+288|Club Atlético Tigre|squad|26|GK|ARG|Lautaro Morales|on loan from Lanús
+288|Club Atlético Tigre|squad|27|MF|ARG|Santiago González|
+288|Club Atlético Tigre|squad|28|MF|ARG|Gonzalo Martínez|
+288|Club Atlético Tigre|squad|29|FW|ARG|Ignacio Russo|
+288|Club Atlético Tigre|squad|32|DF|ARG|Juan Villalba|
+288|Club Atlético Tigre|squad|33|FW|URU|Mauro Méndez|
+288|Club Atlético Tigre|squad|38|DF|ARG|Tomás Fernández|
+288|Club Atlético Tigre|squad|40|DF|ARG|Luciano Minniti|
+288|Club Atlético Tigre|squad|42|DF|URU|Ramón Arias|
+288|Club Atlético Tigre|loaned_out||||Tomás Lecanda|Agropecuario
+288|Club Atlético Tigre|loaned_out||||Juan Cruz Esquivel|Deportivo Morón
+288|Club Atlético Tigre|loaned_out||||Darío Sarmiento|Colón
+288|Club Atlético Tigre|loaned_out||||Ezequiel Forclaz|Estudiantes RC
+288|Club Atlético Tigre|loaned_out||||Blas Armoa|Gimnasia-M
+288|Club Atlético Tigre|loaned_out||||Brian Leizza|Los Andes
+288|Club Atlético Tigre|loaned_out||||Alan Sosa|Patronato
+288|Club Atlético Tigre|loaned_out||||Sebastián Sánchez|Central Español
+288|Club Atlético Tigre|loaned_out||||Federico Tévez|Ferro Carril Oeste
+288|Club Atlético Tigre|loaned_out||||Camilo Viganoni|Los Andes
+293|Asociación Atlética Estudiantes|squad|1|GK|ARG|Lucas Bruera|on loan from Carabobo
+293|Asociación Atlética Estudiantes|squad|2|DF|ARG|Gonzalo Maffini|captain
+293|Asociación Atlética Estudiantes|squad|3|DF|ARG|Lucas Baños|
+293|Asociación Atlética Estudiantes|squad|4|DF|ARG|Valentín Fenoglio|
+293|Asociación Atlética Estudiantes|squad|5|MF|ARG|Alejandro Cabrera|on loan from Banfield
+293|Asociación Atlética Estudiantes|squad|6|DF|ARG|Juan Antonini|
+293|Asociación Atlética Estudiantes|squad|7|FW|ARG|Lucas González|
+293|Asociación Atlética Estudiantes|squad|8|MF|ARG|Siro Rosané|on loan from Barracas Central
+293|Asociación Atlética Estudiantes|squad|9|FW|PAR|Javier Ferreira|
+293|Asociación Atlética Estudiantes|squad|10|MF|ARG|Tomás González|
+293|Asociación Atlética Estudiantes|squad|11|FW|ARG|Martín Garnerone|
+293|Asociación Atlética Estudiantes|squad|12|GK|ARG|Francisco Gualtieri|
+293|Asociación Atlética Estudiantes|squad|13|MF|ARG|Francisco Romero|
+293|Asociación Atlética Estudiantes|squad|14|DF|ARG|Gonzalo González|
+293|Asociación Atlética Estudiantes|squad|16|FW|COL|Yeison Moreno|
+293|Asociación Atlética Estudiantes|squad|17|MF|ARG|Gabriel Alanís|on loan from Huracán
+293|Asociación Atlética Estudiantes|squad|19|MF|ARG|Nicolás Talpone|on loan from Colón
+293|Asociación Atlética Estudiantes|squad|21|DF|ARG|Matías Ruiz Díaz|
+293|Asociación Atlética Estudiantes|squad|22|FW|ARG|Mauro Valiente|
+293|Asociación Atlética Estudiantes|squad|23|DF|ARG|Fernando Rodríguez|
+293|Asociación Atlética Estudiantes|squad|27|MF|ARG|Juan Garro|
+293|Asociación Atlética Estudiantes|squad|28|DF|ARG|Facundo Cobos|
+293|Asociación Atlética Estudiantes|squad|29|DF|ARG|Agustín Quiroga|
+293|Asociación Atlética Estudiantes|squad|30|DF|ARG|Sergio Ojeda|
+293|Asociación Atlética Estudiantes|squad|31|DF|ARG|Matías Valenti|
+293|Asociación Atlética Estudiantes|squad|32|FW|ARG|Mateo Bajamich|on loan from Atlético Tucumán
+293|Asociación Atlética Estudiantes|squad|40|MF|ARG|Francesco Lo Celso|
+293|Asociación Atlética Estudiantes|squad|43|GK|ARG|Agustín Lastra|on loan from Boca Juniors
+293|Asociación Atlética Estudiantes|squad|45|DF|ARG|Raúl Lozano|on loan from Quilmes
+293|Asociación Atlética Estudiantes|squad|50|FW|ARG|Ramón Ábila|
+293|Asociación Atlética Estudiantes|squad|77|FW|SYR|Ibrahim Hesar|
+293|Asociación Atlética Estudiantes|squad|99|FW|COL|Juan Chala|
+293|Asociación Atlética Estudiantes|loaned_out||||Federico Álvarez|Atlanta
+293|Asociación Atlética Estudiantes|loaned_out||||Marcelo Olivera|Olimpo
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|1|GK|ARG|Santiago Roggero|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|2|DF|ARG|Diego Mondino|captain
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|3|DF|ARG|Matías Recalde|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|4|DF|ARG|Ezequiel Muñoz|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|5|MF|ARG|Nahuel Barboza|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|6|DF|ARG|Imanol González|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|7|FW|ARG|Luciano Cingolani|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|8|MF|ARG|Nicolás Linares|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|9|FW|ARG|Nicolás Ferreyra|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|10|FW|ARG|Nicolás Romano|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|11|FW|ARG|Santiago Rodríguez|on loan from Argentinos Juniors
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|15|FW|ARG|Ulises Sánchez|on loan from Belgrano
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|17|FW|ARG|Ignacio Sabatini|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|18|FW|ARG|Juan Pablo Álvarez|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|19|MF|ARG|Julián Ceballos|on loan from Boca Juniors
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|20|MF|ARG|Tomás Ortiz|on loan from Defensa y Justicia
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|21|MF|ARG|Fermín Antonini|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|22|DF|PAR|Juan Franco|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|23|GK|ARG|César Rigamonti|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|24|DF|ARG|Franco Saavedra|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|25|MF|ARG|Martín Úbeda|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|26|FW|ARG|Facundo Lencioni|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|27|FW|PAR|Blas Armoa|on loan from Tigre
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|28|MF|ARG|Tomás O'Connor|on loan from Rosario Central
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|29|FW|ITA|Agustín Módica|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|30|MF|ARG|Esteban Fernández|on loan from Arsenal de Sarandí
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|31|GK|ARG|Lautaro Petruchi|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|32|DF|ARG|Luciano Paredes|on loan from Deportivo Maipú
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|33|FW|ARG|Brian Andrada|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|35|FW|ARG|Valentino Simoni|on loan from Boca Juniors
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|36|DF|ARG|Ismael Cortéz|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|37|FW|SYR|Tobías Cervera|on loan from Rosario Central
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|41|DF|ARG|Gerónimo Patritti|
+294|Club Atlético Gimnasia y Esgrima de Mendoza|squad|42|DF|ARG|Lautaro Carrera|on loan from Instituto
+294|Club Atlético Gimnasia y Esgrima de Mendoza|loaned_out||||Maximiliano Padilla|Central Norte
+294|Club Atlético Gimnasia y Esgrima de Mendoza|loaned_out||||Matías Muñoz|Colón
+294|Club Atlético Gimnasia y Esgrima de Mendoza|loaned_out||||Enzo Gaggi|Chaco For Ever
+294|Club Atlético Gimnasia y Esgrima de Mendoza|loaned_out||||Leandro Ciccolini|Defensores de Belgrano
+294|Club Atlético Gimnasia y Esgrima de Mendoza|loaned_out||||Tomás Giménez|Colón
+295|Associação Chapecoense de Futebol|squad|1|GK|BRA|Rafael Santos|
+295|Associação Chapecoense de Futebol|squad|2|DF|BRA|Marcos Vinícius|
+295|Associação Chapecoense de Futebol|squad|3|DF|BRA|Eduardo Doma|
+295|Associação Chapecoense de Futebol|squad|4|DF|BRA|João Paulo|
+295|Associação Chapecoense de Futebol|squad|5|MF|BRA|João Vitor|on loan from CSP
+295|Associação Chapecoense de Futebol|squad|6|DF|BRA|Mancha|
+295|Associação Chapecoense de Futebol|squad|7|FW|BRA|Marcinho|
+295|Associação Chapecoense de Futebol|squad|8|MF|BRA|Robert Santos|on loan from Atlético Mineiro
+295|Associação Chapecoense de Futebol|squad|10|MF|BRA|Giovanni Augusto|
+295|Associação Chapecoense de Futebol|squad|11|FW|COD|Yannick Bolasie|
+295|Associação Chapecoense de Futebol|squad|15|DF|BRA|Rafael Thyere|
+295|Associação Chapecoense de Futebol|squad|16|MF|BRA|Bruno Matias|
+295|Associação Chapecoense de Futebol|squad|17|MF|BRA|Vinicius Balieiro|
+295|Associação Chapecoense de Futebol|squad|18|FW|BRA|Neto Pessoa|
+295|Associação Chapecoense de Futebol|squad|19|MF|BRA|David Antunes|
+295|Associação Chapecoense de Futebol|squad|20|MF|BRA|Jean Carlos|
+295|Associação Chapecoense de Futebol|squad|21|DF|BRA|Kauan Faria|
+295|Associação Chapecoense de Futebol|squad|22|MF|BRA|Higor Meritão|
+295|Associação Chapecoense de Futebol|squad|25|DF|BRA|Victor Caetano|
+295|Associação Chapecoense de Futebol|squad|26|DF|BRA|Everton|
+295|Associação Chapecoense de Futebol|squad|27|MF|BRA|Camilo|on loan from Grêmio
+295|Associação Chapecoense de Futebol|squad|31|FW|BRA|Maurício Garcez|
+295|Associação Chapecoense de Futebol|squad|33|DF|BRA|Bruno Leonardo|captain
+295|Associação Chapecoense de Futebol|squad|34|GK|BRA|Kainã|
+295|Associação Chapecoense de Futebol|squad|35|DF|BRA|Vinicius Eduardo|
+295|Associação Chapecoense de Futebol|squad|37|DF|PAR|Walter Clar|
+295|Associação Chapecoense de Futebol|squad|38|FW|BRA|Wermeson|on loan from Camboriú
+295|Associação Chapecoense de Futebol|squad|40|FW|BRA|João Bom|
+295|Associação Chapecoense de Futebol|squad|70|FW|BRA|Rubens Ricoldi|
+295|Associação Chapecoense de Futebol|squad|77|FW|BRA|Ítalo|
+295|Associação Chapecoense de Futebol|squad|91|DF|BRA|Bruno Pacheco|
+295|Associação Chapecoense de Futebol|squad|94|FW|URU|Kevin Ramírez|on loan from Atlético Goianiense
+295|Associação Chapecoense de Futebol|squad|97|FW|BRA|Ênio|on loan from Juventude
+295|Associação Chapecoense de Futebol|squad|98|GK|BRA|Anderson|
+295|Associação Chapecoense de Futebol|squad|99|MF|BRA|Rafael Carvalheira|
+295|Associação Chapecoense de Futebol|loaned_out||||Cadu|Banga Gargždai
+295|Associação Chapecoense de Futebol|loaned_out||||Mailson|Figueirense
+295|Associação Chapecoense de Futebol|loaned_out||||Jonathan Palacios|Cascavel
+295|Associação Chapecoense de Futebol|loaned_out||||Pedro Perotti|Sport Recife

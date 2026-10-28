@@ -1,0 +1,42 @@
+38|Real Madrid|ES
+39|Barcelona|ES
+40|Atlético Madrid|ES
+41|Villarreal|ES
+42|Real Sociedad|ES
+43|Real Betis|ES
+44|Athletic Club|ES
+45|Celta Vigo|ES
+46|Sevilla|ES
+47|Valencia|ES
+48|Espanyol|ES
+49|Racing Sant|ES
+50|Levante|ES
+51|Elche|ES
+52|Rayo Vallecano|ES
+53|Dep. A Coruña|ES
+54|Getafe|ES
+55|Málaga|ES
+56|Alavés|ES
+57|Osasuna|ES
+322|AD Ceuta|ES2
+323|Albacete|ES2
+324|Burgos CF|ES2
+325|CD Castellón|ES2
+326|CD Eldense|ES2
+327|CD Leganés|ES2
+328|CD Tenerife|ES2
+329|CE Sabadell|ES2
+330|Celta Fortuna (B)|ES2
+331|Cádiz CF|ES2
+332|Córdoba CF|ES2
+333|FC Andorra|ES2
+334|Girona FC|ES2
+335|Granada CF|ES2
+336|Real Oviedo|ES2
+337|Sporting Gijón|ES2
+338|Real Valladolid|ES2
+339|RCD Mallorca|ES2
+340|Real Sociedad B|ES2
+341|SD Eibar|ES2
+342|UD Almería|ES2
+343|UD Las Palmas|ES2

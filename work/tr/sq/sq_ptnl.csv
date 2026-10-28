@@ -1,0 +1,1446 @@
+club_id|club|status|number|pos|nat|player|note
+100|RSC Anderlecht|squad|2|DF|GER|Zoumana Keita|
+100|RSC Anderlecht|squad|3|DF|DEN|Lucas Hey|
+100|RSC Anderlecht|squad|4|DF|FRA|Giulian Biancone|
+100|RSC Anderlecht|squad|5|DF|MDA|Oleg Reabciuk|
+100|RSC Anderlecht|squad|6|DF|SWE|Ludwig Augustinsson|
+100|RSC Anderlecht|squad|7|DF|SEN|Ilay Camara|
+100|RSC Anderlecht|squad|8|MF|CIV|Romeo Amane|
+100|RSC Anderlecht|squad|9|FW|SRB|Mihajlo Cvetković|
+100|RSC Anderlecht|squad|10|FW|GER|Marten Winkler|
+100|RSC Anderlecht|squad|11|FW|FIN|Oliver Antman|
+100|RSC Anderlecht|squad|12|DF|IRL|Andrew Omobamidele|on loan from Strasbourg
+100|RSC Anderlecht|squad|14|FW|UKR|Danylo Sikan|
+100|RSC Anderlecht|squad|18|MF|CZE|Lukáš Ambros|
+100|RSC Anderlecht|squad|19|MF|NOR|Thelo Aasgaard|on loan from Rangers
+100|RSC Anderlecht|squad|21|FW|MAR|Tawfik Bentayeb|
+100|RSC Anderlecht|squad|24|MF|NED|Enric Llansana|
+100|RSC Anderlecht|squad|26|GK|BEL|Colin Coosemans|captain
+100|RSC Anderlecht|squad|27|DF|FRA|Léo Pétrot|
+100|RSC Anderlecht|squad|29|MF|COD|Mario Stroeykens|
+100|RSC Anderlecht|squad|30|MF|GRE|Ilias Koutsoupias|
+100|RSC Anderlecht|squad|32|GK|GER|Justin Heekeren|
+100|RSC Anderlecht|squad|33|GK|BEL|Mattis Seghers|
+100|RSC Anderlecht|squad|49|FW|BEL|Jayden Onia Seke|
+100|RSC Anderlecht|squad|50|DF|BEL|Kaïs Barry|
+100|RSC Anderlecht|squad|53|FW|BEL|Noa Ojea|
+100|RSC Anderlecht|squad|54|DF|BEL|Killian Sardella|
+100|RSC Anderlecht|squad|55|MF|BEL|Marco Kana|
+100|RSC Anderlecht|squad|61|FW|BEL|Joshua Nga Kana|
+100|RSC Anderlecht|squad|62|DF|BEL|Basile Vroninks|
+100|RSC Anderlecht|squad|66|GK|BEL|Michiel Haentjens|
+100|RSC Anderlecht|squad|68|MF|BEL|Noah Kalonji|
+100|RSC Anderlecht|squad|79|DF|MAR|Ali Maamar|
+100|RSC Anderlecht|squad|83|FW|BEL|Tristan Degreef|
+100|RSC Anderlecht|squad|91|FW|BEL|Adriano Bertaccini|
+100|RSC Anderlecht|loaned_out||||Moussa N'Diaye|Werder Bremen (until 30 June 2027)
+100|RSC Anderlecht|loaned_out||||Anas Tajaouart|La Louvière (until 30 June 2027)
+100|RSC Anderlecht|loaned_out||||Ibrahim Kanaté|1. FC Kaiserslautern (until 30 June 2027)
+108|Galatasaray|squad|1|GK|TUR|Uğurcan Çakır|source: 2026–27 Galatasaray S.K. season article
+108|Galatasaray|squad|3|DF|FRA|El Chadaille Bitshiabu|on loan from RB Leipzig; source: 2026–27 Galatasaray S.K. season article
+108|Galatasaray|squad|4|DF|SEN|Ismail Jakobs|source: season article
+108|Galatasaray|squad|5|MF|GER|Eyüp Aydın|source: season article
+108|Galatasaray|squad|6|DF|COL|Davinson Sánchez|source: season article
+108|Galatasaray|squad|7|MF|HUN|Roland Sallai|source: season article
+108|Galatasaray|squad|8|MF|BRA|Gabriel Sara|source: season article
+108|Galatasaray|squad|10|MF|GER|Leroy Sané|source: season article
+108|Galatasaray|squad|11|MF|TUR|Yunus Akgün|source: season article
+108|Galatasaray|squad|17|DF|TUR|Eren Elmalı|source: season article
+108|Galatasaray|squad|18|MF|FRA|Lesley Ugochukwu|on loan from Burnley; source: season article
+108|Galatasaray|squad|19|GK|TUR|Günay Güvenç|source: season article
+108|Galatasaray|squad|20|MF|GER|İlkay Gündoğan|source: season article
+108|Galatasaray|squad|21|FW|TUR|Deniz Gül|source: season article
+108|Galatasaray|squad|23|DF|TUR|Kaan Ayhan|third captain; source: season article
+108|Galatasaray|squad|24|GK|TUR|Jankat Yılmaz|source: season article
+108|Galatasaray|squad|27|MF|POR|Rafael Leão|source: season article
+108|Galatasaray|squad|29|MF|ARG|Armando Güner|source: season article
+108|Galatasaray|squad|34|MF|URU|Lucas Torreira|source: season article
+108|Galatasaray|squad|42|DF|TUR|Abdülkerim Bardakcı|captain; source: season article
+108|Galatasaray|squad|45|FW|NGA|Victor Osimhen|vice-captain; source: season article
+108|Galatasaray|squad|53|MF|TUR|Barış Alper Yılmaz|source: season article
+108|Galatasaray|squad|62|FW|TUR|Ada Yüzgeç|source: season article
+108|Galatasaray|squad|70|GK|TUR|Enes Emre Büyük|source: season article
+108|Galatasaray|squad|74|MF|GNB|Renato Nhaga|source: season article
+108|Galatasaray|squad|76|MF|TUR|Berat Luş|source: season article
+108|Galatasaray|squad|83|MF|RUS|Aleksey Batrakov|source: season article
+108|Galatasaray|squad|88|DF|TUR|Kazımcan Karataş|source: season article
+108|Galatasaray|squad|90|DF|CIV|Wilfried Singo|source: season article
+108|Galatasaray|squad|91|DF|TUR|Arda Ünyay|source: season article
+108|Galatasaray|squad|99|MF|GAB|Mario Lemina|source: season article
+108|Galatasaray|loaned_out||||Przemysław Frankowski|Stade Rennais
+108|Galatasaray|loaned_out||||Carlos Cuesta|Vasco da Gama
+108|Galatasaray|loaned_out||||Ali Yeşilyurt|Elazığspor
+108|Galatasaray|loaned_out||||Ahmed Kutucu|Çaykur Rizespor
+108|Galatasaray|loaned_out||||Berat Yılmaz|Ümraniyespor
+108|Galatasaray|loaned_out||||Recep Yalın Dilek|Bandırmaspor
+108|Galatasaray|loaned_out||||Halil Dervişoğlu|Gaziantep
+108|Galatasaray|loaned_out||||Elias Jelert|Le Havre
+108|Galatasaray|loaned_out||||Metehan Baltacı|Gençlerbirliği
+117|FC Utrecht|squad|1|GK|GRE|Vasilis Barkas|
+117|FC Utrecht|squad|2|DF|BEL|Siebe Horemans|
+117|FC Utrecht|squad|3|DF|BEL|Matisse Didden|
+117|FC Utrecht|squad|5|DF|CYP|Nikolas Panayiotou|
+117|FC Utrecht|squad|6|MF|NED|Guus Offerhaus|
+117|FC Utrecht|squad|7|FW|DEN|Victor Jensen|
+117|FC Utrecht|squad|8|MF|NED|Joris van Overeem|captain
+117|FC Utrecht|squad|9|FW|UKR|Artem Stepanov|on loan from Bayer 04 Leverkusen
+117|FC Utrecht|squad|10|FW|FRA|Yoann Cathline|
+117|FC Utrecht|squad|11|FW|ESP|Ángel Alarcón|
+117|FC Utrecht|squad|15|FW|ENG|Adrian Blake|
+117|FC Utrecht|squad|17|FW|NED|Sem van Duijn|on loan from AZ
+117|FC Utrecht|squad|18|DF|CRO|Jakov Medić|on loan from Norwich City FC
+117|FC Utrecht|squad|20|MF|NED|Dani de Wit|
+117|FC Utrecht|squad|21|DF|NED|Neville Ogidi Nwankwo|
+117|FC Utrecht|squad|22|GK|NED|Sergio Padt|
+117|FC Utrecht|squad|23|MF|DEN|Niklas Vesterlund|
+117|FC Utrecht|squad|26|FW|IDN|Miliano Jonathans|
+117|FC Utrecht|squad|27|MF|BEL|Alonzo Engwanda|
+117|FC Utrecht|squad|29|FW|NED|Noah Ohio|
+117|FC Utrecht|squad|30|MF|USA|Kevin Paredes|
+117|FC Utrecht|squad|31|GK|NED|Mees Eppink|
+117|FC Utrecht|squad|32|DF|NED|Per Kloosterboer|
+117|FC Utrecht|squad|33|GK|NED|Kevin Gadellaa|
+117|FC Utrecht|squad|34|MF|NED|Davy van den Berg|
+117|FC Utrecht|squad|38|MF|MAR|Oualid Agougil|
+117|FC Utrecht|squad|39|MF|MAR|Nordin Amrabat|
+117|FC Utrecht|squad|47|FW|GER|Emmanuel Chigozie Owen|
+117|FC Utrecht|squad|80|FW|NOR|Marius Broholm|on loan from LOSC Lille
+117|FC Utrecht|squad|92|MF|BFA|Arthur Zagré|
+117|FC Utrecht|loaned_out||||Emeka Adiele|Burton Albion FC (until 30 June 2027)
+117|FC Utrecht|loaned_out||||Rafik El Arguioui|SC Cambuur (until 30 June 2027)
+117|FC Utrecht|loaned_out||||Emirhan Demircan|Telstar (until 30 June 2027)
+117|FC Utrecht|loaned_out||||David Min|Arminia Bielefeld (until 30 June 2027)
+118|FC Groningen|squad|1|GK|SUR|Etienne Vaessen|
+118|FC Groningen|squad|2|DF|NED|Wouter Prins|
+118|FC Groningen|squad|3|DF|NED|Thijmen Blokzijl|captain
+118|FC Groningen|squad|4|DF|HUN|Márk Csinger|
+118|FC Groningen|squad|5|DF|GER|Marco Rente|
+118|FC Groningen|squad|7|MF|NOR|Travis Hernes|
+118|FC Groningen|squad|8|MF|NED|Tika de Jonge|
+118|FC Groningen|squad|9|FW|ISL|Brynjólfur Willumsson|
+118|FC Groningen|squad|11|FW|SWE|Jacob Ondrejka|on loan from Parma
+118|FC Groningen|squad|12|DF|SVK|Nikolas Brandis|
+118|FC Groningen|squad|13|GK|SVN|Lovro Štubljar|
+118|FC Groningen|squad|14|MF|NED|Jorg Schreuders|
+118|FC Groningen|squad|15|DF|SWE|Elvis van der Laan|
+118|FC Groningen|squad|16|MF|SWE|Alvin Nordin|
+118|FC Groningen|squad|17|MF|NED|David van der Werff|
+118|FC Groningen|squad|18|MF|NED|Tygo Land|on loan from PSV Eindhoven
+118|FC Groningen|squad|19|FW|POL|Oskar Zawada|
+118|FC Groningen|squad|20|FW|NED|Nils Eggens|
+118|FC Groningen|squad|21|DF|SWE|Malcolm Jeng|on loan from Reims
+118|FC Groningen|squad|24|MF|NED|Pelle Clement|
+118|FC Groningen|squad|26|FW|NED|Thom van Bergen|
+118|FC Groningen|squad|29|DF|CUW|Tyrique Mercera|
+118|FC Groningen|squad|31|GK|NED|Rijk Janse|
+118|FC Groningen|squad|34|FW|NED|Ryan Metu|
+118|FC Groningen|squad||FW|RWA|Noam Emeran|
+130|SL Benfica|squad|1|GK|UKR|Anatoliy Trubin|
+130|SL Benfica|squad|2|DF|FRA|Clément Lenglet|on loan from Atlético Madrid
+130|SL Benfica|squad|3|DF|AUS|Alessandro Circati|
+130|SL Benfica|squad|5|MF|ARG|Enzo Barrenechea|
+130|SL Benfica|squad|6|DF|DEN|Alexander Bah|
+130|SL Benfica|squad|8|MF|NOR|Fredrik Aursnes|captain
+130|SL Benfica|squad|10|MF|UKR|Heorhiy Sudakov|
+130|SL Benfica|squad|11|FW|BEL|Dodi Lukébakio|
+130|SL Benfica|squad|13|MF|POL|Jakub Kamiński|
+130|SL Benfica|squad|14|FW|GRE|Vangelis Pavlidis|
+130|SL Benfica|squad|16|MF|POR|Manu Silva|
+130|SL Benfica|squad|18|MF|LUX|Leandro Barreiro|
+130|SL Benfica|squad|21|FW|NOR|Andreas Schjelderup|
+130|SL Benfica|squad|22|FW|COL|Jhon Durán|on loan from Al-Nassr
+130|SL Benfica|squad|24|GK|POR|Samuel Soares|
+130|SL Benfica|squad|25|FW|ARG|Gianluca Prestianni|
+130|SL Benfica|squad|26|DF|SWE|Samuel Dahl|
+130|SL Benfica|squad|27|MF|POR|Rafa Silva|
+130|SL Benfica|squad|30|MF|ARG|Claudio Echeverri|on loan from Manchester City
+130|SL Benfica|squad|33|DF|BRA|Gabriel Índio|
+130|SL Benfica|squad|34|DF|MAR|Souffian El Karouani|on loan from Al-Qadsiah
+130|SL Benfica|squad|36|MF|POR|João Palhinha|
+130|SL Benfica|squad|44|DF|POR|Tomás Araújo|vice-captain
+130|SL Benfica|squad|50|GK|POR|Diogo Ferreira|
+130|SL Benfica|squad|58|DF|POR|Daniel Banjaqui|
+130|SL Benfica|squad|62|DF|POR|José Neto|
+130|SL Benfica|squad|72|FW|POR|Anísio Cabral|
+130|SL Benfica|loaned_out||||Franjo Ivanović|Lens
+130|SL Benfica|loaned_out||||Richard Ríos|Al-Ittihad
+130|SL Benfica|loaned_out||||Tiago Gouveia|Gençlerbirliği
+130|SL Benfica|loaned_out||||Joshua Wynder|New England Revolution
+130|SL Benfica|loaned_out||||João Veloso|Moreirense
+130|SL Benfica|loaned_out||||João Rego|Casa Pia
+130|SL Benfica|loaned_out||||Diogo Prioste|Gil Vicente
+130|SL Benfica|loaned_out||||Rafael Obrador|Sassuolo
+131|SC Heerenveen|squad|3|DF|NED|Maas Willemsen|
+131|SC Heerenveen|squad|4|DF|NED|Sam Kersten|
+131|SC Heerenveen|squad|6|MF|NED|Joris van Overeem|
+131|SC Heerenveen|squad|7|FW|FRA|Maxence Rivera|
+131|SC Heerenveen|squad|8|MF|NED|Luuk Brouwers|captain
+131|SC Heerenveen|squad|9|FW|SUR|Dylan Vente|
+131|SC Heerenveen|squad|10|MF|NED|Ringo Meerveld|
+131|SC Heerenveen|squad|11|MF|BEL|Luca Oyen|
+131|SC Heerenveen|squad|14|MF|NED|Levi Smans|
+131|SC Heerenveen|squad|15|DF|NED|Mats Egbring|
+131|SC Heerenveen|squad|16|MF|SWE|Marcus Linday|
+131|SC Heerenveen|squad|17|DF|NOR|Nikolai Hopland|
+131|SC Heerenveen|squad|18|FW|NOR|Lasse Nordås|on loan from Luton Town
+131|SC Heerenveen|squad|19|DF|GRE|Vasilios Zagaritis|
+131|SC Heerenveen|squad|20|FW|DEN|Jacob Trenskow|
+131|SC Heerenveen|squad|22|GK|NED|Bernt Klaverboer|
+131|SC Heerenveen|squad|26|FW|NED|Amourricho van Axel Dongen|on loan from Ajax
+131|SC Heerenveen|squad|28|DF|BUL|Hristiyan Petrov|
+131|SC Heerenveen|squad|31|GK|NED|Nordin Bakker|
+131|SC Heerenveen|squad|32|MF|NED|Kai Jansen|
+131|SC Heerenveen|squad|33|FW|SUR|Jermaine Rijssel|
+131|SC Heerenveen|squad|34|DF|NED|Robin Bouw|
+131|SC Heerenveen|squad|35|MF|CUW|Isaiah Ahmed|
+131|SC Heerenveen|squad|36|MF|COD|Nolhan Courtens|
+131|SC Heerenveen|squad|44|GK|NED|Andries Noppert|
+131|SC Heerenveen|squad|45|DF|NOR|Oliver Braude|
+131|SC Heerenveen|squad|50|MF|NED|Eser Gürbüz|
+134|FC Twente Enschede|squad|1|GK|GER|Lars Unnerstall|
+134|FC Twente Enschede|squad|2|DF|IDN|Mees Hilgers|captain
+134|FC Twente Enschede|squad|3|DF|NED|Robin Pröpper|
+134|FC Twente Enschede|squad|4|MF|NOR|Mathias Kjølø|
+134|FC Twente Enschede|squad|6|MF|ALG|Ramiz Zerrouki|on loan from Feyenoord
+134|FC Twente Enschede|squad|7|FW|CRO|Marko Pjaca|
+134|FC Twente Enschede|squad|8|FW|USA|Taylor Booth|
+134|FC Twente Enschede|squad|9|FW|NED|Ricky van Wolfswinkel|
+134|FC Twente Enschede|squad|10|FW|NED|Sam Lammers|
+134|FC Twente Enschede|squad|11|FW|NED|Daan Rots|
+134|FC Twente Enschede|squad|12|DF|POR|Guilherme Peixoto|
+134|FC Twente Enschede|squad|14|MF|ISL|Kristian Hlynsson|
+134|FC Twente Enschede|squad|16|GK|MAR|Issam El Maach|
+134|FC Twente Enschede|squad|20|MF|NED|Thomas van den Belt|
+134|FC Twente Enschede|squad|21|GK|NED|Sam Karssies|
+134|FC Twente Enschede|squad|22|GK|POL|Przemysław Tytoń|
+134|FC Twente Enschede|squad|23|DF|ISR|Stav Lemkin|
+134|FC Twente Enschede|squad|25|FW|NED|Lucas Vennegoor of Hesselink|
+134|FC Twente Enschede|squad|27|MF|NOR|Sondre Ørjasæter|
+134|FC Twente Enschede|squad|28|DF|NED|Bart van Rooij|
+134|FC Twente Enschede|squad|31|GK|NED|Yannick Gerritsen|
+134|FC Twente Enschede|squad|32|MF|BEL|Arno Verschueren|
+134|FC Twente Enschede|squad|33|DF|NED|Björn Titulaer|
+134|FC Twente Enschede|squad|38|DF|NED|Max Bruns|
+134|FC Twente Enschede|squad|42|MF|FRA|Daouda Weidmann|
+134|FC Twente Enschede|squad|43|DF|NED|Ruud Nijstad|
+134|FC Twente Enschede|loaned_out||||Bas Kuipers|Arouca
+134|FC Twente Enschede|loaned_out||||Juliën Mesbahi|Emmen
+134|FC Twente Enschede|loaned_out||||Younes Taha|Groningen
+134|FC Twente Enschede|loaned_out||||Gijs Besselink|Willem II
+134|FC Twente Enschede|loaned_out||||Sayfallah Ltaief|Greuther Fürth
+134|FC Twente Enschede|loaned_out||||Naci Ünüvar|Heracles Almelo
+138|KV Mechelen|squad|1|GK|BEL|Ortwin De Wolf|
+138|KV Mechelen|squad|2|DF|NED|Luc Marijnissen|
+138|KV Mechelen|squad|3|DF|ESP|José Marsà|
+138|KV Mechelen|squad|4|DF|SEN|Gora Diouf|
+138|KV Mechelen|squad|5|DF|NOR|Leo Hjelde|
+138|KV Mechelen|squad|6|MF|SWE|Fredrik Hammar|
+138|KV Mechelen|squad|7|DF|FRA|Thérence Koudou|
+138|KV Mechelen|squad|8|MF|GER|Dikeni Salifou|
+138|KV Mechelen|squad|9|FW|NED|Myron van Brederode|
+138|KV Mechelen|squad|10|MF|BLR|Maksim Kireev|
+138|KV Mechelen|squad|11|MF|BEL|Bilal Bafdili|
+138|KV Mechelen|squad|13|GK|ESP|Nacho Miras|
+138|KV Mechelen|squad|14|FW|BEL|Benito Raman|
+138|KV Mechelen|squad|15|GK|BEL|Tijn Van Ingelgom|
+138|KV Mechelen|squad|16|FW|NGR|Adeshina Adoyele|
+138|KV Mechelen|squad|17|FW|BEL|Cedric Van Meirvenne|
+138|KV Mechelen|squad|18|DF|BEL|Ian Struyf|
+138|KV Mechelen|squad|19|FW|BEL|Malcolm Lohunanu-Mbasi|
+138|KV Mechelen|squad|20|DF|BEL|Kobe Corbanie|
+138|KV Mechelen|squad|21|FW|TUR|Halil Özdemir|
+138|KV Mechelen|squad|23|MF|CMR|Simion Michez|
+138|KV Mechelen|squad|26|MF|BEL|Dennis Praet|
+138|KV Mechelen|squad|27|FW|BEL|Keano Vanrafelghem|
+138|KV Mechelen|squad|28|FW|NED|Bouke Boersma|
+138|KV Mechelen|squad|29|FW|ZIM|Bill Antonio|
+138|KV Mechelen|squad|30|MF|FRA|Marco Decherf|
+138|KV Mechelen|squad|32|GK|BEL|Axel Willockx|
+138|KV Mechelen|squad|33|DF|CUW|Tommy St. Jago|
+138|KV Mechelen|squad|39|MF|BEL|Massimo Decoene|
+138|KV Mechelen|squad|40|MF|MAR|Amine Ouahabi|
+138|KV Mechelen|squad|43|MF|AUS|Ryan Teague|
+138|KV Mechelen|squad|44|DF|NED|Mike Eerdhuijzen|
+138|KV Mechelen|squad|49|MF|BEL|Mats Van Helden|
+138|KV Mechelen|squad||MF|MAR|Yanis Asghir|
+138|KV Mechelen|loaned_out||||Lovro Golič|Helmond Sport
+138|KV Mechelen|loaned_out||||Wassim Lantaki|Helmond Sport
+138|KV Mechelen|loaned_out||||Mauro Lenaerts|Helmond Sport
+141|PSV Eindhoven|squad|1|GK|NED|Nick Olij|
+141|PSV Eindhoven|squad|2|DF|NED|Lutsharel Geertruida|on loan from RB Leipzig
+141|PSV Eindhoven|squad|3|DF|ESP|Yarek Gasiorowski|
+141|PSV Eindhoven|squad|4|DF|CUW|Armando Obispo|
+141|PSV Eindhoven|squad|5|MF|CRO|Ivan Perišić|3rd captain
+141|PSV Eindhoven|squad|6|DF|NED|Ryan Flamingo|
+141|PSV Eindhoven|squad|7|FW|NED|Ruben van Bommel|
+141|PSV Eindhoven|squad|8|DF|USA|Sergiño Dest|
+141|PSV Eindhoven|squad|9|FW|USA|Ricardo Pepi|
+141|PSV Eindhoven|squad|10|MF|AUT|Paul Wanner|
+141|PSV Eindhoven|squad|11|FW|NED|Sami Ouaissa|
+141|PSV Eindhoven|squad|14|FW|FRA|Alassane Pléa|
+141|PSV Eindhoven|squad|17|DF|BRA|Mauro Júnior|vice-captain
+141|PSV Eindhoven|squad|18|DF|SRB|Filip Kostić|
+141|PSV Eindhoven|squad|19|FW|BIH|Esmir Bajraktarević|
+141|PSV Eindhoven|squad|20|MF|NED|Guus Til|
+141|PSV Eindhoven|squad|21|MF|NED|Sven Mijnans|
+141|PSV Eindhoven|squad|22|MF|NED|Jerdy Schouten|captain
+141|PSV Eindhoven|squad|23|FW|DEN|Mikkel Bro Hansen|
+141|PSV Eindhoven|squad|24|MF|JPN|Kodai Sano|
+141|PSV Eindhoven|squad|25|DF|FRA|Kiliann Sildillia|
+141|PSV Eindhoven|squad|27|FW|ROU|Dennis Man|
+141|PSV Eindhoven|squad|29|FW|NED|Sam Lammers|
+141|PSV Eindhoven|squad|31|MF|BEL|Noah Fernandez|
+141|PSV Eindhoven|squad|32|GK|CZE|Matěj Kovář|
+141|PSV Eindhoven|squad|35|MF|CPV|Ayoni Santos|
+141|PSV Eindhoven|squad|37|FW|NED|Amir Bouhamdi|
+141|PSV Eindhoven|squad|38|DF|NED|Fabian Merién|
+141|PSV Eindhoven|squad|39|DF|BFA|Adamo Nagalo|
+141|PSV Eindhoven|squad|51|GK|NED|Tijn Smolenaars|
+141|PSV Eindhoven|loaned_out||||Niek Schiks|Waalwijk
+147|Trabzonspor|squad|1|GK|TUR|Ahmet Doğan Yıldırım|
+147|Trabzonspor|squad|3|MF|FRA|Batista Mendy|
+147|Trabzonspor|squad|4|DF|TUR|Samet Akaydin|
+147|Trabzonspor|squad|5|MF|TUR|Okay Yokuşlu|
+147|Trabzonspor|squad|6|MF|BRA|Fabinho|
+147|Trabzonspor|squad|7|MF|ALB|Ernest Muçi|
+147|Trabzonspor|squad|8|MF|MAR|Benjamin Bouchouari|
+147|Trabzonspor|squad|9|FW|GNB|Franculino|
+147|Trabzonspor|squad|10|FW|EGY|Mohamed Salah|
+147|Trabzonspor|squad|11|MF|TUR|Ozan Tufan|
+147|Trabzonspor|squad|14|FW|TUR|Umut Nayir|
+147|Trabzonspor|squad|15|DF|MNE|Stefan Savić|captain
+147|Trabzonspor|squad|17|MF|UKR|Ruslan Malinovskyi|
+147|Trabzonspor|squad|19|MF|TUR|Mustafa Eskihellaç|
+147|Trabzonspor|squad|20|DF|CPV|Wagner Pina|
+147|Trabzonspor|squad|24|GK|CMR|André Onana|on loan from Manchester United
+147|Trabzonspor|squad|25|GK|TUR|Onuralp Çevikkan|
+147|Trabzonspor|squad|26|MF|FRA|Tim Jabol-Folcarelli|
+147|Trabzonspor|squad|27|DF|NGR|Chibuike Nwaiwu|
+147|Trabzonspor|squad|30|FW|NGR|Paul Onuachu|
+147|Trabzonspor|squad|39|DF|TUR|Cenk Özkacar|
+147|Trabzonspor|squad|44|DF|UKR|Arseniy Batahov|
+147|Trabzonspor|squad|55|DF|CPV|Sidny Lopes Cabral|
+147|Trabzonspor|squad|57|MF|TUR|Melih Kabasakal|
+147|Trabzonspor|squad|58|FW|TUR|Aral Şimşir|
+147|Trabzonspor|squad|61|MF|TUR|Cihan Çanak|
+147|Trabzonspor|squad|70|FW|POR|Noah Saviolo|
+147|Trabzonspor|squad|77|MF|TUR|Metehan Mimaroğlu|
+147|Trabzonspor|squad|96|GK|TUR|Erol Can Çolak|
+147|Trabzonspor|squad|99|MF|TUR|Ali Habeşoğlu|
+147|Trabzonspor|loaned_out||||Arda Öztürk|Iğdır
+147|Trabzonspor|loaned_out||||Oğuzhan Yılmaz|Kahramanmaraş İstiklalspor
+147|Trabzonspor|loaned_out||||Thierry Karadeniz|Sebatspor
+147|Trabzonspor|loaned_out||||Muhammed Cham|Red Star Belgrade
+147|Trabzonspor|loaned_out||||Poyraz Yıldırım|Muğlaspor
+147|Trabzonspor|loaned_out||||Kazeem Olaigbe|FC Basel
+147|Trabzonspor|loaned_out||||Göktan Gürpüz|Çorum
+147|Trabzonspor|loaned_out||||René Mitongo|Estrela da Amadora
+151|Sparta Rotterdam|squad||GK|POL|Filip Bednarek|
+151|Sparta Rotterdam|squad||GK|NED|Pascal Kuiper|
+151|Sparta Rotterdam|squad||DF|NED|Max de Ligt|
+151|Sparta Rotterdam|squad||DF|NED|Bas Kuipers|
+151|Sparta Rotterdam|squad||DF|NED|Lushendry Martes|
+151|Sparta Rotterdam|squad||DF|NED|Bruno Martins Indi|
+151|Sparta Rotterdam|squad||DF|VEN|Teo Quintero|
+151|Sparta Rotterdam|squad||DF|NED|Boyd Reith|
+151|Sparta Rotterdam|squad||DF|NED|Nick Verschuren|
+151|Sparta Rotterdam|squad||DF|NED|Giannino Vianello|
+151|Sparta Rotterdam|squad||DF|SUR|Marvin Young|
+151|Sparta Rotterdam|squad||MF|NED|Julian Baas|
+151|Sparta Rotterdam|squad||MF|NED|Younes Jaber el Meftahi|
+151|Sparta Rotterdam|squad||MF|JPN|Shunsuke Mito|
+151|Sparta Rotterdam|squad||MF|NOR|Alwande Roaldsøy|
+151|Sparta Rotterdam|squad||MF|CPV|Ayoni Santos|
+151|Sparta Rotterdam|squad||MF|NED|Jens Toornstra|
+151|Sparta Rotterdam|squad||MF|NED|Robin van Cruijsen|
+151|Sparta Rotterdam|squad||FW|NED|Joel Ideho|
+151|Sparta Rotterdam|squad||FW|FIN|Casper Terho|
+151|Sparta Rotterdam|squad||FW|ISL|Nökkvi Þeyr Þórisson|
+151|Sparta Rotterdam|squad||FW|NED|Mitchell van Bergen|
+151|Sparta Rotterdam|squad||FW|NED|Milan Zonneveld|
+151|Sparta Rotterdam|loaned_out||||Mike Kleijn|Volendam
+152|Sint-Truidense VV|squad|3|DF|JPN|Taiga Hata|
+152|Sint-Truidense VV|squad|4|DF|JPN|Kōta Takai|on loan from Tottenham Hotspur
+152|Sint-Truidense VV|squad|5|DF|JPN|Shōgo Taniguchi|captain
+152|Sint-Truidense VV|squad|7|FW|ALB|Arbnor Muja|
+152|Sint-Truidense VV|squad|8|MF|FRA|Abdoulaye Sissako|
+152|Sint-Truidense VV|squad|9|FW|BIH|Samed Baždar|
+152|Sint-Truidense VV|squad|10|FW|MAR|Ilias Sebaoui|
+152|Sint-Truidense VV|squad|11|FW|COD|Nathanaël Mbuku|on loan from Augsburg
+152|Sint-Truidense VV|squad|14|MF|FRA|Ryan Merlen|
+152|Sint-Truidense VV|squad|16|GK|JPN|Leo Kokubo|
+152|Sint-Truidense VV|squad|18|MF|JPN|Nelson Ishiwatari|
+152|Sint-Truidense VV|squad|19|FW|BEL|Frédéric Soèllé Soèllé|
+152|Sint-Truidense VV|squad|21|GK|BEL|Matt Lendfers|
+152|Sint-Truidense VV|squad|22|DF|BEL|Wolke Janssens|
+152|Sint-Truidense VV|squad|23|DF|BEL|Joedrick Pupe|
+152|Sint-Truidense VV|squad|25|GK|KSA|Ahmad Abu Rasen|
+152|Sint-Truidense VV|squad|26|DF|MKD|Visar Musliu|
+152|Sint-Truidense VV|squad|31|MF|MAR|Illyès Benachour|
+152|Sint-Truidense VV|squad|32|FW|BEL|Jay-David Mbalanda|
+152|Sint-Truidense VV|squad|33|MF|BEL|Alouis Diriken|
+152|Sint-Truidense VV|squad|38|FW|JPN|Kaito Matsuzawa|
+152|Sint-Truidense VV|squad|39|DF|BEL|Rune Verheyden|
+152|Sint-Truidense VV|squad|60|DF|BEL|Robert-Jan Vanwesemael|
+152|Sint-Truidense VV|squad|71|MF|JPN|Ryōtarō Araki|
+152|Sint-Truidense VV|squad|77|FW|SEN|Oumar Diouf|
+152|Sint-Truidense VV|squad|99|FW|JPN|Shion Shinkawa|
+152|Sint-Truidense VV|loaned_out||||Hugo Lambotte|Virton (until 30 June 2027)
+152|Sint-Truidense VV|loaned_out||||Adam Nhaili|Dender EH (until 30 June 2027)
+152|Sint-Truidense VV|loaned_out||||Andrés Ferrari|Sporting Gijón (until 30 June 2027)
+155|Cercle Brugge|squad|1|GK|BEL|Gaëtan Coucke|
+155|Cercle Brugge|squad|2|DF|GUI|Ibrahim Diakité|
+155|Cercle Brugge|squad|5|DF|CIV|Emmanuel Kakou|
+155|Cercle Brugge|squad|7|FW|BFA|Abdoul Kader Ouattara|
+155|Cercle Brugge|squad|8|MF|BRA|Erick Nunes|
+155|Cercle Brugge|squad|9|FW|FRA|Steve Ngoura|
+155|Cercle Brugge|squad|10|MF|CIV|Lazare Amani|
+155|Cercle Brugge|squad|11|MF|GER|Charles Herrmann|
+155|Cercle Brugge|squad|12|DF|CIV|Valy Konaté|on loan from Monaco
+155|Cercle Brugge|squad|13|FW|BEL|Dante Vanzeir|on loan from Gent
+155|Cercle Brugge|squad|15|DF|BEL|Gary Magnée|
+155|Cercle Brugge|squad|17|MF|ENG|Joel Ndala|
+155|Cercle Brugge|squad|19|MF|FRA|Ibrahima Diaby|
+155|Cercle Brugge|squad|20|MF|GAM|Abdoulie Manneh|on loan from Mjällby
+155|Cercle Brugge|squad|22|FW|FRA|Lucas Michal|on loan from Monaco
+155|Cercle Brugge|squad|23|FW|MEX|Heriberto Jurado|
+155|Cercle Brugge|squad|24|DF|FRA|Geoffrey Kondo|
+155|Cercle Brugge|squad|28|MF|BEL|Hannes Van der Bruggen|
+155|Cercle Brugge|squad|33|DF|COL|Royer Caicedo|
+155|Cercle Brugge|squad|41|FW|FRA|Krys Kouassi|
+155|Cercle Brugge|squad|42|MF|BEL|Lukas Mondele|
+155|Cercle Brugge|squad|45|DF|IRL|Tayo Adaramola|
+155|Cercle Brugge|squad|84|GK|BEL|Bas Langenbick|
+155|Cercle Brugge|loaned_out||||Lawrence Agyekum|Erzurumspor
+155|Cercle Brugge|loaned_out||||Maxime Delanghe|Willem II
+155|Cercle Brugge|loaned_out||||Dalangunypole Gomis|Sochaux
+169|FC Porto|squad|4|DF|POL|Jakub Kiwior|
+169|FC Porto|squad|5|DF|POL|Jan Bednarek|
+169|FC Porto|squad|6|DF|ENG|Chris Smalling|
+169|FC Porto|squad|7|FW|BRA|William Gomes|
+169|FC Porto|squad|8|MF|DEN|Victor Froholdt|
+169|FC Porto|squad|9|FW|ESP|Samu Aghehowa|
+169|FC Porto|squad|10|MF|ESP|Gabri Veiga|
+169|FC Porto|squad|11|FW|BRA|Pepê|
+169|FC Porto|squad|12|DF|NGR|Zaidu Sanusi|
+169|FC Porto|squad|13|MF|DOM|Pablo Rosario|
+169|FC Porto|squad|14|GK|POR|Cláudio Ramos|
+169|FC Porto|squad|15|MF|POR|Vasco Sousa|
+169|FC Porto|squad|16|MF|KOR|Hwang In-beom|
+169|FC Porto|squad|17|FW|ESP|Borja Sainz|
+169|FC Porto|squad|18|DF|ARG|Nehuén Pérez|
+169|FC Porto|squad|19|FW|POR|André Silva|
+169|FC Porto|squad|20|DF|POR|Alberto Costa|
+169|FC Porto|squad|21|DF|CRO|Dominik Prpić|
+169|FC Porto|squad|22|MF|ARG|Alan Varela|vice-captain
+169|FC Porto|squad|24|GK|POR|João Costa|
+169|FC Porto|squad|29|FW|MEX|Santiago Giménez|on loan from AC Milan
+169|FC Porto|squad|33|DF|BRA|Souza|on loan from Tottenham Hotspur
+169|FC Porto|squad|37|FW|BRA|Gabriel Mec|
+169|FC Porto|squad|42|MF|CIV|Seko Fofana|on loan from Rennes
+169|FC Porto|squad|50|GK|POR|João Afonso|
+169|FC Porto|squad|52|DF|POR|Martim Fernandes|
+169|FC Porto|squad|74|DF|POR|Francisco Moura|
+169|FC Porto|squad|77|FW|POL|Oskar Pietuszewski|
+169|FC Porto|squad|99|GK|POR|Diogo Costa|captain
+169|FC Porto|loaned_out||||Iván Jaime|Las Palmas
+169|FC Porto|loaned_out||||Tomás Pérez|Atlético Mineiro
+183|Moreirense FC|squad|1|GK|BRA|Aranha|on loan from Palmeiras
+183|Moreirense FC|squad|2|DF|POR|Leandro|
+183|Moreirense FC|squad|4|DF|BRA|Kevyn Monteiro|
+183|Moreirense FC|squad|7|MF|POR|Manuel Mendonça|
+183|Moreirense FC|squad|8|MF|SRB|Mateja Stjepanović|
+183|Moreirense FC|squad|9|FW|MTQ|Alexandre Parsemain|
+183|Moreirense FC|squad|10|FW|POR|Kiko Bondoso|
+183|Moreirense FC|squad|11|FW|BRA|Landerson|
+183|Moreirense FC|squad|13|GK|POR|André Ferreira|
+183|Moreirense FC|squad|17|DF|ESP|Álvaro Martínez|
+183|Moreirense FC|squad|19|FW|POR|Tiago Andrade|
+183|Moreirense FC|squad|20|MF|POR|João Veloso|on loan from Benfica
+183|Moreirense FC|squad|21|MF|ESP|Rodri|
+183|Moreirense FC|squad|23|MF|ENG|Nile John|
+183|Moreirense FC|squad|25|MF|POR|Afonso Assis|
+183|Moreirense FC|squad|26|DF|BRA|Maracás|
+183|Moreirense FC|squad|27|DF|POR|Kiko|
+183|Moreirense FC|squad|30|MF|ENG|Jimi Gower|
+183|Moreirense FC|squad|31|DF|BRA|Pedro Jesus|
+183|Moreirense FC|squad|32|DF|BRA|Janderson|
+183|Moreirense FC|squad|44|MF|ESP|Michael Dacosta|
+183|Moreirense FC|squad|65|MF|BRA|Guilherme Liberato|
+183|Moreirense FC|squad|66|DF|GNB|Gilberto Batista|
+183|Moreirense FC|squad|76|DF|POR|Dinis Pinto|
+183|Moreirense FC|squad|77|FW|ENG|Koby Mottoh|
+183|Moreirense FC|squad|99|FW|BRA|Yan Maranhão|
+183|Moreirense FC|squad||FW|CRO|Leonardo Vonić|on loan from Porto B
+183|Moreirense FC|loaned_out||||Joel Jorquera|Real Murcia
+183|Moreirense FC|loaned_out||||Fabiano|Ceará
+184|CD Nacional|squad|1|GK|ITA|Renato Marin|on loan from Paris Saint-Germain
+184|CD Nacional|squad|2|DF|ECU|Daniel de la Cruz|on loan from LDU Quito
+184|CD Nacional|squad|5|DF|POR|José Gomes|
+184|CD Nacional|squad|6|MF|BRA|Matheus Dias|
+184|CD Nacional|squad|7|MF|DEN|Markus Jensen|
+184|CD Nacional|squad|8|MF|ESP|Miguel Baeza|
+184|CD Nacional|squad|9|FW|ECU|Allen Obando|on loan from Inter Miami
+184|CD Nacional|squad|10|FW|BRA|Daniel Júnior|
+184|CD Nacional|squad|11|FW|CYP|Stavros Gavriil|
+184|CD Nacional|squad|12|FW|KOR|Song Min-kyu|
+184|CD Nacional|squad|13|GK|POR|João Gonçalves|
+184|CD Nacional|squad|14|DF|CPV|Ivanildo Fernandes|
+184|CD Nacional|squad|15|MF|TUN|Chiheb Labidi|
+184|CD Nacional|squad|17|FW|BOL|Fernando Nava|
+184|CD Nacional|squad|20|FW|POR|Matchoi Djaló|
+184|CD Nacional|squad|21|MF|FRA|William Kokolo|on loan from Hannover 96
+184|CD Nacional|squad|22|MF|POR|Filipe Soares|
+184|CD Nacional|squad|23|MF|BRA|Mateus Iseppe|
+184|CD Nacional|squad|26|MF|POR|Joel Silva|
+184|CD Nacional|squad|28|MF|BRA|Igor Liziero|
+184|CD Nacional|squad|29|FW|CMR|Njoya Abdel|
+184|CD Nacional|squad|30|MF|POR|Martim Watts|
+184|CD Nacional|squad|31|MF|CMR|Danel Dongmo|
+184|CD Nacional|squad|33|DF|POR|Francisco Gonçalves|
+184|CD Nacional|squad|34|DF|BRA|Léo Santos|captain
+184|CD Nacional|squad|38|DF|BRA|Zé Vitor|
+184|CD Nacional|squad|50|GK|BRA|Kevyn|
+184|CD Nacional|squad|52|DF|BRA|Wesley Gasolina|
+184|CD Nacional|squad|88|MF|BRA|Deivison Souza|
+184|CD Nacional|squad|99|FW|BRA|Pablo Ruan|
+184|CD Nacional|loaned_out||||Josué Souza|Democrata
+194|SC Braga|squad|4|DF|MLI|Sikou Niakaté|
+194|SC Braga|squad|5|DF|ESP|Víctor Gómez|
+194|SC Braga|squad|6|MF|BRA|Vitor Carvalho|
+194|SC Braga|squad|7|DF|POR|Diogo Travassos|
+194|SC Braga|squad|8|MF|POR|João Moutinho|vice-captain
+194|SC Braga|squad|9|FW|ESP|Fran Navarro|
+194|SC Braga|squad|10|FW|ESP|Pau Víctor|
+194|SC Braga|squad|11|FW|BRA|Gabriel Silva|
+194|SC Braga|squad|12|GK|POR|Tiago Sá|
+194|SC Braga|squad|14|DF|SWE|Gustaf Lagerbielke|
+194|SC Braga|squad|16|MF|ESP|Tommy Marqués|
+194|SC Braga|squad|17|FW|SRB|Jovan Milošević|
+194|SC Braga|squad|19|FW|DEN|Jonas Wind|
+194|SC Braga|squad|20|MF|CIV|Mario Dorgeles|
+194|SC Braga|squad|21|MF|POR|Ricardo Horta|captain
+194|SC Braga|squad|22|DF|ESP|Sergio Barcia|
+194|SC Braga|squad|23|MF|BIH|Denis Huseinbašić|
+194|SC Braga|squad|26|DF|GER|Bright Arrey-Mbi|
+194|SC Braga|squad|29|MF|FRA|Jean-Baptiste Gorby|
+194|SC Braga|squad|31|GK|BRA|Bernardo|
+194|SC Braga|squad|34|MF|TUR|Demir Ege Tıknaz|
+194|SC Braga|squad|37|DF|BIH|Adrian-Leon Barišić|
+194|SC Braga|squad|44|DF|SUI|Adrian Bajrami|
+194|SC Braga|squad|50|MF|POR|Diego Rodrigues|
+194|SC Braga|squad|73|FW|POR|João Aragão|
+194|SC Braga|squad|77|FW|ESP|Gabri Martínez|
+194|SC Braga|squad|78|GK|POR|João Carvalho|
+194|SC Braga|loaned_out||||Alaa Bellaarouch|Dinamo București
+194|SC Braga|loaned_out||||Francisco Chissumba|Alverca
+194|SC Braga|loaned_out||||Leonardo Lelo|Almería
+194|SC Braga|loaned_out||||Bartłomiej Wdowik|Jagiellonia Białystok
+194|SC Braga|loaned_out||||Thiago Helguera|Atlético Madrileño
+194|SC Braga|loaned_out||||Luisinho|Feirense
+194|SC Braga|loaned_out||||João Marques|Torreense
+194|SC Braga|loaned_out||||Amine El Ouazzani|Angers
+194|SC Braga|loaned_out||||Ismaël Gharbi|Leganés
+194|SC Braga|loaned_out||||Sandro Vidigal|Eupen
+195|AZ Alkmaar|squad|1|GK|NED|Rome-Jayden Owusu-Oduro|
+195|AZ Alkmaar|squad|2|DF|JPN|Seiya Maikuma|
+195|AZ Alkmaar|squad|3|DF|NED|Wouter Goes|
+195|AZ Alkmaar|squad|4|DF|NED|Maxim Dekker|
+195|AZ Alkmaar|squad|5|DF|POR|Alexandre Penetra|
+195|AZ Alkmaar|squad|6|MF|NED|Peer Koopmeiners|
+195|AZ Alkmaar|squad|7|FW|BRA|Weslley Patati|
+195|AZ Alkmaar|squad|8|MF|NED|Jordy Clasie|captain
+195|AZ Alkmaar|squad|9|FW|IRL|Troy Parrott|
+195|AZ Alkmaar|squad|10|MF|NED|Sven Mijnans|
+195|AZ Alkmaar|squad|11|FW|GHA|Ibrahim Sadiq|
+195|AZ Alkmaar|squad|12|GK|NED|Hobie Verhulst|
+195|AZ Alkmaar|squad|15|DF|MEX|Mateo Chávez|
+195|AZ Alkmaar|squad|17|FW|DEN|Isak Jensen|
+195|AZ Alkmaar|squad|18|DF|JPN|Rion Ichihara|
+195|AZ Alkmaar|squad|19|FW|NED|Jizz Hornkamp|
+195|AZ Alkmaar|squad|20|MF|NED|Kasper Boogaard|
+195|AZ Alkmaar|squad|22|DF|NED|Elijah Dijkstra|
+195|AZ Alkmaar|squad|23|DF|NED|Billy van Duijl|
+195|AZ Alkmaar|squad|24|FW|NED|Ayoub Oufkir|
+195|AZ Alkmaar|squad|26|MF|NED|Kees Smit|
+195|AZ Alkmaar|squad|27|FW|NED|Ro-Zangelo Daal|
+195|AZ Alkmaar|squad|30|DF|NED|Denso Kasius|
+195|AZ Alkmaar|squad|33|MF|CZE|Matěj Šín|
+195|AZ Alkmaar|squad|34|DF|NED|Mees de Wit|
+195|AZ Alkmaar|squad|35|FW|NED|Mexx Meerdink|
+195|AZ Alkmaar|squad|41|GK|NED|Jeroen Zoet|
+195|AZ Alkmaar|squad||GK|BEL|Jari De Busser|
+195|AZ Alkmaar|squad||MF|NED|Dave Kwakman|
+195|AZ Alkmaar|squad||MF|NED|Lewis Schouten|
+195|AZ Alkmaar|squad||MF|NED|Zico Buurmeester|
+195|AZ Alkmaar|squad||FW|NED|Lequincio Zeefuik|
+195|AZ Alkmaar|squad||FW|NED|Sem van Duijn|
+195|AZ Alkmaar|squad||FW|SWE|Mayckel Lahdo|
+195|AZ Alkmaar|loaned_out||||Abdelnour Soualhia|SC Telstar
+204|PEC Zwolle|squad|1|GK|NED|Jasper Schendelaar|
+204|PEC Zwolle|squad|2|DF|CUW|Sherel Floranus|
+204|PEC Zwolle|squad|3|DF|NED|Olivier Aertssen|
+204|PEC Zwolle|squad|4|DF|NED|Tijs Velthuis|
+204|PEC Zwolle|squad|6|DF|GER|Jan Bürger|
+204|PEC Zwolle|squad|7|FW|DEN|Younes Namli|
+204|PEC Zwolle|squad|8|MF|DEN|Tobias Sommer|
+204|PEC Zwolle|squad|9|FW|DEN|Elias Sørensen|
+204|PEC Zwolle|squad|10|FW|NED|Koen Kostons|
+204|PEC Zwolle|squad|11|FW|BEL|Dylan Mbayo|
+204|PEC Zwolle|squad|16|GK|NED|Tom de Graaff|
+204|PEC Zwolle|squad|17|FW|NED|Sydney van Hooijdonk|on loan from Estrela Amadora
+204|PEC Zwolle|squad|18|FW|NED|Odysseus Velanas|
+204|PEC Zwolle|squad|20|MF|NED|Gabriël Reiziger|
+204|PEC Zwolle|squad|22|FW|GUI|Ibrahim Cissoko|
+204|PEC Zwolle|squad|24|DF|NED|Nick Viergever|
+204|PEC Zwolle|squad|25|MF|NED|Thijs Oosting|
+204|PEC Zwolle|squad|26|MF|NED|Jadiel Pereira da Gama|
+204|PEC Zwolle|squad|28|DF|DEN|Simon Graves|
+204|PEC Zwolle|squad|30|MF|NZL|Ryan Thomas|captain
+204|PEC Zwolle|squad|33|DF|NED|Damian van der Haar|
+204|PEC Zwolle|squad|34|MF|NED|Nick Fichtinger|
+204|PEC Zwolle|squad|37|MF|NED|Gilles van der Wal|
+204|PEC Zwolle|squad|38|MF|NED|Givaro Rahajaän|
+204|PEC Zwolle|squad|41|GK|NED|Duke Verduin|
+204|PEC Zwolle|squad|50|MF|BUL|Filip Krastev|on loan from Lommel
+211|GD Estoril Praia|squad|1|GK|ESP|Joel Robles|
+211|GD Estoril Praia|squad|2|DF|ESP|Ricard Sánchez|
+211|GD Estoril Praia|squad|3|DF|ESP|Fernando Medrano|
+211|GD Estoril Praia|squad|4|DF|POR|Ferro|
+211|GD Estoril Praia|squad|5|DF|BEL|Antef Tsoungui|
+211|GD Estoril Praia|squad|7|FW|POR|André Lacximicant|
+211|GD Estoril Praia|squad|8|MF|POR|Xeka|
+211|GD Estoril Praia|squad|10|MF|SCO|Jordan Holsgrove|
+211|GD Estoril Praia|squad|11|FW|ENG|Khayon Edwards|
+211|GD Estoril Praia|squad|12|MF|POR|João Carvalho|captain
+211|GD Estoril Praia|squad|14|FW|MAR|Yanis Begraoui|
+211|GD Estoril Praia|squad|15|DF|ESP|Ismael Sierra|
+211|GD Estoril Praia|squad|16|GK|SVN|Martin Turk|
+211|GD Estoril Praia|squad|17|FW|POR|Peixinho|
+211|GD Estoril Praia|squad|18|DF|POR|Gonçalo Costa|
+211|GD Estoril Praia|squad|19|DF|POR|Tiago Parente|
+211|GD Estoril Praia|squad|22|DF|POR|Pedro Carvalho|
+211|GD Estoril Praia|squad|23|GK|POR|Diogo Dias|
+211|GD Estoril Praia|squad|25|DF|CYP|Stelios Andreou|on loan from Widzew Łódź
+211|GD Estoril Praia|squad|35|DF|ENG|Samuel Amissah|on loan from Fulham U21
+211|GD Estoril Praia|squad|42|DF|POR|Jordan Arnolin|
+211|GD Estoril Praia|squad|43|GK|RSA|Fletcher Smythe-Lowe|
+211|GD Estoril Praia|squad|44|MF|FRA|Milan Robin|
+211|GD Estoril Praia|squad|80|MF|POR|Luís Gomes|
+211|GD Estoril Praia|squad|90|MF|POR|Tiago Brito|
+211|GD Estoril Praia|squad|98|DF|CPV|Fabrício Garcia|
+211|GD Estoril Praia|squad|99|FW|ALG|Rafik Guitane|
+211|GD Estoril Praia|squad||FW|FRA|Axel Camblan|
+211|GD Estoril Praia|squad||DF|CRO|Roko Jurišić|
+211|GD Estoril Praia|squad||DF|ESP|Xavi Sintes|
+211|GD Estoril Praia|squad||FW|BIH|Nail Omerović|
+220|Club Brugge KV|squad|1|GK|SUI|Yann Sommer|
+220|Club Brugge KV|squad|3|DF|KOR|Lee Han-beom|
+220|Club Brugge KV|squad|4|DF|ECU|Joel Ordóñez|
+220|Club Brugge KV|squad|7|FW|GER|Nicolò Tresoldi|
+220|Club Brugge KV|squad|8|MF|ENG|Freddie Potts|
+220|Club Brugge KV|squad|9|FW|POR|Carlos Forbs|
+220|Club Brugge KV|squad|10|MF|NOR|Hugo Vetlesen|
+220|Club Brugge KV|squad|11|FW|ESP|Jan Virgili|
+220|Club Brugge KV|squad|16|MF|SUI|Cheveyo Tsawa|
+220|Club Brugge KV|squad|17|FW|BEL|Romeo Vermant|
+220|Club Brugge KV|squad|20|MF|BEL|Hans Vanaken|captain
+220|Club Brugge KV|squad|27|FW|GER|Wisdom Mike|
+220|Club Brugge KV|squad|29|GK|BEL|Nordin Jackers|
+220|Club Brugge KV|squad|32|DF|BEL|Matteo Dams|
+220|Club Brugge KV|squad|41|DF|BEL|Hugo Siquet|
+220|Club Brugge KV|squad|44|DF|BEL|Brandon Mechele|
+220|Club Brugge KV|squad|58|DF|BEL|Jorne Spileers|
+220|Club Brugge KV|squad|62|MF|BEL|Lynnt Audoor|
+220|Club Brugge KV|squad|64|DF|BEL|Kyriani Sabbe|
+220|Club Brugge KV|squad|65|DF|BEL|Joaquin Seys|
+220|Club Brugge KV|squad|67|FW|SEN|Mamadou Diakhon|
+220|Club Brugge KV|squad|70|MF|ESP|Alejandro Granados|
+220|Club Brugge KV|squad|77|FW|SUI|Andrej Vasovic|
+220|Club Brugge KV|squad|80|MF|FRA|Félix Lemaréchal|
+220|Club Brugge KV|squad|81|GK|BEL|Argus Vanden Driessche|
+220|Club Brugge KV|squad|85|MF|SLO|Tian Nai Koren|
+220|Club Brugge KV|squad|86|MF|ITA|Gianluca Okon|
+221|Konyaspor|squad|1|GK|TUR|Deniz Ertaş|
+221|Konyaspor|squad|3|DF|TUR|Arif Boşluk|
+221|Konyaspor|squad|4|DF|TUR|Adil Demirbağ|captain
+221|Konyaspor|squad|5|DF|TUR|Uğurcan Yazğılı|
+221|Konyaspor|squad|7|MF|POR|Diogo Gonçalves|
+221|Konyaspor|squad|8|MF|TUR|Marko Jevtović|
+221|Konyaspor|squad|9|MF|TUR|Deniz Türüç|
+221|Konyaspor|squad|10|MF|MKD|Enis Bardhi|
+221|Konyaspor|squad|11|FW|COD|Jackson Muleka|
+221|Konyaspor|squad|13|GK|TUR|Bahadır Han Güngördü|
+221|Konyaspor|squad|15|DF|NGA|Chidozie Awaziem|
+221|Konyaspor|squad|16|DF|TUR|Ata Yanık|
+221|Konyaspor|squad|17|DF|CGO|Yhoan Andzouana|
+221|Konyaspor|squad|19|FW|GAM|Ebrima Colley|on loan from Young Boys
+221|Konyaspor|squad|22|DF|TUR|Rayyan Baniya|
+221|Konyaspor|squad|24|MF|AUT|Mücahit İbrahimoğlu|
+221|Konyaspor|squad|25|MF|TUR|Ömer Çobanoğlu|
+221|Konyaspor|squad|26|DF|COD|Arthur Masuaku|
+221|Konyaspor|squad|27|FW|TUR|Eren Yağmur|
+221|Konyaspor|squad|29|GK|TUR|Egemen Aydın|
+221|Konyaspor|squad|37|DF|TUR|Utku Eriş|
+221|Konyaspor|squad|41|DF|BRA|Da Mata|
+221|Konyaspor|squad|45|MF|TUR|Emir Bars|
+221|Konyaspor|squad|66|MF|HUN|Rajmund Tóth|
+221|Konyaspor|squad|70|FW|TUR|Kaan Akyazı|
+221|Konyaspor|squad|77|MF|TUR|Melih İbrahimoğlu|
+221|Konyaspor|squad|79|MF|TUR|Berke Özçelik|
+221|Konyaspor|squad|91|FW|FRA|Jean-Luc Dompé|
+221|Konyaspor|squad|94|FW|TUR|Enis Destan|
+221|Konyaspor|squad|99|FW|SVN|Blaž Kramer|
+221|Konyaspor|squad||DF|CIV|Eric Konaté|
+221|Konyaspor|squad||FW|EGY|Mostafa Mohamed|
+221|Konyaspor|squad||GK|TUR|Emir Gündoğdu|
+221|Konyaspor|loaned_out||||Jo Jin-ho|Batman Petrolspor
+221|Konyaspor|loaned_out||||Melih Bostan|Ümraniyespor
+221|Konyaspor|loaned_out||||Tunahan Taşçı|Ümraniyespor
+221|Konyaspor|loaned_out||||Adem Eren Kabak|Mardin 1969 Spor
+221|Konyaspor|loaned_out||||Esat Buğa|Elazığspor
+221|Konyaspor|loaned_out||||Abdurrahman Üresin|Güzide Gebze SK
+224|Vitória Guimarães SC|squad|2|DF|POR|Miguel Maga|
+224|Vitória Guimarães SC|squad|4|DF|ESP|Óscar Rivas|
+224|Vitória Guimarães SC|squad|5|DF|FRA|Ahmed Sidibé|on loan from Venezia
+224|Vitória Guimarães SC|squad|6|MF|SRB|Matija Mitrović|
+224|Vitória Guimarães SC|squad|7|FW|FRA|Oumar Camara|
+224|Vitória Guimarães SC|squad|8|MF|POR|Gonçalo Nogueira|
+224|Vitória Guimarães SC|squad|11|FW|BRA|Gustavo Silva|
+224|Vitória Guimarães SC|squad|13|DF|POR|João Mendes|
+224|Vitória Guimarães SC|squad|15|DF|COL|Yeimar Mosquera|
+224|Vitória Guimarães SC|squad|16|MF|ANG|Beni Mukendi|
+224|Vitória Guimarães SC|squad|17|MF|POR|Miguel Nogueira|
+224|Vitória Guimarães SC|squad|18|FW|CPV|Telmo Arcanjo|
+224|Vitória Guimarães SC|squad|19|MF|SWE|Victor Andersson|
+224|Vitória Guimarães SC|squad|20|MF|POR|Samu|captain
+224|Vitória Guimarães SC|squad|22|GK|COL|Juan Castillo|
+224|Vitória Guimarães SC|squad|23|DF|ROU|Tony Strata|
+224|Vitória Guimarães SC|squad|24|FW|SEN|Alioune Ndoye|
+224|Vitória Guimarães SC|squad|28|DF|BRA|Thiago Balieiro|
+224|Vitória Guimarães SC|squad|29|FW|CIV|Patrick Ouotro|
+224|Vitória Guimarães SC|squad|44|MF|BFA|Lohann Doucet|
+224|Vitória Guimarães SC|squad|48|GK|POL|Oliwier Zych|on loan from Aston Villa
+224|Vitória Guimarães SC|squad|56|MF|POR|Santi Verdi|
+224|Vitória Guimarães SC|squad|80|MF|POR|Rica Rocha|
+224|Vitória Guimarães SC|squad|82|DF|POR|Francisco Dias|
+224|Vitória Guimarães SC|squad|98|GK|BRA|Lucas Furtado|
+224|Vitória Guimarães SC|squad||DF|POR|Miguel Nóbrega|unnumbered (unlabelled table)
+224|Vitória Guimarães SC|squad||GK|BRA|Charles|vice-captain; unnumbered (unlabelled table)
+224|Vitória Guimarães SC|squad||MF|ESP|Fabio Blanco|unnumbered (unlabelled table)
+224|Vitória Guimarães SC|squad||MF|POR|Marco Cruz|unnumbered (unlabelled table)
+224|Vitória Guimarães SC|squad||FW|GNB|Vando Félix|unnumbered (unlabelled table)
+225|CD Santa Clara|squad|1|GK|BRA|Lucas França|
+225|CD Santa Clara|squad|4|DF|POR|Pedro Pacheco|
+225|CD Santa Clara|squad|5|DF|BRA|Guilherme Romão|
+225|CD Santa Clara|squad|6|MF|POR|Pedro Ferreira|
+225|CD Santa Clara|squad|7|FW|BRA|Fernando|
+225|CD Santa Clara|squad|8|MF|CPV|Djé Tavares|
+225|CD Santa Clara|squad|9|FW|POR|Gonçalo Paciência|
+225|CD Santa Clara|squad|10|FW|BRA|Brenner Lucas|
+225|CD Santa Clara|squad|11|FW|BRA|Welinton Torrão|
+225|CD Santa Clara|squad|12|GK|BRA|Neneca|
+225|CD Santa Clara|squad|17|MF|POR|João Vasconcelos|
+225|CD Santa Clara|squad|18|FW|POR|Afonso Duarte|
+225|CD Santa Clara|squad|20|MF|POR|Tiago Ribeiro|
+225|CD Santa Clara|squad|21|DF|POR|Emanuel Moreira|
+225|CD Santa Clara|squad|22|MF|BRA|Vitinho|
+225|CD Santa Clara|squad|25|MF|POR|Fredy|
+225|CD Santa Clara|squad|32|DF|BRA|MT|
+225|CD Santa Clara|squad|37|MF|BRA|Rildo|
+225|CD Santa Clara|squad|41|MF|BRA|Dani Borges|
+225|CD Santa Clara|squad|42|DF|BRA|Lucas Soares|
+225|CD Santa Clara|squad|55|GK|BRA|Cadu Neves|
+225|CD Santa Clara|squad|70|FW|BRA|Vinícius Lopes|
+225|CD Santa Clara|squad|73|FW|BRA|Léo Jacó|
+225|CD Santa Clara|squad|85|DF|POR|Kamika|
+225|CD Santa Clara|squad|99|FW|BRA|Sorriso|
+225|CD Santa Clara|squad||DF|BRA|Ythallo|
+225|CD Santa Clara|loaned_out||||Sidney Lima|Partizan
+225|CD Santa Clara|loaned_out||||Wendel Silva|Ceará
+226|Gil Vicente FC|squad|1|GK|SWE|André Picornell|
+226|Gil Vicente FC|squad|2|DF|POR|José Silva|
+226|Gil Vicente FC|squad|3|DF|ESP|Antonio Espigares|
+226|Gil Vicente FC|squad|4|DF|FRA|Marvin Elimbi|captain
+226|Gil Vicente FC|squad|6|MF|POR|Zé Carlos|
+226|Gil Vicente FC|squad|7|FW|FRA|Tidjany Touré|
+226|Gil Vicente FC|squad|8|MF|CIV|Mohamed Bamba|
+226|Gil Vicente FC|squad|9|FW|BRA|Walace França|
+226|Gil Vicente FC|squad|10|MF|ESP|Santi García|
+226|Gil Vicente FC|squad|11|FW|POR|Joelson Fernandes|
+226|Gil Vicente FC|squad|12|MF|DEN|Andreas Lausen|
+226|Gil Vicente FC|squad|17|FW|ESP|Sergio Bermejo|
+226|Gil Vicente FC|squad|19|MF|BRA|Guilherme Gomes|
+226|Gil Vicente FC|squad|20|MF|POR|Gil Martins|
+226|Gil Vicente FC|squad|23|FW|ESP|Héctor Hernández|
+226|Gil Vicente FC|squad|26|DF|BRA|Weverson|
+226|Gil Vicente FC|squad|27|FW|URU|Agustín Moreira|
+226|Gil Vicente FC|squad|30|GK|BRA|Lucão|
+226|Gil Vicente FC|squad|32|MF|URU|Martín Fernández|
+226|Gil Vicente FC|squad|39|DF|ANG|Jonathan Buatu|
+226|Gil Vicente FC|squad|44|GK|POR|Tiago Ferreira|
+226|Gil Vicente FC|squad|45|DF|CPV|David Moreira|
+226|Gil Vicente FC|squad|47|DF|POR|Ricardo Esgaio|
+226|Gil Vicente FC|squad|77|FW|BRA|Murilo Costa|
+226|Gil Vicente FC|squad|82|MF|POR|Gonçalo Maia|
+226|Gil Vicente FC|squad|86|MF|POR|Diogo Prioste|on loan from Benfica B
+226|Gil Vicente FC|squad|88|MF|PER|Bassco Soyer|
+226|Gil Vicente FC|squad|94|GK|BRA|Samuel Portugal|
+226|Gil Vicente FC|squad|95|DF|FRA|Arthur Tchaptchet|
+226|Gil Vicente FC|squad|99|FW|MLI|Mohamed Kaba|
+226|Gil Vicente FC|loaned_out||||Diogo Costa|Amarante
+226|Gil Vicente FC|loaned_out||||Rodrigo Melro|Vianense
+226|Gil Vicente FC|loaned_out||||Carlos Eduardo|Sabah
+227|Rio Ave FC|squad|1|GK|POL|Cezary Miszta|
+227|Rio Ave FC|squad|5|DF|GRE|Andreas Ntoi|
+227|Rio Ave FC|squad|6|DF|ENG|Nelson Abbey|
+227|Rio Ave FC|squad|7|FW|BRA|Diogo Bezerra|
+227|Rio Ave FC|squad|8|MF|BRA|Ryan Guilherme|
+227|Rio Ave FC|squad|9|FW|GNB|Tamble Monteiro|
+227|Rio Ave FC|squad|10|MF|CRC|Brandon Aguilera|
+227|Rio Ave FC|squad|11|FW|ESP|Jalen Blesa|
+227|Rio Ave FC|squad|13|DF|FRA|Julien Lomboto|
+227|Rio Ave FC|squad|14|DF|CZE|Jakub Brabec|
+227|Rio Ave FC|squad|17|DF|GRE|Marios Vrousai|captain
+227|Rio Ave FC|squad|20|DF|POR|João Tomé|
+227|Rio Ave FC|squad|22|GK|CRC|Kevin Chamorro|
+227|Rio Ave FC|squad|23|DF|ARG|Francisco Petrasso|
+227|Rio Ave FC|squad|24|DF|POR|Pedro Amaral|
+227|Rio Ave FC|squad|25|FW|BRA|Rafael Lobato|
+227|Rio Ave FC|squad|27|FW|ARG|Tobías Medina|
+227|Rio Ave FC|squad|30|FW|SVK|Roland Galčík|
+227|Rio Ave FC|squad|39|DF|BRA|Gustavo Mancha|on loan from Olympiacos
+227|Rio Ave FC|squad|44|MF|HUN|Tamás Nikitscher|
+227|Rio Ave FC|squad|54|MF|GRE|Georgios Liavas|
+227|Rio Ave FC|squad|67|FW|BRA|Samuel Alves|
+227|Rio Ave FC|squad|68|DF|BRA|Caike|
+227|Rio Ave FC|squad|70|MF|SEN|Antoine Wenck|
+227|Rio Ave FC|squad|77|FW|CRO|Dario Špikić|
+227|Rio Ave FC|squad|79|MF|POR|Miguel Patrício|
+227|Rio Ave FC|squad|90|MF|POR|Diogo Nascimento|on loan from Olympiacos
+227|Rio Ave FC|squad|99|GK|NED|Ennio van der Gouw|
+227|Rio Ave FC|squad||MF|FRA|Malik Sellouki|
+228|CF Estrela Amadora|squad|3|DF|FRA|Lucas Mincarelli|
+228|CF Estrela Amadora|squad|4|DF|BRA|Bernardo Schappo|
+228|CF Estrela Amadora|squad|5|DF|SRB|Stefan Leković|
+228|CF Estrela Amadora|squad|6|MF|SWE|Kevin Höög Jansson|
+228|CF Estrela Amadora|squad|8|MF|BRA|Robinho|
+228|CF Estrela Amadora|squad|10|FW|ROU|Ianis Stoica|
+228|CF Estrela Amadora|squad|11|FW|URU|Rodrigo Dudok|on loan from Racing de Montevideo
+228|CF Estrela Amadora|squad|14|MF|CRO|Lovro Zvonarek|
+228|CF Estrela Amadora|squad|17|DF|GNB|Jefferson Encada|
+228|CF Estrela Amadora|squad|18|MF|MNE|Vuk Pavicevic|
+228|CF Estrela Amadora|squad|19|MF|ESP|Joan Jordán|
+228|CF Estrela Amadora|squad|21|DF|GER|Max Scholze|
+228|CF Estrela Amadora|squad|22|GK|POR|David Grilo|
+228|CF Estrela Amadora|squad|24|GK|BRA|Léo Linck|on loan from Botafogo
+228|CF Estrela Amadora|squad|28|MF|FRA|Tom Moustier|
+228|CF Estrela Amadora|squad|29|FW|ECU|Jeremy Arévalo|on loan from VfB Stuttgart
+228|CF Estrela Amadora|squad|30|DF|BRA|Luan Patrick|
+228|CF Estrela Amadora|squad|37|FW|PUR|Leandro Antonetti|
+228|CF Estrela Amadora|squad|39|MF|CIV|Eddy Doué|
+228|CF Estrela Amadora|squad|49|FW|BEL|René Mitongo|on loan from Trabzonspor
+228|CF Estrela Amadora|squad|51|GK|POR|Diogo Pinto|
+228|CF Estrela Amadora|squad|55|DF|POR|Rafa Soares|
+228|CF Estrela Amadora|squad|71|MF|FRA|Emerson Vanga|
+228|CF Estrela Amadora|squad|72|FW|BRA|Henrique Poniewas|listed twice on Wikipedia (also as No. 91)
+228|CF Estrela Amadora|squad|78|MF|POR|Santiago Serra|
+228|CF Estrela Amadora|squad|79|DF|BUL|Atanas Chernev|
+228|CF Estrela Amadora|squad|80|FW|BRA|Alisson Souza|
+228|CF Estrela Amadora|squad|93|FW|FRA|Bénito|
+228|CF Estrela Amadora|squad|99|FW|NGA|Abraham Marcus|
+228|CF Estrela Amadora|loaned_out||||Dudu|Portimonense
+228|CF Estrela Amadora|loaned_out||||Alex Sola|Ironi Kiryat Shmona
+228|CF Estrela Amadora|loaned_out||||João Gastão|Farense
+228|CF Estrela Amadora|loaned_out||||Chilohem Onuoha|TSV Hartberg
+228|CF Estrela Amadora|loaned_out||||Sydney van Hooijdonk|PEC Zwolle
+232|FC Alverca|squad|1|GK|FRA|Noah Raveyre|
+232|FC Alverca|squad|2|DF|MAR|Nabil Touaizi|
+232|FC Alverca|squad|3|DF|HON|Julián Martínez|
+232|FC Alverca|squad|4|DF|GAM|Yaya Bojang|
+232|FC Alverca|squad|5|MF|GHA|Sabit Abdulai|
+232|FC Alverca|squad|6|MF|CIV|Davy Gui|
+232|FC Alverca|squad|7|MF|ANG|André Vidigal|
+232|FC Alverca|squad|8|MF|POR|Vasco Moreira|
+232|FC Alverca|squad|9|FW|POR|Vivaldo Semedo|on loan from Watford
+232|FC Alverca|squad|10|FW|POR|Chiquinho|
+232|FC Alverca|squad|11|MF|BEL|Cédric Nuozzi|
+232|FC Alverca|squad|12|DF|NGA|Isaac James|
+232|FC Alverca|squad|14|DF|FRA|Steven Baseya|
+232|FC Alverca|squad|15|DF|BEL|Ikker Julian|
+232|FC Alverca|squad|17|FW|LBN|Samy Merheg|
+232|FC Alverca|squad|18|MF|MAR|Zakaria Kassary|on loan from UTS Rabat
+232|FC Alverca|squad|20|DF|POR|Diogo Spencer|
+232|FC Alverca|squad|21|DF|ESP|Sergi Gómez|
+232|FC Alverca|squad|22|FW|BRA|Figueiredo|
+232|FC Alverca|squad|23|GK|POR|André Paulo|
+232|FC Alverca|squad|24|DF|ENG|Mofe Jemide|
+232|FC Alverca|squad|25|MF|BRA|Ian Luccas|
+232|FC Alverca|squad|27|DF|ESP|Toni Tamarit|
+232|FC Alverca|squad|30|MF|MTN|Abderrahmane Soumaré|
+232|FC Alverca|squad|31|GK|BRA|Matheus Mendes|
+232|FC Alverca|squad|33|DF|FRA|Bastien Meupiyou|
+232|FC Alverca|squad|35|MF|BRA|Rayan Lucas|
+232|FC Alverca|squad|55|DF|POR|Francisco Chissumba|on loan from Braga
+232|FC Alverca|squad|90|MF|POR|Tiago Octávio|
+232|FC Alverca|squad|91|GK|BRA|Jhonatan|
+232|FC Alverca|squad|93|MF|BRA|Zé Rafael|
+232|FC Alverca|squad||MF|BRA|Matheus França|on loan from Crystal Palace
+232|FC Alverca|loaned_out||||Léo Chú|Avaí
+232|FC Alverca|loaned_out||||Gian Cabezas|Athletic
+235|Oud-Heverlee Leuven|squad|3|DF|BEL|Noë Dussenne|
+235|Oud-Heverlee Leuven|squad|4|MF|BEL|Birger Verstraete|
+235|Oud-Heverlee Leuven|squad|5|DF|GER|Jamie Lawrence|
+235|Oud-Heverlee Leuven|squad|6|MF|BEL|Wouter George|
+235|Oud-Heverlee Leuven|squad|7|MF|GHA|Emmanuel Addai|
+235|Oud-Heverlee Leuven|squad|8|MF|BEL|Siebe Schrijvers|
+235|Oud-Heverlee Leuven|squad|9|FW|GUI|Abdoul Karim Traoré|
+235|Oud-Heverlee Leuven|squad|10|FW|BEL|Thibaud Verlinden|
+235|Oud-Heverlee Leuven|squad|11|FW|GER|Henok Teklab|
+235|Oud-Heverlee Leuven|squad|13|GK|BEL|Kiany Vroman|
+235|Oud-Heverlee Leuven|squad|15|DF|CRO|Viktor Damjanić|
+235|Oud-Heverlee Leuven|squad|16|GK|NED|Dani van den Heuvel|
+235|Oud-Heverlee Leuven|squad|17|FW|BEL|Kyan Vaesen|
+235|Oud-Heverlee Leuven|squad|18|FW|BEL|Robin Mirisola|on loan from Genk
+235|Oud-Heverlee Leuven|squad|19|FW|NGA|Chukwubuikem Ikwuemesi|
+235|Oud-Heverlee Leuven|squad|20|FW|JPN|Shin Yamada|on loan from Celtic
+235|Oud-Heverlee Leuven|squad|21|FW|COD|William Balikwisha|
+235|Oud-Heverlee Leuven|squad|24|MF|POL|Łukasz Łakomy|
+235|Oud-Heverlee Leuven|squad|25|MF|BEL|Manuel Osifo|
+235|Oud-Heverlee Leuven|squad|26|DF|JPN|Takuya Ogiwara|on loan from Urawa Red Diamonds
+235|Oud-Heverlee Leuven|squad|27|DF|ESP|Óscar Gil|
+235|Oud-Heverlee Leuven|squad|28|DF|BEL|Ewoud Pletinckx|
+235|Oud-Heverlee Leuven|squad|30|DF|ITA|Alessandro Fontanarosa|on loan from Avellino
+235|Oud-Heverlee Leuven|squad|34|DF|SUI|Roggerio Nyakossi|
+235|Oud-Heverlee Leuven|squad|42|MF|TUR|Hasan Bulut|
+235|Oud-Heverlee Leuven|squad|48|MF|USA|Bryang Kayo|
+235|Oud-Heverlee Leuven|squad|61|GK|BEL|Owen Jochmans|
+235|Oud-Heverlee Leuven|squad|63|DF|BEL|Christ Souanga|
+235|Oud-Heverlee Leuven|squad|72|MF|BEL|Sebastian Murru|
+235|Oud-Heverlee Leuven|squad|77|DF|BEL|Thibault Vlietinck|
+235|Oud-Heverlee Leuven|squad|80|MF|BEL|Matteo Heremans|
+235|Oud-Heverlee Leuven|squad|81|GK|BEL|Marcel Van Dijck|
+235|Oud-Heverlee Leuven|squad|89|FW|BEL|Chike Van De Ven|
+235|Oud-Heverlee Leuven|squad|99|DF|BEL|Davis Opoku|
+240|Standard Liège|squad|1|GK|COD|Matthieu Epolo|
+240|Standard Liège|squad|3|DF|DEN|Gustav Mortensen|
+240|Standard Liège|squad|4|DF|BEL|Dimitri Lavalée|
+240|Standard Liège|squad|6|MF|BEL|Laurens Goemaere|
+240|Standard Liège|squad|7|MF|GER|Tobias Mohr|
+240|Standard Liège|squad|9|FW|SUI|Andi Zeqiri|on loan from Widzew Łódź
+240|Standard Liège|squad|10|FW|IRI|Dennis Eckert|
+240|Standard Liège|squad|11|FW|BEL|Adnane Abid|
+240|Standard Liège|squad|13|DF|USA|Marlon Fossey|captain
+240|Standard Liège|squad|15|FW|GAM|Salieu Drammeh|
+240|Standard Liège|squad|17|FW|CMR|Bernard Nguene|
+240|Standard Liège|squad|18|DF|ENG|Henry Lawrence|
+240|Standard Liège|squad|19|FW|BUL|Sylvester Jasper|
+240|Standard Liège|squad|20|DF|FRA|Ibrahim Karamoko|
+240|Standard Liège|squad|21|GK|BEL|Lucas Pirard|
+240|Standard Liège|squad|22|MF|FRA|Alexis Trouillet|
+240|Standard Liège|squad|23|MF|MAD|Marco Ilaimaharitra|
+240|Standard Liège|squad|24|DF|TOG|Josué Homawoo|
+240|Standard Liège|squad|25|DF|BEL|Ibe Hautekiet|
+240|Standard Liège|squad|27|MF|MAR|Mohamed El Hankouri|
+240|Standard Liège|squad|29|DF|BEL|Daan Dierckx|
+240|Standard Liège|squad|34|DF|BEL|Noah Sy|
+240|Standard Liège|squad|35|GK|BIH|Belmin Dizdarević|
+240|Standard Liège|squad|77|FW|BEL|Bruny Nsimba|
+240|Standard Liège|squad|80|MF|CMR|Ryan Fosso|
+240|Standard Liège|squad|84|MF|MAR|Rayan Touzghar|
+240|Standard Liège|squad|94|MF|DEN|Casper Nielsen|
+240|Standard Liège|loaned_out||||Steeven Assengue|Virton
+240|Standard Liège|loaned_out||||Boško Šutalo|Aris
+240|Standard Liège|loaned_out||||Timothé Nkada|Troyes
+242|Casa Pia AC|squad|1|GK|CRC|Patrick Sequeira|
+242|Casa Pia AC|squad|3|DF|ANG|Khaly|
+242|Casa Pia AC|squad|4|DF|POR|João Goulart|
+242|Casa Pia AC|squad|5|DF|POR|Abdu Conté|
+242|Casa Pia AC|squad|8|MF|POR|Gabi|
+242|Casa Pia AC|squad|9|FW|POR|Henrique Araújo|
+242|Casa Pia AC|squad|10|FW|POR|Rochinha|
+242|Casa Pia AC|squad|11|MF|BEL|Mo Salah|
+242|Casa Pia AC|squad|16|MF|ESP|Selvi Clua|on loan from Almería
+242|Casa Pia AC|squad|17|FW|FRA|Evans Maurin|
+242|Casa Pia AC|squad|18|DF|POR|André Geraldes|captain
+242|Casa Pia AC|squad|19|DF|URU|Kevin Prieto|
+242|Casa Pia AC|squad|20|FW|GAM|Alassana Jatta|
+242|Casa Pia AC|squad|21|FW|MAR|Aymen Zouin|on loan from Parma
+242|Casa Pia AC|squad|22|GK|POR|Daniel Azevedo|
+242|Casa Pia AC|squad|24|MF|COL|Seba Pérez|
+242|Casa Pia AC|squad|27|DF|BRA|Kaique Rocha|
+242|Casa Pia AC|squad|29|FW|FRA|Jérémy Livolant|
+242|Casa Pia AC|squad|31|GK|POR|André Gomes|
+242|Casa Pia AC|squad|43|DF|BRA|David Sousa|
+242|Casa Pia AC|squad|44|DF|BRA|Lipe|on loan from Porto B
+242|Casa Pia AC|squad|59|MF|POR|Abdu Dafé|
+242|Casa Pia AC|squad|70|MF|POR|João Rego|on loan from Benfica
+242|Casa Pia AC|squad|75|DF|POR|Pedro Rosas|
+242|Casa Pia AC|squad|77|MF|BEL|Benjamin Pauwels|on loan from Leganés
+242|Casa Pia AC|squad|80|MF|GHA|Lawrence Ofori|
+242|Casa Pia AC|squad|90|FW|BRA|Cassiano|
+242|Casa Pia AC|squad|95|GK|CRO|Ivan Mandić|
+242|Casa Pia AC|squad|98|MF|BRA|JP|
+242|Casa Pia AC|loaned_out||||Ricardo Batista|Lusitano de Évora
+242|Casa Pia AC|loaned_out||||Claudio Mendes|Penafiel
+242|Casa Pia AC|loaned_out||||Korede Osundina|Muğlaspor
+243|FC Famalicão|squad|1|GK|RUS|Ivan Zlobin|captain
+243|FC Famalicão|squad|2|DF|BRA|Gustavo Garcia|
+243|FC Famalicão|squad|3|DF|ECU|Leo Realpe|
+243|FC Famalicão|squad|4|DF|NED|Finn van Breemen|
+243|FC Famalicão|squad|5|DF|SUI|Leny Meyer|
+243|FC Famalicão|squad|6|MF|NED|Tom van de Looi|
+243|FC Famalicão|squad|7|FW|BRA|Sorriso|
+243|FC Famalicão|squad|8|MF|ESP|Marcos Peña|
+243|FC Famalicão|squad|9|FW|NGA|Umar Abubakar|
+243|FC Famalicão|squad|10|MF|POR|Pedro Santos|
+243|FC Famalicão|squad|11|FW|ESP|Óscar Aranda|
+243|FC Famalicão|squad|14|MF|POR|Mathias De Amorim|
+243|FC Famalicão|squad|15|DF|GNB|Víctor Rofino|
+243|FC Famalicão|squad|17|DF|POR|Rodrigo Pinheiro|
+243|FC Famalicão|squad|18|FW|SUI|Roméo Beney|
+243|FC Famalicão|squad|19|MF|POR|Paulo Moreira|
+243|FC Famalicão|squad|21|MF|HUN|Tamás Szűcs|
+243|FC Famalicão|squad|22|GK|BRA|Gabriel Cabral|
+243|FC Famalicão|squad|23|FW|POR|Gil Dias|
+243|FC Famalicão|squad|24|MF|FRA|Mathis Jangéal|
+243|FC Famalicão|squad|25|GK|MNE|Lazar Carević|
+243|FC Famalicão|squad|28|DF|ANG|Pedro Bondo|
+243|FC Famalicão|squad|30|DF|SRB|Vojin Serafimović|
+243|FC Famalicão|squad|33|FW|MEX|Patricio Salas|on loan from América
+243|FC Famalicão|squad|36|DF|BRA|Matheus Mattara|
+243|FC Famalicão|squad|47|MF|ESP|Gonzalo Pastor|
+243|FC Famalicão|squad|54|MF|SEN|Lamine Beye|
+243|FC Famalicão|squad|70|FW|GRE|Georgios Koutsias|
+243|FC Famalicão|squad|91|FW|POR|Rudi Almeida|
+243|FC Famalicão|loaned_out||||Riccieli|Vitória
+243|FC Famalicão|loaned_out||||Otso Liimatta|Halmstads
+275|FC Arouca|squad|1|GK|SVK|Jakub Vinarčík|
+275|FC Arouca|squad|2|DF|ENG|Leo Shahar|on loan from Newcastle
+275|FC Arouca|squad|3|DF|ESP|José Fontán|
+275|FC Arouca|squad|4|DF|POR|Diogo Monteiro|
+275|FC Arouca|squad|5|DF|SRB|Boris Popović|
+275|FC Arouca|squad|6|MF|NED|Espen van Ee|
+275|FC Arouca|squad|7|MF|FRA|Naïs Djouahra|
+275|FC Arouca|squad|8|MF|JPN|Taichi Fukui|
+275|FC Arouca|squad|9|FW|FRA|Fally Mayulu|
+275|FC Arouca|squad|10|MF|ESP|Pablo Gozálbez|
+275|FC Arouca|squad|11|FW|ESP|Miguel Puche|
+275|FC Arouca|squad|12|GK|URU|Ignacio de Arruabarrena|
+275|FC Arouca|squad|14|MF|KOR|Lee Hyun-ju|
+275|FC Arouca|squad|15|DF|ESP|Javi Sánchez|
+275|FC Arouca|squad|17|FW|ESP|Iván Barbero|
+275|FC Arouca|squad|18|DF|UKR|Orest Lebedenko|
+275|FC Arouca|squad|19|FW|URU|Alfonso Trezza|
+275|FC Arouca|squad|21|MF|ESP|Mateo Flores|
+275|FC Arouca|squad|23|FW|URU|Dylan Nandín|
+275|FC Arouca|squad|24|FW|URU|Brian Mansilla|
+275|FC Arouca|squad|28|DF|POR|Tiago Esgaio|
+275|FC Arouca|squad|37|DF|ESP|Mario Climent|
+275|FC Arouca|squad|71|GK|POR|Martim Duarte|
+275|FC Arouca|squad|77|FW|KOR|Park Si-hoo|
+275|FC Arouca|squad|87|FW|POR|Batata|
+275|FC Arouca|squad|89|MF|POR|Pedro Santos|
+275|FC Arouca|squad||MF|CRO|Gabriel Rukavina|
+275|FC Arouca|loaned_out||||Arnau Solà|Atlético Madrileño
+344|Académico de Viseu FC|squad|1|GK|ESP|Marcos Lavín|
+344|Académico de Viseu FC|squad|2|DF|GRE|Nikos Michelis|
+344|Académico de Viseu FC|squad|3|DF|ESP|Miguel Ángel Brau|on loan from Coventry City
+344|Académico de Viseu FC|squad|5|DF|BRA|Pedro Barcelos|
+344|Académico de Viseu FC|squad|6|MF|POR|André Ceitil|
+344|Académico de Viseu FC|squad|7|MF|POR|Luís Silva|
+344|Académico de Viseu FC|squad|8|MF|TUR|Cihan Kahraman|
+344|Académico de Viseu FC|squad|9|FW|MAR|Mohamed Bouldini|
+344|Académico de Viseu FC|squad|10|FW|CRC|Álvaro Zamora|on loan from Aris
+344|Académico de Viseu FC|squad|12|GK|ESP|Juan Soriano|
+344|Académico de Viseu FC|squad|14|MF|GER|Soufiane Messeguem|
+344|Académico de Viseu FC|squad|17|FW|ESP|Valery Fernández|
+344|Académico de Viseu FC|squad|18|MF|ARG|Cristian Ferreira|
+344|Académico de Viseu FC|squad|21|DF|POR|Tomás Domingos|
+344|Académico de Viseu FC|squad|22|MF|ESP|Nils Mortimer|
+344|Académico de Viseu FC|squad|29|MF|CRO|Andro Babić|
+344|Académico de Viseu FC|squad|31|FW|BRA|João Guilherme|
+344|Académico de Viseu FC|squad|33|FW|BRA|André Clóvis|
+344|Académico de Viseu FC|squad|41|DF|FRA|Anthony Correia|
+344|Académico de Viseu FC|squad|44|DF|POR|Rúben Pereira|
+344|Académico de Viseu FC|squad|45|MF|ESP|Alejandro Mestanza|
+344|Académico de Viseu FC|squad|47|FW|CIV|Lorougnon Gohi|
+344|Académico de Viseu FC|squad|55|MF|POR|Tomás Silva|
+344|Académico de Viseu FC|squad|57|DF|POR|Gu Costa|
+344|Académico de Viseu FC|squad|58|GK|BRA|Matheus Sampaio|
+344|Académico de Viseu FC|squad|66|DF|BRA|Igor Milioransa|
+344|Académico de Viseu FC|squad|75|DF|POR|Robinho|
+344|Académico de Viseu FC|squad|77|FW|POR|Paulinho|on loan from Wieczysta Kraków
+344|Académico de Viseu FC|squad|80|GK|BRA|Raphael Nunes|
+344|Académico de Viseu FC|squad|82|DF|CAF|Hugo Gambor|
+344|Académico de Viseu FC|squad|98|GK|BRA|Ewerton|
+344|Académico de Viseu FC|loaned_out||||Kauã Vinicius|Varzim
+344|Académico de Viseu FC|loaned_out||||Samba Koné|Sheriff Tiraspol
+344|Académico de Viseu FC|loaned_out||||Simão Silva|Amarante
+345|Marítimo da Madeira|squad|1|GK|POR|Gonçalo Tabuaço|
+345|Marítimo da Madeira|squad|2|DF|BRA|Igor Julião|
+345|Marítimo da Madeira|squad|3|DF|ENG|Nathanael Ogbeta|
+345|Marítimo da Madeira|squad|4|DF|POR|Rafael Fernandes|on loan from Lille
+345|Marítimo da Madeira|squad|5|DF|POR|Nilton Varela|
+345|Marítimo da Madeira|squad|6|MF|POR|Rodrigo Andrade|
+345|Marítimo da Madeira|squad|7|FW|VEN|Enrique Zauner|
+345|Marítimo da Madeira|squad|8|MF|SUI|Maxime Dominguez|
+345|Marítimo da Madeira|squad|9|FW|POR|José Melro|
+345|Marítimo da Madeira|squad|10|MF|ESP|Martín Tejón|
+345|Marítimo da Madeira|squad|11|FW|MAR|Simo Bouzaidi|
+345|Marítimo da Madeira|squad|13|GK|ESP|Alfonso Pastor|
+345|Marítimo da Madeira|squad|14|MF|POR|Raphael Guzzo|
+345|Marítimo da Madeira|squad|15|DF|POR|Tomás Tavares|
+345|Marítimo da Madeira|squad|16|MF|POR|Francisco Silva|
+345|Marítimo da Madeira|squad|17|FW|ESP|Adrián Butzke|
+345|Marítimo da Madeira|squad|18|MF|BIH|Vladan Danilović|
+345|Marítimo da Madeira|squad|20|FW|POR|Francisco Gomes|
+345|Marítimo da Madeira|squad|21|MF|NGA|Ibrahim Alani|
+345|Marítimo da Madeira|squad|22|DF|HUN|Gábor Szalai|on loan from Ferencvárosi
+345|Marítimo da Madeira|squad|23|DF|POR|Paulo Henrique|
+345|Marítimo da Madeira|squad|25|MF|ESP|Yellu Santiago|on loan from Verona
+345|Marítimo da Madeira|squad|27|FW|GER|Samuel Bamba|
+345|Marítimo da Madeira|squad|30|GK|ESP|Fran Vieites|
+345|Marítimo da Madeira|squad|34|GK|MOZ|Kimiss Zavala|
+345|Marítimo da Madeira|squad|35|FW|BEL|Bryan Limbombe|
+345|Marítimo da Madeira|squad|44|DF|POR|Romain Correia|
+345|Marítimo da Madeira|squad|66|MF|NGA|Israel Ayuma|on loan from Istra 1961
+345|Marítimo da Madeira|squad|68|MF|POR|Nélio Batista|
+345|Marítimo da Madeira|squad|77|GK|POR|Pedro Teixeira|
+345|Marítimo da Madeira|squad|90|FW|GER|Maurice Boakye|
+346|Sporting CP|squad|1|GK|POR|Rui Silva|
+346|Sporting CP|squad|4|MF|DEN|Silas Andersen|
+346|Sporting CP|squad|5|MF|ESP|Sergi Altimira|
+346|Sporting CP|squad|6|DF|BEL|Zeno Debast|
+346|Sporting CP|squad|7|FW|GRE|Fotis Ioannidis|
+346|Sporting CP|squad|8|MF|POR|João Simões|
+346|Sporting CP|squad|9|FW|POR|Rafael Nel|
+346|Sporting CP|squad|10|FW|MOZ|Geny Catamo|
+346|Sporting CP|squad|11|DF|POR|Nuno Santos|
+346|Sporting CP|squad|13|DF|GRE|Georgios Vagiannidis|
+346|Sporting CP|squad|17|MF|URU|Rodrigo Zalazar|
+346|Sporting CP|squad|18|DF|MAR|Moncef Zekri|
+346|Sporting CP|squad|19|FW|AUS|Nestory Irankunda|
+346|Sporting CP|squad|20|FW|URU|Maximiliano Araújo|3rd captain
+346|Sporting CP|squad|21|MF|BRA|Pedro Lima|
+346|Sporting CP|squad|22|DF|ESP|Iván Fresneda|4th captain
+346|Sporting CP|squad|25|DF|POR|Gonçalo Inácio|captain
+346|Sporting CP|squad|28|FW|ENG|Jesse Derry|on loan from Chelsea
+346|Sporting CP|squad|30|GK|BRA|Kaique Pereira|
+346|Sporting CP|squad|31|FW|BRA|Luis Guilherme|
+346|Sporting CP|squad|41|GK|BRA|Diego Callai|
+346|Sporting CP|squad|50|DF|POR|Rodrigo Dias|
+346|Sporting CP|squad|52|MF|GRE|Sotiris Alexandropoulos|
+346|Sporting CP|squad|55|DF|SEN|Ibrahima Ba|
+346|Sporting CP|squad|58|MF|POR|Flávio Gonçalves|
+346|Sporting CP|squad|72|DF|POR|Eduardo Quaresma|vice-captain
+346|Sporting CP|squad|73|DF|POR|Eduardo Felicíssimo|
+346|Sporting CP|squad|77|MF|ITA|Issa Doumbia|
+346|Sporting CP|squad|97|FW|COL|Luis Suárez|
+346|Sporting CP|squad|99|GK|POR|Francisco Silva|
+346|Sporting CP|loaned_out||||Pedro Gonçalves|Fiorentina
+346|Sporting CP|loaned_out||||Souleymane Faye|Lorient
+346|Sporting CP|loaned_out||||Ricardo Mangas|Monza
+346|Sporting CP|loaned_out||||Daniel Bragança|Torino
+347|ADO Den Haag|squad|1|GK|BFA|Kilian Nikiema|
+347|ADO Den Haag|squad|2|DF|NED|Othniël Raterink|on loan from Cagliari
+347|ADO Den Haag|squad|3|DF|NED|Pascal Mulder|
+347|ADO Den Haag|squad|4|DF|BEL|Matteo Waem|
+347|ADO Den Haag|squad|5|DF|DEN|Jonas Jensen-Abbew|
+347|ADO Den Haag|squad|7|FW|NED|Daryl van Mieghem|captain
+347|ADO Den Haag|squad|8|MF|CZE|Jan Žambůrek|
+347|ADO Den Haag|squad|9|FW|NED|Jesse Bal|
+347|ADO Den Haag|squad|10|FW|NED|Illaijh de Ruijter|
+347|ADO Den Haag|squad|11|FW|NED|Evan Rottier|
+347|ADO Den Haag|squad|12|GK|NED|Sem Eekhout|
+347|ADO Den Haag|squad|14|MF|NED|Mylian Jimenez|
+347|ADO Den Haag|squad|15|DF|NED|Milan Hokke|
+347|ADO Den Haag|squad|16|MF|NED|Finn de Bruin|
+347|ADO Den Haag|squad|17|FW|USA|Jalen Hawkins|
+347|ADO Den Haag|squad|18|DF|GUI|Sekou Sylla|
+347|ADO Den Haag|squad|19|FW|AUT|Luka Reischl|
+347|ADO Den Haag|squad|20|GK|KEN|Caleb Kramer|
+347|ADO Den Haag|squad|21|FW|AUS|Cameron Peupion|
+347|ADO Den Haag|squad|22|DF|GER|Lasse Wilhelm|
+347|ADO Den Haag|squad|23|GK|GER|Niclas Thiede|
+347|ADO Den Haag|squad|24|FW|ESP|Álex Pozo|
+347|ADO Den Haag|squad|25|MF|FIN|Juho Kilo|
+347|ADO Den Haag|squad|27|FW|CUW|Nigel Thomas|
+347|ADO Den Haag|squad|32|FW|NED|Dani van Loenen|
+347|ADO Den Haag|squad|33|MF|CZE|Matěj Šín|on loan from AZ
+347|ADO Den Haag|squad|35|DF|SUR|Sanyika Bergtop|
+347|ADO Den Haag|squad|46|FW|CZE|Yannick Eduardo|on loan from TSG Hoffenheim
+347|ADO Den Haag|squad|77|FW|HUN|Donát Bárány|
+347|ADO Den Haag|loaned_out||||Senna Westerveld|Quick Boys
+348|AFC Ajax|squad|1|GK|GER|Marc-André ter Stegen|on loan from Barcelona
+348|AFC Ajax|squad|2|DF|BRA|Lucas Rosa|
+348|AFC Ajax|squad|3|DF|DEN|Anton Gaaei|
+348|AFC Ajax|squad|4|MF|MAR|Sofyan Amrabat|
+348|AFC Ajax|squad|5|DF|NED|Owen Wijndal|
+348|AFC Ajax|squad|6|DF|GER|Thilo Kehrer|on loan from Monaco
+348|AFC Ajax|squad|7|FW|CIV|Simon Adingra|on loan from Sunderland
+348|AFC Ajax|squad|8|MF|GER|Julian Brandt|
+348|AFC Ajax|squad|9|FW|DEN|Kasper Dolberg|
+348|AFC Ajax|squad|10|MF|ISR|Oscar Gloukh|
+348|AFC Ajax|squad|11|MF|UKR|Viktor Tsyhankov|
+348|AFC Ajax|squad|12|DF|BRA|Caio Henrique|
+348|AFC Ajax|squad|15|DF|NED|Youri Baas|
+348|AFC Ajax|squad|17|DF|NED|Daley Blind|
+348|AFC Ajax|squad|18|MF|NED|Davy Klaassen|captain
+348|AFC Ajax|squad|20|FW|NOR|Oliver Edvardsen|
+348|AFC Ajax|squad|21|DF|ESP|Jofre Torrents|
+348|AFC Ajax|squad|22|GK|NED|Joeri Heerkens|
+348|AFC Ajax|squad|23|FW|NED|Steven Berghuis|vice-captain
+348|AFC Ajax|squad|24|MF|COD|Jorthy Mokio|
+348|AFC Ajax|squad|26|GK|IDN|Maarten Paes|
+348|AFC Ajax|squad|28|MF|MLI|Yves Bissouma|
+348|AFC Ajax|squad|30|DF|NED|Aaron Bouwman|
+348|AFC Ajax|squad|36|DF|NED|Dies Janse|
+348|AFC Ajax|squad|38|FW|BRA|Marcos Leonardo|
+348|AFC Ajax|squad|43|MF|MAR|Rayane Bounida|
+348|AFC Ajax|squad|67|MF|NED|Mohamed Abdalla|
+348|AFC Ajax|squad|68|MF|MAR|Abdellah Ouazane|
+348|AFC Ajax|squad|99|FW|NGR|Tolu Arokodare|on loan from Wolverhampton Wanderers
+348|AFC Ajax|loaned_out||||Gastón Ávila|Rosario Central
+348|AFC Ajax|loaned_out||||Josip Šutalo|Lazio
+348|AFC Ajax|loaned_out||||Youri Regeer|Werder Bremen
+348|AFC Ajax|loaned_out||||Maher Carrizo|Copenhagen
+348|AFC Ajax|loaned_out||||Don-Angelo Konadu|Lommel
+349|SC Cambuur|squad|1|GK|NED|Thijs Jansen|
+349|SC Cambuur|squad|2|DF|ITA|Devid Eugene Bouah|
+349|SC Cambuur|squad|3|DF|NED|Jorn Berkhout|
+349|SC Cambuur|squad|4|DF|MAR|Ismaël Baouf|
+349|SC Cambuur|squad|6|DF|NED|Jamal Amofa|
+349|SC Cambuur|squad|7|FW|MAR|Sami Bouhoudane|
+349|SC Cambuur|squad|8|MF|CUW|Nicky Souren|
+349|SC Cambuur|squad|9|FW|NED|Skye Vink|
+349|SC Cambuur|squad|10|MF|MAR|Rafik El Arguioui|on loan from Utrecht
+349|SC Cambuur|squad|11|FW|FRA|Ilyes Hamache|
+349|SC Cambuur|squad|13|FW|AUT|Nicolas Binder|
+349|SC Cambuur|squad|14|MF|NED|Ryan van de Pavert|on loan from Jong Ajax
+349|SC Cambuur|squad|15|FW|NOR|Fabian Kvam|
+349|SC Cambuur|squad|16|DF|NED|Rik Mulders|
+349|SC Cambuur|squad|17|MF|FRA|Ethan Apkakou|
+349|SC Cambuur|squad|18|MF|NED|Wiebe van der Heide|
+349|SC Cambuur|squad|19|FW|NED|Danyello Look|
+349|SC Cambuur|squad|20|MF|NED|Daan Visser|
+349|SC Cambuur|squad|21|GK|NED|Jasper Meijster|
+349|SC Cambuur|squad|23|DF|NED|Lucas Jetten|
+349|SC Cambuur|squad|24|GK|NED|Matthijs Kalisvaart|
+349|SC Cambuur|squad|27|DF|NED|Wiebe Kooistra|
+349|SC Cambuur|squad|28|DF|FRA|Morgan Costarelli|
+349|SC Cambuur|squad|29|FW|NED|Iwan Henstra|
+349|SC Cambuur|squad|33|MF|BEL|Mathieu Maertens|
+349|SC Cambuur|squad||DF|NED|Billy van Duijl|on loan from AZ Alkmaar
+351|KV Kortrijk|squad|1|GK|ISL|Patrik Gunnarsson|
+351|KV Kortrijk|squad|3|DF|SCO|Matthew Anderson|
+351|KV Kortrijk|squad|4|DF|ENG|Harrison Murray-Campbell|on loan from Chelsea
+351|KV Kortrijk|squad|5|DF|CMR|James Ndjeungoue|
+351|KV Kortrijk|squad|6|MF|BEL|Liam De Smet|
+351|KV Kortrijk|squad|7|FW|ISR|Suf Podgoreanu|
+351|KV Kortrijk|squad|8|MF|CHI|Nayel Mehssatou|
+351|KV Kortrijk|squad|10|FW|CTA|Goduine Koyalipou|on loan from Lens
+351|KV Kortrijk|squad|11|FW|RSA|Shandre Campbell|
+351|KV Kortrijk|squad|13|GK|BEL|Ebbe De Vlaeminck|
+351|KV Kortrijk|squad|14|FW|BEL|Lenn De Smet|
+351|KV Kortrijk|squad|15|DF|CIV|Mohamed Fofana|
+351|KV Kortrijk|squad|17|MF|SVN|Rok Štorman|on loan from Karviná
+351|KV Kortrijk|squad|18|FW|BEL|Jellert Van Landschoot|
+351|KV Kortrijk|squad|19|MF|BEL|Brecht Dejaegere|
+351|KV Kortrijk|squad|20|DF|BEL|Gilles Dewaele|
+351|KV Kortrijk|squad|22|DF|BEL|Gilles Ruyssen|
+351|KV Kortrijk|squad|24|MF|SWE|Jamie Roche|
+351|KV Kortrijk|squad|31|GK|SRB|Marko Ilić|
+351|KV Kortrijk|squad|35|MF|BEL|Boris Lambert|
+351|KV Kortrijk|squad|36|DF|FRA|Rudy Kohon|
+351|KV Kortrijk|squad|39|FW|MAD|Bryan Adinany|
+351|KV Kortrijk|squad|68|FW|GLP|Thierry Ambrose|
+351|KV Kortrijk|squad|71|MF|JPN|Ken Masui|on loan from Nagoya Grampus
+351|KV Kortrijk|squad|90|FW|NGA|Sixtus Ogbuehi|
+351|KV Kortrijk|loaned_out||||Kyan Himpe|Lierse
+352|Lommel SK|squad|1|GK|MNE|Nikola Ivezić|
+352|Lommel SK|squad|2|FW|NED|Jason van Duiven|
+352|Lommel SK|squad|3|DF|ENG|Timothy Eyoma|
+352|Lommel SK|squad|4|DF|BEL|Shawn Adewoye|
+352|Lommel SK|squad|5|DF|BEL|Dries Wouters|
+352|Lommel SK|squad|6|MF|IDN|Joey Pelupessy|
+352|Lommel SK|squad|7|FW|FIN|Juho Talvitie|
+352|Lommel SK|squad|8|MF|BEL|Nicolas Rommens|
+352|Lommel SK|squad|9|FW|NED|Don-Angelo Konadu|on loan from Ajax
+352|Lommel SK|squad|10|FW|BEL|Tom Reyners|
+352|Lommel SK|squad|11|FW|FRA|Stredair Appuah|on loan from Palermo
+352|Lommel SK|squad|13|DF|COL|Jhon Banguera|
+352|Lommel SK|squad|14|DF|SWE|Jesper Tolinsson|
+352|Lommel SK|squad|15|MF|BEL|Lucas Schoofs|captain
+352|Lommel SK|squad|22|MF|SRB|Đorđe Gordić|
+352|Lommel SK|squad|23|GK|BEL|Matthias Pieklak|
+352|Lommel SK|squad|25|DF|BEL|Josias Lama|
+352|Lommel SK|squad|30|FW|NED|Ralf Seuntjens|
+352|Lommel SK|squad|33|GK|BEL|Rik Vercauteren|
+352|Lommel SK|squad|34|DF|GHA|Henry Oware|
+352|Lommel SK|squad|41|MF|NOR|Sverre Nypan|on loan from Manchester City
+352|Lommel SK|squad|44|MF|ENG|Isaiah Dada-Mascoll|on loan from Manchester City
+352|Lommel SK|squad|47|DF|NED|Tristan Gooijer|
+352|Lommel SK|squad|73|FW|BEL|Alexander Reumers|
+352|Lommel SK|squad|79|DF|NED|Sam de Grand|on loan from AZ Alkmaar
+352|Lommel SK|squad||FW|NGA|Elijah Odede|on loan from Troyes
+352|Lommel SK|loaned_out||||Filip Krastev|PEC Zwolle
+352|Lommel SK|loaned_out||||John Montaño|Independiente Medellín
+352|Lommel SK|loaned_out||||Théo Mununga|Royal Knokke FC
+352|Lommel SK|loaned_out||||Faniel Tewelde|Odd
+353|Union Saint-Gilloise|squad|1|GK|BEL|Vic Chambaere|
+353|Union Saint-Gilloise|squad|4|DF|FRA|Nohim Chibani|
+353|Union Saint-Gilloise|squad|5|DF|ARG|Kevin Mac Allister|
+353|Union Saint-Gilloise|squad|6|MF|BEL|Kamiel Van de Perre|
+353|Union Saint-Gilloise|squad|8|MF|ALG|Adem Zorgane|
+353|Union Saint-Gilloise|squad|9|FW|GER|Mateo Biondić|
+353|Union Saint-Gilloise|squad|10|MF|BEL|Anouar Ait El Hadj|
+353|Union Saint-Gilloise|squad|11|FW|BRA|Guilherme Smith|
+353|Union Saint-Gilloise|squad|12|GK|BFA|Hervé Koffi|on loan from Lens
+353|Union Saint-Gilloise|squad|13|FW|ECU|Kevin Rodríguez|
+353|Union Saint-Gilloise|squad|14|MF|NED|Ivan Pavlić|
+353|Union Saint-Gilloise|squad|17|MF|BEL|Rob Schoofs|
+353|Union Saint-Gilloise|squad|18|GK|GEO|Giorgi Kavlashvili|
+353|Union Saint-Gilloise|squad|20|FW|ARG|Dylan Aquino|
+353|Union Saint-Gilloise|squad|21|DF|BEL|Denzel De Roeve|
+353|Union Saint-Gilloise|squad|23|MF|SWE|Besfort Zeneli|
+353|Union Saint-Gilloise|squad|25|FW|BEL|Ilan Hurtevent|
+353|Union Saint-Gilloise|squad|26|DF|ENG|Ross Sykes|
+353|Union Saint-Gilloise|squad|27|DF|BEL|Louis Patris|
+353|Union Saint-Gilloise|squad|28|MF|ROU|Darius Olaru|
+353|Union Saint-Gilloise|squad|29|DF|SEN|Massiré Sylla|
+353|Union Saint-Gilloise|squad|30|FW|AUT|Raul Florucz|
+353|Union Saint-Gilloise|squad|38|FW|RSA|Relebohile Mofokeng|
+353|Union Saint-Gilloise|squad|55|DF|JPN|Nikki Havenaar|
+353|Union Saint-Gilloise|squad|71|GK|BEL|Keo Boets|
+353|Union Saint-Gilloise|squad|80|MF|CZE|Ondřej Kričfaluši|
+353|Union Saint-Gilloise|loaned_out||||Mamadou Thierno Barry|Al Shabab
+353|Union Saint-Gilloise|loaned_out||||Mohammed Fuseini|Derby County
+353|Union Saint-Gilloise|loaned_out||||Promise David|Brighton
+353|Union Saint-Gilloise|loaned_out||||Fedde Leysen|Sassuolo
+354|Waasland-Beveren|squad|1|GK|GER|Johannes Schenk|on loan from Preußen Münster
+354|Waasland-Beveren|squad|2|DF|ENG|Dominic Thompson|
+354|Waasland-Beveren|squad|3|DF|BEL|Viktor Boone|
+354|Waasland-Beveren|squad|4|DF|BEL|Christophe Janssens|
+354|Waasland-Beveren|squad|5|FW|BEL|Chris Lokesa|
+354|Waasland-Beveren|squad|7|FW|FRA|Ilyes Najim|
+354|Waasland-Beveren|squad|8|MF|BEL|Ferre Slegers|
+354|Waasland-Beveren|squad|9|FW|BFA|Elohim Kaboré|on loan from Hammarby
+354|Waasland-Beveren|squad|10|MF|BEL|Guillaume De Schryver|
+354|Waasland-Beveren|squad|11|FW|SEN|Junior Diouf|
+354|Waasland-Beveren|squad|14|MF|BEL|Léandre Kuavita|
+354|Waasland-Beveren|squad|16|GK|BEL|Maxim Deman|
+354|Waasland-Beveren|squad|17|FW|CUW|Jearl Margaritha|
+354|Waasland-Beveren|squad|18|MF|BEL|Sieben Dewaele|
+354|Waasland-Beveren|squad|20|GK|BEL|Milan De Schutter|
+354|Waasland-Beveren|squad|21|DF|LUX|Laurent Jans|captain
+354|Waasland-Beveren|squad|22|MF|BEL|Christian Brüls|
+354|Waasland-Beveren|squad|24|MF|BEL|Arno Verschueren|
+354|Waasland-Beveren|squad|25|DF|MLI|Cheick Oumar Konaté|
+354|Waasland-Beveren|squad|26|MF|COD|Noah Mawete|
+354|Waasland-Beveren|squad|31|DF|BEL|Bruno Godeau|
+354|Waasland-Beveren|squad|34|FW|RSA|Kurt Abrahams|
+354|Waasland-Beveren|squad|35|DF|FRA|Yoni Gomis|on loan from Strasbourg
+354|Waasland-Beveren|squad|44|MF|GUI|Cheick Condé|
+354|Waasland-Beveren|squad|48|DF|AUT|Jannik Robatsch|on loan from St. Pauli
+354|Waasland-Beveren|squad|75|MF|BEL|Tibe S'Jongers|
+354|Waasland-Beveren|squad|77|DF|CMR|Stephane Keller|on loan from Al-Ittihad
+354|Waasland-Beveren|squad|84|GK|COD|Josua Lusamba|
+354|Waasland-Beveren|squad|92|FW|BEL|Lennart Mertens|
+354|Waasland-Beveren|squad||FW|NGR|Victor Olatunji|on loan from Real Salt Lake
+355|Amed Sportif Faaliyetler|squad|3|DF|TUR|Miraç Acer|
+355|Amed Sportif Faaliyetler|squad|4|DF|SCO|David Bates|
+355|Amed Sportif Faaliyetler|squad|5|DF|KOS|Lumbardh Dellova|
+355|Amed Sportif Faaliyetler|squad|6|MF|AUT|Cem Üstündag|
+355|Amed Sportif Faaliyetler|squad|7|MF|KOS|Ermal Krasniqi|
+355|Amed Sportif Faaliyetler|squad|8|MF|TUR|Furkan Soyalp|
+355|Amed Sportif Faaliyetler|squad|10|FW|SUI|Samuel Ballet|
+355|Amed Sportif Faaliyetler|squad|11|FW|NGR|Yira Sor|
+355|Amed Sportif Faaliyetler|squad|17|DF|TUR|Umut Meraş|
+355|Amed Sportif Faaliyetler|squad|18|MF|GER|Gökhan Gül|
+355|Amed Sportif Faaliyetler|squad|19|FW|TUR|Muhammed Yıldırım|
+355|Amed Sportif Faaliyetler|squad|21|DF|TUR|Mehmet Yeşil|
+355|Amed Sportif Faaliyetler|squad|22|MF|MAD|Rayan Raveloson|
+355|Amed Sportif Faaliyetler|squad|27|GK|TUR|Burak Bozan|
+355|Amed Sportif Faaliyetler|squad|33|DF|GUI|Amadou Cissé|
+355|Amed Sportif Faaliyetler|squad|40|GK|CIV|Alban Lafont|
+355|Amed Sportif Faaliyetler|squad|45|FW|SEN|Mbaye Diagne|captain
+355|Amed Sportif Faaliyetler|squad|47|DF|TUR|Kahraman Demirtaş|
+355|Amed Sportif Faaliyetler|squad|74|FW|SYR|Mohamed Khalil|
+355|Amed Sportif Faaliyetler|squad|81|DF|TUR|Ali Turap Bülbül|
+355|Amed Sportif Faaliyetler|squad|91|MF|ISR|Dia Saba|
+355|Amed Sportif Faaliyetler|squad|93|MF|COM|Rayan Lutin|
+355|Amed Sportif Faaliyetler|squad|97|MF|TUR|Berk Kızıldemir|
+355|Amed Sportif Faaliyetler|squad|99|FW|NGR|Gift Orban|on loan from TSG Hoffenheim
+355|Amed Sportif Faaliyetler|squad||GK|TUR|Veysel Sapan|
+355|Amed Sportif Faaliyetler|squad||DF|TUR|Berat Perçin|
+355|Amed Sportif Faaliyetler|loaned_out||||Ayaz Arslan|Bitlis 1916 FSK
+356|Erzurumspor Futbol Kulübü|squad|1|GK|TUR|Ertuğrul Taşkıran|
+356|Erzurumspor Futbol Kulübü|squad|2|DF|IRL|Festy Ebosele|on loan from İstanbul Başakşehir
+356|Erzurumspor Futbol Kulübü|squad|3|DF|TUR|Yakup Kırtay|
+356|Erzurumspor Futbol Kulübü|squad|4|DF|KOS|Amar Gërxhaliu|
+356|Erzurumspor Futbol Kulübü|squad|5|MF|TUR|Murat Akpınar|
+356|Erzurumspor Futbol Kulübü|squad|6|MF|BEL|Brandon Baiye|
+356|Erzurumspor Futbol Kulübü|squad|7|FW|TUR|İlkan Sever|
+356|Erzurumspor Futbol Kulübü|squad|8|MF|TUR|Sefa Akgün|
+356|Erzurumspor Futbol Kulübü|squad|9|FW|SUR|Gyrano Kerk|
+356|Erzurumspor Futbol Kulübü|squad|10|FW|TUR|Eren Tozlu|
+356|Erzurumspor Futbol Kulübü|squad|11|FW|BRA|Fernando Andrade|
+356|Erzurumspor Futbol Kulübü|squad|15|DF|GEO|Guram Giorbelidze|
+356|Erzurumspor Futbol Kulübü|squad|17|GK|TUR|Erkan Anapa|
+356|Erzurumspor Futbol Kulübü|squad|18|DF|BIH|Nihad Mujakić|
+356|Erzurumspor Futbol Kulübü|squad|19|FW|CIV|Ibrahim Diabate|on loan from GAIS
+356|Erzurumspor Futbol Kulübü|squad|20|FW|POR|Miguel Cardoso|
+356|Erzurumspor Futbol Kulübü|squad|22|DF|TUR|Mustafa Yumlu|captain
+356|Erzurumspor Futbol Kulübü|squad|23|DF|TUR|Cengizhan Bayrak|
+356|Erzurumspor Futbol Kulübü|squad|25|DF|TUR|Ömer Arda Kara|
+356|Erzurumspor Futbol Kulübü|squad|31|GK|CRO|Matija Orbanić|
+356|Erzurumspor Futbol Kulübü|squad|42|MF|GHA|Elisha Owusu|
+356|Erzurumspor Futbol Kulübü|squad|53|DF|TUR|Orhan Ovacıklı|
+356|Erzurumspor Futbol Kulübü|squad|65|FW|CHI|Martín Rodríguez|
+356|Erzurumspor Futbol Kulübü|squad|90|FW|AZE|Nariman Akhundzade|on loan from Columbus Crew
+356|Erzurumspor Futbol Kulübü|squad|97|FW|TUR|Kerem Erener|
+356|Erzurumspor Futbol Kulübü|squad|99|FW|TUR|Mustafa Fettahoğlu|
+356|Erzurumspor Futbol Kulübü|squad||DF|TUR|Emre Erdem|
+356|Erzurumspor Futbol Kulübü|squad||MF|TUR|Enes Karakaş|
+356|Erzurumspor Futbol Kulübü|squad||DF|TUR|Enes Yiğit|
+356|Erzurumspor Futbol Kulübü|squad||GK|TUR|Şerefhan Sağlık|
+356|Erzurumspor Futbol Kulübü|squad||DF|TUR|Yiğit Baran Karaoğlan|
+356|Erzurumspor Futbol Kulübü|loaned_out||||Ali Ülgen|Bandırmaspor
+356|Erzurumspor Futbol Kulübü|loaned_out||||Furkan Özhan|Vanspor
+356|Erzurumspor Futbol Kulübü|loaned_out||||Mert Önal|Sebat FK
+357|Çorum Futbol Kulübü|squad|1|GK|BRA|Marcos Felipe|
+357|Çorum Futbol Kulübü|squad|2|DF|TUR|Çağlar Söyüncü|
+357|Çorum Futbol Kulübü|squad|3|MF|TUR|Berat Özdemir|
+357|Çorum Futbol Kulübü|squad|4|DF|TUR|Serdar Saatçı|
+357|Çorum Futbol Kulübü|squad|5|DF|POR|Alexandre Penetra|on loan from AZ
+357|Çorum Futbol Kulübü|squad|6|DF|CRO|Hrvoje Smolčić|
+357|Çorum Futbol Kulübü|squad|7|FW|TUR|Cengiz Ünder|
+357|Çorum Futbol Kulübü|squad|8|MF|NOR|Markus Karlsbakk|
+357|Çorum Futbol Kulübü|squad|9|FW|SEN|Mame Thiam|
+357|Çorum Futbol Kulübü|squad|10|MF|CIV|Mohamed Diomande|
+357|Çorum Futbol Kulübü|squad|11|DF|TUR|Gökhan Sazdağı|
+357|Çorum Futbol Kulübü|squad|14|FW|GER|Youssoufa Moukoko|on loan from Copenhagen
+357|Çorum Futbol Kulübü|squad|15|DF|TUR|Arda Şengül|
+357|Çorum Futbol Kulübü|squad|16|MF|ANG|Fredy|captain
+357|Çorum Futbol Kulübü|squad|17|MF|TUR|Emircan Gürlük|
+357|Çorum Futbol Kulübü|squad|18|GK|TUR|Erhan Erentürk|
+357|Çorum Futbol Kulübü|squad|19|FW|VEN|Jesús Ramírez|
+357|Çorum Futbol Kulübü|squad|20|MF|ALB|Ylber Ramadani|
+357|Çorum Futbol Kulübü|squad|21|MF|TUR|Göktan Gürpüz|on loan from Trabzonspor
+357|Çorum Futbol Kulübü|squad|22|DF|TUR|Hüseyin Bulut|
+357|Çorum Futbol Kulübü|squad|23|FW|TUR|Hasanege Akdoğan|
+357|Çorum Futbol Kulübü|squad|24|DF|ROU|Andrei Borza|
+357|Çorum Futbol Kulübü|squad|26|MF|BIH|Ermin Mahmić|
+357|Çorum Futbol Kulübü|squad|30|MF|TUR|Ahmed Ildız|
+357|Çorum Futbol Kulübü|squad|45|FW|TUR|Furkan Çetinkaya|
+357|Çorum Futbol Kulübü|squad|54|GK|TUR|Arif Şimşir|
+357|Çorum Futbol Kulübü|squad|88|DF|TUR|Cemali Sertel|
+357|Çorum Futbol Kulübü|squad|89|FW|GRE|Alexandros Kyziridis|
+357|Çorum Futbol Kulübü|loaned_out||||Hasan Emre Yeşilyurt|Sarıyer
+357|Çorum Futbol Kulübü|loaned_out||||Eren Karadağ|Sarıyer
+357|Çorum Futbol Kulübü|loaned_out||||Hasan Abdulkareem|Al-Zawraa
+357|Çorum Futbol Kulübü|loaned_out||||Mert Aktaş|Güzide Gebze SK
+357|Çorum Futbol Kulübü|loaned_out||||Osman Şahin|Erciyes 38 FK
+357|Çorum Futbol Kulübü|loaned_out||||Semih Akyıldız|Ankara Demirspor
+357|Çorum Futbol Kulübü|loaned_out||||Kenan Fakılı|Bodrumspor

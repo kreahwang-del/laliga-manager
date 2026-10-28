@@ -1,0 +1,1352 @@
+club_id|club|status|number|pos|nat|player|note
+38|Real Madrid|squad|1|GK|Belgium|Thibaut Courtois|
+38|Real Madrid|squad|3|DF|Brazil|Éder Militão|
+38|Real Madrid|squad|5|MF|England|Jude Bellingham|
+38|Real Madrid|squad|6|MF|France|Eduardo Camavinga|
+38|Real Madrid|squad|7|FW|Brazil|Vinícius Júnior|vice-captain
+38|Real Madrid|squad|8|MF|Uruguay|Federico Valverde|captain
+38|Real Madrid|squad|9|FW|Brazil|Endrick|
+38|Real Madrid|squad|10|FW|France|Kylian Mbappé|
+38|Real Madrid|squad|11|FW|Brazil|Rodrygo|
+38|Real Madrid|squad|12|DF|England|Trent Alexander-Arnold|
+38|Real Madrid|squad|13|GK|Ukraine|Andriy Lunin|
+38|Real Madrid|squad|14|MF|France|Aurélien Tchouaméni|
+38|Real Madrid|squad|15|MF|Turkey|Arda Güler|
+38|Real Madrid|squad|16|FW|Spain|Gonzalo García|
+38|Real Madrid|squad|17|DF|Spain|Raúl Asencio|
+38|Real Madrid|squad|18|DF|Spain|Álvaro Carreras|
+38|Real Madrid|squad|20|DF|Spain|Fran García|
+38|Real Madrid|squad|21|FW|Morocco|Brahim Díaz|
+38|Real Madrid|squad|22|DF|Germany|Antonio Rüdiger|
+38|Real Madrid|squad|23|DF|France|Ferland Mendy|
+38|Real Madrid|squad|24|DF|Spain|Dean Huijsen|
+38|Real Madrid|squad|30|FW|Argentina|Franco Mastantuono|
+38|Real Madrid|squad|—|DF|Spain|Marc Cucurella|
+38|Real Madrid|squad|—|DF|France|Ibrahima Konaté|
+38|Real Madrid|squad|—|MF|Portugal|Bernardo Silva|
+40|Atlético Madrid|squad|1|GK|Argentina|Juan Musso|
+40|Atlético Madrid|squad|3|MF|Mexico|Obed Vargas|
+40|Atlético Madrid|squad|4|MF|Spain|Rodrigo Mendoza|
+40|Atlético Madrid|squad|5|MF|United States|Johnny Cardoso|
+40|Atlético Madrid|squad|6|MF|Spain|Koke|captain
+40|Atlético Madrid|squad|7|MF|South Korea|Lee Kang-in|
+40|Atlético Madrid|squad|8|MF|Spain|Pablo Barrios|
+40|Atlético Madrid|squad|9|FW|Norway|Alexander Sørloth|
+40|Atlético Madrid|squad|10|MF|Spain|Álex Baena|
+40|Atlético Madrid|squad|11|FW|Nigeria|Ademola Lookman|
+40|Atlético Madrid|squad|13|GK|Slovenia|Jan Oblak|vice-captain
+40|Atlético Madrid|squad|14|MF|Spain|Marcos Llorente|
+40|Atlético Madrid|squad|15|FW|Canada|Jonathan David|on loan from Juventus
+40|Atlético Madrid|squad|16|MF|Spain|Arnau Ortiz|
+40|Atlético Madrid|squad|17|DF|Slovakia|Dávid Hancko|
+40|Atlético Madrid|squad|18|DF|Spain|Marc Pubill|
+40|Atlético Madrid|squad|19|FW|Argentina|Julián Álvarez|
+40|Atlético Madrid|squad|20|MF|Argentina|Giuliano Simeone|
+40|Atlético Madrid|squad|21|DF|Argentina|Cristian Romero|
+40|Atlético Madrid|squad|22|DF|Spain|Alejandro Grimaldo|
+40|Atlético Madrid|squad|23|MF|Denmark|Morten Hjulmand|
+40|Atlético Madrid|squad|24|DF|Spain|Robin Le Normand|
+40|Atlético Madrid|squad|25|GK|Spain|Salvi Esquivel|
+40|Atlético Madrid|squad|30|DF|Spain|Dani Martínez|
+40|Atlético Madrid|squad|27|DF|Spain|Jorge Domínguez|
+40|Atlético Madrid|squad|29|FW|Spain|Miguel Cubo|
+40|Atlético Madrid|squad|45|DF|Spain|Javi Gil|on loan from Juventus
+40|Atlético Madrid|squad|46|MF|Spain|Jorge Castillo|
+40|Atlético Madrid|loaned_out|—|GK|Romania|Horațiu Moldovan|Eyüpspor
+40|Atlético Madrid|loaned_out|—|DF|Uruguay|José María Giménez|Deportivo A Coruña
+40|Atlético Madrid|loaned_out|—|DF|France|Clément Lenglet|Benfica
+40|Atlético Madrid|loaned_out|—|MF|France|Thomas Lemar|Elche
+40|Atlético Madrid|loaned_out|—|FW|Spain|Carlos Martín|Hajduk Split
+41|Villarreal|squad|1|GK|Brazil|Luiz Júnior|
+41|Villarreal|squad|2|DF|Cape Verde|Logan Costa|
+41|Villarreal|squad|3|DF|United States|Alex Freeman|
+41|Villarreal|squad|4|DF|Spain|Rafa Marín|on loan from Napoli
+41|Villarreal|squad|5|DF|DR Congo|Willy Kambwala|
+41|Villarreal|squad|6|DF|Spain|Pau Navarro|
+41|Villarreal|squad|7|FW|Spain|Gerard Moreno|captain
+41|Villarreal|squad|8|DF|Argentina|Juan Foyth|4th captain
+41|Villarreal|squad|9|FW|Georgia|Georges Mikautadze|
+41|Villarreal|squad|10|MF|Spain|Dani Parejo|vice-captain
+41|Villarreal|squad|11|FW|Spain|Alfon González|on loan from Sevilla
+41|Villarreal|squad|12|DF|Portugal|Renato Veiga|
+41|Villarreal|squad|13|GK|Spain|Diego Conde|
+41|Villarreal|squad|14|MF|Spain|Santi Comesaña|3rd captain
+41|Villarreal|squad|15|DF|Uruguay|Santiago Mouriño|
+41|Villarreal|squad|16|MF|Ghana|Thomas Partey|
+41|Villarreal|squad|17|MF|Canada|Tajon Buchanan|
+41|Villarreal|squad|18|MF|Senegal|Pape Gueye|
+41|Villarreal|squad|19|FW|Ivory Coast|Nicolas Pépé|
+41|Villarreal|squad|20|MF|Spain|Alberto Moleiro|
+41|Villarreal|squad|21|FW|Canada|Tani Oluwaseyi|
+41|Villarreal|squad|22|FW|Spain|Ayoze Pérez|
+41|Villarreal|squad|23|DF|Spain|Sergi Cardona|5th captain
+41|Villarreal|squad|24|DF|Spain|Alfonso Pedraza|
+41|Villarreal|squad|25|GK|Spain|Arnau Tenas|
+41|Villarreal|squad|27|DF|Ivory Coast|Jean Ives Valou|
+41|Villarreal|squad|28|FW|Mali|Mahamoud Barry|
+41|Villarreal|squad|29|DF|Spain|Ismael Sierra|on loan from Estoril
+41|Villarreal|squad|30|DF|Spain|Daniel Budesca|
+41|Villarreal|squad|31|GK|Spain|Rubén Gómez|
+41|Villarreal|squad|32|MF|Spain|Hugo López|
+41|Villarreal|squad|33|FW|Spain|Pau Cabanes|
+41|Villarreal|squad|36|FW|Spain|Víctor Moreno|
+41|Villarreal|squad|37|MF|Spain|Carlos Maciá|
+41|Villarreal|squad|38|MF|Senegal|Alassane Diatta|
+41|Villarreal|squad|40|FW|Spain|Joselillo Gaitán|
+41|Villarreal|loaned_out|—|GK|Spain|Alex Quevedo|Cacereño
+41|Villarreal|loaned_out|—|DF|Spain|Carlos Romero|Espanyol
+41|Villarreal|loaned_out|—|DF|Spain|Fran Gil|Europa
+41|Villarreal|loaned_out|—|DF|Spain|Toni Tamarit|Mirandés
+41|Villarreal|loaned_out|—|MF|Argentina|Thiago Ojeda|Cultural Leonesa
+41|Villarreal|loaned_out|—|MF|Spain|Dani Requena|Córdoba
+41|Villarreal|loaned_out|—|MF|Spain|Ramon Terrats|Espanyol
+41|Villarreal|loaned_out|—|MF|Argentina|Thiago Fernández|Oviedo
+41|Villarreal|loaned_out|—|FW|Morocco|Ilias Akhomach|Rayo Vallecano
+41|Villarreal|loaned_out|—|FW|Spain|Álex Forés|Oviedo
+41|Villarreal|loaned_out|—|FW|Spain|Víctor Moreno|Cultural Leonesa
+39|Barcelona|squad|1|GK|Spain|Joan Garcia|
+39|Barcelona|squad|13|GK|Poland|Wojciech Szczęsny|
+39|Barcelona|squad|25|GK|Croatia|Dominik Livaković|
+39|Barcelona|squad|2|DF|Portugal|João Cancelo|
+39|Barcelona|squad|3|DF|Spain|Alejandro Balde|
+39|Barcelona|squad|5|DF|Spain|Pau Cubarsí|
+39|Barcelona|squad|12|DF|Spain|Xavi Espart|
+39|Barcelona|squad|15|DF|Denmark|Andreas Christensen|
+39|Barcelona|squad|18|DF|Spain|Gerard Martín|
+39|Barcelona|squad|23|DF|France|Jules Koundé|
+39|Barcelona|squad|24|DF|Spain|Eric García|3rd captain
+39|Barcelona|squad|4|MF|Spain|Brian Fariñas|
+39|Barcelona|squad|6|MF|Spain|Gavi|
+39|Barcelona|squad|7|MF|Spain|Fermín López|
+39|Barcelona|squad|8|MF|Spain|Pedri|vice-captain
+39|Barcelona|squad|16|MF|Spain|Rodri|
+39|Barcelona|squad|20|MF|Spain|Dani Olmo|
+39|Barcelona|squad|21|MF|Netherlands|Frenkie de Jong|4th captain
+39|Barcelona|squad|22|MF|Spain|Marc Bernal|
+39|Barcelona|squad|9|FW|Brazil|Gabriel Jesus|
+39|Barcelona|squad|10|FW|Spain|Lamine Yamal|5th captain
+39|Barcelona|squad|11|FW|Brazil|Raphinha|captain
+39|Barcelona|squad|14|FW|Germany|Karim Adeyemi|
+39|Barcelona|squad|17|FW|England|Anthony Gordon|
+39|Barcelona|squad|19|FW|Sweden|Roony Bardghji|
+39|Barcelona|squad|27|FW|Belgium|Jesse Bisiwu|youth/B table
+39|Barcelona|squad|29|FW|Egypt|Hamza Abdelkarim|youth/B table
+39|Barcelona|squad|30|MF|Spain|Ebrima Tunkara|youth/B table
+39|Barcelona|squad|31|GK|Spain|Eder Aller|youth/B table
+39|Barcelona|squad|32|MF|Israel|Orian Goren|youth/B table
+39|Barcelona|squad|33|DF|Spain|Jordi Pesquer|youth/B table
+39|Barcelona|squad|35|GK|Spain|Iker Rodríguez|youth/B table
+39|Barcelona|squad|37|FW|Netherlands|Shane Kluivert|youth/B table
+39|Barcelona|squad|38|MF|Spain|Pedro Villar|youth/B table
+39|Barcelona|squad|39|DF|Spain|Landry Farré|youth/B table
+39|Barcelona|squad|40|DF|Spain|Guillem Víctor|youth/B table
+39|Barcelona|squad|41|DF|Spain|Àlex Campos|youth/B table
+42|Real Sociedad|squad|1|GK|Spain|Álex Remiro|
+42|Real Sociedad|squad|2|DF|Venezuela|Jon Aramburu|
+42|Real Sociedad|squad|3|DF|Spain|Aihen Muñoz|
+42|Real Sociedad|squad|4|MF|Spain|Jon Gorrotxategi|
+42|Real Sociedad|squad|5|DF|Spain|Igor Zubeldia|3rd captain
+42|Real Sociedad|squad|6|DF|Spain|Aritz Elustondo|vice-captain
+42|Real Sociedad|squad|7|FW|Spain|Ander Barrenetxea|
+42|Real Sociedad|squad|8|MF|Spain|Beñat Turrientes|
+42|Real Sociedad|squad|9|FW|Iceland|Orri Óskarsson|
+42|Real Sociedad|squad|10|FW|Spain|Mikel Oyarzabal|captain
+42|Real Sociedad|squad|11|FW|Portugal|Gonçalo Guedes|
+42|Real Sociedad|squad|12|MF|Venezuela|Yangel Herrera|
+42|Real Sociedad|squad|13|GK|Spain|Unai Marrero|
+42|Real Sociedad|squad|14|MF|Japan|Takefusa Kubo|
+42|Real Sociedad|squad|15|MF|Spain|Pablo Marín|
+42|Real Sociedad|squad|16|DF|Croatia|Duje Ćaleta-Car|on loan from Lyon
+42|Real Sociedad|squad|17|MF|Spain|Sergio Gómez|
+42|Real Sociedad|squad|18|MF|Spain|Carlos Soler|
+42|Real Sociedad|squad|19|FW|Spain|Jon Karrikaburu|
+42|Real Sociedad|squad|20|DF|Spain|Álvaro Odriozola|
+42|Real Sociedad|squad|21|MF|Russia|Arsen Zakharyan|
+42|Real Sociedad|squad|22|FW|Brazil|Wesley|on loan from Al-Nassr
+42|Real Sociedad|squad|23|MF|Spain|Brais Méndez|
+42|Real Sociedad|squad|24|MF|Croatia|Luka Sučić|
+42|Real Sociedad|squad|31|DF|Spain|Jon Martín|
+42|Real Sociedad|squad|33|DF|Spain|Iñaki Rupérez|
+42|Real Sociedad|squad|26|FW|Spain|Dani Díaz|
+42|Real Sociedad|squad|32|GK|Spain|Aitor Fraga|
+42|Real Sociedad|squad|34|FW|Spain|Arkaitz Mariezkurrena|
+42|Real Sociedad|squad|35|GK|Spain|Egoitz Arana|
+42|Real Sociedad|squad|36|MF|France|Alex Lebarbier|
+42|Real Sociedad|squad|38|DF|Spain|Luken Beitia|
+42|Real Sociedad|squad|40|FW|Spain|Alex Marchal|
+42|Real Sociedad|squad|41|GK|France|Theo Folgado|
+42|Real Sociedad|squad|42|FW|Spain|Gorka Carrera|
+42|Real Sociedad|squad|43|MF|Spain|Tomy Carbonell|
+42|Real Sociedad|squad|44|MF|Spain|Lander Astiazaran|
+42|Real Sociedad|squad|45|DF|Japan|Kazunari Kita|on loan from Kyoto Sanga
+42|Real Sociedad|squad|46|MF|Spain|Ibai Aguirre|
+42|Real Sociedad|squad|47|FW|Kenya|Job Ochieng|
+42|Real Sociedad|loaned_out|—|DF|Spain|Jon Pacheco|Alavés
+42|Real Sociedad|loaned_out|—|DF|Spain|Javi López|Oviedo
+42|Real Sociedad|loaned_out|—|FW|Spain|Carlos Fernández|Mirandés
+42|Real Sociedad|loaned_out|—|FW|Spain|Mikel Goti|Córdoba
+42|Real Sociedad|loaned_out|—|FW|Spain|Sydney Osazuwa|AZ Alkmaar
+43|Real Betis|squad|1|GK|Spain|Álvaro Valles|
+43|Real Betis|squad|2|DF|Spain|Héctor Bellerín|3rd captain
+43|Real Betis|squad|3|DF|Spain|Diego Llorente|
+43|Real Betis|squad|4|DF|Brazil|Natan|
+43|Real Betis|squad|5|DF|Spain|Marc Bartra|vice-captain
+43|Real Betis|squad|6|MF|Uruguay|Facundo Bernal|
+43|Real Betis|squad|7|FW|Brazil|Antony|
+43|Real Betis|squad|8|MF|Spain|Pablo Fornals|
+43|Real Betis|squad|9|FW|Colombia|Cucho Hernández|
+43|Real Betis|squad|10|FW|Morocco|Abde Ezzalzouli|
+43|Real Betis|squad|11|DF|Spain|Fran García|
+43|Real Betis|squad|12|DF|Spain|Ángel Ortiz|
+43|Real Betis|squad|13|GK|Spain|Diego Conde|on loan from Villarreal
+43|Real Betis|squad|14|FW|Spain|Iker Losada|
+43|Real Betis|squad|15|MF|Mexico|Álvaro Fidalgo|
+43|Real Betis|squad|16|DF|Argentina|Valentín Gómez|
+43|Real Betis|squad|17|MF|Spain|Rodrigo Riquelme|
+43|Real Betis|squad|18|MF|Colombia|Nelson Deossa|
+43|Real Betis|squad|19|FW|Republic of Ireland|Troy Parrott|
+43|Real Betis|squad|20|MF|Argentina|Giovanni Lo Celso|
+43|Real Betis|squad|21|MF|Spain|Marc Roca|
+43|Real Betis|squad|22|MF|Spain|Isco|captain
+43|Real Betis|squad|23|DF|Dominican Republic|Junior Firpo|
+43|Real Betis|squad|24|FW|Spain|Aitor Ruibal|4th captain
+43|Real Betis|squad|25|MF|Spain|Dani Ceballos|
+43|Real Betis|squad|27|FW|Spain|José Antonio Morante|
+43|Real Betis|squad|31|GK|Spain|Manu González|
+43|Real Betis|squad|40|GK|Spain|Álvaro de Pablo|on loan from Valladolid
+43|Real Betis|loaned_out|—|FW|Uruguay|Gonzalo Petit|Cádiz
+44|Athletic Club|squad|1|GK|Spain|Unai Simón|
+44|Athletic Club|squad|2|DF|Spain|Andoni Gorosabel|
+44|Athletic Club|squad|3|DF|Spain|Dani Vivian|
+44|Athletic Club|squad|4|DF|Spain|Aitor Paredes|
+44|Athletic Club|squad|5|DF|Spain|Yeray Álvarez|
+44|Athletic Club|squad|6|MF|Spain|Mikel Vesga|
+44|Athletic Club|squad|7|FW|Spain|Álex Berenguer|
+44|Athletic Club|squad|8|MF|Spain|Oihan Sancet|
+44|Athletic Club|squad|9|FW|Ghana|Iñaki Williams|captain
+44|Athletic Club|squad|10|FW|Spain|Nico Williams|
+44|Athletic Club|squad|11|FW|Spain|Gorka Guruzeta|
+44|Athletic Club|squad|12|DF|Spain|Jesús Areso|
+44|Athletic Club|squad|13|DF|Spain|Unai Egiluz|
+44|Athletic Club|squad|14|DF|Spain|Aymeric Laporte|
+44|Athletic Club|squad|16|MF|Spain|Iñigo Ruiz de Galarreta|
+44|Athletic Club|squad|17|DF|Spain|Yuri Berchiche|vice-captain
+44|Athletic Club|squad|18|MF|Spain|Mikel Jauregizar|
+44|Athletic Club|squad|19|DF|Spain|Adama Boiro|
+44|Athletic Club|squad|20|MF|Spain|Unai Gómez|
+44|Athletic Club|squad|21|FW|Morocco|Maroan Sannadi|
+44|Athletic Club|squad|22|FW|Spain|Nico Serrano|
+44|Athletic Club|squad|23|FW|Spain|Robert Navarro|
+44|Athletic Club|squad|24|MF|Spain|Beñat Prados|
+44|Athletic Club|squad|25|FW|Spain|Urko Izeta|
+44|Athletic Club|squad|27|GK|Mexico|Álex Padilla|
+44|Athletic Club|squad|30|MF|Spain|Alejandro Rego|
+44|Athletic Club|squad|31|FW|Spain|Asier Hierro|
+44|Athletic Club|squad|35|MF|Spain|Ibon Sánchez|
+44|Athletic Club|squad|44|MF|Spain|Selton Sánchez|
+44|Athletic Club|squad|47|DF|Spain|Iker Monreal|
+44|Athletic Club|squad|49|MF|Spain|Eder García|
+44|Athletic Club|squad|26|GK|Spain|Mikel Santos|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|28|DF|Spain|Aimar Duñabeitia|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|33|FW|Spain|Adrián Pérez|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|34|DF|Spain|Jon de Luis|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|38|DF|Spain|Ander Izagirre|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|40|FW|Spain|Elijah Gift|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|48|FW|Spain|Endika Buján|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|squad|—|GK|Spain|Oier Gastesi|secondary table (likely reserves w/ first-team numbers)
+44|Athletic Club|loaned_out|—|GK|Spain|Julen Agirrezabala|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|DF|Spain|Hugo Rincón|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|MF|Spain|Beñat Gerenabarrena|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|MF|Spain|Peio Canales|Racing Santander (per Racing article; not stated on Athletic page)
+44|Athletic Club|loaned_out|—|MF|Spain|Unai Vencedor|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|FW|Spain|Aingeru Olabarrieta|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|FW|Guinea-Bissau|Álvaro Djaló|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|FW|Spain|Iker Varela|loan club not stated in extracted text
+44|Athletic Club|loaned_out|—|FW|Spain|Manex Lozano|Racing Santander (per Racing article; not stated on Athletic page)
+45|Celta Vigo|squad|1|GK|Turkey|Altay Bayındır|on loan from Manchester United
+45|Celta Vigo|squad|2|DF|Sweden|Carl Starfelt|
+45|Celta Vigo|squad|3|DF|Spain|Marcos Alonso|
+45|Celta Vigo|squad|4|DF|Senegal|Abdoulaye Faye|on loan from Bayer Leverkusen
+45|Celta Vigo|squad|5|DF|Spain|Sergio Carreira|
+45|Celta Vigo|squad|6|MF|Guinea|Ilaix Moriba|
+45|Celta Vigo|squad|7|FW|Spain|Borja Iglesias|
+45|Celta Vigo|squad|8|MF|Spain|Miguel Román|
+45|Celta Vigo|squad|9|FW|Spain|Ferran Jutglà|
+45|Celta Vigo|squad|10|FW|Spain|Iago Aspas|captain
+45|Celta Vigo|squad|11|FW|Spain|Pablo Durán|
+45|Celta Vigo|squad|13|GK|Romania|Ionuț Radu|
+45|Celta Vigo|squad|14|MF|Spain|Aleix Febas|
+45|Celta Vigo|squad|15|DF|Spain|Álvaro Núñez|
+45|Celta Vigo|squad|16|FW|Spain|Hugo González|
+45|Celta Vigo|squad|17|DF|Spain|Javi Rueda|
+45|Celta Vigo|squad|18|DF|Spain|Yoel Lago|
+45|Celta Vigo|squad|19|FW|Sweden|Williot Swedberg|
+45|Celta Vigo|squad|20|DF|Spain|Javi Rodríguez|
+45|Celta Vigo|squad|21|DF|Uruguay|Sebastián Cáceres|
+45|Celta Vigo|squad|22|DF|Spain|Javi Galán|
+45|Celta Vigo|squad|23|FW|Spain|Hugo Álvarez|
+45|Celta Vigo|squad|24|FW|Morocco|Couhaib Driouech|
+45|Celta Vigo|squad|25|GK|Spain|Iván Villar|
+45|Celta Vigo|squad|39|FW|Morocco|Jones El-Abdellaoui|
+45|Celta Vigo|squad|26|GK|Spain|Coke Carrillo|secondary table
+45|Celta Vigo|squad|27|DF|Spain|Quique Ribes|secondary table
+45|Celta Vigo|squad|28|MF|Spain|Andrés Antañón|secondary table
+45|Celta Vigo|squad|30|MF|Spain|Hugo Burcio|secondary table
+45|Celta Vigo|loaned_out|—|DF|Spain|Carlos Domínguez|Oviedo
+45|Celta Vigo|loaned_out|—|DF|Spain|Unai Núñez|Espanyol
+45|Celta Vigo|loaned_out|—|DF|Spain|Manu Sánchez|Levante
+45|Celta Vigo|loaned_out|—|MF|Spain|Carlos Dotor|Málaga
+45|Celta Vigo|loaned_out|—|MF|Spain|Damián Rodríguez|Cádiz
+45|Celta Vigo|loaned_out|—|MF|Spain|Hugo Sotelo|Levante
+46|Sevilla|squad|1|GK|Greece|Odysseas Vlachodimos|on loan from Newcastle
+46|Sevilla|squad|2|DF|Spain|Juan Iglesias|
+46|Sevilla|squad|3|DF|Spain|Julio Díaz|
+46|Sevilla|squad|4|DF|Spain|Kike Salas|3rd captain
+46|Sevilla|squad|5|DF|Spain|Andrés Castrín|
+46|Sevilla|squad|6|MF|France|Lucien Agoumé|
+46|Sevilla|squad|7|FW|Spain|Alfon González|
+46|Sevilla|squad|8|MF|Georgia|Giorgi Kochorashvili|
+46|Sevilla|squad|9|FW|Scotland|Robbie Ure|
+46|Sevilla|squad|10|MF|Spain|Peque Fernández|
+46|Sevilla|squad|11|FW|Switzerland|Rubén Vargas|
+46|Sevilla|squad|12|DF|Senegal|Arouna Sangante|
+46|Sevilla|squad|13|GK|Spain|Fran González|
+46|Sevilla|squad|14|MF|Spain|Manu Bueno|
+46|Sevilla|squad|16|FW|Spain|Isaac Romero|
+46|Sevilla|squad|17|DF|Chile|Gabriel Suazo|captain
+46|Sevilla|squad|18|MF|Spain|Jon Guridi|
+46|Sevilla|squad|19|FW|Belgium|Lucas Stassin|on loan from Saint-Étienne
+46|Sevilla|squad|20|FW|Portugal|Félix Correia|on loan from Lille
+46|Sevilla|squad|21|FW|Nigeria|Chidera Ejuke|
+46|Sevilla|squad|22|DF|Spain|José Ángel Carmona|
+46|Sevilla|squad|23|DF|Brazil|Marcão|vice-captain
+46|Sevilla|squad|24|MF|France|Youssouf Fofana|on loan from Milan
+46|Sevilla|squad|30|FW|Spain|Miguel Sierra|
+46|Sevilla|squad|33|GK|Spain|Rafa Romero|
+46|Sevilla|squad|26|FW|Spain|Manuel Ángel|
+46|Sevilla|squad|27|MF|Spain|Nico Guillén|
+46|Sevilla|squad|34|DF|Spain|Iker Muñoz|
+46|Sevilla|squad|37|FW|Senegal|Ibra Sow|
+46|Sevilla|squad|39|MF|Spain|Edu Altozano|
+46|Sevilla|squad|15|DF|Portugal|Fábio Cardoso|
+46|Sevilla|loaned_out|—|DF|Spain|Adrià Pedrosa|Rayo Vallecano
+46|Sevilla|loaned_out|—|FW|Spain|Rafa Mir|Aris
+47|Valencia|squad|1|GK|North Macedonia|Stole Dimitrievski|
+47|Valencia|squad|2|MF|Argentina|Guido Rodríguez|
+47|Valencia|squad|3|DF|Spain|José Copete|
+47|Valencia|squad|4|DF|Guinea|Mouctar Diakhaby|
+47|Valencia|squad|5|DF|Spain|César Tárrega|3rd captain
+47|Valencia|squad|6|FW|Nigeria|Umar Sadiq|
+47|Valencia|squad|7|FW|Netherlands|Arnaut Danjuma|
+47|Valencia|squad|8|MF|Spain|Javi Guerra|
+47|Valencia|squad|9|FW|Spain|Hugo Duro|
+47|Valencia|squad|10|FW|England|Harvey Elliott|on loan from Liverpool
+47|Valencia|squad|11|FW|Spain|Luis Rioja|
+47|Valencia|squad|12|DF|Netherlands|Justin de Haas|
+47|Valencia|squad|13|GK|Spain|Cristian Rivero|
+47|Valencia|squad|14|DF|Spain|José Gayà|captain
+47|Valencia|squad|15|MF|Mali|Aliou Dieng|
+47|Valencia|squad|16|FW|Spain|Diego López|
+47|Valencia|squad|18|MF|Spain|Pepelu|vice-captain
+47|Valencia|squad|19|FW|Spain|Dani Raba|
+47|Valencia|squad|20|DF|Guadeloupe|Dimitri Foulquier|
+47|Valencia|squad|21|DF|Spain|Jesús Vázquez|
+47|Valencia|squad|22|DF|Spain|Arnau Martínez|
+47|Valencia|squad|23|MF|Switzerland|Filip Ugrinić|
+47|Valencia|squad|24|DF|Argentina|Pablo Maffeo|on loan from Olympiacos
+47|Valencia|squad|25|GK|Netherlands|Kayne van Oevelen|on loan from Ipswich Town
+47|Valencia|squad|39|MF|Japan|Ryūnosuke Satō|
+47|Valencia|squad|27|FW|Spain|David Otorbi|
+47|Valencia|squad|31|DF|Spain|Rodrigo Gamón|
+47|Valencia|squad|32|DF|Kenya|Amos Wanjala|
+47|Valencia|squad|33|MF|Spain|Aaron Mayol|
+47|Valencia|squad|36|DF|Spain|Iker Córdoba|
+47|Valencia|squad|37|FW|Spain|Aimar Blázquez|
+47|Valencia|squad|17|MF|Spain|Sergi Canós|
+47|Valencia|loaned_out|—|GK|Spain|Vicent Abril|Gimnàstic
+47|Valencia|loaned_out|—|MF|Portugal|André Almeida|Racing Santander
+47|Valencia|loaned_out|—|MF|Spain|Lucas Núñez|Eibar
+47|Valencia|loaned_out|—|FW|Spain|Mario Domínguez|Excelsior
+47|Valencia|loaned_out|—|FW|Spain|Víctor Fernández|Valladolid
+48|Espanyol|squad|1|GK|Spain|Ángel Fortuño|
+48|Espanyol|squad|2|DF|Spain|Andoni Gorosabel|on loan from Athletic Bilbao
+48|Espanyol|squad|3|DF|Netherlands|Quilindschy Hartman|on loan from Burnley
+48|Espanyol|squad|4|MF|Spain|Urko González de Zárate|
+48|Espanyol|squad|5|DF|Germany|Clemens Riedel|
+48|Espanyol|squad|6|DF|Uruguay|Leandro Cabrera|captain
+48|Espanyol|squad|7|FW|Spain|Javi Puado|vice-captain
+48|Espanyol|squad|8|MF|Spain|Edu Expósito|
+48|Espanyol|squad|9|FW|Spain|Roberto Fernández|
+48|Espanyol|squad|10|MF|Spain|Pol Lozano|3rd captain
+48|Espanyol|squad|11|FW|Spain|Pere Milla|
+48|Espanyol|squad|12|FW|Argentina|Ludovico Manterola|
+48|Espanyol|squad|13|GK|Serbia|Marko Dmitrović|
+48|Espanyol|squad|14|DF|Spain|Unai Nuñez|on loan from Celta
+48|Espanyol|squad|15|FW|Spain|Bryan Zaragoza|on loan from Bayern Munich
+48|Espanyol|squad|16|DF|Slovenia|Vanja Drkušić|on loan from Zenit Saint Petersburg
+48|Espanyol|squad|17|FW|Spain|Jofre Carreras|
+48|Espanyol|squad|18|FW|Spain|Marcos Fernández|
+48|Espanyol|squad|19|FW|Spain|Kike García|
+48|Espanyol|squad|20|MF|Brazil|Gabriel Moscardo|on loan from Paris Saint-Germain
+48|Espanyol|squad|21|DF|Spain|Roger Hinojo|
+48|Espanyol|squad|22|MF|Spain|Álex Calatrava|
+48|Espanyol|squad|23|DF|Morocco|Omar El Hilali|
+48|Espanyol|squad|24|FW|England|Tyrhys Dolan|
+48|Espanyol|squad|25|MF|Argentina|Marcelo Ablanedo|
+48|Espanyol|squad|26|MF|Spain|Rafel Bauzà|
+48|Espanyol|squad|27|DF|France|Adama Timera|
+48|Espanyol|squad|28|FW|Spain|Javi Hernández|
+48|Espanyol|squad|29|MF|Spain|Victor Mullerat|
+48|Espanyol|squad|30|DF|Argentina|Tomás Signarelli|
+48|Espanyol|squad|31|GK|Spain|Llorenç Serred|
+48|Espanyol|squad|32|DF|Spain|José Ángel López|
+48|Espanyol|squad|33|GK|Argentina|Manuel Culebrás|
+48|Espanyol|squad|34|MF|Spain|Ricardo Frontale|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|squad|35|DF|Argentina|Federico Pentagón|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|squad|36|MF|Argentina|Luciano De Las Carrerás|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|squad|37|FW|Argentina|Lorenzo Fraulo|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|squad|38|GK|Argentina|Patricio Tarantino|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|squad|39|GK|Argentina|Roberto Buffalo|SUSPECT: likely vandalism on Wikipedia
+48|Espanyol|loaned_out|—|DF|Spain|José Salinas|Málaga
+48|Espanyol|loaned_out|—|MF|Spain|José Gragera|Burgos
+48|Espanyol|loaned_out|—|FW|Spain|Antoniu Roca|Mallorca
+48|Espanyol|loaned_out|—|FW|Morocco|Omar Sadik|Ceuta
+49|Racing Sant|squad|1|GK|Spain|Jokin Ezkieta|
+49|Racing Sant|squad|2|DF|Spain|Álvaro Mantilla|
+49|Racing Sant|squad|3|DF|Spain|Mario García|
+49|Racing Sant|squad|4|DF|Spain|Manu Hernando|
+49|Racing Sant|squad|5|DF|Spain|Javi Castro|
+49|Racing Sant|squad|6|MF|Spain|Íñigo Sainz-Maza|captain
+49|Racing Sant|squad|7|FW|Georgia|Giorgi Guliashvili|
+49|Racing Sant|squad|8|MF|Spain|Aritz Aldasoro|
+49|Racing Sant|squad|9|FW|Spain|Juan Carlos Arana|
+49|Racing Sant|squad|10|MF|Spain|Iñigo Vicente|
+49|Racing Sant|squad|11|FW|Spain|Andrés Martín|
+49|Racing Sant|squad|12|FW|Spain|Asier Villalibre|
+49|Racing Sant|squad|13|GK|Sweden|Simon Eriksson|
+49|Racing Sant|squad|14|MF|Senegal|Maguette Gueye|
+49|Racing Sant|squad|15|MF|Spain|Marco Sangalli|
+49|Racing Sant|squad|16|DF|Uruguay|Facundo González|
+49|Racing Sant|squad|17|FW|Spain|Jaime Mata|
+49|Racing Sant|squad|18|MF|Spain|Peio Canales|on loan from Athletic Bilbao
+49|Racing Sant|squad|19|MF|Colombia|Gustavo Puerta|
+49|Racing Sant|squad|20|FW|Gambia|Suleiman Camara|
+49|Racing Sant|squad|21|DF|Spain|Pablo Ramón|on loan from Espanyol
+49|Racing Sant|squad|23|MF|Spain|Damián Rodríguez|on loan from Celta
+49|Racing Sant|squad|27|FW|Spain|Manex Lozano|on loan from Athletic Bilbao
+49|Racing Sant|squad|32|DF|Spain|Jorge Salinas|
+49|Racing Sant|squad|36|MF|Spain|Sergio Martínez|
+49|Racing Sant|squad|31|GK|Spain|Álvaro Jiménez|
+49|Racing Sant|squad|33|DF|Spain|Samu Calera|
+49|Racing Sant|squad|34|FW|Spain|Diego Díaz|
+49|Racing Sant|squad|35|GK|Spain|Laro Gómez|
+49|Racing Sant|squad|37|DF|Spain|Aitor Crespo|
+49|Racing Sant|squad|43|FW|Spain|Santi Franco|
+49|Racing Sant|squad|44|MF|Spain|Diego Fuentes|
+49|Racing Sant|squad|45|MF|Spain|Andrés Vallecillo|
+49|Racing Sant|squad|46|DF|Spain|Carlos Sánchez|
+49|Racing Sant|loaned_out|—|MF|Spain|Neco Celorio|Lugo (listed until 30 June 2026 - possibly outdated)
+49|Racing Sant|loaned_out|—|MF|Spain|Yeray|Andorra (listed until 30 June 2026 - possibly outdated)
+50|Levante|squad|1|GK|Spain|Pablo Campos|
+50|Levante|squad|2|DF|Algeria|Aïssa Mandi|4th captain
+50|Levante|squad|3|DF|Austria|Ifeanyi Ndukwe|on loan from Liverpool
+50|Levante|squad|4|DF|Spain|Adrián Dela|vice-captain
+50|Levante|squad|5|MF|Spain|Hugo Sotelo|on loan from Celta
+50|Levante|squad|6|MF|Spain|Dani Requena|on loan from Villarreal
+50|Levante|squad|7|FW|Spain|Roger Brugué|captain
+50|Levante|squad|8|MF|Spain|Jon Ander Olasagasti|
+50|Levante|squad|9|FW|Spain|Iván Romero|3rd captain
+50|Levante|squad|10|FW|Serbia|Petar Ratkov|on loan from Lazio
+50|Levante|squad|11|FW|Belgium|Yanis Musuayi|
+50|Levante|squad|13|GK|Australia|Mathew Ryan|
+50|Levante|squad|14|DF|Spain|Jorge Cabello|
+50|Levante|squad|16|MF|France|Axel Tape|on loan from Bayer Leverkusen
+50|Levante|squad|17|DF|Spain|Víctor García|
+50|Levante|squad|18|MF|France|Enzo Bardeli|
+50|Levante|squad|20|MF|Spain|Oriol Rey|
+50|Levante|squad|21|FW|Cameroon|Karl Etta Eyong|
+50|Levante|squad|22|DF|Germany|Jeremy Toljan|
+50|Levante|squad|23|DF|Spain|Manu Sánchez|on loan from Celta
+50|Levante|squad|24|MF|Argentina|Thiago Fernández|on loan from Villarreal
+50|Levante|squad|27|MF|Spain|Paco Cortés|
+50|Levante|squad|29|DF|Spain|Nacho Pérez|
+50|Levante|squad|32|GK|Spain|Álex Primo|
+50|Levante|squad|33|DF|Spain|Marc Santos|
+50|Levante|squad|34|MF|Spain|Manel Usedo|
+50|Levante|squad|36|GK|Ukraine|Igor Galdin|
+50|Levante|squad|38|MF|Spain|Alberto Calatrava|
+50|Levante|loaned_out|—|GK|Spain|Dani Martín|Valladolid
+50|Levante|loaned_out|—|DF|Panama|Martín Krug|Juventud Torremolinos
+50|Levante|loaned_out|—|MF|Israel|Tay Abed|Valladolid
+52|Rayo Vallecano|squad|1|GK|Spain|Dani Cárdenas|
+52|Rayo Vallecano|squad|2|DF|Romania|Andrei Rațiu|
+52|Rayo Vallecano|squad|3|DF|Spain|Pep Chavarría|
+52|Rayo Vallecano|squad|4|MF|Spain|Pedro Díaz|
+52|Rayo Vallecano|squad|5|DF|Italy|Luiz Felipe|
+52|Rayo Vallecano|squad|6|MF|Senegal|Pathé Ciss|
+52|Rayo Vallecano|squad|7|MF|Spain|Isi Palazón|3rd captain
+52|Rayo Vallecano|squad|8|MF|Argentina|Óscar Trejo|captain
+52|Rayo Vallecano|squad|9|FW|Brazil|Alemão|
+52|Rayo Vallecano|squad|10|FW|Spain|Sergio Camello|
+52|Rayo Vallecano|squad|11|FW|Angola|Randy Nteka|
+52|Rayo Vallecano|squad|12|MF|Morocco|Ilias Akhomach|on loan from Villarreal
+52|Rayo Vallecano|squad|13|GK|Argentina|Augusto Batalla|
+52|Rayo Vallecano|squad|14|FW|Spain|Carlos Martín|on loan from Atlético Madrid
+52|Rayo Vallecano|squad|15|MF|Spain|Gerard Gumbau|on loan from Granada
+52|Rayo Vallecano|squad|16|DF|Ghana|Abdul Mumin|
+52|Rayo Vallecano|squad|17|MF|Spain|Unai López|
+52|Rayo Vallecano|squad|18|MF|Spain|Álvaro García|
+52|Rayo Vallecano|squad|19|FW|Spain|Jorge de Frutos|
+52|Rayo Vallecano|squad|20|DF|Albania|Iván Balliu|
+52|Rayo Vallecano|squad|21|FW|Spain|Fran Pérez|
+52|Rayo Vallecano|squad|22|DF|Uruguay|Alfonso Espino|
+52|Rayo Vallecano|squad|23|MF|Spain|Óscar Valentín|vice-captain
+52|Rayo Vallecano|squad|24|DF|France|Florian Lejeune|
+52|Rayo Vallecano|squad|29|MF|Spain|Diego Méndez|
+52|Rayo Vallecano|squad|32|DF|Senegal|Nobel Mendy|on loan from Betis
+52|Rayo Vallecano|squad|33|DF|Netherlands|Jozhua Vertrouwd|on loan from Castellón
+52|Rayo Vallecano|squad|26|DF|Spain|Marco de las Sías|
+52|Rayo Vallecano|squad|27|DF|Spain|Sergio Lozano|
+52|Rayo Vallecano|squad|28|MF|Spain|Samu Becerra|
+52|Rayo Vallecano|squad|30|GK|Spain|Juanpe Gil|
+52|Rayo Vallecano|squad|31|MF|Spain|Marco Román|
+52|Rayo Vallecano|squad|40|GK|Spain|Adrián Molina|
+52|Rayo Vallecano|loaned_out|25|GK|Spain|Miguel Ángel Morro|Leixões (listed until 30 June 2026 - possibly outdated)
+52|Rayo Vallecano|loaned_out|—|DF|Spain|Pelayo Fernández|Cádiz (listed until 30 June 2026 - possibly outdated)
+52|Rayo Vallecano|loaned_out|—|FW|Cameroon|Etienne Eto'o|Villarreal B (listed until 30 June 2026 - possibly outdated)
+52|Rayo Vallecano|loaned_out|—|FW|Spain|Raúl de Tomás|Al-Wakrah (listed until 30 June 2026 - possibly outdated)
+53|Dep. A Coruña|squad|1|GK|Spain|Germán Parreño|
+53|Dep. A Coruña|squad|2|DF|Spain|Adrià Altimira|
+53|Dep. A Coruña|squad|3|DF|Spain|Arnau Comas|
+53|Dep. A Coruña|squad|4|DF|Belgium|Lucas Noubi|
+53|Dep. A Coruña|squad|5|DF|Spain|Dani Barcia|
+53|Dep. A Coruña|squad|6|MF|Spain|Marc Casadó|on loan from Barcelona
+53|Dep. A Coruña|squad|7|FW|Gabon|Pierre-Emerick Aubameyang|
+53|Dep. A Coruña|squad|8|MF|Spain|Diego Villares|captain
+53|Dep. A Coruña|squad|9|FW|Netherlands|Zakaria Eddahchouri|
+53|Dep. A Coruña|squad|10|FW|Spain|Yeremay Hernández|
+53|Dep. A Coruña|squad|11|FW|Spain|David Mella|
+53|Dep. A Coruña|squad|12|DF|Italy|Giacomo Quagliata|
+53|Dep. A Coruña|squad|13|GK|Spain|Leo Román|
+53|Dep. A Coruña|squad|14|MF|Spain|Riki Rodríguez|
+53|Dep. A Coruña|squad|15|DF|Spain|Miguel Loureiro|
+53|Dep. A Coruña|squad|16|MF|Italy|Lorenzo Amatucci|
+53|Dep. A Coruña|squad|17|DF|Spain|Angeliño|on loan from Roma
+53|Dep. A Coruña|squad|18|MF|Denmark|Jonathan Asp Jensen|
+53|Dep. A Coruña|squad|19|FW|Spain|Luismi Cruz|
+53|Dep. A Coruña|squad|20|DF|Uruguay|José María Giménez|on loan from Atlético Madrid
+53|Dep. A Coruña|squad|21|MF|Spain|Mario Soriano|
+53|Dep. A Coruña|squad|22|DF|Poland|Bright Ede|
+53|Dep. A Coruña|squad|23|DF|Spain|Ximo Navarro|
+53|Dep. A Coruña|squad|24|FW|Spain|Adama Traoré|
+53|Dep. A Coruña|squad|25|GK|Spain|Álvaro Fernández|
+53|Dep. A Coruña|squad|32|FW|Cameroon|Bil Nsongo|
+53|Dep. A Coruña|squad|33|FW|Spain|Kevin Sánchez|
+53|Dep. A Coruña|loaned_out|—|GK|Spain|Eric Puerto|Penafiel
+53|Dep. A Coruña|loaned_out|—|MF|Netherlands|Teun Gijselhart|Al Ain
+53|Dep. A Coruña|loaned_out|—|MF|Spain|Diego Gómez|Huesca
+53|Dep. A Coruña|loaned_out|—|MF|England|Charlie Patino|VfL Bochum
+55|Málaga|squad|1|GK|Spain|Alfonso Herrero|vice-captain
+55|Málaga|squad|2|MF|Sweden|Jens Cajuste|on loan from Napoli
+55|Málaga|squad|3|DF|Spain|Carlos Puga|
+55|Málaga|squad|4|DF|Spain|Einar Galilea|
+55|Málaga|squad|5|DF|Spain|Álex Pastor|
+55|Málaga|squad|6|MF|Spain|Ramón|captain
+55|Málaga|squad|7|FW|Morocco|Haitam|
+55|Málaga|squad|8|MF|Spain|Carlos Dotor|on loan from Celta
+55|Málaga|squad|9|FW|Spain|Chupete|
+55|Málaga|squad|10|MF|Spain|David Larrubia|
+55|Málaga|squad|11|FW|Spain|Joaquín Muñoz|
+55|Málaga|squad|12|DF|Spain|José Salinas|on loan from Espanyol
+55|Málaga|squad|13|GK|Spain|Carlos López|
+55|Málaga|squad|14|MF|Spain|Rafa|
+55|Málaga|squad|15|DF|Spain|Ángel Recio|
+55|Málaga|squad|16|DF|Spain|Diego Murillo|
+55|Málaga|squad|17|FW|Spain|Eneko Jauregi|
+55|Málaga|squad|18|MF|Spain|Pablo Martínez|
+55|Málaga|squad|19|FW|Spain|Juan Cruz|on loan from Leganés
+55|Málaga|squad|20|DF|Spain|Fernando Calero|
+55|Málaga|squad|21|FW|Spain|Adrián Niño|
+55|Málaga|squad|22|MF|Spain|Dani Lorenzo|
+55|Málaga|squad|23|MF|Spain|Izan Merino|
+55|Málaga|squad|24|FW|Spain|Julen Lobete|
+55|Málaga|squad|25|DF|Spain|Juan Berrocal|
+55|Málaga|squad|31|DF|Spain|Rafita|
+55|Málaga|squad|35|MF|Republic of Ireland|Aarón Ochoa|
+55|Málaga|squad|39|DF|Morocco|Adam Aznou|on loan from Everton
+55|Málaga|squad|28|MF|Nigeria|Otu|secondary table
+55|Málaga|squad|32|MF|Spain|Juani|secondary table
+55|Málaga|loaned_out|—|DF|Spain|Pablo Arriaza|Estepona
+56|Alavés|squad|1|GK|Spain|Antonio Sivera|captain
+56|Alavés|squad|2|DF|Argentina|Nicolás Valentini|
+56|Alavés|squad|3|DF|Morocco|Youssef Enríquez|
+56|Alavés|squad|4|MF|Spain|Denis Suárez|
+56|Alavés|squad|5|DF|Malaysia|Facundo Garcés|
+56|Alavés|squad|6|MF|Spain|Ander Guevara|vice-captain
+56|Alavés|squad|7|MF|Spain|Ángel Pérez|
+56|Alavés|squad|8|MF|Spain|Antonio Blanco|
+56|Alavés|squad|9|FW|Dominican Republic|Mariano Díaz|
+56|Alavés|squad|10|MF|Spain|Carles Aleñá|
+56|Alavés|squad|11|FW|Spain|Toni Martínez|
+56|Alavés|squad|12|DF|Spain|Hugo Novoa|
+56|Alavés|squad|13|GK|Argentina|Adrián Rodríguez|
+56|Alavés|squad|14|DF|Argentina|Nahuel Tenaglia|3rd captain
+56|Alavés|squad|15|FW|Argentina|Lucas Boyé|
+56|Alavés|squad|16|DF|Finland|Ville Koski|
+56|Alavés|squad|17|DF|Spain|Jonny Otto|
+56|Alavés|squad|18|MF|Spain|Mikel Rodríguez|
+56|Alavés|squad|19|MF|Spain|Pablo Ibáñez|
+56|Alavés|squad|20|FW|Spain|Aitor Mañas|
+56|Alavés|squad|21|MF|Algeria|Abde Rebbach|
+56|Alavés|squad|22|MF|Spain|Miguel Rodríguez|
+56|Alavés|squad|23|MF|Uruguay|Carlos Protesoni|
+56|Alavés|squad|27|DF|Spain|Xanet Oláiz|
+56|Alavés|squad|29|MF|Spain|Izei Hernández|
+56|Alavés|squad|31|GK|Canada|Grégoire Świderski|
+56|Alavés|squad|—|MF|Guinea|Selu Diallo|
+56|Alavés|loaned_out|—|DF|Spain|Álvaro García|Villarreal B
+56|Alavés|loaned_out|—|DF|Spain|Adrián Pica|Penafiel
+56|Alavés|loaned_out|—|DF|Spain|Egoitz Muñoz|Córdoba
+56|Alavés|loaned_out|—|MF|Argentina|Gustavo Albarracín|Istra 1961
+56|Alavés|loaned_out|—|FW|Spain|Unai Ropero|Racing Ferrol
+328|CD Tenerife|squad|1|GK|Spain|Dani Martín|
+328|CD Tenerife|squad|2|DF|Spain|David Rodríguez|
+328|CD Tenerife|squad|3|DF|Croatia|Roko Jureškin|
+328|CD Tenerife|squad|4|DF|Spain|José León|
+328|CD Tenerife|squad|5|DF|Spain|Jorge Moreno|
+328|CD Tenerife|squad|6|MF|Spain|Juanjo Sánchez|
+328|CD Tenerife|squad|7|MF|Slovenia|Martin Pečar|
+328|CD Tenerife|squad|8|FW|Spain|Víctor Moreno|
+328|CD Tenerife|squad|9|FW|Spain|Jesús de Miguel|
+328|CD Tenerife|squad|10|MF|Spain|Nacho Gil|
+328|CD Tenerife|squad|11|FW|Spain|Noel López|
+328|CD Tenerife|squad|12|DF|Ecuador|Anthony Landázuri|
+328|CD Tenerife|squad|14|DF|Spain|Gerard Valentín|
+328|CD Tenerife|squad|15|MF|Brazil|Fabricio|
+328|CD Tenerife|squad|16|MF|Spain|Jesús Álvarez|
+328|CD Tenerife|squad|17|FW|Senegal|Christian Gomis|on loan from Schalke 04
+328|CD Tenerife|squad|18|FW|Spain|Enric Gallego|
+328|CD Tenerife|squad|19|DF|Spain|César Álvarez|
+328|CD Tenerife|squad|20|MF|Argentina|Mauro Pittón|
+328|CD Tenerife|squad|21|DF|Spain|Marc Mateu|
+328|CD Tenerife|squad|22|FW|Armenia|Grant-Leon Ranos|
+328|CD Tenerife|squad|23|MF|Bosnia and Herzegovina|Anes Krdžalić|
+328|CD Tenerife|squad|24|FW|Spain|Iván Chapela|
+328|CD Tenerife|squad|26|FW|Spain|Baba Diocou|
+328|CD Tenerife|squad|27|DF|Netherlands|Neal Viereck|on loan from FC Utrecht
+328|CD Tenerife|squad|29|MF|Spain|Dani Fernández|
+328|CD Tenerife|squad|40|GK|Spain|Gabri De Vuyst|
+328|CD Tenerife|squad|28|DF|Spain|Pau Fernández|
+328|CD Tenerife|squad|30|GK|Spain|Sergio Aragoneses|
+328|CD Tenerife|squad|31|MF|Spain|Joel Pérez|
+328|CD Tenerife|squad|—|MF|Guinea-Bissau|Alassan Manjam|unnumbered, unlabeled table
+328|CD Tenerife|squad|—|FW|Guinea-Bissau|Salifo Caropitche|unnumbered, unlabeled table
+328|CD Tenerife|loaned_out|—|MF|Spain|Alberto Ulloa|Lugo
+328|CD Tenerife|loaned_out|—|MF|Spain|Jeremy Jorge|Rayo Majadahonda
+328|CD Tenerife|loaned_out|—|MF|Spain|Josep Calavera|Ibiza
+328|CD Tenerife|loaned_out|—|FW|Spain|Fran Sabina|Alcorcón
+328|CD Tenerife|loaned_out|—|FW|Spain|Mahamadou Baldé|Muaither
+326|CD Eldense|squad|1|GK|Spain|Ramon Vila|on loan from Córdoba
+326|CD Eldense|squad|2|DF|Spain|Iker Recio|
+326|CD Eldense|squad|3|DF|Spain|Juan Larios|
+326|CD Eldense|squad|4|DF|Netherlands|Floris Smand|
+326|CD Eldense|squad|5|DF|Spain|Álex Serra|
+326|CD Eldense|squad|6|MF|Spain|Borja Calvo|
+326|CD Eldense|squad|7|FW|Spain|Jorge Rastrojo|
+326|CD Eldense|squad|8|MF|Spain|Marcos Bustillo|
+326|CD Eldense|squad|9|FW|Spain|Mariano Carmona|on loan from Córdoba
+326|CD Eldense|squad|10|FW|Spain|Fidel Chaves|
+326|CD Eldense|squad|11|FW|Spain|Manu Nieto|
+326|CD Eldense|squad|12|MF|Spain|Roberto López|
+326|CD Eldense|squad|13|GK|Spain|Juan Palomares|
+326|CD Eldense|squad|14|MF|Canada|Justin Smith|
+326|CD Eldense|squad|15|MF|Spain|Carlos Guirao|on loan from Leganés
+326|CD Eldense|squad|16|FW|Spain|Pau Cabanes|
+326|CD Eldense|squad|17|DF|Spain|Jesús Clemente|
+326|CD Eldense|squad|18|MF|Spain|Guille Macho|
+326|CD Eldense|squad|19|FW|Spain|Alejandro Ibarrondo|
+326|CD Eldense|squad|20|FW|Spain|Waldo Rubio|
+326|CD Eldense|squad|21|DF|Spain|David Ruiz|
+326|CD Eldense|squad|22|DF|Germany|Julien Yanda|on loan from Bayern Munich
+326|CD Eldense|squad|23|MF|Spain|Jordi Martín|
+326|CD Eldense|squad|24|FW|Spain|Javi Martínez|
+326|CD Eldense|squad|29|FW|Portugal|Dinis Rodrigues|on loan from Napoli
+326|CD Eldense|squad|33|FW|Spain|Aingeru Olabarrieta|on loan from Athletic Bilbao
+326|CD Eldense|squad|34|DF|Spain|Javier Olaizola|on loan from Mallorca
+326|CD Eldense|squad|26|FW|Spain|Iker Carbonell|
+326|CD Eldense|squad|27|MF|Spain|Cristian Amarillo|
+326|CD Eldense|squad|30|MF|Spain|David Rodríguez|
+326|CD Eldense|squad|31|DF|Spain|Antonio David|
+326|CD Eldense|squad|36|GK|Spain|David Bernabéu|
+326|CD Eldense|loaned_out|—|DF|Colombia|Óscar Vega|Móstoles URJC
+326|CD Eldense|loaned_out|—|MF|Malta|Boston Billups|Cartagena
+329|CE Sabadell|squad|1|GK|Spain|Diego Fuoli|
+329|CE Sabadell|squad|2|DF|Spain|Pipa|
+329|CE Sabadell|squad|3|DF|Spain|Genar Fornés|
+329|CE Sabadell|squad|4|DF|Spain|Miki Codina|
+329|CE Sabadell|squad|5|MF|Brazil|Arthur Bonaldo|
+329|CE Sabadell|squad|6|DF|Spain|Edgar González|on loan from Almería
+329|CE Sabadell|squad|7|FW|Spain|Ton Ripoll|
+329|CE Sabadell|squad|8|MF|Spain|Pere Pons|
+329|CE Sabadell|squad|10|FW|Spain|Ángel Baena|
+329|CE Sabadell|squad|11|FW|Spain|Javi López-Pinto|
+329|CE Sabadell|squad|12|FW|Uruguay|Gastón Valles|
+329|CE Sabadell|squad|13|GK|Spain|José Ortega|
+329|CE Sabadell|squad|14|MF|Spain|Óscar Sanz|
+329|CE Sabadell|squad|15|DF|Spain|Kaiser|
+329|CE Sabadell|squad|16|FW|United States|Nicholas Gioacchini|
+329|CE Sabadell|squad|18|FW|Russia|Nikolay Obolskiy|
+329|CE Sabadell|squad|19|FW|France|Yanis Rahmani|
+329|CE Sabadell|squad|20|MF|Spain|Urri|captain
+329|CE Sabadell|squad|21|MF|Spain|Alain Ribeiro|
+329|CE Sabadell|squad|22|MF|Nigeria|Quadri Liameed|
+329|CE Sabadell|squad|23|MF|Spain|Joel Priego|
+329|CE Sabadell|squad|24|MF|Spain|Eneko Aguilar|
+329|CE Sabadell|squad|25|GK|Spain|Marc Vidal|
+329|CE Sabadell|squad|27|DF|Spain|José Luis Catalá|
+329|CE Sabadell|squad|30|MF|Spain|Xavi Moreno|
+329|CE Sabadell|squad|—|MF|Italy|Patrick Nuamah|on loan from Sassuolo
+329|CE Sabadell|squad|—|MF|Ghana|Yussif Owusu|
+329|CE Sabadell|squad|31|GK|Spain|Manel Estévez|
+329|CE Sabadell|loaned_out|—|FW|Spain|Miguelete|UD Logroñés
+330|Celta Fortuna (B)|squad|1|GK|Spain|Coke Carrillo|
+330|Celta Fortuna (B)|squad|2|DF|Spain|Pablo Gavián|
+330|Celta Fortuna (B)|squad|3|DF|Spain|Quique Ribes|
+330|Celta Fortuna (B)|squad|4|DF|Senegal|Seyni Mbaye Ndiaye|
+330|Celta Fortuna (B)|squad|5|MF|Spain|Hugo Burcio|
+330|Celta Fortuna (B)|squad|6|DF|Spain|Pablo Meixús|captain
+330|Celta Fortuna (B)|squad|7|FW|Ghana|Bernard Somuah|
+330|Celta Fortuna (B)|squad|8|MF|Spain|Andrés Antañón|
+330|Celta Fortuna (B)|squad|9|FW|Spain|Álvaro Marín|
+330|Celta Fortuna (B)|squad|10|FW|Spain|Óscar Marcos|
+330|Celta Fortuna (B)|squad|11|FW|Spain|Ángel Arcos|
+330|Celta Fortuna (B)|squad|13|GK|Brazil|Caio Barone|
+330|Celta Fortuna (B)|squad|14|DF|Spain|Jan Oliveras|
+330|Celta Fortuna (B)|squad|15|FW|Kenya|Aldrine Kibet|
+330|Celta Fortuna (B)|squad|16|MF|Spain|Adrià Capdevila|
+330|Celta Fortuna (B)|squad|17|MF|Paraguay|Hugo Cuenca|on loan from Genoa
+330|Celta Fortuna (B)|squad|18|DF|Spain|Joel López|
+330|Celta Fortuna (B)|squad|19|FW|Spain|Ángel Davila|
+330|Celta Fortuna (B)|squad|20|DF|Spain|Anxo Rodríguez|
+330|Celta Fortuna (B)|squad|21|DF|Spain|Alexis Olmedo|
+330|Celta Fortuna (B)|squad|22|MF|Spain|Stefan Bajcetic|
+330|Celta Fortuna (B)|squad|23|DF|Cameroon|Germain Milla|
+330|Celta Fortuna (B)|squad|25|GK|Spain|Marcos González|
+330|Celta Fortuna (B)|squad|39|FW|Morocco|Jones El-Abdellaoui|
+330|Celta Fortuna (B)|squad|—|DF|United Arab Emirates|Anthony Khayat|
+330|Celta Fortuna (B)|squad|28|FW|Portugal|Vlad|on loan from Paços de Ferreira
+330|Celta Fortuna (B)|squad|29|MF|Spain|Mateo Sobral|
+330|Celta Fortuna (B)|squad|32|MF|Spain|Hugo López|
+330|Celta Fortuna (B)|loaned_out|—|DF|Spain|Xandre Fraga|Arosa
+330|Celta Fortuna (B)|loaned_out|—|FW|Spain|Cristian Carro|UD Ourense
+340|Real Sociedad B|squad|1|GK|Spain|Aitor Fraga|
+340|Real Sociedad B|squad|2|DF|Spain|Jon Garro|
+340|Real Sociedad B|squad|3|DF|Spain|Jon Balda|
+340|Real Sociedad B|squad|4|DF|Spain|Luken Beitia|
+340|Real Sociedad B|squad|5|DF|Japan|Kazunari Kita|
+340|Real Sociedad B|squad|6|MF|France|Alex Lebarbier|
+340|Real Sociedad B|squad|7|FW|Spain|Dani Díaz|
+340|Real Sociedad B|squad|8|MF|Spain|Ibai Aguirre|
+340|Real Sociedad B|squad|9|FW|Spain|Ekain Orobengoa|
+340|Real Sociedad B|squad|10|FW|Spain|Arkaitz Mariezkurrena|
+340|Real Sociedad B|squad|11|FW|Spain|Alex Marchal|
+340|Real Sociedad B|squad|12|MF|Spain|Joan Oleaga|
+340|Real Sociedad B|squad|13|GK|France|Theo Folgado|
+340|Real Sociedad B|squad|14|MF|Spain|Tomy Carbonell|
+340|Real Sociedad B|squad|15|DF|Spain|Iker Calderón|
+340|Real Sociedad B|squad|16|MF|Spain|Gorka Gorosabel|
+340|Real Sociedad B|squad|17|MF|Spain|Lander Astiazaran|
+340|Real Sociedad B|squad|18|FW|Spain|Gorka Carrera|
+340|Real Sociedad B|squad|19|FW|Spain|Javier Soroeta|
+340|Real Sociedad B|squad|20|FW|Spain|Sydney Osazuwa|
+340|Real Sociedad B|squad|21|MF|Spain|Jon Eceizabarrena|
+340|Real Sociedad B|squad|22|DF|Spain|Iñaki Rupérez|
+340|Real Sociedad B|squad|23|DF|Spain|Unax Agote|
+340|Real Sociedad B|squad|24|DF|Spain|Unax Ayo|
+340|Real Sociedad B|squad|29|DF|Spain|Iker Ropero|
+340|Real Sociedad B|squad|32|GK|Spain|Lander Olasagasti|
+340|Real Sociedad B|squad|34|FW|Ghana|Andrews Adjabeng|
+340|Real Sociedad B|squad|26|DF|Spain|Beñat Isasa|
+340|Real Sociedad B|squad|30|MF|Spain|Peru Larrañaga|
+340|Real Sociedad B|squad|31|MF|Spain|Oihan Telletxea|
+340|Real Sociedad B|squad|33|FW|Cuba|Eloy Nebreda|
+340|Real Sociedad B|loaned_out|—|FW|Spain|Ibai Cabo|Amorebieta
+340|Real Sociedad B|loaned_out|—|FW|Spain|Xalbat Larralde|Amorebieta
+325|CD Castellón|squad|1|GK|Iran|Amir Abedzadeh|
+325|CD Castellón|squad|2|DF|Spain|Tincho Conde|
+325|CD Castellón|squad|3|DF|Italy|Fabrizio Brignani|
+325|CD Castellón|squad|4|DF|Argentina|Agustín Sienra|
+325|CD Castellón|squad|5|DF|Spain|Alberto Jiménez|
+325|CD Castellón|squad|6|MF|France|Marc-Olivier Doué|
+325|CD Castellón|squad|7|FW|Australia|Awer Mabil|
+325|CD Castellón|squad|8|MF|Spain|Diego Barri|
+325|CD Castellón|squad|9|FW|Guinea|Ousmane Camara|
+325|CD Castellón|squad|10|MF|Spain|Israel Suero|
+325|CD Castellón|squad|11|FW|Brazil|Douglas Aurélio|
+325|CD Castellón|squad|12|DF|Spain|Lucas Alcázar|
+325|CD Castellón|squad|13|GK|Belgium|Romain Matthys|
+325|CD Castellón|squad|14|FW|Spain|Raúl Sánchez|
+325|CD Castellón|squad|18|FW|Spain|Pablo Santiago|
+325|CD Castellón|squad|19|FW|Denmark|Adam Jakobsen|
+325|CD Castellón|squad|21|MF|Spain|Álex Calatrava|
+325|CD Castellón|squad|22|DF|France|Jérémy Mellot|
+325|CD Castellón|squad|23|FW|Spain|Álvaro García|
+325|CD Castellón|squad|25|MF|Brazil|Ronaldo Pompeu|
+325|CD Castellón|squad|37|FW|Spain|Carlos Segura|
+325|CD Castellón|squad|55|DF|Poland|Michał Willmann|
+325|CD Castellón|squad|—|DF|Spain|José Albert|
+325|CD Castellón|squad|—|DF|Spain|Juanjo Nieto|
+325|CD Castellón|squad|—|MF|Spain|Álvaro Martín|
+325|CD Castellón|squad|26|FW|Spain|Rubén Català|secondary table
+325|CD Castellón|squad|27|DF|Morocco|Ismael Fadel|secondary table
+325|CD Castellón|squad|28|DF|Spain|Álex Alcira|secondary table
+325|CD Castellón|squad|30|DF|Spain|David Sellés|secondary table
+325|CD Castellón|squad|31|MF|Spain|Isi Angulo|secondary table
+325|CD Castellón|squad|42|MF|Spain|Guillem Terma|secondary table
+325|CD Castellón|squad|50|GK|Spain|Juanki Ferrando|secondary table
+325|CD Castellón|squad|56|FW|Spain|Miguel Ferrer|secondary table
+325|CD Castellón|squad|57|FW|Spain|Fran Santamaría|secondary table
+325|CD Castellón|squad|—|DF|Equatorial Guinea|Santi Borikó|unnumbered table, possibly loan list (no club given)
+325|CD Castellón|squad|—|MF|France|Albert Lottin|unnumbered table, possibly loan list (no club given)
+325|CD Castellón|squad|—|FW|Mali|Mamadou Traoré|unnumbered table, possibly loan list (no club given)
+325|CD Castellón|squad|—|FW|Spain|Serpeta|unnumbered table, possibly loan list (no club given)
+325|CD Castellón|loaned_out|—|FW|United States|Nick Markanich|Houston Dynamo
+334|Girona FC|squad|1|GK|Spain|Sergi Puig|
+334|Girona FC|squad|2|DF|Ghana|Abdul Mumin|
+334|Girona FC|squad|3|DF|Spain|Mateu Morey|
+334|Girona FC|squad|4|DF|Spain|Javier Boñar|
+334|Girona FC|squad|5|DF|Spain|David López|
+334|Girona FC|squad|6|MF|Netherlands|Donny van de Beek|
+334|Girona FC|squad|7|FW|Uruguay|Cristhian Stuani|captain
+334|Girona FC|squad|8|MF|Spain|Fran Beltrán|
+334|Girona FC|squad|9|FW|Spain|Abel Ruiz|
+334|Girona FC|squad|10|FW|Spain|Portu|vice-captain
+334|Girona FC|squad|11|DF|Spain|Àlex Moreno|
+334|Girona FC|squad|13|GK|Argentina|Paulo Gazzaniga|
+334|Girona FC|squad|14|MF|Spain|Iván Morante|
+334|Girona FC|squad|15|FW|Ukraine|Oleksandr Pyshchur|
+334|Girona FC|squad|16|DF|Spain|Alejandro Francés|
+334|Girona FC|squad|17|FW|Spain|Bryan Gil|
+334|Girona FC|squad|19|FW|Ukraine|Vladyslav Vanat|
+334|Girona FC|squad|21|FW|Portugal|Jastin García|
+334|Girona FC|squad|22|FW|Colombia|Yáser Asprilla|
+334|Girona FC|squad|23|FW|Spain|Carles Pérez|
+334|Girona FC|squad|24|MF|Spain|Izan González|
+334|Girona FC|squad|25|GK|Ukraine|Vladyslav Krapyvtsov|
+334|Girona FC|squad|30|MF|Spain|Unai Hernández|on loan from Al-Ittihad
+334|Girona FC|squad|33|DF|Portugal|Mauro Furtado|
+334|Girona FC|squad|38|DF|Spain|Holmes Junior|
+334|Girona FC|squad|28|DF|Spain|Gibi Jordana|
+334|Girona FC|squad|29|MF|Guinea|Lass Kourouma|
+334|Girona FC|squad|32|FW|Venezuela|Juan Arango|
+334|Girona FC|squad|35|FW|Morocco|Mohamed Hamony|
+334|Girona FC|squad|36|MF|Spain|Javi Sarasa|
+334|Girona FC|squad|39|DF|Spain|Guillem Badia|
+334|Girona FC|squad|44|GK|Spain|Jordi Danso|
+334|Girona FC|loaned_out|—|DF|Hungary|Antal Yaakobishvili|Atlético Madrileño
+334|Girona FC|loaned_out|—|MF|Netherlands|Gabriel Misehouy|NAC Breda
+334|Girona FC|loaned_out|—|FW|Spain|Carles Garrido|Sant Andreu
+334|Girona FC|loaned_out|—|FW|Spain|Dani Fernández|Zamora
+334|Girona FC|loaned_out|—|FW|Senegal|Papa Dame Ba|UD Logroñés
+339|RCD Mallorca|squad|1|GK|Spain|Leo Román|
+339|RCD Mallorca|squad|2|DF|Spain|Mateu Morey|
+339|RCD Mallorca|squad|3|DF|Spain|Toni Lato|
+339|RCD Mallorca|squad|6|MF|Spain|Antonio Sánchez|
+339|RCD Mallorca|squad|8|MF|Spain|Manu Morlanes|
+339|RCD Mallorca|squad|9|FW|Spain|Abdón Prats|
+339|RCD Mallorca|squad|10|MF|Spain|Sergi Darder|
+339|RCD Mallorca|squad|12|MF|Portugal|Samú Costa|
+339|RCD Mallorca|squad|13|GK|Finland|Lucas Bergström|
+339|RCD Mallorca|squad|17|FW|Spain|Jan Virgili|
+339|RCD Mallorca|squad|20|MF|Spain|Pablo Torre|
+339|RCD Mallorca|squad|21|DF|Spain|Antonio Raíllo|captain
+339|RCD Mallorca|squad|22|DF|Colombia|Johan Mojica|
+339|RCD Mallorca|squad|24|DF|Slovakia|Martin Valjent|vice-captain
+339|RCD Mallorca|squad|27|DF|Spain|David López|
+339|RCD Mallorca|squad|30|FW|France|Justin Kalumba|
+339|RCD Mallorca|squad|26|DF|France|Iliesse Salhi|
+339|RCD Mallorca|squad|28|MF|Spain|Cesc Riba|
+339|RCD Mallorca|squad|29|DF|Spain|Luis Orejuela|
+339|RCD Mallorca|squad|32|DF|Cuba|Leo Sánchez|
+339|RCD Mallorca|squad|34|DF|Spain|Javier Olaizola|
+339|RCD Mallorca|squad|38|GK|Spain|Nil Torreguitart|
+339|RCD Mallorca|squad|39|MF|Spain|Jandro García|
+339|RCD Mallorca|squad|41|MF|Spain|Jan Salas|
+339|RCD Mallorca|squad|42|GK|Romania|Rareș Vlad|
+339|RCD Mallorca|squad|44|DF|Spain|Miguel Calatayud|
+339|RCD Mallorca|squad|—|FW|Colombia|Daniel Luna|unnumbered row in unlabeled table - possibly out on loan (no club given)
+339|RCD Mallorca|squad|—|FW|Spain|Marc Domènech|unnumbered row in unlabeled table - possibly out on loan (no club given)
+336|Real Oviedo|squad|1|GK|Spain|Miguel Narváez|
+336|Real Oviedo|squad|2|DF|Spain|Aisar Ahmed|
+336|Real Oviedo|squad|3|DF|Spain|Juan Cruz|
+336|Real Oviedo|squad|4|DF|Spain|David Costas|vice-captain
+336|Real Oviedo|squad|5|MF|Morocco|Youness Lachhab|
+336|Real Oviedo|squad|6|MF|Spain|Dani Villahermosa|
+336|Real Oviedo|squad|7|MF|Morocco|Ilyas Chaira|
+336|Real Oviedo|squad|8|MF|Spain|Mikel Goti|on loan from Real Sociedad
+336|Real Oviedo|squad|9|FW|Spain|Chris Ramos|on loan from Botafogo
+336|Real Oviedo|squad|10|MF|Spain|Alberto Reina|
+336|Real Oviedo|squad|11|MF|Spain|Jacobo González|
+336|Real Oviedo|squad|12|DF|Spain|Dani Calvo|captain
+336|Real Oviedo|squad|13|GK|Spain|Aarón Escandell|3rd captain
+336|Real Oviedo|squad|14|FW|Spain|Carlos Fernández|
+336|Real Oviedo|squad|15|DF|Spain|Samu Rodríguez|
+336|Real Oviedo|squad|16|MF|Spain|Aritz Aldasoro|on loan from Racing Santander
+336|Real Oviedo|squad|17|FW|Spain|Estanis Pedrola|
+336|Real Oviedo|squad|18|FW|Spain|Víctor Mingo|
+336|Real Oviedo|squad|20|MF|Spain|Pablo Sáenz|
+336|Real Oviedo|squad|21|DF|Spain|David Jiménez|
+336|Real Oviedo|squad|22|DF|Spain|Nacho Vidal|4th captain
+336|Real Oviedo|squad|23|DF|Spain|Carlos Domínguez|on loan from Celta
+336|Real Oviedo|squad|24|FW|Romania|Alexandru Ișfan|
+336|Real Oviedo|squad|25|FW|Spain|José Luis Morales|
+336|Real Oviedo|squad|28|MF|Spain|Dieguito Menéndez|
+336|Real Oviedo|squad|30|DF|Spain|Marco Esteban|
+336|Real Oviedo|squad|—|MF|France|Brandon Domingues|
+336|Real Oviedo|squad|27|GK|Spain|Samu Franganillo|secondary table
+336|Real Oviedo|squad|32|MF|Spain|Enzo Pérez|secondary table
+336|Real Oviedo|squad|33|FW|Spain|Óscar de la Hera|secondary table
+336|Real Oviedo|loaned_out|—|DF|Nigeria|Chukwuma Eze|Villarreal B
+336|Real Oviedo|loaned_out|—|MF|Spain|Álex Cardero|Cultural Leonesa
+336|Real Oviedo|loaned_out|—|MF|Spain|Pablo Agudín|Sant Andreu
+338|Real Valladolid|squad|1|GK|Spain|Álvaro Aceves|
+338|Real Valladolid|squad|2|DF|France|Clément Michelin|
+338|Real Valladolid|squad|3|DF|Spain|Guille Bueno|
+338|Real Valladolid|squad|4|DF|Spain|David Torres|
+338|Real Valladolid|squad|5|DF|Spain|Ramón Martínez|
+338|Real Valladolid|squad|6|MF|France|Mathis Lachuer|
+338|Real Valladolid|squad|8|MF|Spain|Víctor Meseguer|
+338|Real Valladolid|squad|9|FW|Spain|Juanmi Latasa|
+338|Real Valladolid|squad|10|FW|Brazil|Marcos André|
+338|Real Valladolid|squad|11|MF|Senegal|Amath Ndiaye|
+338|Real Valladolid|squad|12|MF|Nigeria|Ibrahim Alani|
+338|Real Valladolid|squad|14|MF|Spain|Iván Alejo|
+338|Real Valladolid|squad|15|DF|Spain|Pablo Tomeo|
+338|Real Valladolid|squad|17|MF|Croatia|Stipe Biuk|
+338|Real Valladolid|squad|18|DF|Spain|Carlos Clerc|
+338|Real Valladolid|squad|19|MF|Uruguay|Lucas Sanseviero|
+338|Real Valladolid|squad|21|MF|France|Julien Ponceau|
+338|Real Valladolid|squad|23|DF|Morocco|Mohamed Jaouab|
+338|Real Valladolid|squad|24|MF|Croatia|Stanko Jurić|
+338|Real Valladolid|squad|25|FW|Norway|Vegard Erlien|
+338|Real Valladolid|squad|26|GK|Spain|Álvaro de Pablo|
+338|Real Valladolid|squad|27|DF|Spain|Iván Garriel|
+338|Real Valladolid|squad|30|DF|Spain|Hugo San Modesto|
+338|Real Valladolid|squad|34|DF|Spain|José Luis Aranda|
+338|Real Valladolid|squad|35|DF|Spain|Alejandro Galdeano|
+338|Real Valladolid|squad|36|FW|Spain|Mario Domínguez|
+338|Real Valladolid|squad|37|MF|Brazil|Riki de Morais|
+338|Real Valladolid|squad|38|FW|Spain|Ángel Carvajal|
+338|Real Valladolid|squad|40|FW|Nigeria|Brain Chinedu|
+338|Real Valladolid|squad|—|DF|Spain|Koke Iglesias|unnumbered row in unlabeled table - possibly out on loan (no club given)
+338|Real Valladolid|squad|—|DF|Spain|Trilli|unnumbered row in unlabeled table - possibly out on loan (no club given)
+338|Real Valladolid|squad|—|MF|Spain|Xavi Moreno|unnumbered row in unlabeled table - possibly out on loan (no club given)
+338|Real Valladolid|squad|—|FW|Spain|Adrián Arnu|unnumbered row in unlabeled table - possibly out on loan (no club given)
+338|Real Valladolid|squad|—|FW|Spain|Jorge Delgado|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|1|GK|Spain|Andrés Fernández|
+342|UD Almería|squad|2|MF|Spain|Arnau Puigmal|
+342|UD Almería|squad|3|DF|Spain|Álex Muñoz|
+342|UD Almería|squad|4|DF|Portugal|Nélson Monte|
+342|UD Almería|squad|5|DF|Brazil|Rodrigo Ely|
+342|UD Almería|squad|7|FW|Spain|Jon Morcillo|
+342|UD Almería|squad|8|MF|Portugal|Gui Guedes|
+342|UD Almería|squad|9|FW|Brazil|Thalys|
+342|UD Almería|squad|10|MF|Spain|Nico Melamed|
+342|UD Almería|squad|11|MF|Spain|Sergio Arribas|
+342|UD Almería|squad|12|FW|Brazil|Léo Baptistão|
+342|UD Almería|squad|13|GK|Spain|Fernando Martínez|
+342|UD Almería|squad|14|MF|Ghana|Iddrisu Baba|
+342|UD Almería|squad|16|DF|Spain|Marcos Luna|
+342|UD Almería|squad|17|MF|Senegal|Dion Lopy|
+342|UD Almería|squad|18|DF|Italy|Federico Bonini|
+342|UD Almería|squad|19|FW|Cameroon|Patrick Soko|
+342|UD Almería|squad|21|DF|Spain|Chumi|
+342|UD Almería|squad|22|DF|Curaçao|Daijiro Chirino|
+342|UD Almería|squad|23|FW|Spain|Adrián Embarba|
+342|UD Almería|squad|24|FW|Spain|Miguel de la Fuente|
+342|UD Almería|squad|29|MF|Serbia|Stefan Džodić|
+342|UD Almería|squad|31|GK|Spain|Bruno Iribarne|
+342|UD Almería|squad|32|DF|Spain|Pedro Fidel|
+342|UD Almería|squad|—|FW|DR Congo|Brian Cipenga|
+342|UD Almería|squad|26|FW|Morocco|Houssam Kounia|secondary table
+342|UD Almería|squad|27|DF|Portugal|Luís Martins|secondary table
+342|UD Almería|squad|30|GK|Spain|Jesús López|secondary table
+342|UD Almería|squad|—|DF|Spain|Álex Pozo|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|DF|Spain|Edgar González|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|FW|Montenegro|Marko Perović|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|MF|Spain|Rubén Quintanilla|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|MF|Spain|Selvi Clua|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|FW|Mali|Ibrahima Koné|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|squad|—|FW|Serbia|Marko Milovanović|unnumbered row in unlabeled table - possibly out on loan (no club given)
+342|UD Almería|loaned_out|—|MF|Argentina|Lucas Robertone|Vélez Sarsfield
+341|SD Eibar|squad|1|GK|Spain|Luis López|
+341|SD Eibar|squad|2|DF|Spain|Sergio Cubero|
+341|SD Eibar|squad|3|DF|Spain|Imanol García de Albéniz|
+341|SD Eibar|squad|4|DF|Spain|Unai Elgezabal|
+341|SD Eibar|squad|5|DF|Spain|Peru Nolaskoain|
+341|SD Eibar|squad|6|MF|Spain|Sergio Álvarez|
+341|SD Eibar|squad|7|FW|Spain|Adu Ares|
+341|SD Eibar|squad|8|MF|Spain|Ander Madariaga|
+341|SD Eibar|squad|9|FW|Spain|Jon Bautista|
+341|SD Eibar|squad|10|FW|Spain|Jon Guruzeta|
+341|SD Eibar|squad|11|FW|Spain|Jon Magunazelaia|
+341|SD Eibar|squad|13|GK|Spain|Jonmi Magunagoitia|
+341|SD Eibar|squad|14|MF|Spain|Lander Olaetxea|
+341|SD Eibar|squad|15|DF|Portugal|Jair Amador|
+341|SD Eibar|squad|17|FW|Spain|Pejiño|
+341|SD Eibar|squad|18|DF|Spain|Markel Arana|
+341|SD Eibar|squad|19|FW|Spain|Eric Pérez|
+341|SD Eibar|squad|20|FW|Spain|Javi Martón|
+341|SD Eibar|squad|21|MF|Spain|Iván Gil|
+341|SD Eibar|squad|22|DF|Spain|Álvaro Rodríguez|
+341|SD Eibar|squad|23|DF|Spain|Anaitz Arbilla|captain
+341|SD Eibar|squad|24|DF|Spain|Juan Bernat|
+341|SD Eibar|squad|27|FW|Spain|Elijah Gift|on loan from Athletic Bilbao
+341|SD Eibar|squad|28|MF|Spain|Lucas Núñez|on loan from Valencia
+341|SD Eibar|squad|30|MF|Spain|Aleix Garrido|
+341|SD Eibar|squad|29|FW|Spain|Iker Zubiría|
+341|SD Eibar|squad|32|FW|Spain|Carlos Lumbreras|
+341|SD Eibar|squad|34|DF|Spain|Oier Llorente|
+341|SD Eibar|squad|36|DF|Spain|Haritz Ortuzar|
+341|SD Eibar|loaned_out|—|DF|Spain|Hodei Arrillaga|Mirandés
+341|SD Eibar|loaned_out|—|FW|Spain|Endika Mateos|Barakaldo
+341|SD Eibar|loaned_out|—|FW|Spain|Hugo García|Cultural Leonesa
+343|UD Las Palmas|squad|2|DF|Spain|Marvin Park|
+343|UD Las Palmas|squad|3|DF|Ghana|Nicholas Opoku|
+343|UD Las Palmas|squad|4|DF|Spain|Álex Suárez|3rd captain
+343|UD Las Palmas|squad|5|DF|Spain|Enrique Clemente|
+343|UD Las Palmas|squad|6|MF|Spain|Iñaki González|
+343|UD Las Palmas|squad|7|FW|Spain|Jefté Betancor|
+343|UD Las Palmas|squad|8|MF|Spain|Sergio Ruiz|
+343|UD Las Palmas|squad|9|MF|Uruguay|Jeremía Recoba|
+343|UD Las Palmas|squad|10|FW|Spain|Jesé|
+343|UD Las Palmas|squad|11|FW|Japan|Taisei Miyashiro|
+343|UD Las Palmas|squad|12|MF|France|Enzo Loiodice|
+343|UD Las Palmas|squad|13|GK|Spain|José Antonio Caro|
+343|UD Las Palmas|squad|14|MF|Spain|Manu Fuster|
+343|UD Las Palmas|squad|15|DF|Spain|Juanma Herzog|
+343|UD Las Palmas|squad|16|MF|Slovenia|Mateo Aćimović|
+343|UD Las Palmas|squad|17|MF|Spain|Viti Rozada|
+343|UD Las Palmas|squad|18|MF|Panama|Edward Cedeño|
+343|UD Las Palmas|squad|19|FW|Spain|Sandro Ramírez|vice-captain
+343|UD Las Palmas|squad|20|MF|Spain|Kirian Rodríguez|captain
+343|UD Las Palmas|squad|21|DF|Italy|Giovanni Bonfanti|on loan from Atalanta
+343|UD Las Palmas|squad|22|FW|Spain|Ale García|
+343|UD Las Palmas|squad|23|DF|Spain|Andrés Rodríguez|
+343|UD Las Palmas|squad|24|MF|Spain|Iván Jaime|on loan from Porto
+343|UD Las Palmas|squad|26|MF|Burkina Faso|Aboubacar Bassinga|
+343|UD Las Palmas|squad|27|DF|Spain|Valentín Pezzolesi|
+343|UD Las Palmas|squad|29|FW|Spain|Elías Romero|
+343|UD Las Palmas|squad|30|MF|Spain|Iván Medina|
+343|UD Las Palmas|squad|31|FW|Spain|Adam Arvelo|
+343|UD Las Palmas|squad|32|MF|Spain|Rafa Cruz|
+343|UD Las Palmas|squad|33|DF|Spain|Víctor Villote|
+343|UD Las Palmas|squad|35|GK|Spain|Adri Suárez|
+343|UD Las Palmas|loaned_out|—|DF|Spain|Carlos Navarro|Mirandés
+343|UD Las Palmas|loaned_out|—|DF|Spain|Cristian Gutiérrez|Cádiz
+327|CD Leganés|squad|1|GK|Spain|Raúl Fernández|
+327|CD Leganés|squad|2|DF|Spain|Marvel|
+327|CD Leganés|squad|3|DF|Spain|Javi Montero|
+327|CD Leganés|squad|4|DF|Spain|Rubén Pulido|
+327|CD Leganés|squad|5|DF|Spain|Ignasi Miquel|3rd captain
+327|CD Leganés|squad|6|DF|Spain|Lalo Aguilar|
+327|CD Leganés|squad|7|DF|Spain|Rubén Peña|captain
+327|CD Leganés|squad|8|MF|Morocco|Yassine Kechta|
+327|CD Leganés|squad|9|FW|Spain|Álex Millán|
+327|CD Leganés|squad|10|MF|Netherlands|Zico Buurmeester|
+327|CD Leganés|squad|11|DF|Spain|Naim García|
+327|CD Leganés|squad|13|GK|Algeria|Luca Zidane|
+327|CD Leganés|squad|14|MF|Spain|Dani Rodríguez|
+327|CD Leganés|squad|15|DF|Spain|Enric Franquesa|vice-captain
+327|CD Leganés|squad|16|FW|Spain|Unax del Cura|
+327|CD Leganés|squad|17|MF|Tunisia|Ismaël Gharbi|on loan from Braga
+327|CD Leganés|squad|18|MF|Spain|Andrés Campos|
+327|CD Leganés|squad|19|FW|Cameroon|Patrick Soko|on loan from Almería
+327|CD Leganés|squad|20|MF|Spain|Miguel Atienza|
+327|CD Leganés|squad|21|FW|Spain|Álvaro Morata|on loan from Como
+327|CD Leganés|squad|22|MF|Spain|Álex Sancris|on loan from Getafe
+327|CD Leganés|squad|23|DF|Spain|Álvaro Tejero|
+327|CD Leganés|squad|24|MF|Guinea|Amadou Diawara|
+327|CD Leganés|squad|29|DF|Zambia|David Hamansenya|
+327|CD Leganés|squad|31|GK|Spain|Nico Lozano|
+327|CD Leganés|squad|32|FW|Morocco|Suleiman El Haddadi|
+327|CD Leganés|squad|38|GK|Spain|Ale Gorrín|
+327|CD Leganés|loaned_out|—|GK|Spain|Javi Garrido|Coria
+327|CD Leganés|loaned_out|—|DF|Senegal|Djibril Gueye|Sporting CP B
+327|CD Leganés|loaned_out|—|DF|Spain|Javi Hernández|Cerezo Osaka
+327|CD Leganés|loaned_out|—|DF|Bolivia|Lucas Macazaga|Ponferradina
+327|CD Leganés|loaned_out|—|DF|Spain|Marco Leiton|Coria
+327|CD Leganés|loaned_out|—|DF|Uruguay|Sebastián Figueredo|Iberia 1999
+327|CD Leganés|loaned_out|—|DF|Spain|Víctor Rodríguez|Cacereño
+327|CD Leganés|loaned_out|—|MF|Spain|Carlos Guirao|Eldense
+327|CD Leganés|loaned_out|—|MF|Spain|Juan Cruz|Málaga
+327|CD Leganés|loaned_out|—|MF|Belgium|Benjamin Pauwels|Casa Pia
+327|CD Leganés|loaned_out|—|FW|Denmark|Alfred Gøthler|Extremadura
+322|AD Ceuta|squad|1|GK|Spain|Pedro López|
+322|AD Ceuta|squad|2|DF|Spain|Toni Abad|
+322|AD Ceuta|squad|3|DF|Spain|José Matos|
+322|AD Ceuta|squad|4|DF|Spain|Albert Caparrós|captain
+322|AD Ceuta|squad|5|DF|Spain|Adrián Lapeña|
+322|AD Ceuta|squad|6|DF|Spain|Carlos Hernández|
+322|AD Ceuta|squad|7|MF|Spain|Álex Camacho|
+322|AD Ceuta|squad|8|MF|Spain|Kuki Zalazar|
+322|AD Ceuta|squad|9|FW|Spain|Jordi Escobar|
+322|AD Ceuta|squad|10|MF|Spain|Marino Illescas|
+322|AD Ceuta|squad|11|MF|Spain|Cedric Teguia|
+322|AD Ceuta|squad|13|GK|Spain|Guillermo Vallejo|
+322|AD Ceuta|squad|14|MF|France|Yann Bodiger|
+322|AD Ceuta|squad|15|MF|Spain|Joaquín González|on loan from Cádiz
+322|AD Ceuta|squad|16|DF|Spain|Redru|
+322|AD Ceuta|squad|17|MF|Ghana|Mawuli Mensah|
+322|AD Ceuta|squad|18|DF|Spain|Álex Petxarroman|
+322|AD Ceuta|squad|19|MF|Armenia|Edgar Sevikyan|on loan from Ferencváros
+322|AD Ceuta|squad|20|MF|Spain|Ale Meléndez|
+322|AD Ceuta|squad|21|FW|Nigeria|Kenneth Mamah|
+322|AD Ceuta|squad|22|MF|Ivory Coast|Kialy Abdoul Kone|
+322|AD Ceuta|squad|23|MF|Morocco|Anuar Tuhami|
+322|AD Ceuta|squad|26|MF|Venezuela|Arick Betancourt|
+322|AD Ceuta|squad|27|FW|Spain|Umaru Konare|on loan from Elche
+322|AD Ceuta|squad|29|FW|Morocco|Omar Sadik|on loan from Espanyol
+322|AD Ceuta|squad|32|MF|Nigeria|Gabriel Okoro|
+322|AD Ceuta|squad|—|MF|Spain|Josema|
+322|AD Ceuta|squad|28|MF|Spain|Abraham Bueno|secondary table
+322|AD Ceuta|squad|31|MF|Spain|Adrián Romero|secondary table
+322|AD Ceuta|squad|34|DF|Spain|Daniel Mas|secondary table
+322|AD Ceuta|squad|36|DF|Spain|Josemi|secondary table
+322|AD Ceuta|loaned_out|—|FW|Spain|Iomar Vidal|La Nucía
+333|FC Andorra|squad|1|GK|Argentina|Nico Ratti|captain
+333|FC Andorra|squad|2|DF|Spain|Juan Sebastián|
+333|FC Andorra|squad|3|DF|Argentina|Lautaro Spatz|
+333|FC Andorra|squad|4|DF|Spain|Gael Alonso|
+333|FC Andorra|squad|5|DF|Spain|Marc Bombardó|
+333|FC Andorra|squad|6|MF|Spain|Hugo Solozábal|
+333|FC Andorra|squad|7|FW|Spain|Álex Calvo|
+333|FC Andorra|squad|8|MF|Turkey|Efe Akman|
+333|FC Andorra|squad|9|FW|Netherlands|Julian Rijkhoff|on loan from Ajax
+333|FC Andorra|squad|10|MF|Spain|Marc Domènech|
+333|FC Andorra|squad|11|FW|Uruguay|Lautaro de León|
+333|FC Andorra|squad|13|GK|Spain|Pau López|
+333|FC Andorra|squad|14|MF|Spain|Sergio Molina|vice-captain
+333|FC Andorra|squad|15|FW|Spain|Jordi Cano|
+333|FC Andorra|squad|16|MF|Philippines|Randy Schneider|
+333|FC Andorra|squad|17|DF|France|Thomas Carrique|
+333|FC Andorra|squad|18|DF|Spain|Andoni López|
+333|FC Andorra|squad|19|MF|Spain|Nacho Quintana|
+333|FC Andorra|squad|20|DF|Spain|Martí Vilà|3rd captain
+333|FC Andorra|squad|21|FW|Spain|Moró Sidibe|
+333|FC Andorra|squad|23|DF|Spain|Diego Alende|4th captain
+333|FC Andorra|squad|24|MF|France|Théo Le Normand|
+333|FC Andorra|squad|25|GK|Equatorial Guinea|Jesús Owono|
+333|FC Andorra|squad|27|FW|Serbia|Stefan Golubović|
+333|FC Andorra|squad|28|DF|Spain|Tiago Olmedo|
+333|FC Andorra|squad|29|FW|Spain|Hugo López|on loan from Villarreal
+333|FC Andorra|squad|31|GK|Spain|Jan Lagunas|
+333|FC Andorra|squad|37|FW|Romania|Enes Sali|
+333|FC Andorra|squad|32|DF|Spain|Jordi Toribio|
+333|FC Andorra|squad|—|FW|Georgia|Saba Samushia|
+333|FC Andorra|squad|—|DF|Spain|Javier Vicario|
+333|FC Andorra|squad|—|FW|Spain|Bilal Achhiba|
+333|FC Andorra|loaned_out|—|DF|Andorra|Iván Rodríguez|Huesca
+333|FC Andorra|loaned_out|—|FW|Andorra|Aron Rodrigo|Mirandés
+333|FC Andorra|loaned_out|—|FW|Spain|Aitor Uzkudun|Mirandés
+333|FC Andorra|loaned_out|—|FW|Andorra|Berto Rosas|Logroñés
+324|Burgos CF|squad|1|GK|Spain|Bruno Iribarne|
+324|Burgos CF|squad|2|DF|Spain|Álex Lizancos|
+324|Burgos CF|squad|3|DF|Spain|Ignasi Vilarrasa|
+324|Burgos CF|squad|4|MF|Chile|Pablo Galdames|
+324|Burgos CF|squad|5|MF|Spain|Marcelo Expósito|
+324|Burgos CF|squad|6|DF|Spain|Sergio González|
+324|Burgos CF|squad|7|FW|Spain|Jon Karrikaburu|
+324|Burgos CF|squad|8|DF|Spain|Grego Sierra|
+324|Burgos CF|squad|9|FW|Spain|Álex Forés|
+324|Burgos CF|squad|10|MF|Martinique|Kévin Appin|
+324|Burgos CF|squad|11|FW|Spain|Víctor Mollejo|
+324|Burgos CF|squad|12|MF|Spain|Unai Vencedor|
+324|Burgos CF|squad|13|GK|Spain|Ander Cantero|
+324|Burgos CF|squad|14|MF|Spain|David González|
+324|Burgos CF|squad|15|DF|Spain|Oier Luengo|
+324|Burgos CF|squad|16|MF|Spain|Curro Sánchez|
+324|Burgos CF|squad|17|MF|Spain|Mario Cantero|
+324|Burgos CF|squad|18|DF|Spain|Saúl del Cerro|
+324|Burgos CF|squad|19|FW|Spain|Javi Llabrés|
+324|Burgos CF|squad|20|MF|Spain|José Gragera|on loan from Espanyol
+324|Burgos CF|squad|21|MF|Spain|Fermín García|
+324|Burgos CF|squad|22|DF|Spain|Brais Martínez|
+324|Burgos CF|squad|23|DF|Spain|Alberto Dadie|
+324|Burgos CF|squad|24|MF|Argentina|Santiago Lencina|on loan from River Plate
+324|Burgos CF|squad|36|DF|Spain|Iván Martínez|
+324|Burgos CF|squad|30|GK|Spain|Marc Monedero|secondary table
+324|Burgos CF|squad|31|FW|Spain|Irian Ribas|secondary table
+324|Burgos CF|squad|35|GK|Spain|Diego González|secondary table
+324|Burgos CF|squad|37|GK|Spain|Cristian Torrelavid|secondary table
+324|Burgos CF|squad|39|DF|Spain|David Hernáiz|secondary table
+324|Burgos CF|loaned_out|—|FW|Colombia|Mateo Mejía|Panetolikos
+332|Córdoba CF|squad|1|GK|Andorra|Iker Álvarez|
+332|Córdoba CF|squad|2|DF|Spain|Ignasi Vilarrasa|
+332|Córdoba CF|squad|4|DF|Spain|Álex Martín|
+332|Córdoba CF|squad|5|FW|Spain|Diego Bri|on loan from Atlético Madrid
+332|Córdoba CF|squad|6|FW|Spain|Diego Percan|
+332|Córdoba CF|squad|7|MF|France|Théo Zidane|
+332|Córdoba CF|squad|8|MF|Spain|Isma Ruiz|
+332|Córdoba CF|squad|11|FW|Spain|Kevin Medina|
+332|Córdoba CF|squad|12|DF|Cameroon|Franck Fomeyem|
+332|Córdoba CF|squad|13|GK|Spain|Carlos Marín|captain
+332|Córdoba CF|squad|16|DF|Spain|Rubén Alves|
+332|Córdoba CF|squad|17|FW|Portugal|Adilson|
+332|Córdoba CF|squad|18|FW|Spain|Adrián Fuentes|
+332|Córdoba CF|squad|21|DF|Spain|Carlos Albarrán|
+332|Córdoba CF|squad|23|FW|Spain|Cristian Carracedo|
+332|Córdoba CF|squad|—|DF|Spain|Egoitz Muñoz|on loan from Alavés
+332|Córdoba CF|squad|—|DF|Spain|Dani Tasende|
+332|Córdoba CF|squad|—|DF|Spain|Jacobo Martí|
+332|Córdoba CF|squad|—|FW|Morocco|Adnane Ghailan|
+332|Córdoba CF|squad|—|FW|Spain|Enol Rodríguez|
+332|Córdoba CF|squad|—|FW|Spain|Unai Sabroso|
+332|Córdoba CF|squad|26|GK|Spain|Alejandro Arévalo|secondary table
+332|Córdoba CF|squad|31|DF|Spain|Miguelón|secondary table
+332|Córdoba CF|squad|32|DF|Spain|Dani Albuera|secondary table
+332|Córdoba CF|squad|33|DF|Bolivia|Marcelo Timorán|secondary table
+332|Córdoba CF|squad|36|MF|Spain|Javi Antrás|secondary table
+332|Córdoba CF|squad|37|DF|Spain|Dani García|secondary table
+332|Córdoba CF|squad|39|DF|Spain|Amin Rajouani|secondary table
+332|Córdoba CF|loaned_out|—|GK|Spain|Ramon Vila|Eldense (inferred: unlabeled table; Eldense page lists him on loan from Córdoba)
+332|Córdoba CF|loaned_out|—|DF|Spain|Matías Barboza|loan club not stated (unlabeled table)
+332|Córdoba CF|loaned_out|—|MF|Spain|Ntji Tounkara|loan club not stated (unlabeled table)
+332|Córdoba CF|loaned_out|—|FW|Spain|George Andrews|loan club not stated (unlabeled table)
+332|Córdoba CF|loaned_out|—|FW|Spain|Mariano Carmona|Eldense (inferred: unlabeled table; Eldense page lists him on loan from Córdoba)
+332|Córdoba CF|loaned_out|—|FW|Spain|Víctor Sánchez|loan club not stated (unlabeled table)
+332|Córdoba CF|loaned_out|—|FW|Brazil|Dalisson de Almeida|Hajduk Split
+51|Elche|squad|1|GK|Argentina|Matías Dituro|
+51|Elche|squad|2|DF|Spain|Buba Sangaré|
+51|Elche|squad|4|DF|Spain|Bambo Diaby|
+51|Elche|squad|5|MF|Argentina|Federico Redondo|
+51|Elche|squad|6|DF|Spain|Pedro Bigas|captain
+51|Elche|squad|7|MF|Spain|Yago Santiago|
+51|Elche|squad|8|MF|Spain|Marc Aguado|
+51|Elche|squad|9|FW|Argentina|Ezequiel Ponce|
+51|Elche|squad|10|MF|Argentina|Facundo Buonanotte|on loan from Brighton & Hove Albion
+51|Elche|squad|11|MF|Spain|Germán Valera|
+51|Elche|squad|12|MF|Spain|Gonzalo Villar|
+51|Elche|squad|14|FW|Spain|Fer Niño|
+51|Elche|squad|16|MF|Portugal|Martim Neto|
+51|Elche|squad|17|MF|Spain|Josan|3rd captain
+51|Elche|squad|19|MF|DR Congo|Grady Diangana|
+51|Elche|squad|20|FW|Spain|Tete Morente|
+51|Elche|squad|21|FW|Chile|Lucas Cepeda|
+51|Elche|squad|22|DF|Austria|David Affengruber|4th captain
+51|Elche|squad|23|DF|Spain|Víctor Chust|
+51|Elche|squad|24|FW|Argentina|Abiel Osorio|
+51|Elche|squad|26|DF|Croatia|Matía Barzić|
+51|Elche|squad|29|MF|Morocco|Ali Houary|
+51|Elche|squad|32|MF|Morocco|Adam Boayar|
+51|Elche|squad|43|GK|Spain|Alejandro Iturbe|
+51|Elche|squad|47|MF|Spain|Javi Morcillo|
+51|Elche|squad|30|FW|Spain|Álvaro Padilla|secondary table
+51|Elche|squad|33|FW|Morocco|Nordin Al Lal|secondary table
+51|Elche|squad|36|FW|Spain|Umaru Konare|secondary table
+51|Elche|squad|—|DF|Spain|Bakary Traoré|secondary table
+51|Elche|squad|—|FW|Dominican Republic|Rafa Núñez|secondary table
+51|Elche|loaned_out|—|GK|Argentina|Axel Werner|Rosario Central
+51|Elche|loaned_out|—|DF|Spain|John Chetauya|Mallorca
+51|Elche|loaned_out|—|FW|Argentina|Tiziano Perrotta|Defensa y Justicia
+323|Albacete|squad|1|GK|Spain|Carlos Marín|
+323|Albacete|squad|2|DF|Spain|Lorenzo Aguado|
+323|Albacete|squad|4|MF|Spain|Agus Medina|3rd captain
+323|Albacete|squad|5|DF|Spain|Javi Moreno|
+323|Albacete|squad|6|MF|Spain|Antonio Pacheco|
+323|Albacete|squad|7|FW|Spain|Antonio Puertas|
+323|Albacete|squad|8|MF|Spain|Javi Villar|
+323|Albacete|squad|9|FW|Spain|Mario Soberón|
+323|Albacete|squad|10|MF|Spain|Rober González|
+323|Albacete|squad|11|FW|Spain|Víctor Valverde|
+323|Albacete|squad|12|FW|Spain|Higinio Marín|captain
+323|Albacete|squad|13|GK|Spain|Diego Mariño|
+323|Albacete|squad|14|MF|Spain|Víctor San Bartolomé|
+323|Albacete|squad|15|DF|Spain|Fran Gámez|
+323|Albacete|squad|16|FW|Morocco|Munir El Haddadi|
+323|Albacete|squad|17|MF|Spain|José Corpas|
+323|Albacete|squad|18|MF|Spain|Sergio Ortuño|
+323|Albacete|squad|19|FW|Spain|Álex Rubio|
+323|Albacete|squad|20|FW|Ghana|Samuel Obeng|
+323|Albacete|squad|21|DF|Spain|Carlos Neva|vice-captain
+323|Albacete|squad|22|DF|Spain|Lluís López|4th captain
+323|Albacete|squad|23|DF|Spain|Pepe Sánchez|5th captain
+323|Albacete|squad|24|DF|Spain|Jesús Vallejo|
+323|Albacete|squad|27|DF|Spain|Dani Bernabéu|
+323|Albacete|squad|32|FW|Uruguay|Agustín Albarracín|on loan from Cagliari
+323|Albacete|squad|26|MF|Spain|Capi|secondary table
+323|Albacete|squad|28|DF|Spain|Toni Velilla|secondary table
+323|Albacete|squad|33|FW|Spain|Tomás Inglés|secondary table
+323|Albacete|squad|38|MF|Spain|Diego Rodríguez|secondary table
+323|Albacete|squad|39|FW|Spain|Fabio García-Moreno|secondary table
+323|Albacete|squad|44|MF|Spain|Antonio David|secondary table
+323|Albacete|loaned_out|—|FW|Venezuela|Jovanny Bolívar|Kalamata
+323|Albacete|loaned_out|—|FW|Ecuador|Kavier Ortiz|Metropolitanos
+331|Cádiz CF|squad|1|GK|Spain|David Gil|captain
+331|Cádiz CF|squad|2|DF|Spain|Beñat de Jesús|
+331|Cádiz CF|squad|3|DF|Spain|Sergio Arribas|
+331|Cádiz CF|squad|4|DF|Spain|Javi Castro|
+331|Cádiz CF|squad|5|MF|France|Marc-Olivier Doué|
+331|Cádiz CF|squad|6|DF|Spain|Manu Fernández|
+331|Cádiz CF|squad|7|FW|Georgia|Iuri Tabatadze|
+331|Cádiz CF|squad|8|FW|Nigeria|Efe Aghama|
+331|Cádiz CF|squad|9|FW|Spain|Álvaro García Pascual|
+331|Cádiz CF|squad|10|FW|Spain|Javi Ontiveros|
+331|Cádiz CF|squad|11|MF|Spain|José Antonio de la Rosa|
+331|Cádiz CF|squad|12|DF|Georgia|Giorgi Gocholeishvili|on loan from Shakhtar Donetsk
+331|Cádiz CF|squad|13|GK|Spain|Jokin Ezkieta|on loan from Racing Santander
+331|Cádiz CF|squad|14|DF|Serbia|Bojan Kovačević|
+331|Cádiz CF|squad|15|DF|Comoros|Kenan Toibibou|
+331|Cádiz CF|squad|16|MF|Spain|Antonio Cordero|on loan from Newcastle United
+331|Cádiz CF|squad|17|MF|Morocco|Aïmen Moueffek|on loan from Saint-Étienne
+331|Cádiz CF|squad|18|MF|Spain|Jandro Orellana|
+331|Cádiz CF|squad|19|FW|Spain|Urko Izeta|
+331|Cádiz CF|squad|20|FW|Spain|Borja Vázquez|
+331|Cádiz CF|squad|21|FW|Ukraine|Vladys Kopotun|
+331|Cádiz CF|squad|22|DF|Spain|Cristian Gutiérrez|on loan from Las Palmas
+331|Cádiz CF|squad|23|MF|Spain|Damián Rodríguez|on loan from Celta
+331|Cádiz CF|squad|24|MF|Spain|Ibon Sánchez|
+331|Cádiz CF|squad|25|FW|Uruguay|Gonzalo Petit|on loan from Betis
+331|Cádiz CF|squad|26|GK|Spain|Rubén Domínguez|
+331|Cádiz CF|squad|27|DF|Spain|Juan Díaz|
+331|Cádiz CF|squad|28|MF|Spain|Dilan Zárate|on loan from Inter Milan
+331|Cádiz CF|squad|30|DF|Spain|César Díaz|
+331|Cádiz CF|squad|31|DF|France|Noah Ukwuije|
+331|Cádiz CF|squad|32|DF|Spain|Robe Rosado|
+331|Cádiz CF|squad|33|DF|Spain|Manu Rivera|
+331|Cádiz CF|loaned_out|—|MF|Spain|José Andújar|loan club not stated
+331|Cádiz CF|loaned_out|—|MF|Spain|Joaquín González|Ceuta
+331|Cádiz CF|loaned_out|—|MF|Mali|Moussa Diakité|Çaykur Rizespor
+331|Cádiz CF|loaned_out|—|MF|Mali|Yussi Diarra|Córdoba
+331|Cádiz CF|loaned_out|—|FW|Spain|Ismael Álvarez|Rayo Majadahonda
+331|Cádiz CF|loaned_out|—|FW|Argentina|Jerónimo Dómina|Tigre
+337|Sporting Gijón|squad|1|GK|Spain|Rubén Yáñez|
+337|Sporting Gijón|squad|2|DF|Spain|Guille Rosas|
+337|Sporting Gijón|squad|3|DF|Spain|Pablo García|
+337|Sporting Gijón|squad|4|DF|Uruguay|Emanuel Gularte|on loan from Puebla
+337|Sporting Gijón|squad|5|DF|Spain|Diego Sánchez|
+337|Sporting Gijón|squad|6|MF|Spain|Nacho Martín|
+337|Sporting Gijón|squad|7|MF|Spain|Gaspar Campos|
+337|Sporting Gijón|squad|8|MF|Spain|Manu Rodríguez|
+337|Sporting Gijón|squad|9|FW|Uruguay|Andrés Ferrari|on loan from Sint-Truiden
+337|Sporting Gijón|squad|10|MF|Spain|César Gelabert|
+337|Sporting Gijón|squad|11|FW|United States|Konrad de la Fuente|
+337|Sporting Gijón|squad|13|GK|Spain|Egoitz Arana|
+337|Sporting Gijón|squad|14|MF|Spain|Álex Corredera|
+337|Sporting Gijón|squad|15|DF|Spain|Pablo Vázquez|
+337|Sporting Gijón|squad|16|FW|Argentina|Alejo Sarco|
+337|Sporting Gijón|squad|17|FW|Spain|Antonio Casas|on loan from Venezia
+337|Sporting Gijón|squad|19|FW|Colombia|Juan Otero|
+337|Sporting Gijón|squad|20|MF|Russia|Nikita Iosifov|
+337|Sporting Gijón|squad|21|MF|Senegal|Mamadou Loum|
+337|Sporting Gijón|squad|22|MF|Spain|Hugo Guillamón|
+337|Sporting Gijón|squad|23|DF|Spain|Jorge Sáenz|
+337|Sporting Gijón|squad|24|DF|Spain|Aimar Duñabeitia|
+337|Sporting Gijón|squad|26|DF|Spain|Iker Martínez|
+337|Sporting Gijón|squad|44|DF|Spain|Andrés Cuenca|on loan from Como
+337|Sporting Gijón|squad|27|FW|Spain|Enol Prendes|secondary table
+337|Sporting Gijón|squad|28|FW|Spain|Miguel Conde|secondary table
+337|Sporting Gijón|squad|35|MF|Spain|Chris Ferreres|secondary table
+337|Sporting Gijón|squad|36|MF|Spain|Bruno Rubio|secondary table
+337|Sporting Gijón|loaned_out|—|DF|France|Yann Kembo|Huesca
+337|Sporting Gijón|loaned_out|—|FW|Senegal|Amadou Coundoul|Académica de Coimbra

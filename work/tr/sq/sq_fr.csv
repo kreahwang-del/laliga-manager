@@ -1,0 +1,1095 @@
+club_id|club|status|number|pos|nat|player|note
+58|Paris SG|squad|2|DF|MAR|Achraf Hakimi|vice-captain
+58|Paris SG|squad|4|DF|BRA|Lucas Beraldo|
+58|Paris SG|squad|5|DF|BRA|Marquinhos|captain
+58|Paris SG|squad|6|DF|UKR|Illia Zabarnyi|
+58|Paris SG|squad|7|FW|GEO|Khvicha Kvaratskhelia|
+58|Paris SG|squad|8|MF|ESP|Fabián Ruiz|
+58|Paris SG|squad|9|FW|ESP|Ferran Torres|
+58|Paris SG|squad|10|FW|FRA|Ousmane Dembélé|4th captain
+58|Paris SG|squad|11|MF|FRA|Maghnes Akliouche|
+58|Paris SG|squad|12|DF|FRA|Lucas Digne|
+58|Paris SG|squad|14|FW|FRA|Désiré Doué|
+58|Paris SG|squad|16|GK|ITA|Alessandro Longoni|
+58|Paris SG|squad|17|MF|POR|Vitinha|3rd captain
+58|Paris SG|squad|21|DF|FRA|Lucas Hernandez|
+58|Paris SG|squad|22|FW|BEL|Mika Godts|
+58|Paris SG|squad|24|MF|FRA|Senny Mayulu|
+58|Paris SG|squad|25|DF|POR|Nuno Mendes|
+58|Paris SG|squad|27|MF|ESP|Dro Fernández|
+58|Paris SG|squad|30|GK|FRA|Lucas Chevalier|
+58|Paris SG|squad|33|MF|FRA|Warren Zaïre-Emery|
+58|Paris SG|squad|39|GK|RUS|Matvey Safonov|
+58|Paris SG|squad|47|FW|FRA|Quentin Ndjantou|
+58|Paris SG|squad|51|DF|ECU|Willian Pacho|
+58|Paris SG|squad|87|MF|POR|João Neves|
+58|Paris SG|loaned_out||GK|ITA|Renato Marin|CD Nacional
+58|Paris SG|loaned_out||DF|MAR|Naoufel El Hannach|Montpellier
+58|Paris SG|loaned_out||DF|FRA|Yoram Zague|Pafos
+58|Paris SG|loaned_out||MF|BRA|Gabriel Moscardo|Espanyol
+58|Paris SG|loaned_out||FW|TUN|Khalil Ayari|Dunkerque
+59|Lyon|squad|1|GK|SVK|Dominik Greif|
+59|Lyon|squad|2|MF|DEN|Mads Bidstrup|
+59|Lyon|squad|3|DF|ARG|Nicolás Tagliafico|4th captain
+59|Lyon|squad|6|MF|USA|Tanner Tessmann|
+59|Lyon|squad|7|FW|GHA|Ernest Nuamah|
+59|Lyon|squad|8|MF|FRA|Corentin Tolisso|captain
+59|Lyon|squad|10|MF|CZE|Pavel Šulc|
+59|Lyon|squad|11|FW|JPN|Keito Nakamura|
+59|Lyon|squad|13|DF|SUI|Zachary Athekame|on loan from AC Milan
+59|Lyon|squad|16|DF|BRA|Abner|
+59|Lyon|squad|17|FW|BEL|Loïs Openda|on loan from Juventus
+59|Lyon|squad|18|MF|FRA|Khalis Merah|
+59|Lyon|squad|19|DF|SEN|Moussa Niakhaté|vice-captain
+59|Lyon|squad|20|DF|AUT|Felix Bacher|
+59|Lyon|squad|21|DF|NED|Ruben Kluivert|
+59|Lyon|squad|22|DF|ANG|Clinton Mata|3rd captain
+59|Lyon|squad|23|MF|ENG|Tyler Morton|
+59|Lyon|squad|24|FW|BEL|Julien Duranville|
+59|Lyon|squad|25|GK|FRA|Justin Bengui|
+59|Lyon|squad|26|FW|ALG|Kaïl Boudache|
+59|Lyon|squad|32|FW|ENG|Alejandro Gomes Rodríguez|
+59|Lyon|squad|40|GK|FRA|Rémy Descamps|
+59|Lyon|squad|50|GK|MLI|Lassine Diarra|
+59|Lyon|squad|76|DF|BFA|Mohamed Ouédraogo|
+59|Lyon|squad|85|DF|FRA|Noham Kamara|
+59|Lyon|squad|99|MF|DEN|Noah Nartey|
+59|Lyon|loaned_out||GK|USA|Matt Turner|New England Revolution
+59|Lyon|loaned_out||MF|FRA|Mahamadou Diawara|Red Star
+59|Lyon|loaned_out||MF|BEL|Orel Mangala|Getafe
+59|Lyon|loaned_out||FW|ALG|Daryll Benlahlou|Montpellier
+59|Lyon|loaned_out||FW|FRA|Enzo Molebe|Lausanne-Sport
+60|Monaco|squad|1|GK|FIN|Lukas Hradecky|
+60|Monaco|squad|2|DF|BRA|Vanderson|
+60|Monaco|squad|4|DF|NED|Jordan Teze|
+60|Monaco|squad|6|MF|SUI|Denis Zakaria|captain
+60|Monaco|squad|7|FW|FRA|Mathys Detourbet|on loan from Manchester City
+60|Monaco|squad|8|MF|SEN|Lamine Camara|
+60|Monaco|squad|9|FW|USA|Folarin Balogun|
+60|Monaco|squad|10|MF|RUS|Aleksandr Golovin|vice-captain
+60|Monaco|squad|11|FW|FRA|Matthis Abline|
+60|Monaco|squad|13|DF|FRA|Christian Mawissa|
+60|Monaco|squad|14|FW|DEN|Mika Biereth|
+60|Monaco|squad|15|DF|ENG|Eric Dier|
+60|Monaco|squad|16|GK|SUI|Philipp Köhn|
+60|Monaco|squad|17|MF|COD|Stanis Idumbo|
+60|Monaco|squad|18|MF|JPN|Takumi Minamino|
+60|Monaco|squad|19|MF|FRA|Pape Cabral|
+60|Monaco|squad|20|DF|POR|Flávio Nazinho|
+60|Monaco|squad|22|DF|GHA|Mohammed Salisu|
+60|Monaco|squad|28|MF|FRA|Mamadou Coulibaly|
+60|Monaco|squad|29|FW|GER|Paris Brunner|
+60|Monaco|squad|31|FW|ESP|Ansu Fati|
+60|Monaco|squad|37|MF|FRA|Edan Diop|
+60|Monaco|squad|40|GK|FRA|Jules Stawiecki|
+60|Monaco|squad|41|MF|FRA|Aymen Assab|
+60|Monaco|squad|42|FW|CIV|Oumar Konaté|
+60|Monaco|squad|44|DF|BEL|Samuel Nibombé|
+60|Monaco|squad|46|MF|MAR|Anis Soubeir|
+60|Monaco|squad|47|FW|MAR|Safouane Benzahra|
+60|Monaco|squad|49|DF|FRA|Ilane Touré|
+60|Monaco|squad|72|DF|SEN|Sadibou Sané|
+60|Monaco|loaned_out||GK|FRA|Yann Lienard|Cercle Brugge (until 30 June 2027)
+60|Monaco|loaned_out||GK|POL|Radosław Majecki|Pafos (until 30 June 2027)
+60|Monaco|loaned_out||DF|GER|Thilo Kehrer|Ajax (until 30 June 2027)
+60|Monaco|loaned_out||DF|CIV|Valy Konaté|Cercle Brugge (until 30 June 2027)
+60|Monaco|loaned_out||FW|FRA|Lucas Michal|Cercle Brugge (until 30 June 2027)
+61|Strasbourg|squad|1|GK|DEN|Filip Jörgensen|on loan from Chelsea
+61|Strasbourg|squad|4|DF|CRC|Jeyland Mitchell|
+61|Strasbourg|squad|6|DF|FRA|Ismaël Doukouré|
+61|Strasbourg|squad|7|FW|ENG|Sam Amo-Ameyaw|
+61|Strasbourg|squad|8|MF|POL|Maxi Oyedele|
+61|Strasbourg|squad|9|FW|ARG|Joaquín Panichelli|
+61|Strasbourg|squad|10|MF|USA|Gio Reyna|
+61|Strasbourg|squad|11|FW|SWE|Sebastian Nanasi|
+61|Strasbourg|squad|12|GK|POL|Miłosz Piekutowski|
+61|Strasbourg|squad|14|MF|POR|Dário Essugo|on loan from Chelsea
+61|Strasbourg|squad|15|DF|ARG|Mateo Del Blanco|
+61|Strasbourg|squad|16|DF|SWE|Genesis Antwi|on loan from Chelsea
+61|Strasbourg|squad|19|FW|POR|Fábio Baldé|
+61|Strasbourg|squad|20|FW|CIV|Martial Godo|
+61|Strasbourg|squad|21|MF|SEN|Pape Demba Diop|
+61|Strasbourg|squad|23|MF|POR|Diogo Sousa|
+61|Strasbourg|squad|24|DF|DEN|Lucas Høgsberg|
+61|Strasbourg|squad|26|MF|ENG|Omari Kellyman|
+61|Strasbourg|squad|28|MF|FRA|Tyrese Noubissie|
+61|Strasbourg|squad|29|MF|MAR|Samir El Mourabet|
+61|Strasbourg|squad|30|FW|ESP|Jacobo Ortega|
+61|Strasbourg|squad|31|DF|GER|Karim Coulibaly|
+61|Strasbourg|squad|36|DF|ESP|Oso|
+61|Strasbourg|squad|37|FW|FRA|Ghianny Kodia|
+61|Strasbourg|squad|40|FW|DEN|Conrad Harder|on loan from RB Leipzig
+61|Strasbourg|squad|42|FW|BRA|Deivid Washington|
+61|Strasbourg|squad|45|MF|SWE|Benjamin Brantlind|
+61|Strasbourg|squad|80|FW|MAR|Gessime Yassine|
+61|Strasbourg|squad||DF|FRA|Hermann Malonga|
+61|Strasbourg|squad||FW|FRA|Sékou Mara|
+61|Strasbourg|loaned_out||DF|FRA|Soumaïla Coulibaly|Watford
+61|Strasbourg|loaned_out||DF|FRA|Yoni Gomis|Beveren
+61|Strasbourg|loaned_out||DF|IRL|Andrew Omobamidele|Anderlecht
+61|Strasbourg|loaned_out||DF|GUI|Saïdou Sow|Nantes
+61|Strasbourg|loaned_out||MF|FRA|Mathis Amougou|Toulouse
+61|Strasbourg|loaned_out||MF|FRA|Idrissa Sabaly|Red Star
+61|Strasbourg|loaned_out||FW|SRB|Miloš Luković|1. FC Kaiserslautern
+61|Strasbourg|loaned_out||FW|FRA|Rayane Messi|Al-Ettifaq
+62|Lille|squad|1|GK|TUR|Berke Özer|
+62|Lille|squad|2|DF|SUI|Loun Srdanovic|
+62|Lille|squad|3|DF|BEL|Nathan Ngoy|
+62|Lille|squad|4|DF|BRA|Alexsandro|
+62|Lille|squad|6|MF|ALG|Nabil Bentaleb|
+62|Lille|squad|7|FW|FRA|Dilane Bakwa|on loan from Nottingham Forest
+62|Lille|squad|8|FW|FRA|Ethan Mbappé|
+62|Lille|squad|9|FW|FRA|Olivier Giroud|vice-captain
+62|Lille|squad|10|MF|ISL|Hákon Haraldsson|
+62|Lille|squad|11|FW|MAR|Osame Sahraoui|
+62|Lille|squad|12|GK|PAR|Orlando Gill|
+62|Lille|squad|14|MF|DEN|Maurits Kjærgaard|
+62|Lille|squad|15|DF|FRA|Romain Perraud|
+62|Lille|squad|16|GK|BEL|Arnaud Bodart|
+62|Lille|squad|17|MF|COD|Ngal'ayel Mukau|
+62|Lille|squad|18|FW|JPN|Ayase Ueda|
+62|Lille|squad|19|FW|TUR|Başar Önal|
+62|Lille|squad|21|MF|FRA|Benjamin André|captain
+62|Lille|squad|22|DF|POR|Tiago Santos|
+62|Lille|squad|23|DF|FRA|Tanguy Nianzou|
+62|Lille|squad|24|DF|IDN|Calvin Verdonk|
+62|Lille|squad|26|DF|FRA|Isaac Cossier|
+62|Lille|squad|28|FW|FRA|Gaëtan Perrin|
+62|Lille|squad|29|FW|MAR|Hamza Igamane|
+62|Lille|squad|35|FW|FRA|Soriba Diaoune|
+62|Lille|squad|38|DF|FRA|Maxima Goffi|
+62|Lille|squad||FW|GUI|Mohamed Bayo|
+62|Lille|squad||FW|POR|Tiago Morais|
+62|Lille|loaned_out||DF|POR|Rafael Fernandes|Marítimo
+62|Lille|loaned_out||DF|CMR|Stéphane Noumbissie|Sigma Olomouc
+62|Lille|loaned_out||DF|FRA|Ousmane Touré|Dunkerque
+62|Lille|loaned_out||MF|ARG|Ignacio Miramón|Gimnasia LP
+62|Lille|loaned_out||FW|NOR|Marius Broholm|Utrecht
+62|Lille|loaned_out||FW|POR|Félix Correia|Sevilla
+62|Lille|loaned_out||FW|FRA|Noah Edjouma|Brest
+62|Lille|loaned_out||FW|FRA|Younes Lachaab|Sabah
+63|Rennes|squad|4|DF|ENG|Charlie Cresswell|on loan from Toulouse
+63|Rennes|squad|5|DF|POR|Gonçalo Oliveira|
+63|Rennes|squad|6|MF|FRA|Djaoui Cissé|
+63|Rennes|squad|9|FW|FRA|Esteban Lepaul|
+63|Rennes|squad|10|MF|FRA|Ludovic Blas|
+63|Rennes|squad|11|FW|JOR|Musa Al-Taamari|
+63|Rennes|squad|12|FW|ESP|Eliezer Mayenda|
+63|Rennes|squad|14|DF|USA|Bryan Reynolds|
+63|Rennes|squad|16|GK|FRA|Nicolas Lemaître|
+63|Rennes|squad|17|MF|POL|Sebastian Szymański|
+63|Rennes|squad|18|DF|CMR|Aboubakar Nagida|
+63|Rennes|squad|21|MF|FRA|Valentin Rongier|captain
+63|Rennes|squad|22|FW|SEN|Boulaye Dia|on loan from Lazio
+63|Rennes|squad|24|DF|FRA|Anthony Rouault|
+63|Rennes|squad|26|DF|FRA|Quentin Merlin|
+63|Rennes|squad|28|MF|FRA|Adrien Thomasson|
+63|Rennes|squad|30|GK|FRA|Brice Samba|
+63|Rennes|squad|35|FW|ECU|Elías Legendre|
+63|Rennes|squad|36|DF|GHA|Alidu Seidu|
+63|Rennes|squad|45|MF|FRA|Mahdi Camara|
+63|Rennes|squad|48|DF|MAR|Abdelhamid Aït Boudlal|
+63|Rennes|squad|60|GK|ALG|Kilian Belazzoug|
+63|Rennes|squad|65|MF|FRA|Henrick Do Marcolino|
+63|Rennes|squad|70|FW|FRA|Arnaud Nordin|
+63|Rennes|squad|90|FW|SEN|Issa Soumaré|
+63|Rennes|squad|95|MF|POL|Przemysław Frankowski|on loan from Galatasaray
+63|Rennes|squad||MF|BEL|Ayanda Sishuba|
+63|Rennes|loaned_out||GK|FRA|Mathys Silistrie|Quevilly-Rouen
+63|Rennes|loaned_out||DF|SEN|Mikayil Faye|1. FC Nürnberg
+63|Rennes|loaned_out||DF|FRA|Rayan Bamba|Le Mans
+63|Rennes|loaned_out||MF|CIV|Seko Fofana|Porto
+63|Rennes|loaned_out||MF|WAL|Jordan James|Wolverhampton Wanderers
+63|Rennes|loaned_out||MF|FIN|Glen Kamara|Queens Park Rangers
+63|Rennes|loaned_out||MF|FRA|Paolo Limon|Villefranche
+63|Rennes|loaned_out||FW|FRA|Nordan Mukiele|Montpellier
+63|Rennes|loaned_out||FW|FRA|Lucas Rosier|Concarneau
+63|Rennes|loaned_out||FW|MAR|Yassir Zabiri|Racing Santander
+64|Marseille|squad|1|GK|NED|Jeffrey de Lange|
+64|Marseille|squad|4|DF|ENG|CJ Egan-Riley|
+64|Marseille|squad|6|MF|NGA|Tochukwu Nnadi|
+64|Marseille|squad|7|MF|ENG|Angel Gomes|
+64|Marseille|squad|8|MF|ALG|Himad Abdelli|
+64|Marseille|squad|9|FW|ALG|Amine Gouiri|
+64|Marseille|squad|11|FW|FRA|Neal Maupay|
+64|Marseille|squad|13|DF|CAN|Derek Cornelius|
+64|Marseille|squad|14|FW|BRA|Igor Paixão|
+64|Marseille|squad|18|DF|CIV|Bamo Meïté|
+64|Marseille|squad|19|MF|CTA|Geoffrey Kondogbia|
+64|Marseille|squad|21|DF|MAR|Nayef Aguerd|
+64|Marseille|squad|22|FW|USA|Timothy Weah|captain
+64|Marseille|squad|23|MF|DEN|Pierre-Emile Højbjerg|
+64|Marseille|squad|25|DF|SUI|Ulisses Garcia|
+64|Marseille|squad|29|FW|CMR|Faris Moumbagna|
+64|Marseille|squad|33|DF|ITA|Emerson Palmieri|
+64|Marseille|squad|40|GK|BEL|Jelle Van Neck|
+64|Marseille|squad|43|MF|FRA|Tadjidine Mmadi|
+64|Marseille|squad|48|MF|FRA|Keyliane Abdallah|
+64|Marseille|squad|77|MF|MAR|Amine Harit|
+64|Marseille|squad|92|GK|FRA|Théo Vermot|
+64|Marseille|squad|35|DF|ALG|Kelyann Bezahaf|secondary table (unlabelled)
+64|Marseille|squad|41|FW|FRA|Sofiane Sidi Ali|secondary table (unlabelled)
+64|Marseille|squad|70|FW|MAR|Ugo Kadmiri|secondary table (unlabelled)
+64|Marseille|squad|71|MF|MLI|Nouhoum Kamissoko|secondary table (unlabelled)
+64|Marseille|squad|72|DF|ALG|Hilan Hamzaoui|secondary table (unlabelled)
+64|Marseille|squad||MF|FRA|Alexi Koum|secondary table (unlabelled)
+64|Marseille|loaned_out||DF|ARG|Leonardo Balerdi|Roma (until 30 June 2027)
+64|Marseille|loaned_out||MF|CIV|Hamed Traorè|Genoa (until 30 June 2027)
+65|Lens|squad|1|GK|FRA|Régis Gurtner|
+65|Lens|squad|2|DF|FRA|Ruben Aguilar|
+65|Lens|squad|3|DF|POL|Maik Nawrocki|
+65|Lens|squad|4|DF|BIH|Nidal Čelik|
+65|Lens|squad|5|MF|MNE|Andrija Bulatović|
+65|Lens|squad|6|DF|AUT|Samson Baidoo|
+65|Lens|squad|7|FW|FRA|Florian Sotoca|
+65|Lens|squad|8|MF|ALG|Yacine Titraoui|
+65|Lens|squad|9|FW|BEL|Thorgan Hazard|
+65|Lens|squad|10|MF|FRA|Florian Thauvin|captain
+65|Lens|squad|11|FW|FRA|Odsonne Édouard|
+65|Lens|squad|13|DF|ECU|Jhoanner Chávez|
+65|Lens|squad|14|DF|FRA|Matthieu Udol|
+65|Lens|squad|16|GK|FRA|Mathieu Gorgelin|
+65|Lens|squad|19|FW|SEN|Abdallah Sima|
+65|Lens|squad|20|DF|FRA|Jean-Clair Todibo|on loan from West Ham United
+65|Lens|squad|21|MF|MLI|Amadou Haidara|
+65|Lens|squad|22|MF|POL|Michał Skóraś|
+65|Lens|squad|23|DF|KSA|Saud Abdulhamid|
+65|Lens|squad|24|DF|FRA|Jonathan Gradit|
+65|Lens|squad|25|DF|FRA|Ismaëlo Ganiou|
+65|Lens|squad|27|MF|FRA|Michaël Cuisance|
+65|Lens|squad|28|FW|COD|Junior Kadile|on loan from Servette
+65|Lens|squad|29|FW|CRO|Franjo Ivanović|on loan from Benfica
+65|Lens|squad|31|DF|MLI|Souleymane Sagnan|
+65|Lens|squad|32|DF|FRA|Kyllian Antonio|
+65|Lens|squad|38|MF|POR|Mezian Mesloub|
+65|Lens|squad|40|GK|FRA|Robin Risser|
+65|Lens|squad|60|GK|FRA|Ilan Jourdren|
+65|Lens|loaned_out||GK|ITA|Mattia Fortin|Palermo
+65|Lens|loaned_out||GK|BFA|Hervé Koffi|Union SG
+65|Lens|loaned_out||MF|FRA|Ilan Ducourtioux|Le Puy
+65|Lens|loaned_out||FW|SWE|Jeremy Agbonifo|Jagiellonia Białystok
+65|Lens|loaned_out||FW|FRA|Anthony Bermont|Angers
+65|Lens|loaned_out||FW|FRA|Gabin Capuano|Quevilly-Rouen
+65|Lens|loaned_out||FW|FRA|Samuel Dié|Cannes
+65|Lens|loaned_out||FW|CIV|Rayan Fofana|Le Havre
+65|Lens|loaned_out||FW|CAF|Goduine Koyalipou|Kortrijk
+65|Lens|loaned_out||FW|GLP|Rémy Labeau Lascary|Auxerre
+66|Nice|squad|2|DF|TUN|Ali Abdi|
+66|Nice|squad|5|DF|EGY|Mohamed Abdelmonem|
+66|Nice|squad|6|MF|ALG|Hicham Boudaoui|
+66|Nice|squad|7|FW|FRA|Gauthier Hein|
+66|Nice|squad|8|MF|FRA|Morgan Sanson|vice-captain
+66|Nice|squad|9|FW|ALG|Mohamed Amoura|on loan from Wolfsburg
+66|Nice|squad|10|FW|MAR|Sofiane Diop|
+66|Nice|squad|11|FW|CIV|Elye Wahi|on loan from Eintracht Frankfurt
+66|Nice|squad|19|MF|FRA|Laurent Abergel|
+66|Nice|squad|21|FW|SWE|Isak Jansson|
+66|Nice|squad|22|MF|GUI|Issiaga Camara|
+66|Nice|squad|23|GK|SEN|Yehvann Diouf|
+66|Nice|squad|27|DF|FRA|Niels Nkounkou|on loan from Eintracht Frankfurt
+66|Nice|squad|28|MF|BEL|Axel Witsel|
+66|Nice|squad|29|FW|CMR|Nathan Ngoumou|
+66|Nice|squad|33|DF|SEN|Antoine Mendy|
+66|Nice|squad|34|MF|FRA|Nassim Laarej|
+66|Nice|squad|35|DF|FRA|Xavier Mandza|
+66|Nice|squad|38|MF|MTN|Aboulaye Camara|
+66|Nice|squad|39|MF|FRA|Djibril Coulibaly|
+66|Nice|squad|41|FW|FRA|Djelan Morana|
+66|Nice|squad|44|FW|FRA|Zoumana Diallo|
+66|Nice|squad|55|DF|BDI|Youssouf Ndayishimiye|
+66|Nice|squad|60|GK|FRA|Martin Ponsot|
+66|Nice|squad|64|DF|CAN|Moïse Bombito|
+66|Nice|squad|77|GK|ALG|Teddy Boulhendi|
+66|Nice|squad|84|DF|MAR|Hamza Koutoune|
+66|Nice|squad|87|MF|FRA|Everton Pereira|
+66|Nice|squad|92|DF|FRA|Jonathan Clauss|
+66|Nice|squad|99|MF|GHA|Salis Abdul Samed|
+66|Nice|loaned_out||DF|FRA|Melvin Bard|Leeds United (until 30 June 2027)
+66|Nice|loaned_out||DF|CGO|Brad Mantsounga|Virton (until 30 June 2027)
+66|Nice|loaned_out||FW|ESP|Kevin Carlos|Cagliari (until 30 June 2027)
+66|Nice|loaned_out||FW|NGA|Victor Orakpo|Gençlerbirliği (until 30 June 2027)
+67|Paris FC|squad|1|GK|GER|Kevin Trapp|
+67|Paris FC|squad|3|DF|FRA|Emmanuel Mbemba|
+67|Paris FC|squad|4|MF|FRA|Vincent Marchetti|
+67|Paris FC|squad|5|DF|SEN|Moustapha Mbow|
+67|Paris FC|squad|6|DF|BRA|Otávio|
+67|Paris FC|squad|7|MF|FRA|Pablo Pagis|
+67|Paris FC|squad|8|MF|CIV|Patrick Zabi|
+67|Paris FC|squad|9|FW|MLI|Lassine Sinayoko|
+67|Paris FC|squad|10|MF|ALG|Ilan Kebbal|
+67|Paris FC|squad|11|FW|CIV|Jean-Philippe Krasso|
+67|Paris FC|squad|14|DF|MLI|Hamari Traoré|
+67|Paris FC|squad|15|FW|ITA|Luca Koleosho|
+67|Paris FC|squad|16|GK|FRA|Obed Nkambadio|
+67|Paris FC|squad|17|MF|MLI|Adama Camara|
+67|Paris FC|squad|18|FW|FRA|Omar Sissoko|
+67|Paris FC|squad|19|DF|FRA|Nhoa Sangui|
+67|Paris FC|squad|21|MF|FRA|Maxime Lopez|
+67|Paris FC|squad|23|MF|FRA|Rudy Matondo|
+67|Paris FC|squad|25|DF|FRA|Yoan Koré|
+67|Paris FC|squad|27|FW|NGA|Moses Simon|
+67|Paris FC|squad|28|DF|BEL|Thibault De Smet|
+67|Paris FC|squad|31|DF|ALG|Samir Chergui|
+67|Paris FC|squad|33|MF|FRA|Pierre Lees-Melou|captain
+67|Paris FC|squad|42|DF|ITA|Diego Coppola|
+67|Paris FC|squad|93|FW|FRA|Jonathan Ikoné|
+67|Paris FC|loaned_out||DF|ALG|Anis Fatahine|Le Puy (until 30 June 2027)
+67|Paris FC|loaned_out||FW|FRA|Christ Okou|Clermont (until 30 June 2027)
+67|Paris FC|loaned_out||FW|MAD|El Hadary Raheriniaina|Nancy (until 30 June 2027)
+68|Toulouse|squad|2|DF|DEN|Rasmus Nicolaisen|captain
+68|Toulouse|squad|3|DF|USA|Mark McKenzie|
+68|Toulouse|squad|5|DF|FRA|Seny Koumbassa|
+68|Toulouse|squad|6|MF|FRA|Alexis Vossah|
+68|Toulouse|squad|7|FW|ARG|Julián Vignolo|
+68|Toulouse|squad|8|MF|DEN|Thomas Jørgensen|
+68|Toulouse|squad|9|FW|ARG|Santiago Hidalgo|
+68|Toulouse|squad|11|FW|SWE|Sion Oppong|
+68|Toulouse|squad|12|DF|CIV|Christ Tapé|
+68|Toulouse|squad|13|FW|CAN|Jacen Russell-Rowe|
+68|Toulouse|squad|14|MF|CAN|Niko Sigur|
+68|Toulouse|squad|15|MF|NOR|Aron Dønnum|
+68|Toulouse|squad|16|GK|FRA|Guillaume Restes|
+68|Toulouse|squad|17|MF|GHA|Abu Francis|
+68|Toulouse|squad|18|MF|FRA|Mathis Amougou|on loan from Strasbourg
+68|Toulouse|squad|19|DF|GER|David Odogu|on loan from Milan
+68|Toulouse|squad|20|FW|DEN|Casper Tengstedt|
+68|Toulouse|squad|22|DF|ALG|Rafik Messali|
+68|Toulouse|squad|23|MF|VEN|Cristian Cásseres|
+68|Toulouse|squad|30|GK|COM|Naïme Saïd Mchindra|
+68|Toulouse|squad|31|MF|GER|Niklas Schmidt|
+68|Toulouse|squad|37|FW|FRA|Ilyas Azizi|
+68|Toulouse|squad|49|MF|FRA|Aymen Amaaouch|
+68|Toulouse|squad|60|GK|FRA|Mathys Niflore|
+68|Toulouse|squad|94|DF|FRA|Ismaïl Diallo|
+68|Toulouse|loaned_out||DF|FRA|Ylies Aradj|Aubagne Air Bel
+68|Toulouse|loaned_out||DF|ENG|Charlie Cresswell|Rennes
+68|Toulouse|loaned_out||DF|FRA|Aymen Sadi|Aubagne Air Bel
+68|Toulouse|loaned_out||MF|FRA|Mathis Saka|Rodez
+68|Toulouse|loaned_out||MF|SVK|Mário Sauer|Kaiserslautern
+68|Toulouse|loaned_out||FW|FRA|Enzo Faty|Francs Borains
+69|Le Mans|squad|1|GK|FRA|Ewan Hatfout|
+69|Le Mans|squad|5|DF|MTQ|Harold Voyer|
+69|Le Mans|squad|6|MF|CAF|Edwin Quarshie|captain
+69|Le Mans|squad|7|FW|ALG|Billal Brahimi|
+69|Le Mans|squad|8|MF|FRA|Alexandre Lauray|
+69|Le Mans|squad|9|FW|FRA|Antoine Rabillard|
+69|Le Mans|squad|10|MF|FRA|Jean Vercruysse|
+69|Le Mans|squad|11|MF|ALG|Adil Bourabaa|
+69|Le Mans|squad|12|DF|BRA|João Almeida|on loan from Coritiba
+69|Le Mans|squad|13|FW|SEN|Habib Diallo|
+69|Le Mans|squad|14|FW|CAF|Louis Mafouta|
+69|Le Mans|squad|15|DF|FRA|Noa Boissé|
+69|Le Mans|squad|16|DF|ESP|Raúl Torrente|on loan from Dinamo Zagreb
+69|Le Mans|squad|17|DF|FRA|Samuel Yohou|
+69|Le Mans|squad|18|DF|FRA|Lucas Buades|
+69|Le Mans|squad|19|DF|FRA|Djibril Sidibé|
+69|Le Mans|squad|20|FW|FRA|William Harhouz|
+69|Le Mans|squad|21|DF|FRA|Théo Eyoum|
+69|Le Mans|squad|22|DF|FRA|Lucas Calodat|
+69|Le Mans|squad|23|MF|FRA|Daouda Traoré|on loan from Southampton
+69|Le Mans|squad|25|FW|SEN|Dame Gueye|
+69|Le Mans|squad|26|DF|FRA|Rayan Bamba|on loan from Rennes
+69|Le Mans|squad|27|MF|FRA|Martin Rossignol|
+69|Le Mans|squad|28|FW|FRA|Erwan Colas|
+69|Le Mans|squad|29|MF|FRA|Lucas Bretelle|
+69|Le Mans|squad|55|GK|FRA|Augustin Delbecque|
+69|Le Mans|squad|76|DF|ALG|Yasser Larouci|
+69|Le Mans|squad|98|GK|FRA|Nicolas Kocik|
+69|Le Mans|squad|99|FW|BRA|Enzo Vagner|on loan from Coritiba
+69|Le Mans|loaned_out||DF|FRA|Nathan Tronchet|Haguenau
+69|Le Mans|loaned_out||MF|FRA|Izhak Hammoudi|Bourges
+70|Auxerre|squad|1|GK|FRA|Paul Nardi|
+70|Auxerre|squad|3|FW|GLP|Rémy Labeau Lascary|on loan from Lens
+70|Auxerre|squad|4|DF|COD|Axel Tuanzebe|
+70|Auxerre|squad|5|MF|FRA|Kévin Danois|captain
+70|Auxerre|squad|8|MF|FRA|Naouirou Ahamada|
+70|Auxerre|squad|9|FW|ENG|Cameron Archer|on loan from Southampton
+70|Auxerre|squad|11|FW|NED|Eros Maddy|
+70|Auxerre|squad|13|DF|FRA|Telli Siwe|
+70|Auxerre|squad|15|DF|CGO|Christ Makosso|
+70|Auxerre|squad|17|MF|FRA|Pierre Ekwah|on loan from Saint-Étienne
+70|Auxerre|squad|18|MF|SEN|Assane Dioussé|
+70|Auxerre|squad|19|FW|CMR|Danny Namaso|
+70|Auxerre|squad|20|DF|CIV|Sinaly Diomandé|
+70|Auxerre|squad|22|DF|NOR|Fredrik Oppegård|
+70|Auxerre|squad|23|GK|MTN|Mamadou Diop|
+70|Auxerre|squad|24|DF|SUI|Bryan Okoh|
+70|Auxerre|squad|27|DF|FRA|Lamine Sy|
+70|Auxerre|squad|28|MF|FRA|Romain Faivre|on loan from Bournemouth
+70|Auxerre|squad|29|DF|GHA|Marvin Senaya|
+70|Auxerre|squad|31|FW|FRA|Ryan Rodin|
+70|Auxerre|squad|32|FW|CMR|Rayan Mandengue|
+70|Auxerre|squad|34|MF|FRA|Lamfia Dioubaté|
+70|Auxerre|squad|35|DF|FRA|Elikya Legros|
+70|Auxerre|squad|36|MF|FRA|Tidiane Devernois|
+70|Auxerre|squad|37|GK|FRA|Louis Mezerette|
+70|Auxerre|squad|45|DF|FRA|Salimou Danfakha|
+70|Auxerre|squad|46|MF|BEL|Arthur Piedfort|
+70|Auxerre|squad|49|FW|CHN|Wei Xiangxin|
+70|Auxerre|squad|77|MF|CIV|Aristide Zossou|
+70|Auxerre|squad|92|DF|CIV|Clément Akpa|
+70|Auxerre|squad|93|DF|CIV|Sékou Fofana|
+70|Auxerre|loaned_out||GK|FRA|Théo De Percin|Bastia
+70|Auxerre|loaned_out||DF|CHI|Francisco Sierralta|Piast Gliwice
+70|Auxerre|loaned_out||MF|CIV|Lasso Coulibaly|Viborg
+70|Auxerre|loaned_out||FW|CAN|Theo Bair|Bolton Wanderers
+70|Auxerre|loaned_out||FW|HAI|Josué Casimir|Dynamo Moscow
+71|Lorient|squad|1|GK|FRA|Benjamin Leroy|
+71|Lorient|squad|2|DF|FRA|Alec Georgen|
+71|Lorient|squad|3|DF|TUN|Montassar Talbi|
+71|Lorient|squad|5|DF|SEN|Formose Mendy|
+71|Lorient|squad|7|MF|FRA|Bandiougou Fadiga|
+71|Lorient|squad|8|MF|GLP|Noah Cadiou|
+71|Lorient|squad|9|FW|CIV|Mohamed Bamba|
+71|Lorient|squad|10|FW|DEN|Isak Jensen|on loan from AZ
+71|Lorient|squad|11|MF|FRA|Théo Le Bris|
+71|Lorient|squad|15|FW|BEN|Aiyegun Tosin|
+71|Lorient|squad|17|MF|FRA|Jean-Victor Makengo|
+71|Lorient|squad|18|FW|FRA|Ibrahima Baldé|on loan from Rodez
+71|Lorient|squad|19|FW|SEN|Souleymane Faye|on loan from Sporting
+71|Lorient|squad|20|DF|GUI|Dembo Sylla|
+71|Lorient|squad|21|GK|SEN|Bingourou Kamara|
+71|Lorient|squad|23|MF|POR|Daniel Semedo|
+71|Lorient|squad|30|DF|SLO|Srđan Kuzmić|
+71|Lorient|squad|32|DF|GHA|Nathaniel Adjei|
+71|Lorient|squad|33|MF|FRA|Gabin Bernardeau|
+71|Lorient|squad|38|GK|SUI|Yvon Mvogo|
+71|Lorient|squad|42|FW|CIV|Mamadou Koné|
+71|Lorient|squad|43|DF|BFA|Arsène Kouassi|
+71|Lorient|squad|55|DF|ITA|Nosa Edward Obaretin|on loan from Napoli
+71|Lorient|squad|62|MF|CMR|Arthur Avom|
+71|Lorient|squad|72|MF|COD|Noah Mbamba|on loan from Bayer Leverkusen
+71|Lorient|squad|77|MF|GRE|Panos Katseris|
+71|Lorient|squad|95|DF|FRA|Isaak Touré|
+71|Lorient|loaned_out||DF|FRA|Enzo Genton|Amiens
+71|Lorient|loaned_out||DF|FRA|Isaac Monnier|Bastia
+71|Lorient|loaned_out||MF|FRA|Jérémy Hatchi|Montpellier
+72|Troyes|squad|1|GK|FRA|Zacharie Boucher|
+72|Troyes|squad|2|DF|FRA|Lucas Maronnier|
+72|Troyes|squad|3|DF|FRA|Anis Ouzenadji|
+72|Troyes|squad|4|DF|CIV|Junior Diaz|
+72|Troyes|squad|5|DF|ITA|Paolo Gozzi|
+72|Troyes|squad|6|DF|FRA|Adrien Monfray|captain
+72|Troyes|squad|7|FW|GUI|Kandet Diawara|
+72|Troyes|squad|8|MF|SEN|Mouhamed Diop|
+72|Troyes|squad|9|FW|FRA|Jérémy Le Douaron|on loan from Palermo
+72|Troyes|squad|10|MF|FRA|Merwan Ifnaoui|
+72|Troyes|squad|11|MF|FRA|Iron Gomis|
+72|Troyes|squad|14|DF|COM|Ismaël Boura|
+72|Troyes|squad|17|MF|FRA|Antoine Mille|
+72|Troyes|squad|20|FW|FRA|Renaud Ripart|
+72|Troyes|squad|22|MF|FRA|Hugo Picard|on loan from Columbus Crew
+72|Troyes|squad|23|FW|FRA|Timothé Nkada|on loan from Standard Liège
+72|Troyes|squad|26|MF|FRA|Alexandre Phliponeau|
+72|Troyes|squad|29|MF|TOG|Dermane Karim|
+72|Troyes|squad|33|GK|AUS|Patrick Beach|
+72|Troyes|squad|31|DF|FRA|Noah Donkor|
+72|Troyes|squad|34|FW|FRA|Ibrahim Traoré|
+72|Troyes|squad|35|MF|FRA|Roman Murcy|
+72|Troyes|squad|36|MF|FRA|Idrissa Soukouna|
+72|Troyes|squad|37|FW|FRA|Christ Batola|
+72|Troyes|squad|39|FW|CIV|Yacouba Koné|
+72|Troyes|squad|40|GK|BFA|Hillel Konaté|
+72|Troyes|squad|41|DF|FRA|Enisio Carneiro|
+72|Troyes|squad|44|DF|FRA|Yvann Titi|
+72|Troyes|loaned_out||DF|FRA|Fred Ondoa|Villefranche
+72|Troyes|loaned_out||FW|NGR|Elijah Odede|Lommel
+73|Angers|squad|1|GK|POR|Anthony Lopes|
+73|Angers|squad|2|DF|HAI|Carlens Arcus|
+73|Angers|squad|4|DF|MLI|Ousmane Camara|
+73|Angers|squad|6|MF|FRA|Louis Mouton|
+73|Angers|squad|7|FW|CTA|Usman Simbakoli|
+73|Angers|squad|8|MF|NED|Branco van den Boomen|
+73|Angers|squad|9|FW|FRA|Prosper Peter|
+73|Angers|squad|10|FW|MAR|Amine Sbaï|
+73|Angers|squad|11|FW|CMR|Harouna Djibirin|
+73|Angers|squad|14|MF|MAR|Yassin Belkhdim|
+73|Angers|squad|16|GK|FRA|Melvin Zinga|
+73|Angers|squad|17|DF|FRA|Joseph Kalulu|
+73|Angers|squad|18|FW|GAB|Jim Allevinah|
+73|Angers|squad|19|FW|MAR|Amine El Ouazzani|on loan from Braga
+73|Angers|squad|20|DF|FRA|Marius Louër|
+73|Angers|squad|21|DF|MTN|Jordan Lefort|
+73|Angers|squad|24|DF|FRA|Emmanuel Biumla|
+73|Angers|squad|26|FW|FRA|Anthony Bermont|on loan from Lens
+73|Angers|squad|27|DF|FRA|Lilian Raolisoa|
+73|Angers|squad|34|DF|FRA|Maël Gernigon|
+73|Angers|squad|36|MF|FRA|Bané Diatta|
+73|Angers|squad|40|GK|MLI|Oumar Pona|
+73|Angers|squad|93|MF|ALG|Haris Belkebla|captain
+73|Angers|squad|34|MF|FRA|Amine Moussaoui|secondary table (unlabelled)
+73|Angers|squad|37|DF|FRA|Lionel Ngangué|secondary table (unlabelled)
+73|Angers|squad|38|MF|FRA|Ilann Garin|secondary table (unlabelled)
+73|Angers|squad|41|MF|MAR|Jibril El Baraka|secondary table (unlabelled)
+73|Angers|loaned_out|5|MF|FRA|Marius Courcoul|RAAL La Louvière (until 30 June 2027)
+73|Angers|loaned_out||DF|MLI|Dan Sinaté|Amiens (until 30 June 2027)
+73|Angers|loaned_out||FW|FRA|Lanroy Machine|Heerenveen (until 30 June 2027)
+74|Le Havre|squad|5|DF|ALG|Ahmed Touba|on loan from Panathinaikos
+74|Le Havre|squad|6|MF|FRA|Junior Mwanga|
+74|Le Havre|squad|7|MF|MAR|Amir Richardson|on loan from Fiorentina
+74|Le Havre|squad|9|FW|NGA|Josh Maja|
+74|Le Havre|squad|10|MF|SUI|Felix Mambimbi|
+74|Le Havre|squad|12|DF|DEN|Elias Jelert|on loan from Galatasaray
+74|Le Havre|squad|14|MF|SEN|Rassoul Ndiaye|
+74|Le Havre|squad|15|DF|JPN|Ayumu Seko|
+74|Le Havre|squad|16|GK|BEL|Arnaud Bodart|on loan from Lille
+74|Le Havre|squad|17|MF|JPN|Kaito Mizuta|
+74|Le Havre|squad|19|FW|FRA|Joan Tincres|
+74|Le Havre|squad|20|DF|FRA|Djibril Ouziad|
+74|Le Havre|squad|23|DF|FRA|Vincent Sasso|
+74|Le Havre|squad|24|MF|CIV|Guy-Noël Zohouri|
+74|Le Havre|squad|25|FW|TAN|Mbwana Samatta|
+74|Le Havre|squad|26|MF|FRA|Simon Ebonog|
+74|Le Havre|squad|27|FW|FRA|Enzo Koffi|
+74|Le Havre|squad|29|DF|FRA|Stephan Zagadou|
+74|Le Havre|squad|30|FW|JPN|Sōta Nakamura|on loan from Sanfrecce Hiroshima
+74|Le Havre|squad|32|DF|FRA|Timothée Pembélé|
+74|Le Havre|squad|38|FW|FRA|Rayan Fofana|on loan from Lens
+74|Le Havre|squad|44|MF|FRA|Ismaïl Bouneb|
+74|Le Havre|squad|50|GK|FRA|Paul Argney|
+74|Le Havre|squad|77|GK|COD|Lionel Mpasi|
+74|Le Havre|squad|78|MF|FRA|Daren Mosengo|
+74|Le Havre|squad|93|GK|FRA|Gauthier Gallon|
+74|Le Havre|squad||FW|FRA|Élysée Logbo|
+74|Le Havre|loaned_out||FW|FRA|Noam Obougou|Nancy (until 30 June 2027)
+75|Brest|squad|1|GK|NOR|Egil Selvik|on loan from Watford
+75|Brest|squad|2|DF|FRA|Bradley Locko|
+75|Brest|squad|4|DF|FRA|Gautier Lloris|
+75|Brest|squad|5|DF|FRA|Brendan Chardonnet|captain
+75|Brest|squad|6|MF|MLI|Mamady Diambou|
+75|Brest|squad|7|MF|BEL|Joseph Nonge|
+75|Brest|squad|8|MF|FRA|Hugo Magnetti|
+75|Brest|squad|9|FW|SEN|Pathé Mboup|
+75|Brest|squad|10|FW|FRA|Giovani Versini|
+75|Brest|squad|11|FW|FRA|Axel Camblan|
+75|Brest|squad|13|MF|FRA|Joris Chotard|
+75|Brest|squad|16|GK|FRA|Noé Poillion|
+75|Brest|squad|17|FW|GNB|Mama Baldé|
+75|Brest|squad|18|DF|FRA|Justin Bourgault|
+75|Brest|squad|19|FW|FRA|Ludovic Ajorque|
+75|Brest|squad|20|DF|CIV|Luck Zogbé|
+75|Brest|squad|21|FW|FRA|Ibrahim Kanté|
+75|Brest|squad|23|MF|MLI|Kamory Doumbia|
+75|Brest|squad|24|MF|SEN|Samba Diop|
+75|Brest|squad|29|MF|FRA|Lucas Tousart|
+75|Brest|squad|30|GK|FRA|Mathieu Patouillet|
+75|Brest|squad|49|GK|FRA|Romain Cagnon|
+75|Brest|squad|70|DF|FRA|Kenny Lala|
+75|Brest|squad|71|DF|FRA|Raphaël Le Guen|
+75|Brest|squad||FW|FRA|Noah Edjouma|on loan from Lille
+75|Brest|squad||FW|FRA|Djylian N'Guessan|on loan from Saint-Étienne
+75|Brest|loaned_out||MF|MLI|Hamidou Makalou|Bastia (until 30 June 2027)
+476|AS Nancy Lorraine|squad|1|GK|FRA|Enzo Basilio|
+476|AS Nancy Lorraine|squad|2|DF|FRA|Héliohdino Tavares|
+476|AS Nancy Lorraine|squad|4|DF|FRA|Nehemiah Fernandez|
+476|AS Nancy Lorraine|squad|5|FW|SEN|Pape Meïssa Ba|
+476|AS Nancy Lorraine|squad|6|MF|FRA|Kouroufia Kébé|
+476|AS Nancy Lorraine|squad|7|MF|FRA|Zakaria Fdaouch|
+476|AS Nancy Lorraine|squad|8|FW|FRA|Walid Bouabdeli|
+476|AS Nancy Lorraine|squad|9|FW|MAR|Ilyes Housni|
+476|AS Nancy Lorraine|squad|10|FW|FRA|Adrian Dabasse|
+476|AS Nancy Lorraine|squad|11|MF|FRA|Sidi Cissé|
+476|AS Nancy Lorraine|squad|12|FW|MAD|El Hadary Raheriniaina|on loan from Paris FC
+476|AS Nancy Lorraine|squad|14|DF|GLP|Nicolas Saint-Ruf|
+476|AS Nancy Lorraine|squad|17|MF|MTN|Mamadou Fofana|
+476|AS Nancy Lorraine|squad|18|MF|FRA|Hugo Barbier|
+476|AS Nancy Lorraine|squad|19|DF|FRA|Thierno Baldé|
+476|AS Nancy Lorraine|squad|21|DF|GBS|Elydjah Mendy|
+476|AS Nancy Lorraine|squad|22|DF|BEL|Logan Ndenbe|
+476|AS Nancy Lorraine|squad|24|MF|ALG|Yanis Delaveau|
+476|AS Nancy Lorraine|squad|25|MF|FRA|Jérémy Gelin|
+476|AS Nancy Lorraine|squad|26|MF|FRA|Zakaria Ztouti|
+476|AS Nancy Lorraine|squad|28|MF|ALG|Issam Bouaoune|
+476|AS Nancy Lorraine|squad|29|FW|FRA|Noam Obougou|on loan from Le Havre
+476|AS Nancy Lorraine|squad|30|GK|CAF|Geoffrey Lembet|
+476|AS Nancy Lorraine|squad|40|GK|MAR|Yanis Kouini|
+476|AS Nancy Lorraine|squad|44|DF|FRA|Enzo Tacafred|
+476|AS Nancy Lorraine|squad|45|MF|FRA|Chafik El Hansar|
+476|AS Nancy Lorraine|squad|60|GK|FRA|Kenzo Noël|
+476|AS Nancy Lorraine|squad|70|FW|MAR|Nordine Kandil|
+476|AS Nancy Lorraine|squad|77|DF|FRA|Yannis Nahounou|
+476|AS Nancy Lorraine|squad|88|MF|FRA|Joël-Emmanuel Coulibaly|
+476|AS Nancy Lorraine|loaned_out||MF|FRA|Youssouf Tandia|SAS Épinal (until 30 June 2027)
+476|AS Nancy Lorraine|loaned_out||FW|FRA|Mattheo Guendez|Paris 13 Atletico (until 30 June 2027)
+477|AS Saint-Étienne|squad|1|GK|SEN|Mamour Ndiaye|
+477|AS Saint-Étienne|squad|2|DF|SRB|Strahinja Stojković|
+477|AS Saint-Étienne|squad|5|MF|ISR|Mahmoud Jaber|
+477|AS Saint-Étienne|squad|6|DF|FRA|Maxime Bernauer|
+477|AS Saint-Étienne|squad|7|FW|MLT|Irvin Cardona|
+477|AS Saint-Étienne|squad|8|FW|AUT|Thierno Ballo|
+477|AS Saint-Étienne|squad|10|MF|DEN|Jakob Breum|
+477|AS Saint-Étienne|squad|11|DF|NZL|Ben Old|
+477|AS Saint-Étienne|squad|13|DF|POR|João Ferreira|
+477|AS Saint-Étienne|squad|14|MF|HUN|Áron Csongvai|
+477|AS Saint-Étienne|squad|15|DF|POR|Chico Lamba|
+477|AS Saint-Étienne|squad|16|MF|SLO|Tamar Svetlin|
+477|AS Saint-Étienne|squad|17|FW|ENG|Joshua Duffus|
+477|AS Saint-Étienne|squad|18|DF|ALG|Sohaib Naïr|
+477|AS Saint-Étienne|squad|20|FW|GHA|Augustine Boakye|
+477|AS Saint-Étienne|squad|21|MF|FRA|Paul Eymard|
+477|AS Saint-Étienne|squad|22|FW|GEO|Zuriko Davitashvili|
+477|AS Saint-Étienne|squad|23|DF|COD|Kévin Pedro|
+477|AS Saint-Étienne|squad|24|DF|FRA|Loïc Perrin|
+477|AS Saint-Étienne|squad|26|DF|FRA|Julien Le Cardinal|
+477|AS Saint-Étienne|squad|30|GK|FRA|Gautier Larsonneur|captain
+477|AS Saint-Étienne|squad|31|MF|FRA|Nadir El Jamali|
+477|AS Saint-Étienne|squad|32|MF|MAR|Adam Baallal|
+477|AS Saint-Étienne|squad|33|FW|EST|Marten Paalberg|
+477|AS Saint-Étienne|squad|34|DF|SEN|Lassana Traoré|
+477|AS Saint-Étienne|squad|40|GK|FRA|Lucas Lavallée|
+477|AS Saint-Étienne|loaned_out||DF|GHA|Ebenezer Annan|Rapid București
+477|AS Saint-Étienne|loaned_out||DF|FRA|Axel Dodote|Pau
+477|AS Saint-Étienne|loaned_out||MF|FRA|Pierre Ekwah|Auxerre
+477|AS Saint-Étienne|loaned_out||MF|FRA|Luan Gadegbeku|Pau
+477|AS Saint-Étienne|loaned_out||MF|SRB|Igor Miladinović|Partizan
+477|AS Saint-Étienne|loaned_out||MF|MAR|Aïmen Moueffek|Cádiz
+477|AS Saint-Étienne|loaned_out||MF|FRA|Jebryl Sahraoui|Aubagne Air Bel
+477|AS Saint-Étienne|loaned_out||FW|FRA|Djylian N'Guessan|Brest
+477|AS Saint-Étienne|loaned_out||FW|BEL|Lucas Stassin|Sevilla
+478|Clermont Foot 63|squad|2|MF|MAR|Abdellah Baallal|
+478|Clermont Foot 63|squad|3|DF|MAD|Andy Pelmard|
+478|Clermont Foot 63|squad|4|DF|COD|Ethan Kena Kabeya|
+478|Clermont Foot 63|squad|5|MF|FRA|Jean Grillot|
+478|Clermont Foot 63|squad|6|MF|FRA|El Hadj Koné|
+478|Clermont Foot 63|squad|8|MF|ALG|Yuliwes Bellache|
+478|Clermont Foot 63|squad|10|MF|CTA|Junior Sambia|
+478|Clermont Foot 63|squad|11|FW|ALG|Maïdine Douane|
+478|Clermont Foot 63|squad|12|DF|COD|Vital Nsimba|
+478|Clermont Foot 63|squad|13|MF|FRA|Julien Astic|
+478|Clermont Foot 63|squad|15|DF|MLI|Cheick Oumar Konaté|
+478|Clermont Foot 63|squad|16|GK|SEN|Massamba Ndiaye|
+478|Clermont Foot 63|squad|17|FW|SEN|Ousmane Diop|
+478|Clermont Foot 63|squad|18|MF|FRA|Noam Strotz|
+478|Clermont Foot 63|squad|19|MF|FRA|Mohamed-Amine Bouchenna|
+478|Clermont Foot 63|squad|21|DF|GUF|Yoann Salmier|
+478|Clermont Foot 63|squad|22|MF|FRA|Marouane Amar|
+478|Clermont Foot 63|squad|23|MF|FRA|Adrien Hunou|
+478|Clermont Foot 63|squad|24|MF|ALG|Stan Berkani|
+478|Clermont Foot 63|squad|28|DF|CIV|Ivan M'Bahia|
+478|Clermont Foot 63|squad|29|FW|FRA|Arthur Saintorens|
+478|Clermont Foot 63|squad|30|GK|FRA|Théo Guivarch|
+478|Clermont Foot 63|squad|35|DF|MAR|Ilyes Hamdia|
+478|Clermont Foot 63|squad|39|FW|FRA|Jean-William Nyindong|
+478|Clermont Foot 63|squad|44|MF|FRA|Allan Ackra|
+478|Clermont Foot 63|squad|45|DF|FRA|Matys Donavin|
+478|Clermont Foot 63|squad|60|GK|FRA|Joan Raynaud|
+478|Clermont Foot 63|squad|77|FW|FRA|Enzo Cantero|
+478|Clermont Foot 63|squad|90|FW|FRA|Christ Okou|on loan from Paris FC
+478|Clermont Foot 63|squad|93|DF|FRA|Ibrahim Coulibaly|
+478|Clermont Foot 63|squad|97|DF|MAD|Kenji-Van Boto|
+479|Dijon Football Côte d’Or|squad|4|MF|FRA|Mickaël Barreto|
+479|Dijon Football Côte d’Or|squad|5|DF|FRA|Quentin Bernard|
+479|Dijon Football Côte d’Or|squad|6|DF|SEN|Waly Diouf|
+479|Dijon Football Côte d’Or|squad|7|MF|COM|Ben-Chayeel Hamada|
+479|Dijon Football Côte d’Or|squad|8|MF|FRA|Paul Bellon|
+479|Dijon Football Côte d’Or|squad|9|FW|FRA|Tyris Dong|
+479|Dijon Football Côte d’Or|squad|10|FW|FRA|Yanis Barka|
+479|Dijon Football Côte d’Or|squad|11|FW|CPV|Júlio Tavares|
+479|Dijon Football Côte d’Or|squad|14|MF|FRA|Jordan Marié|
+479|Dijon Football Côte d’Or|squad|15|DF|FRA|Axel Bargain|
+479|Dijon Football Côte d’Or|squad|16|GK|FRA|Paul Delecroix|
+479|Dijon Football Côte d’Or|squad|17|MF|FRA|Adel Lembezat|
+479|Dijon Football Côte d’Or|squad|18|MF|COD|Brandon Ndezi|
+479|Dijon Football Côte d’Or|squad|19|DF|FRA|César Obongo|
+479|Dijon Football Côte d’Or|squad|20|MF|FRA|Hugo Vargas-Rios|
+479|Dijon Football Côte d’Or|squad|21|MF|TUN|Samy Chouchane|
+479|Dijon Football Côte d’Or|squad|23|DF|FRA|Lenny Lacroix|
+479|Dijon Football Côte d’Or|squad|29|FW|FRA|Alexis Ntamack|
+479|Dijon Football Côte d’Or|squad|30|MF|FRA|Hatem Mimoune|
+479|Dijon Football Côte d’Or|squad|31|DF|FRA|Moussa Faty|
+479|Dijon Football Côte d’Or|squad|33|FW|FRA|Florian Rombogouera|
+479|Dijon Football Côte d’Or|squad|37|FW|COM|Abdelmajid Djae|
+479|Dijon Football Côte d’Or|squad|42|FW|FRA|Ylan Aka|
+479|Dijon Football Côte d’Or|squad|46|GK|FRA|Ylann Marie-Rose|
+479|Dijon Football Côte d’Or|squad|71|GK|FRA|Enzo Ketterle|
+479|Dijon Football Côte d’Or|squad|90|FW|CIV|Ange Lago|
+479|Dijon Football Côte d’Or|squad|93|DF|MAR|Ismaïl Bouleghcha|
+479|Dijon Football Côte d’Or|squad||DF|MAR|Anass Benyahya|
+479|Dijon Football Côte d’Or|loaned_out||DF|FRA|Brayan Djadja|Istres (until 30 June 2027)
+479|Dijon Football Côte d’Or|loaned_out||MF|FRA|Loris Dupont|Voltigeurs de Châteaubriant (until 30 June 2027)
+480|En Avant Guingamp|squad|1|GK|GLP|Teddy Bartouche|
+480|En Avant Guingamp|squad|2|DF|FRA|Erwin Koffi|
+480|En Avant Guingamp|squad|3|DF|FRA|Jérémie Matumona|
+480|En Avant Guingamp|squad|4|MF|FRA|Dylan Louiserre|captain
+480|En Avant Guingamp|squad|6|MF|FRA|Darly Nlandu|
+480|En Avant Guingamp|squad|7|DF|SEN|Donatien Gomis|
+480|En Avant Guingamp|squad|8|MF|MLI|Kalidou Sidibé|
+480|En Avant Guingamp|squad|9|FW|CTA|Louis Mafouta|
+480|En Avant Guingamp|squad|10|MF|FRA|Amine Hemia|
+480|En Avant Guingamp|squad|11|MF|SEN|Amadou Sagna|
+480|En Avant Guingamp|squad|16|GK|ESP|Adrián Ortolá|
+480|En Avant Guingamp|squad|17|MF|FRA|Freddy Mbemba|on loan from Charleroi
+480|En Avant Guingamp|squad|18|DF|ALG|Sohaib Naïr|
+480|En Avant Guingamp|squad|19|FW|FRA|Amadou Samoura|
+480|En Avant Guingamp|squad|20|MF|FRA|Jérémy Hatchi|on loan from Lorient
+480|En Avant Guingamp|squad|21|MF|FRA|Yohan Demoncy|on loan from Reims
+480|En Avant Guingamp|squad|22|DF|MLI|Alpha Sissoko|
+480|En Avant Guingamp|squad|24|DF|FRA|Gautier Ott|
+480|En Avant Guingamp|squad|27|FW|FRA|Stanislas Kielt|
+480|En Avant Guingamp|squad|29|DF|COM|Akim Abdallah|
+480|En Avant Guingamp|squad|33|DF|MLI|Eden Gassama|
+480|En Avant Guingamp|squad|34|MF|FRA|Youssef Njoya|
+480|En Avant Guingamp|squad|36|DF|FRA|Albin Demouchy|
+480|En Avant Guingamp|squad|38|DF|FRA|Idriss Planeix|
+480|En Avant Guingamp|squad|39|MF|FRA|Tanguy Ahile|
+480|En Avant Guingamp|squad|40|GK|FRA|Noah Marec|
+481|FC Annecy|squad|1|GK|FRA|Florian Escales|
+481|FC Annecy|squad|4|DF|FRA|Sacha Lima|
+481|FC Annecy|squad|5|MF|ALG|Ahmed Kashi|
+481|FC Annecy|squad|6|DF|FRA|François Lajugie|
+481|FC Annecy|squad|7|FW|FRA|Alan Mondesir|
+481|FC Annecy|squad|8|MF|FRA|Alexis Casadei|
+481|FC Annecy|squad|9|FW|FRA|Thibault Rambaud|
+481|FC Annecy|squad|11|MF|CIV|Souleymane Fofana|
+481|FC Annecy|squad|12|FW|ENG|Kadan Young|on loan from Aston Villa
+481|FC Annecy|squad|14|MF|CIV|Mohamed Koné|
+481|FC Annecy|squad|15|MF|POL|Pascal Mozie|
+481|FC Annecy|squad|16|GK|FRA|Thomas Callens|
+481|FC Annecy|squad|17|FW|NED|Zépiqueno Redmond|on loan from Aston Villa
+481|FC Annecy|squad|19|MF|FRA|Kilyan Jusseron-Veniere|
+481|FC Annecy|squad|20|FW|FRA|Adam Yahi|
+481|FC Annecy|squad|21|DF|FRA|Esteban Marre|
+481|FC Annecy|squad|22|FW|FRA|Clément Billemaz|
+481|FC Annecy|squad|23|DF|FRA|Mattéo Veillon|
+481|FC Annecy|squad|24|MF|FRA|Nolan Ferro|
+481|FC Annecy|squad|25|MF|FRA|Paul Venot|
+481|FC Annecy|squad|26|DF|GAB|Jonathan Do Marcolino|
+481|FC Annecy|squad|27|DF|CTA|Julien Kouadio|
+481|FC Annecy|squad|28|FW|FRA|Antoine Larose|
+481|FC Annecy|squad|30|GK|FRA|Matéo Gonzalez|
+481|FC Annecy|squad|32|DF|GHA|David Oduro|
+481|FC Annecy|squad|34|DF|FRA|Esteban Riou|
+481|FC Annecy|squad|41|DF|FRA|Thibault Delphis|
+481|FC Annecy|squad|80|FW|CIV|Moïse Sahi Dion|
+481|FC Annecy|loaned_out||DF|FRA|Cédric Makutungu|Cannes
+481|FC Annecy|loaned_out||FW|SUI|Ranjan Neelakandan|Vaduz
+482|FC Metz|squad|1|GK|DEN|Jonathan Fischer|
+482|FC Metz|squad|2|DF|FRA|Maxime Colin|
+482|FC Metz|squad|3|DF|FRA|Florian Miguel|
+482|FC Metz|squad|4|DF|GAB|Urie-Michel Mboula|
+482|FC Metz|squad|5|DF|FRA|Jean Ruiz|
+482|FC Metz|squad|6|MF|SEN|Nampalys Mendy|
+482|FC Metz|squad|7|FW|SEN|Ibou Sané|
+482|FC Metz|squad|8|MF|FRA|Jessy Deminguet|
+482|FC Metz|squad|9|FW|GEO|Giorgi Abuashvili|on loan from Kolkheti 1913
+482|FC Metz|squad|10|MF|FRA|Téji Savanier|
+482|FC Metz|squad|11|FW|SEN|Pape Moussa Fall|
+482|FC Metz|squad|12|MF|SEN|Alpha Touré|
+482|FC Metz|squad|16|GK|SEN|Vincent Gomis|
+482|FC Metz|squad|17|FW|FRA|Joseph Mangondo|
+482|FC Metz|squad|18|MF|FRA|Believe Munongo|
+482|FC Metz|squad|19|FW|CMR|Morgan Bokele|
+482|FC Metz|squad|21|MF|FRA|Jahyann Pandore|
+482|FC Metz|squad|22|FW|COD|Nathan Mbala|
+482|FC Metz|squad|23|MF|LUX|Diego Duarte|
+482|FC Metz|squad|26|DF|FRA|Abdoulaye Nassoko|
+482|FC Metz|squad|27|MF|SEN|Alassane Sy|
+482|FC Metz|squad|30|DF|FRA|Tahirys dos Santos|
+482|FC Metz|squad|32|DF|FRA|Adam Marchal|
+482|FC Metz|squad|33|FW|SEN|Abdourahmane Mbodj|
+482|FC Metz|squad|38|FW|LUX|Hamza Kadamani|
+482|FC Metz|squad|39|DF|CMR|Bryan Song|
+482|FC Metz|squad|40|GK|SEN|Ousmane Ba|
+482|FC Metz|squad|42|DF|COL|Cristian Devenish|
+482|FC Metz|squad|61|GK|SEN|Pape Sy|
+482|FC Metz|squad|70|DF|SEN|Bouna Sarr|
+482|FC Metz|squad|77|FW|SEN|Abdoulaye Agne-Ba|
+482|FC Metz|squad|98|DF|COM|Idris Mohamed|
+482|FC Metz|loaned_out||DF|TOG|Yannis Lawson|Seraing (until 30 June 2027)
+482|FC Metz|loaned_out||DF|FRA|Cléo Mélières|Bastia (until 30 June 2027)
+482|FC Metz|loaned_out||FW|FRA|Édouard Soumah-Abbad|Paris 13 Atletico (until 30 June 2027)
+483|FC Nantes|squad|1|GK|FRA|Maxime Dupé|
+483|FC Nantes|squad|4|DF|GUI|Saïdou Sow|on loan from Strasbourg
+483|FC Nantes|squad|5|DF|FRA|Lucas Perrin|
+483|FC Nantes|squad|7|FW|FRA|Antoine Joujou|
+483|FC Nantes|squad|8|MF|FRA|Johann Lepenant|
+483|FC Nantes|squad|12|FW|FRA|Killian Corredor|
+483|FC Nantes|squad|13|DF|MLI|Fodé Doucouré|
+483|FC Nantes|squad|14|MF|SEN|Lamine Diack|
+483|FC Nantes|squad|16|GK|FRA|Alexis Mirbach|
+483|FC Nantes|squad|17|MF|FRA|Dehmaine Tabibou|
+483|FC Nantes|squad|18|DF|FRA|Fabien Centonze|
+483|FC Nantes|squad|19|MF|FRA|Louis Leroux|
+483|FC Nantes|squad|20|MF|FRA|Mathieu Cafaro|
+483|FC Nantes|squad|23|MF|CMR|Wilitty Younoussa|
+483|FC Nantes|squad|24|DF|FRA|Frédéric Guilbert|
+483|FC Nantes|squad|26|MF|FRA|Ryad Hachem|
+483|FC Nantes|squad|28|MF|MLI|Ibrahima Sissoko|
+483|FC Nantes|squad|37|FW|CMR|Ignatius Ganago|
+483|FC Nantes|squad|40|GK|FRA|Yanel Zézé|
+483|FC Nantes|squad|44|MF|FRA|Balthazar Pierret|
+483|FC Nantes|squad|52|MF|MTN|Bahmed Deuff|
+483|FC Nantes|squad|67|MF|FRA|Malang Gomes|
+483|FC Nantes|squad|69|MF|FRA|Sacha Ziani|
+483|FC Nantes|squad|72|DF|MLI|Sékou Doucouré|
+483|FC Nantes|squad|75|DF|TUN|Amin Cherni|on loan from Göztepe
+483|FC Nantes|squad|78|DF|FRA|Tylel Tati|
+483|FC Nantes|squad|90|MF|FRA|Yassine Benhattab|
+483|FC Nantes|squad|98|DF|FRA|Kelvin Amian|captain
+483|FC Nantes|squad||FW|FRA|Thomas Robinet|
+483|FC Nantes|loaned_out||DF|FRA|Hugo Lamy|La Roche-sur-Yon
+484|FC Sochaux-Montbéliard|squad|9|||Honoré Bayanginisa|partial extraction (pos/nat unreadable)
+484|FC Sochaux-Montbéliard|squad|14|||Aboubacar Sidibé|partial extraction (pos/nat unreadable)
+484|FC Sochaux-Montbéliard|squad|28|||Élie N'Gatta|partial extraction (pos/nat unreadable)
+484|FC Sochaux-Montbéliard|squad||||Solomon Loubao|on loan (club unreadable); partial extraction
+484|FC Sochaux-Montbéliard|squad||||Dalangunypole Gomis|on loan (club unreadable); partial extraction
+484|FC Sochaux-Montbéliard|loaned_out||||Abderrezzek Saidi|unknown club (unreadable)
+484|FC Sochaux-Montbéliard|loaned_out||||Lamine Touré|FC Montlouis (until 30 June 2026)
+484|FC Sochaux-Montbéliard|loaned_out||||Marie-Gaël Mukanya|unknown club (unreadable)
+485|Grenoble Foot 38|squad|1|GK|FRA|Alexandre Olliero|
+485|Grenoble Foot 38|squad|2|FW|SEN|Moussa Djitté|
+485|Grenoble Foot 38|squad|3|DF|NED|Farouq Limouri|
+485|Grenoble Foot 38|squad|5|DF|FRA|Clément Vidal|
+485|Grenoble Foot 38|squad|6|MF|FRA|Yohann Magnin|
+485|Grenoble Foot 38|squad|8|MF|FRA|Lucas Bernadou|
+485|Grenoble Foot 38|squad|9|FW|FRA|Arthur Lallias|
+485|Grenoble Foot 38|squad|10|MF|FRA|Baptiste Mouazan|
+485|Grenoble Foot 38|squad|11|FW|BFA|Mamady Bangré|
+485|Grenoble Foot 38|squad|12|FW|FRA|Ugo Bonnet|
+485|Grenoble Foot 38|squad|14|MF|USA|Mael Corboz|
+485|Grenoble Foot 38|squad|16|GK|FRA|Bobby Allain|
+485|Grenoble Foot 38|squad|17|FW|ITA|Leonardo Cerri|
+485|Grenoble Foot 38|squad|19|DF|FRA|Nesta Zahui|
+485|Grenoble Foot 38|squad|21|DF|CIV|Owen Kouassi|on loan from Lecce
+485|Grenoble Foot 38|squad|22|DF|CIV|Ange-Loïc N'Gatta|
+485|Grenoble Foot 38|squad|23|FW|NED|Dillon Hoogewerf|
+485|Grenoble Foot 38|squad|25|GK|FRA|Théo Borne|
+485|Grenoble Foot 38|squad|27|DF|FRA|Matthéo Xantippe|
+485|Grenoble Foot 38|squad|30|MF|SEN|Samba Lélé Diba|
+485|Grenoble Foot 38|squad|34|FW|POR|Zé Leite|
+485|Grenoble Foot 38|squad|37|FW|FRA|Mohamed Bechikh|
+485|Grenoble Foot 38|squad|43|DF|FRA|Aurélien Pelon|
+485|Grenoble Foot 38|squad|44|MF|FRA|Owen Martinez-Jullien|
+485|Grenoble Foot 38|squad|46|MF|FRA|Jules Mouton|
+485|Grenoble Foot 38|squad|47|FW|FRA|Kyliann Fofana|
+485|Grenoble Foot 38|squad|48|DF|FRA|Sakhalou Niakaté|
+485|Grenoble Foot 38|squad|92|FW|FRA|Jean-Guy Akpa Akpro|on loan from Pro Vercelli
+485|Grenoble Foot 38|squad|97|DF|GLP|Yvann Maçon|
+486|Laval MFC|squad|1|GK|FRA|Maxime Hautbois|
+486|Laval MFC|squad|3|DF|FRA|William Bianda|
+486|Laval MFC|squad|5|MF|FRA|Julien Maggiotti|
+486|Laval MFC|squad|6|MF|FRA|Sam Sanna|
+486|Laval MFC|squad|7|MF|FRA|Chafik Gourichy|
+486|Laval MFC|squad|8|MF|FRA|Teddy Bouriaud|
+486|Laval MFC|squad|10|MF|FRA|Malik Sellouki|
+486|Laval MFC|squad|11|FW|FRA|Trévis Dago|
+486|Laval MFC|squad|12|DF|FRA|Mattéo Commaret|
+486|Laval MFC|squad|13|MF|FRA|Francis Coquelin|
+486|Laval MFC|squad|14|MF|MTQ|Cyril Mandouki|
+486|Laval MFC|squad|17|FW|FRA|Corentin Fatou|
+486|Laval MFC|squad|18|DF|SEN|Aboubacar Lô|
+486|Laval MFC|squad|19|FW|FRA|Noa Mupemba|
+486|Laval MFC|squad|20|MF|FRA|Ethan Clavreul|
+486|Laval MFC|squad|21|MF|FRA|Alessio Beaudouin|
+486|Laval MFC|squad|22|DF|FRA|Jules Gaudin|
+486|Laval MFC|squad|23|DF|FRA|Esteban Mouton|
+486|Laval MFC|squad|24|DF|SEN|Sidi Bane|
+486|Laval MFC|squad|26|MF|FRA|Hermann Esmel|
+486|Laval MFC|squad|28|FW|GAM|Aboubakary Kanté|
+486|Laval MFC|squad|29|DF|GUI|Mamadou Sidibé|
+486|Laval MFC|squad|30|GK|MLI|Mamadou Samassa|
+486|Laval MFC|squad|31|FW|FRA|Mathys Houdayer|
+486|Laval MFC|squad|35|DF|SEN|Layousse Samb|
+486|Laval MFC|loaned_out||MF|POR|Loïs Martins|Avranches (until 30 June 2027)
+486|Laval MFC|loaned_out||MF|FRA|Enzo Montet|Thionville (until 30 June 2027)
+487|Montpellier|squad|1|GK|FRA|Mathieu Michel|
+487|Montpellier|squad|3|DF|MAR|Naoufel El Hannach|on loan from Paris Saint-Germain
+487|Montpellier|squad|5|MF|FRA|Everson Junior|
+487|Montpellier|squad|6|DF|GLP|Christopher Jullien|
+487|Montpellier|squad|7|FW|COD|Nathanaël Mbuku|on loan from Augsburg
+487|Montpellier|squad|8|FW|FRA|Yanis Issoufou|
+487|Montpellier|squad|10|MF|MAR|Khalil Fayad|
+487|Montpellier|squad|11|MF|FRA|Téji Savanier|
+487|Montpellier|squad|14|MF|FRA|Nabil Homssa|
+487|Montpellier|squad|15|DF|FRA|Julien Laporte|
+487|Montpellier|squad|17|DF|FRA|Théo Sainte-Luce|
+487|Montpellier|squad|18|FW|FRA|Nicolas Pays|
+487|Montpellier|squad|19|FW|GNB|Alexandre Mendy|
+487|Montpellier|squad|20|FW|FRA|Enzo Molebe|on loan from Lyon
+487|Montpellier|squad|21|DF|FRA|Lucas Mincarelli|
+487|Montpellier|squad|22|MF|FRA|Axel Gueguin|
+487|Montpellier|squad|23|DF|FRA|Yaël Mouanga|
+487|Montpellier|squad|28|FW|BEL|Ayanda Sishuba|on loan from Rennes
+487|Montpellier|squad|29|DF|CMR|Enzo Tchato|
+487|Montpellier|squad|31|GK|CMR|Simon Ngapandouetnbu|
+487|Montpellier|squad|33|FW|FRA|Fayssal El Mahboub|
+487|Montpellier|squad|44|MF|FRA|Théo Chennahi|
+487|Montpellier|squad|50|GK|SRB|Viktor Džodić|
+487|Montpellier|loaned_out||DF|MLI|Modibo Sagnan|Çaykur Rizespor
+487|Montpellier|loaned_out||FW|UAE|Junior Ndiaye|Quevilly-Rouen
+488|Pau FC|squad|1|GK|FRA|Brice Maubleu|
+488|Pau FC|squad|2|DF|FRA|Tom Pouilly|
+488|Pau FC|squad|3|DF|FRA|Joseph Kalulu|
+488|Pau FC|squad|4|DF|FRA|Axel Dodote|on loan from Saint-Étienne
+488|Pau FC|squad|5|MF|FRA|Lorenzo Rajot|
+488|Pau FC|squad|6|MF|SEN|Cheikh Fall|
+488|Pau FC|squad|7|FW|ALG|Hacène Benali|
+488|Pau FC|squad|8|DF|SEN|Souleymane Basse|
+488|Pau FC|squad|9|FW|FRA|Babacar Leye|
+488|Pau FC|squad|10|FW|FRA|Giovani Versini|
+488|Pau FC|squad|11|FW|FRA|Alexis Lefebvre|
+488|Pau FC|squad|14|FW|GAB|Royce Openda|
+488|Pau FC|squad|16|GK|FRA|Maxime Adam|
+488|Pau FC|squad|19|FW|FRA|Tom Saettel|
+488|Pau FC|squad|21|MF|FRA|Jessy Benet|
+488|Pau FC|squad|22|DF|CMR|Rony Mimb Baheng|
+488|Pau FC|squad|23|DF|FRA|Anthony Briançon|
+488|Pau FC|squad|25|MF|FRA|Quentin Daubin|
+488|Pau FC|squad|29|DF|FRA|Gaëtan Paquiez|
+488|Pau FC|squad|30|GK|FRA|Esteban Salles|
+488|Pau FC|squad|39|DF|MAR|Mathys Tourraine|
+488|Pau FC|squad|88|DF|CIV|Axel Bamba|
+488|Pau FC|squad|90|MF|FRA|Kyllian Gasnier|
+488|Pau FC|squad||DF|COM|Akim Abdallah|
+488|Pau FC|squad||MF|FRA|Luan Gadegbeku|on loan from Saint-Étienne
+488|Pau FC|squad||FW|SEN|Abdoulaye Mbaye|
+489|Red Star FC|squad|1|GK|FRA|Quentin Beunardeau|
+489|Red Star FC|squad|2|DF|SUI|Théo Magnin|
+489|Red Star FC|squad|3|DF|FRA|Matthieu Huard|
+489|Red Star FC|squad|4|MF|FRA|Balthazar Pierret|
+489|Red Star FC|squad|5|DF|FRA|Josué Escartin|
+489|Red Star FC|squad|6|DF|GUI|Rayane Doucouré|
+489|Red Star FC|squad|7|FW|FRA|Damien Durand|
+489|Red Star FC|squad|9|FW|SEN|Pape Meïssa Ba|on loan from Widzew Łódź
+489|Red Star FC|squad|10|MF|TUN|Saîf-Eddine Khaoui|
+489|Red Star FC|squad|11|FW|FRA|Kémo Cissé|
+489|Red Star FC|squad|12|DF|FRA|Vincent Kany|
+489|Red Star FC|squad|16|GK|FRA|Gaëtan Poussin|
+489|Red Star FC|squad|19|MF|FRA|Islam Halifa|
+489|Red Star FC|squad|20|DF|FRA|Dylan Durivaux|
+489|Red Star FC|squad|21|FW|FRA|Abdelsamad Hachem|
+489|Red Star FC|squad|22|DF|GUI|Dembo Sylla|on loan from Lorient
+489|Red Star FC|squad|23|FW|FRA|Jovany Ikanga|
+489|Red Star FC|squad|24|DF|FRA|Pierre Lemonnier|
+489|Red Star FC|squad|25|MF|FRA|Guillaume Trani|
+489|Red Star FC|squad|27|DF|FRA|Bradley Danger|
+489|Red Star FC|squad|29|FW|ALG|Hacène Benali|
+489|Red Star FC|squad|31|DF|COM|Mohafidh Ahamada|
+489|Red Star FC|squad|37|FW|FRA|Ronan Matuvangua|
+489|Red Star FC|squad|40|GK|TUN|Mouez Hassen|
+489|Red Star FC|squad|81|MF|FRA|Giovanni Haag|on loan from Fortuna Düsseldorf
+489|Red Star FC|squad|91|FW|FRA|Kévin Cabral|
+489|Red Star FC|squad|98|DF|FRA|Ryad Hachem|
+489|Red Star FC|loaned_out||MF|CIV|Cheick Konaté|Thionville (until 30 June 2026)
+489|Red Star FC|loaned_out||MF|MTQ|Samuel Renel|Rouen (until 30 June 2026)
+490|Rodez AF|squad|1|GK|FRA|Quentin Braat|
+490|Rodez AF|squad|3|DF|FRA|Raphaël Lipinski|
+490|Rodez AF|squad|4|DF|SUI|Mathis Magnin|
+490|Rodez AF|squad|5|DF|FRA|Mohamed Sylla|
+490|Rodez AF|squad|6|MF|CPV|Jordan Mendes|
+490|Rodez AF|squad|7|FW|FRA|Kenny Nagera|
+490|Rodez AF|squad|8|MF|SRB|Damjan Pavlović|
+490|Rodez AF|squad|9|FW|BEL|Nachon Nsingi|
+490|Rodez AF|squad|10|MF|FRA|Mathis Saka|on loan from Toulouse
+490|Rodez AF|squad|11|FW|FRA|Mathis Touho|
+490|Rodez AF|squad|13|FW|FRA|Corentin Issanchou|
+490|Rodez AF|squad|15|DF|FRA|Jean Lambert Evans|
+490|Rodez AF|squad|16|GK|FRA|Lucas Margueron|
+490|Rodez AF|squad|17|DF|FRA|Dylan Vangi|
+490|Rodez AF|squad|19|FW|FRA|Hermann Tebily|
+490|Rodez AF|squad|20|DF|MAD|Ryan Ponti|
+490|Rodez AF|squad|21|FW|FRA|Kélian Nsona|
+490|Rodez AF|squad|22|MF|FRA|Octave Joly|
+490|Rodez AF|squad|23|DF|MLI|Cheick Doumbia|
+490|Rodez AF|squad|24|DF|FRA|Loni Laurent|
+490|Rodez AF|squad|27|FW|FRA|Marco Essimi|
+490|Rodez AF|squad|28|DF|FRA|Steven Luyambula|
+490|Rodez AF|squad|29|MF|FRA|Antonin Cartillier|
+490|Rodez AF|squad|30|GK|FRA|Enzo Crombez|
+490|Rodez AF|squad|34|MF|FRA|Yanis Dahalani|
+490|Rodez AF|loaned_out||FW|FRA|Ibrahima Baldé|Lorient (until 30 June 2027)
+491|Stade de Reims|squad|2|DF|KEN|Joseph Okumu|
+491|Stade de Reims|squad|6|MF|BEL|Théo Leoni|
+491|Stade de Reims|squad|7|FW|MLI|Thiemoko Diarra|
+491|Stade de Reims|squad|8|MF|CIV|Yaya Fofana|
+491|Stade de Reims|squad|9|FW|DEN|Mohamed Daramy|
+491|Stade de Reims|squad|17|FW|JPN|Keito Nakamura|
+491|Stade de Reims|squad|18|DF|ESP|Sergio Akieme|
+491|Stade de Reims|squad|22|DF|CMR|Samuel Kotto|
+491|Stade de Reims|squad|24|MF|CIV|Mory Gbane|
+491|Stade de Reims|squad|27|FW|GAM|Adama Bojang|
+491|Stade de Reims|squad|28|DF|CIV|Elie N'Tamon|
+491|Stade de Reims|squad|30|MF|IRL|John Patrick|
+491|Stade de Reims|squad|73|FW|IRL|Ike Orazi|
+491|Stade de Reims|squad|85|FW|NGA|Hafiz Umar Ibrahim|
+491|Stade de Reims|squad|87|MF|MLI|Ange Martial Tia|
+491|Stade de Reims|squad|94|GK|GUI|Soumaïla Sylla|
+491|Stade de Reims|squad||GK|GER|Tom Ritzy Hülsmann|
+491|Stade de Reims|squad||DF|MLI|Daouda Guindo|
+491|Stade de Reims|squad||FW|MAR|Youssef El Kachati|
+491|Stade de Reims|squad|47|DF|FRA|Melvin Borne|secondary table (unlabelled)
+491|Stade de Reims|squad|56|DF|FRA|Killian Prouchet|secondary table (unlabelled)
+491|Stade de Reims|squad|59|FW|MLI|Abdoulaye Gory|secondary table (unlabelled)
+491|Stade de Reims|squad|65|FW|FRA|Sophian Do Carmo|secondary table (unlabelled)
+491|Stade de Reims|squad|70|GK|FRA|Léo Ripert|secondary table (unlabelled)
+491|Stade de Reims|squad|75|FW|FRA|Mathéo Titalom Penka|secondary table (unlabelled)
+491|Stade de Reims|squad|76|MF|FRA|Lenny Sylla|secondary table (unlabelled)
+491|Stade de Reims|squad|77|FW|FRA|Anddrys Solvet|secondary table (unlabelled)
+491|Stade de Reims|squad|78|FW|FRA|Adama Baradji|secondary table (unlabelled)
+491|Stade de Reims|squad|79|DF|FRA|Ansoumana Dansokho|secondary table (unlabelled)
+491|Stade de Reims|squad|80|GK|FRA|Matisse Morville|secondary table (unlabelled)
+491|Stade de Reims|squad|81|DF|FRA|Justin Tsouh|secondary table (unlabelled)
+491|Stade de Reims|squad|82|DF|FRA|Sacha Burek|secondary table (unlabelled)
+491|Stade de Reims|squad|83|DF|NGA|Amos Ochoche|secondary table (unlabelled)
+491|Stade de Reims|loaned_out||DF|SWE|Malcolm Jeng|Feyenoord (until 30 June 2026)
+491|Stade de Reims|loaned_out||DF|JPN|Hiroki Sekine|Holstein Kiel (until 30 June 2027)
+491|Stade de Reims|loaned_out||MF|FRA|Yohan Demoncy|Guingamp (until 30 June 2026)
+491|Stade de Reims|loaned_out||MF|GER|Reda Khadra|Le Havre (until 30 June 2026)
+491|Stade de Reims|loaned_out||FW|CIV|Oumar Diakité|Cercle Brugge (until 30 June 2026)
+491|Stade de Reims|loaned_out||FW|FRA|Antoine Leautey|Amiens (until 30 June 2026)
+491|Stade de Reims|loaned_out||FW|USA|Jordan Pefok|Tondela (until 30 June 2026)
+491|Stade de Reims|loaned_out||FW|MLI|Niama Pape Sissoko|Nancy (until 30 June 2026)
+491|Stade de Reims|loaned_out||FW|FRA|Amine Salama|NAC Breda (until 30 June 2026)
+492|US Boulogne|squad|1|GK|MTQ|Xavier Lenogue|
+492|US Boulogne|squad|4|DF|FRA|Jonathan Kapenga|
+492|US Boulogne|squad|7|FW|FRA|Aymane Nassiri|
+492|US Boulogne|squad|9|FW|FRA|Martin Lecolier|
+492|US Boulogne|squad|12|DF|FRA|Julien Boyer|
+492|US Boulogne|squad|14|MF|FRA|Joffrey Bultel|
+492|US Boulogne|squad|15|DF|FRA|Adrien Pinot|
+492|US Boulogne|squad|16|GK|GUI|Ibrahim Koné|
+492|US Boulogne|squad|17|FW|FRA|Noah Fatar|
+492|US Boulogne|squad|18|DF|FRA|Demba Thiam|
+492|US Boulogne|squad|19|MF|FRA|Nolan Binet|
+492|US Boulogne|squad|21|DF|FRA|Aurélien Platret|
+492|US Boulogne|squad|22|DF|FRA|Sonny Duflos|
+492|US Boulogne|squad|24|DF|FRA|Louis Siliadin|
+492|US Boulogne|squad|25|DF|FRA|Antoine Kerriou|
+492|US Boulogne|squad|26|DF|FRA|Oscar Lenne|
+492|US Boulogne|squad|28|MF|FRA|Sohan Paillard|
+492|US Boulogne|squad|30|GK|FRA|Azamat Uriev|
+492|US Boulogne|squad|31|FW|BIH|Benjamin Bešić|
+492|US Boulogne|squad|90|MF|FRA|Jonas Martin|
+492|US Boulogne|squad|91|FW|CIV|Zanga Koné|
+492|US Boulogne|squad|97|DF|GLP|Zoran Moco|
+492|US Boulogne|squad|99|GK|CMR|Blondy Nna Noukeu|
+492|US Boulogne|squad||DF|FRA|Théo Brusco|
+492|US Boulogne|squad||MF|FRA|Abdel Hbouch|
+492|US Boulogne|loaned_out||FW|FRA|Exaucé Mpembele Boula|Bourg-en-Bresse (until 30 June 2027)
+493|USL Dunkerque|squad|2|DF|FRA|Ousmane Touré|on loan from Lille
+493|USL Dunkerque|squad|4|DF|BEL|Bram Lagae|
+493|USL Dunkerque|squad|6|MF|FRA|Jordan Morel|
+493|USL Dunkerque|squad|7|MF|TUN|Khalil Ayari|on loan from Paris Saint-Germain
+493|USL Dunkerque|squad|9|FW|FRA|Gaëtan Robail|
+493|USL Dunkerque|squad|10|MF|FRA|Adrien Lebeau|
+493|USL Dunkerque|squad|11|MF|RUS|Yegor Prutsev|
+493|USL Dunkerque|squad|15|MF|FRA|Steven Nzonzi|
+493|USL Dunkerque|squad|16|GK|FRA|Maxence Prévot|
+493|USL Dunkerque|squad|17|FW|SEN|Pape Malick Dieng|
+493|USL Dunkerque|squad|18|MF|FRA|Théna Massock|
+493|USL Dunkerque|squad|19|FW|FRA|Souleymane Keita|
+493|USL Dunkerque|squad|21|DF|CGO|Lenny Dziki Loussilaho|
+493|USL Dunkerque|squad|22|DF|COD|Victor Mayela|
+493|USL Dunkerque|squad|23|FW|CIV|Arthylio Nadé|
+493|USL Dunkerque|squad|24|DF|FRA|Lenny Vallier|
+493|USL Dunkerque|squad|25|MF|CMR|Franck Atoen|on loan from Samsunspor
+493|USL Dunkerque|squad|26|DF|GNB|Opa Sanganté|
+493|USL Dunkerque|squad|27|DF|FRA|Allan Linguet|
+493|USL Dunkerque|squad|30|DF|BRA|Abner|
+493|USL Dunkerque|squad|36|GK|SEN|Mouhamed Sissokho|
+493|USL Dunkerque|squad|42|DF|FRA|Maedine Makhloufi|
+493|USL Dunkerque|squad|73|GK|ESP|Moha Ramos|
+493|USL Dunkerque|squad|93|FW|FRA|Alex Daho|
+493|USL Dunkerque|squad|94|FW|FRA|Enzo Mayilla|
+493|USL Dunkerque|squad|99|FW|SEN|M'Baye Niang|
+493|USL Dunkerque|loaned_out||FW|FRA|Zaid Seha|Aubagne Air Bel (until 30 June 2027)

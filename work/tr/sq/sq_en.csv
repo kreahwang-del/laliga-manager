@@ -1,0 +1,1235 @@
+club_id|club|status|number|pos|nat|player|note
+18|Liverpool|squad|1|GK|BRA|Alisson Becker|vice-captain
+18|Liverpool|squad|2|DF|ENG|Joe Gomez|vice-captain
+18|Liverpool|squad|3|MF|JPN|Wataru Endo|
+18|Liverpool|squad|4|DF|NED|Virgil van Dijk|captain
+18|Liverpool|squad|5|DF|FRA|Jérémy Jacquet|
+18|Liverpool|squad|6|DF|HUN|Milos Kerkez|
+18|Liverpool|squad|7|MF|GER|Florian Wirtz|
+18|Liverpool|squad|8|MF|HUN|Dominik Szoboszlai|vice-captain
+18|Liverpool|squad|9|FW|SWE|Alexander Isak|
+18|Liverpool|squad|10|MF|ARG|Alexis Mac Allister|
+18|Liverpool|squad|12|DF|NIR|Conor Bradley|
+18|Liverpool|squad|14|FW|ITA|Federico Chiesa|
+18|Liverpool|squad|15|DF|ITA|Giovanni Leoni|
+18|Liverpool|squad|18|FW|NED|Cody Gakpo|
+18|Liverpool|squad|21|DF|GRE|Kostas Tsimikas|
+18|Liverpool|squad|22|FW|FRA|Hugo Ekitike|
+18|Liverpool|squad|23|FW|ESP|Víctor Muñoz|
+18|Liverpool|squad|25|GK|GEO|Giorgi Mamardashvili|
+18|Liverpool|squad|28|GK|ENG|Freddie Woodman|
+18|Liverpool|squad|29|FW|FRA|Bradley Barcola|
+18|Liverpool|squad|30|DF|NED|Jeremie Frimpong|
+18|Liverpool|squad|33|DF|URU|Ronald Araújo|on loan from Barcelona
+18|Liverpool|squad|38|MF|NED|Ryan Gravenberch|
+18|Liverpool|squad|42|MF|ENG|Trey Nyoni|
+18|Liverpool|squad|44|DF|ENG|Luke Chambers|
+18|Liverpool|squad|53|MF|ENG|James McConnell|
+18|Liverpool|squad|56|GK|CZE|Vítězslav Jaroš|
+18|Liverpool|squad|67|FW|WAL|Lewis Koumas|
+18|Liverpool|squad|73|FW|ENG|Rio Ngumoha|
+18|Liverpool|squad|76|FW|ENG|Jayden Danns|
+18|Liverpool|squad|95|GK|ENG|Harvey Davies|
+18|Liverpool|squad|49|FW|ENG|Kaide Gordon|
+18|Liverpool|squad|52|DF|ZIM|Isaac Mabaya|
+18|Liverpool|squad|63|DF|WAL|Owen Beck|
+18|Liverpool|squad|65|DF|ENG|Amara Nallo|
+18|Liverpool|squad|92|DF|ENG|Wellity Lucky|
+18|Liverpool|loaned_out|19|MF|ENG|Harvey Elliott|Valencia until 30 June 2027
+18|Liverpool|loaned_out|41|GK|HUN|Ármin Pécsi|TSV Hartberg until 30 June 2027
+18|Liverpool|loaned_out|47|DF|SCO|Calvin Ramsay|St Mirren until 31 May 2027
+18|Liverpool|loaned_out|83|DF|AUT|Ifeanyi Ndukwe|Levante until 30 June 2027
+18|Liverpool|loaned_out|48|DF|ENG|Calum Scanlon|Cardiff City until 31 May 2027
+18|Liverpool|loaned_out|68|MF|NIR|Kieran Morrison|Sheffield Wednesday until 31 May 2027
+19|Manchester City|squad|1|GK|ITA|Gianluigi Donnarumma|vice-captain
+19|Manchester City|squad|3|DF|POR|Rúben Dias|captain
+19|Manchester City|squad|5|MF|ENG|Elliot Anderson|
+19|Manchester City|squad|6|DF|ENG|Marc Guéhi|vice-captain
+19|Manchester City|squad|7|FW|SEN|Iliman Ndiaye|
+19|Manchester City|squad|8|MF|CRO|Mateo Kovačić|
+19|Manchester City|squad|9|FW|NOR|Erling Haaland|vice-captain
+19|Manchester City|squad|10|MF|FRA|Rayan Cherki|
+19|Manchester City|squad|11|FW|BEL|Jérémy Doku|
+19|Manchester City|squad|13|GK|ENG|Marcus Bettinelli|
+19|Manchester City|squad|17|MF|ARG|Enzo Fernández|
+19|Manchester City|squad|21|DF|ALG|Rayan Aït-Nouri|
+19|Manchester City|squad|22|DF|BRA|Vitor Reis|
+19|Manchester City|squad|24|DF|CRO|Joško Gvardiol|
+19|Manchester City|squad|27|DF|POR|Matheus Nunes|
+19|Manchester City|squad|28|GK|ARG|Gerónimo Rulli|
+19|Manchester City|squad|32|MF|MAR|Ayyoub Bouaddi|
+19|Manchester City|squad|33|MF|ENG|Nico O'Reilly|
+19|Manchester City|squad|37|FW|BRA|Allan|
+19|Manchester City|squad|42|FW|GHA|Antoine Semenyo|
+19|Manchester City|squad|45|DF|UZB|Abdukodir Khusanov|
+19|Manchester City|squad|47|MF|ENG|Phil Foden|
+19|Manchester City|squad|56|FW|ENG|Ryan McAidoo|
+19|Manchester City|squad|61|DF|ENG|Kaden Braithwaite|
+19|Manchester City|squad|75|MF|FRA|Floyd Samba|
+19|Manchester City|squad|82|DF|ENG|Rico Lewis|
+19|Manchester City|loaned_out|18|MF|ENG|Jack Grealish|Everton
+19|Manchester City|loaned_out|30|MF|ARG|Claudio Echeverri|Benfica
+19|Manchester City|loaned_out|40|MF|ENG|Jeremy Monga|Swansea City
+19|Manchester City|loaned_out|41|MF|NOR|Sverre Nypan|Lommel
+19|Manchester City|loaned_out|44|MF|ENG|Kalvin Phillips|Sheffield United
+19|Manchester City|loaned_out|68|DF|ENG|Max Alleyne|Burnley
+19|Manchester City|loaned_out||GK|NIR|Pierce Charles|Queens Park Rangers
+19|Manchester City|loaned_out||FW|EGY|Omar Marmoush|Tottenham Hotspur
+19|Manchester City|loaned_out|59|MF|ENG|Charlie Gray|Wigan Athletic
+19|Manchester City|loaned_out|63|MF|ENG|Divine Mukasa|West Ham United
+19|Manchester City|loaned_out|67|FW|ENG|Divin Mubama|Southampton
+19|Manchester City|loaned_out|80|GK|ENG|Spike Brits|Sutton United
+19|Manchester City|loaned_out|81|FW|ENG|Jaden Heskey|Sheffield Wednesday
+19|Manchester City|loaned_out|91|DF|ENG|Stephen Mfuni|Coventry City
+19|Manchester City|loaned_out||FW|FRA|Mathys Detourbet|Monaco
+20|Arsenal|squad|1|GK|ESP|David Raya|
+20|Arsenal|squad|2|DF|FRA|William Saliba|
+20|Arsenal|squad|3|DF|ESP|Cristhian Mosquera|
+20|Arsenal|squad|4|DF|ENG|Ben White|
+20|Arsenal|squad|5|DF|ECU|Piero Hincapié|
+20|Arsenal|squad|6|DF|BRA|Gabriel Magalhães|
+20|Arsenal|squad|7|FW|ENG|Bukayo Saka|vice-captain
+20|Arsenal|squad|8|MF|NOR|Martin Ødegaard|captain
+20|Arsenal|squad|10|MF|ENG|Eberechi Eze|
+20|Arsenal|squad|12|DF|NED|Jurriën Timber|
+20|Arsenal|squad|13|GK|ESP|Kepa Arrizabalaga|
+20|Arsenal|squad|14|FW|SWE|Viktor Gyökeres|
+20|Arsenal|squad|15|DF|ENG|Ezri Konsa|
+20|Arsenal|squad|17|FW|GRE|Christos Tzolis|
+20|Arsenal|squad|20|FW|ENG|Noni Madueke|
+20|Arsenal|squad|23|MF|ESP|Mikel Merino|
+20|Arsenal|squad|29|FW|GER|Kai Havertz|
+20|Arsenal|squad|30|GK|FRA|Illan Meslier|
+20|Arsenal|squad|33|DF|ITA|Riccardo Calafiori|
+20|Arsenal|squad|36|MF|ESP|Martín Zubimendi|
+20|Arsenal|squad|39|MF|BRA|Bruno Guimarães|
+20|Arsenal|squad|41|MF|ENG|Declan Rice|
+20|Arsenal|squad|49|DF|ENG|Myles Lewis-Skelly|
+20|Arsenal|loaned_out|22|FW|ENG|Ethan Nwaneri|Borussia Dortmund (until 30 June 2027)
+20|Arsenal|loaned_out|35|GK|ENG|Tommy Setford|Stevenage (until 30 June 2027)
+21|Manchester Utd|squad|1|GK|BEL|Senne Lammens|
+21|Manchester Utd|squad|2|DF|POR|Diogo Dalot|
+21|Manchester Utd|squad|3|DF|MAR|Noussair Mazraoui|
+21|Manchester Utd|squad|4|DF|NED|Matthijs de Ligt|
+21|Manchester Utd|squad|5|DF|ENG|Harry Maguire|
+21|Manchester Utd|squad|6|DF|ARG|Lisandro Martínez|
+21|Manchester Utd|squad|7|MF|ENG|Mason Mount|
+21|Manchester Utd|squad|8|MF|POR|Bruno Fernandes|captain
+21|Manchester Utd|squad|9|FW|ENG|Marcus Rashford|
+21|Manchester Utd|squad|10|FW|BRA|Matheus Cunha|
+21|Manchester Utd|squad|11|FW|NED|Joshua Zirkzee|
+21|Manchester Utd|squad|12|GK|WAL|Karl Darlow|
+21|Manchester Utd|squad|13|DF|DEN|Patrick Dorgu|
+21|Manchester Utd|squad|15|DF|FRA|Leny Yoro|
+21|Manchester Utd|squad|16|FW|CIV|Amad Diallo|
+21|Manchester Utd|squad|17|MF|BRA|Andrey Santos|
+21|Manchester Utd|squad|18|MF|BEL|Youri Tielemans|
+21|Manchester Utd|squad|19|FW|CMR|Bryan Mbeumo|
+21|Manchester Utd|squad|20|MF|CMR|Carlos Baleba|
+21|Manchester Utd|squad|22|GK|ENG|Tom Heaton|
+21|Manchester Utd|squad|23|DF|ENG|Luke Shaw|
+21|Manchester Utd|squad|25|MF|URU|Manuel Ugarte|
+21|Manchester Utd|squad|26|DF|ENG|Ayden Heaven|
+21|Manchester Utd|squad|30|FW|SVN|Benjamin Šeško|
+21|Manchester Utd|squad|31|FW|ENG|Shea Lacey|
+21|Manchester Utd|squad|37|MF|ENG|Kobbie Mainoo|
+21|Manchester Utd|squad|38|MF|ENG|Jack Fletcher|
+21|Manchester Utd|squad|39|MF|SCO|Tyler Fletcher|
+21|Manchester Utd|squad|41|DF|ENG|Harry Amass|
+21|Manchester Utd|squad|45|GK|NIR|Dermot Mee|
+21|Manchester Utd|loaned_out|24|GK|CMR|André Onana|Trabzonspor
+21|Manchester Utd|loaned_out||GK|TUR|Altay Bayındır|Celta Vigo
+21|Manchester Utd|loaned_out|70|FW|ENG|Bendito Mantato|
+21|Manchester Utd|loaned_out|32|FW|DEN|Chido Obi|Willem II
+21|Manchester Utd|loaned_out|36|FW|ENG|Ethan Wheatley|Lincoln City
+21|Manchester Utd|loaned_out|44|MF|ENG|Dan Gore|Luton Town
+22|Tottenham|squad|3|DF|SCO|Andy Robertson|
+22|Tottenham|squad|4|DF|ENG|Tosin Adarabioyo|
+22|Tottenham|squad|5|DF|ARG|Marcos Senesi|
+22|Tottenham|squad|6|DF|NED|Jan Paul van Hecke|
+22|Tottenham|squad|7|MF|NED|Xavi Simons|
+22|Tottenham|squad|8|MF|ENG|Conor Gallagher|
+22|Tottenham|squad|9|FW|BRA|Richarlison|
+22|Tottenham|squad|10|MF|ENG|James Maddison|4th captain
+22|Tottenham|squad|11|FW|FRA|Mathys Tel|
+22|Tottenham|squad|13|DF|ITA|Destiny Udogie|
+22|Tottenham|squad|14|MF|ENG|Archie Gray|5th captain
+22|Tottenham|squad|15|MF|SWE|Lucas Bergvall|
+22|Tottenham|squad|16|MF|ITA|Sandro Tonali|
+22|Tottenham|squad|17|FW|BRA|Sávio|
+22|Tottenham|squad|18|MF|POR|Mateus Fernandes|
+22|Tottenham|squad|19|FW|ENG|Dominic Solanke|
+22|Tottenham|squad|20|FW|GHA|Mohammed Kudus|
+22|Tottenham|squad|21|FW|SWE|Dejan Kulusevski|
+22|Tottenham|squad|22|FW|EGY|Omar Marmoush|on loan from Manchester City
+22|Tottenham|squad|23|DF|ESP|Pedro Porro|vice-captain
+22|Tottenham|squad|27|FW|UKR|Mykhailo Mudryk|on loan from Chelsea
+22|Tottenham|squad|28|FW|FRA|Wilson Odobert|
+22|Tottenham|squad|30|MF|URU|Rodrigo Bentancur|
+22|Tottenham|squad|31|GK|CZE|Antonín Kinský|
+22|Tottenham|squad|33|DF|WAL|Ben Davies|3rd captain
+22|Tottenham|squad|37|DF|NED|Micky van de Ven|captain
+22|Tottenham|squad|39|GK|SVK|Martin Dúbravka|
+22|Tottenham|squad|40|GK|USA|Brandon Austin|
+22|Tottenham|loaned_out|1|GK|ITA|Guglielmo Vicario|Juventus (until 30 June 2027)
+22|Tottenham|loaned_out|25|DF|JPN|Kōta Takai|Sint-Truidense (until 30 June 2027)
+22|Tottenham|loaned_out|29|MF|SEN|Pape Matar Sarr|Juventus (until 30 June 2027)
+23|Chelsea|squad|1|GK|ESP|Robert Sánchez|
+23|Chelsea|squad|4|DF|ENG|Tosin Adarabioyo|
+23|Chelsea|squad|5|DF|FRA|Benoît Badiashile|
+23|Chelsea|squad|6|DF|ENG|Levi Colwill|
+23|Chelsea|squad|7|FW|POR|Pedro Neto|
+23|Chelsea|squad|8|MF|ARG|Enzo Fernández|vice-captain
+23|Chelsea|squad|9|FW|ENG|Liam Delap|
+23|Chelsea|squad|10|MF|ENG|Cole Palmer|
+23|Chelsea|squad|11|FW|ENG|Jamie Gittens|
+23|Chelsea|squad|12|GK|DEN|Filip Jörgensen|
+23|Chelsea|squad|14|MF|POR|Dário Essugo|
+23|Chelsea|squad|17|MF|BRA|Andrey Santos|
+23|Chelsea|squad|19|DF|SEN|Mamadou Sarr|
+23|Chelsea|squad|20|FW|BRA|João Pedro|
+23|Chelsea|squad|21|DF|NED|Jorrel Hato|
+23|Chelsea|squad|23|DF|ENG|Trevoh Chalobah|
+23|Chelsea|squad|24|DF|ENG|Reece James|captain
+23|Chelsea|squad|25|MF|ECU|Moisés Caicedo|3rd captain
+23|Chelsea|squad|27|DF|FRA|Malo Gusto|
+23|Chelsea|squad|28|GK|ENG|Teddy Sharman-Lo|
+25|Aston Villa|squad|1|GK|JPN|Zion Suzuki|
+25|Aston Villa|squad|2|DF|POL|Matty Cash|
+25|Aston Villa|squad|3|DF|SWE|Victor Lindelöf|
+25|Aston Villa|squad|4|DF|ENG|Taylor Harwood-Bellis|
+25|Aston Villa|squad|5|DF|ENG|Tyrone Mings|
+25|Aston Villa|squad|6|MF|ENG|Ross Barkley|
+25|Aston Villa|squad|7|MF|SCO|John McGinn|captain
+25|Aston Villa|squad|8|MF|FRA|Boubacar Kamara|
+25|Aston Villa|squad|10|MF|ARG|Emiliano Buendía|
+25|Aston Villa|squad|11|FW|SEN|Nicolas Jackson|
+25|Aston Villa|squad|13|DF|ITA|Matteo Ruggeri|
+25|Aston Villa|squad|14|DF|ESP|Pau Torres|
+25|Aston Villa|squad|17|FW|ARG|Alejandro Garnacho|on loan from Chelsea
+25|Aston Villa|squad|18|FW|ENG|Tammy Abraham|
+25|Aston Villa|squad|19|FW|SEN|Ibrahim Mbaye|
+25|Aston Villa|squad|20|MF|ENG|Jamaldeen Jimoh-Aloba|
+25|Aston Villa|squad|22|DF|NED|Ian Maatsen|
+25|Aston Villa|squad|24|MF|BEL|Amadou Onana|
+25|Aston Villa|squad|26|MF|NED|Lamare Bogarde|
+25|Aston Villa|squad|27|MF|GER|Leon Goretzka|
+25|Aston Villa|squad|29|DF|COD|Aaron Wan-Bissaka|on loan from West Ham United
+25|Aston Villa|squad|35|MF|BRA|João Gomes|
+25|Aston Villa|squad|39|FW|ENG|Brian Madjo|
+25|Aston Villa|squad|40|GK|NED|Marco Bizot|
+25|Aston Villa|squad|42|GK|ENG|James Wright|
+25|Aston Villa|squad|44|MF|SUI|Johan Manzambi|
+25|Aston Villa|squad|47|FW|BRA|Alysson|
+25|Aston Villa|squad|48|DF|SEN|Modou Kéba Cissé|
+25|Aston Villa|squad|53|MF|ENG|George Hemmings|
+25|Aston Villa|loaned_out|16|DF|ESP|Andrés García|Getafe
+25|Aston Villa|loaned_out|29|FW|CIV|Evann Guessand|Crystal Palace
+25|Aston Villa|loaned_out|32|DF|SRB|Kosta Nedeljković|Rangers
+25|Aston Villa|loaned_out|33|FW|ENG|Samuel Iling-Junior|Bolton Wanderers
+25|Aston Villa|loaned_out|46|GK|AUS|Joe Gauci|Lincoln City
+25|Aston Villa|loaned_out|48|GK|POL|Oliwier Zych|Vitória de Guimarães
+25|Aston Villa|loaned_out|58|DF|TUR|Yasin Özcan|Beşiktaş
+25|Aston Villa|loaned_out|28|FW|NED|Zépiqueno Redmond|Annecy
+25|Aston Villa|loaned_out|45|DF|ENG|Triston Rowe|Sporting De Charleroi
+25|Aston Villa|loaned_out|49|MF|ENG|Bradley Burrowes|Wigan Athletic
+25|Aston Villa|loaned_out|51|MF|ENG|Kadan Young|Annecy
+25|Aston Villa|loaned_out|52|GK|ENG|Sam Proctor|Shrewsbury Town
+25|Aston Villa|loaned_out|54|MF|SCO|Aidan Borland|Accrington Stanley
+25|Aston Villa|loaned_out|56|DF|ENG|Lino Sousa|Shrewsbury Town
+25|Aston Villa|loaned_out|58|MF|ENG|Tommi O'Reilly|Doncaster Rovers
+25|Aston Villa|loaned_out|59|DF|ENG|Josh Feeney|Peterborough United
+25|Aston Villa|loaned_out|62|MF|ENG|Ben Broggio|Stevenage
+25|Aston Villa|loaned_out|64|MF|ENG|Kane Taylor|Rochdale
+25|Aston Villa|loaned_out|74|MF|ENG|Luka Lynch|Oxford United
+27|Brentford|squad|1|GK|IRL|Caoimhín Kelleher|
+27|Brentford|squad|2|DF|SCO|Aaron Hickey|
+27|Brentford|squad|3|DF|JAM|Rico Henry|
+27|Brentford|squad|4|DF|NED|Sepp van den Berg|
+27|Brentford|squad|5|DF|JAM|Ethan Pinnock|
+27|Brentford|squad|6|MF|ENG|Jordan Henderson|
+27|Brentford|squad|7|FW|GER|Kevin Schade|
+27|Brentford|squad|8|MF|DEN|Mathias Jensen|
+27|Brentford|squad|9|FW|BRA|Igor Thiago|
+27|Brentford|squad|10|MF|ENG|Josh Dasilva|
+27|Brentford|squad|12|GK|ISL|Hákon Valdimarsson|
+27|Brentford|squad|14|MF|POR|Fábio Carvalho|
+27|Brentford|squad|17|MF|NED|Antoni Milambo|
+27|Brentford|squad|18|MF|UKR|Yehor Yarmolyuk|
+27|Brentford|squad|19|FW|BFA|Dango Ouattara|
+27|Brentford|squad|20|DF|NOR|Kristoffer Ajer|
+27|Brentford|squad|22|DF|IRL|Nathan Collins|captain
+27|Brentford|squad|23|MF|ENG|Keane Lewis-Potter|
+27|Brentford|squad|24|MF|DEN|Mikkel Damsgaard|
+27|Brentford|squad|27|MF|GER|Vitaly Janelt|
+27|Brentford|squad|31|GK|ENG|Ellery Balcombe|
+27|Brentford|squad|33|DF|ITA|Michael Kayode|
+27|Brentford|squad|41|GK|USA|Julian Eyestone|
+27|Brentford|squad|45|FW|ENG|Romelle Donovan|
+27|Brentford|squad|47|FW|BEL|Kaye Furo|
+27|Brentford|loaned_out|13|GK|ENG|Matthew Cox|Shrewsbury Town
+27|Brentford|loaned_out|15|MF|NGA|Frank Onyeka|Coventry City
+27|Brentford|loaned_out|26|MF|TUR|Yunus Emre Konak|Oxford United
+27|Brentford|loaned_out|21|DF|ENG|Jayden Meghoma|Rangers
+27|Brentford|loaned_out|28|MF|ENG|Ryan Trevitt|Wigan
+27|Brentford|loaned_out|36|DF|KOR|Kim Ji-soo|Kaiserslautern
+27|Brentford|loaned_out|39|FW|BRA|Gustavo Nunes|Swansea City
+27|Brentford|loaned_out|43|FW|ENG|Benjamin Arthur|Celtic
+29|Newcastle|squad|1|GK|ENG|Nick Pope|
+29|Newcastle|squad|3|DF|ENG|Lewis Hall|
+29|Newcastle|squad|4|DF|NED|Sven Botman|
+29|Newcastle|squad|5|DF|SUI|Fabian Schär|
+29|Newcastle|squad|7|FW|BRA|Joelinton|
+29|Newcastle|squad|8|MF|ITA|Sandro Tonali|
+29|Newcastle|squad|9|FW|COD|Yoane Wissa|
+29|Newcastle|squad|11|FW|ENG|Harvey Barnes|
+29|Newcastle|squad|12|DF|GER|Malick Thiaw|
+29|Newcastle|squad|18|FW|DEN|William Osula|
+29|Newcastle|squad|20|FW|SWE|Anthony Elanga|
+29|Newcastle|squad|21|DF|ENG|Tino Livramento|
+29|Newcastle|squad|23|MF|ENG|Jacob Murphy|
+29|Newcastle|squad|27|FW|GER|Nick Woltemade|
+29|Newcastle|squad|28|MF|ENG|Joe Willock|
+29|Newcastle|squad|29|GK|ENG|Mark Gillespie|
+29|Newcastle|squad|33|DF|ENG|Dan Burn|
+29|Newcastle|squad|37|DF|IRL|Alex Murphy|
+29|Newcastle|squad|39|MF|BRA|Bruno Guimarães|captain
+29|Newcastle|squad|41|MF|ENG|Jacob Ramsey|
+29|Newcastle|squad|67|MF|ENG|Lewis Miley|
+29|Newcastle|squad||GK|FRA|Ewen Jaouen|
+29|Newcastle|squad||DF|SCO|Harrison Ashby|
+29|Newcastle|squad||MF|ESP|Antonio Cordero|
+29|Newcastle|squad||GK|GRE|Odysseas Vlachodimos|
+29|Newcastle|squad||MF|ENG|Joe White|
+30|Everton|squad|1|GK|ENG|Jordan Pickford|vice-captain
+30|Everton|squad|2|DF|SCO|Nathan Patterson|
+30|Everton|squad|4|DF|ENG|Jarrad Branthwaite|
+30|Everton|squad|5|DF|ENG|Michael Keane|
+30|Everton|squad|6|DF|ENG|James Tarkowski|captain
+30|Everton|squad|8|MF|ENG|Kiernan Dewsbury-Hall|
+30|Everton|squad|9|FW|GNB|Beto|
+30|Everton|squad|10|FW|SEN|Iliman Ndiaye|
+30|Everton|squad|11|FW|FRA|Thierno Barry|
+30|Everton|squad|12|GK|IRL|Mark Travers|
+30|Everton|squad|15|DF|IRL|Jake O'Brien|
+30|Everton|squad|16|DF|UKR|Vitalii Mykolenko|
+30|Everton|squad|19|FW|ENG|Tyrique George|
+30|Everton|squad|20|FW|ENG|Tyler Dibling|
+30|Everton|squad|22|FW|WAL|Brennan Johnson|
+30|Everton|squad|23|MF|DEN|Christian Nørgaard|
+30|Everton|squad|24|MF|ARG|Charly Alcaraz|
+30|Everton|squad|30|MF|ENG|Hayden Hackney|
+30|Everton|squad|31|GK|WAL|Tom King|
+30|Everton|squad|34|MF|GER|Merlin Röhl|
+30|Everton|squad|37|MF|ENG|James Garner|
+30|Everton|squad|39|DF|MAR|Adam Aznou|
+30|Everton|squad|42|MF|ENG|Tim Iroegbunam|
+30|Everton|squad|45|MF|ENG|Harrison Armstrong|
+32|Fulham|squad|1|GK|GER|Bernd Leno|
+32|Fulham|squad|2|DF|NED|Kenny Tete|
+32|Fulham|squad|3|DF|NGA|Calvin Bassey|
+32|Fulham|squad|4|DF|ESP|Jorge Cuenca|
+32|Fulham|squad|5|DF|DEN|Joachim Andersen|
+32|Fulham|squad|6|MF|ENG|Harrison Reed|
+32|Fulham|squad|7|FW|ESP|Gonzalo García|
+32|Fulham|squad|8|MF|ESP|César Palacios|
+32|Fulham|squad|9|FW|BRA|Rodrigo Muniz|
+32|Fulham|squad|10|MF|SCO|Tom Cairney|captain
+32|Fulham|squad|11|FW|BRA|Kevin|
+32|Fulham|squad|14|FW|NOR|Oscar Bobb|
+32|Fulham|squad|16|MF|NOR|Sander Berge|
+32|Fulham|squad|17|MF|NGA|Alex Iwobi|
+32|Fulham|squad|18|FW|SWE|Jonah Kusi-Asare|
+32|Fulham|squad|19|MF|NIR|Shea Charles|
+32|Fulham|squad|21|DF|BEL|Timothy Castagne|
+32|Fulham|squad|23|GK|FRA|Benjamin Lecomte|
+32|Fulham|squad|24|MF|ENG|Josh King|
+32|Fulham|squad|30|MF|ENG|Ryan Sessegnon|
+32|Fulham|squad|32|MF|ENG|Emile Smith Rowe|
+32|Fulham|squad|33|DF|USA|Antonee Robinson|
+32|Fulham|squad|44|DF|CAN|Luc de Fougerolles|
+32|Fulham|loaned_out||GK|ENG|Alfie McNally|York City
+32|Fulham|loaned_out||MF|WAL|Luke Harris|Wigan Athletic
+32|Fulham|loaned_out||FW|ENG|Aaron Loupalo-Bi|Fleetwood Town
+33|Sunderland|squad|4|DF|AUT|Kevin Danso|on loan from Tottenham Hotspur
+33|Sunderland|squad|5|DF|NIR|Daniel Ballard|
+33|Sunderland|squad|6|DF|FRA|Dayann Methalie|
+33|Sunderland|squad|7|FW|MAR|Chemsdine Talbi|
+33|Sunderland|squad|8|MF|IRL|Alan Browne|
+33|Sunderland|squad|9|FW|NED|Brian Brobbey|
+33|Sunderland|squad|10|FW|ECU|Nilson Angulo|
+33|Sunderland|squad|11|MF|ENG|Chris Rigg|
+33|Sunderland|squad|12|DF|BEL|Thomas Meunier|
+33|Sunderland|squad|13|MF|ENG|Luke O'Nien|
+33|Sunderland|squad|14|FW|ENG|Romaine Mundle|
+33|Sunderland|squad|15|DF|PAR|Omar Alderete|
+33|Sunderland|squad|17|DF|MOZ|Reinildo|
+33|Sunderland|squad|18|FW|HAI|Wilson Isidor|
+33|Sunderland|squad|19|MF|SEN|Habib Diarra|
+33|Sunderland|squad|20|DF|FRA|Nordi Mukiele|
+33|Sunderland|squad|21|GK|ENG|Simon Moore|
+33|Sunderland|squad|22|GK|NED|Robin Roefs|
+33|Sunderland|squad|27|MF|COD|Noah Sadiki|
+33|Sunderland|squad|28|MF|FRA|Enzo Le Fée|
+33|Sunderland|squad|29|MF|COD|Jules Ahoka|
+33|Sunderland|squad|31|GK|SWE|Melker Ellborg|
+33|Sunderland|squad|32|DF|NIR|Trai Hume|
+33|Sunderland|squad|34|MF|SUI|Granit Xhaka|captain
+33|Sunderland|squad|37|FW|CIV|Jocelin Ta Bi|
+33|Sunderland|squad|39|FW|BEL|Malick Fofana|
+33|Sunderland|squad|46|MF|MTN|Abdoullah Ba|
+33|Sunderland|squad|50|FW|ECU|Juan Riquelme Angulo|
+33|Sunderland|squad|57|FW|UKR|Timur Tutyerov|
+33|Sunderland|squad|42|DF|ENG|Aji Alese|
+33|Sunderland|loaned_out|23|DF|NED|Jenson Seelt|Swansea City
+33|Sunderland|loaned_out|24|FW|CIV|Simon Adingra|Ajax
+33|Sunderland|loaned_out|30|MF|SRB|Milan Aleksić|Partizan
+34|Leeds United|squad|1|GK|ENG|James Trafford|
+34|Leeds United|squad|2|DF|ENG|Jayden Bogle|
+34|Leeds United|squad|3|DF|SWE|Gabriel Gudmundsson|
+34|Leeds United|squad|4|MF|WAL|Ethan Ampadu|captain
+34|Leeds United|squad|5|DF|BIH|Tarik Muharemović|
+34|Leeds United|squad|6|DF|WAL|Joe Rodon|
+34|Leeds United|squad|7|MF|WAL|Daniel James|
+34|Leeds United|squad|8|MF|ENG|Sean Longstaff|
+34|Leeds United|squad|9|FW|ENG|Dominic Calvert-Lewin|
+34|Leeds United|squad|10|MF|WAL|Harry Wilson|
+34|Leeds United|squad|11|MF|USA|Brenden Aaronson|
+34|Leeds United|squad|14|FW|GER|Lukas Nmecha|
+34|Leeds United|squad|15|DF|SLO|Jaka Bijol|
+34|Leeds United|squad|16|GK|GER|Michael Zetterer|
+34|Leeds United|squad|18|MF|GER|Anton Stach|
+34|Leeds United|squad|19|FW|SUI|Noah Okafor|
+34|Leeds United|squad|21|GK|ENG|Alex Cairns|
+34|Leeds United|squad|22|MF|JPN|Ao Tanaka|
+34|Leeds United|squad|23|FW|FRA|Jean-Mattéo Bahoya|on loan from Eintracht Frankfurt
+34|Leeds United|squad|24|DF|ENG|James Justin|
+34|Leeds United|squad|26|DF|FRA|Melvin Bard|on loan from Nice
+34|Leeds United|squad|30|DF|SUI|Nico Elvedi|
+34|Leeds United|squad|44|MF|BUL|Ilia Gruev|
+34|Leeds United|squad|65|DF|WAL|Jayden Lienou|
+34|Leeds United|squad||FW|ESP|Mateo Joseph|
+34|Leeds United|loaned_out|29|FW|ITA|Wilfried Gnonto|Fiorentina until 30 June 2027
+34|Leeds United|loaned_out|33|DF|BEL|Sebastiaan Bornauw|Hamburg until 30 June 2027
+34|Leeds United|loaned_out|42|MF|SCO|Sam Chambers|Northampton Town until 30 June 2027
+34|Leeds United|loaned_out||GK|BRA|Lucas Perri|Torino until 30 June 2027
+34|Leeds United|loaned_out||FW|SUR|Joël Piroe|West Ham United until 30 June 2027
+34|Leeds United|loaned_out||FW|BEL|Largie Ramazani|Burnley until 30 June 2027
+35|Ipswich Town|squad|1|GK|ENG|Alex Palmer|
+35|Ipswich Town|squad|2|DF|ENG|Darnell Furlong|
+35|Ipswich Town|squad|3|DF|ENG|Leif Davis|
+35|Ipswich Town|squad|4|DF|CIV|Cédric Kipré|
+35|Ipswich Town|squad|5|MF|NED|Azor Matusiwa|
+35|Ipswich Town|squad|6|DF|MAR|Issa Diop|
+35|Ipswich Town|squad|7|FW|GHA|Abdul Fatawu|
+35|Ipswich Town|squad|8|FW|NOR|Sindre Walle Egeli|
+35|Ipswich Town|squad|9|FW|NED|Zian Flemming|
+35|Ipswich Town|squad|10|FW|PAR|Julio Enciso|
+35|Ipswich Town|squad|11|FW|ENG|Jaden Philogene|
+35|Ipswich Town|squad|12|MF|POR|Florentino Luís|
+35|Ipswich Town|squad|14|MF|IRL|Jack Taylor|
+35|Ipswich Town|squad|19|FW|BRA|Emersonn|
+35|Ipswich Town|squad|20|FW|IRL|Kasey McAteer|
+35|Ipswich Town|squad|23|MF|SRB|Saša Lukić|
+35|Ipswich Town|squad|24|DF|ENG|Jacob Greaves|
+35|Ipswich Town|squad|25|MF|ARG|Exequiel Palacios|
+35|Ipswich Town|squad|26|DF|IRL|Dara O'Shea|captain
+35|Ipswich Town|squad|27|GK|ENG|David Button|
+35|Ipswich Town|squad|28|GK|ENG|Christian Walton|
+35|Ipswich Town|squad|29|FW|ENG|Chuba Akpom|
+35|Ipswich Town|squad|32|MF|CHI|Marcelino Núñez|
+35|Ipswich Town|squad|33|FW|ALB|Anis Mehmeti|
+35|Ipswich Town|squad|37|GK|NED|Kjell Scherpen|
+35|Ipswich Town|squad|38|FW|JPN|Daizen Maeda|
+35|Ipswich Town|squad|42|DF|CIV|Abdoul Ouattara|
+35|Ipswich Town|squad|47|FW|ENG|Jack Clarke|
+35|Ipswich Town|loaned_out|16|FW|IRQ|Ali Al-Hamadi|Sheffield Wednesday (until 31 May 2027)
+35|Ipswich Town|loaned_out|18|DF|ENG|Ben Johnson|Stoke City (until 31 May 2027)
+35|Ipswich Town|loaned_out|21|MF|IRL|Chiedozie Ogbene|Lincoln City (until 2 January 2027)
+35|Ipswich Town|loaned_out|30|MF|ENG|Cameron Humphreys|Huddersfield Town (until 31 May 2027)
+35|Ipswich Town|loaned_out|31|GK|NED|Kayne van Oevelen|Valencia (until 31 May 2027)
+35|Ipswich Town|loaned_out||GK|SCO|Cieran Slicker|Barnsley (until 31 May 2027)
+35|Ipswich Town|loaned_out||FW|IRL|Sammie Szmodics|Derby County (until 31 May 2027)
+36|Coventry City|squad|2|DF|JAM|Ethan Pinnock|
+36|Coventry City|squad|3|DF|WAL|Jay Dasilva|
+36|Coventry City|squad|4|DF|ENG|Bobby Thomas|
+36|Coventry City|squad|5|MF|ENG|Jack Rudoni|
+36|Coventry City|squad|6|MF|ENG|Matt Grimes|captain
+36|Coventry City|squad|7|FW|JPN|Tatsuhiro Sakamoto|
+36|Coventry City|squad|8|MF|GHA|Caleb Yirenkyi|
+36|Coventry City|squad|9|FW|ENG|Ellis Simms|
+36|Coventry City|squad|10|FW|JAM|Ephron Mason-Clark|
+36|Coventry City|squad|11|FW|USA|Haji Wright|
+36|Coventry City|squad|12|DF|ENG|Stephen Mfuni|on loan from Manchester City
+36|Coventry City|squad|13|GK|ENG|Ben Wilson|
+36|Coventry City|squad|14|FW|NGR|Taiwo Awoniyi|
+36|Coventry City|squad|16|MF|NGR|Frank Onyeka|
+36|Coventry City|squad|17|FW|FRA|Loum Tchaouna|
+36|Coventry City|squad|19|GK|ENG|Carl Rushworth|
+36|Coventry City|squad|20|DF|ENG|Kaine Kesler-Hayden|
+36|Coventry City|squad|21|DF|ENG|Jake Bidwell|
+36|Coventry City|squad|22|DF|JAM|Joel Latibeaudiere|
+36|Coventry City|squad|23|FW|GHA|Brandon Thomas-Asante|
+36|Coventry City|squad|24|DF|SUI|Aurèle Amenda|
+36|Coventry City|squad|25|GK|ENG|Dan Bentley|
+36|Coventry City|squad|26|DF|ENG|Luke Woolfenden|
+36|Coventry City|squad|27|DF|NED|Milan van Ewijk|
+36|Coventry City|squad|28|MF|ENG|Josh Eccles|
+36|Coventry City|squad|29|MF|DEN|Victor Torp|
+36|Coventry City|squad|34|FW|FRA|Yann Gboho|
+36|Coventry City|squad|38|MF|NED|Gustavo Hamer|
+36|Coventry City|squad|49|FW|GUI|Sidiki Cherif|
+36|Coventry City|squad|43|DF|ENG|Tristen Batanwi|
+36|Coventry City|squad|44|DF|ITA|Riccardo Di Trolio|
+36|Coventry City|squad|47|MF|ENG|Elliot Betjemann|
+36|Coventry City|squad|48|GK|ENG|Luke Bell|
+36|Coventry City|squad|50|MF|ENG|Joseph McCallum|
+36|Coventry City|squad|51|GK|ENG|Oscar Varney|
+36|Coventry City|squad|55|MF|ENG|Mackenzie Stretton|
+36|Coventry City|squad|59|FW|USA|Aidan Dausch|
+36|Coventry City|squad||GK|WAL|Eliot Meredith|
+36|Coventry City|squad||DF|ENG|Tionne Critchlow-Woyo|
+36|Coventry City|squad||DF|ENG|Shay Dunn|
+36|Coventry City|squad||MF|ENG|George Shepherd|
+36|Coventry City|loaned_out|1|GK|SWE|Oliver Dovin|Leyton Orient (until 30 June 2027)
+36|Coventry City|loaned_out|15|DF|ENG|Liam Kitching|Sheffield United (until 30 June 2027)
+36|Coventry City|loaned_out|17|FW|AUS|Raphael|Burton Albion (until 30 June 2027)
+36|Coventry City|loaned_out|33|DF|ESP|Miguel Ángel Brau|Académico de Viseu (until 30 June 2027)
+36|Coventry City|loaned_out|36|DF|ENG|Isaac Moore|Walsall (until 30 June 2027)
+36|Coventry City|loaned_out|37|FW|BEL|Norman Bassette|Westerlo (until 30 June 2027)
+36|Coventry City|loaned_out|41|DF|ENG|Callum Perry|Cambridge United (until 30 June 2027)
+36|Coventry City|loaned_out|49|DF|ENG|Harvey Broad|AFC Fylde (until 30 June 2027)
+36|Coventry City|loaned_out|52|DF|ENG|David Mantle|Maidenhead United (until 5 December 2026)
+36|Coventry City|loaned_out|54|MF|WAL|Kai Andrews|Oxford United (until 2 January 2027)
+414|Birmingham City|squad|1|GK|ENG|James Beadle|on loan from Brighton & Hove Albion
+414|Birmingham City|squad|2|DF|ENG|Ethan Laird|
+414|Birmingham City|squad|3|DF|ENG|Lee Buchanan|
+414|Birmingham City|squad|4|DF|AUT|Christoph Klarer|captain
+414|Birmingham City|squad|5|DF|GER|Phil Neumann|
+414|Birmingham City|squad|7|MF|ESP|Carlos Vicente|
+414|Birmingham City|squad|8|MF|KOR|Paik Seung-ho|
+414|Birmingham City|squad|9|FW|DEN|August Priske|
+414|Birmingham City|squad|10|MF|JAM|Demarai Gray|
+414|Birmingham City|squad|11|MF|SCO|Scott Wright|
+414|Birmingham City|squad|12|MF|SCO|Marc Leonard|
+414|Birmingham City|squad|14|MF|COL|Jhon Solís|
+414|Birmingham City|squad|16|FW|ENG|Patrick Roberts|
+414|Birmingham City|squad|17|FW|CAN|Liam Millar|on loan from Hull City
+414|Birmingham City|squad|18|MF|ENG|Max Bird|
+414|Birmingham City|squad|19|MF|ENG|Taylor Gardner-Hickman|
+414|Birmingham City|squad|20|DF|ENG|Alex Cochrane|
+414|Birmingham City|squad|21|GK|ENG|Ryan Allsop|
+414|Birmingham City|squad|23|DF|ENG|Dael Fry|
+414|Birmingham City|squad|24|MF|JPN|Tomoki Iwata|
+414|Birmingham City|squad|25|DF|USA|Kristoffer Lund|
+414|Birmingham City|squad|26|DF|NGA|Bright Osayi-Samuel|
+414|Birmingham City|squad|27|MF|JPN|Kanya Fujimoto|
+414|Birmingham City|squad|28|FW|ENG|Jay Stansfield|
+414|Birmingham City|squad|30|GK|ENG|Brad Mayo|
+414|Birmingham City|squad|32|FW|ARG|Luis Vázquez|
+414|Birmingham City|squad|33|FW|GER|Marvin Ducksch|
+414|Birmingham City|squad|40|MF|ZIM|Menzi Mazwi|
+414|Birmingham City|squad|41|MF|ENG|Cobi Maddox|
+414|Birmingham City|loaned_out|39|FW|ENG|Briar Bateman|Oxford City
+415|Blackburn Rovers|squad|1|GK|ENG|Aynsley Pears|
+415|Blackburn Rovers|squad|2|DF|NGR|Ryan Alebiosu|
+415|Blackburn Rovers|squad|3|DF|ENG|Harry Pickering|
+415|Blackburn Rovers|squad|4|DF|POR|Yuri Ribeiro|
+415|Blackburn Rovers|squad|6|DF|NIR|Tom Atcheson|
+415|Blackburn Rovers|squad|7|FW|SLE|Augustus Kargbo|
+415|Blackburn Rovers|squad|8|MF|EGY|Sam Morsy|
+415|Blackburn Rovers|squad|9|FW|ISL|Andri Guðjohnsen|
+415|Blackburn Rovers|squad|10|MF|ENG|Todd Cantwell|captain
+415|Blackburn Rovers|squad|11|MF|ENG|Jayden Fevrier|
+415|Blackburn Rovers|squad|14|MF|BEL|Dion De Neve|
+415|Blackburn Rovers|squad|15|DF|IRL|Sean McLoughlin|
+415|Blackburn Rovers|squad|16|DF|ENG|Scott Wharton|
+415|Blackburn Rovers|squad|17|DF|ENG|Hayden Carter|
+415|Blackburn Rovers|squad|21|FW|ENG|Dapo Afolayan|
+415|Blackburn Rovers|squad|22|GK|HUN|Balázs Tóth|
+415|Blackburn Rovers|squad|23|FW|JPN|Yūki Ōhashi|
+415|Blackburn Rovers|squad|24|MF|FRA|Moussa Baradji|
+415|Blackburn Rovers|squad|25|MF|JPN|Ryōya Morishita|
+415|Blackburn Rovers|squad|27|DF|FRA|Gady Beyuku|
+415|Blackburn Rovers|squad|28|MF|ENG|Adam Forshaw|
+415|Blackburn Rovers|squad|29|FW|DEN|Mathias Jørgensen|
+415|Blackburn Rovers|squad|30|MF|ENG|Jake Garrett|
+415|Blackburn Rovers|squad|31|MF|SCO|Kristi Montgomery|
+415|Blackburn Rovers|squad|33|DF|AUS|Lewis Miller|
+415|Blackburn Rovers|squad|34|GK|ENG|Jack Barrett|
+415|Blackburn Rovers|squad|40|DF|ENG|Matty Litherland|
+415|Blackburn Rovers|squad|45|FW|ENG|Harvey Higgins|
+415|Blackburn Rovers|squad|36|MF|ENG|James Edmondson|
+415|Blackburn Rovers|squad|37|GK|ENG|Felix Goddard|
+415|Blackburn Rovers|squad|39|DF|ENG|Harvey Pates|
+415|Blackburn Rovers|squad|47|DF|ENG|Lucas Houghton|
+415|Blackburn Rovers|squad|53|MF|ENG|Frank Vare|
+415|Blackburn Rovers|loaned_out|5|MF|POR|Sidnei Tavares|Wisła Płock
+415|Blackburn Rovers|loaned_out|18|MF|SWE|Axel Henriksson|Randers
+415|Blackburn Rovers|loaned_out|26|DF|IRL|Connor O'Riordan|Barnsley
+415|Blackburn Rovers|loaned_out|35|GK|ENG|Nicholas Michalski|Crawley Town
+415|Blackburn Rovers|loaned_out|43|DF|ENG|George Pratt|Bradford City
+416|Bolton|squad|1|GK|IRL|Jack Bonham|
+416|Bolton|squad|3|DF|LCA|Chris Forino-Joseph|vice-captain
+416|Bolton|squad|4|MF|ENG|Xavier Simons|
+416|Bolton|squad|5|DF|ENG|Lewis Brunt|
+416|Bolton|squad|6|DF|ENG|Ben Davies|
+416|Bolton|squad|7|FW|FRA|Kyliane Dong|on loan from FC Augsburg
+416|Bolton|squad|8|MF|WAL|Josh Sheehan|
+416|Bolton|squad|10|FW|ENG|Sam Dalby|
+416|Bolton|squad|11|FW|BRB|Thierry Gale|
+416|Bolton|squad|12|MF|SCO|David Watson|
+416|Bolton|squad|13|GK|ENG|Nathan Broome|
+416|Bolton|squad|14|DF|ENG|Akin Famewo|
+416|Bolton|squad|16|FW|ENG|Samuel Iling-Junior|on loan from Aston Villa
+416|Bolton|squad|17|MF|ENG|Joel Randall|
+416|Bolton|squad|18|DF|NIR|Eoin Toal|captain
+416|Bolton|squad|20|MF|POR|Rúben Rodrigues|
+416|Bolton|squad|21|MF|SCO|Ethan Erhahon|
+416|Bolton|squad|22|DF|ESP|Gaizka Larrazabal|
+416|Bolton|squad|23|GK|IRL|David Harrington|
+416|Bolton|squad|25|DF|ENG|Max Conway|
+416|Bolton|squad|26|FW|CAN|Jayden Nelson|
+416|Bolton|squad|27|DF|ENG|Luca Stephenson|
+416|Bolton|squad|30|GK|ENG|Luke Hutchinson|
+416|Bolton|squad|31|GK|IRL|Gavin Bazunu|
+416|Bolton|squad|39|FW|SCO|Ryan Hardie|on loan from Wrexham
+416|Bolton|squad|45|FW|ENG|John McAtee|
+416|Bolton|squad||MF|JPN|Atsuki Itō|
+416|Bolton|loaned_out|32|DF|NIR|Sam Inwood|Swindon Town
+416|Bolton|loaned_out|33|FW|ENG|Charlie Warren|Accrington Stanley
+416|Bolton|loaned_out||DF|ENG|Richard Taylor|Bromley
+416|Bolton|loaned_out||DF|IRL|Lewis Temple|Oldham Athletic
+417|Bristol City|squad|1|GK|ENG|Sam Tickle|
+417|Bristol City|squad|2|DF|ROU|Lisav Eissat|
+417|Bristol City|squad|3|DF|ENG|Cameron Pring|
+417|Bristol City|squad|4|MF|ENG|Adam Randell|
+417|Bristol City|squad|5|DF|ENG|Robert Atkinson|
+417|Bristol City|squad|6|MF|BEL|Brian De Keersmaecker|on loan from Oxford United
+417|Bristol City|squad|7|FW|JPN|Yū Hirakawa|
+417|Bristol City|squad|8|MF|ENG|Joe Williams|
+417|Bristol City|squad|9|FW|SUI|Lorent Tolaj|
+417|Bristol City|squad|10|MF|ENG|Scott Twine|
+417|Bristol City|squad|11|FW|ENG|Sam Bell|
+417|Bristol City|squad|12|MF|IRL|Jason Knight|captain
+417|Bristol City|squad|14|MF|SLO|Tomi Horvat|
+417|Bristol City|squad|15|DF|IRL|Luke McNally|
+417|Bristol City|squad|16|DF|ENG|Rob Dickie|
+417|Bristol City|squad|17|MF|ENG|Jed Wallace|
+417|Bristol City|squad|19|DF|ENG|George Tanner|
+417|Bristol City|squad|20|MF|ENG|Sam Greenwood|
+417|Bristol City|squad|21|DF|TTO|Rio Cardines|on loan from Crystal Palace
+417|Bristol City|squad|23|FW|ENG|Dom Ballard|
+417|Bristol City|squad|24|DF|ENG|Seb Naylor|
+417|Bristol City|squad|27|MF|NED|Gibson Yah|
+417|Bristol City|squad|29|MF|ENG|Leo Pecover|
+417|Bristol City|squad|31|DF|ENG|Elijah Morrison|
+417|Bristol City|squad|32|GK|WAL|Lewis Thomas|
+417|Bristol City|squad|38|DF|SWE|Noah Eile|
+417|Bristol City|squad|40|GK|ENG|Bradley Collins|
+417|Bristol City|squad|42|MF|ITA|Daniel Ezendu|
+417|Bristol City|squad|45|FW|ENG|Elijah Adebayo|
+417|Bristol City|loaned_out|22|DF|CAN|Jamie Knight-Lebel|Motherwell
+417|Bristol City|loaned_out|26|MF|ENG|Josh Stokes|Reading
+417|Bristol City|loaned_out|28|MF|IRL|Adam Murphy|Fleetwood Town
+417|Bristol City|loaned_out|35|MF|ENG|Louie Derrick|Weston-super-Mare
+417|Bristol City|loaned_out|39|GK|ENG|Freddie Godden|Taunton Town
+417|Bristol City|loaned_out||GK|WAL|Joe Duncan|Southend United
+417|Bristol City|loaned_out||DF|ENG|Jack Hooper|Cardiff Met
+418|Burnley|squad|1|GK|GER|Max Weiß|
+418|Burnley|squad|2|DF|ENG|Kyle Walker|vice-captain
+418|Burnley|squad|3|DF|ENG|Max Alleyne|on loan from Manchester City
+418|Burnley|squad|5|MF|JPN|Reo Hatate|
+418|Burnley|squad|6|DF|ENG|Bashir Humphreys|
+418|Burnley|squad|7|FW|DEN|Jacob Bruun Larsen|
+418|Burnley|squad|8|MF|FRA|Ugo Raghouber|
+418|Burnley|squad|10|FW|ENG|Marcus Edwards|
+418|Burnley|squad|11|FW|SUI|Zeki Amdouni|
+418|Burnley|squad|12|FW|KAZ|Dastan Satpayev|on loan from Chelsea
+418|Burnley|squad|13|GK|ENG|Ben Amos|
+418|Burnley|squad|14|DF|WAL|Connor Roberts|
+418|Burnley|squad|15|DF|BIH|Anel Ahmedhodžić|
+418|Burnley|squad|17|FW|BEN|Andréas Hountondji|
+418|Burnley|squad|18|DF|SWE|Hjalmar Ekdal|
+418|Burnley|squad|19|FW|BEL|Largie Ramazani|on loan from Leeds United
+418|Burnley|squad|20|DF|CUW|Shurandy Sambo|
+418|Burnley|squad|21|MF|ENG|Aaron Ramsey|
+418|Burnley|squad|22|DF|PER|Oliver Sonne|
+418|Burnley|squad|23|DF|BRA|Lucas Pires|
+418|Burnley|squad|24|MF|IRL|Josh Cullen|captain
+418|Burnley|squad|27|FW|ALB|Armando Broja|
+418|Burnley|squad|28|MF|TUN|Hannibal Mejbri|
+418|Burnley|squad|29|MF|ENG|Josh Laurent|
+418|Burnley|squad|30|FW|ESP|Lluc Castell|
+418|Burnley|squad|31|MF|BEL|Mike Trésor|
+418|Burnley|squad|34|FW|NED|Jaydon Banel|
+418|Burnley|squad|35|FW|ENG|Ashley Barnes|
+418|Burnley|squad|37|GK|FRA|Grégoire Coudert|
+418|Burnley|squad|44|DF|BRA|Igor Julio|
+418|Burnley|squad|45|FW|IRL|Michael Obafemi|
+418|Burnley|squad|48|FW|BEL|Enock Agyei|
+418|Burnley|squad||FW|ENG|Jamie Vardy|
+418|Burnley|loaned_out||DF|NED|Quilindschy Hartman|Espanyol (until 30 June 2027)
+418|Burnley|loaned_out||MF|FRA|Lesley Ugochukwu|Galatasaray (until 30 June 2027)
+418|Burnley|loaned_out||FW|AUT|Oluwaseun Adewumi|Hertha BSC (until 30 June 2027)
+418|Burnley|loaned_out||FW|RSA|Lyle Foster|Houston Dynamo (until 30 June 2027)
+419|Cardiff City|squad|1|GK|ENG|Nathan Trott|
+419|Cardiff City|squad|2|DF|ENG|Will Fish|
+419|Cardiff City|squad|3|DF|IRL|Joel Bagan|
+419|Cardiff City|squad|4|DF|NGR|Gabriel Osho|
+419|Cardiff City|squad|5|DF|POL|Krystian Bielik|
+419|Cardiff City|squad|8|MF|IRL|Jack Moylan|
+419|Cardiff City|squad|9|FW|DEN|Yousef Salech|
+419|Cardiff City|squad|10|MF|WAL|Rubin Colwill|vice-captain
+419|Cardiff City|squad|11|FW|ENG|Ollie Tanner|
+419|Cardiff City|squad|12|DF|ENG|Calum Chambers|captain
+419|Cardiff City|squad|14|MF|SCO|David Turnbull|
+419|Cardiff City|squad|16|MF|ENG|Chris Willock|
+419|Cardiff City|squad|18|MF|AUS|Alex Robertson|
+419|Cardiff City|squad|23|DF|ENG|Calum Scanlon|on loan from Liverpool
+419|Cardiff City|squad|27|MF|WAL|Joel Colwill|
+419|Cardiff City|squad|30|GK|ENG|Harry Tyrer|
+419|Cardiff City|squad|33|MF|WAL|Rob Tankiewicz|
+419|Cardiff City|squad|38|DF|SGP|Perry Ng|
+419|Cardiff City|squad|39|FW|WAL|Isaak Davies|
+419|Cardiff City|squad|40|DF|WAL|Noah Anyadike|
+419|Cardiff City|squad|41|GK|WAL|Matthew Turner|
+419|Cardiff City|squad|43|MF|WAL|Paul Moreno|
+419|Cardiff City|squad|44|DF|WAL|Ronan Kpakio|
+419|Cardiff City|squad|45|MF|WAL|Cian Ashford|
+419|Cardiff City|squad|47|FW|IRL|Callum Robinson|
+419|Cardiff City|squad|48|DF|WAL|Dylan Lawlor|
+419|Cardiff City|loaned_out||DF|NOR|Jesper Daland|Viking
+419|Cardiff City|loaned_out||FW|CRO|Roko Simic|Magdeburg
+419|Cardiff City|loaned_out||FW|WAL|Tanatswa Nyakuhwa|Newport County
+419|Cardiff City|loaned_out||FW|ENG|Kion Etete|Newport County
+419|Cardiff City|loaned_out||DF|WAL|Luey Giles|Kidderminster Harriers
+420|Charlton Ath|squad|2|DF|ENG|Kayne Ramsay|
+420|Charlton Ath|squad|3|DF|SCO|Josh Edwards|
+420|Charlton Ath|squad|4|DF|ENG|Reece Burke|
+420|Charlton Ath|squad|5|DF|ENG|Lloyd Jones|
+420|Charlton Ath|squad|6|MF|IRL|Conor Coventry|
+420|Charlton Ath|squad|7|FW|JAM|Tyreece Campbell|
+420|Charlton Ath|squad|8|MF|ENG|Harvey Knibbs|
+420|Charlton Ath|squad|9|FW|ENG|Karlan Grant|
+420|Charlton Ath|squad|11|FW|ENG|Miles Leaburn|
+420|Charlton Ath|squad|12|DF|FRA|Billy Koumetio|
+420|Charlton Ath|squad|13|GK|NGA|Arthur Okonkwo|on loan from Wrexham
+420|Charlton Ath|squad|14|MF|ENG|Sonny Carey|
+420|Charlton Ath|squad|15|MF|ENG|Nathaniel Chalobah|
+420|Charlton Ath|squad|16|MF|KEN|Timothy Ouma|on loan from Slavia Prague
+420|Charlton Ath|squad|17|DF|JAM|Amari'i Bell|
+420|Charlton Ath|squad|18|DF|SVK|Ivan Mesík|
+420|Charlton Ath|squad|19|FW|IRL|Millenic Alli|
+420|Charlton Ath|squad|20|DF|IRL|Danny McNamara|
+420|Charlton Ath|squad|21|GK|IRL|Tiernan Brooks|
+420|Charlton Ath|squad|23|FW|USA|Charlie Kelman|
+420|Charlton Ath|squad|24|FW|ENG|Matt Godden|
+420|Charlton Ath|squad|25|GK|ENG|Will Mannion|
+420|Charlton Ath|squad|26|MF|ENG|Joe Rankin-Costello|
+420|Charlton Ath|squad|28|DF|KEN|Collins Sichenje|
+420|Charlton Ath|squad|30|MF|SCO|Rob Apter|
+420|Charlton Ath|squad|32|MF|ENG|Alan Mwamba|
+420|Charlton Ath|squad|33|FW|ENG|Micah Mbick|
+420|Charlton Ath|squad|34|MF|ENG|Oliver Skipp|on loan from Leicester City
+420|Charlton Ath|squad|35|FW|ESP|Junior Nkeng|
+420|Charlton Ath|squad|38|DF|FIJ|Josh Laqeretabua|
+420|Charlton Ath|squad|39|MF|FIN|Otto Tiitinen|on loan from Ilves
+420|Charlton Ath|squad|44|DF|NZL|Tyler Bindon|on loan from Nottingham Forest
+420|Charlton Ath|squad|53|FW|ENG|Bradley Tagoe|
+420|Charlton Ath|squad||DF|ENG|Zach Mitchell|
+420|Charlton Ath|squad||MF|ENG|Kai Enslin|
+420|Charlton Ath|squad||MF|ENG|Henry Rylah|
+420|Charlton Ath|loaned_out|1|GK|BEL|Thomas Kaminski|Omonia
+420|Charlton Ath|loaned_out|22|FW|ENG|Tanto Olaofe|Lincoln City
+420|Charlton Ath|loaned_out|27|MF|ENG|Ibrahim Fullah|Milton Keynes Dons
+420|Charlton Ath|loaned_out|29|FW|SLE|Daniel Kanu|Notts County
+420|Charlton Ath|loaned_out|31|DF|UGA|Nathan Asiimwe|Salford City
+420|Charlton Ath|loaned_out|36|DF|ENG|Keenan Gough|Bristol Rovers
+420|Charlton Ath|loaned_out||DF|ENG|Ty Ewens-Findlay|Crawley Town
+420|Charlton Ath|loaned_out||FW|MAR|Gassan Ahadme|Cambridge United
+420|Charlton Ath|loaned_out||GK|ENG|George Hardy|Chatham Town
+421|Derby County|squad|1|GK|SWE|Jacob Widell Zetterström|
+421|Derby County|squad|2|DF|ENG|Derry Murkin|
+421|Derby County|squad|3|DF|SCO|Craig Forsyth|
+421|Derby County|squad|4|MF|ENG|David Ozoh|
+421|Derby County|squad|5|DF|ENG|Matt Clarke|
+421|Derby County|squad|6|DF|NOR|Sondre Langås|
+421|Derby County|squad|7|FW|USA|Patrick Agyemang|
+421|Derby County|squad|8|MF|ENG|Bobby Clark|
+421|Derby County|squad|9|FW|ENG|Carlton Morris|
+421|Derby County|squad|10|FW|ENG|Rhian Brewster|
+421|Derby County|squad|11|MF|IRL|Sammie Szmodics|on loan from Ipswich Town
+421|Derby County|squad|12|GK|ENG|Richard O'Donnell|
+421|Derby County|squad|13|MF|GER|Filip Bilbija|
+421|Derby County|squad|15|FW|NOR|Lars-Jørgen Salvesen|
+421|Derby County|squad|16|FW|GHA|Mohammed Fuseini|on loan from Union Saint-Gilloise
+421|Derby County|squad|18|DF|ENG|Charlie Taylor|
+421|Derby County|squad|19|FW|DEN|Henrik Meister|on loan from Pisa
+421|Derby County|squad|20|MF|ENG|Alex Mowatt|
+421|Derby County|squad|22|DF|SCO|Max Johnston|
+421|Derby County|squad|23|MF|ENG|Joe Ward|
+421|Derby County|squad|24|DF|NAM|Ryan Nyambe|
+421|Derby County|squad|26|MF|WAL|Ryan Hedges|
+421|Derby County|squad|27|MF|ENG|Lewis Travis|captain
+421|Derby County|squad|28|DF|ENG|Dion Sanderson|
+421|Derby County|squad|29|MF|DEN|Oscar Fraulo|
+421|Derby County|squad|31|GK|ENG|Josh Vickers|
+421|Derby County|squad|33|FW|ENG|Corey Blackett-Taylor|
+421|Derby County|squad|39|GK|AUS|Nicholas Bilokapic|
+421|Derby County|squad|41|MF|ENG|Charlie Smith|
+421|Derby County|squad|44|DF|IRL|Eiran Cashin|on loan from Brighton & Hove Albion
+421|Derby County|loaned_out|17|MF|NED|Kenzo Goudmijn|Grasshopper
+421|Derby County|loaned_out|37|MF|ENG|Owen Eames|Falkirk
+421|Derby County|loaned_out|39|FW|JAM|Dajaune Brown|Rochdale
+421|Derby County|loaned_out|40|MF|WAL|Cruz Allen|FC Halifax Town
+423|Middlesbrough|squad|1|GK|CZE|Radek Vítek|
+423|Middlesbrough|squad|2|DF|ENG|Callum Brittain|
+423|Middlesbrough|squad|4|DF|ENG|Ashley Phillips|
+423|Middlesbrough|squad|5|DF|CAN|Alfie Jones|
+423|Middlesbrough|squad|6|MF|USA|Sebastian Berhalter|
+423|Middlesbrough|squad|7|FW|ENG|Will Lankshear|
+423|Middlesbrough|squad|8|MF|AUS|Riley McGree|
+423|Middlesbrough|squad|9|FW|SCO|Tommy Conway|
+423|Middlesbrough|squad|10|MF|USA|Aidan Morris|
+423|Middlesbrough|squad|11|FW|ENG|Morgan Whittaker|
+423|Middlesbrough|squad|12|DF|ENG|Luke Ayling|captain
+423|Middlesbrough|squad|13|FW|SVK|David Strelec|
+423|Middlesbrough|squad|14|MF|ENG|Myles Peart-Harris|
+423|Middlesbrough|squad|16|MF|ECU|Jeremy Sarmiento|
+423|Middlesbrough|squad|17|DF|USA|Max Arfsten|
+423|Middlesbrough|squad|19|MF|ENG|Leo Castledine|
+423|Middlesbrough|squad|22|FW|SCO|Kyle Joseph|
+423|Middlesbrough|squad|25|DF|ENG|George Edmundson|
+423|Middlesbrough|squad|28|MF|ENG|Law McCabe|
+423|Middlesbrough|squad|29|DF|FRA|Adilson Malanda|
+423|Middlesbrough|squad|30|DF|BRA|Neto Borges|
+423|Middlesbrough|squad|31|GK|ENG|Sol Brynn|
+423|Middlesbrough|squad|40|MF|ENG|Fin Cartwright|
+423|Middlesbrough|squad|44|MF|ENG|Cruz Ibeh|
+423|Middlesbrough|squad||DF|SLE|Alex Bangura|
+423|Middlesbrough|squad||DF|ENG|Sam Byram|
+423|Middlesbrough|squad||MF|ENG|Micah Hamilton|
+423|Middlesbrough|loaned_out|15|DF|ENG|Finley Munroe|Blackpool
+423|Middlesbrough|loaned_out|27|FW|CUW|Sontje Hansen|Gaziantep
+423|Middlesbrough|loaned_out||FW|NED|Delano Burgzorg|Preston North End
+424|Millwall|squad|1|GK|DEN|Lukas Jensen|
+424|Millwall|squad|2|DF|ENG|Jordi Osei-Tutu|
+424|Millwall|squad|3|DF|ENG|Zak Sturge|
+424|Millwall|squad|4|DF|FRA|Tristan Crama|vice-captain
+424|Millwall|squad|5|DF|ENG|Jake Cooper|captain
+424|Millwall|squad|6|DF|ENG|Caleb Taylor|
+424|Millwall|squad|7|FW|GLP|Taïryk Arconte|
+424|Millwall|squad|8|MF|BEL|Mathis Servais|
+424|Millwall|squad|9|FW|SRB|Mihailo Ivanović|
+424|Millwall|squad|10|MF|ALG|Camiel Neghli|
+424|Millwall|squad|11|FW|ENG|Romain Esse|on loan from Crystal Palace
+424|Millwall|squad|12|DF|IDN|Elkan Baggott|
+424|Millwall|squad|13|FW|SCO|Lyndon Dykes|
+424|Millwall|squad|14|MF|ENG|Jenson Metcalfe|
+424|Millwall|squad|15|GK|NZL|Max Crocombe|
+424|Millwall|squad|16|MF|SCO|Daniel Kelly|
+424|Millwall|squad|17|MF|IRL|Mark Sykes|
+424|Millwall|squad|18|DF|ENG|Ryan Leonard|
+424|Millwall|squad|19|FW|ENG|Josh Coburn|
+424|Millwall|squad|21|MF|AUS|Massimo Luongo|
+424|Millwall|squad|22|FW|ENG|Kyrell Lisbie|
+424|Millwall|squad|23|DF|ENG|Danny Batth|
+424|Millwall|squad|24|MF|BEL|Casper De Norre|
+424|Millwall|squad|25|MF|ENG|Luke Cundle|
+424|Millwall|squad|26|FW|ENG|Benicio Baker|
+424|Millwall|squad|29|FW|ENG|Zak Lovelace|
+424|Millwall|squad|34|GK|ENG|Filip Marschall|
+424|Millwall|squad|35|FW|FRA|Yanis Issoufou|
+424|Millwall|squad|41|GK|ENG|George Evans|
+424|Millwall|squad|43|GK|ENG|Joel Coleman|
+424|Millwall|squad|45|DF|ENG|Alfie Doughty|
+424|Millwall|squad|49|MF|FRA|Derek Mazou-Sacko|
+424|Millwall|loaned_out|27|DF|ENG|Kamarl Grant|Bromley
+424|Millwall|loaned_out|28|FW|ENG|Ajay Matthews|Exeter City
+424|Millwall|loaned_out|30|MF|ENG|Rafiq Lamptey|Chesterfield
+424|Millwall|loaned_out|31|MF|ENG|Raees Bangura-Williams|Cambridge United
+424|Millwall|loaned_out|32|FW|ENG|Sheldon Kendall|Gillingham
+425|Norwich|squad|1|GK|BIH|Vladan Kovačević|
+425|Norwich|squad|3|DF|ENG|Jack Stacey|
+425|Norwich|squad|6|DF|ENG|Harry Darling|
+425|Norwich|squad|7|MF|DEN|Pelle Mattsson|vice-captain
+425|Norwich|squad|11|MF|JAM|Andre Brooks|
+425|Norwich|squad|12|DF|ENG|Lucien Mahovo|
+425|Norwich|squad|13|DF|CMR|Darlin Yongwa|
+425|Norwich|squad|14|DF|ENG|Ben Chrisene|
+425|Norwich|squad|15|DF|NIR|Ruairi McConville|
+425|Norwich|squad|16|MF|ENG|Jacob Wright|
+425|Norwich|squad|17|FW|CRO|Ante Crnac|
+425|Norwich|squad|19|MF|SEN|Papa Amadou Diallo|
+425|Norwich|squad|20|MF|TUN|Anis Ben Slimane|
+425|Norwich|squad|21|FW|AUS|Mohamed Touré|
+425|Norwich|squad|22|MF|SRB|Mirko Topić|
+425|Norwich|squad|23|MF|SCO|Kenny McLean|captain
+425|Norwich|squad|24|FW|ENG|Jovon Makama|
+425|Norwich|squad|25|MF|COD|Paris Maghoma|
+425|Norwich|squad|26|MF|ENG|Sam Field|
+425|Norwich|squad|28|DF|BRA|Bruno Alves|on loan from Cruzeiro
+425|Norwich|squad|29|MF|DEN|Oscar Schwartau|
+425|Norwich|squad|30|FW|DEN|Mathias Kvistgaarden|
+425|Norwich|squad|32|GK|ENG|Daniel Grimshaw|
+425|Norwich|squad|33|DF|PAN|José Córdoba|
+425|Norwich|squad|34|GK|CHI|Vicente Reyes|
+425|Norwich|squad|35|DF|ENG|Kellen Fisher|
+425|Norwich|squad|37|MF|CAN|Ali Ahmed|
+425|Norwich|squad|40|GK|ENG|Caleb Ansen|
+425|Norwich|squad|41|MF|SCO|Gabriel Forsyth|
+425|Norwich|squad|44|MF|WAL|Elliot Myles|
+425|Norwich|squad|46|FW|ENG|Errol Mundle-Smith|
+425|Norwich|squad|49|FW|COD|Anthony Musaba|on loan from Fenerbahçe
+425|Norwich|loaned_out|5|DF|CRO|Jakov Medić|FC Utrecht
+425|Norwich|loaned_out|8|MF|ENG|Liam Gibbs|Preston North End
+425|Norwich|loaned_out|10|MF|CZE|Matěj Jurásek|Sparta Prague
+425|Norwich|loaned_out|18|MF|GHA|Amankwah Forson|Hapoel Be'er Sheva
+425|Norwich|loaned_out|31|GK|ENG|Louie Moulden|Accrington Stanley
+426|Portsmouth|squad|1|GK|AUT|Nicolas Schmid|
+426|Portsmouth|squad|2|DF|ENG|Benjamin Arthur|on loan from Brentford
+426|Portsmouth|squad|3|DF|ENG|Connor Ogilvie|
+426|Portsmouth|squad|5|DF|WAL|Regan Poole|
+426|Portsmouth|squad|6|DF|IRL|Conor Shaughnessy|
+426|Portsmouth|squad|7|MF|ENG|Marlon Pack|captain
+426|Portsmouth|squad|8|MF|ENG|John Swift|
+426|Portsmouth|squad|9|FW|ENG|Colby Bishop|
+426|Portsmouth|squad|10|FW|CRO|Adrian Segečić|
+426|Portsmouth|squad|11|FW|ENG|Abu Kamara|
+426|Portsmouth|squad|15|FW|IRL|Franco Umeh|
+426|Portsmouth|squad|16|MF|RSA|Luke Le Roux|
+426|Portsmouth|squad|18|MF|HUN|Márk Kosznovszky|
+426|Portsmouth|squad|19|MF|EST|Rocco Shein|
+426|Portsmouth|squad|20|FW|AUS|Thomas Waddingham|
+426|Portsmouth|squad|21|FW|ENG|Keshi Anderson|
+426|Portsmouth|squad|22|DF|ENG|Zak Swanson|
+426|Portsmouth|squad|23|FW|ENG|Josh Murphy|
+426|Portsmouth|squad|24|DF|NIR|Terry Devlin|
+426|Portsmouth|squad|25|FW|ENG|Ryan Kavuma-McQueen|on loan from Chelsea
+426|Portsmouth|squad|26|GK|ENG|Josef Bursik|
+426|Portsmouth|squad|27|MF|ENG|Odin Bailey|
+426|Portsmouth|squad|28|FW|NZL|Luke Brooke-Smith|
+426|Portsmouth|squad|29|FW|SRB|Marko Milovanović|
+426|Portsmouth|squad|30|GK|ENG|Ben Killip|
+426|Portsmouth|squad|31|GK|POL|Daniel Bielica|
+426|Portsmouth|squad|32|FW|NIR|Eoin Kenny|
+426|Portsmouth|squad|33|DF|AUS|Jacob Farrell|
+426|Portsmouth|squad|34|FW|ENG|Harvey Blair|
+426|Portsmouth|squad|37|MF|COM|Iyad Mohamed|
+426|Portsmouth|squad|38|MF|GAM|Ebou Adams|
+426|Portsmouth|squad|45|MF|ENG|Chinedu Agu|
+426|Portsmouth|squad|46|FW|ENG|Tayo Singerr|
+426|Portsmouth|squad|48|FW|ENG|Nathaniel Chioma|
+426|Portsmouth|squad|49|DF|ENG|Michael Ani|
+426|Portsmouth|squad|55|DF|SEN|Madiodio Dia|
+426|Portsmouth|loaned_out|4|DF|ENG|Josh Knight|Reading
+426|Portsmouth|loaned_out||FW|NIR|Makenzie Kirk|Barnsley
+426|Portsmouth|loaned_out||GK|ENG|Toby Steward|St Johnstone
+426|Portsmouth|loaned_out||DF|ENG|Jordan Williams|Blackpool
+426|Portsmouth|loaned_out||DF|AUS|Hayden Matthews|Bradford
+427|Preston|squad|1|GK|DEN|Daniel Iversen|
+427|Preston|squad|2|DF|ESP|Pol Valentín|
+427|Preston|squad|3|DF|MNE|Andrija Vukčević|
+427|Preston|squad|4|DF|ENG|Harry Clarke|
+427|Preston|squad|6|DF|SCO|Liam Lindsay|
+427|Preston|squad|7|MF|ENG|Alfie Devine|
+427|Preston|squad|8|MF|NIR|Ali McCann|captain
+427|Preston|squad|9|FW|SWE|Jusef Erabi|on loan from KRC Genk
+427|Preston|squad|10|FW|ENG|Callum Lang|
+427|Preston|squad|11|DF|ENG|Thierry Small|
+427|Preston|squad|12|DF|USA|Caleb Wiley|on loan from Chelsea
+427|Preston|squad|14|DF|ENG|Jordan Storey|
+427|Preston|squad|15|MF|NIR|Jordan Thompson|
+427|Preston|squad|16|DF|WAL|Andrew Hughes|
+427|Preston|squad|17|MF|ENG|Stanley Mills|
+427|Preston|squad|19|DF|ENG|Lewis Gibson|
+427|Preston|squad|20|MF|ENG|Liam Gibbs|on loan from Norwich City
+427|Preston|squad|21|GK|ENG|Lee Nicholls|
+427|Preston|squad|23|MF|IRL|Andrew Moran|
+427|Preston|squad|24|DF|ENG|Odel Offiah|
+427|Preston|squad|27|MF|FRA|Léo Leroy|
+427|Preston|squad|30|FW|ENG|George Gryba|
+427|Preston|squad|37|FW|NED|Delano Burgzorg|on loan from Middlesbrough
+427|Preston|squad|38|FW|IRL|Johnny Kenny|
+427|Preston|squad|44|MF|ENG|Brad Potts|
+427|Preston|loaned_out|34|MF|ENG|Kitt Nelson|Linfield
+427|Preston|loaned_out|41|GK|ENG|Li-Bau Stowell|Chorley
+428|QPR|squad|1|GK|NIR|Pierce Charles|on loan from Manchester City
+428|QPR|squad|2|DF|AUS|Kealey Adamson|
+428|QPR|squad|3|DF|IRL|Jimmy Dunne|captain
+428|QPR|squad|4|DF|SCO|Liam Morrison|
+428|QPR|squad|5|DF|ENG|Ronnie Edwards|
+428|QPR|squad|6|DF|ENG|Jake Clarke-Salter|
+428|QPR|squad|7|MF|ENG|Karamoko Dembélé|
+428|QPR|squad|10|MF|MAR|Ilias Chair|
+428|QPR|squad|11|MF|NIR|Paul Smyth|
+428|QPR|squad|12|DF|NED|Boy Kemper|
+428|QPR|squad|13|GK|ENG|Calum Ward|
+428|QPR|squad|14|MF|JPN|Kōki Saitō|
+428|QPR|squad|15|FW|ENG|Alfie Lloyd|
+428|QPR|squad|16|FW|JAM|Rumarn Burrell|
+428|QPR|squad|17|MF|GHA|Kwame Poku|
+428|QPR|squad|18|MF|FIN|Glen Kamara|on loan from Stade Rennais
+428|QPR|squad|19|DF|LAT|Dennis Cirkin|
+428|QPR|squad|20|MF|IRL|Harvey Vale|
+428|QPR|squad|22|FW|CIV|Richard Kone|
+428|QPR|squad|24|MF|DEN|Nicolas Madsen|
+428|QPR|squad|25|FW|TTO|Justin Obikwu|
+428|QPR|squad|26|FW|ALG|Rayan Kolli|
+428|QPR|squad|27|DF|SEN|Amadou Mbengue|
+428|QPR|squad|32|GK|ENG|Matteo Salamon|
+428|QPR|squad|40|MF|MTQ|Jonathan Varane|
+428|QPR|squad|48|DF|GHA|Tariq Lamptey|
+428|QPR|loaned_out|21|MF|ENG|Kieran Morgan|Bradford City
+428|QPR|loaned_out|30|DF|RSA|Tylon Smith|New England Revolution
+428|QPR|loaned_out|35|MF|ENG|Philip Sanyaolu|Bristol Rovers
+428|QPR|loaned_out|38|DF|FRA|Ziyad Larkeche|Barnsley
+428|QPR|loaned_out||GK|ENG|Joe Walsh|Wigan Athletic
+428|QPR|loaned_out||DF|GHA|Cory Adjetey-Brew|Worthing
+428|QPR|loaned_out||DF|ENG|Jaiden Putman|Woking
+428|QPR|loaned_out||MF|AUS|Jaylan Pearman|Swindon Town
+428|QPR|loaned_out||MF|AUS|Daniel Bennie|Dundee United
+428|QPR|loaned_out||MF|IRL|Harvey Boddy|Worthing
+428|QPR|loaned_out||MF|ENG|Emmerson Sutton|Worthing
+429|Sheffield Utd|squad|1|GK|ENG|Michael Cooper|
+429|Sheffield Utd|squad|2|DF|IRL|Matt Doherty|
+429|Sheffield Utd|squad|3|DF|ENG|Sam McCallum|
+429|Sheffield Utd|squad|4|MF|ENG|Ollie Arblaster|
+429|Sheffield Utd|squad|5|DF|ENG|Japhet Tanganga|captain
+429|Sheffield Utd|squad|7|MF|ENG|Joe Rothwell|
+429|Sheffield Utd|squad|8|MF|BAN|Hamza Choudhury|
+429|Sheffield Utd|squad|9|FW|IRL|Tom Cannon|
+429|Sheffield Utd|squad|11|FW|ENG|Romelle Donovan|on loan from Brentford
+429|Sheffield Utd|squad|14|DF|ENG|Harrison Burrows|
+429|Sheffield Utd|squad|16|DF|ENG|Jamie Shackleton|
+429|Sheffield Utd|squad|17|GK|WAL|Adam Davies|
+429|Sheffield Utd|squad|19|FW|CUW|Tahith Chong|
+429|Sheffield Utd|squad|21|DF|SWE|Nils Zätterström|
+429|Sheffield Utd|squad|22|FW|CHI|Ben Brereton Díaz|on loan from Southampton
+429|Sheffield Utd|squad|23|FW|ENG|Tyrese Campbell|
+429|Sheffield Utd|squad|25|DF|IRL|Mark McGuinness|
+429|Sheffield Utd|squad|26|FW|SCO|Ryan Oné|
+429|Sheffield Utd|squad|27|MF|ENG|Kalvin Phillips|on loan from Manchester City
+429|Sheffield Utd|squad|30|DF|WAL|Rhys Norrington-Davies|
+429|Sheffield Utd|squad|31|GK|ENG|Tommy Betts|
+429|Sheffield Utd|squad|33|DF|ENG|Jamal Baptiste|
+429|Sheffield Utd|squad|38|DF|ENG|Femi Seriki|
+429|Sheffield Utd|squad|42|MF|ENG|Sydie Peck|
+429|Sheffield Utd|squad|44|MF|NED|Jaïro Riedewald|
+429|Sheffield Utd|squad|45|FW|ENG|Patrick Bamford|
+429|Sheffield Utd|squad||DF|ENG|Liam Kitching|on loan from Coventry City
+429|Sheffield Utd|squad||DF|LTU|Dovydas Sasnauskas|
+429|Sheffield Utd|squad||MF|ENG|Billy Blacker|
+429|Sheffield Utd|squad||MF|NGA|Ehije Ukaki|
+429|Sheffield Utd|loaned_out|28|MF|ENG|Alex Matos|Göztepe until 30 June 2027
+429|Sheffield Utd|loaned_out|31|MF|ENG|Luke Faxon|Boston United until 1 January 2027
+429|Sheffield Utd|loaned_out|34|FW|ENG|Louie Marsh|Chesterfield until the end of the season
+429|Sheffield Utd|loaned_out||DF|ENG|Max Asante-Boakye|Matlock Town until 3 September 2026
+429|Sheffield Utd|loaned_out||DF|ENG|Jili Buyabu|Rotherham United until the end of the season
+429|Sheffield Utd|loaned_out||DF|IRL|Sam Curtis|Cambridge United until the end of the season
+429|Sheffield Utd|loaned_out||GK|ENG|Benjamin Grainger|Hallam until 8 September 2026
+429|Sheffield Utd|loaned_out||DF|BUL|Mihail Polendakov|Ludogorets Razgrad until the end of the season
+429|Sheffield Utd|loaned_out||DF|ENG|Sai Sachdev|Boston United until 4 January 2027
+429|Sheffield Utd|loaned_out||DF|ENG|Zain Tahir|Oldham Athletic until the end of the season
+430|Southampton|squad|1|GK|ISR|Daniel Peretz|
+430|Southampton|squad|2|DF|DEN|Mads Roerslev|
+430|Southampton|squad|3|DF|IRL|Ryan Manning|
+430|Southampton|squad|4|MF|ENG|Flynn Downes|
+430|Southampton|squad|5|DF|ENG|Jack Stephens|captain
+430|Southampton|squad|6|DF|ENG|Zach Abbott|on loan from Nottingham Forest
+430|Southampton|squad|7|MF|BRA|Léo Scienza|
+430|Southampton|squad|8|MF|GER|Caspar Jander|
+430|Southampton|squad|9|FW|CAN|Cyle Larin|
+430|Southampton|squad|10|MF|IRL|Finn Azaz|
+430|Southampton|squad|11|FW|ENG|Lewis Dobbin|
+430|Southampton|squad|13|DF|GER|Keven Schlotterbeck|
+430|Southampton|squad|14|DF|ENG|James Bree|
+430|Southampton|squad|15|DF|ENG|Nathan Wood|
+430|Southampton|squad|18|MF|ENG|Tom Fellows|
+430|Southampton|squad|23|MF|ENG|Samuel Edozie|
+430|Southampton|squad|25|GK|ENG|George Long|
+430|Southampton|squad|26|MF|SCO|Cam Bragg|
+430|Southampton|squad|27|MF|JPN|Kuryu Matsuki|
+430|Southampton|squad|28|FW|ENG|Divin Mubama|on loan from Manchester City
+430|Southampton|squad|29|MF|IRL|Romeo Akachukwu|
+430|Southampton|squad|30|MF|ENG|James Ward-Prowse|
+430|Southampton|squad|31|GK|ENG|Jamie Jones|
+430|Southampton|squad|32|GK|ENG|Aaron Ramsdale|
+430|Southampton|squad|34|DF|BRA|Welington|
+430|Southampton|loaned_out|16|DF|JPN|Yukinari Sugawara|Cagliari
+430|Southampton|loaned_out|17|DF|GER|Joshua Quarshie|Sturm Graz
+430|Southampton|loaned_out|19|FW|ENG|Cameron Archer|Auxerre
+430|Southampton|loaned_out|22|FW|CHI|Ben Brereton Díaz|Sheffield United
+430|Southampton|loaned_out|42|FW|USA|Damion Downs|St. Louis City
+430|Southampton|loaned_out|47|MF|ENG|Moses Sesay|Colchester United
+430|Southampton|loaned_out|49|FW|ENG|Nicholas Oyekunle|Leyton Orient
+430|Southampton|loaned_out||GK|ENG|Ollie Wright|Gillingham
+430|Southampton|loaned_out||DF|ENG|Tommy Dobson-Ventura|Eastleigh
+430|Southampton|loaned_out||DF|ENG|Jayden Moore|Worthing
+430|Southampton|loaned_out||MF|ENG|Jay Robinson|Monza
+430|Southampton|loaned_out||MF|MLI|Issa Tounkara|Valenciennes
+430|Southampton|loaned_out||MF|FRA|Daouda Traoré|Le Mans
+431|Stoke City|squad|1|GK|SWE|Viktor Johansson|captain
+431|Stoke City|squad|2|DF|ENG|Ben Johnson|on loan from Ipswich Town
+431|Stoke City|squad|3|DF|ENG|Aaron Cresswell|
+431|Stoke City|squad|4|MF|ENG|Ben Pearson|
+431|Stoke City|squad|5|DF|SCO|Luke Graham|
+431|Stoke City|squad|6|MF|SWE|Svante Ingelsson|
+431|Stoke City|squad|7|MF|USA|Jack McGlynn|
+431|Stoke City|squad|8|MF|NIR|Ethan Galbraith|
+431|Stoke City|squad|9|FW|SVK|Róbert Boženík|
+431|Stoke City|squad|10|MF|KOR|Bae Jun-ho|
+431|Stoke City|squad|11|FW|FRA|Lamine Cissé|
+431|Stoke City|squad|13|MF|NIR|Justin Devenny|
+431|Stoke City|squad|14|FW|ENG|Ato Ampah|
+431|Stoke City|squad|15|FW|SCO|George Hirst|
+431|Stoke City|squad|16|DF|ENG|Ben Wilmot|
+431|Stoke City|squad|17|DF|FRA|Eric Bocat|
+431|Stoke City|squad|18|MF|IRL|Bosun Lawal|
+431|Stoke City|squad|19|MF|SVK|Tomáš Rigo|
+431|Stoke City|squad|20|FW|ENG|Sam Gallagher|
+431|Stoke City|squad|21|DF|USA|Luca Bombino|
+431|Stoke City|squad|22|DF|CMR|Junior Tchamadeu|
+431|Stoke City|squad|23|DF|ENG|Ben Gibson|
+431|Stoke City|squad|24|GK|ENG|Josh Griffiths|
+431|Stoke City|squad|27|MF|SEN|Djibril Soumaré|
+431|Stoke City|squad|34|GK|ENG|Frank Fielding|
+431|Stoke City|squad|40|DF|UKR|Maksym Talovierov|
+431|Stoke City|squad|42|FW|NED|Million Manhoef|
+431|Stoke City|loaned_out|25|GK|ENG|Tommy Simkin|Doncaster Rovers
+431|Stoke City|loaned_out|35|FW|ENG|Nathan Lowe|Hibernian
+431|Stoke City|loaned_out|37|FW|ENG|Emre Tezgel|Wycombe Wanderers
+431|Stoke City|loaned_out|49|FW|NED|Milan Smit|Darmstadt
+431|Stoke City|loaned_out|50|DF|KEN|Sydney Agina|Tamworth
+431|Stoke City|loaned_out|56|MF|ENG|Favour Fawunmi|Oldham Athletic
+432|Swansea City|squad|1|GK|ENG|Andy Fisher|
+432|Swansea City|squad|2|DF|ENG|Joshua Key|
+432|Swansea City|squad|3|DF|NED|Jenson Seelt|on loan from Sunderland
+432|Swansea City|squad|4|MF|SCO|Jay Fulton|
+432|Swansea City|squad|5|DF|WAL|Ben Cabango|captain
+432|Swansea City|squad|6|MF|NZL|Marko Stamenić|
+432|Swansea City|squad|7|MF|SWE|Melker Widell|
+432|Swansea City|squad|8|MF|NZL|Elijah Just|
+432|Swansea City|squad|9|FW|SVN|Žan Vipotnik|
+432|Swansea City|squad|10|FW|KOR|Eom Ji-sung|
+432|Swansea City|squad|12|FW|ENG|Jeremy Monga|on loan from Manchester City
+432|Swansea City|squad|14|DF|ENG|Josh Tymon|
+432|Swansea City|squad|15|DF|AUS|Cameron Burgess|
+432|Swansea City|squad|16|MF|ENG|Tom Iorpenda|
+432|Swansea City|squad|17|MF|POR|Gonçalo Franco|
+432|Swansea City|squad|20|DF|POR|Tiago Parente|on loan from Benfica
+432|Swansea City|squad|22|GK|CHI|Lawrence Vigouroux|
+432|Swansea City|squad|23|DF|SCO|Stephen Welsh|
+432|Swansea City|squad|26|DF|CZE|Filip Lissah|
+432|Swansea City|squad|29|GK|ENG|Paul Farman|
+432|Swansea City|squad|30|FW|GHA|Joseph Opoku|
+432|Swansea City|squad|31|FW|SCO|Ross Stewart|
+432|Swansea City|squad|33|FW|IRL|Adam Idah|
+432|Swansea City|squad|35|FW|BRA|Ronald|
+432|Swansea City|squad|46|MF|CAN|Stephen Eustáquio|
+432|Swansea City|squad|49|MF|MLI|Moussa Yeo|
+432|Swansea City|loaned_out||FW|WAL|Morgan Bates|Inverness Caledonian Thistle (until 30 June 2027)
+432|Swansea City|loaned_out||DF|WAL|Sam Parker|Wycombe Wanderers (until 30 June 2027)
+432|Swansea City|loaned_out||MF|WAL|Ollie Cooper|Notts County (until 30 June 2027)
+432|Swansea City|loaned_out||MF|FIN|Leo Walta|Los Angeles (until January 2027)
+432|Swansea City|loaned_out||FW|FRA|Florian Bianchini|Clermont Foot (until 30 June 2027)
+432|Swansea City|loaned_out||FW|SWE|Zeidane Inoussa|Górnik Zabrze (until 30 June 2027)
+432|Swansea City|loaned_out||FW|ENG|Josh Pescatore|Buxton (until 30 June 2027)
+432|Swansea City|loaned_out||DF|SCO|Blair McKenzie|Waterford (until 31 December 2026)
+432|Swansea City|loaned_out||FW|SCO|Bobby Wales|Dundee (until 30 June 2027)
+432|Swansea City|loaned_out||MF|WAL|Jacob Cook|Hemel Hempstead (until January 2027)
+432|Swansea City|loaned_out||MF|WAL|Daniel Watts|Exeter City (until 30 June 2027)
+434|West Brom|squad|1|GK|IRL|Max O'Leary|
+434|West Brom|squad|2|DF|WAL|Chris Mepham|
+434|West Brom|squad|3|DF|ENG|Nat Phillips|
+434|West Brom|squad|4|DF|HUN|Callum Styles|
+434|West Brom|squad|6|DF|USA|George Campbell|captain
+434|West Brom|squad|7|MF|NOR|Felix Horn Myhre|
+434|West Brom|squad|8|MF|IRL|Jayson Molumby|
+434|West Brom|squad|9|FW|SCO|Barney Stewart|
+434|West Brom|squad|10|FW|IRL|Mikey Johnston|
+434|West Brom|squad|11|FW|ENG|Jimmy-Jay Morgan|
+434|West Brom|squad|13|GK|ENG|Matt Ingram|
+434|West Brom|squad|15|MF|ENG|Toby Collyer|
+434|West Brom|squad|17|MF|MLI|Ousmane Diakité|
+434|West Brom|squad|18|DF|FRA|Brayann Pereira|
+434|West Brom|squad|19|FW|NOR|Aune Heggebø|
+434|West Brom|squad|20|MF|FRA|Rabby Nzingoula|
+434|West Brom|squad|21|MF|NIR|Isaac Price|
+434|West Brom|squad|22|DF|ENG|Conor Townsend|
+434|West Brom|squad|23|FW|JOR|Tammer Bany|
+434|West Brom|squad|25|DF|FRA|Nolan Galves|
+434|West Brom|squad|26|FW|ESP|Kareem Tunde|
+434|West Brom|squad|29|MF|ENG|Harry Whitwell|
+434|West Brom|loaned_out|14|DF|ENG|Alfie Gilchrist|Leyton Orient
+434|West Brom|loaned_out|28|DF|WAL|Alex Williams|Hibernian
+434|West Brom|loaned_out|37|FW|WAL|Ollie Bostock|Boston United
+436|Wolves|squad|1|GK|POR|José Sá|vice-captain
+436|Wolves|squad|2|DF|ENG|Kieran Trippier|
+436|Wolves|squad|3|DF|ESP|Hugo Bueno|
+436|Wolves|squad|4|DF|URU|Santiago Bueno|
+436|Wolves|squad|5|MF|ZIM|Marshall Munetsi|
+436|Wolves|squad|7|MF|BRA|André|
+436|Wolves|squad|8|MF|WAL|Jordan James|on loan from Rennes
+436|Wolves|squad|9|FW|MEX|Raúl Jiménez|
+436|Wolves|squad|10|FW|ENG|Adam Armstrong|
+436|Wolves|squad|12|MF|MLI|Boubacar Traoré|
+436|Wolves|squad|13|GK|POR|João Virgínia|
+436|Wolves|squad|14|FW|ENG|Sean Neave|on loan from Newcastle United
+436|Wolves|squad|15|DF|COL|Yerson Mosquera|
+436|Wolves|squad|17|DF|BRA|Pedro Lima|
+436|Wolves|squad|19|FW|COM|Rafiki Saïd|
+436|Wolves|squad|20|MF|ENG|Tommy Doyle|
+436|Wolves|squad|21|FW|POR|Rodrigo Gomes|
+436|Wolves|squad|23|FW|ZIM|Tawanda Chirewa|
+436|Wolves|squad|24|DF|POR|Toti Gomes|captain
+436|Wolves|squad|26|GK|ENG|John Ruddy|
+436|Wolves|squad|27|MF|HAI|Jean‐Ricner Bellegarde|
+436|Wolves|squad|28|MF|ESP|Fer López|
+436|Wolves|squad|30|FW|PAR|Enso González|
+436|Wolves|squad|33|DF|CIV|Ghislain Konan|
+436|Wolves|squad|34|DF|BFA|Nasser Djiga|
+436|Wolves|squad|36|FW|POR|Mateus Mané|
+436|Wolves|squad|37|DF|CZE|Ladislav Krejčí|
+436|Wolves|squad|38|DF|CMR|Jackson Tchatchoua|
+436|Wolves|squad|74|MF|ENG|Tom Edozie|
+436|Wolves|loaned_out|6|DF|NOR|David Møller Wolfe|Hamburger SV
+436|Wolves|loaned_out|11|FW|KOR|Hwang Hee-chan|Schalke 04
+436|Wolves|loaned_out|14|FW|NGA|Tolu Arokodare|Ajax
+436|Wolves|loaned_out|31|GK|ENG|Sam Johnstone|Celtic
+437|Wrexham|squad|2|DF|ENG|Callum Doyle|
+437|Wrexham|squad|3|DF|GAB|Jacques Ekomié|
+437|Wrexham|squad|4|DF|ENG|Max Cleworth|
+437|Wrexham|squad|5|DF|SCO|Dominic Hyam|captain
+437|Wrexham|squad|6|DF|ENG|Joe Worrall|
+437|Wrexham|squad|8|MF|ENG|Ben Whiteman|
+437|Wrexham|squad|10|MF|ENG|Josh Windass|
+437|Wrexham|squad|11|FW|JAM|Bailey Cadamarteri|
+437|Wrexham|squad|12|DF|BFA|Issa Kaboré|
+437|Wrexham|squad|13|DF|NZL|Liberato Cacace|
+437|Wrexham|squad|14|MF|ENG|George Thomason|
+437|Wrexham|squad|15|MF|ENG|George Dobson|
+437|Wrexham|squad|17|MF|ENG|Callum O'Hare|
+437|Wrexham|squad|18|MF|ENG|Ben Sheaf|
+437|Wrexham|squad|19|FW|WAL|Kieffer Moore|
+437|Wrexham|squad|20|MF|ENG|Ollie Rathbone|
+437|Wrexham|squad|21|GK|WAL|Danny Ward|
+437|Wrexham|squad|22|GK|ENG|Anthony Patterson|
+437|Wrexham|squad|23|DF|ENG|Sebastian Revan|
+437|Wrexham|squad|25|GK|ENG|Callum Burton|
+437|Wrexham|squad|26|DF|KEN|Zak Vyner|
+437|Wrexham|squad|27|MF|ENG|Lewis O'Brien|
+437|Wrexham|squad|28|FW|ENG|Sam Smith|
+437|Wrexham|squad|30|DF|ENG|Danny Imray|
+437|Wrexham|squad|33|FW|WAL|Nathan Broadhead|
+437|Wrexham|squad|34|DF|ENG|Aaron James|
+437|Wrexham|squad|37|MF|ENG|Matty James|
+437|Wrexham|squad|47|MF|ENG|Ryan Longman|
+437|Wrexham|loaned_out|1|GK|NGR|Arthur Okonkwo|Charlton Athletic (until 30 June 2027)
+437|Wrexham|loaned_out|7|FW|ENG|Davis Keillor-Dunn|Sheffield Wednesday (until January 2027)
+437|Wrexham|loaned_out|9|FW|SCO|Ryan Hardie|Bolton Wanderers (until 30 June 2027)
+437|Wrexham|loaned_out|29|MF|ENG|Ryan Barnett|Milton Keynes Dons (until 30 June 2027)
+437|Wrexham|loaned_out|40|MF|ENG|Alex Moore|Colwyn Bay (until January 2027)
+437|Wrexham|loaned_out||FW|GAM|Mo Faal|Port Vale (until 30 June 2027)
+437|Wrexham|loaned_out||FW|ENG|Rio Owen|AFC Telford United (until 30 June 2027)

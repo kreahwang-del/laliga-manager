@@ -1,0 +1,1514 @@
+club_id|club|status|number|pos|nat|player|note
+96|Austria Vienna|squad|1|GK|AUT|Samuel Şahin-Radlinger|
+96|Austria Vienna|squad|6|MF|AUT|Philipp Maybach|
+96|Austria Vienna|squad|9|FW|AUS|Noah Botić|
+96|Austria Vienna|squad|11|FW|AUT|Manprit Sarkaria|
+96|Austria Vienna|squad|13|GK|AUT|Lukas Wedl|
+96|Austria Vienna|squad|14|FW|GHA|Kelvin Boateng|
+96|Austria Vienna|squad|15|DF|AUT|Aleksandar Dragović|
+96|Austria Vienna|squad|16|MF|KOR|Lee Kang-hee|
+96|Austria Vienna|squad|17|DF|KOR|Lee Tae-seok|
+96|Austria Vienna|squad|19|FW|GER|Johannes Eggestein|
+96|Austria Vienna|squad|20|MF|AUT|Sanel Saljic|
+96|Austria Vienna|squad|22|MF|AUT|Florian Wustinger|
+96|Austria Vienna|squad|26|MF|AUT|Reinhold Ranftl|
+96|Austria Vienna|squad|28|DF|AUT|Philipp Wiesinger|
+96|Austria Vienna|squad|29|FW|AUT|Marko Raguž|
+96|Austria Vienna|squad|30|MF|AUT|Manfred Fischer|
+96|Austria Vienna|squad|36|MF|AUT|Vasilije Marković|
+96|Austria Vienna|squad|40|DF|AUT|Matteo Schablas|
+96|Austria Vienna|squad|46|DF|AUT|Johannes Handl|
+96|Austria Vienna|squad|47|FW|CIV|Abdoulaye Kanté|
+96|Austria Vienna|squad|60|DF|AUT|Dejan Radonjić|
+96|Austria Vienna|squad|66|DF|AUT|Ifeanyi Ndukwe|
+96|Austria Vienna|squad|99|GK|AUT|Mirko Kos|
+96|Austria Vienna|squad||DF|GER|Jonas Feddersen|
+96|Austria Vienna|squad||FW|GER|Julian Hettwer|
+96|Austria Vienna|loaned_out|2|DF|AUT|Luca Pazourek|Hartberg (until 30 June 2027)
+96|Austria Vienna|loaned_out|37|FW|AUT|Moritz Wels|WSG Tirol (until 30 June 2026)
+97|FC Basel 1893|squad|1|GK|SUI|Jonas Omlin|
+97|FC Basel 1893|squad|3|DF|SUI|Nicolas Vouilloz|
+97|FC Basel 1893|squad|4|DF|SUI|Bećir Omeragić|
+97|FC Basel 1893|squad|5|MF|BRA|Metinho|
+97|FC Basel 1893|squad|6|DF|JPN|Keigo Tsunemoto|
+97|FC Basel 1893|squad|7|FW|NGA|Philip Otele|
+97|FC Basel 1893|squad|8|MF|SWE|Ludwig Małachowski Thorell|
+97|FC Basel 1893|squad|9|FW|SLO|Žan Celar|
+97|FC Basel 1893|squad|10|MF|SUI|Xherdan Shaqiri|captain
+97|FC Basel 1893|squad|11|FW|BEL|Kazeem Olaigbe|on loan from Trabzonspor
+97|FC Basel 1893|squad|13|GK|SUI|Mirko Salvi|
+97|FC Basel 1893|squad|14|MF|SRB|Andrej Bačanin|
+97|FC Basel 1893|squad|17|FW|FRA|Aaron Malouda|
+97|FC Basel 1893|squad|18|FW|ITA|Asane Sow|
+97|FC Basel 1893|squad|22|DF|FRA|Clément Michelin|
+97|FC Basel 1893|squad|24|DF|AUT|Flavius Daniliuc|
+97|FC Basel 1893|squad|25|DF|FRA|Coleen Louis|
+97|FC Basel 1893|squad|26|MF|GEO|Gabriel Sigua|
+97|FC Basel 1893|squad|27|DF|SUI|Kevin Rüegg|
+97|FC Basel 1893|squad|29|DF|FRA|Moussa Cissé|
+97|FC Basel 1893|squad|37|FW|SUI|Giacomo Koloto|
+97|FC Basel 1893|squad|44|MF|ITA|Jonas Harder|
+97|FC Basel 1893|squad|46|FW|BRA|Kaio Eduardo|
+97|FC Basel 1893|squad|48|GK|SUI|Bennett Hoch|
+97|FC Basel 1893|squad|49|GK|BRA|Renato|
+97|FC Basel 1893|squad|55|DF|NGA|Akpe Victory|
+97|FC Basel 1893|loaned_out||GK|SUI|Milo Minder|Concordia Basel (until 30 June 2027)
+97|FC Basel 1893|loaned_out||DF|SUI|Marvin Akahomen|SC Kriens (until 30 June 2027)
+97|FC Basel 1893|loaned_out||MF|GHA|Emmanuel Essiam|Winterthur (until 30 June 2027)
+97|FC Basel 1893|loaned_out||MF|KOS|Dion Kacuri|Austria Lustenau (until 30 June 2027)
+97|FC Basel 1893|loaned_out||FW|GER|Moritz Broschinski|Karlsruher SC (until 30 June 2027)
+97|FC Basel 1893|loaned_out|23|FW|SUI|Albian Ajeti|Lugano (until 30 June 2027)
+97|FC Basel 1893|loaned_out||FW|ARG|Juan Gauto|Platense (until 31 December 2026)
+97|FC Basel 1893|loaned_out||FW|MKD|Muhamed Kurtishi|FC Rapperswil-Jona (until 30 June 2027)
+97|FC Basel 1893|loaned_out||FW|MAR|Ibrahim Salah|Royal Antwerp (until 30 June 2027)
+97|FC Basel 1893|loaned_out||FW|CRO|Marin Šotiček|Hajduk Split (until 30 June 2027)
+97|FC Basel 1893|loaned_out||FW|ESP|Cobel Sow García|Stade Lausanne Ouchy (until 30 June 2027)
+99|Heart of Midlothian FC|squad|1|GK|NED|Beau Reus|
+99|Heart of Midlothian FC|squad|2|DF|NOR|Christian Borchgrevink|
+99|Heart of Midlothian FC|squad|3|DF|SCO|Stephen Kingsley|vice-captain
+99|Heart of Midlothian FC|squad|4|DF|SCO|Craig Halkett|captain
+99|Heart of Midlothian FC|squad|5|DF|SCO|Jamie McCart|vice-captain
+99|Heart of Midlothian FC|squad|6|DF|IRL|Oisin McEntee|
+99|Heart of Midlothian FC|squad|7|MF|SCO|Calvin Miller|
+99|Heart of Midlothian FC|squad|8|MF|BRA|Eduardo Ageu|
+99|Heart of Midlothian FC|squad|9|FW|USA|JJ Williams|
+99|Heart of Midlothian FC|squad|10|FW|POR|Cláudio Braga|
+99|Heart of Midlothian FC|squad|11|FW|BFA|Pierre Landry Kaboré|
+99|Heart of Midlothian FC|squad|12|MF|FRA|Tom Renaud|
+99|Heart of Midlothian FC|squad|15|MF|SCO|Josh McPake|
+99|Heart of Midlothian FC|squad|16|MF|SCO|Blair Spittal|vice-captain
+99|Heart of Midlothian FC|squad|17|DF|SCO|Stuart Findlay|vice-captain
+99|Heart of Midlothian FC|squad|18|DF|SCO|Harry Milne|vice-captain
+99|Heart of Midlothian FC|squad|19|FW|FRA|Sabri Guendouz|
+99|Heart of Midlothian FC|squad|21|FW|SCO|James Wilson|
+99|Heart of Midlothian FC|squad|22|MF|ISL|Tómas Bent Magnússon|
+99|Heart of Midlothian FC|squad|23|DF|NED|Jordi Altena|
+99|Heart of Midlothian FC|squad|28|GK|SCO|Zander Clark|
+99|Heart of Midlothian FC|squad|29|MF|ALB|Sabah Kerjota|
+99|Heart of Midlothian FC|squad|30|GK|SCO|Ryan Fulton|
+99|Heart of Midlothian FC|squad|31|MF|ENG|Yan Dhanda|
+99|Heart of Midlothian FC|squad|34|GK|SCO|Kieran Wright|
+99|Heart of Midlothian FC|squad|64|DF|ENG|Malachi Fagan-Walcott|
+99|Heart of Midlothian FC|squad|74|MF|UGA|Rogers Mato|
+99|Heart of Midlothian FC|squad|77|FW|FRA|Amadou Ba-Sy|
+99|Heart of Midlothian FC|squad|78|MF|FRA|Laurent Mendy|
+99|Heart of Midlothian FC|loaned_out|24|DF|SLE|MJ Kamson-Kamara|Kilmarnock
+99|Heart of Midlothian FC|loaned_out||||Kenneth Vargas|Kalamata
+99|Heart of Midlothian FC|loaned_out||||Harry Stone|Ayr United
+99|Heart of Midlothian FC|loaned_out||||Calem Nieuwenhof|Perth Glory
+99|Heart of Midlothian FC|loaned_out||||Callum Sandilands|Greenock Morton
+99|Heart of Midlothian FC|loaned_out||||Jack Lyon|Bonnyrigg Rose (co-operation loan)
+99|Heart of Midlothian FC|loaned_out||||Tommy North|Edinburgh City (co-operation loan)
+99|Heart of Midlothian FC|loaned_out||||Stanley Wilson|(co-operation loan; club not stated)
+99|Heart of Midlothian FC|loaned_out||||Matthew Gillies|Stenhousemuir (co-operation loan)
+99|Heart of Midlothian FC|loaned_out||||Gus Stevenson|(co-operation loan; club not stated)
+99|Heart of Midlothian FC|loaned_out||||Liam McFarlane|Partick Thistle
+99|Heart of Midlothian FC|loaned_out||||Cormac Daly|Arbroath
+99|Heart of Midlothian FC|loaned_out||||Adam Forrester|Ross County
+99|Heart of Midlothian FC|loaned_out||||Connor Dow|East Fife (co-operation loan)
+101|Servette FC|squad|1|GK|LTU|Edvinas Gertmonas|
+101|Servette FC|squad|4|DF|SUI|Steve Rouiller|
+101|Servette FC|squad|6|MF|BRA|Pedro Naressi|
+101|Servette FC|squad|7|FW|ZAM|Kingstone Mutandwa|on loan from Cagliari
+101|Servette FC|squad|8|MF|FRA|Timothé Cognat|
+101|Servette FC|squad|9|MF|BIH|Miroslav Stevanović|
+101|Servette FC|squad|11|MF|FRA|Lamine Fomba|
+101|Servette FC|squad|14|DF|CMR|Lilian Njoh|
+101|Servette FC|squad|15|DF|SUI|Marco Burch|
+101|Servette FC|squad|17|DF|GBS|Houboulang Mendes|
+101|Servette FC|squad|18|DF|CGO|Bradley Mazikou|
+101|Servette FC|squad|19|DF|FRA|Yoan Severin|
+101|Servette FC|squad|20|MF|SUI|Jarell Simo|
+101|Servette FC|squad|21|FW|SWE|Jesper Karlsson|on loan from Bologna
+101|Servette FC|squad|22|FW|FRA|Mathis Lambourde|
+101|Servette FC|squad|23|DF|SUI|Quentin Maceiras|
+101|Servette FC|squad|25|DF|TUN|Dylan Bronn|
+101|Servette FC|squad|27|FW|CIV|David Datro Fofana|
+101|Servette FC|squad|28|MF|FRA|David Douline|
+101|Servette FC|squad|30|MF|GAM|Ablie Jallow|
+101|Servette FC|squad|32|GK|SUI|Jérémy Frick|captain
+101|Servette FC|squad|34|DF|FRA|Téo Allix|
+101|Servette FC|squad|35|MF|SUI|Alonzo Vincent|
+101|Servette FC|squad|36|MF|FRA|Thomas Lopes|
+101|Servette FC|squad|37|DF|BRA|Sylvain Djoho|
+101|Servette FC|squad|38|FW|FRA|Benoît Sida|
+101|Servette FC|squad|41|FW|FRA|Tristan Nunez|
+101|Servette FC|squad|42|MF|SUI|Ivan Izquierdo|
+101|Servette FC|squad|44|GK|SUI|Louis Rieder|
+101|Servette FC|squad|77|FW|SUI|Tiemoko Ouattara|
+101|Servette FC|squad|78|GK|KOS|Léo Besson|
+101|Servette FC|squad|90|FW|SVK|Samuel Mráz|
+101|Servette FC|loaned_out||GK|SUI|Marwan Aubert|Nyon (until 30 June 2027)
+101|Servette FC|loaned_out||DF|SUI|Samuel Fankhauser|Nyon (until 30 June 2027)
+101|Servette FC|loaned_out||DF|SUI|Romain Gaud|Grand-Saconnex (until 30 June 2027)
+101|Servette FC|loaned_out||DF|SUI|Romeo Philippin|Nyon (until 30 June 2027)
+101|Servette FC|loaned_out||DF|SUI|Luca Scandurra|Grand-Saconnex (until 30 June 2027)
+101|Servette FC|loaned_out||DF|ALB|Leart Zuka|Étoile Carouge (until 30 June 2027)
+101|Servette FC|loaned_out||MF|FRA|Mattéo Anselme|Grand-Saconnex (until 30 June 2027)
+101|Servette FC|loaned_out||MF|SUI|Malek Ishuayed|Kriens (until 30 June 2027)
+101|Servette FC|loaned_out||MF|SUI|Émilien Ndjoko|Nyon (until 30 June 2027)
+101|Servette FC|loaned_out||FW|SUI|Jamie Atangana|Lausanne Ouchy (until 30 June 2027)
+101|Servette FC|loaned_out||FW|COD|Junior Kadile|Lens (until 30 June 2027)
+101|Servette FC|loaned_out||FW|SUI|Mardochée Miguel|Nyon (until 30 June 2027)
+101|Servette FC|loaned_out||FW|BFA|Fadi Ndiyo|Grand-Saconnex (until 30 June 2027)
+101|Servette FC|loaned_out||FW|POR|Keyan Varela|RKC Waalwijk (until 30 June 2027)
+104|Sportklub Puntigamer Sturm Graz|squad|2|DF|CRC|Jeyland Mitchell|
+104|Sportklub Puntigamer Sturm Graz|squad|4|MF|SVN|Jon Gorenc Stanković|
+104|Sportklub Puntigamer Sturm Graz|squad|5|DF|AUT|Albert Vallçi|
+104|Sportklub Puntigamer Sturm Graz|squad|6|DF|AUT|Aleksandar Borković|
+104|Sportklub Puntigamer Sturm Graz|squad|8|MF|POL|Filip Rózga|
+104|Sportklub Puntigamer Sturm Graz|squad|10|MF|GEO|Otar Kiteishvili|
+104|Sportklub Puntigamer Sturm Graz|squad|11|FW|COD|Axel Kayombo|
+104|Sportklub Puntigamer Sturm Graz|squad|15|MF|GEO|Gizo Mamageishvili|
+104|Sportklub Puntigamer Sturm Graz|squad|20|FW|NOR|Seedy Jatta|
+104|Sportklub Puntigamer Sturm Graz|squad|23|DF|BIH|Arjan Malić|
+104|Sportklub Puntigamer Sturm Graz|squad|25|MF|AUT|Stefan Hierländer|captain
+104|Sportklub Puntigamer Sturm Graz|squad|26|FW|AUT|Belmin Beganović|
+104|Sportklub Puntigamer Sturm Graz|squad|35|DF|AUT|Niklas Geyrhofer|
+104|Sportklub Puntigamer Sturm Graz|squad|38|FW|CRO|Leon Grgić|
+104|Sportklub Puntigamer Sturm Graz|squad|41|GK|AUT|Elias Lorenz|
+104|Sportklub Puntigamer Sturm Graz|squad|43|MF|AUT|Jacob Hödl|
+104|Sportklub Puntigamer Sturm Graz|squad|44|DF|BIH|Jusuf Gazibegović|on loan from 1. FC Köln
+104|Sportklub Puntigamer Sturm Graz|squad|47|DF|AUT|Emanuel Aiwu|
+104|Sportklub Puntigamer Sturm Graz|squad|53|GK|RUS|Daniil Khudyakov|
+104|Sportklub Puntigamer Sturm Graz|squad|77|FW|GER|Maurice Malone|
+104|Sportklub Puntigamer Sturm Graz|squad|80|MF|CMR|Ryan Fosso|
+104|Sportklub Puntigamer Sturm Graz|squad||MF|AUT|Jürgen Heil|
+104|Sportklub Puntigamer Sturm Graz|squad||MF|AUT|Simon Seidl|
+104|Sportklub Puntigamer Sturm Graz|loaned_out|9|FW|POL|Szymon Włodarczyk|Excelsior Rotterdam (until 30 June 2026)
+104|Sportklub Puntigamer Sturm Graz|loaned_out|18|DF|ENG|Emran Soglo|Zulte Waregem (until 30 June 2026)
+104|Sportklub Puntigamer Sturm Graz|loaned_out|22|MF|DEN|Julius Beck|Elfsborg (until 30 June 2026)
+104|Sportklub Puntigamer Sturm Graz|loaned_out|36|FW|MLI|Amady Camara|Nantes (until 30 June 2026)
+105|Rangers FC|squad|1|GK|CRO|Ivor Pandur|
+105|Rangers FC|squad|2|DF|SCO|Ross McCrorie|
+105|Rangers FC|squad|4|DF|ENG|Ben Godfrey|on loan from Atalanta
+105|Rangers FC|squad|5|DF|SCO|John Souttar|
+105|Rangers FC|squad|6|MF|ENG|Dan Neil|vice-captain
+105|Rangers FC|squad|7|FW|SCO|Lawrence Shankland|captain
+105|Rangers FC|squad|9|FW|POR|Youssef Chermiti|
+105|Rangers FC|squad|10|FW|KOR|Kim Min-su|
+105|Rangers FC|squad|14|MF|AUS|Cammy Devlin|
+105|Rangers FC|squad|15|MF|ECU|José Cifuentes|
+105|Rangers FC|squad|17|MF|JPN|Daisuke Yokota|
+105|Rangers FC|squad|18|DF|SRB|Kosta Nedeljković|on loan from Aston Villa
+105|Rangers FC|squad|19|FW|VEN|Kevin Kelsy|
+105|Rangers FC|squad|20|FW|CZE|Ryan Naderi|
+105|Rangers FC|squad|21|DF|ENG|Dujon Sterling|
+105|Rangers FC|squad|22|MF|SRB|Vanja Dragojević|
+105|Rangers FC|squad|23|FW|MTN|Djeidi Gassama|
+105|Rangers FC|squad|24|DF|RSA|Olwethu Makhanya|
+105|Rangers FC|squad|25|DF|BEL|Tuur Rommens|
+105|Rangers FC|squad|26|FW|ALG|Badredine Bouanani|on loan from Stuttgart
+105|Rangers FC|squad|28|FW|MKD|Bojan Miovski|
+105|Rangers FC|squad|29|DF|SCO|James Penrice|on loan from AEK Athens
+105|Rangers FC|squad|31|GK|SCO|Liam Kelly|
+105|Rangers FC|squad|33|DF|SCO|Ashton Scally|
+105|Rangers FC|squad|37|DF|NGA|Emmanuel Fernandez|
+105|Rangers FC|squad|42|MF|DEN|Tochi Chukwuani|
+105|Rangers FC|squad|43|MF|BEL|Nicolas Raskin|
+105|Rangers FC|squad|45|FW|NIR|Ross McCausland|
+105|Rangers FC|squad|52|MF|SCO|Findlay Curtis|
+105|Rangers FC|loaned_out||||Connor Barron|Middlesbrough
+105|Rangers FC|loaned_out||||Thelo Aasgaard|Anderlecht
+105|Rangers FC|loaned_out||||Lyall Cameron|Dundee United
+105|Rangers FC|loaned_out||||Paul Nsio|St Mirren
+105|Rangers FC|loaned_out||||Bailey Rice|Kilmarnock
+105|Rangers FC|loaned_out||||Mason Munn|Dumbarton
+105|Rangers FC|loaned_out||||Zebedee Lawson|Queen's Park
+105|Rangers FC|loaned_out||||Aiden McCallion|Queen's Park
+105|Rangers FC|loaned_out||||Danilo|Botafogo
+105|Rangers FC|loaned_out||||Nedim Bajrami|Al-Taawoun
+105|Rangers FC|loaned_out||||Óscar Cortés|Huracán
+111|Rapid Vienna|squad|1|GK|AUT|Niklas Hedl|
+111|Rapid Vienna|squad|2|DF|AUT|Eaden Roka|
+111|Rapid Vienna|squad|4|DF|AUT|Jakob Schöller|
+111|Rapid Vienna|squad|6|DF|FRA|Serge-Philippe Raux-Yao|
+111|Rapid Vienna|squad|7|FW|AUS|Marco Tilio|
+111|Rapid Vienna|squad|8|FW|DEN|Tonni Adamsen|
+111|Rapid Vienna|squad|9|FW|AUT|Ercan Kara|
+111|Rapid Vienna|squad|10|FW|NOR|Petter Nosa Dahl|
+111|Rapid Vienna|squad|14|MF|CMR|Martin Ndzie|
+111|Rapid Vienna|squad|15|FW|AUT|Nikolaus Wurmbrand|
+111|Rapid Vienna|squad|18|MF|AUT|Matthias Seidl|captain
+111|Rapid Vienna|squad|20|DF|CIV|Ange Ahoussou|
+111|Rapid Vienna|squad|21|MF|AUT|Louis Schaub|
+111|Rapid Vienna|squad|22|MF|AUT|Yusuf Demir|
+111|Rapid Vienna|squad|23|DF|AUT|Jonas Auer|
+111|Rapid Vienna|squad|24|DF|MAD|Jean Marcelin|
+111|Rapid Vienna|squad|25|GK|AUT|Paul Gartler|
+111|Rapid Vienna|squad|30|MF|AUT|Nicolas Bajlicz|
+111|Rapid Vienna|squad|38|DF|GER|Jannes Horn|
+111|Rapid Vienna|squad|43|FW|MLI|Moulaye Haïdara|
+111|Rapid Vienna|squad|44|MF|AUT|Lorenz Szladits|
+111|Rapid Vienna|squad|47|DF|TUN|Amin-Elias Gröller|
+111|Rapid Vienna|squad|50|GK|AUT|Laurenz Orgler|
+111|Rapid Vienna|squad|51|GK|AUT|Benjamin Göschl|
+111|Rapid Vienna|squad|53|DF|AUT|Dominik Vincze|
+111|Rapid Vienna|squad|54|FW|GHA|Daniel Nunoo|
+111|Rapid Vienna|squad|55|DF|SRB|Nenad Cvetković|
+111|Rapid Vienna|squad|61|DF|TUR|Furkan Demir|
+111|Rapid Vienna|squad|71|FW|FRA|Claudy Mbuyi|
+111|Rapid Vienna|squad|77|DF|HUN|Bendegúz Bolla|
+111|Rapid Vienna|loaned_out||DF|AUT|Dominik Weixelbraun|Austria Lustenau (until 30 June 2027)
+113|Odense Boldklub|squad|1|GK|DEN|Martin Hansen|
+113|Odense Boldklub|squad|3|DF|DEN|Adam Sørensen|
+113|Odense Boldklub|squad|4|DF|DEN|Bjørn Paulsen|
+113|Odense Boldklub|squad|5|DF|SUI|Nicolas Bürgy|
+113|Odense Boldklub|squad|6|MF|DEN|Jakob Bonde|
+113|Odense Boldklub|squad|7|FW|GER|Fiete Arp|
+113|Odense Boldklub|squad|8|FW|DEN|Rasmus Falk|captain
+113|Odense Boldklub|squad|10|MF|FIN|Anssi Suhonen|
+113|Odense Boldklub|squad|11|FW|GER|Jona Niemiec|
+113|Odense Boldklub|squad|13|DF|DEN|Julius Berthel Askou|
+113|Odense Boldklub|squad|14|DF|DEN|Gustav Grubbe|
+113|Odense Boldklub|squad|15|DF|DEN|Marcus McCoy|
+113|Odense Boldklub|squad|16|GK|NOR|Viljar Myhra|
+113|Odense Boldklub|squad|17|FW|GER|Noah Ganaus|
+113|Odense Boldklub|squad|18|MF|DEN|Max Ejdum|
+113|Odense Boldklub|squad|19|MF|GER|Tom Trybull|
+113|Odense Boldklub|squad|20|DF|NED|Leeroy Owusu|
+113|Odense Boldklub|squad|21|MF|DEN|Vitus Friis|
+113|Odense Boldklub|squad|22|MF|BFA|Ismahila Ouédraogo|
+113|Odense Boldklub|squad|23|FW|DEN|William Martin|
+113|Odense Boldklub|squad|24|DF|GAM|Yaya Bojang|
+113|Odense Boldklub|squad|25|FW|DEN|Mads Abrahamsen|
+113|Odense Boldklub|squad|26|FW|DEN|Lasse Legolas|
+113|Odense Boldklub|squad|27|GK|DEN|Marcus Eskildsen|
+113|Odense Boldklub|squad|28|FW|DEN|Magnus Andersen|
+113|Odense Boldklub|squad|29|DF|GAM|James Gomez|
+113|Odense Boldklub|squad|30|GK|DEN|Theo Sander|on loan from Copenhagen
+113|Odense Boldklub|squad|31|FW|SUR|Jay-Roy Grot|
+113|Odense Boldklub|loaned_out|12|MF|DEN|Nikolaj Juul-Sandberg|Middelfart (until 30 June 2026)
+113|Odense Boldklub|loaned_out|41|FW|DEN|Markus Jensen|Utrecht (until 30 June 2026)
+115|FC Copenhagen|squad|1|GK|GER|Diant Ramaj|on loan from Dortmund
+115|FC Copenhagen|squad|2|DF|SWE|Felix Beijmo|
+115|FC Copenhagen|squad|4|DF|DEN|Asger Sørensen|
+115|FC Copenhagen|squad|6|DF|HUN|Ákos Markgráf|
+115|FC Copenhagen|squad|7|FW|ARG|Maher Carrizo|on loan from Ajax
+115|FC Copenhagen|squad|8|MF|DEN|Magnus Mattsson|
+115|FC Copenhagen|squad|10|FW|NOR|Mohamed Elyounoussi|
+115|FC Copenhagen|squad|12|FW|RSA|Thapelo Maseko|
+115|FC Copenhagen|squad|13|DF|MEX|Rodrigo Huescas|
+115|FC Copenhagen|squad|14|FW|DEN|Andreas Cornelius|
+115|FC Copenhagen|squad|15|DF|PER|Marcos López|
+115|FC Copenhagen|squad|16|FW|BRA|Robert Silva|
+115|FC Copenhagen|squad|18|DF|CRC|Kenay Myrie|
+115|FC Copenhagen|squad|20|DF|JPN|Junnosuke Suzuki|
+115|FC Copenhagen|squad|21|MF|DEN|Mads Emil Madsen|
+115|FC Copenhagen|squad|24|DF|NOR|Birger Meling|
+115|FC Copenhagen|squad|27|MF|DEN|Thomas Delaney|captain
+115|FC Copenhagen|squad|28|MF|HUN|Hunor Németh|
+115|FC Copenhagen|squad|31|GK|ISL|Rúnar Alex Rúnarsson|
+115|FC Copenhagen|squad|33|MF|CZE|Alex Král|
+115|FC Copenhagen|squad|36|MF|DEN|William Clem|
+115|FC Copenhagen|squad|39|FW|ISL|Viktor Daðason|
+115|FC Copenhagen|squad|44|FW|CMR|Geovanni Ndjee|
+115|FC Copenhagen|squad|51|GK|DEN|Tobias Breum-Harild|
+115|FC Copenhagen|loaned_out|5|DF|BRA|Gabriel Pereira|Vasco da Gama
+115|FC Copenhagen|loaned_out|9|FW|GER|Youssoufa Moukoko|Çorum
+115|FC Copenhagen|loaned_out|23|MF|POL|Dominik Sarapata|Artis Brno
+115|FC Copenhagen|loaned_out|29|MF|DEN|Jonathan Moalem|Strømsgodset
+115|FC Copenhagen|loaned_out|38|MF|DEN|Oliver Højer|Lyngby
+115|FC Copenhagen|loaned_out|61|GK|DEN|Oscar Buur|Hødd
+115|FC Copenhagen|loaned_out||GK|CRO|Dominik Kotarski|Dinamo Zagreb
+115|FC Copenhagen|loaned_out||DF|ZIM|Munashe Garananga|Lyngby
+119|Bröndby IF|squad|1|GK|AUT|Patrick Pentz|
+119|Bröndby IF|squad|2|DF|DEN|Oliver Villadsen|
+119|Bröndby IF|squad|3|DF|AUT|Christopher Olivier|
+119|Bröndby IF|squad|4|DF|SCO|Luis Binks|captain
+119|Bröndby IF|squad|7|FW|DEN|Olti Hyseni|
+119|Bröndby IF|squad|9|FW|DEN|Patrick Mortensen|
+119|Bröndby IF|squad|10|MF|DEN|Daniel Wass|club captain
+119|Bröndby IF|squad|11|FW|DEN|Filip Bundgaard|
+119|Bröndby IF|squad|13|GK|USA|Gavin Beavers|
+119|Bröndby IF|squad|15|MF|DEN|Casper Winther|
+119|Bröndby IF|squad|16|GK|DEN|Adrian Kappenberger|
+119|Bröndby IF|squad|17|FW|NGA|Emmanuel Dennis|
+119|Bröndby IF|squad|18|MF|DEN|Max Ejdum|
+119|Bröndby IF|squad|19|FW|JPN|Shō Fukuda|
+119|Bröndby IF|squad|21|FW|AUS|Marcus Younis|
+119|Bröndby IF|squad|24|DF|CRO|Marko Divković|
+119|Bröndby IF|squad|27|DF|GER|Mats Köhlert|
+119|Bröndby IF|squad|29|MF|DEN|Mads Frøkjær-Jensen|
+119|Bröndby IF|squad|30|DF|BEL|Jordi Vanlerberghe|
+119|Bröndby IF|squad|32|DF|DEN|Frederik Alves|
+119|Bröndby IF|squad|34|DF|DEN|Lukas Larsen|
+119|Bröndby IF|squad|36|MF|DEN|Viggo Poulsen|
+119|Bröndby IF|squad|37|DF|DEN|Raphael Canut|
+119|Bröndby IF|squad|38|FW|DEN|Jacob Ambæk|
+119|Bröndby IF|squad|50|GK|DEN|William Sonne-Schmidt|
+119|Bröndby IF|squad|51|FW|DEN|Oskar Fenger|
+119|Bröndby IF|squad|99|MF|POL|Bartosz Slisz|vice-captain
+119|Bröndby IF|loaned_out||MF|DEN|André Escobar Jensen|Thisted (until 31 December 2026)
+119|Bröndby IF|loaned_out||MF|BIH|Benjamin Tahirović|Genk (until 30 June 2027)
+119|Bröndby IF|loaned_out||FW|JPN|Kōtarō Uchino|Mito HollyHock (until 30 June 2027)
+119|Bröndby IF|loaned_out||FW|SEN|Ousmane Sow|Jagiellonia (until 30 June 2027)
+126|FC St. Gallen 1879|squad|1|GK|GHA|Lawrence Ati-Zigi|
+126|FC St. Gallen 1879|squad|2|DF|SUI|Cyrill May|
+126|FC St. Gallen 1879|squad|3|DF|GER|Colin Kleine-Bekel|on loan from Bochum
+126|FC St. Gallen 1879|squad|4|DF|CRO|Jozo Stanić|
+126|FC St. Gallen 1879|squad|5|DF|GHA|Stephan Ambrosius|
+126|FC St. Gallen 1879|squad|6|MF|KOS|Behar Neziri|
+126|FC St. Gallen 1879|squad|7|MF|SUI|Christian Witzig|
+126|FC St. Gallen 1879|squad|8|MF|SUI|Nino Weibel|
+126|FC St. Gallen 1879|squad|9|FW|SUI|Andrin Hunziker|
+126|FC St. Gallen 1879|squad|10|MF|GER|Lukas Daschner|
+126|FC St. Gallen 1879|squad|11|MF|GER|Carlo Boukhalfa|
+126|FC St. Gallen 1879|squad|14|FW|GUI|Aliou Baldé|
+126|FC St. Gallen 1879|squad|16|MF|GER|Lukas Görtler|captain
+126|FC St. Gallen 1879|squad|20|MF|KOS|Leon Frokaj|
+126|FC St. Gallen 1879|squad|21|FW|FRA|Malamine Efekele|
+126|FC St. Gallen 1879|squad|23|MF|KOS|Betim Fazliji|
+126|FC St. Gallen 1879|squad|25|GK|GER|Lukas Watkowiak|
+126|FC St. Gallen 1879|squad|26|DF|GER|Tom Gaal|
+126|FC St. Gallen 1879|squad|27|MF|HUN|Kevin Csoboth|
+126|FC St. Gallen 1879|squad|28|DF|FRA|Hugo Vandermersch|
+126|FC St. Gallen 1879|squad|31|FW|SUI|Diego Besio|
+126|FC St. Gallen 1879|squad|35|GK|GER|Bela Dumrath|
+126|FC St. Gallen 1879|squad|36|DF|GER|Chima Okoroji|
+126|FC St. Gallen 1879|squad|47|FW|ITA|Enoch Owusu|
+126|FC St. Gallen 1879|squad|63|MF|SUI|Corsin Konietzke|
+126|FC St. Gallen 1879|squad|64|MF|SRB|Mihailo Stevanović|
+126|FC St. Gallen 1879|squad|67|FW|ESP|Jorge Rans|
+126|FC St. Gallen 1879|squad|70|FW|SUI|Nevio Scherrer|
+126|FC St. Gallen 1879|squad|74|DF|SUI|Joel Ruiz|
+126|FC St. Gallen 1879|squad|81|GK|SUI|Yannick Bujard|
+126|FC St. Gallen 1879|loaned_out||GK|SUI|Gentrit Muslija|Wil (until 30 June 2027)
+126|FC St. Gallen 1879|loaned_out||DF|SUI|Tarik Seferovic|Wil (until 30 June 2027)
+126|FC St. Gallen 1879|loaned_out||MF|ESP|Jordi Quintillà|Nea Salamis (until 30 June 2027)
+126|FC St. Gallen 1879|loaned_out||FW|CRO|Antonio Verinac|Austria Lustenau (until 30 June 2027)
+127|FC Zürich|squad|1|GK|SUI|Silas Huber|
+127|FC Zürich|squad|2|DF|SUI|Lindrit Kamberi|captain
+127|FC Zürich|squad|3|DF|SUI|Selmin Hodža|
+127|FC Zürich|squad|4|DF|COL|Jorge Segura|
+127|FC Zürich|squad|7|MF|KOS|Bledian Krasniqi|
+127|FC Zürich|squad|8|DF|CUW|Livano Comenencia|
+127|FC Zürich|squad|11|FW|NGA|Umeh Emmanuel|
+127|FC Zürich|squad|12|GK|UKR|Yevhen Morozov|
+127|FC Zürich|squad|13|GK|AUT|Heinz Lindner|
+127|FC Zürich|squad|14|MF|SUI|Nevio Di Giusto|
+127|FC Zürich|squad|17|MF|SUI|Kevin Spadanuda|
+127|FC Zürich|squad|18|MF|GUI|Mohamed Bangoura|
+127|FC Zürich|squad|19|FW|SEN|Philippe Kény|
+127|FC Zürich|squad|21|MF|SUI|Leandro Schödler|
+127|FC Zürich|squad|22|DF|SUI|Chris Kablan|
+127|FC Zürich|squad|23|MF|KOS|Valon Berisha|
+127|FC Zürich|squad|24|FW|NED|Mohamed Essakkati|
+127|FC Zürich|squad|27|DF|SUI|Ilan Sauter|
+127|FC Zürich|squad|28|FW|SUI|Mario Greco|
+127|FC Zürich|squad|29|FW|NED|Damienus Reverson|
+127|FC Zürich|squad|34|MF|ITA|Cosimo Fiorini|
+127|FC Zürich|squad|38|MF|SUI|Miguel Reichmuth|
+127|FC Zürich|squad|42|DF|GER|Alexander Hack|
+127|FC Zürich|squad|43|DF|SUI|Neil Volken|
+127|FC Zürich|squad|44|DF|SUI|Sebastian Walker|
+127|FC Zürich|squad|46|MF|SUI|Jill Stiel|
+127|FC Zürich|squad|48|DF|GER|Kelechi Ihendu|
+127|FC Zürich|squad|49|FW|BIH|Din Ramić|
+127|FC Zürich|loaned_out||DF|SUI|Yuro Bohon Diet|Kriens (until 30 June 2027)
+127|FC Zürich|loaned_out||DF|SUI|Marlon Schwarz|Wohlen (until 30 June 2027)
+127|FC Zürich|loaned_out||MF|SUI|Mihael Cavar|Kreuzlingen (until 30 June 2027)
+127|FC Zürich|loaned_out||FW|KEN|Damien Odera|Otrant-Olympic (until 30 June 2027)
+128|SV Ried|squad|1|GK|AUT|Andreas Leitner|captain
+128|SV Ried|squad|4|MF|AUT|Lukas Malicsek|
+128|SV Ried|squad|5|DF|AUT|Dejan Radonjić|
+128|SV Ried|squad|6|MF|RSA|Yusuf Maart|
+128|SV Ried|squad|7|DF|AUT|Oliver Sorg|
+128|SV Ried|squad|8|MF|AUT|Martin Rasner|
+128|SV Ried|squad|9|FW|MLI|Niama Pape Sissoko|on loan from Reims
+128|SV Ried|squad|10|MF|IRQ|Jussef Nasrawe|
+128|SV Ried|squad|11|MF|RSA|Jaedin Rhodes|
+128|SV Ried|squad|12|FW|AUT|Ante Bajic|
+128|SV Ried|squad|15|FW|AUT|Joris Boguo|
+128|SV Ried|squad|17|MF|AUT|Philipp Pomer|
+128|SV Ried|squad|18|MF|AUT|Fabian Rossdorfer|
+128|SV Ried|squad|19|FW|DEN|Tobias Lund Jensen|on loan from Club NXT
+128|SV Ried|squad|21|FW|CRO|Tino Kusanović|on loan from 1. FC Nürnberg
+128|SV Ried|squad|22|MF|AUT|Stefan Schwab|
+128|SV Ried|squad|23|DF|AUT|Michael Sollbauer|
+128|SV Ried|squad|24|FW|AUT|Sefiwu Abubakar|
+128|SV Ried|squad|25|DF|AUT|Dominik Kirnbauer|
+128|SV Ried|squad|26|MF|AUT|Jonas Mayer|
+128|SV Ried|squad|28|DF|FRO|Samuel Chukwudi|
+128|SV Ried|squad|30|DF|GER|Oliver Steurer|
+128|SV Ried|squad|33|DF|AUT|Alessandro Goiginger|
+128|SV Ried|squad|34|GK|AUT|Dominik Stöger|
+128|SV Ried|squad|38|MF|GER|Nermin Mesic|
+128|SV Ried|squad|40|MF|KOS|Leonit Zeqiri|
+128|SV Ried|squad|42|MF|AUT|Fabian Lechner|
+128|SV Ried|squad|47|FW|AUT|Evan Eghosa Aisowieren|
+128|SV Ried|squad|48|FW|AUT|Raphael Pesu|
+128|SV Ried|squad|72|MF|GER|Conrad Scholl|
+128|SV Ried|squad|77|GK|AUT|Felix Wimmer|
+128|SV Ried|loaned_out||DF|AUT|Philip Weissenbacher|Kapfenberger SV (until 30 June 2027)
+128|SV Ried|loaned_out||MF|AUT|Nevio Zotz|Hertha Wels (until 30 June 2027)
+133|Grazer AK 1902|squad|1|GK|AUT|Jakob Meierhofer|
+133|Grazer AK 1902|squad|2|DF|USA|Donovan Pines|
+133|Grazer AK 1902|squad|3|DF|DEN|Ludwig Vraa|
+133|Grazer AK 1902|squad|6|MF|ISR|Liam Hermesh|
+133|Grazer AK 1902|squad|7|FW|NED|Anthony Smits|
+133|Grazer AK 1902|squad|8|MF|AUT|Tobias Koch|
+133|Grazer AK 1902|squad|9|FW|AUT|Daniel Maderner|
+133|Grazer AK 1902|squad|10|MF|AUT|Christian Lichtenberger|
+133|Grazer AK 1902|squad|11|MF|AUT|Mark Grosse|
+133|Grazer AK 1902|squad|14|DF|AUS|Jacob Italiano|
+133|Grazer AK 1902|squad|17|MF|AUT|Souleyman Mandey|
+133|Grazer AK 1902|squad|21|DF|AUT|Michael Sollbauer|
+133|Grazer AK 1902|squad|23|GK|AUT|Cican Stanković|
+133|Grazer AK 1902|squad|24|MF|AUT|Christopher Cvetko|
+133|Grazer AK 1902|squad|25|FW|AUT|Alexander Hofleitner|
+133|Grazer AK 1902|squad|26|GK|AUT|Christoph Nicht|
+133|Grazer AK 1902|squad|27|DF|GER|Yannick Oberleitner|
+133|Grazer AK 1902|squad|28|DF|BRA|Anderson|
+133|Grazer AK 1902|squad|29|MF|MAR|Ismaël Guerti|
+133|Grazer AK 1902|squad|32|DF|RUS|Leon Klassen|
+133|Grazer AK 1902|squad|34|MF|AUT|Peter Michorl|
+133|Grazer AK 1902|squad|37|DF|AUT|Tim Trummer|on loan from Red Bull Salzburg
+133|Grazer AK 1902|squad|48|DF|AUT|Matthias Gragger|
+133|Grazer AK 1902|squad|72|DF|AUT|Petar Markovic|
+133|Grazer AK 1902|squad|82|DF|FRA|Beres Owusu|
+133|Grazer AK 1902|loaned_out||GK|AUT|Juri Kirchmayr|Wacker Innsbruck (until 30 June 2027)
+135|FC Sion|squad|1|GK|SUI|Anthony Racioppi|
+135|FC Sion|squad|5|DF|FRA|Noé Sow|
+135|FC Sion|squad|6|DF|BRA|Marquinhos Cipriano|
+135|FC Sion|squad|7|FW|MLT|Ilyas Chouaref|
+135|FC Sion|squad|8|MF|BRA|Batata|
+135|FC Sion|squad|9|FW|SUI|Josias Lukembila|
+135|FC Sion|squad|10|MF|KOS|Benjamin Kololli|
+135|FC Sion|squad|12|GK|SUI|Francesco Ruberto|
+135|FC Sion|squad|13|FW|SUI|Winsley Boteli|
+135|FC Sion|squad|14|DF|SUI|Numa Lavanchy|
+135|FC Sion|squad|17|DF|SUI|Jan Kronig|
+135|FC Sion|squad|19|FW|SUI|Franck Surdez|
+135|FC Sion|squad|20|DF|SUI|Nias Hefti|
+135|FC Sion|squad|21|MF|SUI|Liam Chipperfield|
+135|FC Sion|squad|22|MF|SUI|Adrien Llukes|
+135|FC Sion|squad|24|DF|SUI|Damien Möschinger|
+135|FC Sion|squad|28|DF|KOS|Kreshnik Hajrizi|
+135|FC Sion|squad|29|FW|SUI|Théo Berdayes|
+135|FC Sion|squad|33|FW|KOS|Rilind Nivokazi|
+135|FC Sion|squad|37|MF|FRA|Fodé Sylla|
+135|FC Sion|squad|38|DF|SUI|Ryan Kessler|
+135|FC Sion|squad|40|GK|SUI|Simon Caillet|
+135|FC Sion|squad|55|DF|ITA|Lorenzo Villa|
+135|FC Sion|squad|77|MF|KOS|Donat Rrudhani|
+135|FC Sion|squad|88|MF|SUI|Ali Kabacalman|
+135|FC Sion|loaned_out||DF|SUI|Maxime Dubosson|Étoile Carouge (until 30 June 2027)
+135|FC Sion|loaned_out||DF|SUI|Edian Gashi|Nyonnais (until 30 June 2027)
+135|FC Sion|loaned_out||DF|SUI|Noah Grognuz|Nyonnais (until 30 June 2027)
+135|FC Sion|loaned_out||DF|SUI|Gilles Richard|Yverdon (until 30 June 2027)
+135|FC Sion|loaned_out||MF|ALB|Burak Alili|Nyonnais (until 30 June 2027)
+135|FC Sion|loaned_out||MF|HAI|Belmar Joseph|Monterey Bay (until 30 November 2026)
+135|FC Sion|loaned_out||MF|SUI|Pierrick Moulin|Nyonnais (until 30 June 2027)
+135|FC Sion|loaned_out||FW|SUI|Ruben Londja|Nyonnais (until 30 June 2027)
+139|Aberdeen FC|squad|2|DF|SCO|Nicky Devlin|
+139|Aberdeen FC|squad|3|DF|SCO|Mitchel Frame|
+139|Aberdeen FC|squad|4|DF|LVA|Kristers Tobers|
+139|Aberdeen FC|squad|5|DF|NED|Mats Knoester|
+139|Aberdeen FC|squad|7|MF|ENG|Tony Yogane|
+139|Aberdeen FC|squad|8|MF|NIR|Brad Lyons|vice-captain
+139|Aberdeen FC|squad|9|FW|MAR|Ayoub Mouloua|
+139|Aberdeen FC|squad|10|MF|AUT|Alexander Briedl|
+139|Aberdeen FC|squad|11|MF|SCO|Lewis Smith|
+139|Aberdeen FC|squad|13|GK|AUS|Nicholas Suman|
+139|Aberdeen FC|squad|14|MF|SWE|Kenan Bilalović|
+139|Aberdeen FC|squad|15|FW|SCO|Kevin Nisbet|captain
+139|Aberdeen FC|squad|17|MF|SCO|Stuart Armstrong|
+139|Aberdeen FC|squad|18|MF|CRO|Ante Palaversa|
+139|Aberdeen FC|squad|19|FW|AUS|Kusini Yengi|
+139|Aberdeen FC|squad|20|FW|ENG|Toyosi Olusanya|
+139|Aberdeen FC|squad|21|DF|IRL|Gavin Molloy|
+139|Aberdeen FC|squad|22|DF|SCO|Jack Milne|
+139|Aberdeen FC|squad|23|DF|SCO|Lewis Mayo|
+139|Aberdeen FC|squad|24|DF|ENG|Nesta Guinness-Walker|
+139|Aberdeen FC|squad|25|MF|IRL|Connor Ronan|
+139|Aberdeen FC|squad|26|DF|ENG|Dan Happe|
+139|Aberdeen FC|squad|27|GK|GER|Marius Müller|
+139|Aberdeen FC|squad|28|DF|SCO|Chris Cadden|
+139|Aberdeen FC|squad|31|FW|BEL|Mitchy Ntelo|
+139|Aberdeen FC|squad|32|MF|NGA|Afeez Aremu|
+139|Aberdeen FC|squad|40|MF|SCO|Findlay Marshall|
+139|Aberdeen FC|squad|77|DF|GER|Emmanuel Gyamfi|
+139|Aberdeen FC|loaned_out|16|DF|SCO|Dylan Lobban|Dunfermline Athletic
+139|Aberdeen FC|loaned_out|35|MF|SCO|Alfie Stewart|Inverness CT
+139|Aberdeen FC|loaned_out|36|FW|SCO|Alfie Bavidge|Inverness CT
+139|Aberdeen FC|loaned_out|41|GK|LVA|Rodrigo Vitols|Fraserburgh
+139|Aberdeen FC|loaned_out|42|DF|SCO|Jamie Mercer|Cove Rangers (co-operation loan)
+139|Aberdeen FC|loaned_out|43|DF|SCO|Lewis Carrol|Peterhead (co-operation loan)
+139|Aberdeen FC|loaned_out|44|MF|SCO|Aaron Cummings|Elgin City
+139|Aberdeen FC|loaned_out|47|MF|SCO|Sam McLean|Elgin City
+139|Aberdeen FC|loaned_out|54|FW|SCO|Jack Searle|Peterhead (co-operation loan)
+139|Aberdeen FC|loaned_out|56|DF|SCO|Joel Okhuoya|Formartine United
+139|Aberdeen FC|loaned_out||GK|SCO|Theo Simpson|Buckie Thistle
+139|Aberdeen FC|loaned_out||GK|SCO|Conlan Waldron|Banchory St Ternan
+139|Aberdeen FC|loaned_out||DF|SCO|Jay Henderson|Turriff United
+139|Aberdeen FC|loaned_out||DF|SCO|James Jarvie|Deveronvale
+139|Aberdeen FC|loaned_out||DF|SCO|Max Pocklington|Keith
+139|Aberdeen FC|loaned_out||DF|SCO|Dylan Ross|Cove Rangers (co-operation loan)
+139|Aberdeen FC|loaned_out||MF|SCO|Heath Duncan|Keith
+139|Aberdeen FC|loaned_out||MF|SCO|JJ Hulse|Buckie Thistle
+139|Aberdeen FC|loaned_out||FW|SCO|Joseph Teasdale|Cove Rangers (co-operation loan)
+139|Aberdeen FC|loaned_out||FW|SCO|Zak To|Peterhead (co-operation loan)
+140|Celtic FC|squad|1|GK|FIN|Viljami Sinisalo|
+140|Celtic FC|squad|2|DF|CAN|Alistair Johnston|
+140|Celtic FC|squad|5|DF|IRL|Liam Scales|
+140|Celtic FC|squad|6|DF|USA|Auston Trusty|
+140|Celtic FC|squad|7|FW|POR|Jota|
+140|Celtic FC|squad|8|MF|SWE|Benjamin Nygren|
+140|Celtic FC|squad|9|FW|DEN|Kasper Høgh|
+140|Celtic FC|squad|11|FW|COL|Camilo Durán|
+140|Celtic FC|squad|13|FW|KOR|Yang Hyun-jun|
+140|Celtic FC|squad|14|MF|SCO|Luke McCowan|
+140|Celtic FC|squad|17|FW|TUN|Sebastian Tounekti|
+140|Celtic FC|squad|19|FW|WAL|Callum Osmand|
+140|Celtic FC|squad|20|DF|USA|Cameron Carter-Vickers|
+140|Celtic FC|squad|21|MF|ENG|Alex Oxlade-Chamberlain|
+140|Celtic FC|squad|22|MF|GER|Mika Baur|
+140|Celtic FC|squad|23|FW|EGY|Haissem Hassan|
+140|Celtic FC|squad|24|FW|IRL|Johnny Kenny|
+140|Celtic FC|squad|31|GK|SCO|Ross Doohan|
+140|Celtic FC|squad|41|MF|JPN|Reo Hatate|
+140|Celtic FC|squad|42|MF|SCO|Callum McGregor|captain
+140|Celtic FC|squad|47|DF|SCO|Dane Murray|
+140|Celtic FC|squad|49|FW|SCO|James Forrest|
+140|Celtic FC|squad|51|DF|SCO|Colby Donovan|
+140|Celtic FC|squad|56|DF|SCO|Anthony Ralston|
+140|Celtic FC|squad|63|DF|SCO|Kieran Tierney|
+140|Celtic FC|loaned_out|10|FW|COD|Michel-Ange Balikwisha|Gent (until 30 June 2027)
+140|Celtic FC|loaned_out|15|MF|NOR|Odin Thiago Holm|Vålerenga (until 31 December 2026)
+140|Celtic FC|loaned_out|18|FW|JPN|Shin Yamada|OH Leuven (until 30 June 2027)
+140|Celtic FC|loaned_out|28|MF|POR|Paulo Bernardo|Górnik Zabrze (until 30 June 2027)
+140|Celtic FC|loaned_out|37|DF|SCO|Adam Montgomery|Livingston (until 30 June 2027)
+143|LASK|squad|1|GK|AUT|Lukas Jungwirth|
+143|LASK|squad|2|DF|USA|George Bello|
+143|LASK|squad|3|DF|JAM|Miguel Freckleton|
+143|LASK|squad|4|DF|NED|Xavier Mbuyamba|
+143|LASK|squad|5|MF|KOS|Art Smakaj|
+143|LASK|squad|6|MF|SUR|Melayro Bogarde|
+143|LASK|squad|7|FW|USA|Samuel Adeniran|
+143|LASK|squad|8|FW|NGA|Moses Usor|
+143|LASK|squad|9|MF|CZE|Kryštof Daněk|
+143|LASK|squad|10|MF|CRO|Robert Ljubičić|on loan from AEK Athens
+143|LASK|squad|14|FW|AUT|Saša Kalajdžić|
+143|LASK|squad|15|MF|MLI|Mohamed Sanogo|
+143|LASK|squad|16|DF|PAN|Andrés Andrade|
+143|LASK|squad|18|MF|AUT|Alessandro Schöpf|
+143|LASK|squad|20|DF|DEN|Kasper Jørgensen|
+143|LASK|squad|21|DF|COD|Manoël Verhaeghe|
+143|LASK|squad|22|FW|FRA|Ramiz Harakaté|
+143|LASK|squad|23|MF|LBA|Daniel Elfadli|on loan from Hamburg
+143|LASK|squad|25|DF|CMR|Yvan Dibango|
+143|LASK|squad|27|FW|AUT|Christoph Lang|
+143|LASK|squad|29|DF|AUT|Florian Flecker|
+143|LASK|squad|30|MF|AUT|Sascha Horvath|captain
+143|LASK|squad|33|GK|AUT|Tobias Schützenauer|
+143|LASK|squad|37|FW|MNE|Filip Perović|
+143|LASK|squad|43|DF|BRA|Alemão|
+143|LASK|squad|50|GK|AUT|Fabian Schillinger|
+143|LASK|squad|52|DF|MLI|Cheikne Kébé|
+143|LASK|loaned_out||DF|NGA|Emmanuel Michael|Admira Wacker (until 30 June 2027)
+143|LASK|loaned_out||DF|AUT|Yanis Traun|SKN St. Pölten (until 30 June 2027)
+143|LASK|loaned_out||MF|NGA|Adetunji Adeshina|Slaven Belupo (until 30 June 2027)
+143|LASK|loaned_out||FW|AUT|Jakob Wanker|Hertha Wels (until 30 June 2027)
+145|FC Luzern|squad|1|GK|ALB|Simon Simoni|
+145|FC Luzern|squad|5|DF|SUI|Stefan Knezevic|
+145|FC Luzern|squad|6|MF|SUI|Leonardo Bertone|
+145|FC Luzern|squad|7|FW|NED|Aurelio Oehlers|
+145|FC Luzern|squad|9|FW|AUT|Adrian Grbić|
+145|FC Luzern|squad|10|MF|POR|Lucas Ferreira|
+145|FC Luzern|squad|11|MF|SUI|Matteo Di Giusto|
+145|FC Luzern|squad|13|DF|SUI|Bung Hua Freimann|
+145|FC Luzern|squad|14|DF|LVA|Andrejs Cigaņiks|
+145|FC Luzern|squad|15|FW|SUI|Nando Toggenburger|
+145|FC Luzern|squad|16|FW|COD|Oscar Kabwit|
+145|FC Luzern|squad|17|FW|SUI|Sandro Wyss|
+145|FC Luzern|squad|18|FW|COD|Faveurdi Bongeli|on loan from TP Mazembe
+145|FC Luzern|squad|19|FW|POL|Daniel Mikołajewski|on loan from Parma
+145|FC Luzern|squad|20|MF|GER|Pius Dorn|captain
+145|FC Luzern|squad|21|DF|SUI|Loïc Lüthi|
+145|FC Luzern|squad|22|DF|SUI|Rúben Dantas Fernandes|
+145|FC Luzern|squad|24|MF|SUI|Tyron Owusu|
+145|FC Luzern|squad|25|GK|SUI|Tim Hottiger|
+145|FC Luzern|squad|27|FW|SUI|Lars Villiger|
+145|FC Luzern|squad|29|MF|SUI|Levin Winkler|
+145|FC Luzern|squad|30|GK|CRO|Karlo Letica|
+145|FC Luzern|squad|33|GK|SUI|Jérôme Bieler|
+145|FC Luzern|squad|34|MF|SUI|Demir Xhemalija|
+145|FC Luzern|squad|46|DF|SUI|Bung Meng Freimann|
+145|FC Luzern|squad|63|GK|SUI|Raphael Radtke|
+145|FC Luzern|squad|71|FW|SUI|Sascha Meyer|
+145|FC Luzern|squad|77|DF|SUI|Erblin Sadikaj|
+145|FC Luzern|squad|80|MF|SUI|Mio Zimmermann|
+145|FC Luzern|loaned_out||GK|SUI|Lionel Huwiler|Étoile Carouge (until 30 June 2027)
+145|FC Luzern|loaned_out||DF|SWE|Jesper Löfgren|Kalmar (until 31 December 2026)
+145|FC Luzern|loaned_out||MF|SUI|Ronaldo Dantas Fernandes|Stade Lausanne Ouchy (until 30 June 2027)
+145|FC Luzern|loaned_out||MF|SUI|Mattia Walker|Vaduz (until 30 June 2027)
+146|Vejle Boldklub|squad|1|GK|SVN|Igor Vekić|
+146|Vejle Boldklub|squad|2|MF|DEN|Thomas Gundelund|captain
+146|Vejle Boldklub|squad|3|DF|DEN|Christian Sørensen|
+146|Vejle Boldklub|squad|4|DF|DEN|Lasse Nielsen|
+146|Vejle Boldklub|squad|6|MF|DEN|Mike Vestergård|
+146|Vejle Boldklub|squad|7|MF|DEN|Christian Gammelgaard|
+146|Vejle Boldklub|squad|8|MF|DEN|Tobias Lauritsen|
+146|Vejle Boldklub|squad|9|FW|NED|Jelle Duin|
+146|Vejle Boldklub|squad|10|MF|DEN|Mikkel Duelund|
+146|Vejle Boldklub|squad|11|MF|USA|Jonathan Amon|
+146|Vejle Boldklub|squad|13|DF|BUL|Stefan Velkov|
+146|Vejle Boldklub|squad|16|MF|DEN|Tobias Bach|
+146|Vejle Boldklub|squad|17|MF|DEN|Andrew Hjulsager|
+146|Vejle Boldklub|squad|19|FW|DEN|Wahid Faghir|
+146|Vejle Boldklub|squad|20|MF|GUI|Abdoulaye Camara|
+146|Vejle Boldklub|squad|21|MF|GEO|Giorgi Tabatadze|
+146|Vejle Boldklub|squad|23|DF|DEN|Lasse Flø|
+146|Vejle Boldklub|squad|26|MF|DEN|Sander Ravn|
+146|Vejle Boldklub|squad|30|MF|DEN|Nicolas Gammelgaard|
+146|Vejle Boldklub|squad|31|DF|DEN|Hjalte Gitz|
+146|Vejle Boldklub|squad|32|FW|GHA|Bismark Edjeodji|
+146|Vejle Boldklub|squad|34|MF|ALB|Lundrim Hetemi|
+146|Vejle Boldklub|squad|36|MF|DEN|Max Jensen|
+146|Vejle Boldklub|squad||GK|DEN|Nicolai Larsen|
+146|Vejle Boldklub|squad||GK|DEN|Kasper Kristensen|
+146|Vejle Boldklub|squad||GK|DEN|Thorbjørn Pløger|
+146|Vejle Boldklub|squad||MF|DEN|Gustav Marcussen|
+148|BSC Young Boys|squad|1|GK|SUI|Marvin Keller|
+148|BSC Young Boys|squad|2|DF|ENG|Ryan Andrews|
+148|BSC Young Boys|squad|5|DF|SUI|Gregory Wüthrich|
+148|BSC Young Boys|squad|6|MF|SUI|Edimilson Fernandes|
+148|BSC Young Boys|squad|7|FW|FRA|Alan Virginius|
+148|BSC Young Boys|squad|8|MF|BIH|Armin Gigović|
+148|BSC Young Boys|squad|9|FW|SEN|Kaly Sène|
+148|BSC Young Boys|squad|10|MF|SUI|Alvyn Sanches|
+148|BSC Young Boys|squad|11|MF|SUI|Joël Monteiro|
+148|BSC Young Boys|squad|13|MF|CZE|Dominik Pech|
+148|BSC Young Boys|squad|15|DF|SUI|Cédric Zesiger|
+148|BSC Young Boys|squad|16|MF|SUI|Christian Fassnacht|
+148|BSC Young Boys|squad|17|DF|GAM|Saidy Janko|
+148|BSC Young Boys|squad|18|GK|CYP|Joël Mall|
+148|BSC Young Boys|squad|22|DF|SUI|Isaac Schmidt|
+148|BSC Young Boys|squad|23|DF|SUI|Loris Benito|captain
+148|BSC Young Boys|squad|24|DF|SUI|Benjamin Kabeya|
+148|BSC Young Boys|squad|27|DF|SUI|Lewin Blum|
+148|BSC Young Boys|squad|29|MF|SUI|Kastriot Imeri|
+148|BSC Young Boys|squad|30|MF|SUI|Sandro Lauper|
+148|BSC Young Boys|squad|31|FW|GUI|Facinet Conte|
+148|BSC Young Boys|squad|33|DF|SRB|Stefan Bukinac|
+148|BSC Young Boys|squad|34|MF|SUI|Edin Etoski|
+148|BSC Young Boys|squad|40|GK|SUI|Dario Marzino|
+148|BSC Young Boys|squad|57|DF|SUI|Olivier Mambwa|
+148|BSC Young Boys|squad|66|DF|SUI|Rhodri Smith|
+148|BSC Young Boys|squad|99|FW|COD|Samuel Essende|
+148|BSC Young Boys|loaned_out||GK|SUI|Ruben Salchli|Kriens (until 30 June 2027)
+148|BSC Young Boys|loaned_out||DF|SUI|Stevan Raicevic|Rapperswil-Jona (until 30 June 2027)
+148|BSC Young Boys|loaned_out||DF|FRA|Tanguy Zoukrou|Kocaelispor (until 30 June 2027)
+148|BSC Young Boys|loaned_out||MF|GAM|Ebrima Colley|Konyaspor (until 30 June 2027)
+148|BSC Young Boys|loaned_out||MF|SUI|Lutfi Dalipi|Vaduz (until 30 June 2027)
+148|BSC Young Boys|loaned_out||MF|SUI|Elio Rufener|Kriens (until 30 June 2027)
+148|BSC Young Boys|loaned_out||FW|SUI|Janis Lüthi|Neuchâtel Xamax (until 30 June 2027)
+148|BSC Young Boys|loaned_out||FW|VEN|Sergio Córdova|Batman Petrolspor (until 30 June 2027)
+149|St. Mirren FC|squad|2|DF|ENG|Jayden Richardson|
+149|St. Mirren FC|squad|4|MF|NIR|Liam Donnelly|
+149|St. Mirren FC|squad|5|DF|JAM|Richard King|
+149|St. Mirren FC|squad|7|MF|IRL|Roland Idowu|
+149|St. Mirren FC|squad|9|FW|FRA|Mikael Mandron|
+149|St. Mirren FC|squad|10|MF|ESP|Samuel Ramos|
+149|St. Mirren FC|squad|11|FW|KEN|Jonah Ayunga|
+149|St. Mirren FC|squad|13|DF|CYP|Alex Gogić|
+149|St. Mirren FC|squad|16|MF|SCO|Allan Campbell|
+149|St. Mirren FC|squad|17|FW|JAM|Jalmaro Calvin|
+149|St. Mirren FC|squad|18|MF|NED|Malik Dijksteel|
+149|St. Mirren FC|squad|20|FW|ENG|Jake Young|
+149|St. Mirren FC|squad|21|DF|ENG|Miguel Freckleton|
+149|St. Mirren FC|squad|22|DF|SCO|Marcus Fraser|vice-captain
+149|St. Mirren FC|squad|24|DF|WAL|Declan John|
+149|St. Mirren FC|squad|25|MF|AUS|Keanu Baccus|
+149|St. Mirren FC|squad|27|GK|SVK|Peter Urminský|
+149|St. Mirren FC|squad|28|DF|SCO|Callum Penman|
+149|St. Mirren FC|squad|30|MF|SCO|Fraser Taylor|
+149|St. Mirren FC|squad|31|GK|SCO|Ryan Mullen|
+149|St. Mirren FC|squad|32|FW|SCO|Luke Douglas|
+149|St. Mirren FC|squad|35|GK|SCO|Grant Tamosevicius|
+149|St. Mirren FC|squad|88|MF|IRL|Killian Phillips|
+149|St. Mirren FC|squad||MF|SCO|Ryan Carr|
+149|St. Mirren FC|squad||MF|SCO|Chris Mochrie|
+149|St. Mirren FC|loaned_out|19|DF|IRL|Tunmise Sobowale|Shamrock Rovers
+153|Grasshopper Club Zurich|squad|3|DF|SUI|Saulo Decarli|vice-captain
+153|Grasshopper Club Zurich|squad|4|DF|BIH|Luka Mikulić|
+153|Grasshopper Club Zurich|squad|5|MF|BEN|Hassane Imourane|
+153|Grasshopper Club Zurich|squad|6|MF|ALB|Amir Abrashi|captain
+153|Grasshopper Club Zurich|squad|7|FW|ENG|Luke Plange|
+153|Grasshopper Club Zurich|squad|8|MF|SUI|Tim Meyer|
+153|Grasshopper Club Zurich|squad|9|FW|SUI|Nikolas Muci|
+153|Grasshopper Club Zurich|squad|11|MF|CIV|Salifou Diarrassouba|
+153|Grasshopper Club Zurich|squad|15|DF|MLI|Abdoulaye Diaby|
+153|Grasshopper Club Zurich|squad|16|MF|ITA|Matteo Mantini|
+153|Grasshopper Club Zurich|squad|17|MF|ESP|Óscar Clemente|
+153|Grasshopper Club Zurich|squad|18|FW|KOR|Lee Young-jun|
+153|Grasshopper Club Zurich|squad|20|DF|SEN|El Bachir Ngom|
+153|Grasshopper Club Zurich|squad|21|MF|SUI|Leart Kabashi|
+153|Grasshopper Club Zurich|squad|22|DF|ITA|Pantaleo Creti|
+153|Grasshopper Club Zurich|squad|27|MF|GER|Sven Köhler|
+153|Grasshopper Club Zurich|squad|28|DF|SUI|Simone Stroscio|
+153|Grasshopper Club Zurich|squad|30|DF|KOS|Ismajl Beka|
+153|Grasshopper Club Zurich|squad|31|MF|AUT|Maximilian Ullmann|
+153|Grasshopper Club Zurich|squad|34|DF|SUI|Allan Arigoni|
+153|Grasshopper Club Zurich|squad|50|GK|KOS|Laurent Seji|
+153|Grasshopper Club Zurich|squad|51|DF|SUI|Loris Giandomenico|
+153|Grasshopper Club Zurich|squad|52|MF|SUI|Samuel Marques|
+153|Grasshopper Club Zurich|squad|54|MF|SUI|Samuel Krasniqi|
+153|Grasshopper Club Zurich|squad|58|DF|GER|Yannick Bettkober|
+153|Grasshopper Club Zurich|squad|71|GK|SUI|Justin Hammel|
+153|Grasshopper Club Zurich|squad|73|DF|ITA|Dorian Paloschi|
+153|Grasshopper Club Zurich|loaned_out|27|FW|ARG|Tomás Verón Lupi|Nacional (until 31 December 2026)
+153|Grasshopper Club Zurich|loaned_out||DF|KOS|Florian Hoxha|Étoile Carouge (until 30 June 2026)
+153|Grasshopper Club Zurich|loaned_out||DF|SUI|Joachim Williamson|Inter Milan U20 (until 30 June 2026)
+153|Grasshopper Club Zurich|loaned_out||FW|GAM|Alieu Conateh|Amstetten (until 30 June 2026)
+153|Grasshopper Club Zurich|loaned_out||FW|URU|Anderson Rodríguez|Wacker Innsbruck (until 31 December 2026)
+154|Dundee FC|squad|1|GK|CAN|Owen Goodman|on loan from Crystal Palace
+154|Dundee FC|squad|2|DF|ENG|Brad Halliday|
+154|Dundee FC|squad|3|DF|ENG|Idris Odutayo|
+154|Dundee FC|squad|4|DF|WAL|Ryan Astley|
+154|Dundee FC|squad|5|DF|WAL|Owen Bevan|
+154|Dundee FC|squad|6|DF|USA|Matai Akinmboni|on loan from Bournemouth
+154|Dundee FC|squad|7|MF|ENG|Drey Wright|
+154|Dundee FC|squad|8|MF|ENG|Ryan Finnigan|
+154|Dundee FC|squad|9|FW|SCO|Bobby Wales|on loan from Swansea City
+154|Dundee FC|squad|10|MF|SCO|Finlay Robertson|
+154|Dundee FC|squad|11|FW|ENG|Ashley Hay|
+154|Dundee FC|squad|12|DF|ENG|Imari Samuels|
+154|Dundee FC|squad|13|GK|IRL|Kieran O'Hara|
+154|Dundee FC|squad|14|MF|SCO|Alan Forrest|
+154|Dundee FC|squad|15|FW|SCO|Simon Murray|captain
+154|Dundee FC|squad|17|MF|SLO|Žan Bešir|
+154|Dundee FC|squad|18|MF|SCO|Charlie Reilly|
+154|Dundee FC|squad|19|FW|ENG|Joe Westley|
+154|Dundee FC|squad|21|FW|SUI|Bradley Fink|on loan from Wycombe Wanderers
+154|Dundee FC|squad|26|DF|WAL|Joe Wright|
+154|Dundee FC|squad|27|FW|SCO|Joe Bevan|
+154|Dundee FC|squad|28|MF|WAL|Callum Jones|
+154|Dundee FC|squad|30|GK|SCO|Harrison Sharp|
+154|Dundee FC|squad|48|MF|SCO|Ethan Hamilton|
+154|Dundee FC|squad|77|MF|ENG|Alfie Harrison|
+154|Dundee FC|loaned_out|49|FW|SCO|Luca Perrie|Forfar Athletic (co-operation loan)
+154|Dundee FC|loaned_out|52|DF|SCO|Charley Oosenbrugh|Montrose (co-operation loan)
+154|Dundee FC|loaned_out|58|MF|SCO|Ethan Crombie|Forfar Athletic (co-operation loan)
+154|Dundee FC|loaned_out||DF|NIR|Aaron Donnelly|Dunfermline Athletic
+156|Football Club Lausanne-Sport|squad|1|GK|SUI|Thomas Castella|vice-captain
+156|Football Club Lausanne-Sport|squad|2|DF|FRA|Brandon Soppy|
+156|Football Club Lausanne-Sport|squad|5|DF|MAD|Joël Andy Mandaka|
+156|Football Club Lausanne-Sport|squad|6|DF|SWE|Theo Bergvall|
+156|Football Club Lausanne-Sport|squad|7|FW|KOS|Alban Ajdini|
+156|Football Club Lausanne-Sport|squad|8|MF|SWE|Jamie Roche|
+156|Football Club Lausanne-Sport|squad|9|FW|CAN|Theo Bair|on loan from Auxerre
+156|Football Club Lausanne-Sport|squad|10|MF|SUI|Olivier Custodio|captain
+156|Football Club Lausanne-Sport|squad|11|FW|ENG|Nathan Butler-Oyedeji|
+156|Football Club Lausanne-Sport|squad|14|DF|CGO|Kévin Mouanga|
+156|Football Club Lausanne-Sport|squad|16|MF|SUI|Nicky Beloko|
+156|Football Club Lausanne-Sport|squad|17|MF|CIV|Seydou Traoré|
+156|Football Club Lausanne-Sport|squad|18|DF|CGO|Morgan Poaty|
+156|Football Club Lausanne-Sport|squad|19|MF|SUI|Ethan Bruchez|
+156|Football Club Lausanne-Sport|squad|20|DF|COM|Hamza Abdallah|
+156|Football Club Lausanne-Sport|squad|22|FW|FRA|Enzo Kana-Biyik|on loan from Manchester United
+156|Football Club Lausanne-Sport|squad|25|GK|CRO|Karlo Letica|
+156|Football Club Lausanne-Sport|squad|27|MF|MTN|Beyatt Lekweiry|
+156|Football Club Lausanne-Sport|squad|38|MF|GEO|Gabriel Sigua|on loan from Basel
+156|Football Club Lausanne-Sport|squad|47|MF|SEN|Souleymane N'Diaye|
+156|Football Club Lausanne-Sport|squad|54|DF|FIN|Rodolfo Lippo|
+156|Football Club Lausanne-Sport|squad|70|MF|MLI|Gaoussou Diakité|on loan from Red Bull Salzburg
+156|Football Club Lausanne-Sport|squad|71|DF|SUI|Karim Sow|
+156|Football Club Lausanne-Sport|squad|78|FW|ESP|Omar Janneh|
+156|Football Club Lausanne-Sport|squad|80|MF|MLI|Sékou Koné|on loan from Manchester United U21
+156|Football Club Lausanne-Sport|squad|91|MF|FRA|Florent Mollet|
+156|Football Club Lausanne-Sport|squad|93|DF|CIV|Sekou Fofana|
+156|Football Club Lausanne-Sport|loaned_out||GK|ALG|Melvin Mastil|Nyon (until 30 June 2026)
+156|Football Club Lausanne-Sport|loaned_out||GK|SUI|Tim Hottiger|Neuchâtel Xamax (until 30 June 2026)
+156|Football Club Lausanne-Sport|loaned_out|50|DF|SUI|Lorenzo Bittarelli|Yverdon-Sport (until 30 June 2026)
+156|Football Club Lausanne-Sport|loaned_out||MF|SUI|Mayka Okuka|Nyon (until 30 June 2026)
+156|Football Club Lausanne-Sport|loaned_out||FW|USA|Konrad de la Fuente|Ceuta (until 30 June 2026)
+167|Aarhus GF|squad|1|GK|DEN|Jesper Hansen|
+167|Aarhus GF|squad|3|DF|ISL|Daníel Leó Grétarsson|
+167|Aarhus GF|squad|4|MF|NOR|Magnus Knudsen|
+167|Aarhus GF|squad|5|DF|DEN|Frederik Tingager|
+167|Aarhus GF|squad|6|MF|DEN|Nicolai Poulsen|
+167|Aarhus GF|squad|7|MF|NOR|Markus Solbakken|
+167|Aarhus GF|squad|8|FW|DEN|Sebastian Jørgensen|
+167|Aarhus GF|squad|10|MF|NOR|Kristian Arnstad|captain
+167|Aarhus GF|squad|11|MF|RSA|Gift Links|
+167|Aarhus GF|squad|13|FW|GER|Janni Serra|
+167|Aarhus GF|squad|14|DF|DEN|Tobias Mølgaard|
+167|Aarhus GF|squad|16|MF|DEN|Jens Jønsson|
+167|Aarhus GF|squad|17|MF|IRQ|Kevin Yakob|
+167|Aarhus GF|squad|18|MF|NZL|Callum McCowatt|
+167|Aarhus GF|squad|19|DF|SWE|Eric Kahl|
+167|Aarhus GF|squad|20|MF|ISL|Tómas Kristjánsson|
+167|Aarhus GF|squad|21|GK|NOR|Mads Hedenstad Christiansen|
+167|Aarhus GF|squad|22|MF|DEN|Oskar Haugstrup|
+167|Aarhus GF|squad|23|MF|ISL|Mikael Anderson|
+167|Aarhus GF|squad|25|DF|NOR|Colin Rösler|
+167|Aarhus GF|squad|26|DF|DEN|Jacob Andersen|
+167|Aarhus GF|squad|27|FW|DEN|Stefen Tchamche|
+167|Aarhus GF|squad|28|FW|UGA|James Bogere|
+167|Aarhus GF|squad|29|MF|DEN|Rasmus Carstensen|
+167|Aarhus GF|squad|31|FW|DEN|Tobias Bech|
+167|Aarhus GF|squad|33|DF|DEN|Luka Callø|
+167|Aarhus GF|squad|39|FW|DEN|Frederik Emmery|
+167|Aarhus GF|squad|44|DF|MLI|Mouhammade Camara|
+167|Aarhus GF|loaned_out|15|FW|SEN|Youssouph Badji|Panetolikos (until 30 June 2027)
+167|Aarhus GF|loaned_out||FW|GHA|Richmond Gyamfi|Egersund (until 30 June 2027)
+177|FC Midtjylland|squad|1|GK|ISL|Elías Ólafsson|
+177|FC Midtjylland|squad|3|DF|DEN|Magnus Jensen|
+177|FC Midtjylland|squad|4|DF|SEN|Ousmane Diao|
+177|FC Midtjylland|squad|5|DF|DEN|Rasmus Kristensen|captain
+177|FC Midtjylland|squad|6|DF|CRO|Martin Erlić|
+177|FC Midtjylland|squad|8|MF|DEN|Philip Billing|
+177|FC Midtjylland|squad|9|FW|DEN|Mileta Rajović|on loan from Legia Warsaw
+177|FC Midtjylland|squad|10|FW|KOR|Cho Gue-sung|
+177|FC Midtjylland|squad|15|DF|CIV|Djé Beni|
+177|FC Midtjylland|squad|17|FW|DEN|Mikael Uhre|
+177|FC Midtjylland|squad|18|FW|NGA|Stanley Iheanacho|
+177|FC Midtjylland|squad|19|MF|COL|Pedro Bravo|
+177|FC Midtjylland|squad|20|MF|KOR|Hong Hyun-seok|on loan from Mainz 05
+177|FC Midtjylland|squad|21|MF|ECU|Denil Castillo|
+177|FC Midtjylland|squad|22|DF|DEN|Mads Bech Sørensen|
+177|FC Midtjylland|squad|25|GK|NED|Nordin Bakker|
+177|FC Midtjylland|squad|27|MF|DEN|Sofus Johannesen|
+177|FC Midtjylland|squad|29|MF|GER|Kjell Wätjen|
+177|FC Midtjylland|squad|30|GK|ENG|Ovie Ejeheri|
+177|FC Midtjylland|squad|33|MF|GNB|Alamara Djabi|
+177|FC Midtjylland|squad|34|DF|SEN|Abdou Aziz Ndiaye|
+177|FC Midtjylland|squad|38|FW|DEN|Julius Emefile|
+177|FC Midtjylland|squad|41|FW|DEN|Mikel Gogorza|
+177|FC Midtjylland|squad|55|DF|DEN|Victor Bak|
+177|FC Midtjylland|squad|60|GK|NGA|Mark Ugboh|
+177|FC Midtjylland|squad|74|FW|BRA|Júnior Brumado|
+177|FC Midtjylland|squad|90|FW|NGA|Friday Etim|
+177|FC Midtjylland|squad|98|FW|VEN|David Martínez|
+177|FC Midtjylland|loaned_out|11|FW|CHI|Darío Osorio|Crystal Palace
+177|FC Midtjylland|loaned_out|14|FW|ZAM|Edward Chilufya|Hapoel Jerusalem
+177|FC Midtjylland|loaned_out|24|MF|DEN|Jonathan Lindekilde|Fredericia
+177|FC Midtjylland|loaned_out|31|GK|SWE|Liam Selin|Värnamo
+177|FC Midtjylland|loaned_out|35|DF|SWE|Bilal Konteh|Vendsyssel
+177|FC Midtjylland|loaned_out|80|MF|POR|Dani Silva|Widzew Łódź
+177|FC Midtjylland|loaned_out||DF|DEN|Albert Lodberg|Hillerød
+177|FC Midtjylland|loaned_out||MF|DEN|Frederik Bunten|Fredericia
+177|FC Midtjylland|loaned_out||DF|DEN|Mathis Konradsen|Nykøbing
+177|FC Midtjylland|loaned_out||MF|CIV|Yacouba Ouattara|Kolding
+177|FC Midtjylland|loaned_out||MF|SEN|Papa Thome|Kolding IF
+177|FC Midtjylland|loaned_out||FW|CIV|Deme Jr.|Mafra
+178|Hibernian FC|squad|1|GK|AUT|Raphael Sallinger|
+178|Hibernian FC|squad|3|DF|ENG|Adam Mayor|
+178|Hibernian FC|squad|4|DF|SCO|Grant Hanley|
+178|Hibernian FC|squad|5|DF|SRB|Marko Ivezić|
+178|Hibernian FC|squad|6|DF|SCO|Jason Kerr|
+178|Hibernian FC|squad|7|FW|IRL|Owen Elding|
+178|Hibernian FC|squad|8|MF|SCO|Josh Mulligan|
+178|Hibernian FC|squad|9|FW|ENG|Nathan Lowe|on loan from Stoke City
+178|Hibernian FC|squad|10|FW|AUS|Martin Boyle|vice-captain
+178|Hibernian FC|squad|11|MF|ENG|Joe Newell|captain
+178|Hibernian FC|squad|12|DF|WAL|Alex Williams|on loan from West Bromwich Albion
+178|Hibernian FC|squad|13|GK|ENG|Jordan Smith|
+178|Hibernian FC|squad|14|MF|ZAM|Miguel Chaiwa|
+178|Hibernian FC|squad|15|DF|AUS|Jack Iredale|
+178|Hibernian FC|squad|17|MF|IRL|Jamie McGrath|
+178|Hibernian FC|squad|18|FW|TOG|Thibault Klidjé|
+178|Hibernian FC|squad|19|MF|SCO|Nicky Cadden|
+178|Hibernian FC|squad|21|DF|UGA|Jordan Obita|
+178|Hibernian FC|squad|22|FW|AUS|Ante Šuto|
+178|Hibernian FC|squad|23|MF|ENG|Callum Wright|
+178|Hibernian FC|squad|24|MF|IRL|Jacob Devaney|on loan from Manchester United
+178|Hibernian FC|squad|25|DF|GER|Felix Passlack|
+178|Hibernian FC|squad|27|DF|ENG|Kanayo Megwa|
+178|Hibernian FC|squad|33|DF|COD|Rocky Bushiri|
+178|Hibernian FC|squad|35|GK|SCO|Freddie Owens|
+178|Hibernian FC|squad|47|MF|SLE|Azeem Abdulai|
+178|Hibernian FC|loaned_out|20|MF|SCO|Rudi Molotnikov|Arbroath
+178|Hibernian FC|loaned_out|30|MF|SCO|Jacob MacIntyre|Arbroath
+178|Hibernian FC|loaned_out|31|GK|SCO|Murray Johnson|Shelbourne
+178|Hibernian FC|loaned_out|32|MF|SCO|Josh Campbell|St Johnstone
+178|Hibernian FC|loaned_out|37|DF|SCO|Joseph McGrath|Alloa Athletic
+178|Hibernian FC|loaned_out|39|MF|SCO|Zach Bruce|Stranraer (co-operation loan)
+178|Hibernian FC|loaned_out|48|GK|SCO|Ryan Mallon|Bonnyrigg Rose
+178|Hibernian FC|loaned_out|49|DF|SCO|Lewis Gillie|Stranraer (co-operation loan)
+180|FC Thun|squad|4|DF|ESP|Genís Montolio|
+180|FC Thun|squad|6|MF|SUI|Leonardo Bertone|
+180|FC Thun|squad|9|FW|AUT|Furkan Dursun|
+180|FC Thun|squad|10|MF|URU|Mathías Tomás|
+180|FC Thun|squad|11|FW|ENG|Layton Stewart|
+180|FC Thun|squad|14|MF|EST|Mattias Käit|
+180|FC Thun|squad|16|MF|SUI|Justin Roth|
+180|FC Thun|squad|17|DF|SUI|Ashvin Balaruban|
+180|FC Thun|squad|18|FW|CGO|Christopher Ibayi|
+180|FC Thun|squad|19|DF|SUI|Jan Bamert|
+180|FC Thun|squad|21|MF|SUI|Dorian Derbaci|
+180|FC Thun|squad|23|DF|SUI|Marco Bürki|captain
+180|FC Thun|squad|24|GK|SUI|Niklas Steffen|
+180|FC Thun|squad|25|GK|SUI|Tim Spycher|
+180|FC Thun|squad|27|DF|SUI|Michael Heule|
+180|FC Thun|squad|30|MF|SUI|Nico Maier|
+180|FC Thun|squad|33|FW|SUI|Marc Gutbub|
+180|FC Thun|squad|37|DF|SUI|Lucien Dähler|
+180|FC Thun|squad|47|MF|SUI|Fabio Fehr|
+180|FC Thun|squad|52|MF|SUI|Adam Ilic|
+180|FC Thun|squad|64|GK|SUI|Dario Wälti|
+180|FC Thun|squad|70|MF|CHI|Nils Reichmuth|
+180|FC Thun|squad|78|MF|KOS|Valmir Matoshi|
+180|FC Thun|squad|96|FW|MTQ|Brighton Labeau|
+180|FC Thun|squad||DF|SUI|Nicolas Bürgy|
+185|Motherwell FC|squad|1|GK|NZL|Alex Paulsen|on loan from Bournemouth
+185|Motherwell FC|squad|2|DF|SCO|Stephen O'Donnell|
+185|Motherwell FC|squad|3|DF|AUS|Jake Girdwood-Reich|
+185|Motherwell FC|squad|4|DF|CAN|Jamie Knight-Lebel|on loan from Bristol City
+185|Motherwell FC|squad|5|DF|AUT|Martin Moormann|
+185|Motherwell FC|squad|6|DF|SCO|Jordan McGhee|
+185|Motherwell FC|squad|7|MF|WAL|Tom Sparrow|
+185|Motherwell FC|squad|8|MF|AUT|Lukas Fadinger|
+185|Motherwell FC|squad|11|MF|SCO|Alex Lowry|on loan from Wycombe Wanderers
+185|Motherwell FC|squad|12|MF|AUS|Oscar Priestman|
+185|Motherwell FC|squad|13|FW|SWE|Jardell Kanga|
+185|Motherwell FC|squad|14|FW|SCO|Callum Hendry|
+185|Motherwell FC|squad|15|FW|NOR|Eythor Bjørgolfsson|
+185|Motherwell FC|squad|16|DF|SCO|Paul McGinn|captain
+185|Motherwell FC|squad|17|FW|GRN|Regan Charles-Cook|
+185|Motherwell FC|squad|18|FW|ZIM|Tawanda Maswanhise|
+185|Motherwell FC|squad|19|FW|NGA|Ibrahim Said|
+185|Motherwell FC|squad|20|DF|ENG|Dylan Williams|
+185|Motherwell FC|squad|21|GK|SCO|Matthew Connelly|
+185|Motherwell FC|squad|22|DF|AUS|John Koutroumbis|
+185|Motherwell FC|squad|23|DF|SCO|Ewan Wilson|
+185|Motherwell FC|squad|29|MF|SCO|Zander McAllister|
+185|Motherwell FC|squad|45|DF|ENG|Emmanuel Longelo|
+185|Motherwell FC|squad|47|FW|ENG|Seb Palmer-Houlden|
+185|Motherwell FC|squad|63|MF|WAL|Dylan Levitt|
+185|Motherwell FC|squad|71|MF|IRL|Joe Hodge|
+185|Motherwell FC|squad|77|FW|SUI|Willy Vogt|
+185|Motherwell FC|loaned_out|24|FW|SCO|Luca Ross|Alloa Athletic
+185|Motherwell FC|loaned_out|25|MF|SCO|Olly Whyte|Ayr United
+185|Motherwell FC|loaned_out|36|FW|SCO|Lucas Weir|Cowdenbeath (co-operation loan)
+192|Viborg FF|squad|1|GK|DEN|Lucas Lund|
+192|Viborg FF|squad|2|DF|TUN|Mohamed Iyadh Riahi|
+192|Viborg FF|squad|3|DF|ISL|Valgeir Lunddal Friðriksson|
+192|Viborg FF|squad|4|DF|DEN|Lukas Kirkegaard|
+192|Viborg FF|squad|5|DF|SLO|Žan Zaletel|
+192|Viborg FF|squad|6|MF|DEN|Mads Søndergaard|
+192|Viborg FF|squad|7|FW|FRA|Yonis Njoh|
+192|Viborg FF|squad|8|MF|DEN|Asker Beck|
+192|Viborg FF|squad|9|FW|NED|Tim Freriks|
+192|Viborg FF|squad|10|FW|DEN|Sami Jalal|
+192|Viborg FF|squad|11|FW|DEN|Charly Nouck|
+192|Viborg FF|squad|13|MF|DEN|Jeppe Grønning|captain
+192|Viborg FF|squad|18|MF|NOR|Ruben Alte|on loan from Viking
+192|Viborg FF|squad|19|FW|GEQ|Dorian Jr.|
+192|Viborg FF|squad|20|GK|DEN|Kasper Kiilerich|
+192|Viborg FF|squad|23|DF|DEN|Oliver Bundgaard|
+192|Viborg FF|squad|24|DF|KEN|Daniel Anyembe|
+192|Viborg FF|squad|25|FW|BRA|Giulio Gabriel da Silva|
+192|Viborg FF|squad|26|DF|DEN|Hjalte Bidstrup|
+192|Viborg FF|squad|28|MF|CIV|Lasso Coulibaly|on loan from Auxerre
+192|Viborg FF|squad|29|FW|TTO|Roald Mitchell|on loan from New York Red Bulls
+192|Viborg FF|squad|33|MF|DEN|Frederik Damkjer|
+192|Viborg FF|squad|34|MF|DEN|Philip Keller|
+192|Viborg FF|squad|36|FW|DEN|Adam Kleis-Kristoffersen|
+192|Viborg FF|squad|38|DF|DEN|Emil Monrad|
+192|Viborg FF|loaned_out|4|MF|NED|Mees Hoedemakers|Almere City FC (until 16 June 2027)
+192|Viborg FF|loaned_out|17|FW|SOM|Osman Addo|Helsingborgs (until 1 January 2027)
+192|Viborg FF|loaned_out|21|MF|FRA|Bilal Brahimi|Pau FC (until 16 January 2027)
+198|Silkeborg IF|squad|1|GK|DEN|Aske Andrésen|
+198|Silkeborg IF|squad|2|DF|DEN|Andreas Poulsen|
+198|Silkeborg IF|squad|3|DF|NOR|Robin Østrøm|
+198|Silkeborg IF|squad|4|DF|POR|Pedro Ganchas|
+198|Silkeborg IF|squad|6|DF|FRA|Maël de Gevigney|
+198|Silkeborg IF|squad|7|MF|DEN|Villads Westh|
+198|Silkeborg IF|squad|8|MF|DEN|Kristian Kirkegaard|
+198|Silkeborg IF|squad|11|FW|DEN|Oliver Ross|
+198|Silkeborg IF|squad|14|MF|DEN|Sofus Berger|
+198|Silkeborg IF|squad|15|DF|SWE|Melker Jonsson|
+198|Silkeborg IF|squad|16|GK|DEN|Bastian Holm|
+198|Silkeborg IF|squad|19|DF|DEN|Jens Martin Gammelby|
+198|Silkeborg IF|squad|20|MF|DEN|Mads Larsen|
+198|Silkeborg IF|squad|21|FW|DEN|Lucas Riisgaard|
+198|Silkeborg IF|squad|22|MF|SWE|Rami Al Hajj|
+198|Silkeborg IF|squad|23|FW|DEN|Malthe Hansen|
+198|Silkeborg IF|squad|24|DF|DEN|Alexander Priesborg Madsen|
+198|Silkeborg IF|squad|25|DF|SWE|Pontus Rödin|
+198|Silkeborg IF|squad|26|MF|DEN|Mikkel Øxenberg|
+198|Silkeborg IF|squad|27|MF|DEN|William Kirk|
+198|Silkeborg IF|squad|29|DF|DEN|William Møller|
+198|Silkeborg IF|squad|30|GK|DEN|Thomas Mikkelsen|
+198|Silkeborg IF|squad|33|MF|DEN|Mads Freundlich|
+198|Silkeborg IF|squad|36|MF|DEN|Julius Lorents|
+198|Silkeborg IF|squad|40|DF|DEN|Alexander Busch|
+198|Silkeborg IF|loaned_out|10|FW|DEN|Younes Bakiz|Raja CA (until 30 June 2027)
+198|Silkeborg IF|loaned_out|18|DF|DEN|Leonel Montano|HJK (until 31 December 2026)
+198|Silkeborg IF|loaned_out|35|FW|DEN|Sebastian Biller|Hødd (until 31 December 2026)
+200|Falkirk FC|squad|1|GK|SCO|Nicky Hogarth|
+200|Falkirk FC|squad|2|DF|SCO|Keelan Adams|
+200|Falkirk FC|squad|3|DF|SCO|Leon McCann|
+200|Falkirk FC|squad|4|DF|SCO|Jack McMillan|
+200|Falkirk FC|squad|5|DF|SCO|Liam Henderson|
+200|Falkirk FC|squad|6|DF|SCO|Coll Donaldson|captain
+200|Falkirk FC|squad|7|FW|ENG|Ben Parkinson|
+200|Falkirk FC|squad|8|MF|SCO|Brad Spencer|
+200|Falkirk FC|squad|9|FW|SCO|Ross MacIver|
+200|Falkirk FC|squad|10|MF|SCO|Craig Sibbald|
+200|Falkirk FC|squad|11|FW|NIR|Paul McGovern|
+200|Falkirk FC|squad|12|FW|SCO|Ethan Laidlaw|
+200|Falkirk FC|squad|14|MF|SCO|Finn Yeats|
+200|Falkirk FC|squad|15|DF|SCO|Lewis Neilson|
+200|Falkirk FC|squad|16|MF|ENG|Finley Barbrook|on loan from Ipswich Town
+200|Falkirk FC|squad|17|DF|ENG|Scott Tanser|
+200|Falkirk FC|squad|18|FW|IRL|Joe Gardner|
+200|Falkirk FC|squad|19|GK|SCO|Scott Bain|
+200|Falkirk FC|squad|20|MF|SCO|Connor Allan|
+200|Falkirk FC|squad|21|DF|LVA|Deniss Meļņiks|
+200|Falkirk FC|squad|22|DF|AUS|Ryan Strain|
+200|Falkirk FC|squad|23|MF|SCO|Ethan Ross|
+200|Falkirk FC|squad|24|FW|USA|Jacob Murrell|
+200|Falkirk FC|squad|25|DF|SCO|Tom Lang|
+200|Falkirk FC|squad|26|MF|SCO|Aidan Nesbitt|
+200|Falkirk FC|squad|27|MF|ENG|Conor McLeod|on loan from Wolves
+200|Falkirk FC|squad|28|MF|ENG|Ben Krauhaus|on loan from Brentford
+200|Falkirk FC|squad|36|DF|SCO|Stephen Nixon|
+200|Falkirk FC|squad|38|MF|SCO|Leo Harris|
+200|Falkirk FC|squad|47|FW|NIR|Aodhan Doherty|on loan from Blackburn Rovers
+200|Falkirk FC|squad|99|FW|USA|CJ Fodrey|on loan from Austin FC
+200|Falkirk FC|loaned_out|31|GK|SCO|Jay Hogarth|Clyde
+200|Falkirk FC|loaned_out|32|MF|SCO|Kalvin Bennett|East Stirlingshire (co-operation loan)
+200|Falkirk FC|loaned_out|33|GK|SCO|Joe Hastings|East Stirlingshire (co-operation loan)
+200|Falkirk FC|loaned_out|34|FW|SCO|Kai Brown|East Stirlingshire (co-operation loan)
+200|Falkirk FC|loaned_out|35|FW|SCO|Thomas Neil|East Stirlingshire (co-operation loan)
+213|Dundee United FC|squad|1|GK|ENG|Jack Walton|
+213|Dundee United FC|squad|3|DF|NED|Bert Esselink|
+213|Dundee United FC|squad|4|DF|MDA|Iurie Iovu|
+213|Dundee United FC|squad|6|DF|SCO|Ross Graham|captain
+213|Dundee United FC|squad|7|FW|ALG|Mehdi Merghem|
+213|Dundee United FC|squad|8|MF|GBS|Panutche Camará|
+213|Dundee United FC|squad|9|FW|AUS|Zac Sapsford|
+213|Dundee United FC|squad|10|MF|SCO|Dylan Tait|vice-captain
+213|Dundee United FC|squad|11|DF|IRL|Will Ferry|
+213|Dundee United FC|squad|12|MF|GHA|Emmanuel Agyei|
+213|Dundee United FC|squad|14|MF|IRQ|Zidane Iqbal|
+213|Dundee United FC|squad|15|FW|AUS|Lachlan Rose|
+213|Dundee United FC|squad|16|MF|SCO|Lyall Cameron|on loan from Rangers
+213|Dundee United FC|squad|18|DF|NIR|Michael Forbes|
+213|Dundee United FC|squad|19|DF|ROU|Kevin Ciubotaru|
+213|Dundee United FC|squad|20|DF|IRL|Neil Farrugia|
+213|Dundee United FC|squad|21|FW|NZL|Jesse Randall|
+213|Dundee United FC|squad|22|DF|IRQ|Dario Naamo|
+213|Dundee United FC|squad|23|DF|AUS|Joshua Rawlins|
+213|Dundee United FC|squad|26|MF|CIV|Abdoulaye Yoro|on loan from İstanbul Başakşehir
+213|Dundee United FC|squad|29|MF|SCO|Miller Thomson|
+213|Dundee United FC|squad|30|GK|GHA|Jordan Amissah|
+213|Dundee United FC|squad|45|MF|SCO|Cohen Leiper|
+213|Dundee United FC|squad|60|FW|ITA|Lorenzo Sassetti|
+213|Dundee United FC|squad|77|FW|AUS|Daniel Bennie|on loan from Queens Park Rangers
+213|Dundee United FC|squad|93|FW|TOG|Idjessi Metsoko|on loan from Viktoria Plzeň
+213|Dundee United FC|loaned_out|31|GK|SCO|Ruairidh Adams|Airdrieonians
+213|Dundee United FC|loaned_out|34|FW|SCO|Owen Stirton|Ayr United
+213|Dundee United FC|loaned_out|35|DF|ENG|Charlie Dewar|Arbroath
+213|Dundee United FC|loaned_out|36|DF|SCO|Matthew Mudie|The Spartans
+213|Dundee United FC|loaned_out|37|DF|SCO|Samuel Cleall-Harding|Dunfermline Athletic
+213|Dundee United FC|loaned_out|38|MF|SCO|Keir Gilligan|Clyde (co-operation loan)
+213|Dundee United FC|loaned_out|39|MF|SCO|Scott Constable|Arbroath
+213|Dundee United FC|loaned_out|40|MF|SCO|Jack Anderson|Clyde (co-operation loan)
+213|Dundee United FC|loaned_out|48|MF|SCO|Jamie Forrest|Clyde (co-operation loan)
+213|Dundee United FC|loaned_out||MF|DEN|Julius Eskesen|KuPS
+230|WSG Tirol|squad|1|GK|BIH|Salko Hamzić|
+230|WSG Tirol|squad|3|DF|AUT|David Gugganig|
+230|WSG Tirol|squad|5|DF|USA|Drew Murray|
+230|WSG Tirol|squad|6|MF|AUT|Marc Striednig|
+230|WSG Tirol|squad|7|FW|USA|Quincy Butler|
+230|WSG Tirol|squad|8|FW|DEN|Nikolai Baden Frederiksen|
+230|WSG Tirol|squad|10|FW|AUT|Thomas Sabitzer|
+230|WSG Tirol|squad|11|MF|AUT|Murat Satin|
+230|WSG Tirol|squad|13|GK|AUT|Alexander Eckmayr|
+230|WSG Tirol|squad|14|DF|GER|David Kubatta|
+230|WSG Tirol|squad|15|MF|BFA|Mazou Bambara|
+230|WSG Tirol|squad|16|FW|AUT|Lukas Hinterseer|
+230|WSG Tirol|squad|17|FW|ENG|Michael Olakigbe|on loan from Brentford
+230|WSG Tirol|squad|18|MF|AUT|Husein Balić|
+230|WSG Tirol|squad|22|MF|AUT|David Falkner|
+230|WSG Tirol|squad|23|DF|CRO|Marco Boras|
+230|WSG Tirol|squad|27|DF|AUT|David Jaunegg|
+230|WSG Tirol|squad|28|MF|AUT|Moritz Oswald|on loan from Rapid Wien
+230|WSG Tirol|squad|30|MF|AUT|Matthäus Taferner|
+230|WSG Tirol|squad|31|DF|AUT|Michael Neuner|
+230|WSG Tirol|squad|32|MF|AUT|Raphael Gschösser|
+230|WSG Tirol|squad|34|GK|AUT|Felix Libiseller|
+230|WSG Tirol|squad|35|GK|AUT|Julian Margreiter|
+230|WSG Tirol|squad|36|FW|AUT|Thomas Goiginger|
+230|WSG Tirol|squad|37|FW|AUT|Moritz Wels|
+230|WSG Tirol|squad|43|MF|AUT|Nemanja Čelić|
+230|WSG Tirol|loaned_out||DF|AUT|Lukas Schweighofer|Austria Salzburg (until 30 June 2027)
+230|WSG Tirol|loaned_out||MF|AUT|Christian Huetz|Austria Salzburg (until 30 June 2027)
+233|Kilmarnock FC|squad|1|GK|POL|Max Stryjek|
+233|Kilmarnock FC|squad|2|DF|SCO|Jamie Brandon|
+233|Kilmarnock FC|squad|3|DF|SLE|MJ Kamson-Kamara|on loan from Hearts
+233|Kilmarnock FC|squad|4|DF|IRL|Cathal McCarthy|on loan from Hull City
+233|Kilmarnock FC|squad|5|MF|SCO|Mark O'Hara|
+233|Kilmarnock FC|squad|6|DF|SCO|Robbie Deas|
+233|Kilmarnock FC|squad|7|MF|SCO|Rory McKenzie|
+233|Kilmarnock FC|squad|8|MF|SWE|Erik Ring|
+233|Kilmarnock FC|squad|9|FW|ENG|Joe Hugill|
+233|Kilmarnock FC|squad|10|FW|ENG|Tyreece John-Jules|
+233|Kilmarnock FC|squad|11|MF|SCO|Greg Kiltie|captain
+233|Kilmarnock FC|squad|12|GK|ENG|Calum Ferrie|
+233|Kilmarnock FC|squad|14|DF|NZL|George Stanger|
+233|Kilmarnock FC|squad|15|DF|ENG|Johnly Yfeko|
+233|Kilmarnock FC|squad|18|MF|WAL|Tom Lowery|
+233|Kilmarnock FC|squad|19|DF|GER|Jonathan Meier|
+233|Kilmarnock FC|squad|20|MF|MDA|Nicky Cleșcenco|
+233|Kilmarnock FC|squad|21|DF|EST|Michael Schjønning-Larsen|
+233|Kilmarnock FC|squad|23|MF|ENG|Roshaun Mathurin|
+233|Kilmarnock FC|squad|27|FW|WAL|Ieuan Owen|
+233|Kilmarnock FC|squad|29|FW|SUR|Djenairo Daniels|
+233|Kilmarnock FC|squad|36|MF|COD|Aaron Tshibola|
+233|Kilmarnock FC|squad|39|DF|SCO|Euan Bowie|
+233|Kilmarnock FC|squad|49|MF|SCO|Bailey Rice|on loan from Rangers
+233|Kilmarnock FC|loaned_out|17|FW|SCO|Scott Tiffoney|Raith Rovers
+233|Kilmarnock FC|loaned_out|25|DF|CAN|Ethan Schilte-Brown|Glentoran
+233|Kilmarnock FC|loaned_out|26|DF|SCO|Ben Brannan|Queens Park
+233|Kilmarnock FC|loaned_out|32|DF|SCO|Ruari Ellis|Queen of the South (co-operation loan)
+233|Kilmarnock FC|loaned_out|35|MF|SCO|Aaron Davis|Queen of the South (co-operation loan)
+233|Kilmarnock FC|loaned_out|38|MF|SCO|Archie Traynor|Stranraer
+233|Kilmarnock FC|loaned_out|40|GK|SCO|Corey Armour|Auchinleck Talbot
+233|Kilmarnock FC|loaned_out|42|MF|USA|Cole Coughlin|Queen of the South (co-operation loan)
+233|Kilmarnock FC|loaned_out||DF|SCO|Mitchell Spence|Queen of the South (co-operation loan)
+233|Kilmarnock FC|loaned_out||MF|SCO|Noah Simpson|Gala Fairydean Rovers
+236|FC Nordsjaelland|squad|2|DF|DEN|Peter Ankersen|
+236|FC Nordsjaelland|squad|3|DF|DEN|Tobias Salquist|
+236|FC Nordsjaelland|squad|6|MF|DEN|Mark Brink|captain
+236|FC Nordsjaelland|squad|8|MF|DEN|Nicklas Røjkjær|
+236|FC Nordsjaelland|squad|9|FW|NOR|Ola Solbakken|
+236|FC Nordsjaelland|squad|10|MF|GHA|Prince Amoako|
+236|FC Nordsjaelland|squad|11|FW|DEN|Alexander Lind|
+236|FC Nordsjaelland|squad|13|GK|DEN|Andreas Hansen|
+236|FC Nordsjaelland|squad|14|FW|EGY|Ibrahim Adel|on loan from Al Jazira
+236|FC Nordsjaelland|squad|15|DF|GHA|Stephen Acquah|
+236|FC Nordsjaelland|squad|16|GK|DEN|Jakob Busk|
+236|FC Nordsjaelland|squad|17|FW|CIV|Levy Nene|
+236|FC Nordsjaelland|squad|18|MF|DEN|Justin Janssen|
+236|FC Nordsjaelland|squad|20|MF|GHA|Araphat Mohammed|
+236|FC Nordsjaelland|squad|23|DF|NOR|Runar Norheim|
+236|FC Nordsjaelland|squad|25|DF|FIN|Juho Lähteenmäki|
+236|FC Nordsjaelland|squad|27|MF|CIV|Diallo Sanoussi|
+236|FC Nordsjaelland|squad|28|DF|DEN|Markus Walker|
+236|FC Nordsjaelland|squad|29|MF|DEN|Villum Berthelsen|
+236|FC Nordsjaelland|squad|32|DF|DEN|Victor Gustafsen|
+236|FC Nordsjaelland|squad|33|FW|BFA|Souleymane Alio|
+236|FC Nordsjaelland|squad|35|DF|DEN|Villads Rutkjær|
+236|FC Nordsjaelland|squad|36|MF|GHA|Caleb Yirenkyi|
+236|FC Nordsjaelland|squad|37|MF|SEN|Lamine Sadio|
+236|FC Nordsjaelland|squad|39|FW|ISL|Daniel Jóhannesson|
+236|FC Nordsjaelland|squad|40|FW|DEN|Hjalte Boe|
+236|FC Nordsjaelland|squad|45|DF|DEN|Noah Markmann|
+236|FC Nordsjaelland|squad|47|MF|DEN|Malte Heyde|
+236|FC Nordsjaelland|loaned_out|30|DF|GHA|Issaka Seidu|Ljungskile SK (until 30 Nov 2026)
+236|FC Nordsjaelland|loaned_out|31|GK|DEN|Andreas Søndenbroe|Næstved BK (until 30 June 2026)
+236|FC Nordsjaelland|loaned_out|38|GK|DEN|William Lykke|Halmstads BK (until 31 Dec 2026)
+236|FC Nordsjaelland|loaned_out|41|FW|DEN|Villum Dalsgaard|IL Hødd (until 30 June 2026)
+237|FC Lugano|squad|1|GK|KOS|Amir Saipi|
+237|FC Lugano|squad|3|DF|HAI|Hannes Delcroix|
+237|FC Lugano|squad|4|DF|SUI|Damian Kelvin|
+237|FC Lugano|squad|6|DF|GER|Antonios Papadopoulos|
+237|FC Lugano|squad|7|MF|MKD|Ezgjan Alioski|
+237|FC Lugano|squad|8|MF|SUI|Anto Grgić|
+237|FC Lugano|squad|9|FW|GRE|Georgios Koutsias|
+237|FC Lugano|squad|11|FW|SUI|Renato Steffen|
+237|FC Lugano|squad|14|MF|ALG|Ahmed Kendouci|
+237|FC Lugano|squad|16|GK|SUI|David von Ballmoos|
+237|FC Lugano|squad|17|DF|GER|Lars Lukas Mai|
+237|FC Lugano|squad|18|DF|SUI|Joel Bichsel|
+237|FC Lugano|squad|21|MF|FRA|Yanis Cimignani|
+237|FC Lugano|squad|22|MF|COL|Beckham Castro|
+237|FC Lugano|squad|24|MF|SWE|Elias Pihlström|
+237|FC Lugano|squad|25|MF|SUI|Uran Bislimi|
+237|FC Lugano|squad|26|DF|POR|Martim Marques|
+237|FC Lugano|squad|27|MF|SUI|Daniel Dos Santos|
+237|FC Lugano|squad|30|FW|HON|Dereck Moncada|
+237|FC Lugano|squad|44|DF|BRA|Carbone|
+237|FC Lugano|squad|46|DF|ITA|Mattia Zanotti|
+237|FC Lugano|squad|91|FW|GER|Kevin Behrens|
+237|FC Lugano|squad|99|GK|SUI|Diego Mina|
+237|FC Lugano|squad||GK|GER|Felix Gebhardt|
+237|FC Lugano|loaned_out||GK|GRE|Fotis Pseftis|Alemannia Aachen (until 30 June 2026)
+237|FC Lugano|loaned_out||FW|MTQ|Alexandre Parsemain|Caen (until 30 June 2026)
+237|FC Lugano|loaned_out||FW|KOS|Shkelqim Vladi|Aarau (until 30 June 2026)
+246|Sportclub Rheindorf Altach|squad|1|GK|MKD|Dejan Stojanović|
+246|Sportclub Rheindorf Altach|squad|5|DF|AUT|Lukas Gugganig|
+246|Sportclub Rheindorf Altach|squad|6|MF|KOS|Vesel Demaku|
+246|Sportclub Rheindorf Altach|squad|7|FW|AUT|Luca Kronberger|
+246|Sportclub Rheindorf Altach|squad|8|MF|GER|Mike-Steven Bähre|
+246|Sportclub Rheindorf Altach|squad|9|FW|AUT|Marlon Mustapha|on loan from Como
+246|Sportclub Rheindorf Altach|squad|10|FW|MLI|Ousmane Diawara|
+246|Sportclub Rheindorf Altach|squad|11|FW|SRB|Srđan Hrstić|on loan from Häcken
+246|Sportclub Rheindorf Altach|squad|14|MF|AUT|Moritz Oswald|on loan from Rapid Wien
+246|Sportclub Rheindorf Altach|squad|16|DF|SWE|Rassa Rahmani|
+246|Sportclub Rheindorf Altach|squad|17|MF|AUT|Lukas Jäger|captain
+246|Sportclub Rheindorf Altach|squad|18|MF|AUT|Patrick Greil|
+246|Sportclub Rheindorf Altach|squad|19|MF|AUT|Diego Madritsch|
+246|Sportclub Rheindorf Altach|squad|20|MF|AUT|Alexander Gorgon|
+246|Sportclub Rheindorf Altach|squad|21|FW|NGA|Precious Benjamin|on loan from Hoffenheim
+246|Sportclub Rheindorf Altach|squad|22|MF|KOS|Blendi Idrizi|
+246|Sportclub Rheindorf Altach|squad|23|DF|AUT|Benedikt Zech|
+246|Sportclub Rheindorf Altach|squad|24|FW|BFA|Salif Tietietta|
+246|Sportclub Rheindorf Altach|squad|25|DF|AUT|Sandro Ingolitsch|
+246|Sportclub Rheindorf Altach|squad|26|MF|AUT|Erkin Yalcin|
+246|Sportclub Rheindorf Altach|squad|27|DF|AUT|Filip Milojević|
+246|Sportclub Rheindorf Altach|squad|28|MF|FRA|Yann Massombo|
+246|Sportclub Rheindorf Altach|squad|29|DF|BFA|Mohamed Ouédraogo|
+246|Sportclub Rheindorf Altach|squad|31|GK|AUT|Daniel Antosch|
+246|Sportclub Rheindorf Altach|squad|33|GK|AUT|Paul Piffer|
+246|Sportclub Rheindorf Altach|squad|40|FW|ALB|Anteo Fetahu|
+256|Wolfsberger AC|squad|1|GK|AUT|Lukas Gütlbauer|
+256|Wolfsberger AC|squad|2|DF|SRB|Boris Matić|
+256|Wolfsberger AC|squad|6|DF|AUT|Raffael Behounek|
+256|Wolfsberger AC|squad|7|FW|AUT|Luca Hassler|
+256|Wolfsberger AC|squad|8|MF|AUT|Simon Piesinger|
+256|Wolfsberger AC|squad|9|FW|ALB|Giacomo Vrioni|
+256|Wolfsberger AC|squad|10|MF|KOS|Donis Avdijaj|
+256|Wolfsberger AC|squad|11|DF|AUT|Aaron Sky Schwarz|
+256|Wolfsberger AC|squad|12|GK|ISR|Lior Gliklich|
+256|Wolfsberger AC|squad|15|DF|CIV|Cheick Mamadou Diabaté|
+256|Wolfsberger AC|squad|17|MF|AUT|Marco Schabauer|
+256|Wolfsberger AC|squad|18|MF|AUT|Michael Schweiger|
+256|Wolfsberger AC|squad|19|MF|GEO|Otar Mamageishvili|on loan from Famalicão
+256|Wolfsberger AC|squad|20|MF|AUT|Thorsten Schriebl|
+256|Wolfsberger AC|squad|21|GK|AUT|David Skubl|
+256|Wolfsberger AC|squad|22|MF|SRB|Veljko Vukojević|
+256|Wolfsberger AC|squad|23|FW|AUT|Phillip Verhounig|
+256|Wolfsberger AC|squad|30|MF|AUT|Marco Sulzner|
+256|Wolfsberger AC|squad|31|DF|AUT|Fabian Wohlmuth|
+256|Wolfsberger AC|squad|32|FW|AUT|Markus Pink|
+256|Wolfsberger AC|squad|34|MF|GHA|Emmanuel Agyemang|
+256|Wolfsberger AC|squad|35|DF|AUT|Matteo Kitz|
+256|Wolfsberger AC|squad|36|MF|AUT|Dominik Fitz|on loan from Minnesota United
+256|Wolfsberger AC|squad|37|DF|AUT|Nicolas Wimmer|
+256|Wolfsberger AC|squad|49|FW|CIV|Sankara Karamoko|
+256|Wolfsberger AC|squad|70|DF|SRB|David Đurić|
+256|Wolfsberger AC|squad|77|DF|AUT|Rene Renner|
+256|Wolfsberger AC|loaned_out||FW|AUT|Erik Kojzek|Partizan (until 30 June 2027)
+256|Wolfsberger AC|loaned_out||FW|KEN|Ryan Ogam|RFC Liège (until 30 June 2027)
+257|TSV Hartberg|squad|1|GK|AUT|Ammar Helac|
+257|TSV Hartberg|squad|2|DF|AUT|Luca Pazourek|on loan from Austria Wien
+257|TSV Hartberg|squad|3|DF|AUT|Dominic Vincze|on loan from Rapid Wien
+257|TSV Hartberg|squad|4|MF|SVN|Benjamin Markuš|
+257|TSV Hartberg|squad|5|MF|MLI|Youba Diarra|
+257|TSV Hartberg|squad|6|DF|CIV|Habib Coulibaly|
+257|TSV Hartberg|squad|7|FW|AUT|Elias Havel|on loan from LASK
+257|TSV Hartberg|squad|8|MF|AUT|Julian Halwachs|
+257|TSV Hartberg|squad|11|FW|AUT|Maximilian Fillafer|
+257|TSV Hartberg|squad|14|DF|AUT|Paul Komposch|
+257|TSV Hartberg|squad|16|DF|AUT|Julian Gölles|
+257|TSV Hartberg|squad|17|MF|AUT|Jonas Karner|
+257|TSV Hartberg|squad|18|DF|AUT|Fabian Wilfinger|
+257|TSV Hartberg|squad|19|DF|AUT|Lukas Spendlhofer|
+257|TSV Hartberg|squad|20|MF|AUT|Paul Bratschko|
+257|TSV Hartberg|squad|21|GK|AUT|Luka Marić|
+257|TSV Hartberg|squad|22|FW|AUT|Marco Hoffmann|
+257|TSV Hartberg|squad|23|MF|AUT|Tobias Kainz|
+257|TSV Hartberg|squad|25|DF|AUT|Emmanuel Ojukwu|
+257|TSV Hartberg|squad|27|DF|AUT|Konstantin Schopp|on loan from 1. FSV Mainz 05
+257|TSV Hartberg|squad|28|DF|AUT|Jürgen Heil|captain
+257|TSV Hartberg|squad|30|FW|AUT|Lukas Fridrikas|
+257|TSV Hartberg|squad|33|DF|GER|Maximilian Hennig|on loan from Bayern Munich II
+257|TSV Hartberg|squad|40|GK|GER|Tom Ritzy Hülsmann|
+257|TSV Hartberg|squad|44|GK|AUT|Harald Postl|
+257|TSV Hartberg|squad|61|FW|GHA|Musibau Aziz|
+257|TSV Hartberg|squad|77|FW|AUT|David Korherr|
+257|TSV Hartberg|squad|79|FW|AUS|Jed Drew|
+257|TSV Hartberg|squad|95|DF|AUT|Damjan Kovacevic|
+257|TSV Hartberg|loaned_out|9|FW|CRO|Patrik Mijić|AE Kifisia (until 30 June 2026)
+258|Randers FC|squad|1|GK|AUS|Paul Izzo|
+258|Randers FC|squad|2|DF|BEL|Lucas Lissens|
+258|Randers FC|squad|3|DF|DEN|Daniel Høegh|
+258|Randers FC|squad|4|DF|NED|Wessel Dammers|captain
+258|Randers FC|squad|5|DF|AUS|Oliver Jones|
+258|Randers FC|squad|6|MF|SWE|John Björkengren|
+258|Randers FC|squad|7|MF|DEN|Mike Themsen|
+258|Randers FC|squad|8|MF|DEN|Laurits Pedersen|
+258|Randers FC|squad|9|FW|IRQ|Amin Al-Hamawi|
+258|Randers FC|squad|10|FW|MAD|Warren Caddy|
+258|Randers FC|squad|11|MF|FRA|Elies Mahmoud|
+258|Randers FC|squad|14|MF|DEN|Frederik Lauenborg|
+258|Randers FC|squad|15|DF|NOR|Martin Sjølstad|
+258|Randers FC|squad|17|MF|DEN|Mathias Greve|
+258|Randers FC|squad|19|FW|AUS|Musa Touré|
+258|Randers FC|squad|21|FW|GHA|Ernest Agyiri|
+258|Randers FC|squad|22|GK|NED|Mert Demirci|
+258|Randers FC|squad|23|DF|SWE|Benjamin Örn|
+258|Randers FC|squad|24|DF|DEN|Sabil Hansen|
+258|Randers FC|squad|25|MF|SEN|Ousseynou Fall Seck|
+258|Randers FC|squad|28|MF|DEN|André Rømer|
+258|Randers FC|squad|30|FW|TOG|Thibault Klidjé|on loan from Hibernian
+258|Randers FC|squad|32|GK|DEN|Jannich Storch|
+258|Randers FC|squad|33|FW|GHA|Cyril Edudzi|
+258|Randers FC|squad|38|MF|DEN|Max Albæk|
+258|Randers FC|squad|44|DF|DEN|Nikolas Dyhr|
+258|Randers FC|loaned_out|18|FW|SYR|Noah Shamoun|IFK Värnamo (until 30 June 2026)
+258|Randers FC|loaned_out||FW|GHA|Abdul Hakim Sulemana|Hillerød (until 30 June 2026)
+259|FC Fredericia|squad|3|DF|DEN|Adam Nygaard|
+259|FC Fredericia|squad|4|DF|DEN|Jeppe Kudsk|
+259|FC Fredericia|squad|5|DF|DEN|Frederik Rieper|captain
+259|FC Fredericia|squad|6|MF|DEN|Felix Winther|
+259|FC Fredericia|squad|9|FW|DEN|Patrick Egelund|
+259|FC Fredericia|squad|10|MF|DEN|Emilio Simonsen|
+259|FC Fredericia|squad|12|DF|DEN|Svenn Crone|
+259|FC Fredericia|squad|13|MF|DEN|William Madsen|
+259|FC Fredericia|squad|14|DF|DEN|Anders Dahl|
+259|FC Fredericia|squad|15|DF|DEN|Malthe Ladefoged|
+259|FC Fredericia|squad|16|DF|DEN|Lauritz Dauerhøj|
+259|FC Fredericia|squad|17|FW|GRL|Nemo Thomsen|
+259|FC Fredericia|squad|18|MF|DEN|Andreas Pyndt|
+259|FC Fredericia|squad|19|FW|DEN|Eskild Dall|
+259|FC Fredericia|squad|20|MF|DEN|Daniel Haarbo|
+259|FC Fredericia|squad|21|DF|DEN|Oliver Vest|
+259|FC Fredericia|squad|29|FW|DEN|Elias Hansborg-Sørensen|
+259|FC Fredericia|squad|31|GK|DEN|Andreas Gülstorff|
+259|FC Fredericia|squad|44|GK|DEN|Christian Risom|
+259|FC Fredericia|squad|90|GK|DEN|Valdemar Birksø|
+259|FC Fredericia|loaned_out|2|DF|DEN|Daniel Thøgersen|Skive IK (until 30 June 2026)
+260|Sönderjyske Fodbold|squad|1|GK|DEN|Nicolai Flø|
+260|Sönderjyske Fodbold|squad|3|DF|DEN|Alexander Munksgaard|
+260|Sönderjyske Fodbold|squad|6|MF|DEN|Rasmus Vinderslev|captain
+260|Sönderjyske Fodbold|squad|7|MF|MKD|Sefer Emini|
+260|Sönderjyske Fodbold|squad|8|MF|GUI|Mohamed Cherif Haidara|
+260|Sönderjyske Fodbold|squad|9|FW|USA|Matthew Hoppe|
+260|Sönderjyske Fodbold|squad|10|MF|LUX|Mathias Olesen|
+260|Sönderjyske Fodbold|squad|11|FW|GUY|Osaze De Rosario|on loan from Seattle Sounders
+260|Sönderjyske Fodbold|squad|12|DF|FRA|Maxime Soulas|
+260|Sönderjyske Fodbold|squad|13|DF|NZL|Dalton Wilkins|
+260|Sönderjyske Fodbold|squad|14|FW|NOR|Teodor Berg Haltvik|
+260|Sönderjyske Fodbold|squad|15|FW|MKD|Lirim Qamili|
+260|Sönderjyske Fodbold|squad|16|GK|DEN|Marcus Bundgaard|
+260|Sönderjyske Fodbold|squad|17|MF|DEN|Anders Hoeg|
+260|Sönderjyske Fodbold|squad|18|FW|DEN|Omran Khatar|
+260|Sönderjyske Fodbold|squad|19|DF|DEN|Pachanga Kristensen|
+260|Sönderjyske Fodbold|squad|20|DF|DEN|Tobias Klysner|
+260|Sönderjyske Fodbold|squad|21|DF|BUL|Stefan Velkov|
+260|Sönderjyske Fodbold|squad|22|MF|DEN|Andreas Oggesen|
+260|Sönderjyske Fodbold|squad|23|DF|NGA|Ebube Duru|
+260|Sönderjyske Fodbold|squad|24|GK|BEL|Nick Shinton|
+260|Sönderjyske Fodbold|squad|25|DF|ISL|Brynjar Ingi Bjarnason|
+260|Sönderjyske Fodbold|squad|26|FW|GAM|Bubacarr Tambedou|
+260|Sönderjyske Fodbold|squad|27|GK|TUR|Berkant Bayrak|
+260|Sönderjyske Fodbold|squad|28|MF|DEN|Anders Bergholt|
+260|Sönderjyske Fodbold|squad|30|DF|DEN|Gustav Wagner|
+260|Sönderjyske Fodbold|squad|31|FW|FRA|Ismaïl Seydi|
+260|Sönderjyske Fodbold|squad|32|FW|GHA|David Boison|
+260|Sönderjyske Fodbold|squad|33|MF|DEN|Jacob Steen Christensen|on loan from Molde
+260|Sönderjyske Fodbold|squad||DF|ISL|Rúnar Þór Sigurgeirsson|
+260|Sönderjyske Fodbold|squad|35|MF|DEN|Elias Hjort-Pedersen|
+260|Sönderjyske Fodbold|squad|36|MF|DEN|Lasse Mandal|
+260|Sönderjyske Fodbold|squad|37|FW|DEN|Villads Nøhr Birk|
+260|Sönderjyske Fodbold|squad|39|FW|DEN|Sebastian Larsen|
+260|Sönderjyske Fodbold|loaned_out|29|FW|KOS|Albert Rrahmani|Nykøbing FC (until 30 June 2027)
+358|St. Johnstone|squad|3|DF|ENG|Cheick Diabate|
+358|St. Johnstone|squad|4|DF|WAL|Morgan Boyes|vice-captain
+358|St. Johnstone|squad|5|DF|CRO|Božo Mikulić|
+358|St. Johnstone|squad|7|MF|SCO|Jason Holt|captain
+358|St. Johnstone|squad|9|FW|ENG|Josh Fowler|
+358|St. Johnstone|squad|10|FW|SCO|Jamie Gullan|
+358|St. Johnstone|squad|11|MF|SCO|Sam Stanton|
+358|St. Johnstone|squad|14|DF|ENG|Matty Foulds|
+358|St. Johnstone|squad|15|DF|SCO|Jack Baird|
+358|St. Johnstone|squad|17|FW|WAL|Louis Lloyd|
+358|St. Johnstone|squad|18|FW|IRL|Ruari Paton|
+358|St. Johnstone|squad|19|FW|SCO|Taylor Steven|
+358|St. Johnstone|squad|20|GK|SCO|Ross Sinclair|
+358|St. Johnstone|squad|21|FW|SCO|Kai Fotheringham|
+358|St. Johnstone|squad|31|GK|SCO|Craig Hepburn|
+358|St. Johnstone|squad|33|DF|SCO|Liam Smith|
+358|St. Johnstone|squad|39|GK|SCO|Kyle Thomson|
+358|St. Johnstone|squad|42|MF|SCO|Reece McAlear|
+358|St. Johnstone|squad|77|FW|ESP|Unax Álvarez|
+358|St. Johnstone|squad||DF|NIR|Daniel Finlayson|
+358|St. Johnstone|squad||MF|SCO|Matty Todd|
+358|St. Johnstone|squad||MF|SCO|Logan Chalmers|
+359|FC Vaduz|squad|1|GK|LIE|Benjamin Büchel|
+359|FC Vaduz|squad|4|MF|LIE|Nicolas Hasler|captain
+359|FC Vaduz|squad|5|DF|KOS|Liridon Berisha|
+359|FC Vaduz|squad|6|DF|KOS|Denis Simani|
+359|FC Vaduz|squad|7|MF|SUI|Dominik Schwizer|
+359|FC Vaduz|squad|8|MF|SUI|Stephan Seiler|
+359|FC Vaduz|squad|9|FW|AUT|Marcel Monsberger|
+359|FC Vaduz|squad|10|MF|URU|Juan Ignacio Cabrera|
+359|FC Vaduz|squad|11|MF|SUI|Lutfi Dalipi|on loan from Young Boys
+359|FC Vaduz|squad|14|DF|SUI|Mischa Beeli|
+359|FC Vaduz|squad|16|FW|SUI|Ranjan Neelakandan|on loan from Annecy
+359|FC Vaduz|squad|17|MF|GER|Julian Stark|
+359|FC Vaduz|squad|18|FW|GER|Daniel Kasper|
+359|FC Vaduz|squad|19|FW|SRB|Dejan Djokic|
+359|FC Vaduz|squad|20|MF|GER|Luca Mack|
+359|FC Vaduz|squad|21|GK|LIE|Tim-Tiado Oehri|
+359|FC Vaduz|squad|22|MF|SUI|Mischa Eberhard|
+359|FC Vaduz|squad|23|MF|SUI|Mats Hammerich|
+359|FC Vaduz|squad|24|FW|MDA|Lado Akhalaia|
+359|FC Vaduz|squad|25|GK|GER|Leon Schaffran|
+359|FC Vaduz|squad|27|DF|GER|Niklas Lang|
+359|FC Vaduz|squad|28|MF|SRB|Miloš Ćoćić|
+359|FC Vaduz|squad|29|DF|SUI|Malik Sawadogo|
+359|FC Vaduz|squad|30|MF|SUI|Mattia Walker|on loan from Luzern
+359|FC Vaduz|squad|37|DF|SUI|Luca Celentano|
+359|FC Vaduz|squad|38|GK|SUI|Nico Föllmi|
+359|FC Vaduz|squad|39|FW|CRO|Dejan Sorgić|
+360|Red Bull Salzburg|squad|1|GK|GER|Christian Früchtl|
+360|Red Bull Salzburg|squad|4|DF|SWE|John Mellberg|
+360|Red Bull Salzburg|squad|5|MF|MLI|Soumaïla Diabaté|
+360|Red Bull Salzburg|squad|7|MF|GER|Umut Tohumcu|on loan from TSG Hoffenheim
+360|Red Bull Salzburg|squad|8|MF|JPN|Sōta Kitano|
+360|Red Bull Salzburg|squad|9|FW|BIH|Haris Tabaković|
+360|Red Bull Salzburg|squad|11|FW|BEL|Yorbe Vertessen|
+360|Red Bull Salzburg|squad|13|DF|GER|Frans Krätzig|
+360|Red Bull Salzburg|squad|15|MF|POL|Bartosz Mazurek|
+360|Red Bull Salzburg|squad|18|DF|AUT|Nikolas Veratschnig|
+360|Red Bull Salzburg|squad|19|FW|CIV|Karim Konaté|
+360|Red Bull Salzburg|squad|20|FW|GHA|Edmund Baidoo|
+360|Red Bull Salzburg|squad|21|DF|GER|Tim Drexler|
+360|Red Bull Salzburg|squad|22|DF|AUT|Stefan Lainer|
+360|Red Bull Salzburg|squad|23|FW|HUN|Damir Redzic|
+360|Red Bull Salzburg|squad|27|MF|AUT|Johannes Moser|
+360|Red Bull Salzburg|squad|28|MF|SRB|Filip Matijašević|
+360|Red Bull Salzburg|squad|30|FW|MLI|Gaoussou Diakité|
+360|Red Bull Salzburg|squad|31|DF|SUI|Dominik Schmid|
+360|Red Bull Salzburg|squad|32|MF|GAM|Abubakr Barry|
+360|Red Bull Salzburg|squad|33|FW|BFA|Aboubacar Camara|
+360|Red Bull Salzburg|squad|35|FW|DEN|Jesper Lindstrøm|on loan from Napoli
+360|Red Bull Salzburg|squad|36|MF|AUT|Justin Omoregie|
+360|Red Bull Salzburg|squad|39|DF|GER|Leandro Morgalla|
+360|Red Bull Salzburg|squad|41|GK|AUT|Nikola Šarčević|
+360|Red Bull Salzburg|squad|43|FW|SUI|Enrique Aguilar|
+360|Red Bull Salzburg|squad|44|DF|TOG|Kévin Boma|
+360|Red Bull Salzburg|squad|47|DF|AUT|Valentin Zabransky|
+360|Red Bull Salzburg|squad|52|GK|AUT|Christian Zawieschitzky|
+360|Red Bull Salzburg|squad|91|DF|JPN|Anrie Chase|
+360|Red Bull Salzburg|loaned_out||DF|GER|Hendry Blank|Greuther Fürth (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||DF|BFA|Lassina Traoré|FC Liefering (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||DF|AUT|Tim Trummer|Grazer AK (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||MF|DEN|Clement Bischoff|NEC (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||MF|CRO|Oliver Lukić|TSV Hartberg (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||MF|COL|Mayker Palacios|FC Liefering (until 30 June 2027)
+360|Red Bull Salzburg|loaned_out||FW|VEN|Yerwin Sulbarán|FC Liefering (until 30 June 2027)
+361|SC Austria|squad|3|DF|BRA|Danilo Soares|
+361|SC Austria|squad|7|DF|AUT|Fabian Gmeiner|
+361|SC Austria|squad|8|MF|SUI|Dion Kacuri|on loan from Basel
+361|SC Austria|squad|9|FW|GER|Lenn Jastremski|
+361|SC Austria|squad|11|FW|AUT|Dominik Weixelbraun|on loan from Rapid Wien
+361|SC Austria|squad|12|DF|AUT|Novak Rajic|
+361|SC Austria|squad|14|FW|NGA|Precious Benjamin|on loan from Hoffenheim
+361|SC Austria|squad|15|DF|NGA|Emmanuel Chukwu|on loan from Hoffenheim
+361|SC Austria|squad|17|FW|AUT|Albin Gashi|
+361|SC Austria|squad|18|DF|FRA|Robin Voisine|
+361|SC Austria|squad|19|MF|FRA|Sacha Delaye|
+361|SC Austria|squad|20|MF|GHA|Lord Afrifa|
+361|SC Austria|squad|23|MF|AUT|Pius Grabher|
+361|SC Austria|squad|24|FW|MLI|Seydou Diarra|
+361|SC Austria|squad|26|DF|AUT|Lukas Ibertsberger|
+361|SC Austria|squad|27|GK|AUT|Domenik Schierl|
+361|SC Austria|squad|29|DF|AUT|Niklas Pertlwieser|
+361|SC Austria|squad|30|GK|GER|Phillip Böhm|
+361|SC Austria|squad|31|DF|AUT|Matthias Maak|
+361|SC Austria|squad|33|GK|AUT|Frederic Flatz|
+361|SC Austria|squad|39|FW|GER|Antonio Verinac|on loan from St. Gallen
+361|SC Austria|squad|54|FW|AUT|Melih Akbulut|
+361|SC Austria|squad|61|MF|AUT|Haris Ismailcebioglu|
+361|SC Austria|squad||FW|GAM|Alieu Conateh|on loan from Grasshopper
+361|SC Austria|loaned_out||GK|AUT|Simon Nesler-Täubl|Austria Salzburg (until 30 June 2027)

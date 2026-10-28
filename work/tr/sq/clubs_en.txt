@@ -1,0 +1,44 @@
+18|Liverpool|EN
+19|Manchester City|EN
+20|Arsenal|EN
+21|Manchester Utd|EN
+22|Tottenham|EN
+23|Chelsea|EN
+24|Crystal Palace|EN
+25|Aston Villa|EN
+26|Nottingham|EN
+27|Brentford|EN
+28|Brighton|EN
+29|Newcastle|EN
+30|Everton|EN
+31|Bournemouth|EN
+32|Fulham|EN
+33|Sunderland|EN
+34|Leeds United|EN
+35|Ipswich Town|EN
+36|Coventry City|EN
+37|Hull City|EN
+414|Birmingham City|EN2
+415|Blackburn Rovers|EN2
+416|Bolton|EN2
+417|Bristol City|EN2
+418|Burnley|EN2
+419|Cardiff City|EN2
+420|Charlton Ath|EN2
+421|Derby County|EN2
+422|Lincoln City|EN2
+423|Middlesbrough|EN2
+424|Millwall|EN2
+425|Norwich|EN2
+426|Portsmouth|EN2
+427|Preston|EN2
+428|QPR|EN2
+429|Sheffield Utd|EN2
+430|Southampton|EN2
+431|Stoke City|EN2
+432|Swansea City|EN2
+433|Watford|EN2
+434|West Brom|EN2
+435|West Ham|EN2
+436|Wolves|EN2
+437|Wrexham|EN2

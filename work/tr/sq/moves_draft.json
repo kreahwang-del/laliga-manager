@@ -1,0 +1,8545 @@
+{
+"moves": [
+{
+"pid": 576028,
+"name": "Thiago Almada",
+"frm": "Atlético Madrid",
+"to": "Club Atlético River Plate",
+"to_id": 120,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 625014,
+"name": "Julen Agirrezabala",
+"frm": "Racing Sant",
+"to": "Athletic Club",
+"to_id": 44,
+"status": "loaned_out",
+"ovr": 77,
+"note": "loan club not stated in extracted text",
+"conf": "high"
+},
+{
+"pid": 741253,
+"name": "Javier Boñar",
+"frm": "Atlético Madrid",
+"to": "Girona FC",
+"to_id": 334,
+"status": "squad",
+"ovr": 60,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 728733,
+"name": "Brooke Norton-Cuffy",
+"frm": "Genoa",
+"to": "Hull City",
+"to_id": 37,
+"status": "squad",
+"ovr": 75,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 338629,
+"name": "Sebastiaan Bornauw",
+"frm": "Hamburger SV",
+"to": "Leeds United",
+"to_id": 34,
+"status": "loaned_out",
+"ovr": 75,
+"note": "Hamburg until 30 June 2027",
+"conf": "high"
+},
+{
+"pid": 820474,
+"name": "Zakaria El Ouahdi",
+"frm": "Hamburger SV",
+"to": "KRC Genk",
+"to_id": 199,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 463613,
+"name": "Yann Gboho",
+"frm": "Toulouse",
+"to": "Coventry City",
+"to_id": 36,
+"status": "squad",
+"ovr": 79,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 901019,
+"name": "Neil El Aynaoui",
+"frm": "RB Leipzig",
+"to": "Roma",
+"to_id": 79,
+"status": "squad",
+"ovr": 80,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 929943,
+"name": "Francis Onyeka",
+"frm": "Elversberg",
+"to": "Leverkusen",
+"to_id": 3,
+"status": "loaned_out",
+"ovr": 68,
+"note": "VfL Bochum (until 30 June 2026)",
+"conf": "high"
+},
+{
+"pid": 910905,
+"name": "Mamadou Sarr",
+"frm": "Real Sociedad",
+"to": "Chelsea",
+"to_id": 23,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 410787,
+"name": "Joel Monteiro",
+"frm": "Lecce",
+"to": "BSC Young Boys",
+"to_id": 148,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 596122,
+"name": "Pep Chavarría",
+"frm": "Chelsea",
+"to": "Rayo Vallecano",
+"to_id": 52,
+"status": "squad",
+"ovr": 82,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 395516,
+"name": "Moussa Diaby",
+"frm": "Leverkusen",
+"to": "Al Ittihad",
+"to_id": 371,
+"status": "squad",
+"ovr": 75,
+"note": "undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)",
+"conf": "high"
+},
+{
+"pid": 646824,
+"name": "Manuel Ángel",
+"frm": "Real Madrid",
+"to": "Sevilla",
+"to_id": 46,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 798925,
+"name": "Fodé Doucouré",
+"frm": "Le Havre",
+"to": "FC Nantes",
+"to_id": 483,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 970279,
+"name": "Jacques Ekomie",
+"frm": "Angers",
+"to": "Wrexham",
+"to_id": 437,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 935281,
+"name": "David Jiménez",
+"frm": "Real Madrid",
+"to": "Real Oviedo",
+"to_id": 336,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 531957,
+"name": "Cody Drameh",
+"frm": "Hull City",
+"to": "Genoa",
+"to_id": 89,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 743386,
+"name": "Malick Fofana",
+"frm": "Lyon",
+"to": "Sunderland",
+"to_id": 33,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1009765,
+"name": "Jofre Torrents",
+"frm": "Barcelona",
+"to": "AFC Ajax",
+"to_id": 348,
+"status": "squad",
+"ovr": 58,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 668179,
+"name": "Carlos Álvarez",
+"frm": "Levante",
+"to": "Club América",
+"to_id": 384,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 931838,
+"name": "Hugo Larsson",
+"frm": "Fulham",
+"to": "Frankfurt",
+"to_id": 6,
+"status": "squad",
+"ovr": 79,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 669380,
+"name": "Konstantinos Koulierakis",
+"frm": "Roma",
+"to": "VfL Wolfsburg",
+"to_id": 455,
+"status": "squad",
+"ovr": 80,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 497663,
+"name": "Mujaid Sadick",
+"frm": "Rayo Vallecano",
+"to": "KRC Genk",
+"to_id": 199,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1063340,
+"name": "Kareem Tunde",
+"frm": "Levante",
+"to": "West Brom",
+"to_id": 434,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 949623,
+"name": "Milan Robin",
+"frm": "Le Mans",
+"to": "GD Estoril Praia",
+"to_id": 211,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 606752,
+"name": "Rodrigo Zalazar",
+"frm": "SC Braga",
+"to": "Sporting CP",
+"to_id": 346,
+"status": "squad",
+"ovr": 83,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 718303,
+"name": "Ernest Poku",
+"frm": "AZ Alkmaar",
+"to": "Leverkusen",
+"to_id": 3,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 929090,
+"name": "Franculino",
+"frm": "FC Midtjylland",
+"to": "Trabzonspor",
+"to_id": 147,
+"status": "squad",
+"ovr": 79,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 565435,
+"name": "Arne Engels",
+"frm": "Celtic FC",
+"to": "West Ham",
+"to_id": 435,
+"status": "squad",
+"ovr": 80,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 433049,
+"name": "Youssef En-Nesyri",
+"frm": "Fenerbahce",
+"to": "Al Ittihad",
+"to_id": 371,
+"status": "squad",
+"ovr": 79,
+"note": "undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)",
+"conf": "high"
+},
+{
+"pid": 292199,
+"name": "Uğurcan Çakır",
+"frm": "Trabzonspor",
+"to": "Galatasaray",
+"to_id": 108,
+"status": "squad",
+"ovr": 83,
+"note": "source: 2026–27 Galatasaray S.K. season article",
+"conf": "high"
+},
+{
+"pid": 1191154,
+"name": "Ibrahima Ba",
+"frm": "FC Famalicão",
+"to": "Sporting CP",
+"to_id": 346,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 485584,
+"name": "Anass Salah-Eddine",
+"frm": "PSV Eindhoven",
+"to": "Roma",
+"to_id": 79,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 800948,
+"name": "Jan-Carlo Simić",
+"frm": "RSC Anderlecht",
+"to": "Al Ittihad",
+"to_id": 371,
+"status": "squad",
+"ovr": 71,
+"note": "undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)",
+"conf": "high"
+},
+{
+"pid": 957544,
+"name": "Kodai Sano",
+"frm": "NEC Nijmegen",
+"to": "PSV Eindhoven",
+"to_id": 141,
+"status": "squad",
+"ovr": 78,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 287579,
+"name": "Sofyan Amrabat",
+"frm": "Fenerbahce",
+"to": "AFC Ajax",
+"to_id": 348,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 377468,
+"name": "Anel Ahmedhodzic",
+"frm": "Feyenoord Rotterdam",
+"to": "Burnley",
+"to_id": 418,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 671669,
+"name": "Noah Saviolo",
+"frm": "Vitória Guimarães SC",
+"to": "Trabzonspor",
+"to_id": 147,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 420884,
+"name": "Hugo Cuypers",
+"frm": "Chicago Fire Soccer Club",
+"to": "Monterrey",
+"to_id": 393,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 514887,
+"name": "Aral Şimşir",
+"frm": "FC Midtjylland",
+"to": "Trabzonspor",
+"to_id": 147,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 571149,
+"name": "Gjivai Zechiël",
+"frm": "FC Utrecht",
+"to": "Feyenoord Rotterdam",
+"to_id": 124,
+"status": "squad",
+"ovr": 78,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 1384266,
+"name": "Tobías Andrada",
+"frm": "Club Atlético Vélez Sársfield",
+"to": "Club Atlético River Plate",
+"to_id": 120,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1033919,
+"name": "Mahamadou Doumbia",
+"frm": "Royal Antwerp FC",
+"to": "Al Ittihad",
+"to_id": 371,
+"status": "squad",
+"ovr": 73,
+"note": "undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)",
+"conf": "high"
+},
+{
+"pid": 1144627,
+"name": "Kento Shiogai",
+"frm": "NEC Nijmegen",
+"to": "VfL Wolfsburg",
+"to_id": 455,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 852024,
+"name": "Bénie Traoré",
+"frm": "FC Basel 1893",
+"to": "New York City Football Club",
+"to_id": 309,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1011936,
+"name": "Kaye Furo",
+"frm": "Club Brugge KV",
+"to": "Brentford",
+"to_id": 27,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 734761,
+"name": "Sebastian Berhalter",
+"frm": "Vancouver Whitecaps FC",
+"to": "Middlesbrough",
+"to_id": 423,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 937729,
+"name": "Diogo Sousa",
+"frm": "Vitória Guimarães SC",
+"to": "Strasbourg",
+"to_id": 61,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 317454,
+"name": "Diego Rossi",
+"frm": "Columbus Crew",
+"to": "Monterrey",
+"to_id": 393,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 707621,
+"name": "Tuur Rommens",
+"frm": "KVC Westerlo",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 658531,
+"name": "Mohamed Diomandé",
+"frm": "Rangers FC",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 703321,
+"name": "Gabriel Pec",
+"frm": "Los Angeles Galaxy",
+"to": "Cruzeiro Esporte Clube",
+"to_id": 162,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 627224,
+"name": "Gabriel Silva",
+"frm": "CD Santa Clara",
+"to": "SC Braga",
+"to_id": 194,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 321239,
+"name": "Everton",
+"frm": "Clube de Regatas do Flamengo",
+"to": "Associação Chapecoense de Futebol",
+"to_id": 295,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 283196,
+"name": "Kasper Dolberg",
+"frm": "RSC Anderlecht",
+"to": "AFC Ajax",
+"to_id": 348,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 345577,
+"name": "Carlo Holse",
+"frm": "Samsunspor",
+"to": "St. Louis City Soccer Club",
+"to_id": 319,
+"status": "squad",
+"ovr": 77,
+"note": "DP",
+"conf": "high"
+},
+{
+"pid": 432403,
+"name": "Rihito Yamamoto",
+"frm": "Sint-Truidense VV",
+"to": "Freiburg",
+"to_id": 7,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 336382,
+"name": "Dejan Joveljić",
+"frm": "Sporting Kansas City",
+"to": "Seattle Sounders FC",
+"to_id": 282,
+"status": "squad",
+"ovr": 74,
+"note": "DP",
+"conf": "high"
+},
+{
+"pid": 371267,
+"name": "Rafael Navarro",
+"frm": "Colorado Rapids",
+"to": "St. Louis City Soccer Club",
+"to_id": 319,
+"status": "squad",
+"ovr": 73,
+"note": "DP",
+"conf": "high"
+},
+{
+"pid": 1282860,
+"name": "Modou Kéba Cissé",
+"frm": "LASK",
+"to": "Aston Villa",
+"to_id": 25,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 709727,
+"name": "Kévin Boma",
+"frm": "GD Estoril Praia",
+"to": "Red Bull Salzburg",
+"to_id": 360,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 734676,
+"name": "Jonas Adjetey",
+"frm": "FC Basel 1893",
+"to": "VfL Wolfsburg",
+"to_id": 455,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 609518,
+"name": "Luís Esteves",
+"frm": "Gil Vicente FC",
+"to": "Atlas FC",
+"to_id": 381,
+"status": "squad",
+"ovr": 78,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 794749,
+"name": "Cheveyo Tsawa",
+"frm": "FC Zürich",
+"to": "Club Brugge KV",
+"to_id": 220,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 406608,
+"name": "Thierno Ballo",
+"frm": "Wolfsberger AC",
+"to": "AS Saint-Étienne",
+"to_id": 477,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 862297,
+"name": "Nasser Djiga",
+"frm": "Rangers FC",
+"to": "Wolves",
+"to_id": 436,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 867357,
+"name": "Nacho Ferri",
+"frm": "KVC Westerlo",
+"to": "Feyenoord Rotterdam",
+"to_id": 124,
+"status": "squad",
+"ovr": 75,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 419936,
+"name": "Jesús Ramírez",
+"frm": "CD Nacional",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 655899,
+"name": "Serdar Saatçı",
+"frm": "Trabzonspor",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1043003,
+"name": "Yasin Özcan",
+"frm": "RSC Anderlecht",
+"to": "Aston Villa",
+"to_id": 25,
+"status": "loaned_out",
+"ovr": 70,
+"note": "Beşiktaş",
+"conf": "high"
+},
+{
+"pid": 780147,
+"name": "Rafiki Saïd",
+"frm": "Standard Liège",
+"to": "Wolves",
+"to_id": 436,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 993063,
+"name": "Max Arfsten",
+"frm": "Columbus Crew",
+"to": "Middlesbrough",
+"to_id": 423,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 553328,
+"name": "Tochi Chukwuani",
+"frm": "Sportklub Puntigamer Sturm Graz",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 624913,
+"name": "Parfait Guiagon",
+"frm": "Royal Charleroi Sporting Club",
+"to": "Al Taawoun",
+"to_id": 378,
+"status": "squad",
+"ovr": 75,
+"note": "undated (mixed dates on page)",
+"conf": "high"
+},
+{
+"pid": 724547,
+"name": "Jack McGlynn",
+"frm": "Houston Dynamo",
+"to": "Stoke City",
+"to_id": 431,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 961937,
+"name": "Romeo Amane",
+"frm": "Rapid Vienna",
+"to": "RSC Anderlecht",
+"to_id": 100,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 657957,
+"name": "Jakob Breum",
+"frm": "Go Ahead Eagles",
+"to": "AS Saint-Étienne",
+"to_id": 477,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 668512,
+"name": "David Romero",
+"frm": "Club Atlético Tigre",
+"to": "Parma",
+"to_id": 88,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 434223,
+"name": "Adam Idah",
+"frm": "Celtic FC",
+"to": "Swansea City",
+"to_id": 432,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 594991,
+"name": "Mohamed Bayo",
+"frm": "Gaziantep FK",
+"to": "Lille",
+"to_id": 62,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1057820,
+"name": "Jeremy Agbonifo",
+"frm": "FC Basel 1893",
+"to": "Lens",
+"to_id": 65,
+"status": "loaned_out",
+"ovr": 68,
+"note": "Jagiellonia Białystok",
+"conf": "high"
+},
+{
+"pid": 1310437,
+"name": "Joseph Opoku",
+"frm": "Zulte Waregem",
+"to": "Swansea City",
+"to_id": 432,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1263687,
+"name": "Moncef Zekri",
+"frm": "KV Mechelen",
+"to": "Sporting CP",
+"to_id": 346,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 426849,
+"name": "Jari De Busser",
+"frm": "Go Ahead Eagles",
+"to": "AZ Alkmaar",
+"to_id": 195,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1309324,
+"name": "Uchenna Ogundu",
+"frm": "Alanyaspor",
+"to": "Augsburg",
+"to_id": 8,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 708455,
+"name": "Mathis Servais",
+"frm": "KV Mechelen",
+"to": "Millwall",
+"to_id": 424,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 877124,
+"name": "Rosen Bozhinov",
+"frm": "Royal Antwerp FC",
+"to": "Pisa",
+"to_id": 472,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 611855,
+"name": "Sidny Lopes Cabral",
+"frm": "CF Estrela Amadora",
+"to": "Trabzonspor",
+"to_id": 147,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 797414,
+"name": "Owen Wolff",
+"frm": "Austin FC",
+"to": "Sporting Kansas City",
+"to_id": 254,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 401535,
+"name": "Gabriel Batista",
+"frm": "CD Santa Clara",
+"to": "S. A. F. Botafogo",
+"to_id": 157,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 524081,
+"name": "Nicolai Vallys",
+"frm": "Bröndby IF",
+"to": "Tokyo Football Club",
+"to_id": 267,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 527896,
+"name": "Oliver Antman",
+"frm": "Rangers FC",
+"to": "RSC Anderlecht",
+"to_id": 100,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 655902,
+"name": "Emin Bayram",
+"frm": "KVC Westerlo",
+"to": "Basaksehir FK",
+"to_id": 271,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 189073,
+"name": "Marcel Hartel",
+"frm": "St. Louis City Soccer Club",
+"to": "Hannover 96",
+"to_id": 446,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 696164,
+"name": "Tim Oermann",
+"frm": "Sportklub Puntigamer Sturm Graz",
+"to": "Leverkusen",
+"to_id": 3,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 450211,
+"name": "José Cifuentes",
+"frm": "Toronto FC",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 439465,
+"name": "Gaizka Larrazabal",
+"frm": "Casa Pia AC",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 267160,
+"name": "Adam Buksa",
+"frm": "FC Midtjylland",
+"to": "Udinese",
+"to_id": 90,
+"status": "loaned_out",
+"ovr": 69,
+"note": "Mallorca (until 30 June 2027)",
+"conf": "high"
+},
+{
+"pid": 1176295,
+"name": "Pape Moussa Fall",
+"frm": "RAAL La Louvière",
+"to": "FC Metz",
+"to_id": 482,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 260655,
+"name": "Eduard Löwen",
+"frm": "St. Louis City Soccer Club",
+"to": "San Jose Earthquakes",
+"to_id": 122,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 540315,
+"name": "César Huerta",
+"frm": "RSC Anderlecht",
+"to": "Pumas",
+"to_id": 394,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 652470,
+"name": "Edwin Cerrillo",
+"frm": "Los Angeles Galaxy",
+"to": "Club América",
+"to_id": 384,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 308552,
+"name": "Jordan Larsson",
+"frm": "FC Copenhagen",
+"to": "Al Ettifaq",
+"to_id": 365,
+"status": "squad",
+"ovr": 73,
+"note": "undated",
+"conf": "high"
+},
+{
+"pid": 329720,
+"name": "Pedro Henrique",
+"frm": "Red Bull Bragantino",
+"to": "Al Ettifaq",
+"to_id": 365,
+"status": "squad",
+"ovr": 73,
+"note": "undated",
+"conf": "high"
+},
+{
+"pid": 488298,
+"name": "Maksim Paskotsi",
+"frm": "Grasshopper Club Zurich",
+"to": "KAA Gent",
+"to_id": 110,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 586538,
+"name": "Alexandros Kyziridis",
+"frm": "Heart of Midlothian FC",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 491599,
+"name": "Antonio Galeano",
+"frm": "Mirasol Futebol Clube",
+"to": "Clube do Remo",
+"to_id": 285,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1150206,
+"name": "Dylan Aquino",
+"frm": "Club Atlético Lanús",
+"to": "Union Saint-Gilloise",
+"to_id": 353,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 598838,
+"name": "Adonis Frías",
+"frm": "Santos Futebol Clube",
+"to": "Atlas FC",
+"to_id": 381,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 811219,
+"name": "Newton",
+"frm": "S. A. F. Botafogo",
+"to": "São Paulo Futebol Clube",
+"to_id": 158,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 359409,
+"name": "Dominik Schmid",
+"frm": "FC Basel 1893",
+"to": "Red Bull Salzburg",
+"to_id": 360,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 322293,
+"name": "Felix Beijmo",
+"frm": "Aarhus GF",
+"to": "FC Copenhagen",
+"to_id": 115,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1024605,
+"name": "André Henrique",
+"frm": "Grêmio Foot-Ball Porto Alegrense",
+"to": "Göztepe",
+"to_id": 212,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 587298,
+"name": "Pelle Mattsson",
+"frm": "Silkeborg IF",
+"to": "Norwich",
+"to_id": 425,
+"status": "squad",
+"ovr": 70,
+"note": "vice-captain",
+"conf": "high"
+},
+{
+"pid": 216603,
+"name": "İrfan Can Kahveci",
+"frm": "Kasimpasa",
+"to": "Fenerbahce",
+"to_id": 98,
+"status": "squad",
+"ovr": 74,
+"note": "vice-captain; src=season",
+"conf": "high"
+},
+{
+"pid": 657575,
+"name": "Abubakr Barry",
+"frm": "Austria Vienna",
+"to": "Red Bull Salzburg",
+"to_id": 360,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 745178,
+"name": "Edan Diop",
+"frm": "Cercle Brugge",
+"to": "Monaco",
+"to_id": 60,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 637271,
+"name": "Milan Iloski",
+"frm": "FC Nordsjaelland",
+"to": "Philadelphia Union",
+"to_id": 304,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1078350,
+"name": "Ayoub Oufkir",
+"frm": "Sparta Rotterdam",
+"to": "AZ Alkmaar",
+"to_id": 195,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 225744,
+"name": "Lawrence Shankland",
+"frm": "Heart of Midlothian FC",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 77,
+"note": "captain",
+"conf": "high"
+},
+{
+"pid": 652632,
+"name": "Max Johnston",
+"frm": "Sportklub Puntigamer Sturm Graz",
+"to": "Derby County",
+"to_id": 421,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 645589,
+"name": "Elias Achouri",
+"frm": "FC Copenhagen",
+"to": "San Diego Football Club",
+"to_id": 321,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1171460,
+"name": "César Garza",
+"frm": "Dundee FC",
+"to": "Monterrey",
+"to_id": 393,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 251029,
+"name": "Saba Lobjanidze",
+"frm": "Atlanta United Football Club",
+"to": "Real Salt Lake",
+"to_id": 269,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 422850,
+"name": "Ghislain Konan",
+"frm": "Gil Vicente FC",
+"to": "Wolves",
+"to_id": 436,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 367992,
+"name": "Jesper Karlsson",
+"frm": "Aberdeen FC",
+"to": "Servette FC",
+"to_id": 101,
+"status": "squad",
+"ovr": 73,
+"note": "on loan from Bologna",
+"conf": "high"
+},
+{
+"pid": 292985,
+"name": "Álvaro Montero",
+"frm": "Club Atlético Vélez Sársfield",
+"to": "Club Atlético Boca Juniors",
+"to_id": 114,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 183293,
+"name": "Joe Rothwell",
+"frm": "Rangers FC",
+"to": "Sheffield Utd",
+"to_id": 429,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1047097,
+"name": "Yoram Zague",
+"frm": "FC Copenhagen",
+"to": "Paris SG",
+"to_id": 58,
+"status": "loaned_out",
+"ovr": 63,
+"note": "Pafos",
+"conf": "high"
+},
+{
+"pid": 471690,
+"name": "Max Aarons",
+"frm": "Rangers FC",
+"to": "Bournemouth",
+"to_id": 31,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 756993,
+"name": "Florián Monzón",
+"frm": "Club Atlético Vélez Sársfield",
+"to": "Atlas FC",
+"to_id": 381,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 569088,
+"name": "Enzo Giménez",
+"frm": "Club Atlético Rosario Central",
+"to": "Querétaro FC",
+"to_id": 395,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 505675,
+"name": "Rober González",
+"frm": "NEC Nijmegen",
+"to": "Albacete",
+"to_id": 323,
+"status": "squad",
+"ovr": 62,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1064191,
+"name": "Tomás Avilés",
+"frm": "Club de Foot Montréal",
+"to": "Club Internacional de Fútbol Miami",
+"to_id": 316,
+"status": "loaned_out",
+"ovr": 66,
+"note": "O'Higgins",
+"conf": "low"
+},
+{
+"pid": 422950,
+"name": "Mads Emil Madsen",
+"frm": "Aarhus GF",
+"to": "FC Copenhagen",
+"to_id": 115,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 650350,
+"name": "Léo Leroy",
+"frm": "FC Basel 1893",
+"to": "Preston",
+"to_id": 427,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 845568,
+"name": "Marko Milovanović",
+"frm": "FC Alverca",
+"to": "Portsmouth",
+"to_id": 426,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 582987,
+"name": "Adrian Bajrami",
+"frm": "FC Luzern",
+"to": "SC Braga",
+"to_id": 194,
+"status": "squad",
+"ovr": 61,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1137865,
+"name": "Luca Bombino",
+"frm": "San Diego Football Club",
+"to": "Stoke City",
+"to_id": 431,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 400797,
+"name": "Callum McCowatt",
+"frm": "Silkeborg IF",
+"to": "Aarhus GF",
+"to_id": 167,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 485672,
+"name": "Elijah Just",
+"frm": "Motherwell FC",
+"to": "Swansea City",
+"to_id": 432,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1034532,
+"name": "Olti Hyseni",
+"frm": "Sönderjyske Fodbold",
+"to": "Bröndby IF",
+"to_id": 119,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 483063,
+"name": "Berat Özdemir",
+"frm": "Basaksehir FK",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 543311,
+"name": "Anosike Ementa",
+"frm": "Viborg FF",
+"to": "Zulte Waregem",
+"to_id": 244,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 492715,
+"name": "Atsuki Ito",
+"frm": "KAA Gent",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 367468,
+"name": "Nuno Santos",
+"frm": "Vitória Guimarães SC",
+"to": "Sporting CP",
+"to_id": 346,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 619657,
+"name": "Tobias Gulliksen",
+"frm": "Rapid Vienna",
+"to": "Kocaelispor",
+"to_id": 103,
+"status": "squad",
+"ovr": 70,
+"note": "on loan from Rapid Wien",
+"conf": "high"
+},
+{
+"pid": 673432,
+"name": "Jovan Mijatovic",
+"frm": "Oud-Heverlee Leuven",
+"to": "Braunschweig",
+"to_id": 441,
+"status": "squad",
+"ovr": 65,
+"note": "on loan from New York City",
+"conf": "high"
+},
+{
+"pid": 743594,
+"name": "Matheus Nascimento",
+"frm": "Los Angeles Galaxy",
+"to": "Grêmio Foot-Ball Porto Alegrense",
+"to_id": 121,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 410158,
+"name": "Rodrigo Becão",
+"frm": "Kasimpasa",
+"to": "Fenerbahce",
+"to_id": 98,
+"status": "loaned_out",
+"ovr": 70,
+"note": "Rodina Moscow; src=season (from transfers table)",
+"conf": "high"
+},
+{
+"pid": 658533,
+"name": "Abu Francis",
+"frm": "Cercle Brugge",
+"to": "Toulouse",
+"to_id": 68,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 463751,
+"name": "Marc Leonard",
+"frm": "Heart of Midlothian FC",
+"to": "Birmingham City",
+"to_id": 414,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 403574,
+"name": "Elliot Watt",
+"frm": "Motherwell FC",
+"to": "Samsunspor",
+"to_id": 109,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 507455,
+"name": "Lewin Blum",
+"frm": "Royal Charleroi Sporting Club",
+"to": "BSC Young Boys",
+"to_id": 148,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1089572,
+"name": "Duncan McGuire",
+"frm": "Orlando City Soccer Club",
+"to": "Houston Dynamo",
+"to_id": 279,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 536477,
+"name": "Arthur Zagré",
+"frm": "Excelsior Rotterdam",
+"to": "FC Utrecht",
+"to_id": 117,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 931102,
+"name": "David Watson",
+"frm": "Kilmarnock FC",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 372713,
+"name": "Florian Ayé",
+"frm": "Servette FC",
+"to": "Kocaelispor",
+"to_id": 103,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 396342,
+"name": "Toni Borevković",
+"frm": "Vitória Guimarães SC",
+"to": "Samsunspor",
+"to_id": 109,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 994598,
+"name": "Nathan Ordaz",
+"frm": "Los Angeles Football Club",
+"to": "D.C. United",
+"to_id": 229,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1001839,
+"name": "Luke Graham",
+"frm": "Dundee FC",
+"to": "Stoke City",
+"to_id": 431,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1028162,
+"name": "Antoine Joujou",
+"frm": "FC Famalicão",
+"to": "FC Nantes",
+"to_id": 483,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 621603,
+"name": "Metehan Altunbaş",
+"frm": "Eyüpspor",
+"to": "Kocaelispor",
+"to_id": 103,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 498529,
+"name": "Miguel Crespo",
+"frm": "Basaksehir FK",
+"to": "Al Khaleej",
+"to_id": 372,
+"status": "squad",
+"ovr": 72,
+"note": "STALE asof=2025-08-04",
+"conf": "low"
+},
+{
+"pid": 488063,
+"name": "Nikolas Polster",
+"frm": "Wolfsberger AC",
+"to": "NEC Nijmegen",
+"to_id": 150,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 699980,
+"name": "Enis Destan",
+"frm": "KVC Westerlo",
+"to": "Konyaspor",
+"to_id": 221,
+"status": "squad",
+"ovr": 63,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 635445,
+"name": "Jayden Nelson",
+"frm": "Austin FC",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 575716,
+"name": "Vasco Sousa",
+"frm": "Moreirense FC",
+"to": "FC Porto",
+"to_id": 169,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1082993,
+"name": "Findlay Curtis",
+"frm": "Kilmarnock FC",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 583038,
+"name": "Pascal Loretz",
+"frm": "FC Luzern",
+"to": "Hannover 96",
+"to_id": 446,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 399162,
+"name": "Cammy Devlin",
+"frm": "Heart of Midlothian FC",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 627205,
+"name": "Griffin Yow",
+"frm": "KVC Westerlo",
+"to": "New England Revolution",
+"to_id": 165,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 477460,
+"name": "Warleson",
+"frm": "Cercle Brugge",
+"to": "S. A. F. Botafogo",
+"to_id": 157,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 457341,
+"name": "Derry Murkin",
+"frm": "FC Utrecht",
+"to": "Derby County",
+"to_id": 421,
+"status": "squad",
+"ovr": 64,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 159522,
+"name": "Patrick Pflücke",
+"frm": "KV Mechelen",
+"to": "Royal Charleroi Sporting Club",
+"to_id": 112,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 650863,
+"name": "Brayan Ceballos",
+"frm": "New England Revolution",
+"to": "Club de Foot Montréal",
+"to_id": 253,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 376859,
+"name": "Jalil Elías",
+"frm": "Club Atlético Tigre",
+"to": "Club Estudiantes de La Plata",
+"to_id": 129,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 400542,
+"name": "Oliver Olsen",
+"frm": "Randers FC",
+"to": "VfL Bochum 1848",
+"to_id": 453,
+"status": "squad",
+"ovr": 69,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 315283,
+"name": "Kaj Sierhuis",
+"frm": "Fortuna Sittardia Combinatie",
+"to": "NEC Nijmegen",
+"to_id": 150,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 311489,
+"name": "Landry Dimata",
+"frm": "Samsunspor",
+"to": "Chongqing FC",
+"to_id": 400,
+"status": "squad",
+"ovr": 67,
+"note": "on loan from Pafos",
+"conf": "high"
+},
+{
+"pid": 272539,
+"name": "David Bates",
+"frm": "Standard Liège",
+"to": "Amed Sportif Faaliyetler",
+"to_id": 355,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 815652,
+"name": "Tiago Morais",
+"frm": "Casa Pia AC",
+"to": "Lille",
+"to_id": 62,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 892973,
+"name": "Lovro Zvonarek",
+"frm": "Grasshopper Club Zurich",
+"to": "CF Estrela Amadora",
+"to_id": 228,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 909736,
+"name": "Román Riquelme",
+"frm": "Asociación Atlética Argentinos Juniors",
+"to": "Club Atlético Talleres",
+"to_id": 251,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 405690,
+"name": "Ole Pohlmann",
+"frm": "Rio Ave FC",
+"to": "Fürth",
+"to_id": 445,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 375392,
+"name": "Paulo Moreira",
+"frm": "CF Estrela Amadora",
+"to": "FC Famalicão",
+"to_id": 243,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 813107,
+"name": "Gabriel Pirani",
+"frm": "D.C. United",
+"to": "San Diego Football Club",
+"to_id": 321,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 631904,
+"name": "Anselmo García MacNulty",
+"frm": "PEC Zwolle",
+"to": "1. FC Magdeburg",
+"to_id": 438,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 525602,
+"name": "Alejandro Marqués",
+"frm": "GD Estoril Praia",
+"to": "Granada CF",
+"to_id": 335,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 656800,
+"name": "Tristan Gooijer",
+"frm": "PEC Zwolle",
+"to": "Lommel SK",
+"to_id": 352,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 925418,
+"name": "Ramiz Harakaté",
+"frm": "Grazer AK 1902",
+"to": "LASK",
+"to_id": 143,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 536081,
+"name": "Lawrence Ofori",
+"frm": "Moreirense FC",
+"to": "Casa Pia AC",
+"to_id": 242,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 283166,
+"name": "Marcos Felipe",
+"frm": "Eyüpspor",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 733309,
+"name": "Takahiro Akimoto",
+"frm": "Oud-Heverlee Leuven",
+"to": "Zelvia",
+"to_id": 301,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 981516,
+"name": "Munashe Garananga",
+"frm": "Hibernian FC",
+"to": "FC Copenhagen",
+"to_id": 115,
+"status": "loaned_out",
+"ovr": 66,
+"note": "Lyngby",
+"conf": "high"
+},
+{
+"pid": 531916,
+"name": "Pedro Henrique",
+"frm": "Esporte Clube Vitória",
+"to": "Al Ettifaq",
+"to_id": 365,
+"status": "squad",
+"ovr": 69,
+"note": "undated",
+"conf": "high"
+},
+{
+"pid": 462772,
+"name": "Tayyip Talha Sanuç",
+"frm": "Gaziantep FK",
+"to": "Caykur Rizespor",
+"to_id": 106,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1129950,
+"name": "Andrej Vasovic",
+"frm": "FC Luzern",
+"to": "Club Brugge KV",
+"to_id": 220,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 988710,
+"name": "Baran Gezek",
+"frm": "Eyüpspor",
+"to": "Alanyaspor",
+"to_id": 287,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 727077,
+"name": "Jankat Yılmaz",
+"frm": "Eyüpspor",
+"to": "Galatasaray",
+"to_id": 108,
+"status": "squad",
+"ovr": 66,
+"note": "source: season article",
+"conf": "high"
+},
+{
+"pid": 599215,
+"name": "Tonni Adamsen",
+"frm": "Silkeborg IF",
+"to": "Rapid Vienna",
+"to_id": 111,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 842357,
+"name": "Nelson Palacio",
+"frm": "Real Salt Lake",
+"to": "Toronto FC",
+"to_id": 286,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 568179,
+"name": "Dante Sealy",
+"frm": "Colorado Rapids",
+"to": "Club de Foot Montréal",
+"to_id": 253,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 412937,
+"name": "Shurandy Sambo",
+"frm": "Sparta Rotterdam",
+"to": "Burnley",
+"to_id": 418,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 595940,
+"name": "Zico Buurmeester",
+"frm": "PEC Zwolle",
+"to": "AZ Alkmaar",
+"to_id": 195,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 388220,
+"name": "Sayfallah Ltaief",
+"frm": "Sparta Rotterdam",
+"to": "FC Twente Enschede",
+"to_id": 134,
+"status": "loaned_out",
+"ovr": 68,
+"note": "Greuther Fürth",
+"conf": "low"
+},
+{
+"pid": 999886,
+"name": "Loun Srdanovic",
+"frm": "Servette FC",
+"to": "Lille",
+"to_id": 62,
+"status": "squad",
+"ovr": 62,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 295024,
+"name": "Samet Akaydin",
+"frm": "Caykur Rizespor",
+"to": "Trabzonspor",
+"to_id": 147,
+"status": "squad",
+"ovr": 74,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1123368,
+"name": "David Martínez",
+"frm": "Club Atlético Independiente de Avellaneda",
+"to": "Club Atlético River Plate",
+"to_id": 120,
+"status": "loaned_out",
+"ovr": 66,
+"note": "Defensa y Justicia",
+"conf": "low"
+},
+{
+"pid": 380919,
+"name": "Nihad Mujakic",
+"frm": "Gaziantep FK",
+"to": "Erzurumspor Futbol Kulübü",
+"to_id": 356,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 375434,
+"name": "Michael Steinwender",
+"frm": "Heart of Midlothian FC",
+"to": "VfL Bochum 1848",
+"to_id": 453,
+"status": "squad",
+"ovr": 68,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 1016904,
+"name": "David Vujevic",
+"frm": "FC Zürich",
+"to": "Carrarese Calcio",
+"to_id": 460,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 163053,
+"name": "Mame Thiam",
+"frm": "Eyüpspor",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 867382,
+"name": "Oberdan",
+"frm": "Jeonbuk Hyundai Motors",
+"to": "Fagiano Okayama Sports Club",
+"to_id": 300,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 1145045,
+"name": "Kimito Nono",
+"frm": "Kashima Antlers FC",
+"to": "D.C. United",
+"to_id": 229,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 335003,
+"name": "Jean Manuel Mbom",
+"frm": "Viborg FF",
+"to": "VfL Bochum 1848",
+"to_id": 453,
+"status": "squad",
+"ovr": 68,
+"note": "src=season",
+"conf": "high"
+},
+{
+"pid": 401521,
+"name": "Braian Cufré",
+"frm": "Clube do Remo",
+"to": "Club Atlético Aldosivi",
+"to_id": 290,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 337787,
+"name": "Connor Ronan",
+"frm": "Colorado Rapids",
+"to": "Aberdeen FC",
+"to_id": 139,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 332612,
+"name": "Emmanuel Boateng",
+"frm": "Gaziantep FK",
+"to": "San Diego Football Club",
+"to_id": 321,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 646108,
+"name": "Louicius Deedson",
+"frm": "FC Dallas",
+"to": "FC Sochaux-Montbéliard",
+"to_id": 484,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 734424,
+"name": "Luca Stephenson",
+"frm": "Dundee United FC",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 912703,
+"name": "Alan Núñez",
+"frm": "CD Nacional",
+"to": "Asociación Atlética Argentinos Juniors",
+"to_id": 189,
+"status": "squad",
+"ovr": 65,
+"note": "on loan from Cerro Porteño",
+"conf": "high"
+},
+{
+"pid": 638269,
+"name": "Rhaldney",
+"frm": "FC Alverca",
+"to": "Göztepe",
+"to_id": 212,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 957526,
+"name": "Zento Uno",
+"frm": "S-Pulse",
+"to": "Gladbach",
+"to_id": 12,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 605266,
+"name": "Yalçın Kayan",
+"frm": "Eyüpspor",
+"to": "Samsunspor",
+"to_id": 109,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 481116,
+"name": "Youssef Maziz",
+"frm": "Oud-Heverlee Leuven",
+"to": "Colorado Rapids",
+"to_id": 203,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 341019,
+"name": "Güven Yalçın",
+"frm": "Alanyaspor",
+"to": "Kasimpasa",
+"to_id": 284,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 251309,
+"name": "Dennis Geiger",
+"frm": "Aberdeen FC",
+"to": "NEC Nijmegen",
+"to_id": 150,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 448466,
+"name": "Jovane Cabral",
+"frm": "CF Estrela Amadora",
+"to": "Grêmio Foot-Ball Porto Alegrense",
+"to_id": 121,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 388548,
+"name": "Jandro Orellana",
+"frm": "GD Estoril Praia",
+"to": "Cádiz CF",
+"to_id": 331,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 423112,
+"name": "Takuma Ominami",
+"frm": "Oud-Heverlee Leuven",
+"to": "V-Varen Nagasaki",
+"to_id": 302,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 567114,
+"name": "Liam Morrison",
+"frm": "Aberdeen FC",
+"to": "QPR",
+"to_id": 428,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1360186,
+"name": "Barney Stewart",
+"frm": "Falkirk FC",
+"to": "West Brom",
+"to_id": 434,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 358021,
+"name": "Shawn Adewoye",
+"frm": "Fortuna Sittardia Combinatie",
+"to": "Lommel SK",
+"to_id": 352,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 747243,
+"name": "Gyan de Regt",
+"frm": "Excelsior Rotterdam",
+"to": "Holstein Kiel",
+"to_id": 449,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 566011,
+"name": "Ryotaro Araki",
+"frm": "Kashima Antlers FC",
+"to": "Sint-Truidense VV",
+"to_id": 152,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 647281,
+"name": "Dylan Tait",
+"frm": "Falkirk FC",
+"to": "Dundee United FC",
+"to_id": 213,
+"status": "squad",
+"ovr": 67,
+"note": "vice-captain",
+"conf": "high"
+},
+{
+"pid": 590777,
+"name": "Guus Offerhaus",
+"frm": "SC Telstar",
+"to": "FC Utrecht",
+"to_id": 117,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 206947,
+"name": "Kévin Rodrigues",
+"frm": "Gaziantep FK",
+"to": "Gençlerbirliği Spor Kulübü",
+"to_id": 174,
+"status": "squad",
+"ovr": 73,
+"note": "undated",
+"conf": "high"
+},
+{
+"pid": 735438,
+"name": "Jakob Jessen",
+"frm": "FC Fredericia",
+"to": "Kasimpasa",
+"to_id": 284,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 118397,
+"name": "Alessandro Schöpf",
+"frm": "Wolfsberger AC",
+"to": "LASK",
+"to_id": 143,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 576566,
+"name": "Zafer Görgen",
+"frm": "Gaziantep FK",
+"to": "Caykur Rizespor",
+"to_id": 106,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1089609,
+"name": "Kayky Almeida",
+"frm": "Clube do Remo",
+"to": "Fluminense Football Club",
+"to_id": 231,
+"status": "loaned_out",
+"ovr": 65,
+"note": "Sport Recife",
+"conf": "low"
+},
+{
+"pid": 931841,
+"name": "Amar Fatah",
+"frm": "Dundee United FC",
+"to": "Lecce",
+"to_id": 94,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 157501,
+"name": "M'Baye Niang",
+"frm": "Gençlerbirliği Spor Kulübü",
+"to": "USL Dunkerque",
+"to_id": 493,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 629040,
+"name": "Nicolas Bajlicz",
+"frm": "SV Ried",
+"to": "Rapid Vienna",
+"to_id": 111,
+"status": "squad",
+"ovr": 64,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 536831,
+"name": "Cedric Teguia",
+"frm": "Moreirense FC",
+"to": "AD Ceuta",
+"to_id": 322,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 655135,
+"name": "Calum Ward",
+"frm": "Motherwell FC",
+"to": "QPR",
+"to_id": 428,
+"status": "squad",
+"ovr": 70,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 723008,
+"name": "Miliano Jonathans",
+"frm": "Excelsior Rotterdam",
+"to": "FC Utrecht",
+"to_id": 117,
+"status": "squad",
+"ovr": 61,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 612758,
+"name": "Calvin Twigt",
+"frm": "Go Ahead Eagles",
+"to": "Willem II",
+"to_id": 350,
+"status": "squad",
+"ovr": 64,
+"note": "on loan from Go Ahead Eagles; STALE asof=2026-02-03",
+"conf": "low"
+},
+{
+"pid": 658530,
+"name": "Jonas Jensen-Abbew",
+"frm": "Aarhus GF",
+"to": "ADO Den Haag",
+"to_id": 347,
+"status": "squad",
+"ovr": 60,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 624967,
+"name": "Kion Etete",
+"frm": "St. Mirren FC",
+"to": "Cardiff City",
+"to_id": 419,
+"status": "loaned_out",
+"ovr": 58,
+"note": "Newport County",
+"conf": "high"
+},
+{
+"pid": 915026,
+"name": "Nelson Ishiwatari",
+"frm": "Cerezo Osaka",
+"to": "Sint-Truidense VV",
+"to_id": 152,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 342393,
+"name": "Gustav Marcussen",
+"frm": "FC Fredericia",
+"to": "Vejle Boldklub",
+"to_id": 146,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 448471,
+"name": "Magnus Jensen",
+"frm": "Sönderjyske Fodbold",
+"to": "FC Midtjylland",
+"to_id": 177,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 538864,
+"name": "Samed Onur",
+"frm": "Gençlerbirliği Spor Kulübü",
+"to": "Samsunspor",
+"to_id": 109,
+"status": "squad",
+"ovr": 61,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 448177,
+"name": "Jessic Ngankam",
+"frm": "Wolfsberger AC",
+"to": "Frankfurt",
+"to_id": 6,
+"status": "loaned_out",
+"ovr": 66,
+"note": "Wolfsberg (until 30 June 2026)",
+"conf": "high"
+},
+{
+"pid": 801031,
+"name": "Lewis Schouten",
+"frm": "Excelsior Rotterdam",
+"to": "AZ Alkmaar",
+"to_id": 195,
+"status": "squad",
+"ovr": 63,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 522248,
+"name": "Jamie Lawrence",
+"frm": "WSG Tirol",
+"to": "Oud-Heverlee Leuven",
+"to_id": 235,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 496652,
+"name": "Dylan Levitt",
+"frm": "Hibernian FC",
+"to": "Motherwell FC",
+"to_id": 185,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 729356,
+"name": "Alejandro Martínez",
+"frm": "Club Atlético Huracán",
+"to": "Club Atlético Talleres",
+"to_id": 251,
+"status": "loaned_out",
+"ovr": 67,
+"note": "Nacional",
+"conf": "low"
+},
+{
+"pid": 418615,
+"name": "Lucas França",
+"frm": "CD Nacional",
+"to": "CD Santa Clara",
+"to_id": 225,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 490581,
+"name": "Mathias Olesen",
+"frm": "Grazer AK 1902",
+"to": "Sönderjyske Fodbold",
+"to_id": 260,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 462699,
+"name": "Franz Stolz",
+"frm": "Grazer AK 1902",
+"to": "Genoa",
+"to_id": 89,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 244261,
+"name": "Calvin Miller",
+"frm": "Falkirk FC",
+"to": "Heart of Midlothian FC",
+"to_id": 99,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 569368,
+"name": "Kelian Nsona",
+"frm": "Casa Pia AC",
+"to": "Rodez AF",
+"to_id": 490,
+"status": "squad",
+"ovr": 63,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 403569,
+"name": "Lewis Mayo",
+"frm": "Kilmarnock FC",
+"to": "Aberdeen FC",
+"to_id": 139,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 235780,
+"name": "Mark O'Hara",
+"frm": "St. Mirren FC",
+"to": "Kilmarnock FC",
+"to_id": 233,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 863734,
+"name": "Filip Lissah",
+"frm": "Falkirk FC",
+"to": "Swansea City",
+"to_id": 432,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 129684,
+"name": "Nikki Havenaar",
+"frm": "SV Ried",
+"to": "Union Saint-Gilloise",
+"to_id": 353,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 200747,
+"name": "Daníel Leó Grétarsson",
+"frm": "Sönderjyske Fodbold",
+"to": "Aarhus GF",
+"to_id": 167,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 549354,
+"name": "Ryan Strain",
+"frm": "Dundee United FC",
+"to": "Falkirk FC",
+"to_id": 200,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 667506,
+"name": "Cameron Congreve",
+"frm": "Dundee FC",
+"to": "KVC Westerlo",
+"to_id": 181,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 308408,
+"name": "Thorsten Schriebl",
+"frm": "Grazer AK 1902",
+"to": "Wolfsberger AC",
+"to_id": 256,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 250440,
+"name": "Danny Bakker",
+"frm": "SC Telstar",
+"to": "Football Club Anyang",
+"to_id": 308,
+"status": "squad",
+"ovr": 68,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 276914,
+"name": "Scott Wright",
+"frm": "Dundee FC",
+"to": "Birmingham City",
+"to_id": 414,
+"status": "squad",
+"ovr": 58,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 696324,
+"name": "Billy Koumetio",
+"frm": "Dundee FC",
+"to": "Charlton Ath",
+"to_id": 420,
+"status": "squad",
+"ovr": 63,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 503688,
+"name": "Dominic Thompson",
+"frm": "Kilmarnock FC",
+"to": "Waasland-Beveren",
+"to_id": 354,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 317442,
+"name": "Mark Grosse",
+"frm": "SV Ried",
+"to": "Grazer AK 1902",
+"to_id": 133,
+"status": "squad",
+"ovr": 64,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 332340,
+"name": "Yan Dhanda",
+"frm": "Dundee FC",
+"to": "Heart of Midlothian FC",
+"to_id": 99,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 236734,
+"name": "Axel Werner",
+"frm": "Club Atlético Aldosivi",
+"to": "Club Atlético Rosario Central",
+"to_id": 207,
+"status": "squad",
+"ovr": 67,
+"note": "on loan from Elche",
+"conf": "high"
+},
+{
+"pid": 334816,
+"name": "Brad Lyons",
+"frm": "Kilmarnock FC",
+"to": "Aberdeen FC",
+"to_id": 139,
+"status": "squad",
+"ovr": 68,
+"note": "vice-captain",
+"conf": "high"
+},
+{
+"pid": 573941,
+"name": "John Montaño",
+"frm": "Bucheon Football Club 1995",
+"to": "Lommel SK",
+"to_id": 352,
+"status": "loaned_out",
+"ovr": 65,
+"note": "Independiente Medellín",
+"conf": "low"
+},
+{
+"pid": 225687,
+"name": "Murat Satin",
+"frm": "Grazer AK 1902",
+"to": "WSG Tirol",
+"to_id": 230,
+"status": "squad",
+"ovr": 65,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 399887,
+"name": "Esteban Rolón",
+"frm": "Club Atlético Aldosivi",
+"to": "Club Atlético Barracas Central",
+"to_id": 303,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 1112908,
+"name": "Jacob Devaney",
+"frm": "St. Mirren FC",
+"to": "Hibernian FC",
+"to_id": 178,
+"status": "squad",
+"ovr": 57,
+"note": "on loan from Manchester United",
+"conf": "high"
+},
+{
+"pid": 906428,
+"name": "Kyrell Wilson",
+"frm": "Falkirk FC",
+"to": "KAA Gent",
+"to_id": 110,
+"status": "squad",
+"ovr": 60,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8259065,
+"name": "Arnau Tenas",
+"frm": "RCD Mallorca",
+"to": "Villarreal",
+"to_id": 41,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8075437,
+"name": "Kim Min Su",
+"frm": "Girona FC",
+"to": "Rangers FC",
+"to_id": 105,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8260692,
+"name": "Iker Recio",
+"frm": "Cádiz CF",
+"to": "CD Eldense",
+"to_id": 326,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8246169,
+"name": "Roberto López",
+"frm": "CD Leganés",
+"to": "CD Eldense",
+"to_id": 326,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8071611,
+"name": "Aboubaka Soumahoro",
+"frm": "RCD Mallorca",
+"to": "Hamburger SV",
+"to_id": 10,
+"status": "loaned_out",
+"ovr": 63,
+"note": "Saint-Étienne (until 30 June 2026)",
+"conf": "high"
+},
+{
+"pid": 8242380,
+"name": "Stephen Eustáquio",
+"frm": "FC Porto",
+"to": "Swansea City",
+"to_id": 432,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8278587,
+"name": "Deniz Gül",
+"frm": "FC Porto",
+"to": "Galatasaray",
+"to_id": 108,
+"status": "squad",
+"ovr": 73,
+"note": "source: season article",
+"conf": "high"
+},
+{
+"pid": 8264825,
+"name": "Iyad Mohamed",
+"frm": "Casa Pia AC",
+"to": "Portsmouth",
+"to_id": 426,
+"status": "squad",
+"ovr": 64,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8265788,
+"name": "Zidane Iqbal",
+"frm": "FC Utrecht",
+"to": "Dundee United FC",
+"to_id": 213,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8277465,
+"name": "Isaac Babadi",
+"frm": "PSV Eindhoven",
+"to": "Royal Antwerp FC",
+"to_id": 196,
+"status": "squad",
+"ovr": 67,
+"note": "on loan from PSV; STALE",
+"conf": "low"
+},
+{
+"pid": 8078138,
+"name": "Kasper Boogaard",
+"frm": "Willem II",
+"to": "AZ Alkmaar",
+"to_id": 195,
+"status": "squad",
+"ovr": 66,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8266448,
+"name": "Amourricho van Axel Dongen",
+"frm": "AFC Ajax",
+"to": "SC Heerenveen",
+"to_id": 131,
+"status": "squad",
+"ovr": 66,
+"note": "on loan from Ajax",
+"conf": "high"
+},
+{
+"pid": 8086350,
+"name": "Sam de Grand",
+"frm": "AZ Alkmaar",
+"to": "Lommel SK",
+"to_id": 352,
+"status": "squad",
+"ovr": 64,
+"note": "on loan from AZ Alkmaar",
+"conf": "high"
+},
+{
+"pid": 8076747,
+"name": "Eser Gürbüz",
+"frm": "Willem II",
+"to": "SC Heerenveen",
+"to_id": 131,
+"status": "squad",
+"ovr": 60,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8074963,
+"name": "Ousseynou Niang",
+"frm": "Union Saint-Gilloise",
+"to": "Zulte Waregem",
+"to_id": 244,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8277975,
+"name": "Parfait Guiagon",
+"frm": "Royal Charleroi Sporting Club",
+"to": "Al Taawoun",
+"to_id": 378,
+"status": "squad",
+"ovr": 76,
+"note": "undated (mixed dates on page)",
+"conf": "high"
+},
+{
+"pid": 8232119,
+"name": "Çağlar Söyüncü",
+"frm": "Fenerbahce",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8235889,
+"name": "Cengiz Ünder",
+"frm": "Fenerbahce",
+"to": "Çorum Futbol Kulübü",
+"to_id": 357,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8272673,
+"name": "Zach Mitchell",
+"frm": "St. Johnstone",
+"to": "Charlton Ath",
+"to_id": 420,
+"status": "squad",
+"ovr": 58,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8257304,
+"name": "Ammar Helac",
+"frm": "Sportklub Puntigamer Sturm Graz",
+"to": "TSV Hartberg",
+"to_id": 257,
+"status": "squad",
+"ovr": 62,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8239708,
+"name": "Marko Raguž",
+"frm": "Sportclub Rheindorf Altach",
+"to": "Austria Vienna",
+"to_id": 96,
+"status": "squad",
+"ovr": 62,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8221908,
+"name": "Lewis Morgan",
+"frm": "San Diego Football Club",
+"to": "Toronto FC",
+"to_id": 286,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8233169,
+"name": "Miki Yamane",
+"frm": "Los Angeles Galaxy",
+"to": "Urawa Red Diamonds",
+"to_id": 175,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8240448,
+"name": "Pablo Ruiz",
+"frm": "Real Salt Lake",
+"to": "Los Angeles Galaxy",
+"to_id": 190,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8237512,
+"name": "Gastón Togni",
+"frm": "Club Atlético Platense",
+"to": "Club Social y Deportivo Defensa y Justicia",
+"to_id": 222,
+"status": "loaned_out",
+"ovr": 75,
+"note": "Peñarol",
+"conf": "high"
+},
+{
+"pid": 8263365,
+"name": "Alejandro Martínez",
+"frm": "Club Atlético Huracán",
+"to": "Club Atlético Talleres",
+"to_id": 251,
+"status": "loaned_out",
+"ovr": 71,
+"note": "Nacional",
+"conf": "low"
+},
+{
+"pid": 8275100,
+"name": "Joaquín Mosqueira",
+"frm": "Club Atlético Unión",
+"to": "Club Atlético Talleres",
+"to_id": 251,
+"status": "loaned_out",
+"ovr": 67,
+"note": "Tigre",
+"conf": "low"
+},
+{
+"pid": 8070688,
+"name": "Jeremías Lucco",
+"frm": "Club Social y Deportivo Defensa y Justicia",
+"to": "Club Atlético Belgrano",
+"to_id": 223,
+"status": "squad",
+"ovr": 56,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8242114,
+"name": "Ibrahim Mahnashi",
+"frm": "Al Qadsiah",
+"to": "Al Taawoun",
+"to_id": 378,
+"status": "squad",
+"ovr": 58,
+"note": "undated (mixed dates on page)",
+"conf": "high"
+},
+{
+"pid": 8077534,
+"name": "Guga",
+"frm": "Al Kholood",
+"to": "Fluminense Football Club",
+"to_id": 231,
+"status": "squad",
+"ovr": 52,
+"note": "",
+"conf": "low"
+},
+{
+"pid": 8221293,
+"name": "Guillermo Martínez",
+"frm": "Pumas",
+"to": "Club Tigres",
+"to_id": 390,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8259755,
+"name": "Emiliano Gómez",
+"frm": "Club Puebla",
+"to": "Club Tigres",
+"to_id": 390,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8085803,
+"name": "Ricardo Monreal",
+"frm": "Club Necaxa",
+"to": "Club Tigres",
+"to_id": 390,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8252793,
+"name": "Taylor Harwood-Bellis",
+"frm": "Southampton",
+"to": "Aston Villa",
+"to_id": 25,
+"status": "squad",
+"ovr": 77,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8205569,
+"name": "James Ward-Prowse",
+"frm": "West Ham",
+"to": "Southampton",
+"to_id": 430,
+"status": "squad",
+"ovr": 76,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8238058,
+"name": "Callum O'Hare",
+"frm": "Sheffield Utd",
+"to": "Wrexham",
+"to_id": 437,
+"status": "squad",
+"ovr": 75,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8230708,
+"name": "Joe Worrall",
+"frm": "Burnley",
+"to": "Wrexham",
+"to_id": 437,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8224763,
+"name": "Krystian Bielik",
+"frm": "West Brom",
+"to": "Cardiff City",
+"to_id": 419,
+"status": "squad",
+"ovr": 71,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8243585,
+"name": "Gavin Bazunu",
+"frm": "Southampton",
+"to": "Bolton",
+"to_id": 416,
+"status": "squad",
+"ovr": 67,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8271669,
+"name": "Juan Larios",
+"frm": "Southampton",
+"to": "CD Eldense",
+"to_id": 326,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8276167,
+"name": "Marko Ivezić",
+"frm": "Holstein Kiel",
+"to": "Hibernian FC",
+"to_id": 178,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8270617,
+"name": "Alex Murphy",
+"frm": "Kaiserslautern",
+"to": "Newcastle",
+"to_id": 29,
+"status": "squad",
+"ovr": 64,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8081535,
+"name": "Fousseny Doumbia",
+"frm": "Energie Cottbus",
+"to": "Frankfurt",
+"to_id": 6,
+"status": "squad",
+"ovr": 56,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8244274,
+"name": "Adrian Šemper",
+"frm": "Pisa",
+"to": "Al Fateh",
+"to_id": 367,
+"status": "squad",
+"ovr": 73,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8254824,
+"name": "Pedro Mendes",
+"frm": "Modena",
+"to": "Gençlerbirliği Spor Kulübü",
+"to_id": 174,
+"status": "squad",
+"ovr": 69,
+"note": "undated",
+"conf": "high"
+},
+{
+"pid": 8244483,
+"name": "Manuel Gasparini",
+"frm": "Mantova",
+"to": "Empoli",
+"to_id": 464,
+"status": "squad",
+"ovr": 57,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8254247,
+"name": "Mostafa Mohamed",
+"frm": "FC Nantes",
+"to": "Konyaspor",
+"to_id": 221,
+"status": "squad",
+"ovr": 72,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8229974,
+"name": "Thomas Robinet",
+"frm": "USL Dunkerque",
+"to": "FC Nantes",
+"to_id": 483,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8265689,
+"name": "Yadaly Diaby",
+"frm": "Grenoble Foot 38",
+"to": "Vancouver Whitecaps FC",
+"to_id": 261,
+"status": "squad",
+"ovr": 69,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8275714,
+"name": "Evans Maurin",
+"frm": "Grenoble Foot 38",
+"to": "Casa Pia AC",
+"to_id": 242,
+"status": "squad",
+"ovr": 62,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8269187,
+"name": "Efe Sarıkaya",
+"frm": "Grenoble Foot 38",
+"to": "Gaziantep FK",
+"to_id": 238,
+"status": "squad",
+"ovr": 60,
+"note": "",
+"conf": "high"
+},
+{
+"pid": 8085120,
+"name": "Marco Decherf",
+"frm": "USL Dunkerque",
+"to": "KV Mechelen",
+"to_id": 138,
+"status": "squad",
+"ovr": 50,
+"note": "",
+"conf": "high"
+}
+],
+"amb": [
+[
+919515,
+"Jeanuël Belocian",
+"Racing Sant",
+[
+"Leverkusen",
+"VfL Wolfsburg"
+]
+],
+[
+1094885,
+"Otávio",
+"Frankfurt",
+[
+"Paris FC",
+"Cruzeiro Esporte Clube",
+"Fluminense Football Club"
+]
+],
+[
+683571,
+"Tolu Arokodare",
+"KRC Genk",
+[
+"Wolves",
+"AFC Ajax"
+]
+],
+[
+1082631,
+"Allan",
+"Sociedade Esportiva Palmeiras",
+[
+"Manchester City",
+"Sport Club Corinthians Paulista",
+"S. A. F. Botafogo",
+"Clube de Regatas do Flamengo"
+]
+],
+[
+541134,
+"Souffian El Karouani",
+"FC Utrecht",
+[
+"Al Qadsiah",
+"SL Benfica"
+]
+],
+[
+649317,
+"Jhon Durán",
+"Fenerbahce",
+[
+"SL Benfica",
+"Al Nassr"
+]
+],
+[
+987770,
+"Alessandro Vogt",
+"FC St. Gallen 1879",
+[
+"Hoffenheim",
+"Heidenheim"
+]
+],
+[
+465819,
+"Santiago Rodríguez",
+"S. A. F. Botafogo",
+[
+"Columbus Crew",
+"Asociación Atlética Argentinos Juniors"
+]
+],
+[
+586834,
+"Jesurun Rak-Sakyi",
+"Caykur Rizespor",
+[
+"Crystal Palace",
+"Kasimpasa"
+]
+],
+[
+343475,
+"Ben Godfrey",
+"Bröndby IF",
+[
+"Atalanta",
+"Rangers FC"
+]
+],
+[
+610335,
+"Iván Jaime",
+"Club de Foot Montréal",
+[
+"UD Las Palmas",
+"FC Porto"
+]
+],
+[
+610400,
+"William Bøving",
+"Sportklub Puntigamer Sturm Graz",
+[
+"Mainz 05",
+"1. FC Nürnberg"
+]
+],
+[
+485582,
+"Sontje Hansen",
+"NEC Nijmegen",
+[
+"Middlesbrough",
+"Gaziantep FK"
+]
+],
+[
+486814,
+"Filip Krastev",
+"Göztepe",
+[
+"PEC Zwolle",
+"Lommel SK"
+]
+],
+[
+502239,
+"Michel-Ange Balikwisha",
+"Royal Antwerp FC",
+[
+"KAA Gent",
+"Celtic FC"
+]
+],
+[
+675468,
+"Mauro Méndez",
+"Club Estudiantes de La Plata",
+[
+"Club Atlético Banfield",
+"Club Atlético Tigre"
+]
+],
+[
+814489,
+"Taisei Abe",
+"FC Luzern",
+[
+"V-Varen Nagasaki",
+"Holstein Kiel"
+]
+],
+[
+655912,
+"Göktan Gürpüz",
+"Gençlerbirliği Spor Kulübü",
+[
+"Trabzonspor",
+"Çorum Futbol Kulübü"
+]
+],
+[
+703772,
+"Milan Smit",
+"Go Ahead Eagles",
+[
+"SV Darmstadt 98",
+"Stoke City"
+]
+],
+[
+469957,
+"Kastriot Imeri",
+"FC Thun",
+[
+"Union Berlin",
+"BSC Young Boys"
+]
+],
+[
+354022,
+"Dominik Fitz",
+"Austria Vienna",
+[
+"Minnesota United FC",
+"Wolfsberger AC"
+]
+],
+[
+624751,
+"Lyall Cameron",
+"Aberdeen FC",
+[
+"Rangers FC",
+"Dundee United FC"
+]
+],
+[
+405568,
+"Maurice Malone",
+"Austria Vienna",
+[
+"Minnesota United FC",
+"Sportklub Puntigamer Sturm Graz"
+]
+],
+[
+875511,
+"Paulo Victor",
+"CD Santa Clara",
+[
+"Querétaro FC",
+"Alanyaspor"
+]
+],
+[
+870414,
+"Danilo",
+"Football Club Mito HollyHock",
+[
+"Clube de Regatas do Flamengo",
+"Rangers FC"
+]
+],
+[
+8264877,
+"Moritz Oswald",
+"Rapid Vienna",
+[
+"WSG Tirol",
+"Sportclub Rheindorf Altach"
+]
+],
+[
+8219452,
+"Julián Fernández",
+"Club Atlético Tucumán",
+[
+"New York City Football Club",
+"Club Atlético Rosario Central"
+]
+],
+[
+8276827,
+"Abdoulaye Kanté",
+"Middlesbrough",
+[
+"Al Ettifaq",
+"Austria Vienna"
+]
+]
+],
+"gone": [
+[
+111873,
+"Emiliano Martínez",
+"Chelsea",
+88
+],
+[
+1390649,
+"Yan Diomandé",
+"Real Madrid",
+88
+],
+[
+503743,
+"Morgan Rogers",
+"Chelsea",
+87
+],
+[
+434224,
+"Maxence Lacroix",
+"Chelsea",
+87
+],
+[
+808348,
+"Mamadou Sangare",
+"Brentford",
+85
+],
+[
+321528,
+"Denzel Dumfries",
+"Real Madrid",
+84
+],
+[
+133179,
+"Marten de Roon",
+"Roma",
+84
+],
+[
+8165153,
+"Karim Benzema",
+"Al Hilal",
+84
+],
+[
+699783,
+"Raphael Onyedika",
+"Frankfurt",
+83
+],
+[
+206050,
+"Paulo Dybala",
+"Roma",
+83
+],
+[
+466805,
+"Nicolás González",
+"Newcastle",
+83
+],
+[
+475411,
+"Wesley Fofana",
+"Chelsea",
+82
+],
+[
+8255125,
+"Azzedine Ounahi",
+"Girona FC",
+82
+],
+[
+519184,
+"Amar Dedić",
+"Newcastle",
+81
+],
+[
+474800,
+"Facundo Medina",
+"Leverkusen",
+81
+],
+[
+285845,
+"Ainsley Maitland-Niles",
+"Everton",
+81
+],
+[
+424042,
+"Nahuel Molina",
+"Roma",
+81
+],
+[
+849410,
+"Valentín Barco",
+"Chelsea",
+81
+],
+[
+1067904,
+"Bazoumana Touré",
+"Newcastle",
+81
+],
+[
+110923,
+"Mattia Perin",
+"Juventus",
+81
+],
+[
+258626,
+"Talisca",
+"Fenerbahce",
+81
+],
+[
+8244369,
+"Viktor Tsygankov",
+"Girona FC",
+81
+],
+[
+8241671,
+"Dominik Livaković",
+"Fenerbahce",
+81
+],
+[
+8274915,
+"El Hadji Malick Diouf",
+"West Ham",
+81
+],
+[
+525299,
+"Miguel Gutiérrez",
+"Leverkusen",
+80
+],
+[
+485960,
+"Lilian Brassier",
+"Frankfurt",
+80
+],
+[
+724129,
+"Matias Fernandez-Pardo",
+"Newcastle",
+80
+],
+[
+123682,
+"Callum Wilson",
+"Brentford",
+80
+],
+[
+834899,
+"Felipe Augusto",
+"Trabzonspor",
+80
+],
+[
+8223689,
+"Wout Weghorst",
+"FC Twente Enschede",
+80
+],
+[
+684210,
+"Jaidon Anthony",
+"Brentford",
+79
+],
+[
+711980,
+"Guéla Doué",
+"Strasbourg",
+79
+],
+[
+849520,
+"Santiago Castro",
+"Roma",
+79
+],
+[
+67063,
+"Danny Welbeck",
+"Chelsea",
+79
+],
+[
+8236593,
+"Calvin Stengs",
+"AZ Alkmaar",
+79
+],
+[
+8216388,
+"Allan Saint-Maximin",
+"Charlotte Football Club",
+79
+],
+[
+8226286,
+"Gabriel Ávalos",
+"Club Atlético Independiente de Avellaneda",
+79
+],
+[
+8223686,
+"Timon Wellenreuther",
+"VfL Wolfsburg",
+79
+],
+[
+8235949,
+"Gabriel Strefezza",
+"Palermo",
+79
+],
+[
+908413,
+"Brugui",
+"Levante",
+78
+],
+[
+629773,
+"Lukáš Horníček",
+"Newcastle",
+78
+],
+[
+628451,
+"Roméo Lavia",
+"Chelsea",
+78
+],
+[
+902790,
+"Rahim Bonkano",
+"Bologna",
+78
+],
+[
+1111589,
+"El Hadji Malick Diouf",
+"Brentford",
+78
+],
+[
+1104114,
+"Anthony Dennis",
+"Göztepe",
+78
+],
+[
+289075,
+"Oleksandr Zubkov",
+"Trabzonspor",
+78
+],
+[
+965815,
+"Obite N'Dicka",
+"Roma",
+77
+],
+[
+538874,
+"Terem Moffi",
+"Hamburger SV",
+77
+],
+[
+1063338,
+"Carlos Espí",
+"Real Madrid",
+77
+],
+[
+1056993,
+"Estêvão Willian",
+"Chelsea",
+77
+],
+[
+793099,
+"Stije Resink",
+"FC Groningen",
+77
+],
+[
+580434,
+"Tobe Leysen",
+"Oud-Heverlee Leuven",
+77
+],
+[
+8244262,
+"Dinko Horkaš",
+"UD Las Palmas",
+77
+],
+[
+8211368,
+"Bruma",
+"SL Benfica",
+77
+],
+[
+8239704,
+"Kai Wagner",
+"Philadelphia Union",
+77
+],
+[
+8226797,
+"Víctor Ignacio Malcorra",
+"Club Atlético Unión",
+77
+],
+[
+8226078,
+"Trezeguet",
+"Al Riyadh",
+77
+],
+[
+8239267,
+"Afimico Pululu",
+"Al Hazem",
+77
+],
+[
+8253433,
+"Femi Azeez",
+"Millwall",
+77
+],
+[
+8231614,
+"Fabian Reese",
+"VfL Wolfsburg",
+77
+],
+[
+8143076,
+"Alejandro Gómez",
+"Padova",
+77
+],
+[
+8231237,
+"Peter Vindahl",
+"Sampdoria",
+77
+],
+[
+1004708,
+"Joshua Acheampong",
+"Chelsea",
+76
+],
+[
+688593,
+"Santiago Ramos Mingo",
+"Esporte Clube Bahia",
+76
+],
+[
+658678,
+"Christian",
+"Cruzeiro Esporte Clube",
+76
+],
+[
+661136,
+"Kevin Lomónaco",
+"Club Atlético Independiente de Avellaneda",
+76
+],
+[
+958647,
+"Ümit Akdağ",
+"Alanyaspor",
+76
+],
+[
+354340,
+"Rick van Drongelen",
+"Samsunspor",
+76
+],
+[
+428786,
+"Alan",
+"Moreirense FC",
+76
+],
+[
+8277554,
+"Adri Fuentes",
+"RCD Mallorca",
+76
+],
+[
+8273128,
+"Rafiu Durosinmi",
+"KRC Genk",
+76
+],
+[
+8235658,
+"Victor Nelsson",
+"Galatasaray",
+76
+],
+[
+8207715,
+"Nicolás López",
+"Club Atlético Platense",
+76
+],
+[
+8236441,
+"Fabricio Bustos",
+"Club Atlético River Plate",
+76
+],
+[
+8247131,
+"Pacha Espino",
+"Racing Club Asociación Civil de Avellaneda",
+76
+],
+[
+8274559,
+"Kendry Páez",
+"Club Atlético River Plate",
+76
+],
+[
+8242794,
+"Imrân Louza",
+"Watford",
+76
+],
+[
+8230855,
+"Hauke Wahl",
+"VfL Wolfsburg",
+76
+],
+[
+8225475,
+"Hernani",
+"Palermo",
+76
+],
+[
+8246419,
+"Yari Verschaeren",
+"Sampdoria",
+76
+],
+[
+400489,
+"Elif Elmas",
+"Atalanta",
+75
+],
+[
+901964,
+"Heorhii Tsitaishvili",
+"Rayo Vallecano",
+75
+],
+[
+583404,
+"Marcus Pedersen",
+"Torino",
+75
+],
+[
+662131,
+"Ahmetcan Kaplan",
+"NEC Nijmegen",
+75
+],
+[
+365394,
+"In-beom Hwang",
+"Feyenoord Rotterdam",
+75
+],
+[
+272206,
+"Tobias Lauritsen",
+"Sparta Rotterdam",
+75
+],
+[
+527026,
+"Ricardo Velho",
+"Gençlerbirliği Spor Kulübü",
+75
+],
+[
+289713,
+"Mamadou Fall",
+"Kasimpasa",
+75
+],
+[
+8234686,
+"Jordan Lotomba",
+"Feyenoord Rotterdam",
+75
+],
+[
+8232080,
+"Jack Harrison",
+"New England Revolution",
+75
+],
+[
+8193601,
+"Germán Pezzella",
+"Club Atlético River Plate",
+75
+],
+[
+8214933,
+"Diego Rodríguez",
+"Club Atlético Banfield",
+75
+],
+[
+8238545,
+"Feras Al Brikan",
+"Al Ahli",
+75
+],
+[
+8255487,
+"Sofiane Bendebka",
+"Al Hazem",
+75
+],
+[
+8205401,
+"Vako",
+"Shandong Taishan",
+75
+],
+[
+8240193,
+"Elvis Rexhbeçaj",
+"VfL Wolfsburg",
+75
+],
+[
+8255459,
+"Alexander Bernhardsson",
+"VfL Wolfsburg",
+75
+],
+[
+8262219,
+"Björn Meijer",
+"Sampdoria",
+75
+],
+[
+941544,
+"Rafael Garrido",
+"Málaga",
+74
+],
+[
+365172,
+"Patson Daka",
+"Hamburger SV",
+74
+],
+[
+205562,
+"Thomas Lemar",
+"Elche",
+74
+],
+[
+691841,
+"Yanis Zouaoui",
+"Le Havre",
+74
+],
+[
+750903,
+"Jaouen Hadjam",
+"BSC Young Boys",
+74
+],
+[
+857948,
+"Kevin Castaño",
+"Club Atlético River Plate",
+74
+],
+[
+854325,
+"Étienne Camara",
+"Royal Charleroi Sporting Club",
+74
+],
+[
+543302,
+"Jeppe Erenbjerg",
+"Zulte Waregem",
+74
+],
+[
+563878,
+"Gastón Lodico",
+"Instituto Atlético Central Córdoba",
+74
+],
+[
+351738,
+"Lincoln",
+"FC Alverca",
+74
+],
+[
+43228,
+"Albert Rusnák",
+"Seattle Sounders FC",
+74
+],
+[
+144244,
+"Pantelis Hatzidiakos",
+"FC Copenhagen",
+74
+],
+[
+836547,
+"Serginho",
+"CD Santa Clara",
+74
+],
+[
+395523,
+"Wilfried Kanga",
+"KAA Gent",
+74
+],
+[
+236997,
+"Tiago Silva",
+"Vitória Guimarães SC",
+74
+],
+[
+345437,
+"Mateusz Lis",
+"Göztepe",
+74
+],
+[
+224088,
+"Olivier Ntcham",
+"Samsunspor",
+74
+],
+[
+168408,
+"Lubomir Satka",
+"Samsunspor",
+74
+],
+[
+985747,
+"Chuky san jose",
+"Werder Bremen",
+73
+],
+[
+916379,
+"Jeremiaha Maluze",
+"Frankfurt",
+73
+],
+[
+957653,
+"Rodrigo Mora",
+"Roma",
+73
+],
+[
+842420,
+"Nathan Saliba",
+"Villarreal",
+73
+],
+[
+997012,
+"Noel Nkili",
+"Frankfurt",
+73
+],
+[
+975347,
+"Aladji Bamba",
+"Newcastle",
+73
+],
+[
+645588,
+"Tomás Händel",
+"Vitória Guimarães SC",
+73
+],
+[
+1063811,
+"Miguelito",
+"Santos Futebol Clube",
+73
+],
+[
+362842,
+"Arthur Melo",
+"Grêmio Foot-Ball Porto Alegrense",
+73
+],
+[
+249030,
+"Dániel Gazdag",
+"Columbus Crew",
+73
+],
+[
+579089,
+"Christiaan Ravych",
+"Cercle Brugge",
+73
+],
+[
+829434,
+"Facundo Cáseres",
+"Gil Vicente FC",
+73
+],
+[
+432694,
+"Joshua Kitolano",
+"Sparta Rotterdam",
+73
+],
+[
+8229764,
+"Iñigo Córdoba",
+"CD Castellón",
+73
+],
+[
+8258602,
+"Morci",
+"UD Almería",
+73
+],
+[
+8277269,
+"Adrián Liso",
+"RCD Mallorca",
+73
+],
+[
+8162328,
+"Remko Pasveer",
+"FC Twente Enschede",
+73
+],
+[
+8223933,
+"Gustaf Nilsson",
+"Club Brugge KV",
+73
+],
+[
+8247368,
+"Juan Barinaga",
+"Club Atlético Boca Juniors",
+73
+],
+[
+8266171,
+"Juan de Dios Pintado",
+"Club Atlético Unión",
+73
+],
+[
+8222457,
+"Bernard Mensah",
+"Al Riyadh",
+73
+],
+[
+8226210,
+"Gustavo Ferrareis",
+"Atlas FC",
+73
+],
+[
+8244269,
+"Filip Benković",
+"SZ Peng City",
+73
+],
+[
+8242660,
+"Jordan Beyer",
+"Burnley",
+73
+],
+[
+8203106,
+"Leonardo Bittencourt",
+"Energie Cottbus",
+73
+],
+[
+8236533,
+"Robert Glatzel",
+"VfL Wolfsburg",
+73
+],
+[
+8242965,
+"Fraser Hornby",
+"VfL Wolfsburg",
+73
+],
+[
+8271246,
+"Muhammed Damar",
+"VfL Wolfsburg",
+73
+],
+[
+8258626,
+"Danel Sinani",
+"Sampdoria",
+73
+],
+[
+8257978,
+"Sambou Soumano",
+"Stade de Reims",
+73
+],
+[
+901636,
+"Joaquín Martínez Gauna",
+"Strasbourg",
+72
+],
+[
+375382,
+"André Almeida",
+"Racing Sant",
+72
+],
+[
+659520,
+"Bilal Nadir",
+"Hamburger SV",
+72
+],
+[
+1082602,
+"Wallace Yan",
+"Clube de Regatas do Flamengo",
+72
+],
+[
+689017,
+"Ferreirinha",
+"São Paulo Futebol Clube",
+72
+],
+[
+1005650,
+"Tchoca",
+"Sport Club Corinthians Paulista",
+72
+],
+[
+277118,
+"Manu García",
+"Sporting Kansas City",
+72
+],
+[
+480975,
+"Allahyar Sayyadmanesh",
+"KVC Westerlo",
+72
+],
+[
+491687,
+"Manuel Roffo",
+"Instituto Atlético Central Córdoba",
+72
+],
+[
+787238,
+"Erison",
+"JEF United",
+72
+],
+[
+544895,
+"Paulinho Bóia",
+"CD Nacional",
+72
+],
+[
+8146947,
+"Vesga",
+"UD Almería",
+72
+],
+[
+8202651,
+"Suso",
+"Cádiz CF",
+72
+],
+[
+8252931,
+"Luka Ivanušec",
+"Feyenoord Rotterdam",
+72
+],
+[
+8271902,
+"Kevin Amaro",
+"KRC Genk",
+72
+],
+[
+8200746,
+"John Lundstram",
+"Trabzonspor",
+72
+],
+[
+8252526,
+"Darian Males",
+"BSC Young Boys",
+72
+],
+[
+8247019,
+"Boubakar Kouyaté",
+"Al Khaleej",
+72
+],
+[
+8253039,
+"Mory Konaté",
+"Al Hazem",
+72
+],
+[
+8253276,
+"Rodrigo Abascal",
+"Al Riyadh",
+72
+],
+[
+8244296,
+"Emil Riis",
+"Bristol City",
+72
+],
+[
+8246763,
+"Ki-Jana Hoever",
+"Wolves",
+72
+],
+[
+8247623,
+"Jeremy Ngakia",
+"Watford",
+72
+],
+[
+8229436,
+"Stefan Gartenmann",
+"Sampdoria",
+72
+],
+[
+8240992,
+"Nahuel Estévez",
+"Palermo",
+72
+],
+[
+8074475,
+"Bahereba Guirassy",
+"FC Nantes",
+72
+],
+[
+957179,
+"Gnangoro",
+"Rayo Vallecano",
+71
+],
+[
+814976,
+"Martin Adeline",
+"Hamburger SV",
+71
+],
+[
+919538,
+"Roy Revivo",
+"Elche",
+71
+],
+[
+1138758,
+"Geovany Quenda",
+"Chelsea",
+71
+],
+[
+1500420,
+"Bruninho",
+"Clube Atlético Paranaense",
+71
+],
+[
+543513,
+"Elmin Rastoder",
+"FC Thun",
+71
+],
+[
+706963,
+"Han-beom Lee",
+"FC Midtjylland",
+71
+],
+[
+321195,
+"Ondrej Lingr",
+"Houston Dynamo",
+71
+],
+[
+294791,
+"Chris Bedia",
+"BSC Young Boys",
+71
+],
+[
+743629,
+"Josimar Alcócer",
+"KVC Westerlo",
+71
+],
+[
+528022,
+"Dejan Zukic",
+"Wolfsberger AC",
+71
+],
+[
+258007,
+"Gustav Berggren",
+"Red Bull New York",
+71
+],
+[
+1005651,
+"João Tornich",
+"LASK",
+71
+],
+[
+441738,
+"Joel Waterman",
+"Chicago Fire Soccer Club",
+71
+],
+[
+245893,
+"Matt Miazga",
+"Football Club Cincinnati",
+71
+],
+[
+230140,
+"Stian Gregersen",
+"Atlanta United Football Club",
+71
+],
+[
+399369,
+"Beni Baningime",
+"Heart of Midlothian FC",
+71
+],
+[
+396516,
+"Nicholas Opoku",
+"Kasimpasa",
+71
+],
+[
+346647,
+"Yuta Nakayama",
+"Zelvia",
+71
+],
+[
+256773,
+"Dan Barlaser",
+"Hibernian FC",
+71
+],
+[
+124422,
+"Robin Yalçın",
+"Eyüpspor",
+71
+],
+[
+8242369,
+"Puigmal",
+"RCD Mallorca",
+71
+],
+[
+8243431,
+"Miguel Rubio",
+"Real Valladolid",
+71
+],
+[
+8275493,
+"Chacón",
+"Real Valladolid",
+71
+],
+[
+8276198,
+"Áron Yaakobishvili",
+"UD Almería",
+71
+],
+[
+8277519,
+"Juan Gutiérrez",
+"Córdoba CF",
+71
+],
+[
+8262334,
+"Dirk Proper",
+"SC Heerenveen",
+71
+],
+[
+8231835,
+"Thomas Henry",
+"Standard Liège",
+71
+],
+[
+8255605,
+"Harlen Castillo",
+"Club de Gimnasia y Esgrima La Plata",
+71
+],
+[
+8085708,
+"Santiago Sandoval",
+"Club Guadalajara",
+71
+],
+[
+8199027,
+"Jack Robinson",
+"Birmingham City",
+71
+],
+[
+8202048,
+"Conor Coady",
+"Wrexham",
+71
+],
+[
+8275912,
+"Filippo Pittarello",
+"Catanzaro",
+71
+],
+[
+8209618,
+"Florian Tardieu",
+"Montpellier",
+71
+],
+[
+8238749,
+"Mickaël Nadé",
+"AS Saint-Étienne",
+71
+],
+[
+1004486,
+"Mathys De Carvalho",
+"Lyon",
+70
+],
+[
+1169411,
+"Luca Weinhandl",
+"Sportklub Puntigamer Sturm Graz",
+70
+],
+[
+856498,
+"Daniel Pereira",
+"Austin FC",
+70
+],
+[
+569375,
+"Koba Koindredi",
+"FC Basel 1893",
+70
+],
+[
+627221,
+"Gabriel Veron",
+"CD Nacional",
+70
+],
+[
+424881,
+"Omar Richards",
+"Rio Ave FC",
+70
+],
+[
+207597,
+"Cedric Teuchert",
+"St. Louis City Soccer Club",
+70
+],
+[
+323740,
+"Aitor Cantalapiedra",
+"Esporte Clube Vitória",
+70
+],
+[
+406008,
+"Yan Valery",
+"BSC Young Boys",
+70
+],
+[
+865281,
+"Jochem Ritmeester van de Kamp",
+"SC Telstar",
+70
+],
+[
+350342,
+"Fernando Sobral",
+"Coritiba Foot Ball Club",
+70
+],
+[
+829968,
+"Imanol Machuca",
+"Club Atlético Vélez Sársfield",
+70
+],
+[
+503865,
+"Alexander Jensen",
+"Aberdeen FC",
+70
+],
+[
+646189,
+"Topi Keskinen",
+"Aberdeen FC",
+70
+],
+[
+262016,
+"Erik",
+"Zelvia",
+70
+],
+[
+201311,
+"Isaac Kiese Thelin",
+"Urawa Red Diamonds",
+70
+],
+[
+8278395,
+"Guilherme",
+"Córdoba CF",
+70
+],
+[
+8248858,
+"Timothy Fayulu",
+"FC Sion",
+70
+],
+[
+8214462,
+"Iván Mauricio Arboleda",
+"Club Atlético Sarmiento",
+70
+],
+[
+1111063,
+"Sean Steur",
+"Newcastle",
+69
+],
+[
+938158,
+"Marc Guiu",
+"RB Leipzig",
+69
+],
+[
+1328021,
+"Dell",
+"Esporte Clube Bahia",
+69
+],
+[
+669000,
+"Habib Keïta",
+"Kocaelispor",
+69
+],
+[
+722375,
+"Srdjan Kuzmic",
+"Viborg FF",
+69
+],
+[
+593205,
+"Julimar",
+"Clube Atlético Paranaense",
+69
+],
+[
+673513,
+"Mohamed Belhadj Mahmoud",
+"FC Lugano",
+69
+],
+[
+532858,
+"Jérémy Petris",
+"Royal Charleroi Sporting Club",
+69
+],
+[
+401598,
+"Lukasz Lakomy",
+"Oud-Heverlee Leuven",
+69
+],
+[
+585346,
+"Baltazar",
+"FC Sion",
+69
+],
+[
+401362,
+"Aarón Herrera",
+"D.C. United",
+69
+],
+[
+216443,
+"Riechedly Bazoer",
+"Konyaspor",
+69
+],
+[
+627329,
+"Jordi Liongola",
+"RAAL La Louvière",
+69
+],
+[
+179860,
+"Andraz Sporar",
+"Alanyaspor",
+69
+],
+[
+503640,
+"Neraysho Kasanwirjo",
+"Fortuna Sittardia Combinatie",
+69
+],
+[
+324344,
+"Dimitrios Limnios",
+"Fortuna Sittardia Combinatie",
+69
+],
+[
+225873,
+"Karol Linetty",
+"Kocaelispor",
+69
+],
+[
+984904,
+"Kevin Mantilla",
+"Club Atlético Talleres",
+69
+],
+[
+623072,
+"Nikolaos Athanasiou",
+"Rio Ave FC",
+69
+],
+[
+390179,
+"Bastien Toma",
+"FC St. Gallen 1879",
+69
+],
+[
+353035,
+"Saúl Salcedo",
+"Club Atlético Newell’s Old Boys",
+69
+],
+[
+383807,
+"Kikas",
+"CF Estrela Amadora",
+69
+],
+[
+344610,
+"Hicham Mahou",
+"FC Lugano",
+69
+],
+[
+479675,
+"Leonardo Rocha",
+"JEF United",
+69
+],
+[
+332342,
+"Callum Slattery",
+"Motherwell FC",
+69
+],
+[
+111275,
+"Philipp Max",
+"Gamba Osaka",
+69
+],
+[
+268652,
+"Junior Arias",
+"Club Atlético Aldosivi",
+69
+],
+[
+8074604,
+"Oscar Naasei",
+"Granada CF",
+69
+],
+[
+8200519,
+"Pulido",
+"UD Almería",
+69
+],
+[
+8243834,
+"Luka Ilić",
+"Real Oviedo",
+69
+],
+[
+8260595,
+"Jari Vlak",
+"CD Castellón",
+69
+],
+[
+8079751,
+"Josep Cerdà",
+"RCD Mallorca",
+69
+],
+[
+8227508,
+"Melero",
+"CD Leganés",
+69
+],
+[
+8265733,
+"Dawda Camara",
+"Girona FC",
+69
+],
+[
+8270738,
+"Thiago Ojeda",
+"Real Valladolid",
+69
+],
+[
+8273022,
+"Yeray Cabanzón",
+"Real Valladolid",
+69
+],
+[
+8271562,
+"Matheus Nunes",
+"CD Santa Clara",
+69
+],
+[
+8246974,
+"Diogo Calila",
+"CD Santa Clara",
+69
+],
+[
+8071984,
+"Gabriel Brás",
+"NEC Nijmegen",
+69
+],
+[
+8208159,
+"Michael Frey",
+"Royal Antwerp FC",
+69
+],
+[
+8245084,
+"Maxime Busi",
+"Royal Antwerp FC",
+69
+],
+[
+8230857,
+"Nuno da Costa",
+"Basaksehir FK",
+69
+],
+[
+8235728,
+"Warren O'Hora",
+"Hibernian FC",
+69
+],
+[
+8240544,
+"Giotto Morandi",
+"Grasshopper Club Zurich",
+69
+],
+[
+8277376,
+"Claudio Cassano",
+"FC Lugano",
+69
+],
+[
+8252252,
+"Paul Koller",
+"Sportklub Puntigamer Sturm Graz",
+69
+],
+[
+8247150,
+"Alex Vigo",
+"Club Sportivo Independiente Rivadavia",
+69
+],
+[
+8259962,
+"Gustavo Del Prete",
+"Club Atlético San Lorenzo de Almagro",
+69
+],
+[
+8261537,
+"Braian Sánchez",
+"Asociación de Fomento Deportivo Riestra Barrio Colón",
+69
+],
+[
+8273560,
+"Matías Rocha",
+"Club Atlético Unión",
+69
+],
+[
+8238043,
+"Abdulrahman Al Obud",
+"Al Ittihad",
+69
+],
+[
+8264696,
+"Kader Keïta",
+"Al Riyadh",
+69
+],
+[
+8252523,
+"Ibrahima Ndiaye",
+"Al Faisaly",
+69
+],
+[
+8237875,
+"Rodrigo Schlegel",
+"Atlas FC",
+69
+],
+[
+8224842,
+"Greg Docherty",
+"Charlton Ath",
+69
+],
+[
+8237943,
+"Dan Scarr",
+"Wrexham",
+69
+],
+[
+8189558,
+"Bartosz Salamon",
+"Carrarese Calcio",
+69
+],
+[
+8220915,
+"Gabriele Moncini",
+"L. R. Vicenza",
+69
+],
+[
+8220065,
+"Ettore Gliozzi",
+"Mantova",
+69
+],
+[
+8262480,
+"Rareș Andrei Ilie",
+"Mantova",
+69
+],
+[
+8247369,
+"Tom Ducrocq",
+"En Avant Guingamp",
+69
+],
+[
+8267778,
+"Leonardo Buta",
+"Red Star FC",
+69
+],
+[
+915418,
+"Jannik Schuster",
+"Brentford",
+68
+],
+[
+912872,
+"Johaneko Louisjean",
+"Athletic Club",
+68
+],
+[
+1200423,
+"Rémi Himbert",
+"Lyon",
+68
+],
+[
+703460,
+"Dor Turgeman",
+"New England Revolution",
+68
+],
+[
+625206,
+"Adrian Barisic",
+"FC Basel 1893",
+68
+],
+[
+490967,
+"Andri Gudjohnsen",
+"KAA Gent",
+68
+],
+[
+686597,
+"Calegari",
+"Eyüpspor",
+68
+],
+[
+562948,
+"Hyun-seok Hong",
+"KAA Gent",
+68
+],
+[
+543727,
+"Botond Balogh",
+"Kocaelispor",
+68
+],
+[
+463610,
+"Loïc Mbe Soh",
+"Sint-Truidense VV",
+68
+],
+[
+640026,
+"Shola Shoretire",
+"PEC Zwolle",
+68
+],
+[
+346472,
+"Tom Dele-Bashiru",
+"Gençlerbirliği Spor Kulübü",
+68
+],
+[
+427693,
+"Matthias Phaëton",
+"FC Zürich",
+68
+],
+[
+238639,
+"Steve Mounié",
+"Alanyaspor",
+68
+],
+[
+592363,
+"Nathan Fogaça",
+"Mirasol Futebol Clube",
+68
+],
+[
+800732,
+"Diego Hernández",
+"Clube do Remo",
+68
+],
+[
+392777,
+"Jonathan Panzo",
+"Rio Ave FC",
+68
+],
+[
+569777,
+"Alassane Ndao",
+"Konyaspor",
+68
+],
+[
+343153,
+"Yevgen Cheberko",
+"Columbus Crew",
+68
+],
+[
+649087,
+"Amadou Dante",
+"FC Arouca",
+68
+],
+[
+371002,
+"Stipe Radic",
+"Viborg FF",
+68
+],
+[
+657635,
+"Bryan Teixeira",
+"LASK",
+68
+],
+[
+582995,
+"Andrés Reyes",
+"San Diego Football Club",
+68
+],
+[
+470606,
+"Leighton Clarkson",
+"Aberdeen FC",
+68
+],
+[
+307658,
+"Tin Plavotic",
+"Austria Vienna",
+68
+],
+[
+307817,
+"Valentino Müller",
+"WSG Tirol",
+68
+],
+[
+230361,
+"Morten Bjørlo",
+"Konyaspor",
+68
+],
+[
+436960,
+"Motohiko Nakajima",
+"Cerezo Osaka",
+68
+],
+[
+358648,
+"Anton Kryvotsiuk",
+"Foundation Coorperation Hana Financial Group Inc. Football Club",
+68
+],
+[
+833592,
+"Daniel Hall",
+"JEF United",
+68
+],
+[
+575209,
+"Vicko Sevelj",
+"Dundee United FC",
+68
+],
+[
+364945,
+"Eric Ramírez",
+"Club Atlético Huracán",
+68
+],
+[
+403564,
+"Jon McCracken",
+"Dundee FC",
+68
+],
+[
+68033,
+"Steven Zuber",
+"FC Zürich",
+68
+],
+[
+337290,
+"Shamal George",
+"St. Mirren FC",
+68
+],
+[
+978072,
+"Youssef Lekhedim",
+"Alavés",
+67
+],
+[
+937955,
+"Héctor Fort",
+"Real Sociedad",
+67
+],
+[
+661212,
+"Mathias Løvik",
+"Trabzonspor",
+67
+],
+[
+697716,
+"Serginho",
+"Viborg FF",
+67
+],
+[
+911482,
+"Amin Boudri",
+"Los Angeles Football Club",
+67
+],
+[
+405399,
+"Denis Drăguș",
+"Gaziantep FK",
+67
+],
+[
+263380,
+"Attila Szalai",
+"Kasimpasa",
+67
+],
+[
+962090,
+"Artem Smolyakov",
+"Los Angeles Football Club",
+67
+],
+[
+447482,
+"Dagur Dan Thórhallsson",
+"Club de Foot Montréal",
+67
+],
+[
+793873,
+"Mads Agger",
+"Sönderjyske Fodbold",
+67
+],
+[
+681829,
+"Nilton",
+"CF Estrela Amadora",
+67
+],
+[
+1332184,
+"Jerry Afriyie",
+"RAAL La Louvière",
+67
+],
+[
+898140,
+"Antonio Van Wyk",
+"SV Ried",
+67
+],
+[
+538974,
+"Janis Antiste",
+"Rapid Vienna",
+67
+],
+[
+540927,
+"Kaj de Rooij",
+"PEC Zwolle",
+67
+],
+[
+656132,
+"Aske Adelgaard",
+"Go Ahead Eagles",
+67
+],
+[
+346903,
+"Christopher Lungoyi",
+"Gaziantep FK",
+67
+],
+[
+608407,
+"Derensili Sanches Fernandes",
+"Excelsior Rotterdam",
+67
+],
+[
+48119,
+"Danijel Aleksic",
+"Konyaspor",
+67
+],
+[
+695121,
+"Hevertton",
+"Gil Vicente FC",
+67
+],
+[
+357917,
+"Justin Lonwijk",
+"Fortuna Sittardia Combinatie",
+67
+],
+[
+501741,
+"Shota Fujio",
+"Zelvia",
+67
+],
+[
+575717,
+"Guilherme Montóia",
+"CF Estrela Amadora",
+67
+],
+[
+491292,
+"Ilias Bronkhorst",
+"Excelsior Rotterdam",
+67
+],
+[
+953990,
+"Guillermo Enrique",
+"Club Atlético Aldosivi",
+67
+],
+[
+460848,
+"Anton Tanghe",
+"Zulte Waregem",
+67
+],
+[
+589273,
+"Maxence Maisonneuve",
+"RAAL La Louvière",
+67
+],
+[
+188911,
+"Shoya Nakajima",
+"Urawa Red Diamonds",
+67
+],
+[
+192740,
+"Aleksandar Palocevic",
+"Football Club Seoul",
+67
+],
+[
+458603,
+"Mauro Da Luz",
+"Club Atlético Aldosivi",
+67
+],
+[
+8073282,
+"Youssouf Diarra",
+"Córdoba CF",
+67
+],
+[
+8239894,
+"Rominigue Kouamé",
+"Cádiz CF",
+67
+],
+[
+8274208,
+"Ilias Kostis",
+"CD Castellón",
+67
+],
+[
+8277719,
+"Mada",
+"SD Eibar",
+67
+],
+[
+8082746,
+"Salvador Blopa",
+"Sporting CP",
+67
+],
+[
+8233373,
+"Stéphane Diarra",
+"FC Alverca",
+67
+],
+[
+8260670,
+"Raúl Blanco",
+"Casa Pia AC",
+67
+],
+[
+8215546,
+"Michael Brouwer",
+"FC Utrecht",
+67
+],
+[
+8226436,
+"Hidde ter Avest",
+"Willem II",
+67
+],
+[
+8271540,
+"Žan Žužek",
+"Gençlerbirliği Spor Kulübü",
+67
+],
+[
+8245124,
+"Djordje Jovanović",
+"FC Basel 1893",
+67
+],
+[
+8254465,
+"Tom Strannegård",
+"FC Thun",
+67
+],
+[
+8272304,
+"Ibrahim Buhari",
+"Austria Vienna",
+67
+],
+[
+8199745,
+"Erik Sviatchenko",
+"Houston Dynamo",
+67
+],
+[
+8215132,
+"Sebastián Moyano",
+"Club Atlético Aldosivi",
+67
+],
+[
+8272489,
+"Alexander Machado",
+"Club Atlético Banfield",
+67
+],
+[
+8235513,
+"Silvère Ganvoula",
+"Al Fayha",
+67
+],
+[
+8210108,
+"Elliot Lee",
+"Wrexham",
+67
+],
+[
+8262298,
+"Marcel Lotka",
+"Energie Cottbus",
+67
+],
+[
+8263153,
+"Johan Arath Gómez",
+"Braunschweig",
+67
+],
+[
+8263748,
+"Alessio Besio",
+"VfL Wolfsburg",
+67
+],
+[
+8074924,
+"Vanja Vlahović",
+"Mantova",
+67
+],
+[
+8193333,
+"Nicolò Brighenti",
+"L. R. Vicenza",
+67
+],
+[
+8251927,
+"Giulio Favale",
+"Padova",
+67
+],
+[
+8252746,
+"Cristian Cauz",
+"Empoli",
+67
+],
+[
+8253071,
+"Frank Tsadjout",
+"L. R. Vicenza",
+67
+],
+[
+8073083,
+"Axel Drouhin",
+"FC Annecy",
+67
+],
+[
+8252011,
+"Daylam Meddah",
+"Montpellier",
+67
+],
+[
+8262738,
+"Mamadou Camara",
+"Montpellier",
+67
+],
+[
+1175298,
+"Emanuele Lulli",
+"Roma",
+66
+],
+[
+866579,
+"Cole Campbell",
+"Elversberg",
+66
+],
+[
+538963,
+"Rubén",
+"Elche",
+66
+],
+[
+603368,
+"Svit Seslar",
+"Eyüpspor",
+66
+],
+[
+682568,
+"Cedric Hatenboer",
+"SC Telstar",
+66
+],
+[
+570466,
+"Mateusz Legowski",
+"Eyüpspor",
+66
+],
+[
+409153,
+"Teddy Teuma",
+"Standard Liège",
+66
+],
+[
+386786,
+"Darko Churlinov",
+"Kocaelispor",
+66
+],
+[
+465715,
+"Élie Youan",
+"Hibernian FC",
+66
+],
+[
+739675,
+"Bryce Duke",
+"San Diego Football Club",
+66
+],
+[
+678991,
+"Ulisses",
+"CD Nacional",
+66
+],
+[
+355689,
+"Sory Kaba",
+"Oud-Heverlee Leuven",
+66
+],
+[
+718098,
+"Deandre Kerr",
+"Toronto FC",
+66
+],
+[
+554565,
+"Ivan Dolcek",
+"Dundee United FC",
+66
+],
+[
+564544,
+"Pedro Amador",
+"Atlanta United Football Club",
+66
+],
+[
+450790,
+"Benny",
+"Moreirense FC",
+66
+],
+[
+298410,
+"João Pedro",
+"Clube do Remo",
+66
+],
+[
+708005,
+"Tyrese Noslin",
+"SC Telstar",
+66
+],
+[
+552035,
+"Adam Stejskal",
+"WSG Tirol",
+66
+],
+[
+488048,
+"Benjamin Böckle",
+"WSG Tirol",
+66
+],
+[
+795431,
+"Tio Cipot",
+"Grazer AK 1902",
+66
+],
+[
+504075,
+"Rafael Brito",
+"Casa Pia AC",
+66
+],
+[
+632731,
+"Hikaru Nakahara",
+"S-Pulse",
+66
+],
+[
+836251,
+"Fernando Román",
+"Club Social y Deportivo Defensa y Justicia",
+66
+],
+[
+417610,
+"Kazunari Ichimi",
+"Fagiano Okayama Sports Club",
+66
+],
+[
+8146952,
+"Pichu Cuéllar",
+"RCD Mallorca",
+66
+],
+[
+8079528,
+"Juanpa",
+"CD Eldense",
+66
+],
+[
+8223558,
+"Nicolás Ratti",
+"FC Andorra",
+66
+],
+[
+8234772,
+"Salvi Sánchez",
+"AD Ceuta",
+66
+],
+[
+8268776,
+"Homam Al Amin",
+"Real Valladolid",
+66
+],
+[
+8271955,
+"Bomba",
+"FC Andorra",
+66
+],
+[
+8081674,
+"Gonçalo Moreira",
+"SL Benfica",
+66
+],
+[
+8252137,
+"Marco Essimi",
+"FC Alverca",
+66
+],
+[
+8077058,
+"Stéphano Carrillo",
+"Feyenoord Rotterdam",
+66
+],
+[
+8274448,
+"Mathijs Tielemans",
+"Excelsior Rotterdam",
+66
+],
+[
+8270840,
+"Mohamed Salah El Boukammiri",
+"Lommel SK",
+66
+],
+[
+8277568,
+"Khusniddin Alikulov",
+"Caykur Rizespor",
+66
+],
+[
+8073071,
+"Danny Schmidt",
+"St. Johnstone",
+66
+],
+[
+8241245,
+"Apostolos Stamatelopoulos",
+"Motherwell FC",
+66
+],
+[
+8266580,
+"Nassim Zoukit",
+"FC Thun",
+66
+],
+[
+8077104,
+"Andrija Radulović",
+"Rapid Vienna",
+66
+],
+[
+8086572,
+"Petar Petrović",
+"Sportklub Puntigamer Sturm Graz",
+66
+],
+[
+8071333,
+"Renzo Malanca",
+"Club Atlético Banfield",
+66
+],
+[
+8230984,
+"Federico Gino",
+"Club Atlético Aldosivi",
+66
+],
+[
+8244851,
+"Germán Guiffrey",
+"Club Atlético Gimnasia y Esgrima de Mendoza",
+66
+],
+[
+8085980,
+"Julien Domingues",
+"Al Kholood",
+66
+],
+[
+8217709,
+"Raphael Silva",
+"Al Faisaly",
+66
+],
+[
+8188094,
+"Jon McLaughlin",
+"Middlesbrough",
+66
+],
+[
+8243041,
+"Julian Guttau",
+"Energie Cottbus",
+66
+],
+[
+8219632,
+"Jacopo Manconi",
+"Benevento",
+66
+],
+[
+8079640,
+"Clément Jolibois",
+"Rodez AF",
+66
+],
+[
+8204034,
+"Alexis Sauvage",
+"Stade de Reims",
+66
+],
+[
+8260159,
+"Loris Mouyokolo",
+"Grenoble Foot 38",
+66
+],
+[
+921629,
+"Marco Libra",
+"Bologna",
+65
+],
+[
+1179482,
+"Iker Luque",
+"Racing Sant",
+65
+],
+[
+1186235,
+"Jorge Cestero",
+"Real Madrid",
+65
+],
+[
+1264666,
+"Xander Dierckx",
+"Royal Antwerp FC",
+65
+],
+[
+698548,
+"Marko Lazetić",
+"Aberdeen FC",
+65
+],
+[
+631472,
+"Bruno Langa",
+"CF Estrela Amadora",
+65
+],
+[
+960458,
+"Konstantin Aleksa",
+"Austria Vienna",
+65
+],
+[
+606389,
+"Nikolaj Möller",
+"Dundee United FC",
+65
+],
+[
+500762,
+"Julian Von Moos",
+"FC Luzern",
+65
+],
+[
+496767,
+"Juan José Perea",
+"FC Zürich",
+65
+],
+[
+523870,
+"Angelo Gattermayer",
+"Wolfsberger AC",
+65
+],
+[
+404358,
+"Kristijan Trapanovski",
+"Dundee United FC",
+65
+],
+[
+593286,
+"Owen Maës",
+"RAAL La Louvière",
+65
+],
+[
+814089,
+"Shu Morooka",
+"Avispa Fukuoka",
+65
+],
+[
+936234,
+"Ren Kato",
+"Kyoto Purple Sanga",
+65
+],
+[
+321874,
+"Johannes Naschberger",
+"WSG Tirol",
+65
+],
+[
+428568,
+"Mattias Lamhauge",
+"FC Fredericia",
+65
+],
+[
+612873,
+"Renzo Bacchia",
+"Asociación Atlética Estudiantes",
+65
+],
+[
+382096,
+"Bruce Anderson",
+"Kilmarnock FC",
+65
+],
+[
+924610,
+"Alvaro Cortes",
+"Barcelona",
+64
+],
+[
+1082581,
+"Pedro Felipe",
+"Racing Sant",
+64
+],
+[
+451642,
+"Can Keleş",
+"Kocaelispor",
+64
+],
+[
+727023,
+"Shayden Morris",
+"Aberdeen FC",
+64
+],
+[
+554282,
+"Szymon Wlodarczyk",
+"Excelsior Rotterdam",
+64
+],
+[
+809899,
+"Luka Latsabidze",
+"Vejle Boldklub",
+64
+],
+[
+814820,
+"Ademola Ola-Adebomi",
+"WSG Tirol",
+64
+],
+[
+586023,
+"Max Watters",
+"Dundee United FC",
+64
+],
+[
+537841,
+"Yevgeniy Kucherenko",
+"Dundee United FC",
+64
+],
+[
+346482,
+"Dan Nlundulu",
+"St. Mirren FC",
+64
+],
+[
+495109,
+"Tobias Ostchega",
+"Asociación Atlética Estudiantes",
+64
+],
+[
+8267959,
+"Álex Balboa",
+"Real Valladolid",
+64
+],
+[
+8278590,
+"Salim El Jebari",
+"Córdoba CF",
+64
+],
+[
+8075816,
+"Paul Reverson",
+"AFC Ajax",
+64
+],
+[
+8079042,
+"Soufiane Hetli",
+"SC Telstar",
+64
+],
+[
+8271498,
+"Mats Lemmens",
+"Willem II",
+64
+],
+[
+8072649,
+"Lennard Hens",
+"KV Kortrijk",
+64
+],
+[
+8076976,
+"Marc Giger",
+"Union Saint-Gilloise",
+64
+],
+[
+8236615,
+"Dante Rigo",
+"Waasland-Beveren",
+64
+],
+[
+8269047,
+"Zalán Vancsa",
+"Lommel SK",
+64
+],
+[
+8240653,
+"Alasana Manneh",
+"Hibernian FC",
+64
+],
+[
+8256474,
+"Jacob Chapman",
+"St. Mirren FC",
+64
+],
+[
+8256981,
+"Dejan Đokić",
+"FC Vaduz",
+64
+],
+[
+8269233,
+"Tyler Fredricson",
+"Football Club Lausanne-Sport",
+64
+],
+[
+8240921,
+"Ronald Hernández",
+"Atlanta United Football Club",
+64
+],
+[
+8072561,
+"Aarón Martín",
+"Al Qadsiah",
+64
+],
+[
+8085717,
+"Mateo Levy",
+"CF Cruz Azul",
+64
+],
+[
+8200778,
+"Cyrus Christie",
+"Bolton",
+64
+],
+[
+8076923,
+"Luca Erlein",
+"Energie Cottbus",
+64
+],
+[
+8251482,
+"Christian Kinsombi",
+"Energie Cottbus",
+64
+],
+[
+8257147,
+"Ryan Malone",
+"Energie Cottbus",
+64
+],
+[
+8266235,
+"Lucas Copado",
+"Energie Cottbus",
+64
+],
+[
+8275274,
+"Mansour Ouro-Tagba",
+"VfL Bochum 1848",
+64
+],
+[
+8073973,
+"Jacopo Martini",
+"Südtirol",
+64
+],
+[
+8080172,
+"Andrea Bozzolan",
+"Palermo",
+64
+],
+[
+8276952,
+"Alessio Brambilla",
+"Cremonese",
+64
+],
+[
+8277599,
+"Filippo Distefano",
+"Empoli",
+64
+],
+[
+8257411,
+"Samy Benchamma",
+"Rodez AF",
+64
+],
+[
+8259806,
+"Florent Sanchez",
+"En Avant Guingamp",
+64
+],
+[
+8275517,
+"Ben Hamed Touré",
+"FC Annecy",
+64
+],
+[
+1387007,
+"Nicolás Guilén Peguero",
+"Sevilla",
+63
+],
+[
+699233,
+"Aleksa Puric",
+"Atlético Madrid",
+63
+],
+[
+406609,
+"Can Bozdogan",
+"FC Utrecht",
+63
+],
+[
+481244,
+"Ester Sokler",
+"Aberdeen FC",
+63
+],
+[
+670883,
+"Dane Scarlett",
+"Hibernian FC",
+63
+],
+[
+670111,
+"Dennis Gjengaar",
+"Red Bull New York",
+63
+],
+[
+819938,
+"Florian Danho",
+"Randers FC",
+63
+],
+[
+613983,
+"Stavros Gavriel",
+"Zulte Waregem",
+63
+],
+[
+8081746,
+"Robin van Duiven",
+"Real Valladolid",
+63
+],
+[
+8082432,
+"Rodrigo Rêgo",
+"CD Castellón",
+63
+],
+[
+8086218,
+"Quim Junyent",
+"UD Almería",
+63
+],
+[
+8260104,
+"Damián Cáceres",
+"Córdoba CF",
+63
+],
+[
+8272487,
+"Dani Pérez",
+"Real Valladolid",
+63
+],
+[
+8070806,
+"Uladzislau Marozau",
+"FC Arouca",
+63
+],
+[
+8075162,
+"Jónatas Noro",
+"SC Braga",
+63
+],
+[
+8258925,
+"Clau Mendes",
+"Casa Pia AC",
+63
+],
+[
+8275201,
+"Filip Erik Thorvaldsen",
+"FC Twente Enschede",
+63
+],
+[
+8236996,
+"Atakan Akkaynak",
+"Çorum Futbol Kulübü",
+63
+],
+[
+8074352,
+"Bujar Pllana",
+"Grasshopper Club Zurich",
+63
+],
+[
+8223336,
+"Leandrinho",
+"Incheon United Football Club",
+63
+],
+[
+8245867,
+"J.C. Ngando",
+"Vancouver Whitecaps FC",
+63
+],
+[
+8077028,
+"Elian Gimenez",
+"Club Atlético Sarmiento",
+63
+],
+[
+8241862,
+"Awon Al Bishi",
+"Al Taawoun",
+63
+],
+[
+8264823,
+"Abdulmalek Al Ayeri",
+"Neom",
+63
+],
+[
+8260564,
+"Jeredy Hilterman",
+"Arminia Bielefeld",
+63
+],
+[
+8226098,
+"Ferdinando Del Sole",
+"Ascoli",
+63
+],
+[
+8074886,
+"Quentin Paris",
+"Stade de Reims",
+63
+],
+[
+675535,
+"Noel Futkeu",
+"Elversberg",
+62
+],
+[
+1259986,
+"Malik Pimpong",
+"Frankfurt",
+62
+],
+[
+923355,
+"Rael-Tshimbela Nakuzola",
+"Mainz 05",
+62
+],
+[
+940464,
+"Manuel Serrano",
+"Real Madrid",
+62
+],
+[
+989886,
+"Justin Oboavwoduo",
+"Juventus",
+62
+],
+[
+505463,
+"Oleksandr Syrota",
+"Kocaelispor",
+62
+],
+[
+604359,
+"Yusuf Kabadayi",
+"Gaziantep FK",
+62
+],
+[
+764386,
+"Islam Chesnokov",
+"Heart of Midlothian FC",
+62
+],
+[
+641989,
+"Denis Radu",
+"Eyüpspor",
+62
+],
+[
+276002,
+"Emil Hansson",
+"Excelsior Rotterdam",
+62
+],
+[
+241420,
+"Damian van Bruggen",
+"Vejle Boldklub",
+62
+],
+[
+748604,
+"Devon Koswal",
+"SC Telstar",
+62
+],
+[
+293316,
+"Agon Mucolli",
+"FC Fredericia",
+62
+],
+[
+677329,
+"Je-ho Yu",
+"Gwangju Football Club",
+62
+],
+[
+8278474,
+"Lucas Lavagnino",
+"Real Valladolid",
+62
+],
+[
+8079655,
+"Capa",
+"AD Ceuta",
+62
+],
+[
+8082674,
+"Marcos Leiva",
+"CD Leganés",
+62
+],
+[
+8083772,
+"Andrej Popović",
+"UD Almería",
+62
+],
+[
+8080155,
+"Renan Santana",
+"FC Famalicão",
+62
+],
+[
+8085515,
+"António Gil",
+"SC Braga",
+62
+],
+[
+8085894,
+"Bernardo Lima",
+"FC Porto",
+62
+],
+[
+8251597,
+"Dominik Steczyk",
+"Académico de Viseu FC",
+62
+],
+[
+8279144,
+"Jaden Umeh",
+"SL Benfica",
+62
+],
+[
+8075528,
+"Jan Faberski",
+"AFC Ajax",
+62
+],
+[
+8081845,
+"Pharell Nash",
+"AFC Ajax",
+62
+],
+[
+8074364,
+"Andre Garcia",
+"Club Brugge KV",
+62
+],
+[
+8086386,
+"Carlos Mejia",
+"Royal Antwerp FC",
+62
+],
+[
+8075086,
+"Ismeal Kabia",
+"St. Mirren FC",
+62
+],
+[
+8083223,
+"Luís Balbo",
+"Sportklub Puntigamer Sturm Graz",
+62
+],
+[
+8086592,
+"Shingo Nakano",
+"Sportclub Rheindorf Altach",
+62
+],
+[
+8086595,
+"Yanis Eisschill",
+"Sportclub Rheindorf Altach",
+62
+],
+[
+8270040,
+"Denizcan Cosgun",
+"Sportclub Rheindorf Altach",
+62
+],
+[
+8271931,
+"Agustín Nadruz",
+"Club Atlético Sarmiento",
+62
+],
+[
+8085742,
+"Sebastián Aceves",
+"Toluca FC",
+62
+],
+[
+8085820,
+"Gael Álvarez",
+"Club Pachuca",
+62
+],
+[
+8263563,
+"Saulo Mineiro",
+"Shanghai Shenhua",
+62
+],
+[
+8265658,
+"Eli King",
+"Cardiff City",
+62
+],
+[
+8077707,
+"Wilfried Ndollo Bille",
+"Montpellier",
+62
+],
+[
+8078661,
+"Brandon Bokangu",
+"AS Nancy Lorraine",
+62
+],
+[
+8086906,
+"Samir Ben Brahim",
+"En Avant Guingamp",
+62
+],
+[
+8087978,
+"Moustapha Dabo",
+"FC Nantes",
+62
+],
+[
+8248711,
+"Allan Tchaptchet",
+"Grenoble Foot 38",
+62
+],
+[
+1209287,
+"Jano Monserrate",
+"Atlético Madrid",
+61
+],
+[
+380415,
+"Henry Onyekuru",
+"Gençlerbirliği Spor Kulübü",
+61
+],
+[
+688019,
+"Lukas Björklund",
+"Sönderjyske Fodbold",
+61
+],
+[
+935082,
+"Ethan Williams",
+"Falkirk FC",
+61
+],
+[
+692474,
+"Zeteny Jano",
+"Grazer AK 1902",
+61
+],
+[
+1203744,
+"Tobías Leiva",
+"Asociación Atlética Estudiantes",
+61
+],
+[
+504518,
+"Kofi Balmer",
+"Motherwell FC",
+61
+],
+[
+945500,
+"Rayane Belaid",
+"Rayo Vallecano",
+60
+],
+[
+788445,
+"Zidan Sertdemir",
+"FC Nordsjaelland",
+60
+],
+[
+926991,
+"Jonatan Lindekilde",
+"FC Fredericia",
+60
+],
+[
+360140,
+"Majeed Ashimeru",
+"RAAL La Louvière",
+60
+],
+[
+399258,
+"Kyle Magennis",
+"Kilmarnock FC",
+60
+],
+[
+8087512,
+"Miguel Figueiredo",
+"SL Benfica",
+60
+],
+[
+8080150,
+"Nolan Martens",
+"Excelsior Rotterdam",
+60
+],
+[
+8082736,
+"Jinairo Johnson",
+"AFC Ajax",
+60
+],
+[
+8276991,
+"Krzysztof Kurowski",
+"FC Twente Enschede",
+60
+],
+[
+8278231,
+"Domi",
+"Excelsior Rotterdam",
+60
+],
+[
+8080876,
+"Maxim Kireev",
+"KV Mechelen",
+60
+],
+[
+8080300,
+"Moussa Kyabou",
+"Gençlerbirliği Spor Kulübü",
+60
+],
+[
+8087303,
+"Agustín Urrutia",
+"TSV Hartberg",
+60
+],
+[
+8275257,
+"Manuel Romero",
+"Instituto Atlético Central Córdoba",
+60
+],
+[
+8085828,
+"Luis Mario Gamboa",
+"Atlas FC",
+60
+],
+[
+8073420,
+"Giovanni Volpe",
+"Catanzaro",
+60
+],
+[
+8069971,
+"Elyaz Zidane",
+"Red Star FC",
+60
+],
+[
+8079610,
+"Teddy Andami Averlant",
+"En Avant Guingamp",
+60
+],
+[
+8079623,
+"Mathieu Mion",
+"Grenoble Foot 38",
+60
+],
+[
+962124,
+"Daniel Yáñez",
+"Real Madrid",
+59
+],
+[
+938156,
+"Tomas Marques",
+"Barcelona",
+59
+],
+[
+871193,
+"Daníel Freyr Kristjánsson",
+"FC Fredericia",
+59
+],
+[
+8277466,
+"Tomé Sousa",
+"CD Santa Clara",
+59
+],
+[
+8087295,
+"Kevin Kratzsch",
+"Energie Cottbus",
+59
+],
+[
+1114187,
+"Taufik Seidu",
+"Atlético Madrid",
+58
+],
+[
+1188254,
+"Mathis Lainé",
+"Brest",
+58
+],
+[
+208172,
+"Mateusz Wieteska",
+"Kocaelispor",
+58
+],
+[
+442552,
+"Houboulang Mendes",
+"Fortuna Sittardia Combinatie",
+58
+],
+[
+570582,
+"Darlan",
+"CD Santa Clara",
+58
+],
+[
+491890,
+"Stephen Odey",
+"Randers FC",
+58
+],
+[
+272698,
+"Mohamed Hamdaoui",
+"SC Telstar",
+58
+],
+[
+667497,
+"Zac Williams",
+"Kilmarnock FC",
+58
+],
+[
+8080658,
+"Ethan",
+"Burgos CF",
+58
+],
+[
+8075822,
+"Diego Pugno",
+"AFC Ajax",
+58
+],
+[
+8088089,
+"Shuryjano Cornecion",
+"PSV Eindhoven",
+58
+],
+[
+8078916,
+"Alfredo Agyeman",
+"Falkirk FC",
+58
+],
+[
+8235059,
+"Luke Thomas",
+"St. Mirren FC",
+58
+],
+[
+8274630,
+"Jack Thomson",
+"Kilmarnock FC",
+58
+],
+[
+8079161,
+"Altin Shala",
+"FC Sion",
+58
+],
+[
+8086582,
+"Hasan Deshishku",
+"Austria Vienna",
+58
+],
+[
+8276604,
+"Santino Vera",
+"Club Atlético Unión",
+58
+],
+[
+8222853,
+"Hou Yongyong",
+"Yunnan Yukun",
+58
+],
+[
+8086968,
+"Thierry Tazemeta",
+"Kaiserslautern",
+58
+],
+[
+8070052,
+"Vimoj Muntu",
+"En Avant Guingamp",
+58
+],
+[
+8084476,
+"Noah Vidal-Cartoux",
+"Montpellier",
+58
+],
+[
+8086907,
+"Jasser Chamakh",
+"En Avant Guingamp",
+58
+],
+[
+8259116,
+"Armel Zohouri",
+"Stade de Reims",
+58
+],
+[
+8271244,
+"Mehdi Baaloudj",
+"Rodez AF",
+58
+],
+[
+911866,
+"Hakim Dongopandji",
+"Le Havre",
+57
+],
+[
+778540,
+"Xander Severina",
+"Casa Pia AC",
+57
+],
+[
+696849,
+"Etienne Green",
+"FC Fredericia",
+57
+],
+[
+173580,
+"Ryan Edwards",
+"Falkirk FC",
+57
+],
+[
+708271,
+"Ethan Ingram",
+"Dundee FC",
+57
+],
+[
+8075935,
+"Sergi Torner",
+"CD Castellón",
+57
+],
+[
+8085720,
+"Rik Suur",
+"Sparta Rotterdam",
+57
+],
+[
+8278995,
+"Axl De Corte",
+"Club Brugge KV",
+57
+],
+[
+8070274,
+"Tristen Alliet",
+"KV Kortrijk",
+57
+],
+[
+8073917,
+"Emile Doucouré",
+"KRC Genk",
+57
+],
+[
+8277063,
+"Ahmed Abo Rasain",
+"Sint-Truidense VV",
+57
+],
+[
+8073608,
+"Elias Scherf",
+"Sportclub Rheindorf Altach",
+57
+],
+[
+8083368,
+"Tobias Szewczyk",
+"Red Bull New York",
+57
+],
+[
+8225061,
+"Ahmad Al Ruhaili",
+"Al Ettifaq",
+57
+],
+[
+8225081,
+"Muteb Sharahili",
+"Al Diriyah",
+57
+],
+[
+8277471,
+"Abdelraouf Al Duqail",
+"Al Fayha",
+57
+],
+[
+8267827,
+"Raed Azybi",
+"Neom",
+57
+],
+[
+8076781,
+"Meshal Saad",
+"Al Shabab",
+57
+],
+[
+8277317,
+"Belal Al Doaa",
+"Al Ettifaq",
+57
+],
+[
+8085838,
+"Javier Orantes",
+"Club Necaxa",
+57
+],
+[
+8085847,
+"Sergio Barajas",
+"Santos Laguna",
+57
+],
+[
+8088877,
+"Yael Ortega",
+"Club Puebla",
+57
+],
+[
+8235220,
+"Yeerjieti Yeerzati",
+"Chongqing FC",
+57
+],
+[
+8081286,
+"Joe Wallis",
+"West Brom",
+57
+],
+[
+8078435,
+"Yannick Onohiol",
+"Kaiserslautern",
+57
+],
+[
+8265782,
+"Gianluca Saro",
+"Cremonese",
+57
+],
+[
+8087153,
+"Yanis Benchaouch",
+"Red Star FC",
+57
+],
+[
+8087742,
+"Kevin Kamdem",
+"Montpellier",
+57
+],
+[
+8259383,
+"Edin Omeragić",
+"Stade de Reims",
+57
+],
+[
+1208520,
+"Diego Aguado",
+"Real Madrid",
+56
+],
+[
+605167,
+"Oisin Smyth",
+"St. Mirren FC",
+56
+],
+[
+8079661,
+"Astigarraga",
+"Real Sociedad B",
+56
+],
+[
+8083091,
+"Pello Arana",
+"Real Sociedad B",
+56
+],
+[
+8086635,
+"Jamie Schuldes",
+"FC Utrecht",
+56
+],
+[
+8279628,
+"Darling Bladi",
+"SC Heerenveen",
+56
+],
+[
+8070975,
+"Bi Abdoul Kader Yameogo",
+"Club Brugge KV",
+56
+],
+[
+8279641,
+"Clinton Nsiala",
+"Rangers FC",
+56
+],
+[
+8077424,
+"Gabriele Mulazzi",
+"FC Sion",
+56
+],
+[
+8086240,
+"Bekhruz Karimov",
+"FC Lugano",
+56
+],
+[
+8082761,
+"Marijan Österreicher",
+"Austria Vienna",
+56
+],
+[
+8237307,
+"Henry Wingo",
+"Toronto FC",
+56
+],
+[
+8071813,
+"Fabricio Tirado",
+"Club Atlético Newell’s Old Boys",
+56
+],
+[
+8264206,
+"Ahmed Bahusayn",
+"Al Taawoun",
+56
+],
+[
+8202808,
+"Li Ke",
+"Shanghai Shenhua",
+56
+],
+[
+8272965,
+"Isak Alemayehu",
+"QPR",
+56
+],
+[
+8073171,
+"Yusuf Wardak",
+"Energie Cottbus",
+56
+],
+[
+8076040,
+"Aymeric Faurand-Tournaire",
+"Laval MFC",
+56
+],
+[
+8085396,
+"Nathan Fondja",
+"En Avant Guingamp",
+56
+],
+[
+8086905,
+"Joël Matondo",
+"En Avant Guingamp",
+56
+],
+[
+1226502,
+"Evan Mooney",
+"St. Mirren FC",
+55
+],
+[
+8073612,
+"Yoann Cissé",
+"Royal Charleroi Sporting Club",
+54
+],
+[
+8084372,
+"Luca Schelfhout",
+"Royal Antwerp FC",
+54
+],
+[
+8086899,
+"Leon Lalić",
+"Lommel SK",
+54
+],
+[
+8087191,
+"Koki Ando",
+"Royal Antwerp FC",
+54
+],
+[
+8072731,
+"Samet Yalçın",
+"Kocaelispor",
+54
+],
+[
+8080508,
+"Riccardo Braschi",
+"FC Thun",
+54
+],
+[
+8081682,
+"Ibrahim Bah Mendes",
+"Football Club Lausanne-Sport",
+54
+],
+[
+8071077,
+"Woobens Pacius",
+"Nashville SC",
+54
+],
+[
+8084322,
+"Alejandro Tello",
+"Racing Club Asociación Civil de Avellaneda",
+54
+],
+[
+8253185,
+"Ahmad Al Mohaimeed",
+"Al Faisaly",
+54
+],
+[
+8273600,
+"Jack Grieves",
+"Watford",
+54
+],
+[
+8080318,
+"Raul Mariţa",
+"Fürth",
+54
+],
+[
+8087047,
+"Sékou Guindo",
+"Red Star FC",
+54
+],
+[
+8087995,
+"Tidiane Diarrassouba",
+"Stade de Reims",
+54
+],
+[
+8076947,
+"Jota",
+"Albacete",
+52
+],
+[
+8080576,
+"Korta",
+"SD Eibar",
+52
+],
+[
+8082334,
+"Alberto Morientes",
+"Albacete",
+52
+],
+[
+8083067,
+"Gift Siame",
+"CD Leganés",
+52
+],
+[
+8070503,
+"Dircssi Ngonzo",
+"Football Club Lausanne-Sport",
+52
+],
+[
+8086591,
+"Jakob Brandtner",
+"Sportclub Rheindorf Altach",
+52
+],
+[
+8087305,
+"Florian Gerstl",
+"TSV Hartberg",
+52
+],
+[
+8086469,
+"Mohammed Thiban",
+"Al Diriyah",
+52
+],
+[
+8088092,
+"Bonheur Mugisha",
+"Al Hazem",
+52
+],
+[
+8241520,
+"Waleed Al Shanqeeti",
+"Al Hazem",
+52
+],
+[
+8251659,
+"Ayman Al Hejaili",
+"Al Hazem",
+52
+],
+[
+8259349,
+"Mansour Al Bishi",
+"Al Fayha",
+52
+],
+[
+8075153,
+"Juan Usma",
+"Club Tijuana",
+52
+],
+[
+8266300,
+"Christian Castillo",
+"Club Tijuana",
+52
+],
+[
+8073943,
+"Harry Ashfield",
+"Wrexham",
+52
+],
+[
+8074359,
+"Freddie Anderson",
+"Stoke City",
+52
+],
+[
+8076553,
+"Denis Husser",
+"Hannover 96",
+52
+],
+[
+8278229,
+"Dmytro Bogdanov",
+"Energie Cottbus",
+52
+],
+[
+8084254,
+"Jean Mambuku",
+"Stade de Reims",
+52
+],
+[
+8080277,
+"Sarasketa",
+"SD Eibar",
+50
+],
+[
+8082423,
+"Kirayno Schaken",
+"SC Heerenveen",
+50
+],
+[
+8275021,
+"Moctar Diop",
+"KAA Gent",
+50
+],
+[
+8088331,
+"Guust Lamerand",
+"KV Kortrijk",
+50
+],
+[
+8071628,
+"Christian Akpan",
+"KRC Genk",
+50
+],
+[
+8086652,
+"Cıvan Süer",
+"Amed Sportif Faaliyetler",
+50
+],
+[
+8278056,
+"Batuhan Yavuz",
+"Alanyaspor",
+50
+],
+[
+8079214,
+"Nevio Biner",
+"FC Sion",
+50
+],
+[
+8082442,
+"Nico Rissi",
+"Grasshopper Club Zurich",
+50
+],
+[
+8087156,
+"Jason Almeida",
+"FC Sion",
+50
+],
+[
+8076577,
+"Pascal Büttiker",
+"FC St. Gallen 1879",
+50
+],
+[
+8087529,
+"Simon Lengen",
+"FC Thun",
+50
+],
+[
+8086593,
+"Henrique Bell",
+"Sportclub Rheindorf Altach",
+50
+],
+[
+8076886,
+"Bato",
+"Football Club Seoul",
+50
+],
+[
+8259445,
+"Wilson Harris",
+"New England Revolution",
+50
+],
+[
+8272825,
+"Geovane Jesus",
+"FC Dallas",
+50
+],
+[
+8081423,
+"Marcos Zambrano",
+"New England Revolution",
+50
+],
+[
+8083667,
+"Donovan Philip",
+"Colorado Rapids",
+50
+],
+[
+8269433,
+"Hisham Al Dubais",
+"Al Shabab",
+50
+],
+[
+8078953,
+"Faisal Al Mutairi",
+"Al Diriyah",
+50
+],
+[
+8079490,
+"Rayan Al Mutairi",
+"Al Fayha",
+50
+],
+[
+8262287,
+"Farhan Al Azmi",
+"Al Hazem",
+50
+],
+[
+8081268,
+"Abdulaziz Al Fawaz",
+"Al Fateh",
+50
+],
+[
+8083144,
+"Fawaz Al Hamad",
+"Al Fateh",
+50
+],
+[
+8074969,
+"Rakan Al Ghamdi",
+"Al Nassr",
+50
+],
+[
+8080091,
+"Awad Dahal",
+"Al Ettifaq",
+50
+],
+[
+8081989,
+"Abdulaziz Al Suwailem",
+"Al Fateh",
+50
+],
+[
+8081295,
+"Moustapha Sémbène",
+"Al Taawoun",
+50
+],
+[
+8259940,
+"Hazim Al Zahrani",
+"Abha Club",
+50
+],
+[
+8074702,
+"Mahdi Al Aboud",
+"Al Fateh",
+50
+],
+[
+8074704,
+"Muntathir Al Shaqaq",
+"Al Fateh",
+50
+],
+[
+8081541,
+"Mohammed Al Sahihi",
+"Al Fateh",
+50
+],
+[
+8081872,
+"Odai Abdulghani",
+"Al Kholood",
+50
+],
+[
+8083417,
+"Faisal Al Bakr",
+"Al Khaleej",
+50
+],
+[
+8074057,
+"Abdulmalek Al Harbi",
+"Al Kholood",
+50
+],
+[
+8086879,
+"Moayad Bunayyan",
+"Abha Club",
+50
+],
+[
+8072334,
+"Hassan Idris",
+"Al Hazem",
+50
+],
+[
+8085846,
+"Lucca Vuoso",
+"Santos Laguna",
+50
+],
+[
+8086025,
+"Álvaro de la Rosa",
+"Club Puebla",
+50
+],
+[
+8238105,
+"Li Peng",
+"Liaoning FC",
+50
+],
+[
+8242696,
+"Liu Guobo",
+"Liaoning FC",
+50
+],
+[
+8077921,
+"Shemshidin Yusupjan",
+"Shandong Taishan",
+50
+],
+[
+8082197,
+"Barnaby Williams",
+"Southampton",
+50
+],
+[
+8072210,
+"Dakarai Mafico",
+"Cardiff City",
+50
+],
+[
+8077438,
+"Max Wilson",
+"Preston",
+50
+],
+[
+8084689,
+"Toby Ritchie",
+"Bolton",
+50
+],
+[
+8086803,
+"Jannis Zaydan",
+"Energie Cottbus",
+50
+],
+[
+8086954,
+"Joey Taubeneck",
+"Energie Cottbus",
+50
+],
+[
+8087080,
+"Kian Scheer",
+"Kaiserslautern",
+50
+],
+[
+8088423,
+"Jerome Diallo",
+"Hertha BSC",
+50
+],
+[
+8088473,
+"Mayson Grothe",
+"Hertha BSC",
+50
+],
+[
+8083813,
+"Hugo Luis Afonso",
+"Braunschweig",
+50
+],
+[
+8085393,
+"Ibrahima Diakité",
+"En Avant Guingamp",
+50
+],
+[
+8087697,
+"Grégory Ayem",
+"Montpellier",
+50
+],
+[
+8087994,
+"John Otomewo",
+"Stade de Reims",
+50
+],
+[
+8087996,
+"Arone Gadou",
+"Stade de Reims",
+50
+]
+]
+}

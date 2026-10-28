@@ -1,0 +1,47 @@
+215|Instituto Atlético Central Córdoba|AR
+222|Club Social y Deportivo Defensa y Justicia|AR
+289|Club Sportivo Independiente Rivadavia|AR
+290|Club Atlético Aldosivi|AR
+291|Club Atlético Sarmiento|AR
+292|Club Atlético Tucumán|AR
+297|Asociación de Fomento Deportivo Riestra Barrio Colón|AR
+303|Club Atlético Barracas Central|AR
+306|Club Atlético Central Córdoba|AR
+110|KAA Gent|BE
+112|Royal Charleroi Sporting Club|BE
+181|KVC Westerlo|BE
+196|Royal Antwerp FC|BE
+199|KRC Genk|BE
+244|Zulte Waregem|BE
+250|RAAL La Louvière|BE
+400|Chongqing FC|CN
+401|Dalian Yingbo|CN
+402|Henan FC|CN
+403|Liaoning FC|CN
+404|Qingdao Hainiu|CN
+405|Qingdao W. Coast|CN
+406|SZ Peng City|CN
+411|Wuhan Three Towns|CN
+412|Yunnan Yukun|CN
+413|Zhejiang Pro|CN
+0|Bayern Munich|DE
+2|RB Leipzig|DE
+449|Holstein Kiel|DE2
+453|VfL Bochum 1848|DE2
+24|Crystal Palace|EN
+26|Nottingham|EN
+28|Brighton|EN
+31|Bournemouth|EN
+37|Hull City|EN
+422|Lincoln City|EN2
+433|Watford|EN2
+435|West Ham|EN2
+54|Getafe|ES
+57|Osasuna|ES
+335|Granada CF|ES2
+484|FC Sochaux-Montbéliard|FR2
+76|Inter|IT
+456|Arezzo|IT2
+457|Ascoli|IT2
+458|Avellino|IT2
+461|Catanzaro|IT2

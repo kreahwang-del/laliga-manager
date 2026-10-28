@@ -1,0 +1,40 @@
+76|Inter|IT
+77|Milan|IT
+78|Juventus|IT
+79|Roma|IT
+80|Atalanta|IT
+81|Napoli|IT
+82|Fiorentina|IT
+83|Como|IT
+84|Lazio|IT
+85|Bologna|IT
+86|Torino|IT
+87|Sassuolo|IT
+88|Parma|IT
+89|Genoa|IT
+90|Udinese|IT
+91|Cagliari|IT
+92|Monza|IT
+93|Frosinone|IT
+94|Lecce|IT
+95|Venezia|IT
+456|Arezzo|IT2
+457|Ascoli|IT2
+458|Avellino|IT2
+459|Benevento|IT2
+460|Carrarese Calcio|IT2
+461|Catanzaro|IT2
+462|Cesena|IT2
+463|Cremonese|IT2
+464|Empoli|IT2
+465|Entella|IT2
+466|Hellas Verona|IT2
+467|L. R. Vicenza|IT2
+468|Mantova|IT2
+469|Modena|IT2
+470|Padova|IT2
+471|Palermo|IT2
+472|Pisa|IT2
+473|SS Juve Stabia|IT2
+474|Sampdoria|IT2
+475|Südtirol|IT2

@@ -1,0 +1,48 @@
+122|San Jose Earthquakes|US
+144|Chicago Fire Soccer Club|US
+164|Red Bull New York|US
+165|New England Revolution|US
+173|Columbus Crew|US
+190|Los Angeles Galaxy|US
+203|Colorado Rapids|US
+229|D.C. United|US
+253|Club de Foot Montréal|US
+254|Sporting Kansas City|US
+255|Portland Timbers|US
+261|Vancouver Whitecaps FC|US
+269|Real Salt Lake|US
+277|FC Dallas|US
+279|Houston Dynamo|US
+282|Seattle Sounders FC|US
+286|Toronto FC|US
+304|Philadelphia Union|US
+309|New York City Football Club|US
+310|Orlando City Soccer Club|US
+311|Atlanta United Football Club|US
+312|Football Club Cincinnati|US
+313|Los Angeles Football Club|US
+314|Minnesota United FC|US
+315|Nashville SC|US
+316|Club Internacional de Fútbol Miami|US
+317|Austin FC|US
+318|Charlotte Football Club|US
+319|St. Louis City Soccer Club|US
+321|San Diego Football Club|US
+380|Atlante FC|MX
+381|Atlas FC|MX
+382|Atlético de San Luis|MX
+383|CF Cruz Azul|MX
+384|Club América|MX
+385|Club Guadalajara|MX
+386|Club León|MX
+387|Club Necaxa|MX
+388|Club Pachuca|MX
+389|Club Puebla|MX
+390|Club Tigres|MX
+391|Club Tijuana|MX
+392|FC Juárez|MX
+393|Monterrey|MX
+394|Pumas|MX
+395|Querétaro FC|MX
+396|Santos Laguna|MX
+397|Toluca FC|MX

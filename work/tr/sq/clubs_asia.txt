@@ -1,0 +1,66 @@
+132|Football Club Pohang Steelers|KR
+160|Kyoto Purple Sanga|JP
+161|Gamba Osaka|JP
+166|JEF United|JP
+175|Urawa Red Diamonds|JP
+186|Cerezo Osaka|JP
+191|S-Pulse|JP
+193|Nagoya Grampus Eight|JP
+219|Kashima Antlers FC|JP
+234|Sanfrecce Hiroshima|JP
+239|Incheon United Football Club|KR
+245|Ulsan Hyundai Football Club|KR
+247|Tokyo Verdy|JP
+248|Yokohama Marinos|JP
+252|Rakuten Vissel Kobe|JP
+262|Foundation Coorperation Hana Financial Group Inc. Football Club|KR
+263|Football Club Seoul|KR
+264|Jeonbuk Hyundai Motors|KR
+265|Gimcheon Sangmu Football Club|KR
+267|Tokyo Football Club|JP
+268|Hitachi Kashiwa Reysol|JP
+280|Avispa Fukuoka|JP
+281|Kawasaki Frontale|JP
+296|Jeju SK Football Club|KR
+298|Gangwon Football Club|KR
+299|Football Club Mito HollyHock|JP
+300|Fagiano Okayama Sports Club|JP
+301|Zelvia|JP
+302|V-Varen Nagasaki|JP
+305|Gwangju Football Club|KR
+307|Bucheon Football Club 1995|KR
+308|Football Club Anyang|KR
+362|Abha Club|SA
+363|Al Ahli|SA
+364|Al Diriyah|SA
+365|Al Ettifaq|SA
+366|Al Faisaly|SA
+367|Al Fateh|SA
+368|Al Fayha|SA
+369|Al Hazem|SA
+370|Al Hilal|SA
+371|Al Ittihad|SA
+372|Al Khaleej|SA
+373|Al Kholood|SA
+374|Al Nassr|SA
+375|Al Qadsiah|SA
+376|Al Riyadh|SA
+377|Al Shabab|SA
+378|Al Taawoun|SA
+379|Neom|SA
+398|Beijing FC|CN
+399|Chengdu FC|CN
+400|Chongqing FC|CN
+401|Dalian Yingbo|CN
+402|Henan FC|CN
+403|Liaoning FC|CN
+404|Qingdao Hainiu|CN
+405|Qingdao W. Coast|CN
+406|SZ Peng City|CN
+407|Shandong Taishan|CN
+408|Shanghai Port FC|CN
+409|Shanghai Shenhua|CN
+410|Tianjin JMT FC|CN
+411|Wuhan Three Towns|CN
+412|Yunnan Yukun|CN
+413|Zhejiang Pro|CN

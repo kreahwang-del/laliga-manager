@@ -1,0 +1,1077 @@
+club_id|club|status|number|pos|nat|player|note
+1|Dortmund|squad|1|GK|SUI|Gregor Kobel|
+1|Dortmund|squad|3|DF|GER|Waldemar Anton|third captain
+1|Dortmund|squad|4|DF|GER|Nico Schlotterbeck|vice-captain
+1|Dortmund|squad|5|DF|ALG|Ramy Bensebaini|
+1|Dortmund|squad|7|MF|ENG|Jobe Bellingham|
+1|Dortmund|squad|8|MF|GER|Felix Nmecha|
+1|Dortmund|squad|9|FW|GUI|Serhou Guirassy|
+1|Dortmund|squad|14|FW|GER|Maximilian Beier|
+1|Dortmund|squad|17|MF|AUT|Carney Chukwuemeka|
+1|Dortmund|squad|18|MF|ENG|Ethan Nwaneri|on loan from Arsenal
+1|Dortmund|squad|19|MF|GRE|Konstantinos Karetsas|
+1|Dortmund|squad|20|MF|AUT|Marcel Sabitzer|
+1|Dortmund|squad|21|FW|POR|Fábio Silva|
+1|Dortmund|squad|22|DF|FRA|Joane Gadou|
+1|Dortmund|squad|23|MF|GER|Emre Can|captain
+1|Dortmund|squad|24|DF|SWE|Daniel Svensson|
+1|Dortmund|squad|25|MF|NED|Joey Veerman|
+1|Dortmund|squad|26|DF|NOR|Julian Ryerson|
+1|Dortmund|squad|28|MF|ECU|Justin Lerma|
+1|Dortmund|squad|30|GK|GER|Patrick Drewes|
+1|Dortmund|squad|31|GK|GER|Silas Ostrzinski|
+1|Dortmund|squad|33|GK|GER|Alexander Meyer|
+1|Dortmund|squad|36|DF|BRA|Kauã Prates|
+1|Dortmund|squad|39|DF|ITA|Filippo Mane|
+1|Dortmund|squad|40|FW|ITA|Samuele Inácio|
+1|Dortmund|squad|41|FW|USA|Mathis Albert|
+1|Dortmund|squad|44|MF|LUX|Enzo dos Santos|
+1|Dortmund|squad|45|MF|GRE|Giannis Konstantelias|
+1|Dortmund|squad|48|MF|GER|Mussa Kaba|
+1|Dortmund|squad|49|DF|ITA|Luca Reggiani|
+1|Dortmund|loaned_out|2|DF|BRA|Yan Couto|Como (until 30 June 2027)
+1|Dortmund|loaned_out|32|GK|GER|Diant Ramaj|Copenhagen (until 30 June 2027)
+1|Dortmund|loaned_out|42|DF|GER|Almugera Kabar|NEC (until 30 June 2027)
+1|Dortmund|loaned_out|47|DF|ALG|Elias Benkara|Greuther Fürth (until 30 June 2027)
+3|Leverkusen|squad|1|GK|NED|Mark Flekken|
+3|Leverkusen|squad|4|DF|ENG|Jarell Quansah|
+3|Leverkusen|squad|5|DF|FRA|Loïc Badé|
+3|Leverkusen|squad|6|MF|ARG|Equi Fernández|
+3|Leverkusen|squad|7|MF|GER|Jonas Hofmann|
+3|Leverkusen|squad|8|MF|GER|Robert Andrich|captain
+3|Leverkusen|squad|10|FW|USA|Malik Tillman|
+3|Leverkusen|squad|11|FW|FRA|Martin Terrier|
+3|Leverkusen|squad|12|DF|BFA|Edmond Tapsoba|
+3|Leverkusen|squad|13|DF|BRA|Arthur|
+3|Leverkusen|squad|14|FW|CZE|Patrik Schick|
+3|Leverkusen|squad|15|DF|GER|Tim Oermann|
+3|Leverkusen|squad|16|DF|FRA|Axel Tape|
+3|Leverkusen|squad|17|FW|MAR|Eliesse Ben Seghir|
+3|Leverkusen|squad|18|GK|SUI|Jonas Omlin|on loan from Borussia Mönchengladbach
+3|Leverkusen|squad|19|FW|NED|Ernest Poku|
+3|Leverkusen|squad|20|DF|ESP|Alejandro Grimaldo|
+3|Leverkusen|squad|21|DF|ESP|Lucas Vázquez|
+3|Leverkusen|squad|23|FW|NGA|Nathan Tella|
+3|Leverkusen|squad|24|MF|ESP|Aleix García|
+3|Leverkusen|squad|25|MF|ARG|Exequiel Palacios|
+3|Leverkusen|squad|27|MF|GER|Jeremiah Mensah|
+3|Leverkusen|squad|28|GK|GER|Janis Blaswich|
+3|Leverkusen|squad|30|MF|ALG|Ibrahim Maza|
+3|Leverkusen|squad|31|MF|GER|Francesco Buono|
+3|Leverkusen|squad|35|FW|CMR|Christian Kofane|
+3|Leverkusen|squad|36|GK|GER|Niklas Lomb|
+3|Leverkusen|squad|40|GK|GER|Jesper Schlich|
+3|Leverkusen|squad|41|DF|MLI|Issa Traoré|
+3|Leverkusen|squad|42|MF|GER|Montrell Culbreath|
+3|Leverkusen|squad|43|DF|GER|Ben Hawighorst|
+3|Leverkusen|squad|45|MF|GER|Naba Mensah|
+3|Leverkusen|squad|46|DF|GER|Ferdinand Pohl|
+3|Leverkusen|squad|47|MF|GER|Emmanuel Chigozie Owen|
+3|Leverkusen|squad||FW|POR|Afonso Moreira|
+3|Leverkusen|squad||FW|SRB|Aleksa Damjanović|
+3|Leverkusen|loaned_out||DF|FRA|Jeanuël Belocian|VfL Wolfsburg (until 30 June 2026)
+3|Leverkusen|loaned_out||DF|SEN|Abdoulaye Faye|Lorient (until 30 June 2026)
+3|Leverkusen|loaned_out||DF|ITA|Andrea Natali|AZ (until 30 June 2026)
+3|Leverkusen|loaned_out||MF|BEL|Noah Mbamba|Dender (until 30 June 2026)
+3|Leverkusen|loaned_out||MF|GER|Francis Onyeka|VfL Bochum (until 30 June 2026)
+3|Leverkusen|loaned_out||FW|UKR|Artem Stepanov|Utrecht (until 30 June 2027)
+3|Leverkusen|loaned_out||FW|GER|Farid Alfa-Ruprecht|VfL Bochum (until 30 June 2026)
+3|Leverkusen|loaned_out||FW|NGA|Victor Boniface|Werder Bremen (until 30 June 2026)
+3|Leverkusen|loaned_out||FW|GER|Ken Izekor|Eintracht Braunschweig (until 30 June 2026)
+3|Leverkusen|loaned_out||FW|ARG|Alejo Sarco|Borussia Mönchengladbach (until 30 June 2026)
+4|Stuttgart|squad|1|GK|GER|Fabian Bredlow|
+4|Stuttgart|squad|2|DF|BEL|Ameen Al-Dakhil|
+4|Stuttgart|squad|3|DF|NED|Ramon Hendriks|
+4|Stuttgart|squad|4|DF|GER|Josha Vagnoman|
+4|Stuttgart|squad|6|MF|GER|Angelo Stiller|
+4|Stuttgart|squad|7|DF|GER|Maximilian Mittelstädt|
+4|Stuttgart|squad|8|FW|POR|Tiago Tomás|
+4|Stuttgart|squad|9|FW|BIH|Ermedin Demirović|
+4|Stuttgart|squad|10|MF|GER|Chris Führich|
+4|Stuttgart|squad|11|MF|MAR|Bilal El Khannouss|
+4|Stuttgart|squad|14|DF|SUI|Luca Jaquez|
+4|Stuttgart|squad|16|MF|TUR|Atakan Karazor|
+4|Stuttgart|squad|17|FW|GER|Dženan Pejčinović|
+4|Stuttgart|squad|18|FW|GER|Jamie Leweling|
+4|Stuttgart|squad|20|DF|SUI|Leonidas Stergiou|
+4|Stuttgart|squad|21|MF|GER|Grischa Prömel|
+4|Stuttgart|squad|22|DF|FRA|Lorenz Assignon|
+4|Stuttgart|squad|23|DF|FRA|Dan-Axel Zagadou|
+4|Stuttgart|squad|24|DF|GER|Jeff Chabot|
+4|Stuttgart|squad|26|FW|GER|Deniz Undav|captain
+4|Stuttgart|squad|28|MF|DEN|Nikolas Nartey|
+4|Stuttgart|squad|29|DF|GER|Finn Jeltsch|
+4|Stuttgart|squad|31|FW|GER|Justin Diehl|
+4|Stuttgart|squad|33|GK|GER|Marius Funk|
+4|Stuttgart|squad|39|MF|GER|Ertuğrul Yiğit|
+4|Stuttgart|squad|41|GK|GER|Dennis Seimen|
+4|Stuttgart|squad|43|FW|GER|Jarzinho Malanga|
+4|Stuttgart|squad|44|FW|SVK|Leo Sauer|
+4|Stuttgart|squad|46|GK|GER|Stefan Drljača|
+4|Stuttgart|squad|47|MF|AUT|Yanik Spalt|
+4|Stuttgart|loaned_out||GK|GER|Florian Hellstern|Greuther Fürth (until 30 June 2027)
+4|Stuttgart|loaned_out||MF|GER|Mirza Catovic|Barcelona B (until 30 June 2027)
+4|Stuttgart|loaned_out||MF|GER|Noah Darvich|SV Elversberg (until 30 June 2027)
+4|Stuttgart|loaned_out||MF|GER|Yannik Keitel|FC Augsburg (until 30 June 2027)
+4|Stuttgart|loaned_out||MF|GER|Laurin Ulrich|SC Paderborn (until 30 June 2027)
+4|Stuttgart|loaned_out||FW|ECU|Jeremy Arévalo|Estrela da Amadora (until 30 June 2027)
+4|Stuttgart|loaned_out||FW|ALG|Badredine Bouanani|Rangers (until 30 June 2027)
+5|Hoffenheim|squad|1|GK|GER|Oliver Baumann|captain
+5|Hoffenheim|squad|2|DF|CZE|Robin Hranáč|
+5|Hoffenheim|squad|4|DF|GER|Sean Dulić|
+5|Hoffenheim|squad|5|DF|TUR|Ozan Kabak|
+5|Hoffenheim|squad|7|MF|KOS|Leon Avdullahu|
+5|Hoffenheim|squad|8|MF|AUT|Patrick Wimmer|
+5|Hoffenheim|squad|9|FW|GER|Max Moerstedt|
+5|Hoffenheim|squad|10|FW|CZE|Adam Hložek|
+5|Hoffenheim|squad|11|FW|KOS|Fisnik Asllani|
+5|Hoffenheim|squad|13|DF|BRA|Bernardo|
+5|Hoffenheim|squad|14|FW|DEN|Adam Daghim|
+5|Hoffenheim|squad|15|DF|FRA|Valentin Gendrey|
+5|Hoffenheim|squad|16|MF|GER|Luis Engelns|
+5|Hoffenheim|squad|17|MF|BEL|Nathan De Cat|
+5|Hoffenheim|squad|18|MF|NED|Wouter Burger|
+5|Hoffenheim|squad|19|FW|GER|Tim Lemperle|
+5|Hoffenheim|squad|20|MF|GER|Bambasé Conté|
+5|Hoffenheim|squad|21|DF|KOS|Albian Hajdari|
+5|Hoffenheim|squad|22|MF|AUT|Alexander Prass|
+5|Hoffenheim|squad|24|FW|SUI|Alessandro Vogt|
+5|Hoffenheim|squad|27|FW|CRO|Andrej Kramarić|
+5|Hoffenheim|squad|28|DF|JPN|Kōki Machida|
+5|Hoffenheim|squad|29|DF|GER|Natnael Abraha|
+5|Hoffenheim|squad|32|MF|GER|Cajetan Lenz|
+5|Hoffenheim|squad|34|DF|CZE|Vladimír Coufal|
+5|Hoffenheim|squad|35|DF|BRA|Arthur Chaves|
+5|Hoffenheim|squad|36|GK|ISL|Lúkas Petersson|
+5|Hoffenheim|squad|37|GK|GER|Luca Philipp|
+5|Hoffenheim|squad|39|DF|NED|Mats Rots|
+5|Hoffenheim|loaned_out||GK|GER|Nahuel Noll|SC Paderborn (until 30 June 2027)
+5|Hoffenheim|loaned_out||DF|NGA|Emmanuel Chukwu|Austria Lustenau (until 30 June 2027)
+5|Hoffenheim|loaned_out||DF|GER|Kelven Frees|1. FC Kaiserslautern (until 30 June 2027)
+5|Hoffenheim|loaned_out||MF|GER|Umut Tohumcu|Red Bull Salzburg (until 30 June 2027)
+5|Hoffenheim|loaned_out||FW|NGA|Precious Benjamin|Austria Lustenau (until 30 June 2027)
+5|Hoffenheim|loaned_out||FW|CZE|Yannick Eduardo|ADO Den Haag (until 30 June 2027)
+5|Hoffenheim|loaned_out||FW|NGA|Gift Orban|Amedspor (until 30 June 2027)
+5|Hoffenheim|loaned_out||FW|TUR|Erencan Yardımcı|1. FC Kaiserslautern (until 30 June 2027)
+5|Hoffenheim|loaned_out||FW|GER|Deniz Zeitler|SC Paderborn (until 30 June 2027)
+6|Frankfurt|squad|2|DF|GER|Elias Baum|
+6|Frankfurt|squad|3|DF|BEL|Arthur Theate|vice-captain
+6|Frankfurt|squad|4|DF|GER|Robin Koch|captain
+6|Frankfurt|squad|5|DF|SUI|Aurèle Amenda|
+6|Frankfurt|squad|6|MF|DEN|Oscar Højlund|
+6|Frankfurt|squad|7|FW|GER|Ansgar Knauff|
+6|Frankfurt|squad|8|MF|ALG|Farès Chaïbi|
+6|Frankfurt|squad|9|FW|GER|Jonathan Burkardt|
+6|Frankfurt|squad|11|FW|GER|Younes Ebnoutalib|
+6|Frankfurt|squad|15|MF|TUN|Ellyes Skhiri|
+6|Frankfurt|squad|16|MF|SWE|Hugo Larsson|
+6|Frankfurt|squad|18|MF|GER|Mahmoud Dahoud|
+6|Frankfurt|squad|19|FW|FRA|Jean-Mattéo Bahoya|
+6|Frankfurt|squad|20|FW|JPN|Ritsu Dōan|
+6|Frankfurt|squad|21|DF|GER|Nathaniel Brown|
+6|Frankfurt|squad|22|DF|USA|Timothy Chandler|
+6|Frankfurt|squad|23|GK|GER|Michael Zetterer|
+6|Frankfurt|squad|25|FW|FRA|Arnaud Kalimuendo|on loan from Nottingham Forest
+6|Frankfurt|squad|26|DF|JPN|Keita Kosugi|
+6|Frankfurt|squad|27|MF|GER|Mario Götze|
+6|Frankfurt|squad|29|FW|MAR|Ayoube Amaimouni|
+6|Frankfurt|squad|30|FW|BEL|Michy Batshuayi|
+6|Frankfurt|squad|31|MF|SWE|Love Arrhov|
+6|Frankfurt|squad|33|GK|GER|Jens Grahl|
+6|Frankfurt|squad|34|DF|GER|Nnamdi Collins|
+6|Frankfurt|squad|38|MF|GER|Ebu Bekir İş|
+6|Frankfurt|squad|39|GK|BIH|Amil Šiljević|
+6|Frankfurt|squad|40|GK|BRA|Kauã Santos|
+6|Frankfurt|squad|41|DF|MLI|Fousseny Doumbia|
+6|Frankfurt|squad|42|FW|TUR|Can Uzun|
+6|Frankfurt|squad|43|GK|GER|Yurij Obert|
+6|Frankfurt|squad|45|MF|USA|Marvin Dills|
+6|Frankfurt|squad|53|FW|GER|Alexander Staff|
+6|Frankfurt|loaned_out||GK|ALB|Simon Simoni|1. FC Kaiserslautern (until 30 June 2026)
+6|Frankfurt|loaned_out||DF|FRA|Niels Nkounkou|Torino (until 30 June 2026)
+6|Frankfurt|loaned_out||DF|CRO|Hrvoje Smolčić|Kocaelispor (until 30 June 2026)
+6|Frankfurt|loaned_out||MF|CMR|Junior Dina Ebimbe|Brest (until 30 June 2026)
+6|Frankfurt|loaned_out||MF|HUN|Noah Fenyő|Újpest (until 30 June 2026)
+6|Frankfurt|loaned_out||MF|HUN|Krisztián Lisztes|Ferencváros (until 30 June 2026)
+6|Frankfurt|loaned_out||FW|GER|Jessic Ngankam|Wolfsberg (until 30 June 2026)
+6|Frankfurt|loaned_out||FW|CIV|Elye Wahi|Nice (until 30 June 2026)
+7|Freiburg|squad|1|GK|GER|Mio Backhaus|
+7|Freiburg|squad|3|DF|AUT|Philipp Lienhart|
+7|Freiburg|squad|5|DF|GER|Anthony Jung|
+7|Freiburg|squad|6|MF|GER|Patrick Osterhage|
+7|Freiburg|squad|7|FW|GER|Derry Scherhant|
+7|Freiburg|squad|8|MF|GER|Maximilian Eggestein|
+7|Freiburg|squad|9|FW|GER|Lucas Höler|
+7|Freiburg|squad|14|MF|JPN|Yuito Suzuki|
+7|Freiburg|squad|16|MF|GER|Yannik Engelhardt|
+7|Freiburg|squad|17|DF|GER|Lukas Kübler|
+7|Freiburg|squad|19|MF|GER|Niklas Beste|
+7|Freiburg|squad|20|MF|JPN|Rihito Yamamoto|
+7|Freiburg|squad|21|GK|GER|Florian Müller|
+7|Freiburg|squad|22|FW|BFA|Cyriaque Irié|
+7|Freiburg|squad|23|MF|KOS|Florent Muslija|
+7|Freiburg|squad|24|GK|GER|Jannik Huth|
+7|Freiburg|squad|27|DF|TUR|Berkay Yılmaz|
+7|Freiburg|squad|28|DF|GER|Matthias Ginter|
+7|Freiburg|squad|29|DF|GER|Philipp Treu|
+7|Freiburg|squad|30|DF|GER|Christian Günter|captain
+7|Freiburg|squad|31|FW|CRO|Igor Matanović|
+7|Freiburg|squad|32|MF|ITA|Vincenzo Grifo|vice-captain
+7|Freiburg|squad|33|DF|COD|Jordy Makengo|
+7|Freiburg|squad|37|DF|GER|Max Rosenfelder|
+7|Freiburg|squad|39|MF|SUI|Rouven Tarnutzer|
+7|Freiburg|squad|42|FW|JPN|Keisuke Gotō|
+7|Freiburg|squad|43|DF|SUI|Bruno Ogbus|
+7|Freiburg|loaned_out||GK|GER|Noah Atubolu|Eintracht Frankfurt (until 30 June 2027)
+7|Freiburg|loaned_out||DF|GER|Karl Steinmann|Hannover 96 (until 30 June 2027)
+7|Freiburg|loaned_out||FW|GER|Louey Ben Farhat|Karlsruher SC (until 30 June 2027)
+7|Freiburg|loaned_out||MF|TUR|Eren Dinkçi|Werder Bremen (until 30 June 2027)
+8|Augsburg|squad|1|GK|GER|Finn Dahmen|
+8|Augsburg|squad|2|DF|GER|Calvin Brackelmann|
+8|Augsburg|squad|4|MF|FRA|Han-Noah Massengo|
+8|Augsburg|squad|5|DF|FRA|Chrislain Matsima|
+8|Augsburg|squad|6|DF|NED|Jeffrey Gouweleeuw|captain
+8|Augsburg|squad|7|DF|KOR|Seol Young-woo|
+8|Augsburg|squad|8|MF|GER|Sima Suso|
+8|Augsburg|squad|9|FW|POR|Rodrigo Ribeiro|
+8|Augsburg|squad|10|MF|GER|Mert Kömür|
+8|Augsburg|squad|11|FW|AUT|Michael Gregoritsch|
+8|Augsburg|squad|14|MF|GER|Yannik Keitel|on loan from VfB Stuttgart
+8|Augsburg|squad|15|FW|BEN|Steve Mounié|
+8|Augsburg|squad|16|DF|GER|Hennes Behrens|
+8|Augsburg|squad|18|MF|GER|Tim Breithaupt|
+8|Augsburg|squad|19|MF|GER|Robin Fellhauer|
+8|Augsburg|squad|20|MF|FRA|Alexis Claude-Maurice|
+8|Augsburg|squad|21|MF|GER|Arijon Ibrahimović|on loan from Bayern Munich
+8|Augsburg|squad|22|GK|CRO|Nediljko Labrović|
+8|Augsburg|squad|23|FW|GER|Faik Sakar|
+8|Augsburg|squad|27|DF|GER|Marius Wolf|
+8|Augsburg|squad|30|MF|GER|Anton Kade|
+8|Augsburg|squad|32|MF|SUI|Fabian Rieder|
+8|Augsburg|squad|35|DF|SLE|Juma Bah|on loan from Manchester City
+8|Augsburg|squad|37|MF|GER|Tim Schnitzer|
+8|Augsburg|squad|39|FW|NGR|Uchenna Ogundu|
+8|Augsburg|squad|40|DF|GER|Noahkai Banks|
+8|Augsburg|squad|42|MF|TUR|Mahmut Küçükşahin|
+8|Augsburg|squad|48|GK|GER|Tom Wisbereit|
+8|Augsburg|loaned_out||GK|POL|Marcel Łubik|Wisła Kraków (until 30 June 2027)
+8|Augsburg|loaned_out||MF|CRO|Kristijan Jakić|PAOK (until 30 June 2027)
+8|Augsburg|loaned_out||FW|LUX|Aiman Dardari|Rot-Weiss Essen (until 30 June 2027)
+8|Augsburg|loaned_out||FW|FRA|Kyliane Dong|Bolton Wanderers (until 30 June 2027)
+8|Augsburg|loaned_out||FW|GER|Yusuf Kabadayı|Rijeka (until 30 June 2027)
+8|Augsburg|loaned_out||FW|COD|Nathanaël Mbuku|Sint-Truiden (until 30 June 2027)
+8|Augsburg|loaned_out||FW|TUN|Elias Saad|Nashville (until 30 June 2027)
+9|Köln|squad|1|GK|GER|Marvin Schwäbe|captain
+9|Köln|squad|2|DF|SUI|Joël Schmied|
+9|Köln|squad|3|DF|CRO|Borna Sosa|on loan from Crystal Palace
+9|Köln|squad|4|DF|GER|Timo Hübers|
+9|Köln|squad|5|MF|GER|Tom Krauß|
+9|Köln|squad|6|MF|TUN|Ellyes Skhiri|
+9|Köln|squad|7|FW|GER|Luca Waldschmidt|
+9|Köln|squad|8|MF|ISL|Ísak Jóhannesson|
+9|Köln|squad|9|FW|GER|Ragnar Ache|
+9|Köln|squad|10|MF|GER|Said El Mala|
+9|Köln|squad|11|FW|ENG|Reigan Heskey|
+9|Köln|squad|14|DF|GHA|Gideon Mensah|
+9|Köln|squad|15|FW|BIH|Imad Rondić|
+9|Köln|squad|17|MF|BEL|Alessio Castro-Montes|
+9|Köln|squad|19|FW|GER|Malek El Mala|
+9|Köln|squad|20|GK|GER|Ron-Robert Zieler|
+9|Köln|squad|21|GK|FRA|Martin James|
+9|Köln|squad|22|DF|ENG|Jahmai Simpson-Pusey|
+9|Köln|squad|23|MF|AUS|Paul Okon-Engstler|
+9|Köln|squad|24|DF|GEO|Luka Lochoshvili|
+9|Köln|squad|27|FW|NED|Thijs Dallinga|on loan from Bologna
+9|Köln|squad|28|DF|NOR|Sebastian Sebulonsen|
+9|Köln|squad|29|MF|GER|Jan Thielmann|
+9|Köln|squad|30|FW|GER|Marius Bülter|
+9|Köln|squad|31|MF|POR|Gil Neves|
+9|Köln|squad|33|DF|NED|Rav van den Berg|
+9|Köln|squad|34|MF|GER|Fayssal Harchaoui|
+9|Köln|squad|37|MF|GER|Linton Maina|
+9|Köln|squad|44|GK|GER|Matthias Köbbing|
+9|Köln|squad|47|FW|ENG|Mikey Moore|on loan from Tottenham Hotspur
+9|Köln|squad|49|MF|GER|David Fürst|
+9|Köln|loaned_out||DF|COD|Elias Bakatukanda|VfL Osnabrück (until 30 June 2027)
+9|Köln|loaned_out||DF|BIH|Jusuf Gazibegović|Widzew Łódź (until 30 June 2027)
+9|Köln|loaned_out||DF|GER|Julian Pauli|OB (until 30 June 2027)
+9|Köln|loaned_out||FW|SVN|Jaka Čuber Potočnik|Rot-Weiss Essen (until 30 June 2027)
+9|Köln|loaned_out||FW|GER|Youssoupha Niang|St. Pauli (until 30 June 2027)
+9|Köln|loaned_out||FW|GER|Fynn Schenten|Roda JC Kerkrade (until 30 June 2027)
+10|Hamburger SV|squad|1|GK|POR|Daniel Heuer Fernandes|
+10|Hamburger SV|squad|2|DF|FRA|William Mikelbrencis|
+10|Hamburger SV|squad|6|MF|BEL|Albert Sambi Lokonga|
+10|Hamburger SV|squad|7|FW|FRA|Jean-Luc Dompé|
+10|Hamburger SV|squad|8|MF|LBY|Daniel Elfadli|
+10|Hamburger SV|squad|12|GK|NOR|Sander Tangvik|
+10|Hamburger SV|squad|14|FW|FRA|Rayan Philippe|
+10|Hamburger SV|squad|15|FW|DEN|Yussuf Poulsen|captain
+10|Hamburger SV|squad|16|DF|GEO|Giorgi Gocholeishvili|on loan from Shakhtar Donetsk
+10|Hamburger SV|squad|17|DF|COM|Warmed Omari|
+10|Hamburger SV|squad|18|FW|GAM|Bakery Jatta|
+10|Hamburger SV|squad|19|FW|USA|Damion Downs|on loan from Southampton
+10|Hamburger SV|squad|20|MF|POR|Fábio Vieira|on loan from Arsenal
+10|Hamburger SV|squad|21|MF|GER|Nicolai Remberg|
+10|Hamburger SV|squad|23|MF|DEN|Albert Grønbæk|
+10|Hamburger SV|squad|24|MF|ARG|Nicolás Capaldo|
+10|Hamburger SV|squad|25|DF|NGA|Jordan Torunarigha|
+10|Hamburger SV|squad|27|FW|NGA|Philip Otele|on loan from Basel
+10|Hamburger SV|squad|28|DF|SUI|Miro Muheim|
+10|Hamburger SV|squad|37|DF|GER|Louis Lemke|
+10|Hamburger SV|squad|38|FW|NOR|Alexander Røssing-Lelesiit|
+10|Hamburger SV|squad|39|MF|EGY|Omar Megeed|
+10|Hamburger SV|squad|40|GK|GER|Hannes Hermann|
+10|Hamburger SV|squad|41|GK|GER|Fernando Dickes|
+10|Hamburger SV|squad|43|DF|GER|Shafiq Nandja|
+10|Hamburger SV|squad|45|FW|POR|Fábio Baldé|
+10|Hamburger SV|squad|49|FW|GER|Otto Stange|
+10|Hamburger SV|loaned_out||DF|GER|Noah Katterbach|Eintracht Braunschweig (until 30 June 2027)
+10|Hamburger SV|loaned_out||DF|FRA|Aboubaka Soumahoro|Saint-Étienne (until 30 June 2026)
+10|Hamburger SV|loaned_out||DF|GER|Joel Agyekum|Viktoria Köln (until 30 June 2026)
+10|Hamburger SV|loaned_out||MF|SUR|Immanuël Pherai|Elversberg (until 30 June 2026)
+10|Hamburger SV|loaned_out||FW|KOS|Emir Sahiti|Maccabi Tel Aviv (until 30 June 2026)
+11|Mainz 05|squad|1|GK|GER|Alexander Schwolow|
+11|Mainz 05|squad|2|DF|AUT|Phillipp Mwene|
+11|Mainz 05|squad|3|DF|PER|Fabio Gruber|
+11|Mainz 05|squad|4|DF|AUT|Stefan Posch|
+11|Mainz 05|squad|5|MF|GER|Eric Martel|
+11|Mainz 05|squad|6|MF|JPN|Kaishū Sano|
+11|Mainz 05|squad|7|MF|KOR|Lee Jae-sung|
+11|Mainz 05|squad|8|MF|GER|Paul Nebel|
+11|Mainz 05|squad|9|FW|GER|Phillip Tietz|
+11|Mainz 05|squad|10|MF|GER|Nadiem Amiri|
+11|Mainz 05|squad|11|FW|GHA|Ransford-Yeboah Königsdörffer|
+11|Mainz 05|squad|13|MF|KOR|Hong Hyun-seok|
+11|Mainz 05|squad|14|FW|DEN|William Bøving|
+11|Mainz 05|squad|15|MF|USA|Lennard Maloney|
+11|Mainz 05|squad|16|DF|GER|Stefan Bell|
+11|Mainz 05|squad|17|FW|GER|Benedict Hollerbach|
+11|Mainz 05|squad|19|DF|FRA|Anthony Caci|
+11|Mainz 05|squad|20|MF|FIN|Otto Ruoppi|
+11|Mainz 05|squad|21|DF|GER|Danny da Costa|
+11|Mainz 05|squad|22|FW|GER|Marco Richter|
+11|Mainz 05|squad|23|FW|SUR|Sheraldo Becker|
+11|Mainz 05|squad|24|MF|JPN|Sōta Kawasaki|
+11|Mainz 05|squad|25|DF|NOR|Andreas Hanche-Olsen|
+11|Mainz 05|squad|26|FW|COD|Silas|
+11|Mainz 05|squad|27|GK|GER|Robin Zentner|
+11|Mainz 05|squad|30|DF|SUI|Silvan Widmer|captain
+11|Mainz 05|squad|31|DF|GER|Dominik Kohr|
+11|Mainz 05|squad|35|GK|GER|Louis Babatz|
+11|Mainz 05|squad|36|FW|ESP|Fabio Moreno Fell|
+11|Mainz 05|squad|38|MF|GER|Jeremiah Debrah|
+11|Mainz 05|squad|39|FW|CIV|Alynho Haïdara|
+11|Mainz 05|squad|40|GK|GER|Maximilian Kinzig|
+11|Mainz 05|squad|46|DF|GER|Philipp Schulz|
+11|Mainz 05|squad|48|DF|POL|Kacper Potulski|
+11|Mainz 05|squad|49|GK|GER|Pit Zuther|
+11|Mainz 05|loaned_out||GK|GER|Lasse Rieß|Fortuna Düsseldorf (until 30 June 2027)
+11|Mainz 05|loaned_out||DF|AUS|Kasey Bos|Excelsior (until 30 June 2027)
+11|Mainz 05|loaned_out||DF|AUT|Konstantin Schopp|TSV Hartberg (until 30 June 2027)
+11|Mainz 05|loaned_out||MF|GER|Daniel Gleiber|1. FC Saarbrücken (until 30 June 2027)
+11|Mainz 05|loaned_out||FW|GER|Nelson Weiper|Sturm Graz (until 30 June 2027)
+12|Gladbach|squad|1|GK|GER|Moritz Nicolas|
+12|Gladbach|squad|2|DF|ITA|Fabio Chiarodia|
+12|Gladbach|squad|3|FW|SWE|Isac Lidberg|
+12|Gladbach|squad|4|DF|IDN|Kevin Diks|vice-captain
+12|Gladbach|squad|5|DF|POL|Jan Leszczyński|
+12|Gladbach|squad|6|DF|JPN|Kō Itakura|
+12|Gladbach|squad|7|MF|AUT|Kevin Stöger|
+12|Gladbach|squad|8|MF|GER|Enzo Leopold|
+12|Gladbach|squad|9|MF|FRA|Franck Honorat|
+12|Gladbach|squad|10|MF|GER|Florian Neuhaus|
+12|Gladbach|squad|11|FW|GER|Tim Kleindienst|captain
+12|Gladbach|squad|14|DF|JPN|Daiki Hashioka|on loan from Slavia Prague
+12|Gladbach|squad|16|MF|GER|Philipp Sander|
+12|Gladbach|squad|17|MF|KOR|Jens Castrop|
+12|Gladbach|squad|18|FW|JPN|Shūto Machino|
+12|Gladbach|squad|19|FW|GER|Nicolas Kühn|on loan from Como
+12|Gladbach|squad|20|DF|GER|David Herold|
+12|Gladbach|squad|21|GK|GER|Tobias Sippel|
+12|Gladbach|squad|22|DF|UKR|Yukhym Konoplya|
+12|Gladbach|squad|23|GK|GER|Jan Olschowsky|
+12|Gladbach|squad|25|MF|GER|Robin Hack|
+12|Gladbach|squad|27|MF|GER|Fritz Fleck|
+12|Gladbach|squad|26|DF|GER|Lukas Ullrich|
+12|Gladbach|squad|29|DF|USA|Joe Scally|
+12|Gladbach|squad|33|GK|GER|Daniel Batz|
+12|Gladbach|squad|34|MF|GER|Mathieu Nguefack|
+12|Gladbach|squad|36|MF|GER|Wael Mohya|
+12|Gladbach|squad|38|MF|SWE|Hugo Bolin|
+12|Gladbach|squad|39|FW|GBS|Iaia Manco Danfa|
+12|Gladbach|squad|47|MF|JPN|Zento Uno|
+12|Gladbach|loaned_out|39|MF|GER|Niklas Swider|Viktoria Köln (1 July 2026 – 30 June 2027)
+12|Gladbach|loaned_out|40|FW|GER|Jan Urbich|Eintracht Braunschweig (1 July 2026 – 30 June 2027)
+12|Gladbach|loaned_out|42|GK|LUX|Tiago Pereira Cardoso|La Louvière (1 July 2026 – 30 June 2027)
+12|Gladbach|loaned_out|31|FW|CZE|Tomáš Čvančara|Hradec Králové (until 30 June 2027)
+13|Paderborn 07|squad|1|GK|GER|Markus Schubert|
+13|Paderborn 07|squad|2|DF|GER|Ruben Müller|
+13|Paderborn 07|squad|3|DF|GER|Jonah Sticker|
+13|Paderborn 07|squad|4|DF|GER|Nyamekye Awortwie-Grant|
+13|Paderborn 07|squad|5|MF|USA|Santiago Castañeda|
+13|Paderborn 07|squad|6|MF|GER|Tom Baack|
+13|Paderborn 07|squad|7|MF|GER|Oliver Batista Meier|
+13|Paderborn 07|squad|8|MF|BIH|Luka Đurić|
+13|Paderborn 07|squad|9|FW|FRA|Rayan Philippe|on loan from Hamburger SV
+13|Paderborn 07|squad|11|FW|GER|Sven Michel|
+13|Paderborn 07|squad|15|GK|GER|Nahuel Noll|on loan from TSG Hoffenheim
+13|Paderborn 07|squad|17|DF|GER|Laurin Curda|
+13|Paderborn 07|squad|18|FW|GER|Marvin Pieringer|
+13|Paderborn 07|squad|19|FW|GER|Albert Millgramm|
+13|Paderborn 07|squad|20|DF|GER|Felix Götze|captain
+13|Paderborn 07|squad|21|DF|GER|Jano ter Horst|
+13|Paderborn 07|squad|22|MF|GER|Mattes Hansen|
+13|Paderborn 07|squad|23|MF|PHI|Raphael Obermair|
+13|Paderborn 07|squad|24|DF|GER|Niklas Mohr|
+13|Paderborn 07|squad|25|DF|GER|Tjark Scheller|
+13|Paderborn 07|squad|26|MF|GER|Sebastian Klaas|
+13|Paderborn 07|squad|27|FW|GER|Steffen Tigges|
+13|Paderborn 07|squad|28|MF|GER|Laurin Ulrich|on loan from VfB Stuttgart
+13|Paderborn 07|squad|29|DF|GER|Clemens Lippmann|
+13|Paderborn 07|squad|30|FW|GER|Stefano Marino|
+13|Paderborn 07|squad|31|GK|GER|Florian Pruhs|
+13|Paderborn 07|squad|32|FW|GER|Lasse Eickel|
+13|Paderborn 07|squad|33|DF|GER|Marcel Hoffmeier|
+13|Paderborn 07|squad|38|FW|GER|Deniz Zeitler|on loan from TSG Hoffenheim
+13|Paderborn 07|squad|40|FW|CRO|Gabriel Vidović|
+13|Paderborn 07|squad|44|MF|GER|Timur Gayret|
+13|Paderborn 07|squad|46|DF|GER|Tristan Zobel|
+13|Paderborn 07|loaned_out||DF|GER|Kevin Krumme|Fortuna Köln (until 30 June 2027)
+13|Paderborn 07|loaned_out||DF|GER|Martin Ens|MSV Duisburg (until 30 June 2027)
+13|Paderborn 07|loaned_out||MF|GER|Bennit Bröger|Fortuna Köln (until 30 June 2027)
+13|Paderborn 07|loaned_out||FW|GER|Georg Ermolaev|Alemannia Aachen (until 30 June 2027)
+13|Paderborn 07|loaned_out||FW|GER|Kennedy Okpala|Dynamo Dresden (until 30 June 2027)
+13|Paderborn 07|loaned_out||FW|GER|Marco Wörner|Jahn Regensburg (until 30 June 2027)
+14|Werder Bremen|squad|1|GK|EST|Karl Hein|
+14|Werder Bremen|squad|2|DF|BEL|Olivier Deman|
+14|Werder Bremen|squad|3|DF|POL|Oskar Wójcik|
+14|Werder Bremen|squad|4|DF|GER|Niklas Stark|
+14|Werder Bremen|squad|5|DF|GER|Amos Pieper|
+14|Werder Bremen|squad|6|MF|DEN|Jens Stage|
+14|Werder Bremen|squad|8|DF|GER|Mitchell Weiser|
+14|Werder Bremen|squad|9|FW|GER|Keke Topp|
+14|Werder Bremen|squad|10|FW|GER|Niclas Füllkrug|on loan from West Ham United
+14|Werder Bremen|squad|11|FW|GER|Justin Njinmah|
+14|Werder Bremen|squad|13|DF|BRA|Arthur|on loan from Bayer Leverkusen
+14|Werder Bremen|squad|14|MF|BEL|Senne Lynen|
+14|Werder Bremen|squad|15|MF|NED|Ludovit Reis|
+14|Werder Bremen|squad|16|DF|SEN|Moussa N'Diaye|on loan from Anderlecht
+14|Werder Bremen|squad|17|FW|AUT|Marco Grüll|
+14|Werder Bremen|squad|18|MF|TUR|Eren Dinkçi|on loan from Freiburg
+14|Werder Bremen|squad|19|FW|FRA|Kenny Quetant|
+14|Werder Bremen|squad|20|MF|ESP|Chuki|
+14|Werder Bremen|squad|21|FW|POL|Dawid Kownacki|
+14|Werder Bremen|squad|22|DF|ARG|Julián Malatini|
+14|Werder Bremen|squad|23|MF|POL|Dariusz Stalmach|
+14|Werder Bremen|squad|25|GK|GER|Markus Kolke|
+14|Werder Bremen|squad|26|FW|SUI|Cedric Itten|
+14|Werder Bremen|squad|27|DF|NGA|Felix Agu|
+14|Werder Bremen|squad|28|MF|FRA|Skelly Alvero|
+14|Werder Bremen|squad|29|FW|GER|Salim Musah|
+14|Werder Bremen|squad|30|GK|AUT|Alexander Schlager|
+14|Werder Bremen|squad|32|DF|AUT|Marco Friedl|captain
+14|Werder Bremen|squad|33|DF|GER|Mick Schmetgens|
+14|Werder Bremen|squad|34|MF|TUR|Darwin Soylu|
+14|Werder Bremen|squad|35|DF|GER|Luca Höcker|
+14|Werder Bremen|squad|36|DF|GER|Mats Heitmann|
+14|Werder Bremen|squad|37|GK|BUL|Stefan Smarkalev|
+14|Werder Bremen|squad|38|FW|GER|Paul Erevbenagie|
+14|Werder Bremen|squad|44|MF|NED|Youri Regeer|on loan from Ajax
+14|Werder Bremen|loaned_out||MF|GER|Wesley Adeh|Preußen Münster (until 30 June 2027)
+14|Werder Bremen|loaned_out||MF|CRO|Patrice Čović|Dynamo Dresden (until 30 June 2027)
+14|Werder Bremen|loaned_out||MF|BEL|Samuel Mbangula|Bologna (until 30 June 2027)
+14|Werder Bremen|loaned_out||MF|GER|Leon Opitz|VfL Osnabrück (until 30 June 2027)
+15|Union Berlin|squad|1|GK|DEN|Frederik Rønnow|
+15|Union Berlin|squad|2|DF|GER|Felix Uduokhai|
+15|Union Berlin|squad|3|DF|GER|Andrik Markgraf|
+15|Union Berlin|squad|4|DF|BEL|Zeno Van Den Bosch|
+15|Union Berlin|squad|5|DF|GER|Marvin Friedrich|
+15|Union Berlin|squad|6|MF|GER|Aljoscha Kemlein|
+15|Union Berlin|squad|7|FW|SCO|Oliver Burke|
+15|Union Berlin|squad|8|MF|TUN|Rani Khedira|vice-captain
+15|Union Berlin|squad|9|FW|TUR|Livan Burcu|
+15|Union Berlin|squad|11|MF|KOR|Jeong Woo-yeong|
+15|Union Berlin|squad|13|MF|HUN|András Schäfer|
+15|Union Berlin|squad|14|DF|AUT|Leopold Querfeld|
+15|Union Berlin|squad|15|DF|GER|Tom Rothe|
+15|Union Berlin|squad|17|DF|GHA|Derrick Köhn|
+15|Union Berlin|squad|18|DF|CRO|Josip Juranović|
+15|Union Berlin|squad|19|MF|GER|Janik Haberer|
+15|Union Berlin|squad|20|MF|SUI|Michel Aebischer|
+15|Union Berlin|squad|21|MF|GER|Tim Skarke|
+15|Union Berlin|squad|23|FW|SRB|Andrej Ilić|
+15|Union Berlin|squad|24|MF|DEN|Robert Skov|
+15|Union Berlin|squad|25|GK|GER|Carl Klaus|
+15|Union Berlin|squad|27|FW|CRO|Marin Ljubičić|
+15|Union Berlin|squad|28|DF|AUT|Christopher Trimmel|captain
+15|Union Berlin|squad|29|FW|CIV|Emmanuel Latte Lath|on loan from Atlanta United
+15|Union Berlin|squad|30|MF|SUI|Kastriot Imeri|
+15|Union Berlin|squad|31|GK|GER|Matheo Raab|
+15|Union Berlin|squad|32|FW|JAM|Mekhi Gray|
+15|Union Berlin|squad|34|DF|FRA|Stanley Nsoki|
+15|Union Berlin|squad|38|FW|GER|Julien Friedrich|
+15|Union Berlin|squad|49|MF|GER|Linus Güther|
+15|Union Berlin|loaned_out||DF|GER|Oluwaseun Ogbemudia|Waldhof Mannheim (until 30 June 2027)
+15|Union Berlin|loaned_out||DF|GER|Leon Prosche|Erzgebirge Aue (until 30 June 2027)
+15|Union Berlin|loaned_out||MF|GER|Tim Blaszczak|FSV 63 Luckenwalde (until 30 June 2027)
+15|Union Berlin|loaned_out||FW|UKR|Dmytro Bohdanov|Energie Cottbus (until 30 June 2027)
+16|Schalke 04|squad|1|GK|GER|Loris Karius|
+16|Schalke 04|squad|4|DF|TUR|Hasan Kuruçay|
+16|Schalke 04|squad|5|DF|GER|Timo Becker|
+16|Schalke 04|squad|6|MF|GER|Ron Schallenberg|
+16|Schalke 04|squad|7|FW|KOR|Hwang Hee-chan|on loan from Wolverhampton Wanderers
+16|Schalke 04|squad|8|DF|GER|Robin Gosens|on loan from Fiorentina
+16|Schalke 04|squad|9|FW|MLI|Moussa Sylla|
+16|Schalke 04|squad|10|FW|BIH|Edin Džeko|
+16|Schalke 04|squad|11|FW|FRA|Bryan Lasme|
+16|Schalke 04|squad|13|MF|JPN|Satoshi Tanaka|
+16|Schalke 04|squad|14|MF|GER|Janik Bachmann|
+16|Schalke 04|squad|15|FW|DEN|Emil Højlund|
+16|Schalke 04|squad|17|DF|SUI|Adrian Gantenbein|
+16|Schalke 04|squad|19|FW|TUR|Kenan Karaman|captain
+16|Schalke 04|squad|20|FW|AUT|Junior Adamu|
+16|Schalke 04|squad|21|MF|AUT|Dejan Ljubičić|
+16|Schalke 04|squad|22|GK|GER|Kevin Müller|
+16|Schalke 04|squad|23|MF|MAR|Soufiane El-Faouzi|
+16|Schalke 04|squad|24|MF|ALG|Adil Aouchiche|
+16|Schalke 04|squad|25|DF|BIH|Nikola Katić|
+16|Schalke 04|squad|27|MF|GER|Finn Porath|
+16|Schalke 04|squad|29|MF|CMR|Junior Dina Ebimbe|
+16|Schalke 04|squad|33|DF|GER|Vitalie Becker|
+16|Schalke 04|squad|36|GK|GER|Johannes Siebeking|
+16|Schalke 04|squad|38|MF|GER|Luca Vozar|
+16|Schalke 04|squad|39|DF|AUT|Maximilian Wöber|
+16|Schalke 04|squad|43|DF|TUR|Mertcan Ayhan|
+16|Schalke 04|loaned_out||GK|GER|Luca Podlech|Aalesund (until 31 December 2026)
+16|Schalke 04|loaned_out||DF|AUS|Dylan Leonard|Alemannia Aachen (until 30 June 2027)
+16|Schalke 04|loaned_out||DF|ARG|Felipe Sánchez|Santos Laguna (until 30 June 2027)
+16|Schalke 04|loaned_out||DF|BEL|Martin Wasinski|Almere City (until 30 June 2027)
+16|Schalke 04|loaned_out||MF|GER|Mika Wallentowitz|Greuther Fürth (until 30 June 2027)
+16|Schalke 04|loaned_out||FW|SEN|Christian Gomis|Tenerife (until 30 June 2027)
+16|Schalke 04|loaned_out||FW|GER|Peter Remmert|MSV Duisburg (until 30 June 2027)
+16|Schalke 04|loaned_out||FW|GER|Jakob Sachse|Viktoria Köln (until 30 June 2027)
+17|Elversberg|squad|1|GK|GER|Frank Lehmann|
+17|Elversberg|squad|2|DF|THA|Nicholas Mickelson|
+17|Elversberg|squad|3|DF|FRA|Florian Le Joncour|
+17|Elversberg|squad|4|DF|GER|Luis Seifert|
+17|Elversberg|squad|6|MF|GUI|Amara Condé|
+17|Elversberg|squad|7|MF|GER|Manuel Feil|
+17|Elversberg|squad|8|MF|POL|Łukasz Poręba|on loan from Hamburger SV
+17|Elversberg|squad|10|MF|GER|Bambasé Conté|on loan from TSG Hoffenheim
+17|Elversberg|squad|14|MF|GER|Jarzinho Malanga|on loan from VfB Stuttgart
+17|Elversberg|squad|15|MF|GER|Raif Adam|
+17|Elversberg|squad|16|FW|GER|Luca Pfeiffer|
+17|Elversberg|squad|17|MF|GER|Frederik Schmahl|
+17|Elversberg|squad|18|FW|GER|Mohammad Mahmoud|
+17|Elversberg|squad|19|DF|GER|Lukas Pinckert|captain
+17|Elversberg|squad|20|GK|AUT|Nicolas Kristof|
+17|Elversberg|squad|21|DF|GER|Lasse Günther|
+17|Elversberg|squad|22|MF|SUR|Immanuël Pherai|on loan from Hamburger SV
+17|Elversberg|squad|23|MF|GER|Carlo Sickinger|
+17|Elversberg|squad|24|FW|GER|Luca Schnellbacher|
+17|Elversberg|squad|25|MF|BUL|Lukas Petkov|
+17|Elversberg|squad|28|GK|GER|Tim Boss|
+17|Elversberg|squad|29|MF|GER|Tom Zimmerschied|
+17|Elversberg|squad|30|DF|GHA|Jan Gyamerah|
+17|Elversberg|squad|31|DF|GER|Maximilian Rohr|
+17|Elversberg|squad|32|MF|GER|Daniel Pantschenko|
+17|Elversberg|squad|42|FW|FRA|David Mokwa|
+17|Elversberg|squad|43|DF|GER|Felix Keidel|
+17|Elversberg|squad||MF|GER|Maurice Krattenmacher|
+17|Elversberg|loaned_out||MF|GER|Jason Çeka|Dynamo Dresden (until 30 June 2026)
+17|Elversberg|loaned_out||FW|ERI|Filimon Gerezgiher|Emmen (until 30 June 2026)
+438|1. FC Magdeburg|squad|1|GK|GER|Dominik Reimann|captain
+438|1. FC Magdeburg|squad|3|DF|IRL|Anselmo García MacNulty|
+438|1. FC Magdeburg|squad|4|DF|LUX|Eldin Džogović|
+438|1. FC Magdeburg|squad|5|DF|GER|Tobias Müller|
+438|1. FC Magdeburg|squad|6|DF|GER|Paul Jaeckel|
+438|1. FC Magdeburg|squad|7|DF|UGA|Herbert Bockhorn|
+438|1. FC Magdeburg|squad|8|FW|GER|Emmanuel Iyoha|
+438|1. FC Magdeburg|squad|9|FW|CRO|Roko Šimić|on loan from Cardiff City
+438|1. FC Magdeburg|squad|10|MF|GER|Moritz-Broni Kwarteng|
+438|1. FC Magdeburg|squad|11|MF|PER|Felipe Chávez|on loan from Bayern Munich
+438|1. FC Magdeburg|squad|15|MF|GER|Tony Reitz|
+438|1. FC Magdeburg|squad|15|DF|GER|Daniel Heber|
+438|1. FC Magdeburg|squad|17|FW|GER|Alexander Nollenberger|
+438|1. FC Magdeburg|squad|18|FW|KOR|Lee Chung-hyun|on loan from Bucheon
+438|1. FC Magdeburg|squad|19|DF|ZAM|Lubambo Musonda|
+438|1. FC Magdeburg|squad|20|MF|GER|Kevin Manthey|
+438|1. FC Magdeburg|squad|21|MF|GER|Falko Michel|
+438|1. FC Magdeburg|squad|22|FW|POL|Mateusz Żukowski|
+438|1. FC Magdeburg|squad|23|FW|TUR|Barış Atik|
+438|1. FC Magdeburg|squad|24|DF|GER|Tarek Chahed|
+438|1. FC Magdeburg|squad|26|MF|GER|Torben Müsel|
+438|1. FC Magdeburg|squad|27|MF|KOR|Yoon Do-young|on loan from Brighton
+438|1. FC Magdeburg|squad|28|DF|TOG|Pierre Nadjombe|
+438|1. FC Magdeburg|squad|29|MF|GER|Richmond Tachie|
+438|1. FC Magdeburg|squad|30|GK|GER|Noah Kruth|
+438|1. FC Magdeburg|squad|35|MF|GER|Magnus Baars|
+438|1. FC Magdeburg|squad|38|MF|FIN|Luka Hyryläinen|
+438|1. FC Magdeburg|squad|40|GK|GER|Robert Kampa|
+439|1. FC Nürnberg|squad|1|GK|GER|Jan Reichert|captain
+439|1. FC Nürnberg|squad|4|DF|GRE|Alexis Kalogeropoulos|
+439|1. FC Nürnberg|squad|5|DF|ARM|Styopa Mkrtchyan|
+439|1. FC Nürnberg|squad|6|MF|FIN|Adam Markhiev|
+439|1. FC Nürnberg|squad|7|FW|FRA|Rayan Ghrieb|
+439|1. FC Nürnberg|squad|8|MF|ESP|Javi Fernández|on loan from Bayern Munich
+439|1. FC Nürnberg|squad|9|FW|NOR|Sigurd Haugen|
+439|1. FC Nürnberg|squad|10|MF|GER|Julian Justvan|
+439|1. FC Nürnberg|squad|11|FW|DEN|William Bøving|on loan from Mainz 05
+439|1. FC Nürnberg|squad|13|GK|POL|Robin Lisewski|
+439|1. FC Nürnberg|squad|14|DF|ITA|Andrea Ceresoli|
+439|1. FC Nürnberg|squad|15|DF|SEN|Mikayil Faye|on loan from Rennes
+439|1. FC Nürnberg|squad|16|MF|GER|Marko Soldić|
+439|1. FC Nürnberg|squad|18|MF|GER|Rafael Lubach|
+439|1. FC Nürnberg|squad|19|FW|GER|Piet Scobel|
+439|1. FC Nürnberg|squad|20|DF|GER|Fynn Otto|
+439|1. FC Nürnberg|squad|21|DF|GRE|Giannis Masouras|
+439|1. FC Nürnberg|squad|22|MF|GER|Finn Ole Becker|
+439|1. FC Nürnberg|squad|23|FW|ITA|Mohamed Ali Zoma|
+439|1. FC Nürnberg|squad|26|GK|GER|Christian Mathenia|
+439|1. FC Nürnberg|squad|28|FW|SYR|Can Moustfa|
+439|1. FC Nürnberg|squad|32|DF|GER|Tim Janisch|
+439|1. FC Nürnberg|squad|35|MF|GER|Marc Kornwachs Barjuan|
+439|1. FC Nürnberg|squad|36|DF|CRO|Kristian Mandić|
+439|1. FC Nürnberg|squad|38|MF|GER|Winners Osawe|
+439|1. FC Nürnberg|squad|39|FW|GER|Adriano Grimaldi|
+439|1. FC Nürnberg|squad|41|DF|GER|Eric Porstner|
+439|1. FC Nürnberg|squad|43|DF|GER|Tobias Heß|
+439|1. FC Nürnberg|squad|46|GK|GER|Nicolas Ortegel|
+439|1. FC Nürnberg|loaned_out||GK|SVK|Michal Kukučka|Jablonec (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||MF|MAR|Ayoub Chaikhoun|Wehen Wiesbaden (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||MF|GER|Xaver Kiefersauer|Würzburger Kickers (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||MF|GER|Justin von der Hitz|Alemannia Aachen (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||FW|MTQ|Mickaël Biron|Batman Petrolspor (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||FW|CGO|Noah Maboulou|Viktoria Köln (until 30 June 2027)
+439|1. FC Nürnberg|loaned_out||FW|GER|Semir Telalović|Rot-Weiss Essen (until 30 June 2027)
+440|Arminia Bielefeld|squad|1|GK|GER|Jonas Kersken|
+440|Arminia Bielefeld|squad|2|DF|GER|Felix Hagmann|
+440|Arminia Bielefeld|squad|3|DF|DEN|Joel Felix|
+440|Arminia Bielefeld|squad|5|DF|GER|Maximilian Bauer|captain
+440|Arminia Bielefeld|squad|6|MF|GER|Marvin Mehlem|
+440|Arminia Bielefeld|squad|7|DF|TOG|Henri Koudossou|
+440|Arminia Bielefeld|squad|8|MF|GER|Sam Schreck|
+440|Arminia Bielefeld|squad|9|FW|NED|David Min|on loan from Utrecht
+440|Arminia Bielefeld|squad|10|MF|GER|Jannik Rochelt|
+440|Arminia Bielefeld|squad|11|FW|GER|Joel Grodowski|
+440|Arminia Bielefeld|squad|13|MF|GER|Lukas Kunze|
+440|Arminia Bielefeld|squad|14|FW|GER|Thaddäus-Monju Momuluh|
+440|Arminia Bielefeld|squad|17|DF|GER|Arne Sicker|
+440|Arminia Bielefeld|squad|18|GK|GER|Leo Oppermann|
+440|Arminia Bielefeld|squad|19|DF|GER|Maximilian Großer|
+440|Arminia Bielefeld|squad|21|MF|GER|Stefano Russo|
+440|Arminia Bielefeld|squad|23|DF|GER|Leon Schneider|
+440|Arminia Bielefeld|squad|27|MF|GER|Benjamin Boakye|
+440|Arminia Bielefeld|squad|28|FW|LAT|Roberts Uldriķis|
+440|Arminia Bielefeld|squad|29|DF|GER|Tim Handwerker|
+440|Arminia Bielefeld|squad|30|FW|USA|Isaiah Young|
+440|Arminia Bielefeld|squad|31|MF|GER|Leon Jensen|
+440|Arminia Bielefeld|squad|38|MF|GER|Marius Wörl|
+440|Arminia Bielefeld|squad|42|MF|GER|Till Wegener|
+440|Arminia Bielefeld|squad|43|MF|GER|Daniel Richter|
+440|Arminia Bielefeld|squad|44|MF|TUR|Eyyüb Yasar|
+440|Arminia Bielefeld|squad|47|GK|GER|Philip Hildesheim|
+440|Arminia Bielefeld|squad|50|GK|GER|Mino Jäger|
+441|Braunschweig|squad|1|GK|GER|Ron-Thorben Hoffmann|captain
+441|Braunschweig|squad|3|DF|GER|Noah Katterbach|on loan from Hamburger SV
+441|Braunschweig|squad|4|DF|KOS|Andi Hoti|
+441|Braunschweig|squad|5|DF|GER|Frederik Jäkel|
+441|Braunschweig|squad|6|MF|GER|Florian Flick|
+441|Braunschweig|squad|7|FW|GER|Yann Sturm|
+441|Braunschweig|squad|8|MF|TUR|Mehmet Aydın|
+441|Braunschweig|squad|9|FW|AUT|Maximilian Entrup|
+441|Braunschweig|squad|10|MF|GER|Samuele Di Benedetto|
+441|Braunschweig|squad|11|FW|SRB|Jovan Mijatović|on loan from New York City
+441|Braunschweig|squad|15|MF|GER|Max Marie|
+441|Braunschweig|squad|17|MF|GER|Aaron Opoku|
+441|Braunschweig|squad|19|FW|SUI|Arlet Junior Zé|
+441|Braunschweig|squad|20|MF|GER|Lino Tempelmann|
+441|Braunschweig|squad|21|DF|GER|Kevin Ehlers|
+441|Braunschweig|squad|22|DF|GER|Fabio Di Michele Sanchez|
+441|Braunschweig|squad|23|DF|GRE|Isidoros Koutsidis|
+441|Braunschweig|squad|24|FW|GER|Sidi Sané|
+441|Braunschweig|squad|25|DF|GER|Sanoussy Ba|
+441|Braunschweig|squad|26|MF|GER|Tristan Wagner|
+441|Braunschweig|squad|27|FW|GER|Jan Urbich|on loan from Borussia Mönchengladbach
+441|Braunschweig|squad|29|DF|GER|Lukas Frenkert|
+441|Braunschweig|squad|30|MF|GER|Robin Heußer|
+441|Braunschweig|squad|32|GK|GER|Benjamin Uphoff|
+441|Braunschweig|squad|33|GK|GER|Nick Bodon|
+441|Braunschweig|squad|37|MF|GER|Sidney Raebiger|
+441|Braunschweig|squad|43|DF|AUT|Damjan Kovacevic|
+441|Braunschweig|loaned_out||DF|GER|Louis Breunig|Würzburger Kickers (until 30 June 2027)
+441|Braunschweig|loaned_out||MF|GER|Jona Borsum|SV Meppen (until 30 June 2027)
+442|Dynamo Dresden|squad|1|GK|GER|Tim Schreiber|
+442|Dynamo Dresden|squad|4|DF|GER|Kenneth Schmidt|
+442|Dynamo Dresden|squad|6|DF|GER|Nicolai Rapp|
+442|Dynamo Dresden|squad|8|MF|GER|Luca Herrmann|
+442|Dynamo Dresden|squad|9|FW|NED|Vincent Vermeij|
+442|Dynamo Dresden|squad|10|MF|GER|Jakob Lemmer|
+442|Dynamo Dresden|squad|11|FW|TUR|Kaan İnanoğlu|
+442|Dynamo Dresden|squad|14|DF|GER|Brooklyn Ezeh|
+442|Dynamo Dresden|squad|16|FW|SWE|Nils Fröling|
+442|Dynamo Dresden|squad|17|DF|AUT|Ahmet Muhamedbegović|
+442|Dynamo Dresden|squad|18|MF|GER|Robert Wagner|
+442|Dynamo Dresden|squad|19|DF|GER|Alexander Rossipal|
+442|Dynamo Dresden|squad|20|FW|GER|Ben Bobzien|
+442|Dynamo Dresden|squad|21|MF|GER|Tobias Raschl|
+442|Dynamo Dresden|squad|22|GK|GER|Lennart Grill|
+442|Dynamo Dresden|squad|23|DF|GER|Lars Bünning|
+442|Dynamo Dresden|squad|25|MF|GER|Jonas Oehmichen|
+442|Dynamo Dresden|squad|27|MF|GER|Niklas Hauptmann|captain
+442|Dynamo Dresden|squad|29|DF|GER|Lukas Boeder|
+442|Dynamo Dresden|squad|32|DF|GER|Jonas Sterner|
+442|Dynamo Dresden|squad|33|FW|GER|Christoph Daferner|
+442|Dynamo Dresden|squad|34|DF|GER|Till Neininger|on loan from VfL Wolfsburg
+442|Dynamo Dresden|squad|37|GK|GER|Daniel Mesenhöler|
+442|Dynamo Dresden|squad|39|DF|GER|Thomas Keller|
+442|Dynamo Dresden|squad|40|GK|GER|Elias Bethke|
+442|Dynamo Dresden|squad|42|DF|GER|Friedrich Müller|
+442|Dynamo Dresden|squad|44|DF|ITA|Simon Straudi|
+442|Dynamo Dresden|squad|45|GK|GER|Marlon Grafe|
+442|Dynamo Dresden|loaned_out||MF|GER|Tony Menzel|Rot-Weiss Essen (until 30 June 2027)
+442|Dynamo Dresden|loaned_out||FW|GER|Marlon Faß|Sonnenhof Großaspach (until 30 June 2027)
+443|Energie Cottbus|squad|1|GK|GER|Alexander Sebald|
+443|Energie Cottbus|squad|2|MF|GER|King Manu|on loan from Fortuna Düsseldorf
+443|Energie Cottbus|squad|3|DF|GER|Henry Rorig|
+443|Energie Cottbus|squad|4|DF|GER|Tim Campulka|
+443|Energie Cottbus|squad|5|MF|GER|Dominik Pelivan|
+443|Energie Cottbus|squad|6|MF|GER|Jonas Hofmann|
+443|Energie Cottbus|squad|7|FW|GER|Timmy Thiele|
+443|Energie Cottbus|squad|8|MF|LTU|Lukas Michelbrink|on loan from Hertha BSC II
+443|Energie Cottbus|squad|10|MF|TUR|Tolcay Ciğerci|
+443|Energie Cottbus|squad|11|MF|GER|Moritz Hannemann|
+443|Energie Cottbus|squad|14|MF|TUR|Tolga Ciğerci|
+443|Energie Cottbus|squad|17|MF|SYR|Can Moustfa|
+443|Energie Cottbus|squad|18|FW|GER|Erik Engelhardt|
+443|Energie Cottbus|squad|19|MF|GRE|Jannis Boziaris|
+443|Energie Cottbus|squad|20|DF|GER|Axel Borgmann|captain
+443|Energie Cottbus|squad|21|DF|GAM|Leon Guwara|
+443|Energie Cottbus|squad|22|DF|BIH|Mladen Cvjetinović|on loan from Holstein Kiel
+443|Energie Cottbus|squad|23|DF|GER|Nyamekye Awortwie-Grant|
+443|Energie Cottbus|squad|24|DF|ANG|Anderson Lucoqui|
+443|Energie Cottbus|squad|25|FW|GER|Ted Tattermusch|
+443|Energie Cottbus|squad|27|DF|GER|Dennis Slamar|
+443|Energie Cottbus|squad|30|GK|GER|Max Böhnke|
+443|Energie Cottbus|squad|31|FW|GER|Justin Butler|
+443|Energie Cottbus|squad|32|MF|GER|Finn Heidrich|
+443|Energie Cottbus|squad|33|GK|GER|Marius Funk|
+443|Energie Cottbus|squad|36|MF|GER|Janis Juckel|
+443|Energie Cottbus|squad|37|FW|GER|Merveille Biankadi|
+443|Energie Cottbus|squad|44|DF|ITA|Simon Straudi|
+443|Energie Cottbus|loaned_out||DF|GER|Gianluca Pelzer|VfB Lübeck (until 30 June 2026)
+444|FC St. Pauli|squad|1|GK|GER|Ben Voll|
+444|FC St. Pauli|squad|2|DF|FIN|Rony Jansson|
+444|FC St. Pauli|squad|4|DF|AUT|David Nemeth|captain
+444|FC St. Pauli|squad|5|MF|ISL|Gísli Þórðarson|on loan from Lech Poznań
+444|FC St. Pauli|squad|6|DF|DEN|Marcus Mathisen|
+444|FC St. Pauli|squad|7|FW|GER|Youssoupha Niang|on loan from 1. FC Köln
+444|FC St. Pauli|squad|8|MF|SWE|Eric Smith|
+444|FC St. Pauli|squad|9|FW|GAM|Abdoulie Ceesay|
+444|FC St. Pauli|squad|10|FW|SWE|Branimir Hrgota|
+444|FC St. Pauli|squad|11|DF|POL|Arkadiusz Pyrka|
+444|FC St. Pauli|squad|14|MF|SWE|Erik Ahlstrand|
+444|FC St. Pauli|squad|15|DF|JPN|Tomoya Ando|
+444|FC St. Pauli|squad|16|MF|JPN|Joel Chima Fujita|
+444|FC St. Pauli|squad|17|MF|SCO|Scott Banks|
+444|FC St. Pauli|squad|18|FW|JPN|Taichi Hara|
+444|FC St. Pauli|squad|19|FW|NED|Martijn Kaars|
+444|FC St. Pauli|squad|20|MF|NOR|Mathias Rasmussen|
+444|FC St. Pauli|squad|21|DF|GER|Lars Ritzka|
+444|FC St. Pauli|squad|22|MF|AUS|Sam Klein|
+444|FC St. Pauli|squad|23|DF|GER|Louis Oppie|
+444|FC St. Pauli|squad|24|MF|AUS|Connor Metcalfe|
+444|FC St. Pauli|squad|25|DF|POL|Adam Dźwigała|
+444|FC St. Pauli|squad|26|FW|ENG|Ricky-Jade Jones|
+444|FC St. Pauli|squad|28|MF|POR|Mathias Pereira Lage|
+444|FC St. Pauli|squad|30|GK|AUT|Simon Spari|
+444|FC St. Pauli|squad|33|GK|BUL|Dimitar Mitov|
+444|FC St. Pauli|squad|42|MF|GER|Marwin Schmitz|
+444|FC St. Pauli|squad|44|MF|JPN|Nick Schmidt|
+444|FC St. Pauli|loaned_out|34|DF|AUT|Jannik Robatsch|Beveren (until 30 June 2027)
+445|Fürth|squad|1|GK|GER|Florian Hellstern|on loan from VfB Stuttgart
+445|Fürth|squad|2|DF|GER|Lukas Reich|
+445|Fürth|squad|5|DF|GER|Maxim Dal|
+445|Fürth|squad|6|MF|BFA|Sacha Bansé|
+445|Fürth|squad|7|FW|GER|Dennis Srbeny|
+445|Fürth|squad|8|MF|GER|Shinta Appelkamp|
+445|Fürth|squad|10|MF|GER|Ole Pohlmann|
+445|Fürth|squad|11|MF|SUI|Aaron Keller|
+445|Fürth|squad|13|MF|GER|Paul Will|
+445|Fürth|squad|17|DF|GER|Noah König|
+445|Fürth|squad|18|MF|EGY|Omar Megeed|
+445|Fürth|squad|19|FW|GER|Benjamin Zank|
+445|Fürth|squad|20|FW|GER|Leander Popp|
+445|Fürth|squad|21|MF|GER|Mika Wallentowitz|on loan from Schalke 04
+445|Fürth|squad|22|DF|GER|Jannis Heuer|
+445|Fürth|squad|23|DF|GER|Jannik Dehm|
+445|Fürth|squad|26|GK|NED|Pelle Boevink|
+445|Fürth|squad|27|DF|GER|Luca Itter|
+445|Fürth|squad|28|MF|FIN|Doni Arifi|
+445|Fürth|squad|29|DF|HUN|Krisztián Keresztes|on loan from Nyíregyháza Spartacus
+445|Fürth|squad|30|MF|GER|Felix Klaus|captain
+445|Fürth|squad|36|MF|GER|Philipp Müller|
+445|Fürth|squad|39|GK|GER|Christian Ortag|
+445|Fürth|squad|42|FW|GER|Omar Sillah|
+445|Fürth|squad|43|GK|GER|Silas Prüfrock|
+445|Fürth|squad|44|MF|GER|Mehmet Avlayici|
+445|Fürth|loaned_out||DF|GER|David Abrangao|Würzburger Kickers (until 30 June 2027)
+446|Hannover 96|squad|1|GK|SUI|Pascal Loretz|
+446|Hannover 96|squad|3|DF|GER|Boris Tomiak|
+446|Hannover 96|squad|4|DF|FRA|Jean Hugonet|vice-captain
+446|Hannover 96|squad|5|DF|ROU|Virgil Ghiță|
+446|Hannover 96|squad|7|FW|SLE|Mustapha Bundu|
+446|Hannover 96|squad|8|MF|FRA|Waniss Taïbi|
+446|Hannover 96|squad|9|FW|FIN|Benjamin Källman|
+446|Hannover 96|squad|10|MF|GER|Marcel Hartel|
+446|Hannover 96|squad|11|FW|AUT|Benedikt Pichler|
+446|Hannover 96|squad|13|MF|GER|Franz Roggow|
+446|Hannover 96|squad|14|MF|LBN|Husseyn Chakroun|
+446|Hannover 96|squad|16|DF|GER|Karl Steinmann|on loan from SC Freiburg
+446|Hannover 96|squad|17|DF|GER|Bastian Allgeier|
+446|Hannover 96|squad|20|DF|RSA|Ime Okon|
+446|Hannover 96|squad|21|MF|MAW|Mwisho Mhango|
+446|Hannover 96|squad|22|MF|GER|Noah Engelbreth|
+446|Hannover 96|squad|23|MF|ISL|Stefán Teitur Þórðarson|captain
+446|Hannover 96|squad|24|MF|GER|Yunus Ünal|
+446|Hannover 96|squad|25|MF|GER|Lars Gindorf|
+446|Hannover 96|squad|26|FW|GER|Tom Hobrecht|
+446|Hannover 96|squad|27|DF|JPN|Hayate Matsuda|
+446|Hannover 96|squad|28|FW|GER|Taycan Etçibaşı|
+446|Hannover 96|squad|29|MF|SWE|Kolja Oudenne|
+446|Hannover 96|squad|30|GK|GER|Leo Weinkauf|
+446|Hannover 96|squad|33|DF|GER|Maurice Neubauer|vice-captain
+446|Hannover 96|squad|35|DF|GER|Joschua Siewert|
+446|Hannover 96|squad|37|MF|GER|Alexander Vogel|
+446|Hannover 96|squad|39|FW|TUR|Taycan Kurt|
+446|Hannover 96|squad|40|GK|GER|Jonas Schwanke|
+446|Hannover 96|squad|44|MF|KOS|Emir Sahiti|
+446|Hannover 96|loaned_out||DF|FRA|William Kokolo|Nacional (until 30 June 2027)
+447|Heidenheim|squad|1|GK|GER|Frank Feller|
+447|Heidenheim|squad|2|DF|GER|Marnon Busch|vice-captain
+447|Heidenheim|squad|3|MF|GER|Jan Schöppner|
+447|Heidenheim|squad|4|DF|GER|Tim Siersleben|
+447|Heidenheim|squad|6|DF|GER|Patrick Mainka|captain
+447|Heidenheim|squad|8|MF|GER|Paul Hennrich|
+447|Heidenheim|squad|10|MF|GER|Christian Conteh|
+447|Heidenheim|squad|11|FW|GEO|Budu Zivzivadze|
+447|Heidenheim|squad|14|FW|GER|Maximilian Breunig|
+447|Heidenheim|squad|16|MF|GER|Julian Niehues|
+447|Heidenheim|squad|17|MF|AUT|Mathias Honsak|
+447|Heidenheim|squad|18|FW|SUI|Alessandro Vogt|on loan from TSG Hoffenheim
+447|Heidenheim|squad|19|DF|GER|Jonas Föhrenbach|
+447|Heidenheim|squad|20|MF|GER|Luca Kerber|
+447|Heidenheim|squad|22|DF|MAR|Oualid Mhamdi|
+447|Heidenheim|squad|23|DF|KOS|Leart Paçarada|
+447|Heidenheim|squad|24|FW|GER|Marcel Costly|
+447|Heidenheim|squad|27|DF|SUI|Michael Heule|
+447|Heidenheim|squad|28|DF|GER|Adam Kölle|
+447|Heidenheim|squad|29|FW|DEN|Mikkel Kaufmann|
+447|Heidenheim|squad|31|MF|GER|Sirlord Conteh|
+447|Heidenheim|squad|33|GK|GER|Thomas Dähne|
+447|Heidenheim|squad|34|GK|AUT|Paul Tschernuth|
+447|Heidenheim|squad|38|FW|GER|Yannik Wagner|
+447|Heidenheim|squad|40|GK|GER|Felix Mark|
+447|Heidenheim|squad|41|MF|CRO|Marko Zrilić|
+447|Heidenheim|loaned_out||MF|GER|Adrian Beck|VfL Osnabrück (until 30 June 2027)
+447|Heidenheim|loaned_out||MF|GER|Luka Janeš|Tasmania Berlin (until 30 June 2027)
+447|Heidenheim|loaned_out||MF|GER|Nick Rothweiler|Hessen Kassel (until 30 June 2027)
+448|Hertha BSC|squad|2|DF|GER|Julian Eitschberger|
+448|Hertha BSC|squad|5|MF|GER|Leon Jensen|
+448|Hertha BSC|squad|7|FW|CRO|Josip Brekalo|captain
+448|Hertha BSC|squad|8|MF|GER|Kevin Sessa|
+448|Hertha BSC|squad|13|GK|GER|Konstantin Heide|
+448|Hertha BSC|squad|16|FW|DEN|Gustav Christensen|
+448|Hertha BSC|squad|17|FW|DEN|Sebastian Grønning|
+448|Hertha BSC|squad|18|FW|GER|Luca Schuler|
+448|Hertha BSC|squad|19|MF|AUT|Oluwaseun Adewumi|on loan from Burnley
+448|Hertha BSC|squad|20|FW|GER|Farid Alfa-Ruprecht|on loan from Bayer Leverkusen
+448|Hertha BSC|squad|21|MF|GER|Boris Mamuzah Lum|
+448|Hertha BSC|squad|22|DF|DEN|Mads Pedersen|
+448|Hertha BSC|squad|24|FW|ISL|Jón Dagur Þorsteinsson|
+448|Hertha BSC|squad|26|FW|GER|Niklas Hildebrandt|
+448|Hertha BSC|squad|27|DF|GER|Niklas Kolbe|
+448|Hertha BSC|squad|30|MF|GER|Paul Seguin|
+448|Hertha BSC|squad|31|DF|HUN|Márton Dárdai|
+448|Hertha BSC|squad|33|MF|EST|Soufian Gouram|
+448|Hertha BSC|squad|35|GK|GER|Marius Gersbeck|
+448|Hertha BSC|squad|36|MF|TUR|Kian Todorović|
+448|Hertha BSC|squad|41|DF|GER|Pascal Klemens|
+448|Hertha BSC|squad|42|DF|SUR|Deyovaisio Zeefuik|
+448|Hertha BSC|squad|43|GK|GER|Tim Goller|
+448|Hertha BSC|squad|44|DF|GER|Linus Gechter|
+448|Hertha BSC|squad|47|MF|EGY|Selim Telib|
+448|Hertha BSC|loaned_out||DF|GER|Janne Berner|SC Verl (until 30 June 2027)
+448|Hertha BSC|loaned_out||MF|LTU|Lukas Michelbrink|Energie Cottbus (until 30 June 2027)
+450|Kaiserslautern|squad|1|GK|GER|Julian Krahl|
+450|Kaiserslautern|squad|2|DF|GER|Simon Asta|
+450|Kaiserslautern|squad|3|DF|GER|Florian Kleinhansl|
+450|Kaiserslautern|squad|4|DF|GER|Maxwell Gyamfi|
+450|Kaiserslautern|squad|5|DF|KOR|Kim Ji-soo|on loan from Brentford
+450|Kaiserslautern|squad|6|MF|GER|Fabian Kunze|
+450|Kaiserslautern|squad|7|MF|GER|Marlon Ritter|captain
+450|Kaiserslautern|squad|8|MF|GER|Semih Şahin|
+450|Kaiserslautern|squad|9|FW|CRO|Ivan Prtajin|
+450|Kaiserslautern|squad|10|FW|AZE|Mahir Emreli|
+450|Kaiserslautern|squad|11|FW|GER|Kenny-Prince Redondo|
+450|Kaiserslautern|squad|13|DF|GER|Erik Wekesser|
+450|Kaiserslautern|squad|14|DF|DEN|Jacob Rasmussen|
+450|Kaiserslautern|squad|15|MF|FIN|Naatan Skyttä|
+450|Kaiserslautern|squad|16|DF|BUL|Atanas Chernev|on loan from Estrela da Amadora
+450|Kaiserslautern|squad|17|FW|BEL|Norman Bassette|on loan from Coventry City
+450|Kaiserslautern|squad|19|FW|GER|Daniel Hanslik|
+450|Kaiserslautern|squad|20|FW|GER|Mërgim Berisha|
+450|Kaiserslautern|squad|22|DF|GER|Mika Haas|
+450|Kaiserslautern|squad|25|GK|ALB|Simon Simoni|on loan from Eintracht Frankfurt
+450|Kaiserslautern|squad|26|DF|FRA|Paul Joly|on loan from AJ Auxerre
+450|Kaiserslautern|squad|28|GK|LUX|Fabian Heck|
+450|Kaiserslautern|squad|30|GK|BIH|Avdo Spahić|
+450|Kaiserslautern|squad|31|MF|GER|Luca Sirch|
+450|Kaiserslautern|squad|34|FW|GER|Shawn Blum|
+450|Kaiserslautern|squad|37|MF|GER|Leon Robinson|
+450|Kaiserslautern|squad|38|DF|GER|Neal Gibs|
+450|Kaiserslautern|squad|40|GK|GER|Enis Kamga|
+450|Kaiserslautern|squad|41|MF|GER|David Schramm|
+450|Kaiserslautern|squad|42|MF|GER|Erik Müller|
+450|Kaiserslautern|squad|43|MF|GER|Owen Gibs|
+450|Kaiserslautern|squad|44|MF|GER|Dion Hofmeister|
+450|Kaiserslautern|squad|47|MF|GER|Ben Jungfleisch|
+450|Kaiserslautern|loaned_out||DF|SUI|Jan Elvedi|Greuther Fürth (until 30 June 2026)
+450|Kaiserslautern|loaned_out||DF|GER|Jannis Heuer|Preußen Münster (until 30 June 2026)
+450|Kaiserslautern|loaned_out||DF|GER|Frank Ronstadt|Viktoria Köln (until 30 June 2026)
+450|Kaiserslautern|loaned_out||FW|NGA|Dickson Abiama|Rot-Weiss Essen (until 30 June 2026)
+450|Kaiserslautern|loaned_out||FW|GER|Faride Alidou|Eintracht Braunschweig (until 30 June 2026)
+450|Kaiserslautern|loaned_out||FW|GER|Jannik Mause|Rot-Weiss Essen (until 30 June 2026)
+451|Karlsruher SC|squad|1|GK|DEN|Hans Christian Bernat|
+451|Karlsruher SC|squad|2|DF|GER|Sebastian Jung|
+451|Karlsruher SC|squad|3|DF|TUR|Deniz Ofli|on loan from Bayern Munich
+451|Karlsruher SC|squad|4|DF|BRA|Héliton|
+451|Karlsruher SC|squad|5|DF|KOR|Kwon Hyeok-kyu|
+451|Karlsruher SC|squad|6|MF|FIN|Santeri Väänänen|
+451|Karlsruher SC|squad|7|MF|GER|Kevin Wiethaup|
+451|Karlsruher SC|squad|9|FW|GER|Moritz Broschinski|on loan from Basel
+451|Karlsruher SC|squad|10|MF|GER|Marvin Wanitzek|captain
+451|Karlsruher SC|squad|11|FW|GER|Noel Eichinger|
+451|Karlsruher SC|squad|13|FW|JPN|Shiō Fukuda|
+451|Karlsruher SC|squad|15|DF|GER|Paul Scholl|
+451|Karlsruher SC|squad|17|FW|GER|Eymen Laghrissi|
+451|Karlsruher SC|squad|18|GK|GER|Ferdinand Gebert|
+451|Karlsruher SC|squad|19|FW|TUN|Louey Ben Farhat|on loan from SC Freiburg
+451|Karlsruher SC|squad|22|DF|AUT|Christoph Kobald|
+451|Karlsruher SC|squad|23|MF|ALB|Tim Civeja|
+451|Karlsruher SC|squad|24|DF|MAD|Sandro Trémoulet|
+451|Karlsruher SC|squad|25|MF|GER|Lilian Egloff|
+451|Karlsruher SC|squad|26|MF|GER|Danyal Zor|
+451|Karlsruher SC|squad|27|FW|GER|John Davis Meyer|
+451|Karlsruher SC|squad|28|DF|GER|Marcel Franke|
+451|Karlsruher SC|squad|30|GK|GER|Robin Himmelmann|
+451|Karlsruher SC|squad|33|DF|SWE|Viktor Bergh|
+451|Karlsruher SC|squad|36|DF|GER|Rafael Pinto Pedrosa|
+451|Karlsruher SC|squad|37|FW|ITA|Jason Ponente-Ramirez|
+451|Karlsruher SC|loaned_out||DF|GER|Niclas Dühring|SV Drochtersen/Assel (until 30 June 2027)
+451|Karlsruher SC|loaned_out||MF|GER|Mateo Kritzer|Eintracht Trier (until 30 June 2027)
+451|Karlsruher SC|loaned_out||MF|GER|Andreas Müller|Fortuna Düsseldorf (until 30 June 2027)
+452|SV Darmstadt 98|squad|1|GK|GER|Marcel Schuhen|captain
+452|SV Darmstadt 98|squad|3|DF|GER|Florian Kleinhansl|
+452|SV Darmstadt 98|squad|4|DF|USA|Grayson Dettoni|
+452|SV Darmstadt 98|squad|6|DF|GHA|Patric Pfeiffer|
+452|SV Darmstadt 98|squad|7|FW|GER|Noah Weißhaupt|
+452|SV Darmstadt 98|squad|8|FW|GER|Luca Marseiler|
+452|SV Darmstadt 98|squad|9|FW|KOR|Lee Ho-jae|
+452|SV Darmstadt 98|squad|10|MF|BEL|Nicolas Verkooijen|
+452|SV Darmstadt 98|squad|11|FW|MAR|Ibrahim El Kadiri|
+452|SV Darmstadt 98|squad|14|DF|MNE|Meldin Drešković|
+452|SV Darmstadt 98|squad|15|MF|BUL|Fabian Nürnberger|
+452|SV Darmstadt 98|squad|16|MF|JPN|Hiroki Akiyama|
+452|SV Darmstadt 98|squad|17|MF|GER|Kai Klefisch|
+452|SV Darmstadt 98|squad|18|DF|ITA|Raoul Petretta|
+452|SV Darmstadt 98|squad|19|FW|GER|Fynn Lakenmacher|
+452|SV Darmstadt 98|squad|20|DF|SRB|Aleksandar Vukotić|
+452|SV Darmstadt 98|squad|21|MF|GER|Merveille Papela|
+452|SV Darmstadt 98|squad|22|FW|GER|Lars Kehl|
+452|SV Darmstadt 98|squad|23|MF|GER|Carlo Sickinger|
+452|SV Darmstadt 98|squad|24|GK|GER|Benedikt Börner|
+452|SV Darmstadt 98|squad|25|DF|FRA|William Mikelbrencis|
+452|SV Darmstadt 98|squad|26|DF|GER|Matthias Bader|
+452|SV Darmstadt 98|squad|28|DF|GER|Christopher Lannert|
+452|SV Darmstadt 98|squad|30|GK|GER|Alexander Brunst|
+452|SV Darmstadt 98|squad|36|FW|NED|Milan Smit|on loan from Stoke City
+452|SV Darmstadt 98|squad|41|DF|NED|Lance Duijvestijn|
+452|SV Darmstadt 98|squad|44|FW|JPN|Yosuke Furukawa|
+452|SV Darmstadt 98|squad|45|DF|GER|Max Pfister|
+452|SV Darmstadt 98|squad|47|MF|GER|Milian Herbst|
+452|SV Darmstadt 98|squad|48|FW|GER|Manolo Merx|
+452|SV Darmstadt 98|squad|49|DF|GER|Yannik Lührs|
+452|SV Darmstadt 98|loaned_out||DF|GER|Tim Arnold|Sportfreunde Siegen (until 30 June 2027)
+452|SV Darmstadt 98|loaned_out||FW|GER|Fabio Torsiello|Alemannia Aachen (until 30 June 2027)
+454|VfL Osnabrück|squad|1|GK|GER|Niklas Sauter|
+454|VfL Osnabrück|squad|4|DF|ISR|Joel Abu Hanna|
+454|VfL Osnabrück|squad|5|FW|GER|Jonathan Wensing|
+454|VfL Osnabrück|squad|6|MF|GER|Bryan Henning|
+454|VfL Osnabrück|squad|7|MF|GHA|Daniel-Kofi Kyereh|
+454|VfL Osnabrück|squad|8|FW|GER|Leonhard Münst|
+454|VfL Osnabrück|squad|11|FW|GER|Robin Meißner|
+454|VfL Osnabrück|squad|15|MF|DEN|Bjarke Jacobsen|
+454|VfL Osnabrück|squad|17|FW|GER|Luca Raimund|
+454|VfL Osnabrück|squad|18|DF|GER|Lukas Bornschein|
+454|VfL Osnabrück|squad|19|FW|GER|Leon Opitz|on loan from Werder Bremen
+454|VfL Osnabrück|squad|20|DF|GER|Theo Janotta|
+454|VfL Osnabrück|squad|22|FW|GER|Bernd Riesselmann|
+454|VfL Osnabrück|squad|23|FW|FRA|Tony Lesueur|
+454|VfL Osnabrück|squad|24|DF|GER|Jannik Müller|captain
+454|VfL Osnabrück|squad|25|DF|GER|Niklas Wiemann|
+454|VfL Osnabrück|squad|26|MF|GER|Fridolin Wagner|
+454|VfL Osnabrück|squad|27|DF|GER|Robin Fabinski|
+454|VfL Osnabrück|squad|28|DF|GER|Konrad Faber|
+454|VfL Osnabrück|squad|29|MF|POL|David Kopacz|
+454|VfL Osnabrück|squad|31|DF|GER|Patrick Kammerbauer|
+454|VfL Osnabrück|squad|32|GK|GER|Jonas Krumrey|on loan from Holstein Kiel
+454|VfL Osnabrück|squad|36|GK|GER|Luca Böggemann|
+454|VfL Osnabrück|squad|37|MF|GER|Ismail Badjie|
+454|VfL Osnabrück|squad||MF|GER|Adrian Beck|on loan from 1. FC Heidenheim
+454|VfL Osnabrück|loaned_out||DF|GER|Joschka Kroll|SC Wiedenbrück (until 30 June 2027)
+454|VfL Osnabrück|loaned_out||DF|GER|Lion Semić|Greifswalder FC (until 30 June 2027)
+454|VfL Osnabrück|loaned_out||DF|GER|Ibrahim Touray|Kickers Emden (until 30 June 2027)
+454|VfL Osnabrück|loaned_out||MF|GER|Rohin Shivani|Sportfreunde Lotte (until 30 June 2027)
+455|VfL Wolfsburg|squad|1|GK|POL|Kamil Grabara|
+455|VfL Wolfsburg|squad|2|DF|GER|Kilian Fischer|
+455|VfL Wolfsburg|squad|3|DF|SVK|Denis Vavro|
+455|VfL Wolfsburg|squad|4|DF|GRE|Konstantinos Koulierakis|
+455|VfL Wolfsburg|squad|5|MF|BRA|Vinícius Souza|
+455|VfL Wolfsburg|squad|6|DF|FRA|Jeanuël Belocian|on loan from Bayer Leverkusen
+455|VfL Wolfsburg|squad|7|FW|JPN|Kento Shiogai|
+455|VfL Wolfsburg|squad|8|MF|HUN|Bence Dárdai|
+455|VfL Wolfsburg|squad|9|FW|ALG|Mohamed Amoura|
+455|VfL Wolfsburg|squad|10|MF|CRO|Lovro Majer|
+455|VfL Wolfsburg|squad|11|FW|DEN|Adam Daghim|on loan from Red Bull Salzburg
+455|VfL Wolfsburg|squad|12|GK|AUT|Pavao Pervan|
+455|VfL Wolfsburg|squad|13|DF|BRA|Rogério|
+455|VfL Wolfsburg|squad|14|DF|NED|Jenson Seelt|on loan from Sunderland
+455|VfL Wolfsburg|squad|15|DF|GER|Moritz Jenz|
+455|VfL Wolfsburg|squad|17|FW|GER|Dženan Pejčinović|
+455|VfL Wolfsburg|squad|18|DF|GHA|Jonas Adjetey|
+455|VfL Wolfsburg|squad|19|MF|DEN|Jesper Lindstrøm|on loan from Napoli
+455|VfL Wolfsburg|squad|21|DF|DEN|Joakim Mæhle|
+455|VfL Wolfsburg|squad|23|FW|DEN|Jonas Wind|
+455|VfL Wolfsburg|squad|24|MF|DEN|Christian Eriksen|
+455|VfL Wolfsburg|squad|25|DF|GER|Aaron Zehnter|
+455|VfL Wolfsburg|squad|26|DF|FRA|Saël Kumbedi|
+455|VfL Wolfsburg|squad|27|MF|GER|Maximilian Arnold|captain
+455|VfL Wolfsburg|squad|29|GK|GER|Marius Müller|
+455|VfL Wolfsburg|squad|30|GK|POL|Jakub Zieliński|
+455|VfL Wolfsburg|squad|31|MF|GER|Yannick Gerhardt|
+455|VfL Wolfsburg|squad|32|MF|SWE|Mattias Svanberg|
+455|VfL Wolfsburg|squad|33|DF|BRA|Cleiton|
+455|VfL Wolfsburg|squad|34|DF|GER|Till Neininger|
+455|VfL Wolfsburg|squad|37|MF|GER|Pharell Hensel|
+455|VfL Wolfsburg|squad|39|MF|AUT|Patrick Wimmer|
+455|VfL Wolfsburg|squad|41|DF|GER|Jan Bürger|
+455|VfL Wolfsburg|squad|42|FW|FIN|Bruno Katz|
+455|VfL Wolfsburg|squad|43|FW|GER|Trevor Benedict|
+455|VfL Wolfsburg|loaned_out||DF|FRA|Mathys Angély|Anderlecht (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||DF|FRA|Nicolas Cozza|Nantes (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||MF|CRO|Bartol Franjić|Venezia (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||MF|BEL|Aster Vranckx|Sassuolo (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||MF|POL|Eryk Grzywacz|1. FC Nürnberg (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||FW|DEN|Andreas Skov Olsen|Rangers (until 30 June 2026)
+455|VfL Wolfsburg|loaned_out||FW|POL|Jakub Kamiński|1. FC Köln (until 30 June 2026)

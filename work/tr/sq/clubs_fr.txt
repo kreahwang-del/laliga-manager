@@ -1,0 +1,36 @@
+58|Paris SG|FR
+59|Lyon|FR
+60|Monaco|FR
+61|Strasbourg|FR
+62|Lille|FR
+63|Rennes|FR
+64|Marseille|FR
+65|Lens|FR
+66|Nice|FR
+67|Paris FC|FR
+68|Toulouse|FR
+69|Le Mans|FR
+70|Auxerre|FR
+71|Lorient|FR
+72|Troyes|FR
+73|Angers|FR
+74|Le Havre|FR
+75|Brest|FR
+476|AS Nancy Lorraine|FR2
+477|AS Saint-Étienne|FR2
+478|Clermont Foot 63|FR2
+479|Dijon Football Côte d’Or|FR2
+480|En Avant Guingamp|FR2
+481|FC Annecy|FR2
+482|FC Metz|FR2
+483|FC Nantes|FR2
+484|FC Sochaux-Montbéliard|FR2
+485|Grenoble Foot 38|FR2
+486|Laval MFC|FR2
+487|Montpellier|FR2
+488|Pau FC|FR2
+489|Red Star FC|FR2
+490|Rodez AF|FR2
+491|Stade de Reims|FR2
+492|US Boulogne|FR2
+493|USL Dunkerque|FR2

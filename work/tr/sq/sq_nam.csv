@@ -1,0 +1,1438 @@
+club_id|club|status|number|pos|nat|player|note
+122|San Jose Earthquakes|squad|1|GK|SCO|Angus Gunn|
+122|San Jose Earthquakes|squad|2|DF|USA|Jamar Ricketts|
+122|San Jose Earthquakes|squad|3|DF|FRA|Paul Marie|
+122|San Jose Earthquakes|squad|4|DF|USA|Dave Romney|
+122|San Jose Earthquakes|squad|5|DF|USA|Daniel Munie|
+122|San Jose Earthquakes|squad|6|MF|USA|Ian Harkes|
+122|San Jose Earthquakes|squad|7|FW|BFA|Ousseni Bouda|
+122|San Jose Earthquakes|squad|9|FW|AUS|Luka Jovanović|
+122|San Jose Earthquakes|squad|10|MF|USA|Niko Tsakiris|
+122|San Jose Earthquakes|squad|11|FW|GER|Timo Werner|
+122|San Jose Earthquakes|squad|14|MF|GBS|Ronaldo Vieira|
+122|San Jose Earthquakes|squad|16|MF|USA|Jack Skahan|
+122|San Jose Earthquakes|squad|17|MF|USA|Jack Jasinski|
+122|San Jose Earthquakes|squad|18|DF|USA|Reid Roberts|
+122|San Jose Earthquakes|squad|19|FW|USA|Preston Judd|
+122|San Jose Earthquakes|squad|20|MF|USA|Nick Fernandez|
+122|San Jose Earthquakes|squad|21|MF|ENG|Noel Buck|
+122|San Jose Earthquakes|squad|22|GK|USA|Nate Crockford|
+122|San Jose Earthquakes|squad|23|MF|GER|Eduard Löwen|
+122|San Jose Earthquakes|squad|24|DF|USA|DeJuan Jones|
+122|San Jose Earthquakes|squad|25|DF|USA|Max Floriani|
+122|San Jose Earthquakes|squad|28|DF|USA|Benji Kikanović|
+122|San Jose Earthquakes|squad|29|MF|USA|Kaedren Spivey|
+122|San Jose Earthquakes|squad|31|GK|USA|Francesco Montali|
+122|San Jose Earthquakes|squad|32|FW|NGR|Nonso Adimabua|
+122|San Jose Earthquakes|squad|34|MF|USA|Beau Leroux|
+122|San Jose Earthquakes|squad|35|MF|USA|Rohan Rajagopal|
+122|San Jose Earthquakes|squad|36|GK|USA|Earl Edwards Jr.|
+122|San Jose Earthquakes|squad|38|MF|USA|Edwyn Mendoza|
+122|San Jose Earthquakes|squad|40|MF|MEX|Jonathan González|
+122|San Jose Earthquakes|squad|79|FW|GRN|Darius Johnson|
+122|San Jose Earthquakes|squad|87|DF|BRA|Vítor Costa|
+122|San Jose Earthquakes|loaned_out||||Cruz Medina|Tapatío
+122|San Jose Earthquakes|loaned_out||||Hernán López|Argentinos Juniors
+122|San Jose Earthquakes|loaned_out||||Chicho Arango|Atlético Nacional
+144|Chicago Fire Soccer Club|squad|1|GK|USA|Chris Brady|
+144|Chicago Fire Soccer Club|squad|2|DF|POR|Leonardo Barroso|
+144|Chicago Fire Soccer Club|squad|3|DF|ENG|Jack Elliott|Captain
+144|Chicago Fire Soccer Club|squad|4|DF|RSA|Mbekezeli Mbokazi|
+144|Chicago Fire Soccer Club|squad|5|DF|USA|Sam Rogers|
+144|Chicago Fire Soccer Club|squad|6|MF|SWE|Anton Salétros|
+144|Chicago Fire Soccer Club|squad|7|MF|SUI|Maren Haile-Selassie|
+144|Chicago Fire Soccer Club|squad|9|FW|POL|Robert Lewandowski|
+144|Chicago Fire Soccer Club|squad|10|MF|POR|André Franco|
+144|Chicago Fire Soccer Club|squad|11|FW|DEN|Philip Zinckernagel|
+144|Chicago Fire Soccer Club|squad|12|FW|RSA|Puso Dithejane|
+144|Chicago Fire Soccer Club|squad|15|DF|USA|Andrew Gutman|
+144|Chicago Fire Soccer Club|squad|17|MF|FIN|Robin Lod|
+144|Chicago Fire Soccer Club|squad|18|FW|USA|Johan Gómez|
+144|Chicago Fire Soccer Club|squad|19|FW|CIV|Jonathan Bamba|
+144|Chicago Fire Soccer Club|squad|21|DF|NOR|Andreas Hanche-Olsen|
+144|Chicago Fire Soccer Club|squad|22|MF|USA|Mauricio Pineda|
+144|Chicago Fire Soccer Club|squad|23|MF|GEO|Anzor Mekvabishvili|
+144|Chicago Fire Soccer Club|squad|24|DF|USA|Jonathan Dean|
+144|Chicago Fire Soccer Club|squad|25|GK|USA|Jeffrey Gal|
+144|Chicago Fire Soccer Club|squad|28|FW|USA|Dean Boltz|
+144|Chicago Fire Soccer Club|squad|29|MF|USA|David Poreba|
+144|Chicago Fire Soccer Club|squad|32|DF|GRE|Noah Allen|On loan from Inter Miami
+144|Chicago Fire Soccer Club|squad|35|MF|USA|Sergio Oregel|
+144|Chicago Fire Soccer Club|squad|37|MF|USA|Robert Turdean|
+144|Chicago Fire Soccer Club|squad|42|MF|CIV|Djé D'Avilla|
+144|Chicago Fire Soccer Club|squad|44|GK|USA|Josh Cohen|
+144|Chicago Fire Soccer Club|loaned_out||||Viktor Radojević|CF Montréal
+144|Chicago Fire Soccer Club|loaned_out||||Omari Glasgow|Monterey Bay FC
+144|Chicago Fire Soccer Club|loaned_out||||Dylan Borso|Greenock Morton
+144|Chicago Fire Soccer Club|loaned_out||||Christopher Cupps|Greenock Morton
+144|Chicago Fire Soccer Club|loaned_out||||Sam Williams|Colorado Springs Switchbacks
+164|Red Bull New York|squad|1|GK|USA|AJ Marcucci|
+164|Red Bull New York|squad|2|DF|USA|Justin Che|
+164|Red Bull New York|squad|3|DF|CAN|Jahkeele Marshall-Rutty|
+164|Red Bull New York|squad|5|DF|PAN|Omar Valencia|
+164|Red Bull New York|squad|6|DF|GER|Robert Voloder|
+164|Red Bull New York|squad|7|FW|USA|Cade Cowell|on loan from Guadalajara
+164|Red Bull New York|squad|8|MF|HON|David Ruiz|on loan from Inter Miami
+164|Red Bull New York|squad|10|MF|SWE|Emil Forsberg|captain
+164|Red Bull New York|squad|11|FW|MEX|Jorge Ruvalcaba|
+164|Red Bull New York|squad|12|DF|USA|Dylan Nealis|
+164|Red Bull New York|squad|13|FW|CMR|Eric Maxim Choupo-Moting|
+164|Red Bull New York|squad|14|DF|COL|Julián Bazán|
+164|Red Bull New York|squad|15|MF|USA|Adri Mehmeti|
+164|Red Bull New York|squad|16|FW|USA|Julian Hall|
+164|Red Bull New York|squad|17|FW|USA|Cameron Harper|
+164|Red Bull New York|squad|20|DF|COL|Juan José Mina|
+164|Red Bull New York|squad|23|DF|BEL|Joyeux Masanka Bungi|on loan from RB Leipzig
+164|Red Bull New York|squad|26|DF|USA|Tim Parker|
+164|Red Bull New York|squad|34|GK|USA|Ethan Horvath|
+164|Red Bull New York|squad|37|MF|GHA|Mohammed Sofo|
+164|Red Bull New York|squad|39|MF|ARG|Nehuén Benedetti|
+164|Red Bull New York|squad|48|MF|GHA|Ronald Donkor|
+164|Red Bull New York|squad|56|DF|USA|Matthew Dos Santos|
+164|Red Bull New York|squad|66|FW|USA|Tanner Rosborough|
+164|Red Bull New York|squad|70|FW|CRC|Andy Rojas|
+164|Red Bull New York|squad|77|GK|USA|John McCarthy|
+164|Red Bull New York|squad|79|MF|PAN|Rafael Mosquera|
+164|Red Bull New York|squad|91|FW|PAN|Mijahir Jiménez|
+164|Red Bull New York|loaned_out||||Wiktor Bogacz|Cracovia
+164|Red Bull New York|loaned_out||||Marcelo Morales|Universidad de Chile
+164|Red Bull New York|loaned_out||||Aidan Stokes|Brentford
+164|Red Bull New York|loaned_out||||Roald Mitchell|Viborg
+164|Red Bull New York|loaned_out||||Serge Ngoma|Birmingham Legion
+164|Red Bull New York|loaned_out||||Aiden Jarvis|Huntsville City FC
+165|New England Revolution|squad|30|GK|USA|Matt Turner|
+165|New England Revolution|squad|33|GK|USA|Donovan Parisian|
+165|New England Revolution|squad|73|GK|PAN|John David Gunn|
+165|New England Revolution|squad|2|DF|MLI|Mamadou Fofana|
+165|New England Revolution|squad|4|DF|USA|Tanner Beason|
+165|New England Revolution|squad|5|DF|USA|Keegan Hughes|
+165|New England Revolution|squad|12|DF|ISR|Ilay Feingold|
+165|New England Revolution|squad|22|DF|IDN|Ethan Kohler|
+165|New England Revolution|squad|23|DF|USA|Will Sands|
+165|New England Revolution|squad|25|DF|USA|Peyton Miller|
+165|New England Revolution|squad|30|DF|USA|Damario McIntosh|
+165|New England Revolution|squad|88|DF|USA|Andrew Farrell|
+165|New England Revolution|squad|7|MF|USA|Griffin Yow|
+165|New England Revolution|squad|8|MF|USA|Matt Polster|
+165|New England Revolution|squad|10|MF|ESP|Carles Gil|
+165|New England Revolution|squad|14|MF|USA|Jackson Yueill|
+165|New England Revolution|squad|18|MF|UGA|Allan Oyirwoth|
+165|New England Revolution|squad|21|MF|USA|Brooklyn Raines|
+165|New England Revolution|squad|22|MF|USA|Jack Panayotou|
+165|New England Revolution|squad|35|MF|USA|Cristiano Oliveira|
+165|New England Revolution|squad|38|MF|USA|Eric Klein|
+165|New England Revolution|squad|77|MF|URU|Diego Fagundez|
+165|New England Revolution|squad|80|MF|NGA|Alhassan Yusuf|
+165|New England Revolution|squad|9|FW|ECU|Leonardo Campana|
+165|New England Revolution|squad|32|FW|USA|Malcolm Fry|
+165|New England Revolution|squad|41|FW|ARG|Luca Langoni|
+165|New England Revolution|loaned_out||||Santiago Suarez|San Antonio FC
+173|Columbus Crew|squad|1|GK|GUA|Nicholas Hagen|
+173|Columbus Crew|squad|2|DF|ARG|Andrés Herrera|
+173|Columbus Crew|squad|3|DF|CIV|Eric Bailly|
+173|Columbus Crew|squad|4|DF|FRA|Rudy Camacho|
+173|Columbus Crew|squad|7|MF|FRA|Dylan Chambost|
+173|Columbus Crew|squad|9|FW|PLE|Wessam Abou Ali|DP
+173|Columbus Crew|squad|10|MF|ESP|Brais Méndez|DP
+173|Columbus Crew|squad|11|DF|USA|Brooks Lennon|
+173|Columbus Crew|squad|12|DF|USA|Cesar Ruvalcaba|
+173|Columbus Crew|squad|14|MF|USA|Amar Sejdić|
+173|Columbus Crew|squad|16|FW|USA|Taha Habroune|HG
+173|Columbus Crew|squad|17|MF|GUI|Sekou Bangoura|
+173|Columbus Crew|squad|18|DF|DEN|Malte Amundsen|
+173|Columbus Crew|squad|19|FW|SEN|Jamal Thiaré|
+173|Columbus Crew|squad|20|MF|POR|André Gomes|
+173|Columbus Crew|squad|22|MF|USA|Tristan Brown|HG
+173|Columbus Crew|squad|23|DF|ALG|Mohamed Farsi|
+173|Columbus Crew|squad|24|GK|USA|Evan Bush|
+173|Columbus Crew|squad|25|DF|USA|Sean Zawadzki|HG
+173|Columbus Crew|squad|26|MF|ARG|Lautaro Giaccone|on loan from Argentinos Juniors
+173|Columbus Crew|squad|28|GK|USA|Patrick Schulte|
+173|Columbus Crew|squad|29|MF|PHI|Cole Mrowka|HG
+173|Columbus Crew|squad|31|DF|CPV|Steven Moreira|
+173|Columbus Crew|squad|33|FW|CHI|Gonzalo Tapia|on loan from São Paulo
+173|Columbus Crew|squad|41|GK|BLR|Stanislav Lapkes|HG
+173|Columbus Crew|squad|46|FW|USA|Chase Adams|HG
+173|Columbus Crew|squad|50|MF|USA|Tarun Karumanchi|
+173|Columbus Crew|squad|54|GK|USA|Luke Pruter|
+173|Columbus Crew|squad|77|FW|VEN|Josef Martínez|
+173|Columbus Crew|squad||FW|URU|Santiago Rodríguez|DP
+173|Columbus Crew|squad||MF|MAR|Anass Zaroury|on loan from Panathinaikos
+173|Columbus Crew|loaned_out||||Hugo Picard|Troyes
+173|Columbus Crew|loaned_out||||Owen Presthus|Nashville SC
+173|Columbus Crew|loaned_out||||Quinton Elliot|Monterey Bay FC
+173|Columbus Crew|loaned_out||||Zach Zengue|St. Louis City
+173|Columbus Crew|loaned_out||||Nariman Akhundzada|Erzurumspor
+190|Los Angeles Galaxy|squad|1|GK|SRB|Novak Mićović|
+190|Los Angeles Galaxy|squad|2|DF|BRA|Lucas Calegari|
+190|Los Angeles Galaxy|squad|3|DF|ARG|Julián Aude|
+190|Los Angeles Galaxy|squad|4|DF|JPN|Maya Yoshida|captain
+190|Los Angeles Galaxy|squad|5|DF|NOR|Jakob Glesnes|
+190|Los Angeles Galaxy|squad|6|DF|ESP|Sergi Roberto|
+190|Los Angeles Galaxy|squad|7|FW|JPN|Kyōgo Furuhashi|
+190|Los Angeles Galaxy|squad|8|MF|URU|Lucas Sanabria|
+190|Los Angeles Galaxy|squad|10|MF|ESP|Riqui Puig|DP
+190|Los Angeles Galaxy|squad|11|FW|MEX|Hirving Lozano|DP; on loan from San Diego FC
+190|Los Angeles Galaxy|squad|12|GK|USA|JT Marcinkowski|
+190|Los Angeles Galaxy|squad|14|DF|USA|John Nelson|
+190|Los Angeles Galaxy|squad|15|MF|USA|Justin Haak|
+190|Los Angeles Galaxy|squad|16|MF|USA|Isaiah Parente|
+190|Los Angeles Galaxy|squad|17|MF|ARG|Pablo Ruiz|
+190|Los Angeles Galaxy|squad|18|FW|GER|Marco Reus|
+190|Los Angeles Galaxy|squad|20|DF|USA|Chris Rindov|
+190|Los Angeles Galaxy|squad|21|FW|FIN|Robert Taylor|
+190|Los Angeles Galaxy|squad|22|MF|USA|Elijah Wynder|
+190|Los Angeles Galaxy|squad|25|DF|COL|Carlos Garcés|
+190|Los Angeles Galaxy|squad|26|DF|USA|Harbor Miller|
+190|Los Angeles Galaxy|squad|27|MF|GER|Erik Thommy|
+190|Los Angeles Galaxy|squad|28|FW|GHA|Joseph Paintsil|DP
+190|Los Angeles Galaxy|squad|31|GK|USA|Brady Scott|
+190|Los Angeles Galaxy|squad|50|DF|USA|Riley Dalgado|
+190|Los Angeles Galaxy|squad|76|FW|USA|Troy Elgersma|
+190|Los Angeles Galaxy|squad|99|FW|BRA|João Klauss|DP
+190|Los Angeles Galaxy|loaned_out||||Ruben Ramos|Sporting Kansas City
+190|Los Angeles Galaxy|loaned_out||||Gino Vivi|Tampa Bay Rowdies
+190|Los Angeles Galaxy|loaned_out||||Ascel Essengue|Phoenix Rising
+190|Los Angeles Galaxy|loaned_out||||Tucker Lepley|Oakland Roots
+203|Colorado Rapids|squad|1|GK|USA|Zack Steffen|
+203|Colorado Rapids|squad|2|DF|USA|Keegan Rosenberry|
+203|Colorado Rapids|squad|4|DF|USA|Reggie Cannon|
+203|Colorado Rapids|squad|5|DF|ESP|Loïc Williams|
+203|Colorado Rapids|squad|6|DF|ENG|Rob Holding|
+203|Colorado Rapids|squad|7|FW|ENG|Morgan Whittaker|
+203|Colorado Rapids|squad|8|MF|NGR|Hamzat Ojediran|
+203|Colorado Rapids|squad|9|FW|ISR|Sayed Abu Farchi|
+203|Colorado Rapids|squad|10|MF|USA|Paxten Aaronson|
+203|Colorado Rapids|squad|11|FW|GHA|Ibrahim Sadiq|
+203|Colorado Rapids|squad|12|MF|USA|Josh Atencio|
+203|Colorado Rapids|squad|13|MF|TTO|Wayne Frederick|
+203|Colorado Rapids|squad|15|MF|GHA|Ali Fadal|
+203|Colorado Rapids|squad|16|FW|USA|Alex Harris|
+203|Colorado Rapids|squad|21|MF|USA|Ted Ku-DiPietro|
+203|Colorado Rapids|squad|24|DF|USA|Noah Cobb|
+203|Colorado Rapids|squad|26|FW|SEN|Mamadou Billo Diop|
+203|Colorado Rapids|squad|27|FW|CAN|Kimani Stewart-Baynes|
+203|Colorado Rapids|squad|29|DF|VEN|Miguel Navarro|on loan from Talleres
+203|Colorado Rapids|squad|31|GK|USA|Adam Beaudry|
+203|Colorado Rapids|squad|32|FW|LCA|Donavan Phillip|
+203|Colorado Rapids|squad|33|DF|CAN|Kosi Thompson|
+203|Colorado Rapids|squad|41|GK|DEN|Nicolas Hansen|
+203|Colorado Rapids|squad|61|GK|USA|Bryan Dowd|
+203|Colorado Rapids|squad|77|FW|USA|Darren Yapi|
+203|Colorado Rapids|squad|88|MF|FRA|Youssef Maziz|
+203|Colorado Rapids|squad|93|FW|BFA|Georgi Minoungou|
+203|Colorado Rapids|squad|99|DF|USA|Jackson Travis|
+203|Colorado Rapids|loaned_out||||Bryce Jamison|Colorado Springs Switchbacks
+203|Colorado Rapids|loaned_out||||Sydney Wathuta|Orange County SC
+203|Colorado Rapids|loaned_out||||Zack Campagnolo|St. Louis City SC
+203|Colorado Rapids|loaned_out||||Akol Akon|Sydney FC
+229|D.C. United|squad|1|GK|USA|Sean Johnson|
+229|D.C. United|squad|2|DF|JPN|Kimito Nono|
+229|D.C. United|squad|3|DF|USA|Lucas Bartlett|captain
+229|D.C. United|squad|4|MF|FIN|Matti Peltola|
+229|D.C. United|squad|5|DF|SUI|Silvan Hefti|
+229|D.C. United|squad|6|DF|JPN|Keisuke Kurokawa|
+229|D.C. United|squad|7|FW|BRA|João Peglow|
+229|D.C. United|squad|8|FW|USA|Jared Stroud|
+229|D.C. United|squad|9|FW|ISR|Tai Baribo|Designated Player
+229|D.C. United|squad|11|FW|ROU|Louis Munteanu|Designated Player
+229|D.C. United|squad|13|DF|USA|Sean Nealis|
+229|D.C. United|squad|14|FW|USA|Gabriel Segal|
+229|D.C. United|squad|15|DF|AUS|Kye Rowles|
+229|D.C. United|squad|20|GK|HAI|Grant Leveille|
+229|D.C. United|squad|21|MF|ENG|Andre Dozzell|
+229|D.C. United|squad|22|FW|SLV|Nathan Ordaz|
+229|D.C. United|squad|23|MF|USA|Brandon Servania|
+229|D.C. United|squad|24|GK|USA|Jordan Farr|
+229|D.C. United|squad|25|MF|USA|Jackson Hopkins|
+229|D.C. United|squad|26|GK|USA|Alex Bono|
+229|D.C. United|squad|27|DF|CAN|Nikola Markovic|
+229|D.C. United|squad|30|MF|USA|Caden Clark|
+229|D.C. United|squad|32|FW|USA|Oscar Avilez|
+229|D.C. United|squad|40|MF|DOM|Kamil Castillo|
+229|D.C. United|squad|48|MF|USA|Gavin Turner|
+229|D.C. United|squad|77|MF|JPN|Hosei Kijima|
+229|D.C. United|loaned_out||||Conner Antley|Tampa Bay Rowdies
+229|D.C. United|loaned_out||||Garrison Tubbs|Orange County SC
+229|D.C. United|loaned_out||||Richie Aman|Loudoun United
+229|D.C. United|loaned_out||||Hakim Karamoko|Forward Madison FC
+253|Club de Foot Montréal|squad|1|GK|CAN|Sebastian Breza|
+253|Club de Foot Montréal|squad|2|DF|USA|Jalen Neal|
+253|Club de Foot Montréal|squad|3|DF|COL|Brayan Ceballos|
+253|Club de Foot Montréal|squad|4|DF|COL|Brayan Vera|
+253|Club de Foot Montréal|squad|5|DF|USA|Brandan Craig|
+253|Club de Foot Montréal|squad|6|MF|CAN|Samuel Piette|captain
+253|Club de Foot Montréal|squad|7|MF|VEN|Dani Pereira|
+253|Club de Foot Montréal|squad|8|MF|ENG|Matty Longstaff|
+253|Club de Foot Montréal|squad|9|FW|GHA|Prince Owusu|
+253|Club de Foot Montréal|squad|10|FW|CHI|Alexis Sánchez|
+253|Club de Foot Montréal|squad|13|DF|CAN|Luca Petrasso|
+253|Club de Foot Montréal|squad|14|FW|MEX|Daniel Ríos|
+253|Club de Foot Montréal|squad|16|MF|VEN|Wikelman Carmona|
+253|Club de Foot Montréal|squad|17|MF|TTO|Dante Sealy|
+253|Club de Foot Montréal|squad|18|MF|UKR|Hennadiy Synchuk|
+253|Club de Foot Montréal|squad|19|DF|USA|Bode Hidalgo|
+253|Club de Foot Montréal|squad|21|MF|GER|Fabian Herbers|
+253|Club de Foot Montréal|squad|22|MF|CAN|Victor Loturi|
+253|Club de Foot Montréal|squad|23|FW|SUI|Noah Streit|
+253|Club de Foot Montréal|squad|24|DF|BOL|Efraín Morales|
+253|Club de Foot Montréal|squad|25|MF|USA|Frankie Amaya|on loan from Toluca
+253|Club de Foot Montréal|squad|26|MF|UKR|Ivan Losenko|on loan from Shakhtar Donetsk
+253|Club de Foot Montréal|squad|27|DF|POL|Dawid Bugaj|
+253|Club de Foot Montréal|squad|28|DF|SRB|Viktor Radojević|on loan from Chicago Fire
+253|Club de Foot Montréal|squad|29|MF|GUA|Olger Escobar|
+253|Club de Foot Montréal|squad|31|GK|CHI|Thomas Gillier|on loan from Bologna
+253|Club de Foot Montréal|squad|33|GK|CAN|Emil Gazdov|
+253|Club de Foot Montréal|squad|36|DF|CAN|Josh Nteziryayo|
+253|Club de Foot Montréal|squad|41|GK|CAN|Samsy Keita|
+253|Club de Foot Montréal|loaned_out||||Félix Samson|FC Cincinnati
+253|Club de Foot Montréal|loaned_out||||Owen Graham-Roache|Cavalry FC
+253|Club de Foot Montréal|loaned_out||||Aleksandr Guboglo|Reims
+254|Sporting Kansas City|squad|1|GK|USA|John Pulskamp|
+254|Sporting Kansas City|squad|2|DF|USA|Ian James|
+254|Sporting Kansas City|squad|3|DF|COL|Moisés Mosquera|
+254|Sporting Kansas City|squad|4|MF|NOR|Lasse Berg Johnsen|
+254|Sporting Kansas City|squad|5|DF|ISR|Or Blorian|
+254|Sporting Kansas City|squad|7|FW|ANG|Capita|
+254|Sporting Kansas City|squad|8|DF|USA|Jake Davis|
+254|Sporting Kansas City|squad|11|FW|BRA|André Luiz|
+254|Sporting Kansas City|squad|12|GK|USA|Jack Kortkamp|
+254|Sporting Kansas City|squad|13|DF|USA|Justin Reynolds|
+254|Sporting Kansas City|squad|14|FW|ENG|Calvin Harris|
+254|Sporting Kansas City|squad|15|DF|USA|Jansen Miller|
+254|Sporting Kansas City|squad|16|MF|USA|Jacob Bartlett|
+254|Sporting Kansas City|squad|17|FW|CAN|Stephen Afrifa|
+254|Sporting Kansas City|squad|18|DF|BIH|Emir Karić|
+254|Sporting Kansas City|squad|19|FW|USA|Taylor Calheira|
+254|Sporting Kansas City|squad|20|MF|GHA|Kwaku Agyabeng|
+254|Sporting Kansas City|squad|22|DF|CAN|Zorhan Bassong|
+254|Sporting Kansas City|squad|24|MF|USA|Rubén Ramos Jr.|on loan from LA Galaxy
+254|Sporting Kansas City|squad|28|DF|USA|Wyatt Meyer|
+254|Sporting Kansas City|squad|29|FW|JAM|Seymour Reid|on loan from New York City FC
+254|Sporting Kansas City|squad|30|GK|USA|Stefan Cleveland|
+254|Sporting Kansas City|squad|33|MF|USA|Owen Wolff|
+254|Sporting Kansas City|squad|57|DF|BRA|Diego Borges|
+254|Sporting Kansas City|squad|93|FW|RUS|Shapi Suleymanov|
+254|Sporting Kansas City|squad|99|DF|USA|Jayden Reid|
+254|Sporting Kansas City|loaned_out||||Ethan Bartlow|Tampa Bay Rowdies
+254|Sporting Kansas City|loaned_out||||Ryan Schewe|Louisville City
+254|Sporting Kansas City|loaned_out||||Cielo Tschantret|Lexington SC
+255|Portland Timbers|squad|4|DF|CAN|Kamal Miller|
+255|Portland Timbers|squad|5|DF|USA|Brandon Bye|
+255|Portland Timbers|squad|6|DF|AUS|Alex Bonetig|
+255|Portland Timbers|squad|7|FW|CRC|Ariel Lassiter|
+255|Portland Timbers|squad|9|FW|CHI|Felipe Mora|
+255|Portland Timbers|squad|10|MF|POR|David Da Costa|
+255|Portland Timbers|squad|11|FW|BRA|Antony|
+255|Portland Timbers|squad|15|DF|USA|Eric Miller|
+255|Portland Timbers|squad|16|DF|USA|Sawyer Jura|
+255|Portland Timbers|squad|17|MF|USA|Cole Bassett|
+255|Portland Timbers|squad|18|DF|CAN|Zac McGraw|
+255|Portland Timbers|squad|19|FW|VEN|Kevin Kelsy|
+255|Portland Timbers|squad|20|DF|NZL|Finn Surman|
+255|Portland Timbers|squad|21|MF|COL|Diego Chará|captain
+255|Portland Timbers|squad|22|MF|USA|Omir Fernández|
+255|Portland Timbers|squad|23|DF|USA|Ian Smith|
+255|Portland Timbers|squad|25|GK|USA|Trey Muse|
+255|Portland Timbers|squad|26|GK|USA|Hunter Sulte|
+255|Portland Timbers|squad|27|DF|COL|Jimer Fory|
+255|Portland Timbers|squad|28|FW|CHI|Alexander Aravena|on loan from Grêmio
+255|Portland Timbers|squad|29|DF|COL|Juan David Mosquera|
+255|Portland Timbers|squad|30|MF|COL|José Caicedo|
+255|Portland Timbers|squad|41|GK|CAN|James Pantemis|
+255|Portland Timbers|squad|80|MF|ECU|Joao Ortiz|
+255|Portland Timbers|squad|88|FW|USA|Gage Guerra|
+255|Portland Timbers|squad|99|FW|NOR|Kristoffer Velde|
+261|Vancouver Whitecaps FC|squad|1|GK|JPN|Yohei Takaoka|
+261|Vancouver Whitecaps FC|squad|2|DF|URU|Mathías Laborda|
+261|Vancouver Whitecaps FC|squad|3|DF|CAN|Sam Adekugbe|
+261|Vancouver Whitecaps FC|squad|4|DF|SRB|Ranko Veselinović|vice-captain
+261|Vancouver Whitecaps FC|squad|6|DF|CAN|Ralph Priso|
+261|Vancouver Whitecaps FC|squad|7|FW|SEN|Cheikh Sabaly|
+261|Vancouver Whitecaps FC|squad|8|MF|USA|Oliver Larraz|
+261|Vancouver Whitecaps FC|squad|11|FW|USA|Emmanuel Sabbi|
+261|Vancouver Whitecaps FC|squad|12|DF|SYR|Belal Halbouni|
+261|Vancouver Whitecaps FC|squad|13|FW|GER|Thomas Müller|DP
+261|Vancouver Whitecaps FC|squad|14|FW|ECU|Bruno Caicedo|U22
+261|Vancouver Whitecaps FC|squad|15|DF|COL|Sebastián Ramírez|on loan from Fortaleza CEIF
+261|Vancouver Whitecaps FC|squad|17|MF|PER|Kenji Cabrera|U22
+261|Vancouver Whitecaps FC|squad|18|DF|COL|Édier Ocampo|U22
+261|Vancouver Whitecaps FC|squad|19|FW|TUN|Rayan Elloumi|HG
+261|Vancouver Whitecaps FC|squad|20|MF|PAR|Andrés Cubas|
+261|Vancouver Whitecaps FC|squad|22|FW|CAN|Kwasi Poku|
+261|Vancouver Whitecaps FC|squad|23|MF|SRB|Aleksa Cvetković|
+261|Vancouver Whitecaps FC|squad|24|FW|USA|Brian White|
+261|Vancouver Whitecaps FC|squad|25|MF|SCO|Ryan Gauld|captain; DP
+261|Vancouver Whitecaps FC|squad|28|DF|USA|Tate Johnson|GA
+261|Vancouver Whitecaps FC|squad|29|DF|MDA|Mihail Gherasimencov|HG
+261|Vancouver Whitecaps FC|squad|30|GK|USA|Adrian Zendejas|
+261|Vancouver Whitecaps FC|squad|32|GK|CAN|Isaac Boehmer|HG
+261|Vancouver Whitecaps FC|squad|33|DF|USA|Tristan Blackmon|
+261|Vancouver Whitecaps FC|squad|41|DF|USA|Nikola Djordjevic|
+261|Vancouver Whitecaps FC|squad|59|MF|CAN|Jeevan Badwal|HG
+261|Vancouver Whitecaps FC|squad|63|FW|CAN|Johnny Selemani|HG
+261|Vancouver Whitecaps FC|squad|70|DF|ANG|Rui Modesto|
+261|Vancouver Whitecaps FC|squad|77|FW|GUI|Yadaly Diaby|
+261|Vancouver Whitecaps FC|loaned_out||||Giuseppe Bovalina|Örebro SK
+261|Vancouver Whitecaps FC|loaned_out||||Nelson Pierre|Halifax Wanderers
+261|Vancouver Whitecaps FC|loaned_out||||Liam Mackenzie|Halifax Wanderers
+261|Vancouver Whitecaps FC|loaned_out||||Emrick Fotsing|Vancouver FC
+269|Real Salt Lake|squad|1|GK|BRA|Rafael Cabral|
+269|Real Salt Lake|squad|2|DF|USA|DeAndre Yedlin|
+269|Real Salt Lake|squad|3|DF|TTO|Kobi Henry|
+269|Real Salt Lake|squad|4|DF|DEN|Lukas Engel|
+269|Real Salt Lake|squad|6|MF|NED|Stijn Spierings|
+269|Real Salt Lake|squad|8|MF|URU|Juan Manuel Sanabria|
+269|Real Salt Lake|squad|9|FW|GUI|Morgan Guilavogui|
+269|Real Salt Lake|squad|10|MF|USA|Diego Luna|
+269|Real Salt Lake|squad|11|MF|POL|Dominik Marczuk|
+269|Real Salt Lake|squad|12|FW|GEO|Saba Lobjanidze|
+269|Real Salt Lake|squad|13|FW|USA|Jason Shokalook|
+269|Real Salt Lake|squad|14|DF|USA|Emeka Eneli|
+269|Real Salt Lake|squad|15|DF|USA|Justen Glad|
+269|Real Salt Lake|squad|18|MF|USA|Taylor Booth|on loan from Twente
+269|Real Salt Lake|squad|19|FW|AUS|Ariath Piol|
+269|Real Salt Lake|squad|21|DF|COL|Juan José Arias|
+269|Real Salt Lake|squad|22|FW|ESP|Sergi Solans|
+269|Real Salt Lake|squad|23|MF|USA|Zach Booth|on loan from Excelsior
+269|Real Salt Lake|squad|24|GK|USA|Max Kerkvliet|
+269|Real Salt Lake|squad|25|MF|USA|Colin Guske|on loan from Orlando City
+269|Real Salt Lake|squad|26|DF|USA|Philip Quinton|
+269|Real Salt Lake|squad|27|MF|USA|Griffin Dillon|
+269|Real Salt Lake|squad|29|DF|USA|Sam Junqua|
+269|Real Salt Lake|squad|30|MF|USA|Owen Anderson|
+269|Real Salt Lake|squad|31|GK|USA|Mason Stajduhar|
+269|Real Salt Lake|squad|32|FW|USA|Chance Cowell|
+269|Real Salt Lake|squad|33|FW|CAN|Van Parker|
+269|Real Salt Lake|squad|34|MF|USA|Luca Moisa|
+269|Real Salt Lake|squad|37|DF|USA|Luis Rivera|
+269|Real Salt Lake|squad|38|MF|CHI|Antonio Riquelme|
+269|Real Salt Lake|squad|39|MF|USA|Aiden Hezarkhani|
+269|Real Salt Lake|squad|40|MF|USA|Omar Marquez|
+269|Real Salt Lake|squad|41|DF|USA|Juan Gio Villa|
+269|Real Salt Lake|squad|44|DF|CAN|Luc de Fougerolles|on loan from Fulham
+269|Real Salt Lake|squad|70|FW|BRA|Lineker Rodrigues|
+269|Real Salt Lake|squad|92|MF|GER|Noel Caliskan|
+269|Real Salt Lake|squad|98|DF|GRE|Alexandros Katranis|
+269|Real Salt Lake|squad||FW|SRB|Dušan Žagar|
+269|Real Salt Lake|loaned_out||||Tyler Wolff|Sacramento Republic
+269|Real Salt Lake|loaned_out||||Victor Olatunji|Beveren
+269|Real Salt Lake|loaned_out||||Jesús Barea|AC Boise
+269|Real Salt Lake|loaned_out||||Diego Rocío|Club América
+277|FC Dallas|squad|3|DF|ENG|Osaze Urhoghide|
+277|FC Dallas|squad|5|DF|GHA|Lalas Abubakar|
+277|FC Dallas|squad|6|MF|ISR|Ran Binyamin|
+277|FC Dallas|squad|7|FW|NGR|Daniel Job|
+277|FC Dallas|squad|8|MF|ECU|Patrickson Delgado|
+277|FC Dallas|squad|9|FW|CRO|Petar Musa|
+277|FC Dallas|squad|10|FW|COL|Santiago Moreno|on loan from Fluminense
+277|FC Dallas|squad|11|FW|ECU|Anderson Julio|
+277|FC Dallas|squad|12|MF|USA|Christian Cappis|
+277|FC Dallas|squad|14|DF|SWE|Herman Johansson|
+277|FC Dallas|squad|15|FW|HAI|Ricky Louis|
+277|FC Dallas|squad|16|FW|JAM|Nicholas Simmonds|
+277|FC Dallas|squad|17|MF|BRA|Ramiro|
+277|FC Dallas|squad|18|DF|USA|Shaq Moore|
+277|FC Dallas|squad|21|MF|URU|Joaquín Valiente|
+277|FC Dallas|squad|22|DF|BRA|Álvaro Augusto|
+277|FC Dallas|squad|23|FW|USA|Logan Farrington|
+277|FC Dallas|squad|24|DF|USA|Josh Torquato|
+277|FC Dallas|squad|25|DF|USA|Sebastien Ibeagha|
+277|FC Dallas|squad|26|DF|USA|Slade Starnes|
+277|FC Dallas|squad|27|MF|USA|Caleb Swann|
+277|FC Dallas|squad|28|FW|USA|Samuel Sarver|
+277|FC Dallas|squad|29|DF|USA|Enzo Newman|
+277|FC Dallas|squad|30|GK|USA|Michael Collodi|
+277|FC Dallas|squad|31|FW|USA|Benji Flowers|
+277|FC Dallas|squad|32|DF|USA|Nolan Norris|
+277|FC Dallas|squad|33|MF|USA|Clay Holstad|on loan from Rhode Island FC
+277|FC Dallas|squad|34|DF|BRA|Kaka Scabin|
+277|FC Dallas|squad|36|FW|POL|Daniel Baran|
+277|FC Dallas|squad|40|GK|CAN|Jonathan Sirois|
+277|FC Dallas|squad|42|GK|BRA|Daniel|
+277|FC Dallas|squad|50|MF|USA|Diego García|
+277|FC Dallas|squad|55|MF|BRA|Kaick|
+277|FC Dallas|squad|77|MF|USA|Bernard Kamungo|
+277|FC Dallas|loaned_out||||Jaidyn Contreras|Tigres UANL
+277|FC Dallas|loaned_out||||Malachi Molina|Nashville SC
+279|Houston Dynamo|squad|1|GK|USA|Jimmy Maurer|
+279|Houston Dynamo|squad|3|DF|BRA|Antônio Carlos|
+279|Houston Dynamo|squad|4|DF|URU|Marcelo Saracchi|
+279|Houston Dynamo|squad|5|DF|BRA|Lucas Halter|
+279|Houston Dynamo|squad|6|MF|BRA|Artur|
+279|Houston Dynamo|squad|9|FW|RSA|Lyle Foster|on loan from Burnley
+279|Houston Dynamo|squad|11|MF|GER|Lawrence Ennali|
+279|Houston Dynamo|squad|14|MF|USA|Duane Holmes|
+279|Houston Dynamo|squad|16|MF|MEX|Héctor Herrera|
+279|Houston Dynamo|squad|17|FW|USA|Nick Markanich|on loan from Castellón
+279|Houston Dynamo|squad|18|MF|MLI|Diadie Samassékou|
+279|Houston Dynamo|squad|19|MF|POL|Mateusz Bogusz|DP
+279|Houston Dynamo|squad|20|FW|BRA|Guilherme|DP
+279|Houston Dynamo|squad|21|DF|ARG|Franco Negri|
+279|Houston Dynamo|squad|22|MF|MEX|Matthew Arana|HG
+279|Houston Dynamo|squad|23|FW|USA|Duncan McGuire|
+279|Houston Dynamo|squad|24|MF|NGR|Ibrahim Aliyu|
+279|Houston Dynamo|squad|26|GK|USA|Blake Gillingham|
+279|Houston Dynamo|squad|27|DF|USA|Reese Miller|HG
+279|Houston Dynamo|squad|30|MF|ARG|Agustín Bouzat|
+279|Houston Dynamo|squad|31|GK|ENG|Jonathan Bond|
+279|Houston Dynamo|squad|34|DF|ARG|Agustin Resch|
+279|Houston Dynamo|squad|36|DF|BRA|Felipe Andrade|
+279|Houston Dynamo|squad|37|MF|USA|Gilberto Rivera|
+279|Houston Dynamo|squad|48|FW|USA|Mattheo Dimareli|HG
+279|Houston Dynamo|loaned_out||||Sam Vines|San Diego FC
+279|Houston Dynamo|loaned_out||||Logan Erb|Corpus Christi
+279|Houston Dynamo|loaned_out||||Sebastián Rodríguez|Monterrey
+282|Seattle Sounders FC|squad|4|DF|USA|Ryan Sailor|
+282|Seattle Sounders FC|squad|5|DF|CMR|Nouhou Tolo|
+282|Seattle Sounders FC|squad|7|MF|USA|Cristian Roldan|captain
+282|Seattle Sounders FC|squad|9|MF|USA|Caden Clark|U-22
+282|Seattle Sounders FC|squad|9|FW|SRB|Dejan Joveljić|DP
+282|Seattle Sounders FC|squad|10|MF|ARG|Pedro de la Vega|DP
+282|Seattle Sounders FC|squad|13|FW|USA|Jordan Morris|DP; HGP
+282|Seattle Sounders FC|squad|14|MF|USA|Paul Rothrock|
+282|Seattle Sounders FC|squad|16|DF|SLV|Alex Roldán|
+282|Seattle Sounders FC|squad|17|MF|USA|Paul Arriola|
+282|Seattle Sounders FC|squad|19|FW|USA|Danny Musovski|
+282|Seattle Sounders FC|squad|20|DF|KOR|Kim Kee-hee|
+282|Seattle Sounders FC|squad|24|GK|SUI|Stefan Frei|
+282|Seattle Sounders FC|squad|25|DF|USA|Jackson Ragen|
+282|Seattle Sounders FC|squad|26|GK|RUS|Andrew Thomas|
+282|Seattle Sounders FC|squad|27|FW|USA|Jesús Ferreira|
+282|Seattle Sounders FC|squad|28|DF|COL|Yeimar Gómez Andrade|
+282|Seattle Sounders FC|squad|30|FW|USA|Edson Carli|short-term agreement
+282|Seattle Sounders FC|squad|31|MF|USA|Hassani Dotson|
+282|Seattle Sounders FC|squad|32|MF|USA|Xavi Gnaulati|short-term agreement
+282|Seattle Sounders FC|squad|35|DF|USA|Antino Lopez|
+282|Seattle Sounders FC|squad|37|MF|USA|Snyder Brunell|HGP
+282|Seattle Sounders FC|squad|39|DF|USA|Stuart Hawkins|HGP
+282|Seattle Sounders FC|squad|40|DF|USA|Mark O'Neill|short-term agreement
+282|Seattle Sounders FC|squad|42|MF|USA|Rafael Jauregui|short-term agreement
+282|Seattle Sounders FC|squad|44|MF|SRB|Nikola Petković|on loan from Charlotte FC
+282|Seattle Sounders FC|squad|45|MF|USA|Peter Kingston|
+282|Seattle Sounders FC|squad|50|GK|CAN|Max Anchor|
+282|Seattle Sounders FC|squad|53|DF|USA|Gallatin Sandnes|short-term agreement
+282|Seattle Sounders FC|squad|84|MF|USA|Charlie Gaffney|short-term agreement
+282|Seattle Sounders FC|squad|85|MF|USA|Kalani Kossa-Rienzi|
+282|Seattle Sounders FC|squad|90|MF|USA|Sebastian Gomez|HGP
+282|Seattle Sounders FC|loaned_out||||Cody Baker|New England Revolution
+282|Seattle Sounders FC|loaned_out||||Yu Tsukanome|Pittsburgh Riverhounds SC
+282|Seattle Sounders FC|loaned_out||||Osaze De Rosario|Sønderjyske Fodbold
+286|Toronto FC|squad|1|GK|CAN|Luka Gavran|
+286|Toronto FC|squad|3|DF|BRA|Matheus Pereira|
+286|Toronto FC|squad|6|MF|GER|Niklas Dorsch|
+286|Toronto FC|squad|7|FW|CAN|Theo Corbeanu|
+286|Toronto FC|squad|8|MF|COL|Nelson Palacio|
+286|Toronto FC|squad|9|FW|USA|Josh Sargent|DP
+286|Toronto FC|squad|10|MF|USA|Djordje Mihailovic|DP
+286|Toronto FC|squad|11|MF|HAI|Derrick Etienne Jr.|
+286|Toronto FC|squad|12|DF|ENG|Zane Monlouis|
+286|Toronto FC|squad|13|DF|CHI|Benjamín Kuscevic|on loan from Fortaleza
+286|Toronto FC|squad|14|MF|ESP|Alonso Coello|
+286|Toronto FC|squad|15|DF|FRA|Nicksoen Gomis|
+286|Toronto FC|squad|17|FW|COL|Emilio Aristizábal|on loan from Atlético Nacional
+286|Toronto FC|squad|19|DF|CAN|Kobe Franklin|HG
+286|Toronto FC|squad|20|FW|HUN|Dániel Sallói|
+286|Toronto FC|squad|21|MF|CAN|Jonathan Osorio|captain
+286|Toronto FC|squad|22|DF|CAN|Richie Laryea|
+286|Toronto FC|squad|23|GK|USA|William Yarbrough|
+286|Toronto FC|squad|25|DF|USA|Walker Zimmerman|
+286|Toronto FC|squad|27|FW|COL|Alejandro Piedrahita|on loan from CSKA Sofia
+286|Toronto FC|squad|38|DF|USA|Jackson Gilman|
+286|Toronto FC|squad|44|DF|CAN|Raheem Edwards|
+286|Toronto FC|squad|56|MF|CAN|Antone Bossenberry|HG
+286|Toronto FC|squad|71|MF|SLO|Markus Cimermancic|HG
+286|Toronto FC|squad|76|DF|CAN|Lazar Stefanovic|HG
+286|Toronto FC|squad|77|GK|CAN|Adisa De Rosario|HG
+286|Toronto FC|squad|78|MF|CAN|Malik Henry|
+286|Toronto FC|squad|90|FW|SCO|Lewis Morgan|
+286|Toronto FC|squad|96|DF|CAN|Richard Chukwu|HG
+286|Toronto FC|squad|98|DF|CAN|Stefan Kapor|HG
+286|Toronto FC|squad|99|FW|CAN|Jules-Anthony Vilsaint|
+286|Toronto FC|loaned_out||||Adam Pearlman|Cavalry FC
+304|Philadelphia Union|squad|2|DF|COL|Geiner Martínez|
+304|Philadelphia Union|squad|4|MF|SRB|Jovan Lukić|
+304|Philadelphia Union|squad|5|DF|DEN|Japhet Sery Larsen|
+304|Philadelphia Union|squad|6|MF|USA|Cavan Sullivan|HG
+304|Philadelphia Union|squad|8|MF|VEN|Jesús Bueno|
+304|Philadelphia Union|squad|9|FW|URU|Bruno Damiani|
+304|Philadelphia Union|squad|10|FW|USA|Milan Iloski|
+304|Philadelphia Union|squad|11|MF|USA|Alejandro Bedoya|
+304|Philadelphia Union|squad|14|MF|USA|Jeremy Rafanello|HG
+304|Philadelphia Union|squad|15|DF|CMR|Olivier Mbaizo|
+304|Philadelphia Union|squad|16|MF|USA|Ben Bender|
+304|Philadelphia Union|squad|18|GK|JAM|Andre Blake|
+304|Philadelphia Union|squad|19|MF|USA|Indiana Vassilev|
+304|Philadelphia Union|squad|20|DF|CGO|Philippe Ndinga|
+304|Philadelphia Union|squad|21|MF|HAI|Danley Jean Jacques|
+304|Philadelphia Union|squad|23|FW|GHA|Ezekiel Alladoh|
+304|Philadelphia Union|squad|26|DF|USA|Nathan Harriel|HG
+304|Philadelphia Union|squad|28|FW|USA|Agustin Anello|
+304|Philadelphia Union|squad|29|DF|RSA|Olwethu Makhanya|
+304|Philadelphia Union|squad|31|GK|USA|George Marks|
+304|Philadelphia Union|squad|33|MF|USA|Quinn Sullivan|HG
+304|Philadelphia Union|squad|37|FW|USA|Stas Korzeniowski|
+304|Philadelphia Union|squad|39|DF|USA|Frankie Westfield|HG
+304|Philadelphia Union|squad|51|FW|USA|Malik Jakupović|HG
+304|Philadelphia Union|squad|55|FW|MEX|Sal Olivas|HG
+304|Philadelphia Union|squad|66|DF|USA|Finn Sundstrum|
+304|Philadelphia Union|squad|76|GK|USA|Andrew Rick|HG
+304|Philadelphia Union|squad|77|FW|USA|Eddy Davis III|HG
+304|Philadelphia Union|loaned_out||||CJ Olney|Brooklyn FC
+304|Philadelphia Union|loaned_out||||Markus Anderson|Brooklyn FC
+304|Philadelphia Union|loaned_out||||Neil Pierre|Lyngby
+309|New York City Football Club|squad|2|DF|USA|Nico Cavallo|
+309|New York City Football Club|squad|5|DF|AUS|Kai Trewin|
+309|New York City Football Club|squad|6|DF|USA|James Sands|
+309|New York City Football Club|squad|7|MF|ARG|Nicolas Fernandez|
+309|New York City Football Club|squad|8|MF|USA|Andres Perea|
+309|New York City Football Club|squad|10|MF|ARG|Maximiliano Moralez|
+309|New York City Football Club|squad|11|FW|BRA|Talles Magno|
+309|New York City Football Club|squad|13|DF|BRA|Thiago Martins|captain
+309|New York City Football Club|squad|15|MF|USA|Kevin Pierre|
+309|New York City Football Club|squad|16|FW|CRC|Alonso Martínez|
+309|New York City Football Club|squad|17|MF|AUT|Hannes Wolf|
+309|New York City Football Club|squad|18|GK|TRI|Greg Ranjitsingh|
+309|New York City Football Club|squad|21|MF|AUS|Aiden O'Neill|
+309|New York City Football Club|squad|22|DF|IRL|Kevin O'Toole|
+309|New York City Football Club|squad|23|DF|USA|Max Murray|
+309|New York City Football Club|squad|24|DF|JAM|Tayvon Gray|
+309|New York City Football Club|squad|26|FW|ARG|Agustin Ojeda|
+309|New York City Football Club|squad|27|MF|USA|Cooper Flax|
+309|New York City Football Club|squad|29|MF|USA|Máximo Carrizo|
+309|New York City Football Club|squad|30|GK|SLV|Tomás Romero|
+309|New York City Football Club|squad|31|GK|USA|Mac Learned|
+309|New York City Football Club|squad|32|MF|USA|Jonathan Shore|
+309|New York City Football Club|squad|34|DF|BRA|Raul Gustavo|
+309|New York City Football Club|squad|38|DF|USA|Drew Baiera|
+309|New York City Football Club|squad|45|DF|USA|Kamran Acito|
+309|New York City Football Club|squad|47|MF|USA|Jacob Arroyave|
+309|New York City Football Club|squad|49|GK|USA|Matt Freese|
+309|New York City Football Club|squad|55|MF|USA|Keaton Parks|
+309|New York City Football Club|squad|87|FW|ESP|Arnau Farnós|
+309|New York City Football Club|squad|88|FW|SLE|Malachi Jones|
+309|New York City Football Club|squad|99|FW|JAM|Seymour Garfield-Reid|
+309|New York City Football Club|squad||FW|CIV|Bénie Traoré|
+309|New York City Football Club|loaned_out||||Julián Fernández|Rosario Central
+309|New York City Football Club|loaned_out||||Mitja Ilenič|Raków Częstochowa
+309|New York City Football Club|loaned_out||||Zidane Yanez|Huntsville City
+310|Orlando City Soccer Club|squad|3|DF|ESP|Adrián Marín|
+310|Orlando City Soccer Club|squad|4|DF|SVN|David Brekalo|
+310|Orlando City Soccer Club|squad|5|MF|BRA|Luis Otávio|
+310|Orlando City Soccer Club|squad|6|DF|SWE|Robin Jansson|captain
+310|Orlando City Soccer Club|squad|7|FW|FRA|Antoine Griezmann|DP
+310|Orlando City Soccer Club|squad|8|MF|PAR|Braian Ojeda|
+310|Orlando City Soccer Club|squad|9|FW|USA|Daryl Dike|
+310|Orlando City Soccer Club|squad|10|MF|ARG|Martín Ojeda|DP
+310|Orlando City Soccer Club|squad|11|FW|BRA|Tiago|
+310|Orlando City Soccer Club|squad|12|GK|VEN|Javier Otero|HG
+310|Orlando City Soccer Club|squad|14|FW|TRI|Tyrese Spicer|
+310|Orlando City Soccer Club|squad|16|MF|PER|Wilder Cartagena|
+310|Orlando City Soccer Club|squad|19|DF|USA|Zakaria Taifi|HG
+310|Orlando City Soccer Club|squad|20|MF|COL|Eduard Atuesta|
+310|Orlando City Soccer Club|squad|21|DF|USA|Nolan Miller|
+310|Orlando City Soccer Club|squad|22|FW|USA|Justin Ellis|HG
+310|Orlando City Soccer Club|squad|23|FW|USA|Harvey Sarajian|
+310|Orlando City Soccer Club|squad|24|DF|USA|Griffin Dorsey|
+310|Orlando City Soccer Club|squad|27|DF|BRA|Vinícius Nogueira|on loan from Ludogorets Razgrad
+310|Orlando City Soccer Club|squad|33|DF|CAN|Clovis Archange|HG
+310|Orlando City Soccer Club|squad|35|MF|FRA|Joran Gerbet|
+310|Orlando City Soccer Club|squad|38|MF|GHA|Issah Haruna|
+310|Orlando City Soccer Club|squad|40|GK|USA|Tristan Himes|HG
+310|Orlando City Soccer Club|squad|44|DF|BRA|Bernardo Rhein|HG
+310|Orlando City Soccer Club|squad|57|DF|BRA|Iago Teodoro|
+310|Orlando City Soccer Club|squad|65|MF|VEN|Gustavo Caraballo|HG
+310|Orlando City Soccer Club|squad|71|GK|CAN|Maxime Crépeau|
+310|Orlando City Soccer Club|squad|77|FW|COL|Iván Angulo|
+310|Orlando City Soccer Club|squad|80|MF|ARG|Ignacio Gómez|on loan from Vélez Sarsfield II
+310|Orlando City Soccer Club|squad|87|FW|CRO|Marco Pašalić|DP
+310|Orlando City Soccer Club|squad|90|FW|BRA|Pedro Leão|
+310|Orlando City Soccer Club|loaned_out||||Colin Guske|Real Salt Lake
+310|Orlando City Soccer Club|loaned_out||||Yutaro Tsukada|Rhode Island FC
+310|Orlando City Soccer Club|loaned_out||||Nicolás Rodríguez|Atlético Nacional
+311|Atlanta United Football Club|squad|1|GK|ARG|Lucas Hoyos|
+311|Atlanta United Football Club|squad|3|DF|ARG|Elías Báez|
+311|Atlanta United Football Club|squad|4|DF|ALB|Enea Mihaj|
+311|Atlanta United Football Club|squad|6|DF|PAR|Júnior Alonso|
+311|Atlanta United Football Club|squad|7|MF|COL|Steven Alzate|
+311|Atlanta United Football Club|squad|8|MF|FRA|Tristan Muyumba|
+311|Atlanta United Football Club|squad|10|FW|PAR|Miguel Almirón|captain; DP
+311|Atlanta United Football Club|squad|11|MF|ARG|Giuliano Galoppo|on loan from River Plate
+311|Atlanta United Football Club|squad|14|MF|URU|Mauricio Amaro|
+311|Atlanta United Football Club|squad|16|MF|USA|Adrian Gill|
+311|Atlanta United Football Club|squad|19|FW|BRA|Sérgio Santos|
+311|Atlanta United Football Club|squad|20|FW|USA|Luke Brennan|HG
+311|Atlanta United Football Club|squad|22|FW|HAI|Fafà Picault|
+311|Atlanta United Football Club|squad|27|DF|CHI|Paulo Díaz|
+311|Atlanta United Football Club|squad|28|MF|USA|Will Reilly|HG
+311|Atlanta United Football Club|squad|30|FW|JPN|Cayman Togashi|
+311|Atlanta United Football Club|squad|35|MF|TTO|Jay Fortune|HG
+311|Atlanta United Football Club|squad|36|FW|SUI|Breel Embolo|DP
+311|Atlanta United Football Club|squad|40|MF|VEN|Santiago Pita|HG
+311|Atlanta United Football Club|squad|42|GK|JAM|Jayden Hibbert|
+311|Atlanta United Football Club|squad|47|DF|USA|Matthew Edwards|HG
+311|Atlanta United Football Club|squad|48|MF|USA|Cooper Sanchez|HG
+311|Atlanta United Football Club|squad|50|DF|USA|Dominik Chong-Qui|HG
+311|Atlanta United Football Club|squad|55|MF|ARG|Tomás Jacob|
+311|Atlanta United Football Club|squad|59|MF|RUS|Aleksei Miranchuk|DP
+311|Atlanta United Football Club|loaned_out||||Emmanuel Latte Lath|Union Berlin
+311|Atlanta United Football Club|loaned_out||||Adyn Torres|Nõmme United
+311|Atlanta United Football Club|loaned_out||||Kaiden Moore|Philadelphia Union
+311|Atlanta United Football Club|loaned_out||||Ashton Gordon|Chattanooga FC
+312|Football Club Cincinnati|squad|2|DF|JAM|Alvas Powell|
+312|Football Club Cincinnati|squad|3|DF|NED|Tyrell Malacia|
+312|Football Club Cincinnati|squad|4|DF|USA|Nick Hagglund|
+312|Football Club Cincinnati|squad|5|MF|NGR|Obinna Nwobodo|
+312|Football Club Cincinnati|squad|6|DF|ARG|Julián Malatini|on loan from Werder Bremen
+312|Football Club Cincinnati|squad|8|MF|VEN|José Martínez|
+312|Football Club Cincinnati|squad|9|FW|TOG|Kévin Denkey|
+312|Football Club Cincinnati|squad|10|MF|BRA|Evander|captain
+312|Football Club Cincinnati|squad|11|MF|SVK|Samuel Gidi|
+312|Football Club Cincinnati|squad|12|DF|USA|Miles Robinson|captain
+312|Football Club Cincinnati|squad|13|GK|USA|Evan Louro|
+312|Football Club Cincinnati|squad|14|FW|USA|Kristian Fletcher|
+312|Football Club Cincinnati|squad|15|DF|ZIM|Teenage Hadebe|
+312|Football Club Cincinnati|squad|16|FW|USA|Tom Barlow|
+312|Football Club Cincinnati|squad|17|FW|FRA|Kenji Mboma Dem|
+312|Football Club Cincinnati|squad|18|GK|USA|Roman Celentano|
+312|Football Club Cincinnati|squad|19|FW|ROU|Ștefan Chirilă|
+312|Football Club Cincinnati|squad|20|MF|CZE|Pavel Bucha|
+312|Football Club Cincinnati|squad|22|MF|USA|Gerardo Valenzuela|
+312|Football Club Cincinnati|squad|23|MF|CZE|David Douděra|
+312|Football Club Cincinnati|squad|24|DF|USA|Kyle Smith|
+312|Football Club Cincinnati|squad|27|MF|CMR|Brian Anunga|
+312|Football Club Cincinnati|squad|29|FW|ECU|Bryan Ramírez|
+312|Football Club Cincinnati|squad|30|MF|MEX|Ademar Chávez|
+312|Football Club Cincinnati|squad|55|DF|LBA|Ayoub Lajhar|
+312|Football Club Cincinnati|squad|66|FW|VEN|Ender Echenique|
+312|Football Club Cincinnati|squad|88|DF|USA|Andrei Chirilă|
+312|Football Club Cincinnati|squad|89|GK|USA|Connor Dale|
+312|Football Club Cincinnati|squad|93|GK|POL|Fabian Mrozek|on loan from Liverpool
+312|Football Club Cincinnati|squad|99|FW|MAR|Ayoub Jabbari|
+312|Football Club Cincinnati|loaned_out||||Paul Walters|Bohemians
+312|Football Club Cincinnati|loaned_out||||Stiven Jimenez|Fluminense
+312|Football Club Cincinnati|loaned_out||||Brian Schaefer|Tampa Bay Rowdies
+312|Football Club Cincinnati|loaned_out||||Gilberto Flores|Libertad
+313|Los Angeles Football Club|squad|1|GK|FRA|Hugo Lloris|
+313|Los Angeles Football Club|squad|4|DF|COL|Eddie Segura|
+313|Los Angeles Football Club|squad|5|DF|SCO|Ryan Porteous|
+313|Los Angeles Football Club|squad|6|MF|BRA|Igor Jesus|
+313|Los Angeles Football Club|squad|7|FW|KOR|Son Heung-min|DP
+313|Los Angeles Football Club|squad|8|MF|USA|Mark Delgado|
+313|Los Angeles Football Club|squad|11|MF|USA|Timothy Tillman|
+313|Los Angeles Football Club|squad|12|GK|CAN|Thomas Hasal|
+313|Los Angeles Football Club|squad|14|DF|ESP|Sergi Palencia|
+313|Los Angeles Football Club|squad|17|FW|USA|Jeremy Ebobisse|
+313|Los Angeles Football Club|squad|18|FW|CAN|Jacob Shaffelburg|
+313|Los Angeles Football Club|squad|19|FW|USA|Tyler Boyd|
+313|Los Angeles Football Club|squad|21|MF|CAN|Ryan Raposo|
+313|Los Angeles Football Club|squad|22|MF|USA|Jude Terry|HG
+313|Los Angeles Football Club|squad|23|DF|UKR|Yevhen Cheberko|
+313|Los Angeles Football Club|squad|24|DF|USA|Ryan Hollingshead|
+313|Los Angeles Football Club|squad|30|FW|VEN|David Martínez|
+313|Los Angeles Football Club|squad|31|GK|USA|Cabral Carter|HG
+313|Los Angeles Football Club|squad|33|DF|USA|Aaron Long|captain
+313|Los Angeles Football Club|squad|44|DF|USA|Christian Díaz|HG
+313|Los Angeles Football Club|squad|45|DF|USA|Kenny Nielsen|
+313|Los Angeles Football Club|squad|66|MF|CAN|Mathieu Choinière|
+313|Los Angeles Football Club|squad|90|FW|CRO|Tommy Mihalić|
+313|Los Angeles Football Club|squad|91|DF|USA|Nkosi Tafari|
+313|Los Angeles Football Club|squad|99|FW|GAB|Denis Bouanga|DP
+313|Los Angeles Football Club|squad||MF|ECU|Sergio Vázquez|
+313|Los Angeles Football Club|squad||FW|GER|Armindo Sieb|
+313|Los Angeles Football Club|loaned_out||||Artem Smoliakov|FC Kharkiv
+313|Los Angeles Football Club|loaned_out||||Matt Evans|Wacker Innsbruck
+313|Los Angeles Football Club|loaned_out||||Adrian Wibowo|Wacker Innsbruck
+314|Minnesota United FC|squad|1|GK|JOR|Alec Smir|
+314|Minnesota United FC|squad|3|DF|JAM|Kyle Duncan|
+314|Minnesota United FC|squad|5|DF|ARG|Nicolás Romero|
+314|Minnesota United FC|squad|6|MF|USA|Peter Stroud|
+314|Minnesota United FC|squad|8|FW|ARG|Tomás Chancalay|
+314|Minnesota United FC|squad|9|FW|ITA|Kelvin Yeboah|DP
+314|Minnesota United FC|squad|11|FW|GER|Maurice Malone|
+314|Minnesota United FC|squad|12|GK|USA|Drake Callender|
+314|Minnesota United FC|squad|13|DF|USA|Anthony Markanich|
+314|Minnesota United FC|squad|15|DF|NZL|Michael Boxall|captain
+314|Minnesota United FC|squad|16|FW|USA|Aziel Jackson|on loan from Jagiellonia Białystok
+314|Minnesota United FC|squad|18|FW|COL|Mauricio González|
+314|Minnesota United FC|squad|20|MF|USA|Wil Trapp|
+314|Minnesota United FC|squad|21|FW|RSA|Bongokuhle Hlongwane|
+314|Minnesota United FC|squad|22|FW|CAN|Marcus Caldeira|
+314|Minnesota United FC|squad|23|DF|GER|Morris Duggan|
+314|Minnesota United FC|squad|24|MF|USA|Julian Gressel|
+314|Minnesota United FC|squad|25|MF|GRE|Nectarios Triantis|
+314|Minnesota United FC|squad|26|MF|ARG|Joaquín Pereyra|DP
+314|Minnesota United FC|squad|27|DF|USA|DJ Taylor|
+314|Minnesota United FC|squad|28|DF|COL|Jefferson Díaz|
+314|Minnesota United FC|squad|29|FW|SEN|Mamadou Dieng|
+314|Minnesota United FC|squad|30|MF|FRA|Owen Gene|
+314|Minnesota United FC|squad|33|DF|USA|Kieran Chandler|
+314|Minnesota United FC|squad|52|DF|CUW|Cherrion Valerius|on loan from NAC Breda
+314|Minnesota United FC|squad|67|MF|PAN|Carlos Harvey|
+314|Minnesota United FC|squad|94|GK|USA|Kayne Rizvanovich|
+314|Minnesota United FC|squad|98|FW|USA|Darius Randell|
+314|Minnesota United FC|squad|99|FW|USA|Jordan Adebayo-Smith|
+314|Minnesota United FC|loaned_out||||Devin Padelford|Red Bull New York
+314|Minnesota United FC|loaned_out||||Dominik Fitz|Wolfsberger AC
+314|Minnesota United FC|loaned_out||||Kenyel Michel|Alajuelense
+314|Minnesota United FC|loaned_out||||Jeong Ho-yeon|Suwon Samsung Bluewings
+314|Minnesota United FC|loaned_out||||Britton Fischer|Hartford Athletic
+314|Minnesota United FC|loaned_out||||Wessel Speel|Almere City
+315|Nashville SC|squad|1|GK|USA|Joe Willis|
+315|Nashville SC|squad|2|DF|USA|Dan Lovitz|
+315|Nashville SC|squad|3|DF|GHA|Maxwell Woledzi|
+315|Nashville SC|squad|4|DF|COL|Jeisson Palacios|
+315|Nashville SC|squad|5|DF|USA|Jack Maher|
+315|Nashville SC|squad|6|MF|HON|Bryan Acosta|
+315|Nashville SC|squad|7|FW|ARG|Cristian Espinoza|DP
+315|Nashville SC|squad|8|MF|AUS|Patrick Yazbek|
+315|Nashville SC|squad|9|FW|ENG|Sam Surridge|DP
+315|Nashville SC|squad|10|MF|GER|Hany Mukhtar|DP
+315|Nashville SC|squad|11|FW|TUN|Elias Saad|on loan from FC Augsburg
+315|Nashville SC|squad|12|MF|CAN|Charles-Emile Brunet|
+315|Nashville SC|squad|13|GK|DOM|Xavier Valdez|
+315|Nashville SC|squad|14|MF|GHA|Shak Mohammed|
+315|Nashville SC|squad|15|FW|CHI|Zidane Yáñez|
+315|Nashville SC|squad|16|MF|USA|Matthew Corcoran|
+315|Nashville SC|squad|19|MF|USA|Alex Muyl|
+315|Nashville SC|squad|20|MF|NOR|Edvard Tagseth|
+315|Nashville SC|squad|21|DF|USA|Thomas Williams|
+315|Nashville SC|squad|22|DF|USA|Josh Bauer|
+315|Nashville SC|squad|23|DF|CAN|Jordan Knight|
+315|Nashville SC|squad|26|MF|SEN|Famara Camara|
+315|Nashville SC|squad|27|DF|USA|Reed Baker-Whiting|
+315|Nashville SC|squad|31|DF|HON|Andy Najar|
+315|Nashville SC|squad|33|DF|USA|Chris Applewhite|HG
+315|Nashville SC|squad|35|DF|JAM|Malachi Molina|on loan from FC Dallas
+315|Nashville SC|squad|37|MF|IRQ|Ahmed Qasem|
+315|Nashville SC|squad|41|FW|CRC|Warren Madrigal|
+315|Nashville SC|squad|99|GK|USA|Brian Schwake|
+315|Nashville SC|loaned_out||||Isaiah LeFlore|Tampa Bay Rowdies
+315|Nashville SC|loaned_out||||Isaiah Jones|Chattanooga FC
+315|Nashville SC|loaned_out||||Adem Sipić|Gefle
+316|Club Internacional de Fútbol Miami|squad|2|DF|ARG|Gonzalo Luján|
+316|Club Internacional de Fútbol Miami|squad|3|DF|ESP|Sergio Reguilón|
+316|Club Internacional de Fútbol Miami|squad|4|DF|ARG|Facundo Mura|
+316|Club Internacional de Fútbol Miami|squad|5|MF|BRA|Casemiro|
+316|Club Internacional de Fútbol Miami|squad|7|MF|ARG|Rodrigo De Paul|DP
+316|Club Internacional de Fútbol Miami|squad|8|MF|VEN|Telasco Segovia|
+316|Club Internacional de Fútbol Miami|squad|9|FW|URU|Luis Suárez|vice-captain
+316|Club Internacional de Fútbol Miami|squad|10|FW|ARG|Lionel Messi|captain; DP
+316|Club Internacional de Fútbol Miami|squad|11|FW|BRA|Riquelme Fillipi|
+316|Club Internacional de Fútbol Miami|squad|13|GK|USA|Luis Barraza|
+316|Club Internacional de Fútbol Miami|squad|15|DF|ECU|Fricio Caicedo|on loan from Moravia FCM
+316|Club Internacional de Fútbol Miami|squad|16|DF|BRA|Micael|on loan from Palmeiras
+316|Club Internacional de Fútbol Miami|squad|17|DF|JAM|Ian Fray|HG
+316|Club Internacional de Fútbol Miami|squad|19|FW|MEX|Germán Berterame|DP
+316|Club Internacional de Fútbol Miami|squad|20|MF|USA|Santiago Morales|HG
+316|Club Internacional de Fútbol Miami|squad|21|FW|ARG|Tadeo Allende|
+316|Club Internacional de Fútbol Miami|squad|22|MF|ARG|David Ayala|
+316|Club Internacional de Fútbol Miami|squad|24|FW|ARG|Mateo Silvetti|
+316|Club Internacional de Fútbol Miami|squad|26|DF|USA|Tyler Hall|HG
+316|Club Internacional de Fútbol Miami|squad|34|GK|ARG|Rocco Ríos Novo|
+316|Club Internacional de Fútbol Miami|squad|37|DF|URU|Maximiliano Falcón|
+316|Club Internacional de Fútbol Miami|squad|42|MF|ITA|Yannick Bright|
+316|Club Internacional de Fútbol Miami|squad|54|FW|HAI|Lovend's Delinois|
+316|Club Internacional de Fútbol Miami|squad|56|FW|USA|Dániel Pintér|HG
+316|Club Internacional de Fútbol Miami|squad|59|MF|USA|Preston Plambeck|HG
+316|Club Internacional de Fútbol Miami|squad|62|DF|DOM|Israel Boatwright|HG
+316|Club Internacional de Fútbol Miami|squad|70|DF|USA|Daniel Sumalla|HG
+316|Club Internacional de Fútbol Miami|squad|76|DF|USA|Cesar Abadia|HG
+316|Club Internacional de Fútbol Miami|squad|80|MF|PAR|Matías Galarza|on loan from River Plate
+316|Club Internacional de Fútbol Miami|squad|88|MF|USA|Alexander Shaw|HG
+316|Club Internacional de Fútbol Miami|squad|97|GK|CAN|Dayne St. Clair|
+316|Club Internacional de Fútbol Miami|loaned_out||||Tomás Avilés|O'Higgins
+316|Club Internacional de Fútbol Miami|loaned_out||||Noah Allen|Chicago Fire
+316|Club Internacional de Fútbol Miami|loaned_out||||David Ruiz|New York Red Bulls
+318|Charlotte Football Club|squad|1|GK|CRO|Kristijan Kahlina|
+318|Charlotte Football Club|squad|3|DF|USA|Tim Ream|
+318|Charlotte Football Club|squad|4|DF|USA|Andrew Privett|
+318|Charlotte Football Club|squad|7|FW|AUS|Archie Goodwin|
+318|Charlotte Football Club|squad|8|MF|ENG|Ashley Westwood|captain
+318|Charlotte Football Club|squad|9|FW|ISR|Idan Toklomati|
+318|Charlotte Football Club|squad|10|FW|CIV|Wilfried Zaha|DP; on loan from Galatasaray
+318|Charlotte Football Club|squad|11|FW|ISR|Liel Abada|DP
+318|Charlotte Football Club|squad|13|MF|USA|Brandt Bronico|
+318|Charlotte Football Club|squad|14|DF|ENG|Nathan Byrne|
+318|Charlotte Football Club|squad|15|DF|ENG|Harry Toffolo|
+318|Charlotte Football Club|squad|16|MF|ESP|Pep Biel|
+318|Charlotte Football Club|squad|17|MF|USA|Luca de la Torre|
+318|Charlotte Football Club|squad|18|FW|COL|Kerwin Vargas|
+318|Charlotte Football Club|squad|20|MF|MLI|Baye Coulibaly|
+318|Charlotte Football Club|squad|21|GK|USA|Tyler Miller|
+318|Charlotte Football Club|squad|22|DF|USA|Henry Kessler|
+318|Charlotte Football Club|squad|23|DF|AUT|David Schnegg|
+318|Charlotte Football Club|squad|25|FW|ENG|Tyger Smalls|
+318|Charlotte Football Club|squad|27|FW|USA|Nimfasha Berchimas|HG
+318|Charlotte Football Club|squad|28|MF|FRA|Djibril Diani|
+318|Charlotte Football Club|squad|34|DF|USA|Andrew Johnson|
+318|Charlotte Football Club|squad|35|DF|USA|Will Cleary|
+318|Charlotte Football Club|squad|37|FW|BEN|Rodolfo Aloko|
+318|Charlotte Football Club|squad|41|FW|USA|Brian Romero|HG
+318|Charlotte Football Club|squad|42|GK|USA|Isaac Walker|
+318|Charlotte Football Club|squad|44|DF|GHA|Morrison Agyemang|
+318|Charlotte Football Club|squad|48|MF|USA|Aron John|HG
+318|Charlotte Football Club|loaned_out||||Nikola Petković|Seattle Sounders
+318|Charlotte Football Club|loaned_out||||Mikah Thomas|Indy Eleven
+318|Charlotte Football Club|loaned_out||||Chituru Odunze|Phoenix Rising
+318|Charlotte Football Club|loaned_out||||Jack Neeley|Charlotte Independence
+321|San Diego Football Club|squad|1|GK|CPV|CJ dos Santos|
+321|San Diego Football Club|squad|2|DF|GHA|Willy Kumado|
+321|San Diego Football Club|squad|3|DF|ISL|Dagur Dan Þórhallsson|
+321|San Diego Football Club|squad|5|DF|USA|Kieran Sargeant|
+321|San Diego Football Club|squad|6|MF|DEN|Jeppe Tverskov|
+321|San Diego Football Club|squad|7|FW|DEN|Marcus Ingvartsen|
+321|San Diego Football Club|squad|8|MF|FIN|Onni Valakari|
+321|San Diego Football Club|squad|10|FW|DEN|Anders Dreyer|
+321|San Diego Football Club|squad|12|MF|BRA|Gabriel Pirani|
+321|San Diego Football Club|squad|13|GK|MEX|Pablo Sisniega|
+321|San Diego Football Club|squad|14|FW|CIV|Bryan Zamblé|
+321|San Diego Football Club|squad|15|MF|USA|Pedro Soma|
+321|San Diego Football Club|squad|16|GK|DEN|Marcus Alstrup|
+321|San Diego Football Club|squad|17|DF|DEN|Osvald Søe|
+321|San Diego Football Club|squad|18|GK|USA|Duran Ferree|
+321|San Diego Football Club|squad|19|MF|USA|David Vazquez|
+321|San Diego Football Club|squad|20|MF|PAN|Aníbal Godoy|
+321|San Diego Football Club|squad|23|DF|USA|Sam Vines|on loan from Houston Dynamo
+321|San Diego Football Club|squad|24|MF|GHA|Emmanuel Boateng|
+321|San Diego Football Club|squad|25|DF|USA|Ian Pilcher|
+321|San Diego Football Club|squad|26|DF|GHA|Manu Duah|
+321|San Diego Football Club|squad|32|DF|USA|Ian Murphy|
+321|San Diego Football Club|squad|33|DF|USA|Oscar Verhoeven|
+321|San Diego Football Club|squad|36|MF|CMR|David Mimbang|on loan from Nordsjælland
+321|San Diego Football Club|squad|70|MF|USA|Alejandro Alvarado Jr.|
+321|San Diego Football Club|squad|77|FW|ENG|Alex Mighten|
+321|San Diego Football Club|squad|90|FW|NOR|Amahl Pellegrino|
+321|San Diego Football Club|squad|94|FW|COD|Cédric Bakambu|
+321|San Diego Football Club|squad|97|DF|SWE|Christopher McVey|
+321|San Diego Football Club|squad|99|FW|TUN|Elias Achouri|
+321|San Diego Football Club|loaned_out||||Hirving Lozano|LA Galaxy
+321|San Diego Football Club|loaned_out||||Wilson Eisner|FC Tulsa
+321|San Diego Football Club|loaned_out||||Anisse Saidi|Benfica
+321|San Diego Football Club|loaned_out||||Jacob Jackson|Monterey Bay FC
+380|Atlante FC|squad|1|GK|MEX|Óscar Jiménez|
+380|Atlante FC|squad|3|DF|MEX|Gustavo Sánchez|
+380|Atlante FC|squad|4|DF|MEX|Eduardo Tercero|
+380|Atlante FC|squad|5|MF|MEX|Hardy Meza|
+380|Atlante FC|squad|6|DF|USA|Nico Carrera|
+380|Atlante FC|squad|7|MF|ECU|Jhojan Julio|on loan from Tijuana
+380|Atlante FC|squad|8|MF|MEX|Eugenio Pizzuto|on loan from UANL
+380|Atlante FC|squad|9|FW|MEX|Luis Puente|on loan from Pachuca
+380|Atlante FC|squad|10|MF|MEX|Octavio Vázquez|on loan from Tijuana
+380|Atlante FC|squad|11|FW|MEX|Joaquín Moxica|on loan from Monterrey
+380|Atlante FC|squad|13|MF|MEX|Maximiliano García|
+380|Atlante FC|squad|14|DF|MEX|Cristóbal Alfaro|on loan from Pachuca
+380|Atlante FC|squad|15|FW|ECU|Jairón Charcopa|on loan from LDU Quito
+380|Atlante FC|squad|16|FW|MEX|Daniel González|on loan from UNAM
+380|Atlante FC|squad|17|MF|MEX|Leonardo Mejía|
+380|Atlante FC|squad|18|MF|MEX|Christian Bermúdez|
+380|Atlante FC|squad|19|MF|MEX|Luis Calzadilla|
+380|Atlante FC|squad|20|DF|MEX|Gilberto Adame|
+380|Atlante FC|squad|21|MF|MEX|Javier Ibarra|
+380|Atlante FC|squad|22|GK|MEX|Roberto Barragán|
+380|Atlante FC|squad|23|DF|MEX|Axl Padilla|
+380|Atlante FC|squad|24|FW|MEX|Ari Contreras|on loan from Pachuca
+380|Atlante FC|squad|25|MF|URU|Martín Fernández|on loan from Newell's Old Boys
+380|Atlante FC|squad|27|DF|MEX|Armando Escobar|
+380|Atlante FC|squad|29|DF|USA|Walter Portales|
+380|Atlante FC|squad|30|MF|ARG|Martín Sarrafiore|
+380|Atlante FC|squad|32|DF|ECU|Diogo Bagüí|on loan from Tijuana
+380|Atlante FC|squad|33|GK|COL|Jordan García|on loan from León
+380|Atlante FC|squad|34|MF|MEX|Édgar Jiménez|
+380|Atlante FC|squad|37|DF|PAR|Walter Clar|
+380|Atlante FC|squad|44|DF|ARG|Aarón Quirós|on loan from Vélez Sarsfield
+381|Atlas FC|squad|3|DF|MEX|Jorge Sánchez|
+381|Atlas FC|squad|4|DF|MEX|Adrián Mora|
+381|Atlas FC|squad|5|DF|MEX|Jorge Rodríguez|
+381|Atlas FC|squad|6|MF|MEX|Édgar Zaldívar|
+381|Atlas FC|squad|8|FW|MAR|Ryan Mmaee|
+381|Atlas FC|squad|9|FW|ARG|Florián Monzón|
+381|Atlas FC|squad|10|MF|POR|Luís Esteves|
+381|Atlas FC|squad|11|FW|CPV|Duk|
+381|Atlas FC|squad|12|GK|COL|Camilo Vargas|vice-captain
+381|Atlas FC|squad|13|DF|MEX|Gaddi Aguirre|
+381|Atlas FC|squad|15|DF|MEX|Paulo Ramírez|
+381|Atlas FC|squad|16|DF|ARG|Milton Valenzuela|
+381|Atlas FC|squad|17|DF|MEX|Rivaldo Lozano|
+381|Atlas FC|squad|18|MF|MEX|Elías Montiel|
+381|Atlas FC|squad|19|DF|ARG|Adonis Frías|
+381|Atlas FC|squad|20|MF|ARG|Kevin Zenón|
+381|Atlas FC|squad|22|GK|MEX|Antonio Sánchez|
+381|Atlas FC|squad|23|MF|MEX|Sergio Hernández|
+381|Atlas FC|squad|26|MF|MEX|Aldo Rocha|captain
+381|Atlas FC|squad|27|MF|MEX|Víctor Ríos|
+381|Atlas FC|squad|28|DF|ARG|Manuel Capasso|
+381|Atlas FC|squad|44|DF|MEX|Juanjo Purata|on loan from Tigres UANL
+381|Atlas FC|squad|58|MF|MEX|Alfonso González|
+381|Atlas FC|loaned_out||||Carlos Robles|Atlético La Paz
+381|Atlas FC|loaned_out||||Jordy Caicedo|Huracán
+383|CF Cruz Azul|squad|1|GK|MEX|Andrés Gudiño|
+383|CF Cruz Azul|squad|2|DF|MEX|Alan Mozo|on loan from Guadalajara
+383|CF Cruz Azul|squad|3|DF|MEX|Omar Campos|
+383|CF Cruz Azul|squad|4|DF|COL|Willer Ditta|
+383|CF Cruz Azul|squad|5|DF|MEX|Jesús Orozco|
+383|CF Cruz Azul|squad|6|MF|MEX|Érik Lira|captain
+383|CF Cruz Azul|squad|7|FW|ARG|Nicolás Ibáñez|
+383|CF Cruz Azul|squad|8|MF|ARG|Agustín Palavecino|
+383|CF Cruz Azul|squad|10|MF|MEX|Andrés Montaño|
+383|CF Cruz Azul|squad|11|FW|NGR|Christian Ebere|
+383|CF Cruz Azul|squad|12|DF|MEX|Alán Montes|
+383|CF Cruz Azul|squad|13|GK|MEX|Ricardo Rodríguez|
+383|CF Cruz Azul|squad|14|FW|COL|Juan José Calero|
+383|CF Cruz Azul|squad|15|DF|USA|Ralph Orquin|
+383|CF Cruz Azul|squad|16|MF|MEX|Jeremy Márquez|
+383|CF Cruz Azul|squad|17|MF|MEX|Amaury García|
+383|CF Cruz Azul|squad|18|MF|ARG|Luka Romero|
+383|CF Cruz Azul|squad|19|MF|MEX|Carlos Rodríguez|vice-captain
+383|CF Cruz Azul|squad|20|MF|ARG|José Paradela|
+383|CF Cruz Azul|squad|21|FW|URU|Gabriel Fernández|
+383|CF Cruz Azul|squad|22|DF|MEX|Jorge Rodarte|
+383|CF Cruz Azul|squad|23|GK|COL|Kevin Mier|
+383|CF Cruz Azul|squad|25|MF|MEX|Fernando Sámano|
+383|CF Cruz Azul|squad|27|FW|MEX|Bryan Gamboa|
+383|CF Cruz Azul|squad|28|DF|MEX|Raymundo Rubio|
+383|CF Cruz Azul|squad|29|MF|ARG|Carlos Rotondi|
+383|CF Cruz Azul|squad|30|GK|MEX|Emmanuel Ochoa|
+383|CF Cruz Azul|squad|32|MF|MEX|Cristian Jiménez|
+383|CF Cruz Azul|squad|33|DF|ARG|Gonzalo Piovi|
+383|CF Cruz Azul|loaned_out||||Mauro Zaleta|Necaxa
+384|Club América|squad|1|GK|MEX|Luis Malagón|
+384|Club América|squad|2|DF|MEX|Emilio Lara|
+384|Club América|squad|3|DF|MEX|Israel Reyes|
+384|Club América|squad|5|DF|MEX|Kevin Álvarez|
+384|Club América|squad|6|MF|USA|Edwin Cerrillo|
+384|Club América|squad|7|MF|URU|Brian Rodríguez|
+384|Club América|squad|8|MF|ESP|Carlos Álvarez|
+384|Club América|squad|9|FW|MEX|Henry Martín|captain
+384|Club América|squad|10|MF|USA|Alejandro Zendejas|
+384|Club América|squad|11|FW|CHI|Víctor Dávila|injured
+384|Club América|squad|12|MF|MEX|Isaías Violante|
+384|Club América|squad|13|MF|MEX|Alan Cervantes|
+384|Club América|squad|19|FW|COL|Raúl Zúñiga|
+384|Club América|squad|20|MF|MEX|Alexis Gutiérrez|
+384|Club América|squad|21|GK|MEX|Fernando Tapia|
+384|Club América|squad|22|MF|COL|Óscar Perea|on loan from Strasbourg
+384|Club América|squad|23|MF|BRA|Raphael Veiga|on loan from Palmeiras
+384|Club América|squad|24|DF|MEX|Franco Rossano|
+384|Club América|squad|26|DF|COL|Cristian Borja|
+384|Club América|squad|27|MF|BRA|Ícaro|
+384|Club América|squad|28|MF|MEX|Érick Sánchez|
+384|Club América|squad|29|DF|MEX|Ramón Juárez|
+384|Club América|squad|30|GK|MEX|Rodolfo Cota|
+384|Club América|squad|31|GK|MEX|César Lugo|
+384|Club América|squad|32|DF|MEX|Miguel Vázquez|
+384|Club América|squad|34|MF|MEX|Dagoberto Espinoza|
+384|Club América|squad|35|MF|MEX|Santiago Naveda|
+384|Club América|squad|93|FW|COL|Miguel Borja|
+384|Club América|loaned_out||||Thiago Espinosa|Peñarol
+384|Club América|loaned_out||||Miguel Carreón|Oaxaca
+384|Club América|loaned_out||||Rodrigo Dourado|Juárez
+384|Club América|loaned_out||||Patrick Villa|Oaxaca
+384|Club América|loaned_out||||Esteban Lozano|Santos Laguna
+384|Club América|loaned_out||||Diego Reyes|Flamengo
+384|Club América|loaned_out||||Patricio Salas|Famalicão
+385|Club Guadalajara|squad|1|GK|MEX|Raúl Rangel|
+385|Club Guadalajara|squad|2|DF|MEX|José Castillo|
+385|Club Guadalajara|squad|3|DF|MEX|Gilberto Sepúlveda|
+385|Club Guadalajara|squad|4|DF|MEX|Miguel Tapias|
+385|Club Guadalajara|squad|5|DF|MEX|Bryan González|
+385|Club Guadalajara|squad|6|MF|MEX|Omar Govea|
+385|Club Guadalajara|squad|7|MF|MEX|Luis Romo|
+385|Club Guadalajara|squad|10|MF|MEX|Efraín Álvarez|
+385|Club Guadalajara|squad|11|MF|MEX|Brian Gutiérrez|
+385|Club Guadalajara|squad|13|GK|ESP|Óscar Whalley|
+385|Club Guadalajara|squad|17|FW|MEX|Ricardo Marín|
+385|Club Guadalajara|squad|18|MF|MEX|Jonathan Pérez|
+385|Club Guadalajara|squad|19|DF|MEX|Diego Campillo|
+385|Club Guadalajara|squad|20|FW|MEX|Ángel Sepúlveda|
+385|Club Guadalajara|squad|23|MF|USA|Daniel Aguirre|
+385|Club Guadalajara|squad|24|DF|MEX|Miguel Gómez|
+385|Club Guadalajara|squad|25|MF|MEX|Roberto Alvarado|
+385|Club Guadalajara|squad|26|MF|MEX|Hugo Camberos|
+385|Club Guadalajara|squad|27|DF|MEX|Leonardo Sepúlveda|
+385|Club Guadalajara|squad|28|MF|MEX|Fernando González|
+385|Club Guadalajara|squad|30|GK|MEX|Eduardo García|
+385|Club Guadalajara|squad|31|FW|MEX|Yael Padilla|
+385|Club Guadalajara|squad|34|FW|MEX|Armando González|
+385|Club Guadalajara|squad|37|DF|MEX|Richard Ledezma|
+385|Club Guadalajara|squad||MF|MEX|Jordán Carrillo|
+385|Club Guadalajara|squad||MF|MEX|Kevin Castañeda|
+385|Club Guadalajara|squad||DF|MEX|Luis Rey|
+385|Club Guadalajara|loaned_out||||Daniel Flores|Phoenix Rising
+385|Club Guadalajara|loaned_out||||Francisco Méndez|Necaxa
+385|Club Guadalajara|loaned_out||||Alan Mozo|Pachuca
+385|Club Guadalajara|loaned_out||||Diego Ochoa|Necaxa
+385|Club Guadalajara|loaned_out||||Abraham Villegas|León
+385|Club Guadalajara|loaned_out||||Fidel Barajas|Atlético San Luis
+385|Club Guadalajara|loaned_out||||Gael García|León
+385|Club Guadalajara|loaned_out||||Gilberto García|Atlético La Paz
+385|Club Guadalajara|loaned_out||||Érick Gutiérrez|Toluca
+385|Club Guadalajara|loaned_out||||Víctor Guzmán|Pachuca
+385|Club Guadalajara|loaned_out||||Cade Cowell|New York Red Bulls
+385|Club Guadalajara|loaned_out||||Teun Wilke|Fortaleza
+386|Club León|squad|3|DF|COL|Juan Guevara|
+386|Club León|squad|4|DF|MEX|Bryan Colula|
+386|Club León|squad|5|DF|CHI|Sebastián Vegas|on loan from Monterrey
+386|Club León|squad|6|MF|MEX|Fernando Beltrán|
+386|Club León|squad|7|DF|MEX|Iván Moreno|
+386|Club León|squad|8|MF|MEX|Juan Pablo Domínguez|on loan from Toluca
+386|Club León|squad|11|FW|PAN|Ismael Díaz|
+386|Club León|squad|12|GK|MEX|Julio González|
+386|Club León|squad|13|MF|COL|Daniel Arcila|
+386|Club León|squad|14|DF|COL|Jhohan Romaña|
+386|Club León|squad|15|MF|MEX|Sebastián Fierro|
+386|Club León|squad|16|MF|MEX|Jordi Cortizo|
+386|Club León|squad|18|MF|COL|Edgar Guerra|
+386|Club León|squad|19|FW|MEX|Alfonso Alvarado|
+386|Club León|squad|20|MF|CHI|Rodrigo Echeverría|
+386|Club León|squad|21|FW|COL|Santiago Londoño|on loan from Pachuca
+386|Club León|squad|23|GK|MEX|Óscar García|
+386|Club León|squad|25|DF|MEX|Paul Bellón|
+386|Club León|squad|26|DF|MEX|Salvador Reyes|
+386|Club León|squad|27|FW|COL|Diber Cambindo|
+386|Club León|squad|28|MF|MEX|David Ramírez|
+386|Club León|squad|29|MF|MEX|José Iván Rodríguez|
+386|Club León|squad|30|MF|MEX|Ángel Estrada|
+386|Club León|squad|33|DF|MEX|Abraham Villegas|on loan from Guadalajara
+386|Club León|squad|35|MF|MEX|Luis Valadez|
+386|Club León|squad||DF|URU|Valentín Gauthier|injured
+386|Club León|loaned_out||||Jordan García|Atlante
+386|Club León|loaned_out||||Byron Castillo|Barcelona de Guayaquil
+386|Club León|loaned_out||||Luis Cervantes|Zacatecas
+386|Club León|loaned_out||||Nicolás Fonseca|Coritiba
+386|Club León|loaned_out||||Alan Medina|Everton
+386|Club León|loaned_out||||Sebastián Santos|Pachuca
+386|Club León|loaned_out||||Yael Uribe|UAT
+386|Club León|loaned_out||||Ettson Ayón|Juárez
+386|Club León|loaned_out||||Nicolás Vallejo|Pachuca
+387|Club Necaxa|squad|1|GK|MEX|Christopher Andrade|on loan from Cancún
+387|Club Necaxa|squad|2|DF|MEX|Emilio Martínez|
+387|Club Necaxa|squad|3|DF|URU|Agustín Oliveros|
+387|Club Necaxa|squad|4|DF|MEX|Alexis Peña|
+387|Club Necaxa|squad|5|DF|BRA|Naves|
+387|Club Necaxa|squad|6|MF|USA|Danny Leyva|
+387|Club Necaxa|squad|7|MF|COL|Kevin Rosero|
+387|Club Necaxa|squad|8|MF|ARG|Lorenzo Faravelli|
+387|Club Necaxa|squad|9|FW|ARG|Julián Carranza|
+387|Club Necaxa|squad|10|MF|ARG|Javier Ruiz|
+387|Club Necaxa|squad|11|MF|COL|Juan Pablo Torres|
+387|Club Necaxa|squad|12|GK|MEX|Luis Jiménez|
+387|Club Necaxa|squad|13|MF|MEX|Owen González|on loan from Pachuca
+387|Club Necaxa|squad|14|DF|MEX|Mauro Zaleta|on loan from Cruz Azul
+387|Club Necaxa|squad|15|DF|MEX|Diego Ochoa|on loan from Guadalajara
+387|Club Necaxa|squad|16|MF|MEX|Pedro Pedraza|on loan from Pachuca
+387|Club Necaxa|squad|17|FW|MEX|Rogelio Cortéz|
+387|Club Necaxa|squad|20|DF|MEX|Francisco Méndez|on loan from Guadalajara
+387|Club Necaxa|squad|21|MF|ARG|Matías Espíndola|
+387|Club Necaxa|squad|27|FW|MEX|Misael Pedroza|
+387|Club Necaxa|squad|33|DF|MEX|Raúl Martínez|
+387|Club Necaxa|squad|88|DF|MEX|Carlos Vargas|
+387|Club Necaxa|squad|90|FW|COL|Juan Valencia|
+387|Club Necaxa|squad|99|MF|MEX|Emilio Rodríguez|on loan from Pachuca
+387|Club Necaxa|loaned_out||||Jesús Alcántar|Melgar
+387|Club Necaxa|loaned_out||||Ricardo Alonso|Tepatitlán
+387|Club Necaxa|loaned_out||||Bryan Casas|Tepatitlán
+387|Club Necaxa|loaned_out||||Alex Monárrez|UAT
+387|Club Necaxa|loaned_out||||Andrés Colorado|Once Caldas
+387|Club Necaxa|loaned_out||||Waldo Madrid|Querétaro
+388|Club Pachuca|squad|2|DF|ARG|Sergio Barreto|
+388|Club Pachuca|squad|4|DF|BRA|Eduardo Bauermann|
+388|Club Pachuca|squad|6|DF|MEX|Mauricio Isais|
+388|Club Pachuca|squad|7|MF|MEX|Rodolfo Pizarro|on loan from Juárez
+388|Club Pachuca|squad|8|FW|MEX|Alexéi Domínguez|
+388|Club Pachuca|squad|9|FW|PAR|Adrián Alcaraz|
+388|Club Pachuca|squad|10|MF|MEX|Elías Montiel|
+388|Club Pachuca|squad|11|MF|MAR|Oussama Idrissi|
+388|Club Pachuca|squad|13|DF|MEX|Jorge Berlanga|
+388|Club Pachuca|squad|14|DF|MEX|Carlos Sánchez|
+388|Club Pachuca|squad|15|DF|MEX|Francisco Venegas|on loan from Querétaro
+388|Club Pachuca|squad|16|MF|COL|Christian Rivera|
+388|Club Pachuca|squad|19|FW|MEX|Illian Hernández|
+388|Club Pachuca|squad|21|FW|ARG|Nicolás Vallejo|
+388|Club Pachuca|squad|22|DF|MEX|Alan Mozo|on loan from Guadalajara
+388|Club Pachuca|squad|23|FW|VEN|Salomón Rondón|
+388|Club Pachuca|squad|25|GK|MEX|Carlos Moreno|
+388|Club Pachuca|squad|26|MF|MEX|Alan Bautista|
+388|Club Pachuca|squad|28|MF|COL|Andrés Arroyo|
+388|Club Pachuca|squad|29|MF|BRA|Kenedy|
+388|Club Pachuca|squad|30|MF|MEX|Lenin Rodríguez|
+388|Club Pachuca|squad|31|GK|MEX|José Eulogio|
+388|Club Pachuca|squad|32|DF|LBN|Pedro Budib|
+388|Club Pachuca|squad|33|DF|ECU|Andrés Micolta|injured
+388|Club Pachuca|loaned_out||||Cristóbal Alfaro|Atlante
+388|Club Pachuca|loaned_out||||Jesús Brígido|UdeG
+388|Club Pachuca|loaned_out||||Owen González|Necaxa
+388|Club Pachuca|loaned_out||||Jesús Hernández|Tlaxcala
+388|Club Pachuca|loaned_out||||Sergio Hernández|UdeG
+388|Club Pachuca|loaned_out||||Alexis Macías|UAT Premier
+388|Club Pachuca|loaned_out||||Pedro Pedraza|Necaxa
+388|Club Pachuca|loaned_out||||Danilo Rincón|UAT Premier
+388|Club Pachuca|loaned_out||||Emilio Rodríguez|Necaxa
+388|Club Pachuca|loaned_out||||Juan Sigala|Juárez
+388|Club Pachuca|loaned_out||||Luis Puente|Atlante
+389|Club Puebla|squad|2|DF|MEX|Ángel Leyva|
+389|Club Puebla|squad|3|MF|MEX|Alberto Herrera|
+389|Club Puebla|squad|4|DF|CRC|Juan Pablo Vargas|
+389|Club Puebla|squad|5|DF|ARG|Facundo Almada|
+389|Club Puebla|squad|6|DF|MEX|Jair Díaz|
+389|Club Puebla|squad|7|MF|MEX|Fernando Monárrez|on loan from Tijuana
+389|Club Puebla|squad|8|MF|MEX|Omar Moreno|
+389|Club Puebla|squad|9|FW|VEN|Luifer Hernández|
+389|Club Puebla|squad|10|MF|URU|Mathías Tomás|
+389|Club Puebla|squad|12|DF|MEX|Iker Moreno|on loan from Atlético San Luis
+389|Club Puebla|squad|13|DF|MEX|Eduardo Navarro|
+389|Club Puebla|squad|14|MF|MEX|Eduardo Armenta|
+389|Club Puebla|squad|15|DF|MEX|Óscar Villa|
+389|Club Puebla|squad|16|MF|MEX|Alonso Ramírez|
+389|Club Puebla|squad|17|MF|MEX|Raúl Castillo|
+389|Club Puebla|squad|19|FW|ARG|Ignacio Maestro Puch|on loan from Independiente
+389|Club Puebla|squad|20|DF|MEX|Rodrigo Pachuca|
+389|Club Puebla|squad|21|MF|PAR|Sergio Sanabria|
+389|Club Puebla|squad|22|MF|MEX|Carlos Baltazar|
+389|Club Puebla|squad|24|MF|MEX|Alejandro Organista|
+389|Club Puebla|squad|25|FW|MEX|Heriberto Jurado|on loan from Cercle Brugge
+389|Club Puebla|squad|26|MF|COL|Kevin Velasco|
+389|Club Puebla|squad|27|MF|MEX|Brayan Garnica|
+389|Club Puebla|squad|28|GK|MEX|Ricardo Gutiérrez|
+389|Club Puebla|squad|29|FW|MEX|Eduardo Mustre|
+389|Club Puebla|squad|33|GK|MEX|Jesús Rodríguez|
+389|Club Puebla|squad|34|MF|BRA|Lucas Camilo|
+389|Club Puebla|loaned_out||||Emanuel Gularte|Sporting de Gijón
+389|Club Puebla|loaned_out||||Fernando Arce Jr.|Toluca
+389|Club Puebla|loaned_out||||Ángel Robles|Atlético La Paz
+390|Club Tigres|squad|1|GK|ARG|Nahuel Guzmán|
+390|Club Tigres|squad|2|DF|MEX|Francisco Reyes|
+390|Club Tigres|squad|3|DF|USA|Marco Farfan|
+390|Club Tigres|squad|5|MF|URU|César Araújo|
+390|Club Tigres|squad|6|MF|MEX|Juan Vigón|
+390|Club Tigres|squad|8|MF|URU|Fernando Gorriarán|
+390|Club Tigres|squad|9|FW|URU|Emiliano Gómez|
+390|Club Tigres|squad|11|MF|ARG|Juan Brunetta|
+390|Club Tigres|squad|13|GK|USA|Antonio Carrera|
+390|Club Tigres|squad|14|DF|MEX|Jesús Garza|
+390|Club Tigres|squad|15|DF|ARG|Alan Franco|on loan from São Paulo
+390|Club Tigres|squad|16|MF|MEX|Diego Lainez|
+390|Club Tigres|squad|17|FW|URU|Rodrigo Aguirre|
+390|Club Tigres|squad|19|MF|MEX|Mauro Lainez|
+390|Club Tigres|squad|20|MF|CAN|Marcelo Flores|
+390|Club Tigres|squad|21|FW|MEX|Ricardo Monreal|
+390|Club Tigres|squad|22|FW|MEX|Guillermo Martínez|
+390|Club Tigres|squad|23|MF|BRA|Rômulo|
+390|Club Tigres|squad|25|GK|MEX|Carlos Felipe Rodríguez|
+390|Club Tigres|squad|26|DF|MEX|Fernando Ordóñez|
+390|Club Tigres|squad|27|DF|MEX|Jesús Alberto Angulo|
+390|Club Tigres|squad|28|DF|BRA|Joaquim|
+390|Club Tigres|squad|29|MF|USA|Jaidyn Contreras|
+390|Club Tigres|squad|30|MF|MEX|Diego Sánchez|
+390|Club Tigres|squad|32|DF|MEX|Vladimir Loroña|
+390|Club Tigres|squad|33|DF|MEX|Rafael Guerrero|
+390|Club Tigres|squad|34|MF|MEX|Henrique Simeone|
+390|Club Tigres|squad|35|DF|MEX|Osvaldo Rodríguez|
+390|Club Tigres|squad|77|FW|MEX|Ozziel Herrera|
+390|Club Tigres|loaned_out||||Juanjo Purata|Atlas
+390|Club Tigres|loaned_out||||Eugenio Pizzuto|Atlante
+391|Club Tijuana|squad|2|GK|MEX|José Antonio Rodríguez|
+391|Club Tijuana|squad|3|DF|MEX|Rafael Fernández|
+391|Club Tijuana|squad|4|DF|ESP|Unai Bilbao|
+391|Club Tijuana|squad|6|DF|MEX|Alejandro Gómez|
+391|Club Tijuana|squad|7|FW|ECU|Adonis Preciado|
+391|Club Tijuana|squad|8|MF|MEX|Iván Tona|
+391|Club Tijuana|squad|9|FW|MAR|Mourad El Ghezouani|
+391|Club Tijuana|squad|10|MF|MEX|Gilberto Mora|
+391|Club Tijuana|squad|11|FW|ARG|Francisco González|
+391|Club Tijuana|squad|12|DF|ECU|Jackson Porozo|
+391|Club Tijuana|squad|13|FW|BRA|Elias|
+391|Club Tijuana|squad|15|MF|URU|Ignacio Rivero|
+391|Club Tijuana|squad|16|DF|MEX|Jesús Vega|
+391|Club Tijuana|squad|17|MF|MEX|Ramiro Árciga|
+391|Club Tijuana|squad|18|DF|MEX|Aarón Mejía|
+391|Club Tijuana|squad|19|FW|URU|Diego Abreu|
+391|Club Tijuana|squad|20|MF|MEX|Ángel Zapata|
+391|Club Tijuana|squad|26|MF|MEX|Aldahir Pérez|
+391|Club Tijuana|squad|29|GK|MEX|Salim Hernández|
+391|Club Tijuana|squad|31|MF|MEX|Yael Padilla|
+391|Club Tijuana|squad|33|DF|MEX|Pablo Ortíz|
+391|Club Tijuana|squad|34|MF|CMR|Frank Boya|
+391|Club Tijuana|loaned_out||||José Castro|Sinaloa
+391|Club Tijuana|loaned_out||||Ismael Flores|Sinaloa
+391|Club Tijuana|loaned_out||||Jonathan Vaal|Sinaloa
+391|Club Tijuana|loaned_out||||Irwin Zamudio|Sinaloa
+391|Club Tijuana|loaned_out||||Diogo Bagüí|Atlante
+391|Club Tijuana|loaned_out||||Sebastián Cervantes|Sinaloa
+391|Club Tijuana|loaned_out||||Nicolás Díaz|Alianza Lima
+391|Club Tijuana|loaned_out||||Abraham Flores|Sinaloa
+391|Club Tijuana|loaned_out||||Fernando Monárrez|Puebla
+391|Club Tijuana|loaned_out||||David Osuna|Sinaloa
+391|Club Tijuana|loaned_out||||Emiliano Velazco|Sinaloa
+391|Club Tijuana|loaned_out||||Sebastián Yáñez|Sinaloa
+391|Club Tijuana|loaned_out||||Jaime Álvarez|Sinaloa
+391|Club Tijuana|loaned_out||||Domingo Blanco|Defensa y Justicia
+391|Club Tijuana|loaned_out||||Arath Egaña|Sinaloa
+391|Club Tijuana|loaned_out||||Marcos Flores|Sinaloa
+391|Club Tijuana|loaned_out||||Carlos Galicia|Sinaloa
+391|Club Tijuana|loaned_out||||Jhojan Julio|Atlante
+391|Club Tijuana|loaned_out||||Christian Leyva|Sinaloa
+391|Club Tijuana|loaned_out||||Brandon Ordorica|Sinaloa
+391|Club Tijuana|loaned_out||||Octavio Vázquez|Atlante
+391|Club Tijuana|loaned_out||||Shamar Nicholson|Maxline Vitebsk
+391|Club Tijuana|loaned_out||||Leonardo Vargas|Sinaloa
+391|Club Tijuana|loaned_out||||Vitinho|Fortaleza
+393|Monterrey|squad|1|GK|ARG|Esteban Andrada|
+393|Monterrey|squad|2|DF|MEX|Ricardo Chávez|
+393|Monterrey|squad|3|DF|MEX|Gerardo Arteaga|
+393|Monterrey|squad|4|DF|MEX|Víctor Guzmán|
+393|Monterrey|squad|5|MF|MEX|Fidel Ambríz|
+393|Monterrey|squad|7|MF|ARG|Lucas Ocampos|
+393|Monterrey|squad|8|MF|ESP|Óliver Torres|
+393|Monterrey|squad|9|FW|URU|Diego Rossi|
+393|Monterrey|squad|10|MF|ARG|Luca Orellano|
+393|Monterrey|squad|11|MF|MEX|Iker Fimbres|
+393|Monterrey|squad|13|DF|MEX|Carlos Salcedo|
+393|Monterrey|squad|14|DF|MEX|Érick Aguirre|
+393|Monterrey|squad|17|MF|MEX|Jesús Manuel Corona|
+393|Monterrey|squad|18|MF|MEX|César Garza|
+393|Monterrey|squad|19|DF|MEX|Alonso Aceves|
+393|Monterrey|squad|21|DF|MEX|Luis Reyes|
+393|Monterrey|squad|22|GK|MEX|Luis Cárdenas|
+393|Monterrey|squad|25|MF|MEX|Orbelín Pineda|
+393|Monterrey|squad|27|FW|MEX|Roberto de la Rosa|
+393|Monterrey|squad|30|MF|ARG|Jorge Rodríguez|
+393|Monterrey|squad|31|GK|MEX|César Ramos|
+393|Monterrey|squad|32|FW|MNE|Uroš Đurđević|
+393|Monterrey|squad|33|DF|COL|Stefan Medina|
+393|Monterrey|squad|34|DF|MEX|César Bustos|
+393|Monterrey|squad|35|MF|MEX|Sebastián Rodríguez|on loan from Houston Dynamo
+393|Monterrey|squad|36|MF|MEX|Javier Casillas|
+393|Monterrey|squad|99|FW|BEL|Hugo Cuypers|
+393|Monterrey|loaned_out||||Santiago Mele|Independiente
+393|Monterrey|loaned_out||||Tony Leone|UNAM
+393|Monterrey|loaned_out||||Mauricio Morales|Santiago
+393|Monterrey|loaned_out||||Sebastián Vegas|León
+393|Monterrey|loaned_out||||Jesús Rodríguez|Santiago
+393|Monterrey|loaned_out||||Johan Rojas|Vasco da Gama
+393|Monterrey|loaned_out||||Pablo Sánchez|Santiago
+393|Monterrey|loaned_out||||Eduardo Escalante|Jaiba Brava
+393|Monterrey|loaned_out||||Josué Morales|Santiago
+393|Monterrey|loaned_out||||Joaquín Moxica|Atlante
+394|Pumas|squad|1|GK|CRC|Keylor Navas|
+394|Pumas|squad|2|DF|MEX|Pablo Bennevendo|
+394|Pumas|squad|5|DF|ESP|Rubén Duarte|
+394|Pumas|squad|6|DF|BRA|Nathan|
+394|Pumas|squad|7|MF|MEX|Rodrigo López|
+394|Pumas|squad|8|MF|PAN|Adalberto Carrasquilla|
+394|Pumas|squad|10|FW|MEX|César Huerta|
+394|Pumas|squad|11|FW|MEX|José Juan Macías|
+394|Pumas|squad|12|DF|MEX|Cristian Calderón|
+394|Pumas|squad|13|DF|MEX|Pablo Monroy|
+394|Pumas|squad|14|MF|ARG|Luciano Herrera|on loan from Newell's Old Boys
+394|Pumas|squad|15|MF|MEX|Israel Luna|
+394|Pumas|squad|17|MF|MEX|Sebastián Córdova|
+394|Pumas|squad|18|MF|MEX|Víctor Arteaga|
+394|Pumas|squad|19|DF|MEX|Jesús Rivas|
+394|Pumas|squad|20|MF|MEX|Santiago Trigos|
+394|Pumas|squad|21|MF|MEX|Uriel Antuna|
+394|Pumas|squad|22|MF|MEX|Alan Medina|
+394|Pumas|squad|23|FW|BRA|Juninho|
+394|Pumas|squad|24|DF|MEX|Tony Leone|on loan from Monterrey
+394|Pumas|squad|26|MF|MEX|Ángel Rico|
+394|Pumas|squad|30|FW|CAN|Santiago López|
+394|Pumas|squad|31|FW|PAR|Robert Morales|on loan from Toluca
+394|Pumas|squad|32|GK|MEX|Miguel Paul|
+394|Pumas|squad|34|DF|VEN|Ángel Azuaje|
+394|Pumas|squad|35|GK|MEX|Pablo Lara|
+394|Pumas|squad|45|MF|ECU|Pedro Vite|
+394|Pumas|squad|77|DF|COL|Álvaro Angulo|
+394|Pumas|loaned_out||||Miguel Ángel Carreón|América
+394|Pumas|loaned_out||||Daniel González|Atlante
+395|Querétaro FC|squad|1|GK|MEX|José Hernández|
+395|Querétaro FC|squad|2|DF|ARG|Lucas Abascia|
+395|Querétaro FC|squad|4|MF|ESP|Carlo Adriano|
+395|Querétaro FC|squad|5|MF|URU|Santiago Homenchenko|
+395|Querétaro FC|squad|7|DF|ESP|Iker Benito|
+395|Querétaro FC|squad|8|MF|MEX|Bernardo Parra|
+395|Querétaro FC|squad|9|FW|MEX|Alí Ávila|
+395|Querétaro FC|squad|11|FW|ARG|Mateo Coronel|on loan from Atlético Tucumán
+395|Querétaro FC|squad|12|DF|BRA|Paulo Victor|
+395|Querétaro FC|squad|13|DF|MEX|Diego Reyes|
+395|Querétaro FC|squad|15|DF|MEX|Carlos Villanueva|
+395|Querétaro FC|squad|16|MF|PAR|Enzo Giménez|
+395|Querétaro FC|squad|17|FW|MEX|Denilson Muñoz|
+395|Querétaro FC|squad|18|MF|USA|Erik Dueñas|
+395|Querétaro FC|squad|20|MF|MEX|Alex Alcalá|
+395|Querétaro FC|squad|23|MF|MEX|Juan Robles|
+395|Querétaro FC|squad|24|DF|COL|Bayron Duarte|
+395|Querétaro FC|squad|25|GK|MEX|Guillermo Allison|
+395|Querétaro FC|squad|26|FW|MEX|Eduardo Pérez|
+395|Querétaro FC|squad|27|DF|MEX|Daniel Parra|on loan from Atlético Morelia
+395|Querétaro FC|squad|28|MF|MEX|Jesús Arellano|
+395|Querétaro FC|squad|29|MF|MEX|Waldo Madrid|on loan from Necaxa
+395|Querétaro FC|squad|30|FW|MEX|Juan Carlos Martínez|
+395|Querétaro FC|loaned_out||||Juan Daccarett|Atlético La Paz
+395|Querétaro FC|loaned_out||||Sebastián Hernández|Atlético Morelia
+395|Querétaro FC|loaned_out||||Francisco Venegas|Pachuca
+395|Querétaro FC|loaned_out||||Juan Cázares|UdeG
+395|Querétaro FC|loaned_out||||Martín Sol|Sinaloa
+395|Querétaro FC|loaned_out||||Jean Unjanque|Neuchâtel Xamax
+395|Querétaro FC|loaned_out||||Rodrigo Auzmendi|San Lorenzo
+396|Santos Laguna|squad|1|GK|MEX|Carlos Acevedo|captain
+396|Santos Laguna|squad|2|DF|ARG|Bruno Amione|injured
+396|Santos Laguna|squad|3|DF|USA|Mauricio Cuevas|
+396|Santos Laguna|squad|4|DF|MEX|José Abella|
+396|Santos Laguna|squad|5|MF|MEX|Aldo López|
+396|Santos Laguna|squad|6|MF|MEX|Javier Güémez|
+396|Santos Laguna|squad|7|MF|PAR|Diego González|
+396|Santos Laguna|squad|8|MF|MEX|Salvador Mariscal|
+396|Santos Laguna|squad|9|FW|ARG|Lucas Di Yorio|
+396|Santos Laguna|squad|10|MF|ARG|Ezequiel Bullaude|on loan from Feyenoord
+396|Santos Laguna|squad|11|MF|ECU|Carlos Gruezo|
+396|Santos Laguna|squad|14|DF|MEX|Efraín Orona|
+396|Santos Laguna|squad|15|MF|MEX|Joshua Mancha|
+396|Santos Laguna|squad|17|DF|MEX|Emmanuel Echeverría|
+396|Santos Laguna|squad|18|DF|ARG|Franco Pardo|
+396|Santos Laguna|squad|19|FW|MEX|Eduardo Aguirre|
+396|Santos Laguna|squad|21|MF|ESP|Fran Villalba|
+396|Santos Laguna|squad|22|DF|MEX|Kevin Picón|
+396|Santos Laguna|squad|24|MF|MEX|Diego Medina|
+396|Santos Laguna|squad|25|DF|ARG|Felipe Sánchez|on loan from Schalke 04
+396|Santos Laguna|squad|26|MF|ARG|Ramiro Sordo|
+396|Santos Laguna|squad|28|DF|MEX|Geovanni Pérez|
+396|Santos Laguna|squad|29|FW|MEX|Tahiel Jiménez|
+396|Santos Laguna|squad|33|GK|MEX|Héctor Holguín|
+396|Santos Laguna|squad|77|MF|COL|Kevin Palacios|
+396|Santos Laguna|loaned_out||||David Sánchez|Piratas
+396|Santos Laguna|loaned_out||||Kevin Balanta|Independiente Santa Fe
+396|Santos Laguna|loaned_out||||Franco Fagúndez|Independiente Santa Fe
+396|Santos Laguna|loaned_out||||Santiago Muñoz|Atlético San Luis
+396|Santos Laguna|loaned_out||||Ronaldo Rubio|Irapuato
+397|Toluca FC|squad|1|GK|MEX|Hugo González|
+397|Toluca FC|squad|2|DF|MEX|Diego Barbosa|
+397|Toluca FC|squad|3|DF|MEX|Antonio Briseño|
+397|Toluca FC|squad|4|DF|URU|Bruno Méndez|
+397|Toluca FC|squad|5|MF|ARG|Franco Romero|
+397|Toluca FC|squad|6|DF|URU|Federico Pereira|
+397|Toluca FC|squad|7|MF|MEX|Víctor Guzmán|
+397|Toluca FC|squad|8|MF|ARG|Nicolás Castro|
+397|Toluca FC|squad|9|FW|MEX|Alexis Vega|
+397|Toluca FC|squad|10|MF|MEX|Jesús Ricardo Angulo|
+397|Toluca FC|squad|11|FW|BRA|Helinho|
+397|Toluca FC|squad|12|GK|MEX|Ronaldo Beltrán|
+397|Toluca FC|squad|13|DF|BRA|Luan Garcia|
+397|Toluca FC|squad|14|MF|MEX|Marcel Ruiz|
+397|Toluca FC|squad|15|MF|MEX|Pável Pérez|
+397|Toluca FC|squad|16|FW|URU|Federico Viñas|
+397|Toluca FC|squad|17|DF|MEX|Brian García|
+397|Toluca FC|squad|18|GK|MEX|David Shrem|
+397|Toluca FC|squad|19|MF|ARG|Santiago Simón|
+397|Toluca FC|squad|20|DF|MEX|Jesús Gallardo|
+397|Toluca FC|squad|21|FW|MEX|Iván López|
+397|Toluca FC|squad|22|GK|MEX|Luis García|
+397|Toluca FC|squad|23|FW|MEX|Oswaldo Virgen|
+397|Toluca FC|squad|24|MF|USA|Fernando Arce Jr.|on loan from Puebla
+397|Toluca FC|squad|25|DF|MEX|Everardo López|
+397|Toluca FC|squad|26|FW|POR|Paulinho|
+397|Toluca FC|squad|29|MF|MEX|Jorge Díaz|
+397|Toluca FC|squad|35|MF|MEX|Érick Gutiérrez|on loan from Guadalajara
+397|Toluca FC|loaned_out||||Frankie Amaya|CF Montréal
+397|Toluca FC|loaned_out||||Anderson Duarte|Atlético San Luis
+397|Toluca FC|loaned_out||||Robert Morales|Pumas UNAM
+397|Toluca FC|loaned_out||||Franco Rossi|Chapecoense

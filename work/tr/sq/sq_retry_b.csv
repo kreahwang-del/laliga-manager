@@ -1,0 +1,1475 @@
+club_id|club|status|number|pos|nat|player|note
+462|Cesena|squad|1|GK|ITA|Alessandro Siano|
+462|Cesena|squad|2|DF|AUS|Mark Natta|
+462|Cesena|squad|3|DF|ROU|Antonio David|
+462|Cesena|squad|4|DF|ITA|Jacopo Gelli|on loan from Frosinone
+462|Cesena|squad|5|MF|ITA|Luca Schirone|on loan from Pineto
+462|Cesena|squad|6|DF|SRB|Mihajlo Ilić|on loan from Bologna
+462|Cesena|squad|7|DF|ITA|Gianluca Frabotta|
+462|Cesena|squad|8|MF|ITA|Matteo Francesconi|
+462|Cesena|squad|9|FW|ALB|Cristian Shpendi|
+462|Cesena|squad|10|MF|ITA|Riccardo Pagano|
+462|Cesena|squad|11|FW|ITA|Maat Daniel Caprini|on loan from Fiorentina
+462|Cesena|squad|14|FW|NED|Xavello Druiventak|
+462|Cesena|squad|15|DF|ITA|Andrea Ciofi|captain
+462|Cesena|squad|16|FW|ITA|Luca D'Andrea|on loan from Sassuolo
+462|Cesena|squad|18|DF|ITA|Matteo Guidi|
+462|Cesena|squad|23|DF|ITA|Vittorio Magni|
+462|Cesena|squad|24|DF|ITA|Massimiliano Mangraviti|
+462|Cesena|squad|25|MF|ITA|Dimitri Bisoli|
+462|Cesena|squad|26|DF|ITA|Matteo Piacentini|
+462|Cesena|squad|33|GK|USA|Jonathan Klinsmann|
+462|Cesena|squad|35|MF|ITA|Davide Zamagni|
+462|Cesena|squad|39|GK|ITA|Niccolò Fontana|
+462|Cesena|squad|43|MF|ITA|Filippo Bertaccini|
+462|Cesena|squad|48|GK|ITA|Simone Gianfanti|
+462|Cesena|squad|71|FW|ITA|Maurizio Rossetti|
+462|Cesena|squad|73|DF|ITA|Simone Pieraccini|
+462|Cesena|squad|80|FW|ITA|Antonio Fiori|on loan from Mantova
+462|Cesena|squad|91|FW|ITA|Alessandro Debenedetti|on loan from Genoa
+462|Cesena|squad|99|FW|ITA|Marco Olivieri|
+462|Cesena|squad||FW|SEN|Ibrahima Papa Wade|
+462|Cesena|squad||MF|ITA|Marco Dalla Vecchia|on loan from Torino
+462|Cesena|squad||MF|NOR|Emil Bohinen|on loan from Venezia
+462|Cesena|loaned_out||DF|ITA|Riccardo Biguzzi|Prato
+462|Cesena|loaned_out||DF|FRA|Mamadou Kebbeh|Torres
+462|Cesena|loaned_out||DF|ITA|Giulio Manetti|Lecco
+462|Cesena|loaned_out||MF|ITA|Tommaso Arrigoni|Livorno
+462|Cesena|loaned_out||MF|ITA|Gianmarco Castorri|Latina
+462|Cesena|loaned_out||FW|ITA|Roberto Ogunseye|Giugliano
+462|Cesena|loaned_out||FW|ITA|Giovanni Perini|Forlì
+462|Cesena|loaned_out||FW|ALB|Frederik Tosku|Ostiamare
+465|Entella|squad|3|DF|ITA|Nicolas Previtali|
+465|Entella|squad|5|MF|ITA|Niccolò Squizzato|
+465|Entella|squad|6|DF|ITA|Andrea Tiritiello|
+465|Entella|squad|7|MF|ITA|Davide Bariti|
+465|Entella|squad|8|MF|ITA|Luca Vignali|
+465|Entella|squad|9|FW|ITA|Giacomo Corona|on loan from Palermo
+465|Entella|squad|10|FW|ITA|Luigi Cuppone|
+465|Entella|squad|11|FW|ESP|Bernat Guiu|
+465|Entella|squad|12|GK|ITA|Edoardo Torrielli|
+465|Entella|squad|15|DF|ITA|Ivan Marconi|
+465|Entella|squad|16|DF|ITA|Riccardo Turicchia|
+465|Entella|squad|17|FW|ITA|Mattia Tirelli|
+465|Entella|squad|18|MF|ITA|Tommaso Annoni|
+465|Entella|squad|22|GK|ITA|Federico Del Frate|
+465|Entella|squad|23|DF|ITA|Luca Parodi|captain
+465|Entella|squad|24|MF|ITA|Andrea Franzoni|
+465|Entella|squad|26|MF|ITA|Stefano Di Mario|
+465|Entella|squad|27|DF|ITA|Mattia Alborghetti|
+465|Entella|squad|28|MF|ITA|Mattia Valori|
+465|Entella|squad|32|FW|ITA|Francesco Forte|
+465|Entella|squad|39|DF|ITA|Mattia Motolese|
+465|Entella|squad|40|MF|ITA|Gabriele Costa|
+465|Entella|squad|55|MF|BRA|Lucas Felippe|on loan from Potenza
+465|Entella|squad|80|MF|ITA|Leonardo Benedetti|
+465|Entella|squad|90|FW|ITA|Matteo Casarotto|
+465|Entella|squad|91|GK|ITA|Simone Colombi|
+465|Entella|squad|94|MF|ITA|Francesco Mezzoni|
+465|Entella|loaned_out||DF|ITA|Luigi Palomba|Forlì
+465|Entella|loaned_out||DF|ITA|Filippo Saiani|Vado
+465|Entella|loaned_out||FW|ITA|Matteo Carbone|Seravezza Pozzi
+465|Entella|loaned_out||FW|ITA|Davide Pio Stabile|Sambenedettese
+468|Mantova|squad|1|GK|ITA|Marco Festa|STALE asof=2026-02-03
+468|Mantova|squad|2|DF|FRA|Côme Bianay Balcot|on loan from Torino; STALE asof=2026-02-03
+468|Mantova|squad|3|DF|FRA|Ali Dembélé|on loan from Torino; STALE asof=2026-02-03
+468|Mantova|squad|5|DF|GRE|Konstantinos Chrysopoulos|on loan from AEK Athens; STALE asof=2026-02-03
+468|Mantova|squad|7|FW|ITA|Davis Mensah|STALE asof=2026-02-03
+468|Mantova|squad|8|MF|ITA|Federico Artioli|STALE asof=2026-02-03
+468|Mantova|squad|9|FW|ITA|Leonardo Mancuso|STALE asof=2026-02-03
+468|Mantova|squad|10|MF|ITA|David Wieser|STALE asof=2026-02-03
+468|Mantova|squad|11|FW|SUI|Nikolas Muci|on loan from Grasshopper; STALE asof=2026-02-03
+468|Mantova|squad|13|DF|ITA|Andrea Meroni|on loan from Bari; STALE asof=2026-02-03
+468|Mantova|squad|15|DF|POR|Tiago Gonçalves|on loan from Újpest; STALE asof=2026-02-03
+468|Mantova|squad|17|DF|ITA|Nicolò Radaelli|STALE asof=2026-02-03
+468|Mantova|squad|18|MF|URU|César Falletti|STALE asof=2026-02-03
+468|Mantova|squad|19|FW|ITA|Francesco Ruocco|STALE asof=2026-02-03
+468|Mantova|squad|20|DF|SUI|Calixte Ligue|on loan from Venezia; STALE asof=2026-02-03
+468|Mantova|squad|21|MF|ITA|Simone Trimboli|captain; STALE asof=2026-02-03
+468|Mantova|squad|22|GK|ITA|Lorenzo Andrenacci|STALE asof=2026-02-03
+468|Mantova|squad|23|FW|ITA|Tommaso Marras|STALE asof=2026-02-03
+468|Mantova|squad|24|GK|ITA|Francesco Bardi|on loan from Palermo; STALE asof=2026-02-03
+468|Mantova|squad|27|DF|ITA|Alessio Castellini|on loan from Catania; STALE asof=2026-02-03
+468|Mantova|squad|28|FW|ITA|Maat Daniel Caprini|on loan from Fiorentina; STALE asof=2026-02-03
+468|Mantova|squad|29|DF|ITA|Stefano Cella|STALE asof=2026-02-03
+468|Mantova|squad|30|FW|ITA|Davide Bragantini|STALE asof=2026-02-03
+468|Mantova|squad|34|GK|CRO|Ante Vuković|on loan from Pisa; STALE asof=2026-02-03
+468|Mantova|squad|36|MF|ITA|Flavio Paoletti|STALE asof=2026-02-03
+468|Mantova|squad|50|DF|FRA|Fahem Benaïssa-Yahia|on loan from Casa Pia; STALE asof=2026-02-03
+468|Mantova|squad|77|FW|ITA|Nicolò Buso|on loan from Catanzaro; STALE asof=2026-02-03
+468|Mantova|squad|80|MF|ITA|Rachid Kouda|on loan from Parma; STALE asof=2026-02-03
+468|Mantova|squad|96|DF|ITA|Tommaso Maggioni|STALE asof=2026-02-03
+468|Mantova|squad|98|MF|ITA|Federico Zuccon|on loan from Atalanta; STALE asof=2026-02-03
+468|Mantova|squad|99|FW|ITA|Nicholas Bonfanti|on loan from Pisa; STALE asof=2026-02-03
+468|Mantova|loaned_out||GK|ITA|Cristiano Fratti|Desenzano; STALE asof=2026-02-03
+468|Mantova|loaned_out||GK|ITA|Luca Sonzogni|Ospitaletto; STALE asof=2026-02-03
+468|Mantova|loaned_out||DF|ITA|Giacomo Fedel|Monopoli; STALE asof=2026-02-03
+468|Mantova|loaned_out||DF|ITA|Matteo Stambolliu|Crema; STALE asof=2026-02-03
+468|Mantova|loaned_out||MF|SVN|Žan Majer|Ternana; STALE asof=2026-02-03
+468|Mantova|loaned_out||FW|ITA|Antonio Fiori|Frosinone; STALE asof=2026-02-03
+467|L. R. Vicenza|squad|1|GK|ITA|Mattia Basso|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|4|MF|ITA|Marco Carraro|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|5|DF|ITA|Daniel Cappelletti|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|6|DF|FRA|Maxime Leverbe|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|7|FW|ITA|Nicola Rauti|on loan from Torino; STALE asof=2026-01-15
+467|L. R. Vicenza|squad|8|MF|ITA|Michele Cavion|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|9|FW|ITA|Claudio Morra|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|10|FW|ITA|Alessandro Capello|on loan from Arezzo; STALE asof=2026-01-15
+467|L. R. Vicenza|squad|11|FW|DEN|David Stückler|on loan from Cremonese; STALE asof=2026-01-15
+467|L. R. Vicenza|squad|12|GK|ITA|Samuele Massolo|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|13|DF|ITA|Mattia Golin|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|14|DF|ITA|Giuseppe Cuomo|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|16|GK|ITA|Riccardo Gagno|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|19|MF|ITA|Alessio Tribuzzi|on loan from Avellino; STALE asof=2026-01-15
+467|L. R. Vicenza|squad|23|DF|ITA|Francesco Benassai|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|24|FW|ITA|Filippo Alessio|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|26|MF|ITA|Giulio Pellizzari|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|27|DF|ITA|Thomas Sandon|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|28|DF|ITA|Lorenzo Caferri|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|29|MF|ITA|Loris Zonta|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|32|DF|ITA|Filippo Costa|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|33|DF|ITA|Matteo Vescovi|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|44|MF|ITA|Raul Talarico|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|77|MF|ALB|Armand Rada|STALE asof=2026-01-15
+467|L. R. Vicenza|squad|99|MF|ITA|Mattia Vitale|STALE asof=2026-01-15
+467|L. R. Vicenza|loaned_out||DF|ITA|Alessandro Zorzi|Clodiense; STALE asof=2026-01-15
+467|L. R. Vicenza|loaned_out||MF|ITA|Stefano Cester|Giugliano; STALE asof=2026-01-15
+467|L. R. Vicenza|loaned_out||MF|ITA|Matteo Della Morte|Benevento; STALE asof=2026-01-15
+467|L. R. Vicenza|loaned_out||FW|ITA|Giovanni Busato|Imperia; STALE asof=2026-01-15
+467|L. R. Vicenza|loaned_out||FW|ITA|Luca Zamparo|Alcione; STALE asof=2026-01-15
+469|Modena|squad|1|GK|ARG|Leandro Chichizola|captain
+469|Modena|squad|2|DF|FRA|Gady Beyuku|
+469|Modena|squad|5|MF|ITA|Alessandro Sersanti|
+469|Modena|squad|7|MF|ITA|Francesco Zampano|
+469|Modena|squad|8|MF|ITA|Simone Santoro|
+469|Modena|squad|9|FW|ITA|Daniele Montevago|
+469|Modena|squad|10|MF|ITA|Giuseppe Caso|
+469|Modena|squad|11|FW|ITA|Andrea Belotti|
+469|Modena|squad|15|DF|ITA|Martino Odero|
+469|Modena|squad|16|MF|URU|Gastón Brugman|
+469|Modena|squad|17|MF|ALB|Kleis Bozhanaj|
+469|Modena|squad|18|FW|FRA|Joris Manquant|
+469|Modena|squad|19|DF|TOG|Steven Nador|
+469|Modena|squad|20|DF|NED|Bryant Nieling|
+469|Modena|squad|22|GK|ITA|Leonardo Consiglio|
+469|Modena|squad|25|GK|SUI|Abdullah Laidani|
+469|Modena|squad|26|MF|ITA|Antonio Imputato|
+469|Modena|squad|27|MF|BRA|Paulo Azzi|
+469|Modena|squad|28|DF|ITA|Davide Adorni|
+469|Modena|squad|29|FW|ITA|Luca Bacchin|
+469|Modena|squad|32|MF|ITA|Wisdom Acquah|on loan from Torino
+469|Modena|squad|33|FW|BRA|Stênio|
+469|Modena|squad|34|DF|ITA|Diego Ronco|
+469|Modena|squad|42|MF|ITA|Alessandro Bianco|
+469|Modena|squad|70|FW|ITA|Giuseppe Ambrosino|on loan from Napoli
+469|Modena|squad|72|MF|ITA|Giacomo Olzer|
+469|Modena|squad|73|MF|ITA|Pietro Arnaboldi|
+469|Modena|squad|77|DF|ITA|Daniel Tonoli|
+469|Modena|loaned_out||GK|ITA|Andrés Celenza|Cittadella Vis Modena
+469|Modena|loaned_out||GK|ITA|Michele Pezzolato|Pianese
+469|Modena|loaned_out||DF|FRA|Franck Guiyong|Treviso
+469|Modena|loaned_out||DF|SVN|Anej Koroša|Ostiamare
+469|Modena|loaned_out||DF|ITA|Edoardo Olivieri|Monopoli
+469|Modena|loaned_out||MF|ITA|Carlo Carreri|Correggese
+469|Modena|loaned_out||MF|FRA|Donel Mampuya|Paganese
+469|Modena|loaned_out||FW|ITA|Christian Lo Conte|Brusaporto
+469|Modena|loaned_out||FW|ITA|Taha Zidouh|Dolomiti Bellunesi
+470|Padova|squad|1|GK|POR|Louis Mouquet|
+470|Padova|squad|3|DF|ITA|Antonio Barreca|
+470|Padova|squad|5|DF|ITA|Matteo Lovato|
+470|Padova|squad|6|MF|ITA|Giovanni Giunti|
+470|Padova|squad|7|MF|ECU|Kevin Varas|vice-captain
+470|Padova|squad|8|MF|ITA|Pietro Fusi|
+470|Padova|squad|9|FW|ITA|Luca Moro|
+470|Padova|squad|10|FW|ITA|Gianluca Caprari|
+470|Padova|squad|11|FW|ITA|Alessandro Seghetti|
+470|Padova|squad|12|GK|ITA|Simone Scaglia|
+470|Padova|squad|14|MF|ITA|Marco Pompetti|
+470|Padova|squad|15|FW|ITA|Kevin Lasagna|
+470|Padova|squad|17|MF|ITA|Alessandro Capelli|
+470|Padova|squad|18|DF|ITA|Enrico Silletti|
+470|Padova|squad|20|FW|ITA|Mattia Bortolussi|
+470|Padova|squad|21|MF|ITA|Emanuele Zuelli|
+470|Padova|squad|22|GK|ITA|Alessandro Sorrentino|
+470|Padova|squad|23|MF|ITA|Francesco Di Mariano|
+470|Padova|squad|24|DF|ITA|Lorenzo Carissoni|
+470|Padova|squad|25|MF|ITA|Nicolas Galazzi|on loan from Monza
+470|Padova|squad|27|DF|ITA|Alessandro Dellavalle|on loan from Torino
+470|Padova|squad|32|DF|ITA|Filippo Sgarbi|
+470|Padova|squad|34|DF|ITA|Matteo Cocchi|on loan from Inter Milan
+470|Padova|squad|58|DF|ITA|Christian Pastina|
+470|Padova|squad|72|DF|ITA|Carlo Faedo|
+470|Padova|squad|74|MF|ITA|Diego Marcolini|
+470|Padova|squad|90|FW|ITA|Gabriele Artistico|
+470|Padova|squad|92|FW|ITA|Cristian Buonaiuto|
+470|Padova|squad|98|MF|ITA|Luca Zanimacchia|
+470|Padova|loaned_out||GK|ITA|Pablo Mangiaracina-Lopez|Lavarian Mortean Esperia
+470|Padova|loaned_out||DF|ITA|Andrea Antonello|Luparense
+470|Padova|loaned_out||DF|ITA|Tommaso Bordoni|Lecco
+470|Padova|loaned_out||MF|ITA|Luigi Castegnaro|Arzignano Valchiampo
+470|Padova|loaned_out||MF|ITA|Mattia Penta|Arzignano Valchiampo
+470|Padova|loaned_out||MF|ITA|Francesco Tumiatti|Mestre
+473|SS Juve Stabia|squad|1|GK|CRO|Ante Vuković|on loan from Pisa
+473|SS Juve Stabia|squad|2|DF|ITA|Manuel Ricciardi|
+473|SS Juve Stabia|squad|4|DF|ITA|Matteo Baldi|
+473|SS Juve Stabia|squad|5|MF|ITA|Thomas Battistella|
+473|SS Juve Stabia|squad|6|DF|ITA|Marco Bellich|
+473|SS Juve Stabia|squad|7|FW|ITA|Nicola Patanè|
+473|SS Juve Stabia|squad|8|MF|ITA|Davide Buglio|
+473|SS Juve Stabia|squad|9|FW|ITA|Antonio Di Nardo|
+473|SS Juve Stabia|squad|10|MF|ITA|Christian Pierobon|
+473|SS Juve Stabia|squad|11|FW|ITA|Kevin Piscopo|
+473|SS Juve Stabia|squad|14|MF|ITA|Marco Meli|
+473|SS Juve Stabia|squad|15|DF|ITA|Cristian Andreoni|
+473|SS Juve Stabia|squad|16|GK|ITA|Alessandro Signorini|
+473|SS Juve Stabia|squad|17|MF|SWE|Nermin Karić|
+473|SS Juve Stabia|squad|18|MF|ITA|Daniel Perin|
+473|SS Juve Stabia|squad|19|DF|ITA|Nicola Pietrangeli|
+473|SS Juve Stabia|squad|20|FW|ITA|Luigi Caccavo|on loan from Bologna
+473|SS Juve Stabia|squad|21|FW|ITA|Gregorio Morachioli|
+473|SS Juve Stabia|squad|23|GK|ITA|Pietro Boer|
+473|SS Juve Stabia|squad|24|MF|ITA|Justin Kumi|on loan from Sassuolo
+473|SS Juve Stabia|squad|25|DF|NED|Terrence Douglas|
+473|SS Juve Stabia|squad|26|DF|ITA|Francesco D'Amore|
+473|SS Juve Stabia|squad|27|FW|ITA|Leonardo Candellone|captain
+473|SS Juve Stabia|squad|28|MF|ITA|Emanuele Torrasi|
+473|SS Juve Stabia|squad|30|FW|ITA|Romeo Sandrucci|on loan from Torino
+473|SS Juve Stabia|squad|37|MF|ITA|Fabio Maistro|
+473|SS Juve Stabia|squad|68|MF|ITA|Alessandro Louati|
+473|SS Juve Stabia|squad|73|DF|ITA|Giulio Scuderi|on loan from Fiorentina
+473|SS Juve Stabia|squad|77|FW|POR|Saná Fernandes|on loan from Lazio
+473|SS Juve Stabia|squad|80|MF|ITA|Federico Artioli|
+473|SS Juve Stabia|squad|87|DF|ITA|Davide Bettella|
+473|SS Juve Stabia|squad|92|DF|MLI|Francesco Gallea|on loan from Cagliari
+473|SS Juve Stabia|squad|96|DF|ITA|Tommaso Maggioni|
+473|SS Juve Stabia|squad|99|FW|ITA|Enrico Piovanello|
+473|SS Juve Stabia|loaned_out||FW|BRA|Matheus dos Santos|Potenza
+473|SS Juve Stabia|loaned_out||FW|CRO|Tomi Petrović|Cosenza
+475|Südtirol|squad|3|DF|ITA|Davide Veroli|on loan from Cagliari
+475|Südtirol|squad|4|DF|ITA|Riccardo Stivanello|on loan from Bologna
+475|Südtirol|squad|5|MF|ITA|Simone Tronchin|
+475|Südtirol|squad|8|MF|FIN|Niklas Pyyhtiä|on loan from Bologna
+475|Südtirol|squad|9|FW|ROU|Rareș Burnete|on loan from Lecce
+475|Südtirol|squad|10|MF|ITA|Fabio Rispoli|on loan from Como
+475|Südtirol|squad|11|FW|CPV|Vasco Lopes|
+475|Südtirol|squad|12|GK|SVN|Rok Vadjunec|
+475|Südtirol|squad|13|DF|ITA|Marco Varnier|
+475|Südtirol|squad|14|MF|SRB|Aljoša Vasić|on loan from Palermo
+475|Südtirol|squad|17|FW|ITA|Lorenzo Anghelè|on loan from Juventus
+475|Südtirol|squad|18|MF|ITA|Kevin Zeroli|on loan from AC Milan
+475|Südtirol|squad|20|MF|ISL|Bjarki Bjarkason|
+475|Südtirol|squad|21|MF|ITA|Fabian Tait|
+475|Südtirol|squad|22|GK|ITA|Alessandro Plizzari|on loan from Venezia
+475|Südtirol|squad|23|DF|ITA|Federico Davi|
+475|Südtirol|squad|24|DF|ITA|Simone Davi|
+475|Südtirol|squad|25|FW|GLP|Kenny Mixtur|
+475|Südtirol|squad|26|MF|ITA|Marco Frigerio|
+475|Südtirol|squad|27|DF|ITA|Giacomo Stabile|on loan from Inter
+475|Südtirol|squad|33|FW|ALB|Silvio Merkaj|
+475|Südtirol|squad|34|DF|ALB|Frédéric Veseli|
+475|Südtirol|squad|46|MF|TUN|Dhirar Brik|
+475|Südtirol|squad|55|DF|ITA|Andrea Giorgini|
+475|Südtirol|squad|79|MF|ITA|Salvatore Molina|
+475|Südtirol|squad|90|FW|ITA|Alvin Okoro|on loan from Venezia
+475|Südtirol|squad|94|DF|MAR|Hamza El Kaouakibi|
+475|Südtirol|loaned_out||DF|ITA|Raphael Kofler|Cagliari
+475|Südtirol|loaned_out||DF|ITA|Benedikt Rottensteiner|Trapani
+475|Südtirol|loaned_out||MF|ITA|Daniele Casiraghi|Ravenna
+475|Südtirol|loaned_out||MF|ALG|Karim Zedadka|Empoli
+239|Incheon United Football Club|squad|1|GK|KOR|Kim Dong-heon|vice-captain
+239|Incheon United Football Club|squad|2|DF|ESP|Juan Ibiza|on loan from Buriram United
+239|Incheon United Football Club|squad|3|DF|KOR|Lee Sang-gi|
+239|Incheon United Football Club|squad|4|DF|KOR|Kim Geon-hui|
+239|Incheon United Football Club|squad|5|MF|KOR|Lee Myung-joo|captain
+239|Incheon United Football Club|squad|6|MF|KOR|Mun Ji-hwan|
+239|Incheon United Football Club|squad|7|MF|KOR|Oh Hu-seong|
+239|Incheon United Football Club|squad|8|MF|ESP|Iker Undabarrena|
+239|Incheon United Football Club|squad|9|FW|MNE|Stefan Mugoša|
+239|Incheon United Football Club|squad|10|FW|KOR|Lee Dong-ryul|
+239|Incheon United Football Club|squad|11|MF|GNB|Gerso Fernandes|
+239|Incheon United Football Club|squad|13|DF|KOR|Choi Seung-gu|
+239|Incheon United Football Club|squad|14|MF|KOR|Baek Min-gyu|
+239|Incheon United Football Club|squad|15|MF|KOR|Seo Jae-min|
+239|Incheon United Football Club|squad|17|MF|KOR|Kim Seong-min|
+239|Incheon United Football Club|squad|20|DF|KOR|Park Gyeong-seop|
+239|Incheon United Football Club|squad|21|GK|KOR|Lee Tae-hui|
+239|Incheon United Football Club|squad|22|DF|KOR|Go Jeong-min|
+239|Incheon United Football Club|squad|23|MF|KOR|Jung Chi-in|
+239|Incheon United Football Club|squad|24|DF|KOR|Lee Jun-seop|
+239|Incheon United Football Club|squad|26|MF|KOR|Lee Min-hyeok|on loan from Ulsan HD
+239|Incheon United Football Club|squad|27|DF|KOR|Yeo Seung-won|on loan from Daejeon Hana Citizen
+239|Incheon United Football Club|squad|28|DF|KOR|Kim Yeon-soo|
+239|Incheon United Football Club|squad|30|MF|KOR|Kim Young-hwan|on loan from Jeonbuk Hyundai Motors
+239|Incheon United Football Club|squad|32|DF|KOR|Lee Ju-yong|vice-captain
+239|Incheon United Football Club|squad|39|DF|KOR|Kim Myung-soon|vice-captain
+239|Incheon United Football Club|squad|55|MF|KOR|Oh Jun-yeop|
+239|Incheon United Football Club|squad|70|MF|BRA|Leandro Ribeiro|
+239|Incheon United Football Club|squad|72|MF|KOR|Lee Chung-yong|
+239|Incheon United Football Club|squad|74|GK|KOR|Wang Min-jun|
+239|Incheon United Football Club|squad|77|FW|KOR|Park Seung-ho|
+239|Incheon United Football Club|squad|88|MF|KOR|Jung Won-jin|
+239|Incheon United Football Club|squad|99|FW|GUY|Morgan Ferrier|
+239|Incheon United Football Club|loaned_out||GK|KOR|Lee Sang-hyeon|Bucheon FC 1995
+239|Incheon United Football Club|loaned_out||DF|KOR|Hong Si-hoo|Gimcheon Sangmu (military service)
+239|Incheon United Football Club|loaned_out||DF|KOR|Kang Yeong-hun|Gimcheon Sangmu (military service)
+239|Incheon United Football Club|loaned_out||DF|KOR|Min Kyeong-hyeon|Gimcheon Sangmu (military service)
+239|Incheon United Football Club|loaned_out||MF|KOR|Sung Him-chan|FC Mokpo
+382|Atlético de San Luis|squad|1|GK|MEX|Andrés Sánchez|
+382|Atlético de San Luis|squad|2|DF|MEX|Román Torres|
+382|Atlético de San Luis|squad|3|DF|BRA|Robson|
+382|Atlético de San Luis|squad|5|MF|MEX|Roberto Meraz|
+382|Atlético de San Luis|squad|6|DF|ESP|Juanpe|
+382|Atlético de San Luis|squad|7|MF|MEX|Benjamín Galdames|
+382|Atlético de San Luis|squad|8|MF|MEX|Ronaldo Nájera|
+382|Atlético de San Luis|squad|9|FW|ITA|João Pedro|injured
+382|Atlético de San Luis|squad|10|MF|FRA|Sébastien Salles-Lamonge|
+382|Atlético de San Luis|squad|11|MF|USA|David Rodríguez|
+382|Atlético de San Luis|squad|13|MF|COL|Johan Caicedo|on loan from Deportivo Pasto
+382|Atlético de San Luis|squad|14|MF|MEX|Miguel García|
+382|Atlético de San Luis|squad|16|DF|BRA|Lucas Esteves|
+382|Atlético de San Luis|squad|17|FW|URU|Anderson Duarte|on loan from Toluca
+382|Atlético de San Luis|squad|18|DF|MEX|Aldo Cruz|
+382|Atlético de San Luis|squad|19|FW|MEX|Santiago Muñoz|on loan from Santos Laguna
+382|Atlético de San Luis|squad|20|FW|MEX|Leonardo Flores|
+382|Atlético de San Luis|squad|21|MF|MEX|Óscar Macías|
+382|Atlético de San Luis|squad|22|FW|ESP|Rafa Llorente|
+382|Atlético de San Luis|squad|23|GK|MEX|César López|
+382|Atlético de San Luis|squad|25|GK|MEX|Gibrán Lajud|
+382|Atlético de San Luis|squad|26|MF|MEX|Sebastián Pérez Bouquet|
+382|Atlético de San Luis|squad|28|MF|PAR|Jesús Medina|
+382|Atlético de San Luis|squad|30|DF|MEX|Benjamín Galindo|
+382|Atlético de San Luis|squad|31|DF|MEX|Eduardo Águila|
+382|Atlético de San Luis|squad|99|FW|CHI|Felipe Mora|
+382|Atlético de San Luis|loaned_out||GK|MEX|Roberto Elicerio|Jaiba Brava
+382|Atlético de San Luis|loaned_out||DF|MEX|Daniel Guillén|Cancún
+382|Atlético de San Luis|loaned_out||DF|MEX|Iker Moreno|Puebla
+382|Atlético de San Luis|loaned_out||DF|MEX|Ian Ramírez|Jaiba Brava
+382|Atlético de San Luis|loaned_out||MF|MEX|Sebastián Martínez|Jaiba Brava
+382|Atlético de San Luis|loaned_out||MF|MEX|Jonantan Villal|Atlético Ottawa
+382|Atlético de San Luis|loaned_out||FW|MEX|Emiliano García|Atlético Ottawa
+392|FC Juárez|squad|1|GK|MEX|Sebastián Jurado|
+392|FC Juárez|squad|2|DF|MEX|Gilberto Sepúlveda|on loan from Guadalajara
+392|FC Juárez|squad|3|DF|COL|Jesús Murillo|
+392|FC Juárez|squad|4|DF|MEX|Alejandro Mayorga|
+392|FC Juárez|squad|5|MF|MEX|Denzell García|
+392|FC Juárez|squad|6|MF|ESP|Monchu|on loan from Aris
+392|FC Juárez|squad|7|MF|MEX|Raymundo Fulgencio|
+392|FC Juárez|squad|8|MF|BRA|Guilherme Castilho|
+392|FC Juárez|squad|9|FW|BRA|Madson|
+392|FC Juárez|squad|10|MF|MEX|Jairo Torres|
+392|FC Juárez|squad|11|MF|PAN|José Luis Rodríguez|
+392|FC Juárez|squad|13|MF|BRA|Rodrigo Dourado|on loan from América
+392|FC Juárez|squad|14|DF|MEX|Éder López|
+392|FC Juárez|squad|15|MF|PAR|Lucas Romero|injured
+392|FC Juárez|squad|16|MF|MEX|Juan Sigala|on loan from Pachuca
+392|FC Juárez|squad|17|FW|MEX|Luca Martínez|on loan from Godoy Cruz
+392|FC Juárez|squad|19|FW|COL|Óscar Estupiñán|
+392|FC Juárez|squad|20|DF|MEX|Javier Aquino|
+392|FC Juárez|squad|21|MF|POR|Ricardinho|
+392|FC Juárez|squad|23|DF|MEX|Haret Ortega|
+392|FC Juárez|squad|24|GK|USA|Benny Díaz|
+392|FC Juárez|squad|25|MF|MEX|Said Godínez|
+392|FC Juárez|squad|26|DF|CHI|Daniel Piña|
+392|FC Juárez|squad|27|GK|ESP|Guillermo Ruiz|
+392|FC Juárez|squad|29|FW|MEX|Ettson Ayón|on loan from León
+392|FC Juárez|squad|33|DF|MEX|Francisco Nevárez|
+392|FC Juárez|squad|35|DF|MEX|Bryan Romero|
+392|FC Juárez|loaned_out||MF|COL|Homer Martínez|Deportes Tolima
+392|FC Juárez|loaned_out||MF|MEX|Rodolfo Pizarro|Pachuca
+392|FC Juárez|loaned_out||MF|COL|Diego Valoyes|Talleres
+392|FC Juárez|loaned_out||FW|MEX|César Sosa|UAT
+124|Feyenoord Rotterdam|squad|1|GK|GER|Tjark Ernst|src=season
+124|Feyenoord Rotterdam|squad|2|DF|NED|Bart Nieuwkoop|src=season
+124|Feyenoord Rotterdam|squad|3|DF|NED|Thomas Beelen|src=season
+124|Feyenoord Rotterdam|squad|4|DF|JPN|Tsuyoshi Watanabe|src=season
+124|Feyenoord Rotterdam|squad|5|DF|NED|Gijs Smal|src=season
+124|Feyenoord Rotterdam|squad|6|DF|NED|Jeremiah St. Juste|src=season
+124|Feyenoord Rotterdam|squad|7|MF|POL|Jakub Moder|src=season
+124|Feyenoord Rotterdam|squad|8|MF|NED|Gjivai Zechiël|src=season
+124|Feyenoord Rotterdam|squad|10|MF|NED|Luciano Valente|captain; src=season
+124|Feyenoord Rotterdam|squad|11|FW|POR|Gonçalo Borges|src=season
+124|Feyenoord Rotterdam|squad|14|MF|NED|Sem Steijn|src=season
+124|Feyenoord Rotterdam|squad|15|DF|AUS|Jordan Bos|src=season
+124|Feyenoord Rotterdam|squad|16|DF|ESP|Javi López|on loan from Real Sociedad; src=season
+124|Feyenoord Rotterdam|squad|17|FW|ENG|Reiss Nelson|src=season
+124|Feyenoord Rotterdam|squad|19|FW|ESP|Nacho Ferri|src=season
+124|Feyenoord Rotterdam|squad|20|DF|NED|Mats Deijl|src=season
+124|Feyenoord Rotterdam|squad|22|MF|NED|Tobias van den Elshout|src=season
+124|Feyenoord Rotterdam|squad|23|FW|ALG|Anis Hadj Moussa|src=season
+124|Feyenoord Rotterdam|squad|24|MF|NED|Thijs Kraaijeveld|src=season
+124|Feyenoord Rotterdam|squad|26|DF|NED|Givairo Read|src=season
+124|Feyenoord Rotterdam|squad|27|FW|MLI|Gaoussou Diarra|src=season
+124|Feyenoord Rotterdam|squad|28|MF|MAR|Oussama Targhalline|src=season
+124|Feyenoord Rotterdam|squad|32|DF|NED|Tijme Wessels|src=season
+124|Feyenoord Rotterdam|squad|33|GK|GER|Florian Kastenmeier|src=season
+124|Feyenoord Rotterdam|squad|34|MF|BEL|Charles Vanhoutte|src=season
+124|Feyenoord Rotterdam|squad|35|DF|ESP|Mika Mármol|src=season
+124|Feyenoord Rotterdam|squad|36|FW|NED|Jivayno Zinhagel|src=season
+124|Feyenoord Rotterdam|squad|37|GK|NED|Manou Berger|src=season
+124|Feyenoord Rotterdam|squad|39|GK|IRL|Liam Bossin|src=season
+124|Feyenoord Rotterdam|squad|49|FW|NED|Shaqueel van Persie|src=season
+124|Feyenoord Rotterdam|squad|57|FW|NED|Jerayno Schaken|not official first-team member; src=season
+124|Feyenoord Rotterdam|loaned_out|–|FW|NED|Jaden Slory|Willem II; src=season
+124|Feyenoord Rotterdam|loaned_out|–|DF|NED|Jan Plug|Excelsior Rotterdam; src=season
+124|Feyenoord Rotterdam|loaned_out|–|FW|NED|Aymen Sliti|Excelsior Rotterdam; src=season
+142|Fortuna Sittardia Combinatie|squad|1|GK|NED|Luuk Koopmans|
+142|Fortuna Sittardia Combinatie|squad|2|DF|BEL|Siebe Wylin|
+142|Fortuna Sittardia Combinatie|squad|3|DF|BRA|Rodrigo Guth|on loan from Talleres
+142|Fortuna Sittardia Combinatie|squad|5|MF|MAR|Yassin Oukili|
+142|Fortuna Sittardia Combinatie|squad|6|DF|NED|Syb van Ottele|
+142|Fortuna Sittardia Combinatie|squad|7|FW|SWE|Kristoffer Peterson|
+142|Fortuna Sittardia Combinatie|squad|8|MF|NED|Jasper Dahlhaus|
+142|Fortuna Sittardia Combinatie|squad|9|FW|BEL|Anthony Descotte|on loan from Charleroi
+142|Fortuna Sittardia Combinatie|squad|10|FW|IDN|Ole Romeny|on loan from Oxford United
+142|Fortuna Sittardia Combinatie|squad|12|DF|POR|Ivo Pinto|captain
+142|Fortuna Sittardia Combinatie|squad|14|MF|NED|Sven Simons|
+142|Fortuna Sittardia Combinatie|squad|15|DF|NED|Nick de Groot|
+142|Fortuna Sittardia Combinatie|squad|20|MF|FRA|Édouard Michut|
+142|Fortuna Sittardia Combinatie|squad|22|FW|NED|Shiloh 't Zand|on loan from Feyenoord
+142|Fortuna Sittardia Combinatie|squad|23|MF|NED|Philip Brittijn|
+142|Fortuna Sittardia Combinatie|squad|25|FW|NED|Lequincio Zeefuik|on loan from AZ Alkmaar
+142|Fortuna Sittardia Combinatie|squad|28|DF|IDN|Justin Hubner|
+142|Fortuna Sittardia Combinatie|squad|31|GK|NED|Mattijs Branderhorst|
+142|Fortuna Sittardia Combinatie|squad|33|GK|GER|Kaylen|
+142|Fortuna Sittardia Combinatie|squad|38|MF|BEL|Moussa Gbemou|
+142|Fortuna Sittardia Combinatie|squad|44|DF|ESP|Iván Márquez|
+142|Fortuna Sittardia Combinatie|squad|52|MF|MAR|Mohamed Ihattaren|
+150|NEC Nijmegen|squad|1|GK|ESP|Gonzalo Crettaz|
+150|NEC Nijmegen|squad|2|DF|FRA|Brayann Pereira|
+150|NEC Nijmegen|squad|3|DF|NED|Philippe Sandler|
+150|NEC Nijmegen|squad|4|DF|NED|Perr Schuurs|
+150|NEC Nijmegen|squad|5|DF|NED|Thomas Ouwejan|
+150|NEC Nijmegen|squad|6|MF|CRO|Darko Nejašmić|
+150|NEC Nijmegen|squad|7|FW|TUR|Emre Mor|
+150|NEC Nijmegen|squad|8|MF|NOR|Isak Hansen-Aarøen|
+150|NEC Nijmegen|squad|9|MF|SUR|Tjaronn Chery|
+150|NEC Nijmegen|squad|10|FW|SRB|Dušan Tadić|
+150|NEC Nijmegen|squad|11|MF|ISL|Willum Þór Willumsson|
+150|NEC Nijmegen|squad|12|GK|AUT|Nikolas Polster|
+150|NEC Nijmegen|squad|14|FW|NED|Kaj Sierhuis|
+150|NEC Nijmegen|squad|17|DF|NED|Bram Nuytinck|
+150|NEC Nijmegen|squad|18|FW|JPN|Kōki Ogawa|
+150|NEC Nijmegen|squad|19|FW|MAR|Adam Tahaui|
+150|NEC Nijmegen|squad|20|MF|FRA|Noé Lebreton|
+150|NEC Nijmegen|squad|21|DF|DEN|Tobias Storm|
+150|NEC Nijmegen|squad|24|DF|CUW|Deveron Fonville|
+150|NEC Nijmegen|squad|25|FW|NED|Sami Ouaissa|
+150|NEC Nijmegen|squad|26|MF|NED|Sam de Laat|
+150|NEC Nijmegen|squad|30|FW|NED|Bryan Linssen|
+150|NEC Nijmegen|squad|32|MF|NED|Vito van Crooij|
+150|NEC Nijmegen|squad|34|FW|NED|Kevin Kers|
+150|NEC Nijmegen|squad|35|MF|CPV|Jamiro Monteiro|
+150|NEC Nijmegen|squad|36|GK|NED|Freek Entius|
+150|NEC Nijmegen|squad|37|MF|NED|Merijn van de Wiel|
+150|NEC Nijmegen|squad|66|DF|GER|Almugera Kabar|on loan from Borussia Dortmund
+150|NEC Nijmegen|squad|99|FW|DEN|Clement Bischoff|on loan from Red Bull Salzburg
+150|NEC Nijmegen|squad||MF|GER|Dennis Geiger|
+172|Excelsior Rotterdam|squad|1|GK|NED|Stijn van Gassel|
+172|Excelsior Rotterdam|squad|2|DF|GER|Eric da Silva Moreira|on loan from Nottingham Forest
+172|Excelsior Rotterdam|squad|3|DF|NED|Rick Meissen|
+172|Excelsior Rotterdam|squad|4|DF|SWE|Casper Widell|
+172|Excelsior Rotterdam|squad|6|MF|NED|Daniël van Vianen|
+172|Excelsior Rotterdam|squad|7|FW|NED|Aymen Sliti|on loan from Feyenoord
+172|Excelsior Rotterdam|squad|8|MF|GEO|Irakli Yegoian|
+172|Excelsior Rotterdam|squad|9|FW|ESP|Mario Domínguez|on loan from Valencia
+172|Excelsior Rotterdam|squad|10|MF|NED|Noah Naujoks|
+172|Excelsior Rotterdam|squad|11|MF|IRN|Alireza Jahanbakhsh|
+172|Excelsior Rotterdam|squad|12|DF|AUS|Kasey Bos|on loan from Mainz 05
+172|Excelsior Rotterdam|squad|14|DF|NED|Jan Plug|on loan from Feyenoord
+172|Excelsior Rotterdam|squad|15|DF|NED|Simon Janssen|
+172|Excelsior Rotterdam|squad|16|GK|GNB|Celton Biai|
+172|Excelsior Rotterdam|squad|18|MF|AUT|Valentin Sulzbacher|
+172|Excelsior Rotterdam|squad|19|FW|NED|David Garden|
+172|Excelsior Rotterdam|squad|20|MF|NED|Lennard Hartjes|
+172|Excelsior Rotterdam|squad|21|FW|CPV|Ilano Silva Timas|
+172|Excelsior Rotterdam|squad|22|DF|GER|Osman Turay|
+172|Excelsior Rotterdam|squad|23|FW|SWE|Yacqub Finey|
+172|Excelsior Rotterdam|squad|24|DF|NED|Guilliano Cairo|
+172|Excelsior Rotterdam|squad|25|DF|JAM|Marlon van de Wetering|
+172|Excelsior Rotterdam|squad|28|FW|NED|Nesto Groen|
+172|Excelsior Rotterdam|squad|30|FW|ISL|Ágúst Orri Þorsteinsson|
+172|Excelsior Rotterdam|squad|40|GK|NED|Tijmen Holla|
+172|Excelsior Rotterdam|loaned_out||DF|NED|Stan Henderikx|Dordrecht
+172|Excelsior Rotterdam|loaned_out||MF|USA|Zach Booth|Real Salt Lake
+172|Excelsior Rotterdam|loaned_out||MF|NED|Noa el Hamdaoui|MVV
+172|Excelsior Rotterdam|loaned_out||FW|NED|Jerolldino Bergraaf|Jong AZ
+208|SC Telstar|squad|1|GK|NED|Ronald Koeman Jr.|
+208|SC Telstar|squad|2|DF|NED|Jeff Hardeveld|captain
+208|SC Telstar|squad|3|DF|NED|Gerald Alders|on loan from Jong Ajax
+208|SC Telstar|squad|4|DF|FRA|Abdelnour Soualhia|on loan from AZ
+208|SC Telstar|squad|5|DF|NED|Prince Aning|
+208|SC Telstar|squad|6|MF|CUW|Isaiah Ahmed|
+208|SC Telstar|squad|7|FW|POR|Rui Mendes|
+208|SC Telstar|squad|8|FW|TUR|Emirhan Demircan|on loan from Utrecht
+208|SC Telstar|squad|9|FW|NED|Jelani Seedorf|
+208|SC Telstar|squad|10|MF|NED|Tyrone Owusu|
+208|SC Telstar|squad|11|FW|ISL|Nökkvi Þeyr Þórisson|on loan from Sparta Rotterdam
+208|SC Telstar|squad|13|GK|NED|Finn Mulder|
+208|SC Telstar|squad|14|MF|NED|Harrie Kuster|
+208|SC Telstar|squad|15|DF|NED|Nigel Ogidi Nwankwo|
+208|SC Telstar|squad|16|DF|NED|Sem Valk|
+208|SC Telstar|squad|17|MF|NED|Nils Rossen|
+208|SC Telstar|squad|18|DF|NED|Gabi Caschili|
+208|SC Telstar|squad|19|MF|NED|Fabiano Rust|
+208|SC Telstar|squad|20|GK|NED|Daan Reiziger|
+208|SC Telstar|squad|21|FW|NED|Fofin Turay|
+208|SC Telstar|squad|23|MF|NED|Noach Shenkman|
+208|SC Telstar|squad|27|FW|NED|Patrick Brouwer|
+208|SC Telstar|squad|28|DF|SUR|Rojendro Oudsten|
+208|SC Telstar|squad|42|FW|CUW|Ar'jany Martha|on loan from Rotherham United
+208|SC Telstar|squad|43|DF|BEL|Marvin Peersman|
+209|Go Ahead Eagles|squad|1|GK|NOR|Kjetil Haug|
+209|Go Ahead Eagles|squad|2|DF|ISL|Alfons Sampsted|
+209|Go Ahead Eagles|squad|3|DF|GER|Gerrit Nauber|
+209|Go Ahead Eagles|squad|4|DF|NED|Joris Kramer|
+209|Go Ahead Eagles|squad|5|DF|IDN|Dean James|
+209|Go Ahead Eagles|squad|8|MF|NED|Evert Linthorst|
+209|Go Ahead Eagles|squad|9|FW|ISL|Stefán Ingi Sigurðarson|
+209|Go Ahead Eagles|squad|10|FW|DEN|Søren Tengstedt|
+209|Go Ahead Eagles|squad|11|FW|NOR|Oskar Sivertsen|
+209|Go Ahead Eagles|squad|15|MF|NED|Robbin Weijenberg|
+209|Go Ahead Eagles|squad|16|FW|SWE|Victor Edvardsen|
+209|Go Ahead Eagles|squad|17|MF|BEL|Mathis Suray|
+209|Go Ahead Eagles|squad|18|FW|SUR|Richonell Margaret|
+209|Go Ahead Eagles|squad|20|DF|NED|Eus Waayers|
+209|Go Ahead Eagles|squad|21|MF|NED|Melle Meulensteen|
+209|Go Ahead Eagles|squad|22|GK|NED|Nick Marsman|
+209|Go Ahead Eagles|squad|23|FW|BEL|Thibo Baeten|
+209|Go Ahead Eagles|squad|25|DF|NED|Giovanni van Zwam|
+209|Go Ahead Eagles|squad|26|DF|NED|Julius Dirksen|
+209|Go Ahead Eagles|squad|27|DF|FIN|Tomas Galvez|
+209|Go Ahead Eagles|squad|28|DF|NED|Pim Saathof|
+209|Go Ahead Eagles|squad|29|FW|NOR|Erik Flataker|
+209|Go Ahead Eagles|squad|32|FW|GHA|Ofosu Boakye|
+209|Go Ahead Eagles|squad|33|GK|NED|Nando Verdoni|
+209|Go Ahead Eagles|squad|34|MF|NED|Yassir Salah Rahmouni|
+209|Go Ahead Eagles|squad||DF|CRO|Tino Jukić|
+362|Abha Club|squad|3|DF|CUW|Juriën Gaari|
+362|Abha Club|squad|4|MF|KSA|Basil Al-Sayyali|on loan from Al-Shabab
+362|Abha Club|squad|5|DF|KSA|Muayad Bunayan|
+362|Abha Club|squad|6|MF|KSA|Faisal Al-Subiani|on loan from Al-Shabab
+362|Abha Club|squad|7|MF|KSA|Firas Al-Ghamdi|
+362|Abha Club|squad|8|MF|KSA|Nasser Al-Daajani|
+362|Abha Club|squad|9|FW|FRA|Kamil Boumedmed|
+362|Abha Club|squad|10|MF|FRA|Nabil Fekir|
+362|Abha Club|squad|11|FW|FRA|Alimami Gory|
+362|Abha Club|squad|12|DF|KSA|Khaled Al-Shamrani|on loan from Al-Ula
+362|Abha Club|squad|14|FW|CMR|Kévin Nkoudou|on loan from Diriyah
+362|Abha Club|squad|16|GK|GUF|Donovan Léon|
+362|Abha Club|squad|17|MF|KSA|Abdulkarim Darisi|on loan from Al-Hilal
+362|Abha Club|squad|18|MF|KSA|Mohammed Al Hamsal|
+362|Abha Club|squad|19|DF|KSA|Abdullah Al-Fahad|
+362|Abha Club|squad|20|FW|KSA|Keshim Al-Qahtani|on loan from Al-Taawoun
+362|Abha Club|squad|21|GK|KSA|Abdulrahman Al-Bouq|
+362|Abha Club|squad|22|DF|SEN|Abdou Diallo|
+362|Abha Club|squad|23|DF|KSA|Mohammed Al-Dossari|
+362|Abha Club|squad|26|GK|KSA|Mustafa Malayekah|
+362|Abha Club|squad|28|MF|KSA|Bader Al-Mutairi|
+362|Abha Club|squad|29|MF|KSA|Majed Dawran|
+362|Abha Club|squad|32|MF|FRA|Loreintz Rosier|
+362|Abha Club|squad|37|DF|KSA|Abdulbassit Hindi|
+362|Abha Club|squad|39|MF|KSA|Mohammed Al-Zaid|
+362|Abha Club|squad|44|FW|BEL|Michy Batshuayi|
+362|Abha Club|squad|55|MF|ARG|Mateo Borrell|on loan from Al-Ittihad
+362|Abha Club|squad|66|DF|KSA|Nawaf Al-Ghulaimish|
+362|Abha Club|squad|80|DF|KSA|Safwan Al-Johani|
+362|Abha Club|squad|95|MF|KSA|Ali Mubarki|
+362|Abha Club|loaned_out||DF|KSA|Yasser Yaqoub|Al-Ula
+364|Al Diriyah|squad|2|DF|KSA|Abdulaziz Al-Faraj|
+364|Al Diriyah|squad|4|DF|KSA|Saeed Al-Rubaie|
+364|Al Diriyah|squad|5|MF|SEN|Idrissa Gueye|
+364|Al Diriyah|squad|6|MF|KSA|Sultan Al-Farhan|
+364|Al Diriyah|squad|7|MF|CMR|Georges-Kévin Nkoudou|
+364|Al Diriyah|squad|8|MF|KSA|Ziyad Al-Qahtani|
+364|Al Diriyah|squad|9|FW|FRA|Gaëtan Laborde|
+364|Al Diriyah|squad|10|FW|ALG|Adil Boulbina|
+364|Al Diriyah|squad|11|MF|KSA|Hattan Bahebri|
+364|Al Diriyah|squad|12|DF|KSA|Taher Wadi|
+364|Al Diriyah|squad|14|MF|ESP|Óscar Rodríguez|
+364|Al Diriyah|squad|15|DF|GAM|Omar Colley|
+364|Al Diriyah|squad|16|DF|KSA|Hussain Al-Sibyani|on loan from Al-Shabab
+364|Al Diriyah|squad|17|MF|SEN|Clayton Diandy|
+364|Al Diriyah|squad|19|DF|ALB|Berat Djimsiti|
+364|Al Diriyah|squad|20|MF|FRA|Enzo Millot|on loan from Al-Ahli
+364|Al Diriyah|squad|21|DF|KSA|Mohamed Hameran|
+364|Al Diriyah|squad|22|GK|BIH|Nikola Vasilj|
+364|Al Diriyah|squad|27|FW|KSA|Saleh Al-Rahmani|
+364|Al Diriyah|squad|29|FW|URU|Darwin Núñez|on loan from Al Hilal
+364|Al Diriyah|squad|32|MF|KSA|Abdullah Al-Zaid|
+364|Al Diriyah|squad|33|GK|KSA|Waleed Abdullah|
+364|Al Diriyah|squad|52|MF|KSA|Hussain Al-Qahtani|
+364|Al Diriyah|squad|75|FW|KSA|Meshari Al-Nemer|
+364|Al Diriyah|squad|78|DF|KSA|Khalid Asiri|
+364|Al Diriyah|squad|87|DF|KSA|Qassem Lajami|
+364|Al Diriyah|squad|88|MF|KSA|Abdulelah Al-Malki|
+364|Al Diriyah|squad|97|GK|KSA|Amin Bukhari|
+364|Al Diriyah|squad|99|DF|COD|Chancel Mbemba|
+364|Al Diriyah|squad||DF|KSA|Abdulelah Al-Jaafari|
+364|Al Diriyah|loaned_out|82|DF|KSA|Hussain Al-Zarie|Al-Faisaly
+350|Willem II|squad|1|GK|FRA|Thomas Didillon-Hödl|STALE asof=2026-02-03
+350|Willem II|squad|2|DF|BEL|Alessandro Ciranni|STALE asof=2026-02-03
+350|Willem II|squad|3|DF|NED|Finn Stam|on loan from AZ; STALE asof=2026-02-03
+350|Willem II|squad|4|DF|NED|Justin Hoogma|2nd captain; STALE asof=2026-02-03
+350|Willem II|squad|6|MF|NED|Gijs Besselink|on loan from FC Twente; STALE asof=2026-02-03
+350|Willem II|squad|7|FW|NED|Nick Doodeman|STALE asof=2026-02-03
+350|Willem II|squad|8|MF|NED|Calvin Twigt|on loan from Go Ahead Eagles; STALE asof=2026-02-03
+350|Willem II|squad|9|FW|NED|Devin Haen|STALE asof=2026-02-03
+350|Willem II|squad|10|MF|NED|Jari Schuurman|captain; STALE asof=2026-02-03
+350|Willem II|squad|11|FW|SWE|Armin Ćulum|STALE asof=2026-02-03
+350|Willem II|squad|14|DF|NED|Jens Mathijsen|STALE asof=2026-02-03
+350|Willem II|squad|15|DF|MAR|Amine Et-Taïbi|STALE asof=2026-02-03
+350|Willem II|squad|17|FW|GER|Samuel Bamba|on loan from VfL Bochum; STALE asof=2026-02-03
+350|Willem II|squad|18|MF|NED|Anass Zarrouk|STALE asof=2026-02-03
+350|Willem II|squad|19|MF|NED|Uriël van Aalst|STALE asof=2026-02-03
+350|Willem II|squad|20|MF|NED|Mounir El Allouchi|STALE asof=2026-02-03
+350|Willem II|squad|21|GK|NED|Wouter van der Steen|STALE asof=2026-02-03
+350|Willem II|squad|22|MF|NED|Per van Loon|STALE asof=2026-02-03
+350|Willem II|squad|23|FW|DEN|Lasse Abildgaard|STALE asof=2026-02-03
+350|Willem II|squad|24|DF|IDN|Nathan Tjoe-A-On|STALE asof=2026-02-03
+350|Willem II|squad|27|MF|NED|Dani Mathieu|STALE asof=2026-02-03
+350|Willem II|squad|28|FW|NED|Thomas Verheydt|STALE asof=2026-02-03
+350|Willem II|squad|30|DF|AUT|Raffael Behounek|STALE asof=2026-02-03
+350|Willem II|squad|31|GK|NED|Karst de Leeuw|STALE asof=2026-02-03
+350|Willem II|squad|34|MF|NED|Amine Lachkar|STALE asof=2026-02-03
+350|Willem II|squad|43|DF|NED|Feliciano de Ruijter|STALE asof=2026-02-03
+350|Willem II|squad|45|FW|NED|Pieter van Maarschalkerwaard|STALE asof=2026-02-03
+350|Willem II|squad|47|FW|NED|Siegert Baartmans|STALE asof=2026-02-03
+350|Willem II|loaned_out||MF|BEL|Boris Lambert|Kortrijk; STALE asof=2026-02-03
+350|Willem II|loaned_out||FW|GER|Emilio Kehrer|FC Ingolstadt; STALE asof=2026-02-03
+366|Al Faisaly|squad|1|GK|ESP|Fernando Pacheco|
+366|Al Faisaly|squad|2|DF|KSA|Yassin Barnawi|
+366|Al Faisaly|squad|3|DF|KSA|Khaled Al-Harbi|
+366|Al Faisaly|squad|4|DF|SEN|Abdoulaye Seck|
+366|Al Faisaly|squad|5|DF|BRA|Andrei Girotto|
+366|Al Faisaly|squad|6|MF|KSA|Eid Al-Muwallad|on loan from Al-Ahli
+366|Al Faisaly|squad|7|FW|KSA|Yousef Al-Shammari|
+366|Al Faisaly|squad|8|MF|BRA|Flávio Medeiros|
+366|Al Faisaly|squad|10|MF|COD|Théo Bongonda|
+366|Al Faisaly|squad|11|MF|GAB|André-Jordy Ella|
+366|Al Faisaly|squad|13|FW|CMR|Christian Bassogog|
+366|Al Faisaly|squad|14|MF|KSA|Abdullah Al-Mogren|
+366|Al Faisaly|squad|18|MF|KSA|Mohammed Al-Oqil|
+366|Al Faisaly|squad|19|FW|GNB|Alexandre Mendy|
+366|Al Faisaly|squad|20|MF|ESP|Jaime Seoane|
+366|Al Faisaly|squad|21|GK|KSA|Abdulelah Nassief|
+366|Al Faisaly|squad|24|MF|KSA|Abdulaziz Al-Bishi|
+366|Al Faisaly|squad|25|DF|KSA|Muaiad Saleem|
+366|Al Faisaly|squad|26|GK|KSA|Mohammed Al-Hassawi|
+366|Al Faisaly|squad|28|FW|NGA|Dayo Joyce|
+366|Al Faisaly|squad|30|DF|KSA|Meshari Shetaimi|
+366|Al Faisaly|squad|37|MF|KSA|Wael Kedan|
+366|Al Faisaly|squad|50|DF|KSA|Mohammed Al-Shanqiti|
+366|Al Faisaly|squad|70|DF|KSA|Mohammed Jahfali|
+366|Al Faisaly|squad|71|FW|KSA|Ahmed Abdu Jaber|
+366|Al Faisaly|squad|77|MF|KSA|Abdulrahman Al-Shareef|
+366|Al Faisaly|squad|82|DF|KSA|Hussain Al-Zarie|on loan from Al-Diriyah
+366|Al Faisaly|squad|87|DF|KSA|Abdullah Bin Subayt|
+366|Al Faisaly|squad|88|DF|KSA|Saoud Haddad|
+366|Al Faisaly|squad|95|MF|KSA|Ayman Fallatah|on loan from Al-Ahli
+366|Al Faisaly|loaned_out|22|DF|KSA|Mishal Haddad|Al-Jandal
+366|Al Faisaly|loaned_out|44|DF|KSA|Fawaz Rabie|Al-Anwar
+366|Al Faisaly|loaned_out|91|DF|KSA|Rayan Fallatah|Jeddah
+366|Al Faisaly|loaned_out|99|DF|KSA|Ahmed Al Muhaimeed|Al-Jabalain
+366|Al Faisaly|loaned_out||DF|KSA|Abdullah Al-Rashidi|Al-Anwar
+366|Al Faisaly|loaned_out||MF|KSA|Malik Hamza|Al-Saqer
+366|Al Faisaly|loaned_out||MF|KSA|Ahmed Al-Badah|Al-Najma
+367|Al Fateh|squad|1|GK|CRO|Adrian Šemper|
+367|Al Fateh|squad|3|DF|TOG|Kennedy Boateng|
+367|Al Fateh|squad|4|DF|KSA|Ziyad Al-Jari|
+367|Al Fateh|squad|5|DF|KSA|Faisal Darisi|
+367|Al Fateh|squad|10|MF|SVK|Lukáš Haraslín|
+367|Al Fateh|squad|11|FW|MAR|Mourad Batna|
+367|Al Fateh|squad|12|DF|KSA|Hussain Qassem|
+367|Al Fateh|squad|15|DF|KSA|Saeed Baattiah|
+367|Al Fateh|squad|17|DF|MAR|Marwane Saâdane|captain
+367|Al Fateh|squad|21|FW|CPV|Jefferson Ramos|
+367|Al Fateh|squad|27|FW|KSA|Fahad Al-Zubaidi|
+367|Al Fateh|squad|29|FW|KSA|Ali Al-Masoud|
+367|Al Fateh|squad|31|GK|KSA|Habib Al-Wotayan|
+367|Al Fateh|squad|33|MF|COM|Zaydou Youssouf|
+367|Al Fateh|squad|49|FW|KSA|Saad Al-Sharfa|
+367|Al Fateh|squad|80|MF|KSA|Faisal Al-Abdulwahed|
+367|Al Fateh|squad|87|DF|KSA|Sattam Al-Tumbukti|
+367|Al Fateh|squad|88|MF|KSA|Othman Al-Othman|
+367|Al Fateh|squad|99|FW|BRA|Matheus Machado|
+367|Al Fateh|squad||GK|KSA|Waleed Al-Enezi|
+367|Al Fateh|squad||DF|NED|Robin Kelder|
+367|Al Fateh|squad||DF|KSA|Abdulrahman Al-Khaibari|
+367|Al Fateh|squad||DF|KSA|Abdulelah Al-Khaibari|on loan from Al-Ahli
+367|Al Fateh|squad||MF|ROU|Mihai Lixandru|
+365|Al Ettifaq|squad|1|GK|SVK|Marek Rodák|undated
+365|Al Ettifaq|squad|3|DF|KSA|Abdullah Madu|undated
+365|Al Ettifaq|squad|4|DF|SCO|Jack Hendry|undated
+365|Al Ettifaq|squad|5|DF|BRA|Pedro Henrique|undated
+365|Al Ettifaq|squad|7|MF|KSA|Khalid Al-Ghannam|undated
+365|Al Ettifaq|squad|9|FW|FRA|Moussa Dembélé|undated
+365|Al Ettifaq|squad|10|MF|ESP|Álvaro Medrán|undated
+365|Al Ettifaq|squad|11|MF|SVK|Ondrej Duda|undated
+365|Al Ettifaq|squad|13|DF|KSA|Mishal Al-Alaeli|undated
+365|Al Ettifaq|squad|14|DF|KSA|Turki Al-Madani|undated
+365|Al Ettifaq|squad|15|DF|KSA|Abdullah Al-Bishi|undated
+365|Al Ettifaq|squad|17|FW|SWE|Jordan Larsson|undated
+365|Al Ettifaq|squad|20|MF|KSA|Abdulhakim Maghfori|undated
+365|Al Ettifaq|squad|22|GK|KSA|Abdulbasit Hawsawi|undated
+365|Al Ettifaq|squad|23|GK|KSA|Ahmed Al-Rehaili|undated
+365|Al Ettifaq|squad|24|FW|KSA|Jalal Al-Salem|undated
+365|Al Ettifaq|squad|26|MF|KSA|Riyadh Sharahili|on loan from Neom; undated
+365|Al Ettifaq|squad|27|MF|KSA|Hassan Al-Musallam|undated
+365|Al Ettifaq|squad|29|MF|KSA|Ziyad Al-Ghamdi|undated
+365|Al Ettifaq|squad|33|DF|KSA|Madallah Al-Olayan|undated
+365|Al Ettifaq|squad|42|MF|CIV|Abdoulaye Kanté|undated
+365|Al Ettifaq|squad|43|MF|KOS|Bersant Celina|undated
+365|Al Ettifaq|squad|58|MF|KSA|Yasser Al-Shammari|undated
+365|Al Ettifaq|squad|60|MF|KSA|Abdulrahman Nabza|undated
+365|Al Ettifaq|squad|61|DF|KSA|Radhi Al-Otaibi|undated
+365|Al Ettifaq|squad|70|DF|KSA|Abdullah Al-Khateeb|undated
+365|Al Ettifaq|squad|71|FW|SRB|Matija Gluščević|undated
+365|Al Ettifaq|squad|77|MF|KSA|Abdulelah Hawsawi|on loan from Al-Ittihad; undated
+365|Al Ettifaq|squad|78|DF|KSA|Marzouq Tambakti|undated
+365|Al Ettifaq|squad|80|FW|FRA|Rayane Messi|on loan from Strasbourg; undated
+365|Al Ettifaq|squad|87|DF|KSA|Meshal Al-Sebyani|undated
+365|Al Ettifaq|squad|88|FW|KSA|Ali Al-Eisa|undated
+365|Al Ettifaq|squad|90|FW|KSA|Talal Haji|on loan from Al-Ittihad; undated
+365|Al Ettifaq|squad|92|GK|KSA|Turki Ba Al-Jawsh|undated
+365|Al Ettifaq|squad|99|FW|SDN|Sultan Harun|on loan from Al-Qadsiah; undated
+365|Al Ettifaq|loaned_out|18|MF|POR|João Costa|Cruzeiro; undated
+365|Al Ettifaq|loaned_out||MF|RSA|Mohau Nkota|Orlando Pirates; undated
+371|Al Ittihad|squad|1|GK|SRB|Predrag Rajković|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|2|MF|POR|Danilo Pereira|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|3|DF|CMR|Stephane Keller|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|4|DF|SRB|Jan-Carlo Simić|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|6|DF|KSA|Saad Al-Mousa|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|7|FW|POR|Roger Fernandes|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|8|MF|KSA|Mukhtar Ali|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|9|FW|NGA|George Ilenikhena|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|10|MF|ALG|Houssem Aouar|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|11|FW|KSA|Saleh Al-Shehri|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|13|DF|KSA|Muhannad Al-Shanqeeti|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|15|DF|KSA|Hassan Kadesh|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|17|MF|MLI|Mahamadou Doumbia|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|19|FW|FRA|Moussa Diaby|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|20|DF|KSA|Ahmed Sharahili|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|21|FW|MAR|Youssef En-Nesyri|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|22|MF|KSA|Marwan Al-Sahafi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|25|DF|KSA|Faris Abdi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|27|MF|KSA|Ahmed Al-Ghamdi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|28|MF|VEN|Bryant Ortega|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|29|MF|KSA|Farhah Al-Shamrani|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|30|MF|SEN|Dion Lopy|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|32|DF|KSA|Ahmed Al-Julaydan|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|34|FW|NED|Steven Bergwijn|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|37|DF|KSA|Fawaz Al-Sqoor|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|42|DF|KSA|Muath Faqeehi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|50|GK|KSA|Mohammed Al-Absi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|51|DF|ARG|Isaías Rodríguez|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|55|MF|ARG|Mateo Borrell|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|60|MF|KSA|Rakan Kaabi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|66|DF|KSA|Mohammed Barnawi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|77|MF|KSA|Abdulelah Hawsawi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|80|MF|KSA|Hamed Al-Ghamdi|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|88|GK|KSA|Osama Al-Mermesh|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad|90|FW|KSA|Talal Haji|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|squad||MF|ESP|Unai Hernández|undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|loaned_out|12|DF|ALB|Mario Mitaj|Genoa; undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|loaned_out|16|MF|KSA|Faisal Al-Ghamdi|Neom; undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+371|Al Ittihad|loaned_out|47|GK|KSA|Hamed Al-Shanqiti|Al-Kholood; undated-likely stale (Borrell/Hawsawi/Haji listed as loaned out by other clubs' 2026 pages)
+372|Al Khaleej|squad|3|DF|KSA|Mohammed Al-Khabrani|STALE asof=2025-08-04
+372|Al Khaleej|squad|5|DF|POR|Pedro Rebocho|STALE asof=2025-08-04
+372|Al Khaleej|squad|7|FW|NOR|Joshua King|STALE asof=2025-08-04
+372|Al Khaleej|squad|8|MF|GAM|Abdoulie Mboge|STALE asof=2025-08-04
+372|Al Khaleej|squad|12|MF|KSA|Majed Kanabah|STALE asof=2025-08-04
+372|Al Khaleej|squad|13|DF|KSA|Ahmed Assiri|STALE asof=2025-08-04
+372|Al Khaleej|squad|14|DF|KSA|Ali Al-Shaafi|STALE asof=2025-08-04
+372|Al Khaleej|squad|15|MF|KSA|Mansour Hamzi|STALE asof=2025-08-04
+372|Al Khaleej|squad|16|MF|KSA|Bader Munshi|STALE asof=2025-08-04
+372|Al Khaleej|squad|17|DF|KSA|Abdullah Al-Hafith|STALE asof=2025-08-04
+372|Al Khaleej|squad|19|MF|KSA|Mohammed Al-Abdullah|STALE asof=2025-08-04
+372|Al Khaleej|squad|20|MF|KSA|Hussain Al-Eisa|STALE asof=2025-08-04
+372|Al Khaleej|squad|24|MF|KSA|Ali Abdulrouf|STALE asof=2025-08-04
+372|Al Khaleej|squad|28|DF|KSA|Hamad Al-Jayzani|STALE asof=2025-08-04
+372|Al Khaleej|squad|39|DF|KSA|Saeed Al Hamsal|STALE asof=2025-08-04
+372|Al Khaleej|squad|49|GK|LUX|Anthony Moris|STALE asof=2025-08-04
+372|Al Khaleej|squad|71|FW|KSA|Hussain Al-Sultan|STALE asof=2025-08-04
+372|Al Khaleej|squad|93|MF|KSA|Saleh Al-Amri|STALE asof=2025-08-04
+372|Al Khaleej|squad|96|GK|KSA|Marwan Al-Haidari|STALE asof=2025-08-04
+372|Al Khaleej|squad||GK|KSA|Mohammed Al Ibrahim|STALE asof=2025-08-04
+372|Al Khaleej|squad||DF|GUI|Kiki Kouyaté|STALE asof=2025-08-04
+372|Al Khaleej|squad||DF|KSA|Abdullah Al-Ammar|STALE asof=2025-08-04
+372|Al Khaleej|squad||MF|EQG|Omar Mascarell|STALE asof=2025-08-04
+372|Al Khaleej|squad||MF|POR|Miguel Crespo|STALE asof=2025-08-04
+372|Al Khaleej|squad||MF|KSA|Nawaf Al-Sadi|STALE asof=2025-08-04
+372|Al Khaleej|squad||MF|NCL|Angelo Fulgini|STALE asof=2025-08-04
+372|Al Khaleej|squad||FW|GAM|Musa Barrow|STALE asof=2025-08-04
+373|Al Kholood|squad|3|DF|LTU|Edgaras Utkus|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|6|MF|ENG|John Buckley|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|7|DF|KSA|Sultan Al-Shehri|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|10|MF|ESP|Iker Kortajarena|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|14|MF|KSA|Ibrahim Barabaa|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|15|DF|KSA|Ramzi Solan|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|17|MF|ENG|Adam Berry|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|18|FW|ARG|Ramiro Enrique|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|21|DF|KSA|Rashid Al-Mutairi|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|25|DF|GUI|Mansour Camara|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|27|FW|KSA|Abdullah Al Ajyan|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|38|DF|SUR|Shaquille Pinas|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|39|MF|KSA|Abdulrahman Al-Dawsari|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|46|MF|KSA|Abdulaziz Al-Aliwa|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|48|GK|KSA|Muhannad Al-Yahya|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad|70|MF|KSA|Muhammad Sawan|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||GK|KSA|Hamed Al-Shanqiti|on loan from Al-Ittihad; STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||DF|KSA|Abdulrahman Al-Obaid|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||MF|KSA|Mohammed Al-Rashidi|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||MF|GUI|Seydouba Cissé|STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||MF|KSA|Yaseen Al-Zubaidi|on loan from Al-Ahli; STALE 2025-26 (page asof=2025-09-09)
+373|Al Kholood|squad||FW|ESP|Coba da Costa|STALE 2025-26 (page asof=2025-09-09)
+374|Al Nassr|squad|1|GK|KSA|Nawaf Al-Aqidi|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|2|DF|KSA|Sultan Al-Ghannam|vice-captain; STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|3|DF|FRA|Mohamed Simakan|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|4|DF|KSA|Nader Al-Sharari|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|5|DF|KSA|Abdulelah Al-Amri|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|7|FW|POR|Cristiano Ronaldo|captain; STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|8|MF|IRQ|Hayder Abdulkareem|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|9|FW|KSA|Abdullah Al-Hamdan|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|10|FW|SEN|Sadio Mané|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|11|MF|POR|Samú Costa|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|12|DF|KSA|Nawaf Boushal|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|14|MF|KSA|Sami Al-Najei|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|16|FW|KSA|Mohammed Maran|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|17|MF|KSA|Abdullah Al-Khaibari|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|18|MF|KSA|Abdulmalik Al-Jaber|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|19|MF|KSA|Ali Al-Hassan|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|20|MF|BRA|Ângelo Gabriel|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|21|FW|FRA|Kingsley Coman|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|23|MF|KSA|Ayman Yahya|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|24|GK|BRA|Bento|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|26|DF|ESP|Iñigo Martínez|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|29|MF|KSA|Abdulrahman Ghareeb|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|36|GK|KSA|Raghed Al-Najjar|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|50|DF|KSA|Majed Qasheesh|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|77|FW|KSA|Haroune Camara|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|79|FW|POR|João Félix|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|83|DF|KSA|Salem Al-Najdi|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|squad|96|DF|KSA|Saad Al-Nasser|STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|loaned_out|80|FW|BRA|Wesley|Cruzeiro; STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+374|Al Nassr|loaned_out||FW|COL|Jhon Durán|Benfica; STALE asof=2025-09-10 (2026-27 season article has no squad; lists Camara/Durán/Wesley loan returns 30 Jun 2026)
+377|Al Shabab|squad|1|GK|SEN|Mory Diaw|
+377|Al Shabab|squad|2|DF|KSA|Mohammed Al-Shwirekh|
+377|Al Shabab|squad|3|DF|SEN|Mamadou Barry|on loan from Saint-Gilloise
+377|Al Shabab|squad|4|DF|CRO|Tin Jedvaj|
+377|Al Shabab|squad|5|DF|KSA|Ali Makki|
+377|Al Shabab|squad|6|MF|KSA|Awad Al-Nashri|
+377|Al Shabab|squad|8|MF|ENG|Josh Brownhill|
+377|Al Shabab|squad|9|FW|COL|Roger Martínez|
+377|Al Shabab|squad|10|MF|BEL|Yannick Carrasco|captain
+377|Al Shabab|squad|11|MF|POR|Daniel Podence|
+377|Al Shabab|squad|12|DF|KSA|Sultan Al-Anize|
+377|Al Shabab|squad|15|DF|SRB|Lazar Stojanovic|on loan from Čukarički
+377|Al Shabab|squad|17|DF|KSA|Mohammed Al-Thani|
+377|Al Shabab|squad|18|MF|GHA|Thomas Partey|
+377|Al Shabab|squad|21|DF|KSA|Dhari Al-Anazi|
+377|Al Shabab|squad|22|MF|KSA|Hammam Al-Hammami|
+377|Al Shabab|squad|23|GK|KSA|Abdulaziz Al-Awairdhi|
+377|Al Shabab|squad|24|MF|KSA|Abdulrahman Al-Aboud|
+377|Al Shabab|squad|26|DF|KSA|Amjad Haraj|
+377|Al Shabab|squad|27|DF|KSA|Abdullah Hawsawi|on loan from Al-Najma
+377|Al Shabab|squad|29|MF|FRA|Yacine Adli|
+377|Al Shabab|squad|33|GK|KSA|Mohammed Al-Mahasneh|
+377|Al Shabab|squad|37|FW|KSA|Abdullah Matuq|
+377|Al Shabab|squad|38|DF|KSA|Mohammed Harbush|
+377|Al Shabab|squad|40|MF|KSA|Ali Al-Asmari|on loan from Neom
+377|Al Shabab|squad|44|DF|KSA|Awaji Olwani|
+377|Al Shabab|squad|46|MF|KSA|Emad Qaysi|
+377|Al Shabab|squad|49|FW|BRA|Ricardo Mathias|on loan from Al-Ahli
+377|Al Shabab|squad|55|DF|KSA|Ali Al-Bulaihi|
+377|Al Shabab|squad|56|DF|KSA|Yazeed Al-Mehallel|
+377|Al Shabab|squad|60|GK|KSA|Mohammed Al-Otaibi|
+377|Al Shabab|squad|66|MF|KSA|Muqrin Abanumay|
+377|Al Shabab|squad|72|DF|KSA|Nasser Al-Bishi|
+377|Al Shabab|squad|74|MF|KSA|Abdulaziz Al-Hadhood|
+377|Al Shabab|squad|97|FW|KSA|Murad Khadhari|
+377|Al Shabab|squad|99|FW|KSA|Hamad Al-Khorayef|
+377|Al Shabab|squad||MF|KSA|Talal Al-Shubili|on loan from Al-Riyadh
+377|Al Shabab|squad||MF|YEM|Adel Abbas|
+377|Al Shabab|squad||FW|YEM|Abdulaziz Masnom|
+377|Al Shabab|loaned_out|16|DF|KSA|Hussain Al-Sibyani|Al-Diriyah
+377|Al Shabab|loaned_out|19|FW|KSA|Majed Abdullah|Al Wehda
+377|Al Shabab|loaned_out|20|MF|KSA|Basil Al-Sayyali|Abha
+377|Al Shabab|loaned_out|94|DF|KSA|Mubarak Al-Rajeh|Al-Najma
+377|Al Shabab|loaned_out||MF|KSA|Faisal Al-Subiani|Abha
+378|Al Taawoun|squad|1|GK|BRA|Mailson|undated (mixed dates on page)
+378|Al Taawoun|squad|4|DF|KSA|Nasser Al-Hulayel|undated (mixed dates on page)
+378|Al Taawoun|squad|5|DF|ALG|Zineddine Belaid|undated (mixed dates on page)
+378|Al Taawoun|squad|6|DF|KSA|Bassam Al-Hurayji|undated (mixed dates on page)
+378|Al Taawoun|squad|7|MF|KSA|Mohammed Al-Kuwaykibi|undated (mixed dates on page)
+378|Al Taawoun|squad|8|MF|CIV|Parfait Guiagon|undated (mixed dates on page)
+378|Al Taawoun|squad|9|FW|MAR|Abderrazak Hamdallah|undated (mixed dates on page)
+378|Al Taawoun|squad|10|MF|ALB|Nedim Bajrami|on loan from Rangers; undated (mixed dates on page)
+378|Al Taawoun|squad|14|FW|KSA|Saif Rajab|undated (mixed dates on page)
+378|Al Taawoun|squad|16|MF|KSA|Faris Al-Ghamdi|undated (mixed dates on page)
+378|Al Taawoun|squad|17|MF|KSA|Mohammed Al-Aqel|undated (mixed dates on page)
+378|Al Taawoun|squad|18|MF|MAR|Aschraf El Mahdioui|captain; undated (mixed dates on page)
+378|Al Taawoun|squad|19|MF|LBR|Oscar Dorley|undated (mixed dates on page)
+378|Al Taawoun|squad|20|FW|KSA|Bassem Al-Arini|undated (mixed dates on page)
+378|Al Taawoun|squad|23|MF|KSA|Rakan Al-Tulayhi|undated (mixed dates on page)
+378|Al Taawoun|squad|25|GK|KSA|Abdulrahman Al-Senaid|undated (mixed dates on page)
+378|Al Taawoun|squad|27|DF|KSA|Adeeb Al-Hassan|undated (mixed dates on page)
+378|Al Taawoun|squad|30|GK|KSA|Abdullah Al-Jadaani|undated (mixed dates on page)
+378|Al Taawoun|squad|31|MF|KSA|Abdulrahman Al-Marwani|undated (mixed dates on page)
+378|Al Taawoun|squad|32|DF|KSA|Muteb Al-Mufarrij|undated (mixed dates on page)
+378|Al Taawoun|squad|33|FW|KSA|Anas Al-Ghamdi|undated (mixed dates on page)
+378|Al Taawoun|squad|39|GK|KSA|Abdulrahman Al-Ghamdi|undated (mixed dates on page)
+378|Al Taawoun|squad|40|MF|KSA|Ibrahim Mahnashi|undated (mixed dates on page)
+378|Al Taawoun|squad|43|DF|KSA|Nawaf Al-Huwairy|undated (mixed dates on page)
+378|Al Taawoun|squad|45|MF|KSA|Mohammed Al-Saadi|undated (mixed dates on page)
+378|Al Taawoun|squad|47|FW|MAR|Younes El Bahraoui|undated (mixed dates on page)
+378|Al Taawoun|squad|55|DF|ECU|Jair Collahuazo|on loan from Kudrivka; undated (mixed dates on page)
+378|Al Taawoun|squad|70|MF|KSA|Abdulrahman Hindi|undated (mixed dates on page)
+378|Al Taawoun|squad|88|MF|BUL|Marin Petkov|undated (mixed dates on page)
+378|Al Taawoun|squad|93|DF|KSA|Awn Al-Saluli|undated (mixed dates on page)
+378|Al Taawoun|loaned_out|11|MF|KSA|Fahad Al-Rashidi|Al-Khaleej; undated (mixed dates on page)
+378|Al Taawoun|loaned_out|12|DF|KSA|Turki Al-Jaadi|Al-Fayha; undated (mixed dates on page)
+378|Al Taawoun|loaned_out|28|MF|KSA|Turki Al-Shaifan|Al-Saqer; undated (mixed dates on page)
+378|Al Taawoun|loaned_out|44|MF|KSA|Abdulmalik Al-Marwani|Al-Jabalain; undated (mixed dates on page)
+378|Al Taawoun|loaned_out||FW|KSA|Keshim Al-Qahtani|Abha; undated (mixed dates on page)
+379|Neom|squad|1|GK|POL|Marcin Bułka|
+379|Neom|squad|2|DF|KSA|Mohammed Al-Breik|3rd captain
+379|Neom|squad|4|DF|KSA|Khalifah Al-Dawsari|
+379|Neom|squad|5|DF|SEN|Malang Sarr|vice-captain
+379|Neom|squad|6|MF|KSA|Abbas Al-Hassan|
+379|Neom|squad|7|FW|GRE|Georgios Masouras|
+379|Neom|squad|8|MF|KSA|Faisal Al-Ghamdi|on loan from Al-Ittihad (page text says 'on loan to')
+379|Neom|squad|9|FW|KSA|Abdulaziz Al-Othman|
+379|Neom|squad|10|MF|ALG|Saïd Benrahma|
+379|Neom|squad|14|MF|KSA|Khalil Al-Absi|on loan from Al-Riyadh
+379|Neom|squad|15|MF|KSA|Abdulmalik Al-Oyayari|
+379|Neom|squad|18|MF|KSA|Alaa Al-Hejji|
+379|Neom|squad|19|DF|JOR|Mohannad Abu Taha|
+379|Neom|squad|22|MF|KSA|Ahmed Al-Anzi|
+379|Neom|squad|23|MF|ARG|Valentín Vada|
+379|Neom|squad|24|MF|KSA|Abdulaziz Noor|
+379|Neom|squad|27|DF|KSA|Islam Hawsawi|
+379|Neom|squad|33|GK|KSA|Abdulrahman Dagriri|
+379|Neom|squad|44|DF|FRA|Nathan Zézé|
+379|Neom|squad|55|DF|KSA|Mohammed Waleed|
+379|Neom|squad|61|MF|KSA|Yahya Gharawi|
+379|Neom|squad|70|FW|KSA|Haroune Camara|on loan from Al-Nassr
+379|Neom|squad|72|MF|CIV|Amadou Koné|
+379|Neom|squad|75|DF|KSA|Khalid Al-Rammah|
+379|Neom|squad|77|MF|KSA|Muhannad Al-Saad|
+379|Neom|squad|81|GK|POR|Luís Maximiano|
+379|Neom|squad|88|GK|KSA|Mohammed Al-Hakim|
+379|Neom|squad|91|FW|FRA|Alexandre Lacazette|captain
+379|Neom|loaned_out|11|FW|KSA|Hassan Al-Ali|Al-Riyadh
+379|Neom|loaned_out|20|FW|KSA|Thamer Al-Khaibari|Al-Khaleej
+379|Neom|loaned_out|26|MF|KSA|Riyadh Sharahili|Al-Ettifaq
+379|Neom|loaned_out|38|DF|KSA|Mohammed Dakhilallah|Al-Raed
+379|Neom|loaned_out|40|MF|KSA|Ali Al-Asmari|Al-Shabab
+379|Neom|loaned_out||FW|URU|Luciano Rodríguez|Cruzeiro
+379|Neom|loaned_out||FW|KSA|Saad Al-Rashed|Jeddah
+98|Fenerbahce|squad|13|GK|TUR|Tarık Çetin|src=season
+98|Fenerbahce|squad|31|GK|BRA|Ederson|src=season
+98|Fenerbahce|squad|34|GK|TUR|Mert Günok|src=season
+98|Fenerbahce|squad|3|DF|ENG|Archie Brown|src=season
+98|Fenerbahce|squad|14|DF|TUR|Yiğit Efe Demir|src=season
+98|Fenerbahce|squad|15|DF|NED|Nathan Aké|src=season
+98|Fenerbahce|squad|18|DF|TUR|Mert Müldür|src=season
+98|Fenerbahce|squad|21|DF|GHA|Kojo Peprah Oppong|src=season
+98|Fenerbahce|squad|22|DF|TUR|Levent Mercan|src=season
+98|Fenerbahce|squad|24|DF|NED|Jayden Oosterwolde|src=season
+98|Fenerbahce|squad|27|DF|POR|Nélson Semedo|src=season
+98|Fenerbahce|squad|37|DF|SVK|Milan Škriniar|vice-captain; src=season
+98|Fenerbahce|squad|77|DF|SRB|Ognjen Mimović|src=season
+98|Fenerbahce|squad|5|MF|TUR|İsmail Yüksek|src=season
+98|Fenerbahce|squad|6|MF|FRA|Mattéo Guendouzi|src=season
+98|Fenerbahce|squad|8|MF|TUR|Mert Hakan Yandaş|captain; src=season
+98|Fenerbahce|squad|10|MF|ESP|Marco Asensio|src=season
+98|Fenerbahce|squad|17|MF|TUR|İrfan Can Kahveci|vice-captain; src=season
+98|Fenerbahce|squad|28|MF|TUR|Bartuğ Elmaz|src=season
+98|Fenerbahce|squad|70|MF|TUR|Oğuz Aydın|src=season
+98|Fenerbahce|squad|91|MF|FRA|N'Golo Kanté|src=season
+98|Fenerbahce|squad|7|FW|TUR|Kerem Aktürkoğlu|src=season
+98|Fenerbahce|squad|9|FW|BEL|Romelu Lukaku|src=season
+98|Fenerbahce|squad|11|FW|ENG|Mason Greenwood|src=season
+98|Fenerbahce|squad|19|FW|KOS|Vedat Muriqi|src=season
+98|Fenerbahce|squad|45|FW|MLI|Dorgeles Nene|src=season
+98|Fenerbahce|loaned_out|20|FW|NED|Anthony Musaba|Norwich City; src=season (from transfers table)
+98|Fenerbahce|loaned_out||DF|BRA|Diego Carlos|Parma; src=season (from transfers table)
+98|Fenerbahce|loaned_out||DF|BRA|Rodrigo Becão|Rodina Moscow; src=season (from transfers table)
+103|Kocaelispor|squad|1|GK|SRB|Aleksandar Jovanović|
+103|Kocaelispor|squad|2|DF|SUR|Anfernee Dijksteel|
+103|Kocaelispor|squad|3|DF|TUR|Muharrem Cinan|
+103|Kocaelispor|squad|4|DF|FRA|Tanguy Zoukrou|on loan from Young Boys
+103|Kocaelispor|squad|5|DF|TUR|Emir Ortakaya|
+103|Kocaelispor|squad|6|DF|CRO|Matej Maglica|
+103|Kocaelispor|squad|7|FW|GHA|Dan Agyei|
+103|Kocaelispor|squad|8|MF|NOR|Tobias Gulliksen|on loan from Rapid Wien
+103|Kocaelispor|squad|9|FW|CRO|Bruno Petković|captain
+103|Kocaelispor|squad|10|MF|TUR|Berkan Kutlu|
+103|Kocaelispor|squad|11|FW|POR|Gonçalo Sousa|on loan from FC Porto B
+103|Kocaelispor|squad|14|MF|ANG|Show|
+103|Kocaelispor|squad|17|FW|TUR|Arda Özyar|
+103|Kocaelispor|squad|19|MF|TUR|Haydar Karataş|
+103|Kocaelispor|squad|20|MF|ESP|Mahamadou Susoho|
+103|Kocaelispor|squad|21|DF|MLI|Massadio Haïdara|
+103|Kocaelispor|squad|22|DF|TUR|Uğur Kaan Yıldız|
+103|Kocaelispor|squad|23|GK|TUR|Onurcan Piri|
+103|Kocaelispor|squad|26|FW|TUR|Metehan Altunbaş|
+103|Kocaelispor|squad|27|MF|TUR|Ege Bilim|
+103|Kocaelispor|squad|32|MF|GER|Makana Baku|
+103|Kocaelispor|squad|41|DF|TUR|Onur Öztonga|
+103|Kocaelispor|squad|75|MF|TUR|Tayfur Bingöl|
+103|Kocaelispor|squad|83|GK|TUR|Serhat Öztaşdelen|
+103|Kocaelispor|squad|89|MF|TUR|Bedirhan Yıldız|
+103|Kocaelispor|squad|97|FW|FRA|Florian Ayé|
+103|Kocaelispor|squad|99|FW|HON|Rigoberto Rivas|
+103|Kocaelispor|loaned_out||FW|TUR|Bünyamin Dalkılıç|Yalova FK 77 SK
+103|Kocaelispor|loaned_out||DF|TUR|Muhammed Efe Küçük|Yalova FK 77 SK
+106|Caykur Rizespor|squad|2|DF|UZB|Husniddin Aliqulov|
+106|Caykur Rizespor|squad|4|DF|HUN|Attila Mocsi|
+106|Caykur Rizespor|squad|5|DF|TUR|Tayyip Talha Sanuç|
+106|Caykur Rizespor|squad|6|MF|MLI|Moussa Diakité|on loan from Cádiz
+106|Caykur Rizespor|squad|7|MF|ROU|Valentin Mihăilă|
+106|Caykur Rizespor|squad|8|MF|BIH|Dal Varešanović|
+106|Caykur Rizespor|squad|9|FW|GAM|Ali Sowe|
+106|Caykur Rizespor|squad|10|MF|NGA|Ibrahim Olawoyin|
+106|Caykur Rizespor|squad|11|FW|SCO|Adedire Mebude|
+106|Caykur Rizespor|squad|14|MF|TUR|Taylan Antalyalı|captain
+106|Caykur Rizespor|squad|17|DF|MAR|Zakaria Ariss|
+106|Caykur Rizespor|squad|19|DF|TUR|Umut Erdem|
+106|Caykur Rizespor|squad|20|MF|ALB|Qazim Laçi|
+106|Caykur Rizespor|squad|21|DF|FRA|Siaka Bakayoko|
+106|Caykur Rizespor|squad|22|FW|SEN|Mame Mor Faye|
+106|Caykur Rizespor|squad|23|FW|TUR|Ahmed Kutucu|on loan from Galatasaray
+106|Caykur Rizespor|squad|30|GK|TUR|Zafer Görgen|
+106|Caykur Rizespor|squad|31|GK|TUR|Hasan Döne|
+106|Caykur Rizespor|squad|37|DF|TUR|Muhammet Taha Şahin|
+106|Caykur Rizespor|squad|47|MF|TUR|Emirhan Yılmaz|
+106|Caykur Rizespor|squad|53|FW|ROU|Iustin Doicaru|
+106|Caykur Rizespor|squad|54|DF|TUR|Mithat Pala|
+106|Caykur Rizespor|squad|75|GK|CIV|Yahia Fofana|
+106|Caykur Rizespor|squad|80|FW|TUR|Mustafa Coşkun Tosun|
+106|Caykur Rizespor|squad|93|DF|MLI|Modibo Sagnan|
+106|Caykur Rizespor|squad|94|DF|TUR|Yakup Ayan|
+106|Caykur Rizespor|squad|97|GK|TUR|Efe Doğan|
+106|Caykur Rizespor|squad|99|FW|TUR|Emrecan Bulut|
+106|Caykur Rizespor|squad||DF|TUR|Habib Özbakır|
+106|Caykur Rizespor|squad||FW|TUR|Muhammed Baltacı|
+106|Caykur Rizespor|loaned_out||GK|TUR|Erdem Canpolat|Esenler Erokspor
+106|Caykur Rizespor|loaned_out||MF|BIH|Muhamed Buljubašić|Esenler Erokspor
+106|Caykur Rizespor|loaned_out||DF|TUR|Anıl Yaşar|Eyüpspor
+106|Caykur Rizespor|loaned_out||DF|TUR|Furkan Orak|Esenler Erokspor
+106|Caykur Rizespor|loaned_out||DF|TUR|Eray Korkmaz|Mardin 1969 Spor
+109|Samsunspor|squad|1|GK|TUR|Okan Kocuk|
+109|Samsunspor|squad|2|DF|SWE|Joe Mendes|
+109|Samsunspor|squad|3|DF|POL|Igor Drapiński|
+109|Samsunspor|squad|4|MF|SCO|Elliot Watt|
+109|Samsunspor|squad|5|MF|TUR|Celil Yüksel|
+109|Samsunspor|squad|6|DF|CIV|Ali Badra Diabaté|
+109|Samsunspor|squad|8|MF|TUR|Samed Onur|
+109|Samsunspor|squad|9|FW|CHA|Marius Mouandilmadji|
+109|Samsunspor|squad|11|MF|TUR|Emre Kılınç|captain
+109|Samsunspor|squad|13|GK|TUR|Efe Yiğit Üstün|
+109|Samsunspor|squad|14|FW|TUR|Fatih Kaya|
+109|Samsunspor|squad|17|DF|ISL|Logi Tómasson|
+109|Samsunspor|squad|20|MF|TUR|Yalçın Kayan|
+109|Samsunspor|squad|21|MF|TUR|Eyüp Değirmenci|
+109|Samsunspor|squad|22|DF|TUR|Yunus Emre Çift|
+109|Samsunspor|squad|23|DF|TUR|Enes Albak|
+109|Samsunspor|squad|24|DF|CRO|Toni Borevković|
+109|Samsunspor|squad|25|GK|TUR|Bilal Bayazıt|
+109|Samsunspor|squad|30|FW|GAM|Saikuba Jarju|
+109|Samsunspor|squad|34|DF|ITA|Gabriele Guarino|
+109|Samsunspor|squad|42|MF|MLI|Anto Sekongo|
+109|Samsunspor|squad|70|FW|TUR|Tahsin Bülbül|
+109|Samsunspor|squad|72|DF|TUR|Mustafa Tan|
+109|Samsunspor|squad|77|MF|POR|Afonso Sousa|
+109|Samsunspor|squad||FW|TUR|Elayis Tavsan|
+109|Samsunspor|squad||MF|FRA|Tanguy Coulibaly|
+109|Samsunspor|squad||MF|DEN|Oskar Øhlenschlæger|
+109|Samsunspor|squad||MF|TUR|Alper Efe Pazar|
+109|Samsunspor|squad||DF|TUR|Bedirhan Çetin|
+109|Samsunspor|squad||FW|CIV|Jaurès Assoumou|
+109|Samsunspor|squad||GK|TUR|Efe Berat Töruz|
+109|Samsunspor|squad||DF|TUR|Ali Tarkan|
+109|Samsunspor|squad||DF|TUR|Kerem Fidan|
+109|Samsunspor|squad||FW|GAM|Ebrima Ceesay|
+109|Samsunspor|squad||MF|CIV|Cheick Tidiane Diabate|
+109|Samsunspor|loaned_out||GK|TUR|Taha Tosun|52 Orduspor
+109|Samsunspor|loaned_out||FW|SEN|Cherif Ndiaye|PAOK
+109|Samsunspor|loaned_out||GK|TUR|Franck Atoen|USL Dunkerque
+109|Samsunspor|loaned_out||MF|CGO|Antoine Makoumbou|Sampdoria
+109|Samsunspor|loaned_out||FW|TUR|Emre Köroğlu|Zonguldakspor FK
+109|Samsunspor|loaned_out||FW|SWE|Richie Omorowa|Utrecht
+174|Gençlerbirliği Spor Kulübü|squad|2|DF|BRA|Thalisson|undated
+174|Gençlerbirliği Spor Kulübü|squad|3|DF|TUR|Hamza Aydar|undated
+174|Gençlerbirliği Spor Kulübü|squad|5|MF|NGA|Peter Etebo|captain; undated
+174|Gençlerbirliği Spor Kulübü|squad|6|DF|GRE|Dimitrios Goutas|undated
+174|Gençlerbirliği Spor Kulübü|squad|7|MF|POR|Tiago Gouveia|on loan from Benfica; undated
+174|Gençlerbirliği Spor Kulübü|squad|9|FW|POR|Pedro Mendes|undated
+174|Gençlerbirliği Spor Kulübü|squad|10|MF|ITA|Franco Tongya|undated
+174|Gençlerbirliği Spor Kulübü|squad|11|DF|POR|Kévin Rodrigues|undated
+174|Gençlerbirliği Spor Kulübü|squad|12|FW|NGA|Victor Orakpo|on loan from Nice; undated
+174|Gençlerbirliği Spor Kulübü|squad|13|DF|POR|Pedro Pereira|undated
+174|Gençlerbirliği Spor Kulübü|squad|14|MF|MLI|Adama Traoré|undated
+174|Gençlerbirliği Spor Kulübü|squad|15|DF|TUR|Arda Çağan Çelik|undated
+174|Gençlerbirliği Spor Kulübü|squad|17|FW|TUR|Erk Aslan|undated
+174|Gençlerbirliği Spor Kulübü|squad|19|MF|SEN|Cheikh Niasse|on loan from Hellas Verona; undated
+174|Gençlerbirliği Spor Kulübü|squad|20|FW|MLI|Sékou Koïta|undated
+174|Gençlerbirliği Spor Kulübü|squad|23|GK|TUR|Gökhan Akkan|undated
+174|Gençlerbirliği Spor Kulübü|squad|35|MF|TUR|Oğulcan Ülgün|undated
+174|Gençlerbirliği Spor Kulübü|squad|42|MF|GUI|Ousmane Diabaté|undated
+174|Gençlerbirliği Spor Kulübü|squad|45|FW|LBR|Prince Martor Jr.|undated
+174|Gençlerbirliği Spor Kulübü|squad|48|MF|TUR|Salih Uçan|undated
+174|Gençlerbirliği Spor Kulübü|squad|52|MF|TUR|Göktuğ Erdem|undated
+174|Gençlerbirliği Spor Kulübü|squad|53|DF|TUR|Ensar Çavuşoğlu|undated
+174|Gençlerbirliği Spor Kulübü|squad|61|GK|TUR|Berk Deniz Çukurcu|undated
+174|Gençlerbirliği Spor Kulübü|squad|70|GK|TUR|İrfan Can Eğribayat|undated
+174|Gençlerbirliği Spor Kulübü|squad|77|DF|TUR|Abdurrahim Dursun|undated
+174|Gençlerbirliği Spor Kulübü|squad|83|MF|POR|Rafael Luís|undated
+174|Gençlerbirliği Spor Kulübü|squad|88|DF|TUR|Fıratcan Üzüm|undated
+174|Gençlerbirliği Spor Kulübü|squad|90|DF|TUR|Metehan Baltacı|on loan from Galatasaray; undated
+174|Gençlerbirliği Spor Kulübü|squad|99|FW|TUR|Ayaz Özcan|undated
+174|Gençlerbirliği Spor Kulübü|squad||MF|GER|Dilhan Demir|undated
+174|Gençlerbirliği Spor Kulübü|squad||FW|TUR|Arda Akgül|undated
+212|Göztepe|squad|1|GK|TUR|Arda Özçimen|
+212|Göztepe|squad|2|MF|ALB|Arda Okan Kurtulan|
+212|Göztepe|squad|3|DF|BRA|Allan Godói|
+212|Göztepe|squad|4|DF|TUR|Taha Altıkardeş|
+212|Göztepe|squad|5|MF|BRA|Rhaldney|
+212|Göztepe|squad|6|MF|ENG|Alex Matos|on loan from Sheffield United
+212|Göztepe|squad|7|FW|BRA|André Henrique|
+212|Göztepe|squad|8|MF|SUI|Alexis Antunes|
+212|Göztepe|squad|9|FW|BRA|Juan|
+212|Göztepe|squad|10|MF|TUR|Efkan Bekiroğlu|
+212|Göztepe|squad|12|DF|UAE|Richard Akonnor|on loan from Al Jazira
+212|Göztepe|squad|13|DF|TUR|Ege Yıldırım|
+212|Göztepe|squad|14|FW|TUR|Bekir Turaç Böke|
+212|Göztepe|squad|16|DF|TUR|Ogün Bayrak|captain
+212|Göztepe|squad|17|FW|TUR|Gökdeniz Bayrakdar|
+212|Göztepe|squad|18|MF|ENG|Tino Anjorin|on loan from Torino
+212|Göztepe|squad|19|DF|GAM|Noah Sonko Sundberg|
+212|Göztepe|squad|20|DF|TAN|Novatus Miroshi|
+212|Göztepe|squad|21|GK|TUR|Nevzat Üzel|
+212|Göztepe|squad|22|FW|IRL|Sinclair Armstrong|
+212|Göztepe|squad|23|DF|TUR|Furkan Bayır|
+212|Göztepe|squad|25|GK|GEO|Luka Gugeshashvili|on loan from PAOK
+212|Göztepe|squad|26|DF|CMR|Malcom Bokele|
+212|Göztepe|squad|27|FW|JOR|Ibrahim Sabra|
+212|Göztepe|squad|33|GK|TUR|Mehmet Şamil Öztürk|
+212|Göztepe|squad|39|FW|BRA|Janderson|
+212|Göztepe|loaned_out||FW|BRA|Jeh|Partizan
+212|Göztepe|loaned_out||FW|TUN|Salem Bouajila|Muğlaspor
+212|Göztepe|loaned_out||MF|TUR|Furkan Malak|Aliağa FK
+212|Göztepe|loaned_out||DF|TUR|Efe Can Mete|Kırıkkale F.K.
+212|Göztepe|loaned_out||FW|BRA|Guilherme Luiz|Radomiak Radom
+212|Göztepe|loaned_out||MF|TUN|Amin Cherni|Nantes
+238|Gaziantep FK|squad|2|DF|ESP|Luis Pérez|
+238|Gaziantep FK|squad|3|MF|CIV|Drissa Camara|
+238|Gaziantep FK|squad|4|DF|TUR|Arda Kızıldağ|
+238|Gaziantep FK|squad|6|MF|CIV|Ulrich Meleke|
+238|Gaziantep FK|squad|7|MF|CUW|Juninho Bacuna|
+238|Gaziantep FK|squad|8|MF|NGA|Victor Gidado|
+238|Gaziantep FK|squad|9|FW|JAM|Trivante Stewart|on loan from Maccabi Haifa
+238|Gaziantep FK|squad|10|MF|POL|Kacper Kozłowski|
+238|Gaziantep FK|squad|11|MF|TUR|Mirza Cihan|
+238|Gaziantep FK|squad|14|DF|SUR|Myenty Abena|
+238|Gaziantep FK|squad|18|DF|ROU|Deian Sorescu|
+238|Gaziantep FK|squad|19|FW|TUR|Serdar Dursun|
+238|Gaziantep FK|squad|22|FW|CUW|Sontje Hansen|on loan from Middlesbrough
+238|Gaziantep FK|squad|23|DF|GER|Kerim Çalhanoğlu|
+238|Gaziantep FK|squad|25|GK|POL|Kacper Tobiasz|
+238|Gaziantep FK|squad|27|FW|BIH|Enver Kulašin|
+238|Gaziantep FK|squad|28|FW|TUR|Halil Dervişoğlu|on loan from Galatasaray
+238|Gaziantep FK|squad|44|MF|ROU|Alexandru Maxim|captain
+238|Gaziantep FK|squad|46|MF|TUR|Ali Osman Kalın|
+238|Gaziantep FK|squad|61|MF|TUR|Ogün Özçiçek|
+238|Gaziantep FK|squad|77|DF|TUR|Sabahattin Destici|
+238|Gaziantep FK|squad|81|GK|TUR|Cemilhan Aslan|
+238|Gaziantep FK|squad|96|DF|ROU|Florin Ștefan|
+238|Gaziantep FK|squad|97|FW|TUR|Fuat Bavuk|
+238|Gaziantep FK|squad||DF|TUR|Nazım Sangaré|
+238|Gaziantep FK|squad||MF|GAM|Karamba Gassama|
+238|Gaziantep FK|squad||GK|TUR|İbrahim Kağan Alkış|
+238|Gaziantep FK|squad||FW|TUR|Muhammet Akmelek|
+238|Gaziantep FK|squad||FW|TUR|Kadir Gümüş|
+238|Gaziantep FK|squad||GK|TUR|Ataberk Dadakdeniz|
+238|Gaziantep FK|squad||DF|CIV|Abakar Sylla|
+238|Gaziantep FK|squad||DF|TUR|Efe Sarıkaya|
+238|Gaziantep FK|loaned_out||FW|TUR|Burak Enes Yıkıcı|(loan club not stated)
+238|Gaziantep FK|loaned_out||MF|TUR|Taha Güneş|(loan club not stated)
+271|Basaksehir FK|squad|1|GK|TUR|Volkan Babacan|
+271|Basaksehir FK|squad|3|DF|GHA|Jerome Opoku|
+271|Basaksehir FK|squad|4|MF|TUR|Onur Ergün|
+271|Basaksehir FK|squad|6|DF|TUR|Onur Bulut|
+271|Basaksehir FK|squad|7|MF|TUR|Yusuf Sarı|
+271|Basaksehir FK|squad|8|MF|CMR|Olivier Kemen|
+271|Basaksehir FK|squad|9|FW|GER|Davie Selke|
+271|Basaksehir FK|squad|10|MF|BIH|Edin Višća|
+271|Basaksehir FK|squad|11|MF|UZB|Abbosbek Fayzullaev|
+271|Basaksehir FK|squad|14|FW|UZB|Eldor Shomurodov|
+271|Basaksehir FK|squad|15|DF|TUR|Hamza Güreler|
+271|Basaksehir FK|squad|16|GK|TUR|Muhammed Şengezer|
+271|Basaksehir FK|squad|17|FW|TUR|Umut Bozok|
+271|Basaksehir FK|squad|18|MF|POL|Jakub Kałuziński|
+271|Basaksehir FK|squad|19|MF|TUR|Berkay Özcan|
+271|Basaksehir FK|squad|20|MF|GER|Umut Güneş|
+271|Basaksehir FK|squad|21|DF|CIV|Christopher Opéri|
+271|Basaksehir FK|squad|23|DF|TUR|Emin Bayram|
+271|Basaksehir FK|squad|27|DF|SEN|Ousseynou Ba|
+271|Basaksehir FK|squad|33|DF|POL|Michał Karbownik|
+271|Basaksehir FK|squad|38|DF|GEO|Saba Kharebashvili|
+271|Basaksehir FK|squad|42|DF|TUR|Ömer Ali Şahiner|captain
+271|Basaksehir FK|squad|70|FW|DEN|Andreas Skov Olsen|on loan from VfL Wolfsburg
+271|Basaksehir FK|squad|77|FW|CRO|Ivan Brnić|
+271|Basaksehir FK|squad|80|GK|TUR|Ege Öztürk|
+271|Basaksehir FK|squad|91|FW|TUR|Bertuğ Yıldırım|
+271|Basaksehir FK|squad|98|GK|TUR|Deniz Dilmen|
+271|Basaksehir FK|squad||GK|TUR|Luca Stančić|
+271|Basaksehir FK|squad||DF|TUR|Efe Arda Koyuncu|
+271|Basaksehir FK|squad||FW|TUR|Batuhan Çelik|
+271|Basaksehir FK|loaned_out||DF|TUR|Yağız Dilek|Beyoğlu Yeni Çarşı
+271|Basaksehir FK|loaned_out||DF|IRL|Festy Ebosele|Erzurumspor
+271|Basaksehir FK|loaned_out||DF|TUR|Onur İnan|Kütahyaspor FSK
+271|Basaksehir FK|loaned_out||DF|TUR|Eren Karaağaç|Sebat Gençlikspor
+271|Basaksehir FK|loaned_out||DF|TUR|Burak Sefa Kavraz|52 Orduspor
+271|Basaksehir FK|loaned_out||MF|TUR|Berkay Aslan|Bodrum
+271|Basaksehir FK|loaned_out||MF|CIV|Abdoulaye Yoro|Dundee United
+271|Basaksehir FK|loaned_out||FW|TUR|Berkay Aydoğmuş|Güzide Gebzespor
+271|Basaksehir FK|loaned_out||FW|TUR|Tuğra Turhan|Stevenage
+273|Eyüpspor|squad|1|GK|TUR|Emre Bilgin|
+273|Eyüpspor|squad|3|DF|TUR|Arda Yavuz|
+273|Eyüpspor|squad|4|DF|TUR|Anıl Yaşar|on loan from Çaykur Rizespor
+273|Eyüpspor|squad|5|DF|MAR|Jawad El Yamiq|
+273|Eyüpspor|squad|7|DF|TUR|Talha Ülvan|captain
+273|Eyüpspor|squad|8|MF|CPV|David Costa|
+273|Eyüpspor|squad|9|FW|TUR|Yusuf Barası|on loan from Kasımpaşa
+273|Eyüpspor|squad|10|MF|MAR|Abdelhamid Sabiri|
+273|Eyüpspor|squad|11|FW|FRA|Lenny Pintor|
+273|Eyüpspor|squad|15|MF|FRA|Charles-André Raux-Yao|
+273|Eyüpspor|squad|18|MF|TUR|Hamza Akman|
+273|Eyüpspor|squad|21|DF|ITA|Simone Giordano|
+273|Eyüpspor|squad|25|FW|SEN|Abdou Khadre Sy|
+273|Eyüpspor|squad|27|DF|TUR|Yiğit Demir|
+273|Eyüpspor|squad|28|MF|TUR|Taşkın İlter|
+273|Eyüpspor|squad|29|FW|NGA|Ahmed Abdullahi|
+273|Eyüpspor|squad|31|GK|ROU|Horațiu Moldovan|on loan from Atlético Madrid
+273|Eyüpspor|squad|33|DF|SCO|Zak Jules|
+273|Eyüpspor|squad|42|DF|TUR|Berhan Şatlı|
+273|Eyüpspor|squad|44|DF|TUR|Ömer Ceyhan|
+273|Eyüpspor|squad|53|FW|TUR|Musa Eren Karakaş|
+273|Eyüpspor|squad|70|MF|TUR|Mete Demir|
+273|Eyüpspor|squad|77|MF|POL|Konrad Michalak|
+273|Eyüpspor|squad|84|FW|CIV|Christ Sadia|
+273|Eyüpspor|squad|88|MF|CGO|Chandrel Massanga|
+273|Eyüpspor|squad|98|FW|FRA|Bilal Boutobba|
+273|Eyüpspor|squad|99|GK|TUR|Umut Keseci|
+273|Eyüpspor|squad||DF|SEN|Diabel Ndoye|
+273|Eyüpspor|loaned_out||MF|TUR|Erdem Çalık|Fatsa Belediyespor
+273|Eyüpspor|loaned_out||FW|GHA|Prince Ampem|Shanghai Port
+273|Eyüpspor|loaned_out||FW|TUR|Berkay Kumlu|Malatya Yeşilyurtspor
+284|Kasimpasa|squad|1|GK|GRE|Andreas Gianniotis|
+284|Kasimpasa|squad|2|DF|BRA|Cláudio Winck|
+284|Kasimpasa|squad|4|DF|TUN|Adem Arous|
+284|Kasimpasa|squad|5|DF|DEN|Jakob Jessen|
+284|Kasimpasa|squad|7|MF|TUR|Ali Yavuz Kol|
+284|Kasimpasa|squad|8|MF|TUR|Atakan Müjde|
+284|Kasimpasa|squad|9|FW|POL|Adrian Benedyczak|
+284|Kasimpasa|squad|10|MF|BIH|Haris Hajradinović|captain
+284|Kasimpasa|squad|11|FW|MLI|Thiemoko Diarra|
+284|Kasimpasa|squad|12|MF|TUN|Mortadha Ben Ouanes|
+284|Kasimpasa|squad|14|DF|FRA|Kévin Mouanga|
+284|Kasimpasa|squad|16|MF|ISL|Andri Baldursson|
+284|Kasimpasa|squad|17|FW|GHA|Jesurun Rak-Sakyi|on loan from Crystal Palace
+284|Kasimpasa|squad|18|DF|TUR|Ömer Bayram|
+284|Kasimpasa|squad|19|MF|SWE|Marcus Rafferty|
+284|Kasimpasa|squad|22|DF|TUR|Kamil Çörekçi|
+284|Kasimpasa|squad|23|FW|TUR|Sinan Alkaş|
+284|Kasimpasa|squad|24|DF|TUR|Salih Arıcı|
+284|Kasimpasa|squad|25|GK|TUR|Ali Emre Yanar|
+284|Kasimpasa|squad|26|MF|GER|Kerem Demirbay|
+284|Kasimpasa|squad|27|DF|ROU|Matei Ilie|
+284|Kasimpasa|squad|30|DF|TUR|Ahmet Taha Dağbaşı|
+284|Kasimpasa|squad|34|MF|MLI|Fousseni Diabaté|
+284|Kasimpasa|squad|35|DF|TUR|Sercan Deniz|
+284|Kasimpasa|squad|45|DF|TUR|Ayberk Karapo|
+284|Kasimpasa|squad|50|FW|TUR|Güven Yalçın|
+284|Kasimpasa|squad|51|MF|CUW|Elson Mendes|
+284|Kasimpasa|squad|61|GK|TUR|Ege Albayrak|
+284|Kasimpasa|squad|66|MF|TUR|Emirhan Boz|
+284|Kasimpasa|squad|99|FW|TUR|Muhammed Emin Bektaş|
+284|Kasimpasa|squad||DF|NED|Godfried Frimpong|
+284|Kasimpasa|squad||FW|TUR|Emirhan Yiğit|
+284|Kasimpasa|loaned_out||GK|TUR|Ramazan Özkanlı|Malatya Yeşilyurtspor
+284|Kasimpasa|loaned_out||DF|TUR|Adnan Aktaş|Aliağa FK
+284|Kasimpasa|loaned_out||DF|TUR|Taylan Aydın|Ankara Demirspor
+284|Kasimpasa|loaned_out||DF|TUR|Berkay Muratoğlu|12 Bingölspor
+284|Kasimpasa|loaned_out||MF|TUR|Dağhan Erdoğan|Erbaaspor
+284|Kasimpasa|loaned_out||MF|TUR|Burak Gültekin|Pendikspor
+284|Kasimpasa|loaned_out||FW|TUR|Yusuf Barası|Eyüpspor
+284|Kasimpasa|loaned_out||FW|TUR|Erdem Çetinkaya|Ankara Demirspor
+284|Kasimpasa|loaned_out||FW|CIV|Stann Élysée Dalo|Sarıyer
+284|Kasimpasa|loaned_out||FW|TUR|Yasin Eratilla|Sakaryaspor
+284|Kasimpasa|loaned_out||FW|SEN|Pape Habib Guèye|Esenler Erokspor
+284|Kasimpasa|loaned_out||FW|SVN|Kenan Kurtović|Mura
+287|Alanyaspor|squad|3|DF|POR|Nuno Lima|
+287|Alanyaspor|squad|4|DF|TUR|Bedirhan Özyurt|
+287|Alanyaspor|squad|5|DF|KOS|Fidan Aliti|captain
+287|Alanyaspor|squad|7|MF|TUR|İbrahim Kaya|
+287|Alanyaspor|squad|8|MF|TUR|Enes Keskin|
+287|Alanyaspor|squad|9|FW|TUN|Omar Ben Ali|
+287|Alanyaspor|squad|10|MF|ROU|Ianis Hagi|
+287|Alanyaspor|squad|11|MF|BRA|Ruan|
+287|Alanyaspor|squad|12|FW|COD|Meschak Elia|
+287|Alanyaspor|squad|14|MF|TUR|Emre Demir|
+287|Alanyaspor|squad|16|FW|KOR|Hwang Ui-jo|
+287|Alanyaspor|squad|17|FW|TUR|Arda Usluoğlu|
+287|Alanyaspor|squad|19|FW|CMR|Iván Cédric|
+287|Alanyaspor|squad|20|DF|TUR|Fatih Aksoy|
+287|Alanyaspor|squad|22|FW|ESP|Paolo Fernandes|on loan from AEK Athens
+287|Alanyaspor|squad|23|GK|TUR|Mert Bayram|
+287|Alanyaspor|squad|26|MF|TUR|İzzet Çelik|
+287|Alanyaspor|squad|32|MF|CIV|Arouna Soro|
+287|Alanyaspor|squad|42|MF|CGO|Gaius Makouta|
+287|Alanyaspor|squad|48|GK|BRA|Paulo Victor|
+287|Alanyaspor|squad|55|MF|TUR|Baran Gezek|
+287|Alanyaspor|squad|58|MF|ANG|Maestro|
+287|Alanyaspor|squad|88|MF|TUR|Yusuf Özdemir|
+287|Alanyaspor|squad|94|DF|KOS|Florent Hadergjonaj|
+287|Alanyaspor|squad||GK|TUR|Yusuf Karagöz|
+287|Alanyaspor|squad||FW|TUR|Şahin Dik|
+287|Alanyaspor|squad||GK|TUR|Mahmut Can Kara|
+287|Alanyaspor|squad||DF|TUR|Bilal Demirağ|
+287|Alanyaspor|squad||DF|TUR|Nejdet Bilin|
+287|Alanyaspor|loaned_out||DF|BRA|Bruno Viana|Qingdao West Coast
+287|Alanyaspor|loaned_out||FW|TUR|Osman Arslantaş|Eskişehirspor
+287|Alanyaspor|loaned_out||DF|TUR|Buluthan Bulut|Muğlaspor
+287|Alanyaspor|loaned_out||DF|TUR|Eren Altıntaş|Sebat SK
+287|Alanyaspor|loaned_out||MF|TUR|Yusuf Can Karademir|Yalova FK 77 SK
+317|Austin FC|squad|1|GK|USA|Brad Stuver|
+317|Austin FC|squad|2|DF|USA|Riley Thomas|
+317|Austin FC|squad|3|DF|DEN|Mikkel Desler|
+317|Austin FC|squad|4|DF|USA|Brendan Hines-Ike|
+317|Austin FC|squad|5|DF|UKR|Oleksandr Svatok|
+317|Austin FC|squad|6|MF|ESP|Ilie Sánchez|
+317|Austin FC|squad|9|FW|USA|Brandon Vázquez|DP
+317|Austin FC|squad|10|FW|ALB|Myrto Uzuni|DP
+317|Austin FC|squad|11|FW|URU|Facundo Torres|DP
+317|Austin FC|squad|12|GK|USA|Damian Las|HG
+317|Austin FC|squad|14|MF|SWE|Besard Šabović|
+317|Austin FC|squad|15|DF|JAM|Jon Bell|
+317|Austin FC|squad|17|DF|IRL|Jon Gallagher|
+317|Austin FC|squad|21|FW|USA|Christian Ramirez|
+317|Austin FC|squad|23|DF|SVN|Žan Kolmanič|
+317|Austin FC|squad|24|MF|ESP|Jorge Alastuey|
+317|Austin FC|squad|29|DF|BRA|Guilherme Biro|
+317|Austin FC|squad|30|DF|HON|Joseph Rosales|
+317|Austin FC|squad|32|MF|USA|Micah Burton|HG
+317|Austin FC|squad|35|DF|SRB|Mateja Đorđević|U22
+317|Austin FC|squad|38|MF|USA|Ervin Torres|HG
+317|Austin FC|squad|77|FW|POL|Przemysław Płacheta|
+317|Austin FC|squad||DF|USA|Chris Applewhite|on loan from Nashville SC
+317|Austin FC|loaned_out|19|FW|USA|CJ Fodrey|Falkirk
+317|Austin FC|loaned_out|20|MF|ARG|Nicolás Dubersarsky|Tigre
+319|St. Louis City Soccer Club|squad|1|GK|SUI|Roman Bürki|captain; DP
+319|St. Louis City Soccer Club|squad|3|DF|USA|Tahir Reid-Brown|
+319|St. Louis City Soccer Club|squad|4|DF|SEN|Mamadou Mbacke Fall|
+319|St. Louis City Soccer Club|squad|5|DF|CAN|Lukas MacNaughton|
+319|St. Louis City Soccer Club|squad|6|MF|NOR|Conrad Wallem|
+319|St. Louis City Soccer Club|squad|7|MF|CZE|Tomáš Ostrák|
+319|St. Louis City Soccer Club|squad|8|MF|USA|Chris Durkin|
+319|St. Louis City Soccer Club|squad|9|FW|BRA|Rafael Navarro|DP
+319|St. Louis City Soccer Club|squad|11|FW|USA|Simon Becher|
+319|St. Louis City Soccer Club|squad|12|MF|BRA|Célio Pompeu|
+319|St. Louis City Soccer Club|squad|14|DF|NOR|Tomas Totland|
+319|St. Louis City Soccer Club|squad|18|MF|CAN|Charles-Emile Brunet|on loan from Nashville SC
+319|St. Louis City Soccer Club|squad|19|FW|DEN|Carlo Holse|DP
+319|St. Louis City Soccer Club|squad|20|DF|BRA|Rafael Santos|
+319|St. Louis City Soccer Club|squad|21|MF|USA|Dante Polvara|
+319|St. Louis City Soccer Club|squad|22|DF|CAN|Kyle Hiebert|
+319|St. Louis City Soccer Club|squad|23|MF|ROU|Alexandru Mățan|
+319|St. Louis City Soccer Club|squad|24|MF|USA|Daniel Edelman|
+319|St. Louis City Soccer Club|squad|27|DF|SEN|Fallou Fall|
+319|St. Louis City Soccer Club|squad|28|MF|USA|Miguel Perez|HG
+319|St. Louis City Soccer Club|squad|29|FW|USA|Palmer Ault|
+319|St. Louis City Soccer Club|squad|31|GK|USA|Christian Olivares|
+319|St. Louis City Soccer Club|squad|32|DF|GER|Timo Baumgartl|
+319|St. Louis City Soccer Club|squad|33|MF|USA|Tyson Pearce|HG
+319|St. Louis City Soccer Club|squad|39|GK|GER|Ben Lundt|
+319|St. Louis City Soccer Club|squad|42|FW|USA|Damion Downs|on loan from Southampton
+319|St. Louis City Soccer Club|squad|46|FW|USA|Caden Glover|HG
+319|St. Louis City Soccer Club|squad|59|FW|USA|Mykhi Joyner|HG
+319|St. Louis City Soccer Club|squad|77|FW|KOR|Jeong Sang-bin|
+319|St. Louis City Soccer Club|squad|80|FW|USA|Brendan McSorley|
+319|St. Louis City Soccer Club|squad|91|MF|USA|Zach Zengue|on loan from Columbus Crew
+319|St. Louis City Soccer Club|squad|99|DF|MEX|Jaziel Orozco|
+319|St. Louis City Soccer Club|squad||GK|USA|Zack Campagnolo|on loan from Colorado Rapids
+319|St. Louis City Soccer Club|loaned_out|15|DF|GHA|Joshua Yaro|Athletic Club Boise
+368|Al Fayha|squad|1|GK|KSA|Abdulraouf Al-Duqayl|undated
+368|Al Fayha|squad|2|DF|KSA|Mukhair Al-Rashidi|undated
+368|Al Fayha|squad|5|MF|BRA|Hugo Moura|undated
+368|Al Fayha|squad|6|MF|KSA|Ali Al-Hussain|undated
+368|Al Fayha|squad|7|MF|KSA|Nawaf Al-Harthi|undated
+368|Al Fayha|squad|8|MF|KSA|Abdulhadi Al-Harajin|undated
+368|Al Fayha|squad|9|FW|KSA|Malek Al-Abdulmenem|undated
+368|Al Fayha|squad|10|FW|ZAM|Fashion Sakala|undated
+368|Al Fayha|squad|12|DF|KSA|Turki Al-Jaadi|on loan from Al-Taawoun; undated
+368|Al Fayha|squad|13|GK|KSA|Sattam Al-Shammari|undated
+368|Al Fayha|squad|14|MF|KSA|Mansor Al-Beshe|undated
+368|Al Fayha|squad|15|DF|POR|Paulo Oliveira|undated
+368|Al Fayha|squad|17|FW|BRA|Lázaro|on loan from Al-Najma; undated
+368|Al Fayha|squad|20|MF|KSA|Abdullah Al-Qahtani|undated
+368|Al Fayha|squad|21|DF|KSA|Ziyad Al-Sahafi|undated
+368|Al Fayha|squad|22|DF|KSA|Mohammed Al-Baqawi|captain; undated
+368|Al Fayha|squad|23|MF|ESP|Jason|undated
+368|Al Fayha|squad|24|DF|KSA|Ahmed Bamsaud|undated
+368|Al Fayha|squad|25|DF|GAM|Omar Colley|undated
+368|Al Fayha|squad|27|FW|KSA|Sultan Al-Jabri|undated
+368|Al Fayha|squad|29|MF|KSA|Albaraa Adawi|undated
+368|Al Fayha|squad|30|MF|GNB|Alfa Semedo|undated
+368|Al Fayha|squad|31|GK|KSA|Osama Al-Thumairy|undated
+368|Al Fayha|squad|40|MF|BRA|Yago Souza|on loan from América Mineiro; undated
+368|Al Fayha|squad|41|FW|KSA|Ammar Al-Khaibari|undated
+368|Al Fayha|squad|42|DF|KSA|Ali Al Harshan|undated
+368|Al Fayha|squad|43|MF|KSA|Fahad Al-Hubaishi|undated
+368|Al Fayha|squad|44|DF|KSA|Ali Al-Nakhli|undated
+368|Al Fayha|squad|47|DF|KSA|Mohammed Al-Dowaish|undated
+368|Al Fayha|squad|52|GK|PAN|Orlando Mosquera|undated
+368|Al Fayha|squad|55|MF|KSA|Abdullah Al-Anazi|undated
+368|Al Fayha|squad|67|MF|KSA|Danyal Al Habib|undated
+368|Al Fayha|squad|72|FW|KSA|Mohammed Hakami|undated
+368|Al Fayha|squad|77|MF|KSA|Ryan Enad|undated
+368|Al Fayha|squad|92|FW|KSA|Moath Al-Habib|undated
+369|Al Hazem|squad|2|DF|KSA|Saud Al-Rashed|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|3|DF|MAR|Abdelmounaim Boutouil|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|4|DF|KSA|Sultan Tunkar|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|5|MF|KSA|Mohammed Issa|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|7|FW|KSA|Yousef Al-Shammari|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|8|MF|KSA|Abdulhadi Al-Harajin|on loan from Al-Fayha; undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|9|FW|SYR|Omar Al Somah|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|10|MF|POR|Fábio Martins|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|11|MF|ALG|Amir Sayoud|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|13|DF|KSA|Abdullah Al-Shanqiti|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|14|GK|CPV|Bruno Varela|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|15|MF|KSA|Abdulrahman Al-Khaibari|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|16|DF|KSA|Abdullah Al-Ammar|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|17|FW|RSA|Elias Mokwana|on loan from Espérance; undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|19|MF|KSA|Nawaf Al-Habashi|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|20|FW|KSA|Nawaf Al-Bashri|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|21|MF|SEN|Amadou Dieng|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|22|GK|KSA|Yazan Al-Ruwaili|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|23|GK|KSA|Ibrahim Zaid|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|24|MF|GUI|Aboubacar Bah|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|25|DF|KSA|Ahmed Asiri|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|26|MF|KSA|Abdulaziz Al-Dhuwayhi|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|27|DF|KSA|Ahmed Al-Nakhli|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|30|MF|KSA|Abdulrazzaq Awaji|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|32|MF|FRA|Loreintz Rosier|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|33|GK|KSA|Majed Al-Ghamdi|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|34|DF|KSA|Abdulrahman Al-Dakheel|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|37|MF|NIG|Youssouf Oumarou|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|41|MF|KSA|Qassem Bagheel|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|45|MF|KSA|Mohammed Al-Saedi|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|70|MF|KSA|Ahmed Al-Shamrani|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|80|MF|ESP|Miguel Carvalho|on loan from Al-Qadsiah; undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|squad|82|DF|KSA|Abdulaziz Al-Harbi|undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)
+369|Al Hazem|loaned_out|77|DF|KSA|Khalid Al-Subaie|Al-Najma; undated-likely stale (Al-Shammari/Rosier/Al-Ammar appear at other clubs)

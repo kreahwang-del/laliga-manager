@@ -1,0 +1,48 @@
+96|Austria Vienna|AT
+97|FC Basel 1893|CH
+99|Heart of Midlothian FC|SC
+101|Servette FC|CH
+104|Sportklub Puntigamer Sturm Graz|AT
+105|Rangers FC|SC
+111|Rapid Vienna|AT
+113|Odense Boldklub|DK
+115|FC Copenhagen|DK
+119|Bröndby IF|DK
+126|FC St. Gallen 1879|CH
+127|FC Zürich|CH
+128|SV Ried|AT
+133|Grazer AK 1902|AT
+135|FC Sion|CH
+139|Aberdeen FC|SC
+140|Celtic FC|SC
+143|LASK|AT
+145|FC Luzern|CH
+146|Vejle Boldklub|DK
+148|BSC Young Boys|CH
+149|St. Mirren FC|SC
+153|Grasshopper Club Zurich|CH
+154|Dundee FC|SC
+156|Football Club Lausanne-Sport|CH
+167|Aarhus GF|DK
+177|FC Midtjylland|DK
+178|Hibernian FC|SC
+180|FC Thun|CH
+185|Motherwell FC|SC
+192|Viborg FF|DK
+198|Silkeborg IF|DK
+200|Falkirk FC|SC
+213|Dundee United FC|SC
+230|WSG Tirol|AT
+233|Kilmarnock FC|SC
+236|FC Nordsjaelland|DK
+237|FC Lugano|CH
+246|Sportclub Rheindorf Altach|AT
+256|Wolfsberger AC|AT
+257|TSV Hartberg|AT
+258|Randers FC|DK
+259|FC Fredericia|DK
+260|Sönderjyske Fodbold|DK
+358|St. Johnstone|SC
+359|FC Vaduz|CH
+360|Red Bull Salzburg|AT
+361|SC Austria|AT

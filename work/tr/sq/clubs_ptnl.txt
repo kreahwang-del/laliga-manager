@@ -1,0 +1,72 @@
+98|Fenerbahce|TR
+100|RSC Anderlecht|BE
+102|Beşiktaş Jimnastik Kulübü|TR
+103|Kocaelispor|TR
+106|Caykur Rizespor|TR
+108|Galatasaray|TR
+109|Samsunspor|TR
+110|KAA Gent|BE
+112|Royal Charleroi Sporting Club|BE
+117|FC Utrecht|NL
+118|FC Groningen|NL
+124|Feyenoord Rotterdam|NL
+130|SL Benfica|PT
+131|SC Heerenveen|NL
+134|FC Twente Enschede|NL
+138|KV Mechelen|BE
+141|PSV Eindhoven|NL
+142|Fortuna Sittardia Combinatie|NL
+147|Trabzonspor|TR
+150|NEC Nijmegen|NL
+151|Sparta Rotterdam|NL
+152|Sint-Truidense VV|BE
+155|Cercle Brugge|BE
+169|FC Porto|PT
+172|Excelsior Rotterdam|NL
+174|Gençlerbirliği Spor Kulübü|TR
+181|KVC Westerlo|BE
+183|Moreirense FC|PT
+184|CD Nacional|PT
+194|SC Braga|PT
+195|AZ Alkmaar|NL
+196|Royal Antwerp FC|BE
+199|KRC Genk|BE
+204|PEC Zwolle|NL
+208|SC Telstar|NL
+209|Go Ahead Eagles|NL
+211|GD Estoril Praia|PT
+212|Göztepe|TR
+220|Club Brugge KV|BE
+221|Konyaspor|TR
+224|Vitória Guimarães SC|PT
+225|CD Santa Clara|PT
+226|Gil Vicente FC|PT
+227|Rio Ave FC|PT
+228|CF Estrela Amadora|PT
+232|FC Alverca|PT
+235|Oud-Heverlee Leuven|BE
+238|Gaziantep FK|TR
+240|Standard Liège|BE
+242|Casa Pia AC|PT
+243|FC Famalicão|PT
+244|Zulte Waregem|BE
+250|RAAL La Louvière|BE
+271|Basaksehir FK|TR
+273|Eyüpspor|TR
+275|FC Arouca|PT
+284|Kasimpasa|TR
+287|Alanyaspor|TR
+344|Académico de Viseu FC|PT
+345|Marítimo da Madeira|PT
+346|Sporting CP|PT
+347|ADO Den Haag|NL
+348|AFC Ajax|NL
+349|SC Cambuur|NL
+350|Willem II|NL
+351|KV Kortrijk|BE
+352|Lommel SK|BE
+353|Union Saint-Gilloise|BE
+354|Waasland-Beveren|BE
+355|Amed Sportif Faaliyetler|TR
+356|Erzurumspor Futbol Kulübü|TR
+357|Çorum Futbol Kulübü|TR

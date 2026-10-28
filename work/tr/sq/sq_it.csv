@@ -1,0 +1,1121 @@
+club_id|club|status|number|pos|nat|player|note
+77|Milan|squad|1|GK|ITA|Pietro Terracciano|
+77|Milan|squad|2|DF|ECU|Pervis Estupiñán|
+77|Milan|squad|5|DF|BEL|Koni De Winter|
+77|Milan|squad|8|MF|ENG|Ruben Loftus-Cheek|
+77|Milan|squad|9|FW|POR|Gonçalo Ramos|
+77|Milan|squad|11|MF|USA|Christian Pulisic|
+77|Milan|squad|12|MF|FRA|Adrien Rabiot|
+77|Milan|squad|13|DF|FRA|Sankhoun Diawara|
+77|Milan|squad|14|MF|CRO|Luka Modrić|
+77|Milan|squad|16|GK|FRA|Mike Maignan|captain
+77|Milan|squad|20|MF|ENG|Omari Hutchinson|on loan from Nottingham Forest
+77|Milan|squad|21|MF|NGR|Samuel Chukwueze|
+77|Milan|squad|22|FW|BEL|Diego Moreira|
+77|Milan|squad|23|DF|ENG|Fikayo Tomori|
+77|Milan|squad|28|MF|ITA|Christian Comotto|
+77|Milan|squad|30|MF|SUI|Ardon Jashari|
+77|Milan|squad|31|DF|SRB|Strahinja Pavlović|
+77|Milan|squad|33|DF|ITA|Davide Bartesaghi|
+77|Milan|squad|34|DF|ESP|Mario Gila|
+77|Milan|squad|35|DF|BUL|Valeri Vladimirov|
+77|Milan|squad|42|DF|ITA|Filippo Terracciano|
+77|Milan|squad|46|DF|ITA|Matteo Gabbia|vice-captain
+77|Milan|squad|56|MF|BEL|Alexis Saelemaekers|
+77|Milan|squad|70|MF|ITA|Alphadjo Cisse|
+77|Milan|squad|73|FW|ITA|Francesco Camarda|
+77|Milan|squad|80|MF|USA|Yunus Musah|
+77|Milan|squad|96|GK|ITA|Lorenzo Torriani|
+77|Milan|loaned_out||DF|SUI|Zachary Athekame|Lyon (until 30 June 2027)
+77|Milan|loaned_out||DF|GER|David Odogu|Toulouse (until 30 June 2027)
+77|Milan|loaned_out||MF|FRA|Youssouf Fofana|Sevilla (until 30 June 2027)
+77|Milan|loaned_out||MF|ITA|Samuele Ricci|Como (until 30 June 2027)
+77|Milan|loaned_out||MF|ITA|Jacopo Sardo|Pescara (until 30 June 2027)
+77|Milan|loaned_out||MF|ITA|Kevin Zeroli|Südtirol (until 30 June 2027)
+77|Milan|loaned_out||FW|MEX|Santiago Giménez|Porto (until 30 June 2027)
+77|Milan|loaned_out||FW|MNE|Andrej Kostić|Sparta Rotterdam (until 30 June 2027)
+77|Milan|loaned_out||FW|FRA|Christopher Nkunku|RB Leipzig (until 30 June 2027)
+78|Juventus|squad|1|GK|POL|Kamil Grabara|On loan from VfL Wolfsburg
+78|Juventus|squad|2|DF|TUR|Zeki Çelik|
+78|Juventus|squad|3|DF|BRA|Bremer|Vice-captain
+78|Juventus|squad|4|DF|ITA|Federico Gatti|
+78|Juventus|squad|5|MF|ITA|Manuel Locatelli|Captain
+78|Juventus|squad|6|DF|ENG|Lloyd Kelly|
+78|Juventus|squad|7|FW|POR|Francisco Conceição|
+78|Juventus|squad|8|MF|NED|Teun Koopmeiners|
+78|Juventus|squad|9|FW|FRA|Randal Kolo Muani|
+78|Juventus|squad|10|FW|TUR|Kenan Yıldız|
+78|Juventus|squad|11|FW|KOS|Edon Zhegrova|
+78|Juventus|squad|12|MF|BRA|Douglas Luiz|
+78|Juventus|squad|13|FW|CIV|Jérémie Boga|
+78|Juventus|squad|14|FW|POL|Arkadiusz Milik|
+78|Juventus|squad|15|DF|FRA|Pierre Kalulu|
+78|Juventus|squad|17|MF|BIH|Kerim Alajbegović|
+78|Juventus|squad|18|FW|ITA|Jeff Ekhator|
+78|Juventus|squad|19|MF|FRA|Khéphren Thuram|
+78|Juventus|squad|20|DF|ITA|Andrea Cambiaso|
+78|Juventus|squad|22|MF|USA|Weston McKennie|
+78|Juventus|squad|23|GK|ITA|Carlo Pinsoglio|
+78|Juventus|squad|24|DF|ITA|Daniele Rugani|
+78|Juventus|squad|25|GK|ITA|Guglielmo Vicario|On loan from Tottenham Hotspur
+78|Juventus|squad|26|DF|COL|Jhon Lucumí|
+78|Juventus|squad|27|FW|GER|Nick Woltemade|On loan from Newcastle United
+78|Juventus|squad|29|MF|SEN|Pape Matar Sarr|On loan from Tottenham Hotspur
+78|Juventus|squad|31|MF|ARG|Nico González|
+78|Juventus|squad|32|DF|COL|Juan Cabal|
+78|Juventus|loaned_out||||Michele Di Gregorio|Bournemouth (until 30 June 2027)
+78|Juventus|loaned_out||||João Mário|Fiorentina (until 30 June 2027)
+78|Juventus|loaned_out||||Jonas Rouhi|Carrarese (until 30 June 2027)
+78|Juventus|loaned_out||||Vasilije Adžić|Sassuolo (until 30 June 2027)
+78|Juventus|loaned_out||||Fabio Miretti|Beşiktaş (until 30 June 2027)
+78|Juventus|loaned_out||||Jonathan David|Atlético Madrid (until 30 June 2027)
+78|Juventus|loaned_out||||Loïs Openda|Lyon (until 30 June 2027)
+79|Roma|squad|2|DF|NED|Devyne Rensch|
+79|Roma|squad|3|DF|ESP|Angeliño|
+79|Roma|squad|4|MF|ITA|Bryan Cristante|captain
+79|Roma|squad|5|DF|CIV|Evan Ndicka|
+79|Roma|squad|8|MF|MAR|Neil El Aynaoui|
+79|Roma|squad|9|FW|UKR|Artem Dovbyk|
+79|Roma|squad|14|FW|NED|Donyell Malen|
+79|Roma|squad|17|MF|FRA|Manu Koné|
+79|Roma|squad|18|FW|ARG|Matías Soulé|
+79|Roma|squad|22|DF|ESP|Mario Hermoso|
+79|Roma|squad|23|DF|ITA|Gianluca Mancini|vice-captain
+79|Roma|squad|24|DF|POL|Jan Ziółkowski|
+79|Roma|squad|43|DF|BRA|Wesley|
+79|Roma|squad|61|MF|ITA|Niccolò Pisilli|
+79|Roma|squad|70|GK|USA|Giorgio De Marzi|
+79|Roma|squad|78|FW|FRA|Robinio Vaz|
+79|Roma|squad|87|DF|ITA|Daniele Ghilardi|
+79|Roma|squad|91|GK|POL|Radosław Żelezny|
+79|Roma|squad|95|GK|ITA|Pierluigi Gollini|
+79|Roma|squad|99|GK|SRB|Mile Svilar|
+79|Roma|squad|32|GK|COL|Devis Vásquez|
+79|Roma|squad|34|DF|MAR|Anass Salah-Eddine|
+79|Roma|squad|60|MF|SUI|Alessandro Romano|
+79|Roma|squad|67|FW|ITA|Luigi Cherubini|
+79|Roma|squad||DF|ALB|Marash Kumbulla|unnumbered, separate unlabelled table
+79|Roma|squad||DF|ITA|Mattia Mannini|unnumbered, separate unlabelled table
+79|Roma|squad||DF|ITA|Filippo Reale|unnumbered, separate unlabelled table
+79|Roma|squad||MF|ITA|Riccardo Pagano|unnumbered, separate unlabelled table
+79|Roma|loaned_out||FW|ITA|Tommaso Baldanzi|Genoa (until 30 June 2027)
+80|Atalanta|squad|3|DF|CIV|Odilon Kossounou|
+80|Atalanta|squad|4|DF|SWE|Isak Hien|
+80|Atalanta|squad|7|FW|GHA|Kamaldeen Sulemana|
+80|Atalanta|squad|8|MF|CRO|Mario Pašalić|
+80|Atalanta|squad|9|FW|ITA|Gianluca Scamacca|
+80|Atalanta|squad|10|MF|SRB|Lazar Samardžić|
+80|Atalanta|squad|11|FW|ENG|Jonathan Rowe|on loan from Bologna
+80|Atalanta|squad|13|MF|BRA|Éderson|captain
+80|Atalanta|squad|16|DF|ITA|Raoul Bellanova|
+80|Atalanta|squad|17|MF|BEL|Charles De Ketelaere|
+80|Atalanta|squad|18|FW|ITA|Giacomo Raspadori|
+80|Atalanta|squad|19|MF|CIV|Franck Kessié|
+80|Atalanta|squad|22|GK|ITA|Thomas Pompei|
+80|Atalanta|squad|23|DF|BIH|Sead Kolašinac|
+80|Atalanta|squad|29|GK|ITA|Marco Carnesecchi|
+80|Atalanta|squad|31|DF|DEN|Thomas Kristensen|on loan from Udinese
+80|Atalanta|squad|42|DF|ITA|Giorgio Scalvini|
+80|Atalanta|squad|47|DF|ITA|Lorenzo Bernasconi|
+80|Atalanta|squad|57|GK|ITA|Marco Sportiello|
+80|Atalanta|squad|59|MF|POL|Nicola Zalewski|
+80|Atalanta|squad|70|MF|ITA|Gianluca Gaetano|
+80|Atalanta|squad|77|DF|ITA|Davide Zappacosta|
+80|Atalanta|squad|90|FW|MNE|Nikola Krstović|
+80|Atalanta|squad|99|MF|MKD|Eljif Elmas|on loan from RB Leipzig
+80|Atalanta|squad|40|DF|SRB|Relja Obrić|
+80|Atalanta|squad|52|MF|ITA|Alberto Manzoni|
+80|Atalanta|loaned_out||DF|ITA|Honest Ahanor|Crystal Palace (until 30 June 2027)
+80|Atalanta|loaned_out||DF|ITA|Giovanni Bonfanti|Las Palmas (until 30 June 2027)
+80|Atalanta|loaned_out||DF|ENG|Ben Godfrey|Rangers (until 30 June 2027)
+80|Atalanta|loaned_out||MF|GHA|Ibrahim Sulemana|Sassuolo (until 30 June 2027)
+80|Atalanta|loaned_out||FW|ITA|Daniel Maldini|Cagliari (until 30 June 2027)
+80|Atalanta|loaned_out||FW|MLI|El Bilal Touré|Parma (until 30 June 2027)
+81|Napoli|squad|1|GK|ITA|Alex Meret|
+81|Napoli|squad|2|DF|ITA|Costantino Favasuli|on loan from Catanzaro
+81|Napoli|squad|4|DF|ITA|Alessandro Buongiorno|
+81|Napoli|squad|5|DF|FRA|Benoît Badiashile|on loan from Chelsea
+81|Napoli|squad|6|MF|SCO|Billy Gilmour|
+81|Napoli|squad|7|FW|BRA|David Neres|
+81|Napoli|squad|8|MF|SCO|Scott McTominay|
+81|Napoli|squad|11|MF|BEL|Kevin De Bruyne|
+81|Napoli|squad|13|DF|KOS|Amir Rrahmani|
+81|Napoli|squad|14|GK|UKR|Nikita Contini|
+81|Napoli|squad|16|DF|ESP|Rafa Marín|
+81|Napoli|squad|17|DF|URU|Mathías Olivera|
+81|Napoli|squad|19|FW|DEN|Rasmus Højlund|
+81|Napoli|squad|20|FW|ITA|Lorenzo Lucca|
+81|Napoli|squad|21|FW|ITA|Matteo Politano|
+81|Napoli|squad|22|DF|ITA|Giovanni Di Lorenzo|captain
+81|Napoli|squad|23|FW|BRA|Giovane|
+81|Napoli|squad|26|MF|ITA|Antonio Vergara|
+81|Napoli|squad|27|FW|BRA|Alisson Santos|
+81|Napoli|squad|31|DF|NED|Sam Beukema|
+81|Napoli|squad|32|GK|SRB|Vanja Milinković-Savić|
+81|Napoli|squad|35|DF|ITA|Luca Marianucci|
+81|Napoli|squad|37|DF|ITA|Leonardo Spinazzola|
+81|Napoli|squad|68|MF|SVK|Stanislav Lobotka|
+81|Napoli|squad|70|FW|NED|Noa Lang|
+81|Napoli|squad|99|MF|CMR|Frank Anguissa|
+81|Napoli|loaned_out||GK|ITA|Mathias Ferrante|Ospitaletto (until 30 June 2027)
+81|Napoli|loaned_out||GK|ITA|Claudio Turi|Pineto (until 30 June 2027)
+81|Napoli|loaned_out||DF|ITA|Luigi D'Avino|Giugliano (until 30 June 2027)
+81|Napoli|loaned_out||DF|ITA|Pasquale Mazzocchi|Venezia (until 30 June 2027)
+81|Napoli|loaned_out||DF|ITA|Nosa Edward Obaretin|Lorient (until 30 June 2027)
+81|Napoli|loaned_out||MF|SWE|Jens Cajuste|Málaga (until 30 June 2027)
+81|Napoli|loaned_out||MF|ITA|Michael Folorunsho|Monza (until 30 June 2027)
+81|Napoli|loaned_out||MF|ITA|Lorenzo Russo|Crotone (until 30 June 2027)
+81|Napoli|loaned_out||FW|ITA|Giuseppe Ambrosino|Modena (until 30 June 2027)
+81|Napoli|loaned_out||FW|ITA|Mattia Esposito|Bari (until 30 June 2027)
+81|Napoli|loaned_out||FW|DEN|Jesper Lindstrøm|Red Bull Salzburg (until 30 June 2027)
+81|Napoli|loaned_out||FW|BEL|Cyril Ngonge|Monza (until 30 June 2027)
+81|Napoli|loaned_out||FW|ITA|Emanuele Rao|Pisa (until 30 June 2027)
+81|Napoli|loaned_out||FW|POR|Dinis Rodrigues|Eldense B (until 30 June 2027)
+81|Napoli|loaned_out||FW|ITA|Lorenzo Sgarbi|Sambenedettese (until 30 June 2027)
+81|Napoli|loaned_out||FW|ITA|Gianluca Vigliotti|Pineto (until 30 June 2027)
+82|Fiorentina|squad|2|DF|BRA|Dodô|
+82|Fiorentina|squad|3|DF|ROU|Radu Drăgușin|on loan from Tottenham
+82|Fiorentina|squad|4|MF|ITA|Marco Brescianini|
+82|Fiorentina|squad|5|DF|CRO|Marin Pongračić|
+82|Fiorentina|squad|6|DF|ITA|Luca Ranieri|vice-captain
+82|Fiorentina|squad|14|MF|FRA|Arthur Atta|
+82|Fiorentina|squad|17|DF|POR|João Mário|on loan from Juventus
+82|Fiorentina|squad|19|GK|ITA|Luca Lezzerini|
+82|Fiorentina|squad|20|DF|ESP|Álex Jiménez|on loan from Bournemouth
+82|Fiorentina|squad|21|DF|ESP|Víctor Valdepeñas|
+82|Fiorentina|squad|23|FW|GNB|Beto|
+82|Fiorentina|squad|25|FW|SWE|Alieu Njie|on loan from Torino
+82|Fiorentina|squad|27|MF|ITA|Cher Ndour|
+82|Fiorentina|squad|28|FW|POR|Pedro Gonçalves|on loan from Sporting CP
+82|Fiorentina|squad|29|FW|ITA|Wilfried Gnonto|on loan from Leeds United
+82|Fiorentina|squad|30|FW|ARG|Franco Mastantuono|on loan from Real Madrid
+82|Fiorentina|squad|32|FW|ARG|Mateo Pellegrino|
+82|Fiorentina|squad|33|DF|BRA|Viery|
+82|Fiorentina|squad|42|MF|CIV|Christ Inao Oulaï|
+82|Fiorentina|squad|43|GK|ESP|David de Gea|captain
+82|Fiorentina|squad|44|MF|ITA|Nicolò Fagioli|
+82|Fiorentina|squad|53|GK|DEN|Oliver Christensen|
+82|Fiorentina|squad|65|DF|ITA|Fabiano Parisi|
+82|Fiorentina|loaned_out||GK|ITA|Pietro Leonardelli|Treviso (until 30 June 2027)
+82|Fiorentina|loaned_out||GK|ITA|Tommaso Martinelli|Avellino (until 30 June 2027)
+82|Fiorentina|loaned_out||GK|ITA|Tommaso Vannucchi|Arzignano Valchiampo (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Pietro Comuzzo|Torino (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Mirko Elia|Bari (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Niccolò Fortini|Torino (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|GER|Robin Gosens|Schalke 04 (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Eddy Kouadio|Monza (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|BIH|Eman Košpo|Mantova (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ARG|Matías Moreno|Venezia (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Lorenzo Romani|Carrarese (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Edoardo Sadotti|Alcione Milano (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Giulio Scuderi|Juve Stabia (until 30 June 2027)
+82|Fiorentina|loaned_out||DF|ITA|Niccolò Trapani|Alcione Milano (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|ITA|Lapo Deli|Empoli (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|ITA|Giovanni Fabbian|Parma (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|ITA|Jacopo Fazzini|Cagliari (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|ARG|Gino Infantino|Argentinos Juniors (until 31 December 2026)
+82|Fiorentina|loaned_out||MF|ITA|Luca Montenegro|Dolomiti Bellunesi (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|MAR|Amir Richardson|Le Havre (until 30 June 2027)
+82|Fiorentina|loaned_out||MF|SUI|Simon Sohm|Venezia (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ARG|Lucas Beltrán|River Plate (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ITA|Maat Daniel Caprini|Cesena (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ITA|Carlo Evangelista|Pergolettese (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ISL|Albert Guðmundsson|Lazio (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ITA|Moise Kean|Como (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ITA|Roberto Piccoli|Bologna (until 30 June 2027)
+82|Fiorentina|loaned_out||FW|ITA|Tommaso Rubino|Carrarese (until 30 June 2027)
+83|Como|squad|1|GK|FRA|Jean Butez|
+83|Como|squad|2|DF|GER|Marc-Oliver Kempf|
+83|Como|squad|3|DF|ESP|Álex Valle|
+83|Como|squad|4|DF|ESP|Jacobo Ramón|
+83|Como|squad|5|MF|ARG|Máximo Perrone|
+83|Como|squad|6|MF|ESP|Luis Milla|
+83|Como|squad|7|MF|FRA|Lucas Da Cunha|captain
+83|Como|squad|8|MF|FRA|Maxence Caqueret|
+83|Como|squad|9|FW|GRE|Anastasios Douvikas|
+83|Como|squad|10|MF|ARG|Nico Paz|
+83|Como|squad|11|FW|SEN|Assane Diao|
+83|Como|squad|13|DF|ITA|Alberto Dossena|
+83|Como|squad|15|MF|SWE|Adrian Lahdo|
+83|Como|squad|16|DF|BRA|Kaiki Bruno|on loan from Cruzeiro
+83|Como|squad|17|FW|ESP|Jesús Rodríguez|
+83|Como|squad|18|DF|ITA|Edoardo Goldaniga|
+83|Como|squad|20|MF|CRO|Martin Baturina|
+83|Como|squad|21|MF|ITA|Samuele Ricci|on loan from AC Milan
+83|Como|squad|22|GK|ITA|Mauro Vigorito|
+83|Como|squad|27|DF|BRA|Yan Couto|on loan from Borussia Dortmund
+83|Como|squad|28|DF|CRO|Ivan Smolčić|
+83|Como|squad|30|MF|ITA|Mattia Liberali|
+83|Como|squad|42|FW|NED|Jayden Addai|
+83|Como|squad|53|DF|COD|Willy Kambwala|on loan from Villarreal
+83|Como|squad|90|FW|ITA|Moise Kean|on loan from Fiorentina
+83|Como|squad|97|GK|ESP|Robert Sánchez|on loan from Chelsea
+83|Como|squad|99|DF|ENG|Trevoh Chalobah|
+83|Como|loaned_out||GK|IDN|Emil Audero|Rayo Vallecano (until 30 June 2027)
+83|Como|loaned_out||GK|SWE|Noel Törnqvist|Monza (until 30 June 2027)
+83|Como|loaned_out||DF|ESP|Andrés Cuenca|Sporting Gijón (until 30 June 2027)
+83|Como|loaned_out||DF|ITA|Fellipe Jack|Cremonese (until 30 June 2027)
+83|Como|loaned_out||DF|BEL|Ignace Van der Brempt|Sassuolo (until 30 June 2027)
+83|Como|loaned_out||MF|GAM|Alieu Fadera|Cagliari (until 30 June 2027)
+83|Como|loaned_out||MF|FRA|Andréa Le Borgne|Hellas Verona (until 30 June 2027)
+83|Como|loaned_out||MF|ITA|Fabio Rispoli|Südtirol (until 30 June 2027)
+83|Como|loaned_out||MF|ITA|Jacopo Simonetta|Vado (until 30 June 2027)
+83|Como|loaned_out||FW|ESP|Iván Azón|Getafe (until 30 June 2027)
+83|Como|loaned_out||FW|ITA|Federico Chinetti|Mantova (until 30 June 2027)
+83|Como|loaned_out||FW|ITA|Alessandro Gabrielloni|Palermo (until 30 June 2027)
+83|Como|loaned_out||FW|GER|Nicolas Kühn|Borussia Mönchengladbach (until 30 June 2027)
+83|Como|loaned_out||FW|LAT|Kristiāns Mežsargs|Folgore Caratese (until 30 June 2027)
+83|Como|loaned_out||FW|ESP|Álvaro Morata|Leganés (until 30 June 2027)
+84|Lazio|squad|2|DF|POR|Diogo Leite|
+84|Lazio|squad|3|DF|ITA|Luca Pellegrini|
+84|Lazio|squad|5|DF|NED|Danilho Doekhi|
+84|Lazio|squad|6|MF|ITA|Nicolò Rovella|
+84|Lazio|squad|7|MF|NGR|Fisayo Dele-Bashiru|
+84|Lazio|squad|8|MF|ESP|Bruno Galassi|
+84|Lazio|squad|9|FW|ITA|Andrea Pinamonti|
+84|Lazio|squad|10|MF|ITA|Mattia Zaccagni|captain
+84|Lazio|squad|11|FW|DEN|Gustav Isaksen|
+84|Lazio|squad|14|FW|NED|Tijjani Noslin|
+84|Lazio|squad|15|DF|ITA|Romano Floriani Mussolini|
+84|Lazio|squad|16|MF|ITA|Davide Frattesi|on loan from Inter Milan
+84|Lazio|squad|17|DF|POR|Nuno Tavares|
+84|Lazio|squad|21|MF|MAR|Reda Belahyane|
+84|Lazio|squad|22|FW|ITA|Matteo Cancellieri|
+84|Lazio|squad|23|DF|ESP|Alfonso Pedraza|
+84|Lazio|squad|24|MF|NED|Kenneth Taylor|
+84|Lazio|squad|25|DF|DEN|Oliver Provstgaard|
+84|Lazio|squad|28|MF|POL|Adrian Przyborek|
+84|Lazio|squad|29|MF|ITA|Manuel Lazzari|
+84|Lazio|squad|32|MF|ITA|Danilo Cataldi|
+84|Lazio|squad|33|DF|BRA|Ricardo Bordon|
+84|Lazio|squad|35|GK|GRE|Christos Mandas|
+84|Lazio|squad|37|DF|CRO|Josip Šutalo|on loan from Ajax
+84|Lazio|squad|40|GK|ITA|Edoardo Motta|
+84|Lazio|squad|55|GK|ITA|Alessio Furlanetto|
+84|Lazio|squad|59|GK|ITA|Davide Renzetti|
+84|Lazio|squad|63|FW|ITA|Federico Serra|
+84|Lazio|squad|71|MF|ITA|Valerio Farcomeni|
+84|Lazio|squad|76|DF|BRA|Filipe Bordon|
+84|Lazio|squad|77|DF|MNE|Adam Marušić|vice-captain
+84|Lazio|squad|80|FW|ISL|Albert Guðmundsson|on loan from Fiorentina
+84|Lazio|loaned_out||MF|ITA|Pietro Pinelli|Carrarese (until 30 June 2027)
+84|Lazio|loaned_out||FW|SEN|Boulaye Dia|Rennes (until 30 June 2027)
+84|Lazio|loaned_out||FW|GBS|Saná Fernandes|Juve Stabia (until 30 June 2027)
+84|Lazio|loaned_out||FW|SRB|Petar Ratkov|Levante (until 30 June 2027)
+85|Bologna|squad|1|GK|POL|Łukasz Skorupski|
+85|Bologna|squad|2|DF|SWE|Emil Holm|
+85|Bologna|squad|3|DF|BEL|Arthur Theate|on loan from Eintracht Frankfurt
+85|Bologna|squad|4|MF|ITA|Tommaso Pobega|
+85|Bologna|squad|5|DF|NOR|Eivind Helland|
+85|Bologna|squad|6|MF|CRO|Nikola Moro|
+85|Bologna|squad|7|FW|ITA|Riccardo Orsolini|3rd captain
+85|Bologna|squad|8|MF|ARG|Mikel Amondarain|
+85|Bologna|squad|9|FW|UKR|Artem Dovbyk|on loan from Roma
+85|Bologna|squad|10|MF|ITA|Federico Bernardeschi|
+85|Bologna|squad|11|FW|ENG|Jonathan Rowe|
+85|Bologna|squad|14|DF|NOR|Torbjørn Heggem|
+85|Bologna|squad|16|DF|ITA|Nicolò Casale|
+85|Bologna|squad|17|MF|MAR|Oussama El Azzouzi|
+85|Bologna|squad|19|MF|SCO|Lewis Ferguson|vice-captain
+85|Bologna|squad|20|DF|ITA|Nadir Zortea|
+85|Bologna|squad|21|MF|DEN|Jens Odgaard|
+85|Bologna|squad|23|DF|NIG|Rahim Alhassane|
+85|Bologna|squad|25|GK|ITA|Massimo Pessina|
+85|Bologna|squad|28|FW|ITA|Nicolò Cambiaghi|
+85|Bologna|squad|29|DF|ITA|Lorenzo De Silvestri|captain
+85|Bologna|squad|33|DF|ESP|Juan Miranda|
+85|Bologna|squad|41|DF|CZE|Martin Vitík|
+85|Bologna|squad|72|GK|FIN|Ukko Happonen|
+85|Bologna|squad|91|FW|ITA|Roberto Piccoli|on loan from Fiorentina
+85|Bologna|squad||FW|NED|Jay Enem|
+85|Bologna|loaned_out||GK|CHI|Thomas Gillier|CF Montréal (until 30 December 2027)
+85|Bologna|loaned_out||GK|ITA|Francesco Raffaelli|Alcione Milano (until 30 June 2027)
+85|Bologna|loaned_out||DF|ITA|Wisdom Amey|Frosinone (until 30 June 2027)
+85|Bologna|loaned_out||DF|ITA|Tommaso Corazza|Vicenza (until 30 June 2027)
+85|Bologna|loaned_out||DF|URU|Joaquín Sosa|Colo-Colo (until 30 June 2027)
+85|Bologna|loaned_out||DF|ITA|Riccardo Stivanello|Sudtirol (until 30 June 2027)
+85|Bologna|loaned_out||DF|MNE|Bodin Tomašević|Mantova (until 30 June 2027)
+85|Bologna|loaned_out||MF|ITA|Lorenzo Menegazzo|Lumezzane (until 30 June 2027)
+85|Bologna|loaned_out||MF|CAN|Antoine N'Diaye|Casarano (until 30 June 2027)
+85|Bologna|loaned_out||MF|BUL|Dimitar Papazov|Perugia (until 30 June 2027)
+85|Bologna|loaned_out||MF|FIN|Niklas Pyyhtiä|Sudtirol (until 30 June 2027)
+85|Bologna|loaned_out||FW|ITA|Gennaro Anatriello|Lumezzane (until 30 June 2027)
+85|Bologna|loaned_out||FW|ITA|Luigi Caccavo|Juve Stabia (until 30 June 2027)
+85|Bologna|loaned_out||FW|ITA|Tommaso Ebone|Lumezzane (until 30 June 2027)
+85|Bologna|loaned_out||FW|ITA|Antonio Raimondo|Frosinone (until 30 June 2027)
+85|Bologna|loaned_out||FW|NED|Thijs Dallinga|Köln (until 30 June 2027)
+85|Bologna|loaned_out||FW|ARG|Benja Domínguez|Sassuolo (until 30 June 2027)
+86|Torino|squad|2|DF|SCO|Nathan Patterson|
+86|Torino|squad|3|DF|ITA|Cristiano Biraghi|
+86|Torino|squad|5|DF|SUI|Eray Cömert|
+86|Torino|squad|6|MF|TUR|Emirhan İlkhan|
+86|Torino|squad|7|FW|MAR|Zakaria Aboukhlal|
+86|Torino|squad|8|FW|ITA|Rolando Mandragora|
+86|Torino|squad|9|FW|ITA|Pietro Pellegri|
+86|Torino|squad|10|MF|CRO|Nikola Vlašić|vice-captain
+86|Torino|squad|11|FW|ITA|Gaetano Oristanio|on loan from Venezia
+86|Torino|squad|13|DF|SUI|Ricardo Rodriguez|
+86|Torino|squad|15|DF|ITA|Pietro Comuzzo|on loan from Fiorentina
+86|Torino|squad|17|FW|CRO|Sandro Kulenović|
+86|Torino|squad|18|FW|ARG|Giovanni Simeone|
+86|Torino|squad|19|FW|SCO|Ché Adams|
+86|Torino|squad|20|GK|BRA|Lucas Perri|on loan from Leeds United
+86|Torino|squad|21|MF|POR|Daniel Bragança|on loan from Sporting CP
+86|Torino|squad|22|MF|ITA|Cesare Casadei|
+86|Torino|squad|23|DF|EQG|Saúl Coco|
+86|Torino|squad|26|GK|ITA|Diego Mascardi|
+86|Torino|squad|28|MF|NED|Kian Fitz-Jim|
+86|Torino|squad|29|DF|ITA|Niccolò Fortini|on loan from Fiorentina
+86|Torino|squad|44|DF|ALB|Ardian Ismajli|
+86|Torino|squad|45|DF|ALG|Rafik Belghali|
+86|Torino|squad|63|DF|ESP|Manuel Carrascosa|
+86|Torino|squad|66|MF|LTU|Gvidas Gineitis|
+86|Torino|squad|76|GK|ITA|Lapo Siviero|
+86|Torino|squad|77|MF|ITA|Alessio Cacciamani|
+86|Torino|squad|79|MF|ITA|Andrea Luongo|
+86|Torino|squad|81|GK|URU|Franco Israel|
+86|Torino|squad|91|FW|COL|Duván Zapata|captain
+86|Torino|squad|94|MF|HUN|Zalán Kugyela|
+86|Torino|loaned_out||GK|ITA|Matteo Brezzo|Chisola (until 30 June 2027)
+86|Torino|loaned_out||DF|FRA|Côme Bianay Balcot|Red Star (until 30 June 2027)
+86|Torino|loaned_out||DF|ITA|Alessandro Dellavalle|Padova (until 30 June 2027)
+86|Torino|loaned_out||DF|FRA|Ali Dembélé|Lecce (until 30 June 2027)
+86|Torino|loaned_out||DF|IRL|Senan Mullen|Bohemians (until 31 December 2026)
+86|Torino|loaned_out||DF|ITA|Mattia Pellini|Südtirol (until 30 June 2027)
+86|Torino|loaned_out||MF|ITA|Wisdom Acquah|Modena (until 30 June 2027)
+86|Torino|loaned_out||MF|ENG|Tino Anjorin|Göztepe (until 30 June 2027)
+86|Torino|loaned_out||MF|ITA|Aaron Ciammaglichella|Pro Vercelli (until 30 June 2027)
+86|Torino|loaned_out||MF|ITA|Marco Dalla Vecchia|Cesena (until 30 June 2027)
+86|Torino|loaned_out||MF|ITA|Tommaso Di Marco|Catania (until 30 June 2027)
+86|Torino|loaned_out||MF|SRB|Ivan Ilić|Lecce (until 30 June 2027)
+86|Torino|loaned_out||MF|MDA|Sergiu Perciun|Ascoli (until 30 June 2027)
+86|Torino|loaned_out||MF|BRA|Jonathan Silva|Mantova (until 30 June 2027)
+86|Torino|loaned_out||FW|ITA|Tommaso Gabellini|Forlì (until 30 June 2027)
+86|Torino|loaned_out||FW|SWE|Alieu Njie|Fiorentina (until 30 June 2027)
+86|Torino|loaned_out||FW|ITA|Cristian Padula|Audace Cerignola (until 30 June 2027)
+87|Sassuolo|squad|3|DF|SCO|Josh Doig|
+87|Sassuolo|squad|5|DF|GBS|Fali Candé|
+87|Sassuolo|squad|6|DF|POL|Sebastian Walukiewicz|
+87|Sassuolo|squad|7|FW|AUS|Cristian Volpato|
+87|Sassuolo|squad|8|MF|ITA|Andrea Ghion|
+87|Sassuolo|squad|9|FW|SCO|Kieron Bowie|on loan from Hellas Verona
+87|Sassuolo|squad|10|FW|ITA|Domenico Berardi|captain
+87|Sassuolo|squad|11|MF|ITA|Daniel Boloca|
+87|Sassuolo|squad|12|GK|ITA|Giacomo Satalino|
+87|Sassuolo|squad|15|DF|CRO|Duje Ćaleta-Car|
+87|Sassuolo|squad|16|DF|BEL|Fedde Leysen|on loan from Union SG
+87|Sassuolo|squad|17|MF|MNE|Vasilije Adžić|on loan from Juventus
+87|Sassuolo|squad|18|MF|SRB|Nemanja Matić|
+87|Sassuolo|squad|19|FW|DEN|Laurs Skjellerup|
+87|Sassuolo|squad|20|DF|BEL|Ignace Van Der Brempt|on loan from Como
+87|Sassuolo|squad|21|DF|IDN|Jay Idzes|
+87|Sassuolo|squad|22|GK|ITA|Lorenzo Nyarko|
+87|Sassuolo|squad|25|FW|ARG|Benja Domínguez|on loan from Bologna
+87|Sassuolo|squad|26|DF|NED|Cas Odenthal|
+87|Sassuolo|squad|27|DF|COL|Yeferson Paz|
+87|Sassuolo|squad|33|DF|ESP|Rafa Obrador|on loan from Benfica
+87|Sassuolo|squad|35|MF|ITA|Luca Lipani|
+87|Sassuolo|squad|36|DF|ITA|Giorgio Vezzosi|
+87|Sassuolo|squad|42|MF|NOR|Kristian Thorstvedt|
+87|Sassuolo|squad|45|FW|FRA|Armand Laurienté|
+87|Sassuolo|squad|46|DF|ITA|Simone Cinquegrano|
+87|Sassuolo|squad|49|GK|KOS|Arijanet Muric|
+87|Sassuolo|squad|50|MF|FRA|Darryl Bakola|
+87|Sassuolo|squad|55|MF|GHA|Ibrahim Sulemana|on loan from Atalanta
+87|Sassuolo|squad|77|FW|ITA|Nicholas Pierini|
+87|Sassuolo|squad|80|GK|ITA|Stefano Turati|
+87|Sassuolo|squad|90|MF|CAN|Ismaël Koné|
+87|Sassuolo|squad|94|FW|ITA|Sebastiano Esposito|on loan from Cagliari
+87|Sassuolo|squad|14|FW|ALB|Gabriel Kulla|
+87|Sassuolo|squad||GK|ITA|Alessandro Russo|unnumbered, separate unlabelled table
+87|Sassuolo|squad||DF|ITA|Edoardo Pieragnolo|unnumbered, separate unlabelled table
+87|Sassuolo|loaned_out||GK|ITA|Gioele Zacchi|Union Brescia (until 30 June 2027)
+87|Sassuolo|loaned_out||DF|ITA|Francesco Corradini|Pineto (until 30 June 2027)
+87|Sassuolo|loaned_out||DF|ITA|Alessandro Di Bitonto|Avellino (until 30 June 2027)
+87|Sassuolo|loaned_out||DF|ITA|Tommaso Macchioni|Carrarese (until 30 June 2027)
+87|Sassuolo|loaned_out||DF|ITA|Kevin Miranda|Cerignola (until 30 June 2027)
+87|Sassuolo|loaned_out||DF|ITA|Filippo Missori|Avellino (until 30 June 2027)
+87|Sassuolo|loaned_out||MF|ITA|Kevin Bruno|Vado (until 30 June 2027)
+87|Sassuolo|loaned_out||MF|ITA|Justin Kumi|Juve Stabia (until 30 June 2027)
+87|Sassuolo|loaned_out||MF|ITA|Kevin Leone|Arezzo (until 30 June 2027)
+87|Sassuolo|loaned_out||MF|ITA|Patrick Nuamah|Sabadell (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|URU|Agustín Álvarez|Talleres (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|MTQ|Janis Antiste|Górnik Zabrze (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|ITA|Riccardo Ciervo|Cagliari (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|ITA|Luca D'Andrea|Cesena (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|GHA|Amoako Minta|Gubbio (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|ITA|Samuele Mulattieri|Hellas Verona (until 30 June 2027)
+87|Sassuolo|loaned_out||FW|ITA|Flavio Russo|Catania (until 30 June 2027)
+88|Parma|squad|3|DF|SEN|Abdoulaye Ndiaye|
+88|Parma|squad|4|MF|SUI|Vincent Sierro|
+88|Parma|squad|5|DF|ARG|Lautaro Valenti|
+88|Parma|squad|7|FW|ESP|Ousmane Diallo|
+88|Parma|squad|8|MF|USA|Benjamin Cremaschi|
+88|Parma|squad|9|FW|ARG|David Romero|
+88|Parma|squad|10|MF|ESP|Adrián Bernabé|
+88|Parma|squad|11|FW|SWE|Pontus Almqvist|
+88|Parma|squad|14|DF|ITA|Emanuele Valeri|
+88|Parma|squad|15|DF|ITA|Enrico Delprato|captain
+88|Parma|squad|16|MF|BEL|Mandela Keita|
+88|Parma|squad|19|FW|MLI|El Bilal Touré|on loan from Atalanta
+88|Parma|squad|20|FW|CRO|Matija Frigan|
+88|Parma|squad|23|FW|FRA|Nesta Elphege|
+88|Parma|squad|25|FW|ARG|Thomás de Martis|on loan from Lanús
+88|Parma|squad|27|DF|SUI|Sascha Britschgi|
+88|Parma|squad|29|DF|ARG|Franco Carboni|
+88|Parma|squad|30|GK|ITA|Giovanni Daffara|
+88|Parma|squad|32|MF|ARG|Christian Ordóñez|
+88|Parma|squad|34|DF|BRA|Diego Carlos|on loan from Fenerbahçe
+88|Parma|squad|37|DF|ARG|Mariano Troilo|
+88|Parma|squad|40|GK|ITA|Edoardo Corvi|
+88|Parma|squad|41|MF|ITA|Hans Nicolussi Caviglia|
+88|Parma|squad|47|MF|SEN|Abdou-Salam Konate|
+88|Parma|squad|72|DF|SVN|Dominik Drobnič|
+88|Parma|squad|76|MF|ITA|Simone Lontani|
+88|Parma|squad|80|MF|ITA|Giovanni Fabbian|on loan from Fiorentina
+88|Parma|squad|75|GK|ITA|Alessandro Mazzocchi|
+88|Parma|loaned_out||GK|ITA|Filippo Rinaldi|Catania (until 30 June 2027)
+88|Parma|loaned_out||DF|DOM|Marlon Mena|Arezzo (until 30 June 2027)
+88|Parma|loaned_out||DF|ITA|Nicolas Trabucchi|Dolomiti Bellunesi (until 30 June 2027)
+88|Parma|loaned_out||MF|ITA|Alessandro Cardinali|Spezia (until 30 June 2027)
+88|Parma|loaned_out||MF|ITA|Rachid Kouda|Mantova (until 30 June 2027)
+88|Parma|loaned_out||MF|ITA|Elia Plicco|Sambenedettese (until 30 June 2027)
+88|Parma|loaned_out||MF|DEN|Oliver Sørensen|Celtic (until 30 June 2027)
+88|Parma|loaned_out||MF|ITA|Edoardo Tigani|Ospitaletto (until 30 June 2027)
+88|Parma|loaned_out||FW|POL|Mateusz Kowalski|Dolomiti Bellunesi (until 30 June 2027)
+88|Parma|loaned_out||FW|POL|Daniel Mikołajewski|Luzern (until 30 June 2027)
+88|Parma|loaned_out||FW|SWE|Jacob Ondrejka|Groningen (until 30 June 2027)
+88|Parma|loaned_out||FW|LVA|Dario Šits|Dordrecht (until 30 June 2027)
+88|Parma|loaned_out||FW|MAR|Aymen Zouin|Casa Pia (until 30 June 2027)
+89|Genoa|squad|1|GK|NED|Justin Bijlow|
+89|Genoa|squad|2|DF|ALB|Mario Mitaj|on loan from Al-Ittihad
+89|Genoa|squad|3|DF|NED|Kingsley Ehizibue|
+89|Genoa|squad|4|MF|BRA|Alex Amorim|
+89|Genoa|squad|5|DF|NOR|Leo Østigård|
+89|Genoa|squad|8|MF|ITA|Tommaso Baldanzi|on loan from Roma
+89|Genoa|squad|9|FW|POR|Vitinha|
+89|Genoa|squad|10|FW|BRA|Júnior Messias|
+89|Genoa|squad|11|MF|SUI|Ethan Meichtry|
+89|Genoa|squad|16|DF|ENG|Cody Drameh|
+89|Genoa|squad|17|FW|AUT|Elias Havel|
+89|Genoa|squad|18|FW|MNE|Milutin Osmajić|
+89|Genoa|squad|19|FW|ALB|Joi Nuredini|
+89|Genoa|squad|20|DF|ITA|Stefano Sabelli|
+89|Genoa|squad|22|DF|MEX|Johan Vásquez|captain
+89|Genoa|squad|25|MF|CIV|Hamed Traorè|on loan from Marseille
+89|Genoa|squad|27|DF|ITA|Alessandro Marcandalli|
+89|Genoa|squad|29|FW|ITA|Lorenzo Colombo|
+89|Genoa|squad|31|DF|AUT|David Puczka|
+89|Genoa|squad|32|MF|DEN|Morten Frendrup|
+89|Genoa|squad|34|DF|DEN|Sebastian Otoa|
+89|Genoa|squad|39|GK|ITA|Daniele Sommariva|
+89|Genoa|squad|71|MF|ITA|Samuel Wiafe|
+89|Genoa|squad|76|FW|ITA|Lorenzo Venturino|
+89|Genoa|squad|77|MF|ISL|Mikael Egill Ellertsson|
+89|Genoa|squad|92|FW|ITA|Stephan El Shaarawy|
+89|Genoa|squad|97|MF|SUI|Djibril Sow|
+89|Genoa|squad|99|GK|AUT|Franz Stolz|
+89|Genoa|squad|14|DF|LTU|Lukas Klišys|
+89|Genoa|squad|21|FW|BRA|Robinho Júnior|on loan from Santos
+89|Genoa|squad|74|DF|FRA|Mamedi Doucouré|
+89|Genoa|squad|75|MF|FRA|Gaël Lafont|
+89|Genoa|squad|85|DF|GBS|Marcelo Vaz|
+89|Genoa|squad|93|GK|LAT|Rendijs Mihelsons|
+89|Genoa|loaned_out||GK|ITA|Simone Calvani|Vado (until 30 June 2027)
+89|Genoa|loaned_out||GK|LTU|Ernestas Lysionok|Dolomiti Bellunesi (until 30 June 2027)
+89|Genoa|loaned_out||DF|ITA|Gabriele Calvani|Frosinone (until 30 June 2027)
+89|Genoa|loaned_out||DF|ITA|Lorenzo Gagliardi|Team Altamura (until 30 June 2027)
+89|Genoa|loaned_out||DF|ITA|Edoardo Meconi|Gubbio (until 30 June 2027)
+89|Genoa|loaned_out||DF|BFA|Latif Ouedraogo|Rapid București (until 30 June 2027)
+89|Genoa|loaned_out||DF|ITA|Tommaso Pittino|Livorno (until 30 June 2027)
+89|Genoa|loaned_out||DF|ITA|Gianluca Rossi|Treviso (until 30 June 2027)
+89|Genoa|loaned_out||MF|BFA|Chec Bebel Doumbia|Rapid București (until 30 June 2027)
+89|Genoa|loaned_out||MF|ITA|Patrizio Masini|Frosinone (until 30 June 2027)
+89|Genoa|loaned_out||FW|PAR|Hugo Cuenca|Celta Vigo B (until 30 June 2027)
+89|Genoa|loaned_out||FW|ITA|Alessandro Debenedetti|Cesena (until 30 June 2027)
+89|Genoa|loaned_out||FW|ITA|Seydou Fini|Frosinone (until 30 June 2027)
+89|Genoa|loaned_out||FW|ITA|Gabriele Pessolani|Crema (until 30 June 2027)
+89|Genoa|loaned_out||FW|SVK|Adam Žulevič|Iraklis (until 30 June 2027)
+90|Udinese|squad|4|MF|SLO|Sandi Lovrić|
+90|Udinese|squad|5|DF|AUT|David Alaba|
+90|Udinese|squad|6|MF|ESP|Oier Zarraga|
+90|Udinese|squad|7|FW|SEN|Idrissa Gueye|
+90|Udinese|squad|8|MF|SWE|Jesper Karlström|captain
+90|Udinese|squad|9|FW|ENG|Keinan Davis|
+90|Udinese|squad|10|FW|ITA|Nicolò Zaniolo|
+90|Udinese|squad|11|DF|CIV|Hassane Kamara|
+90|Udinese|squad|13|DF|ITA|Nicolò Bertola|
+90|Udinese|squad|14|DF|IRL|James Abankwah|
+90|Udinese|squad|15|FW|CIV|Vakoun Bayo|
+90|Udinese|squad|16|DF|GER|Matteo Palma|
+90|Udinese|squad|20|DF|COL|Juan David Arizala|
+90|Udinese|squad|23|DF|KOS|Mërgim Vojvoda|
+90|Udinese|squad|24|MF|POL|Jakub Piotrowski|
+90|Udinese|squad|27|DF|BEL|Christian Kabasele|
+90|Udinese|squad|28|DF|FRA|Oumar Solet|
+90|Udinese|squad|30|MF|GEO|Giorgi Chakvetadze|
+90|Udinese|squad|32|MF|NED|Jurgen Ekkelenkamp|
+90|Udinese|squad|38|MF|SCO|Lennon Miller|
+90|Udinese|squad|40|GK|NGR|Maduka Okoye|
+90|Udinese|squad|41|GK|POL|Bartosz Mrozek|
+90|Udinese|squad|45|FW|ITA|Giulio Vinciati|
+90|Udinese|squad|46|MF|ESP|Unai Gómez|
+90|Udinese|squad|59|DF|ITA|Alessandro Zanoli|
+90|Udinese|squad|77|DF|CMR|Enzo Ebosse|
+90|Udinese|squad|91|FW|SRB|Lazar Jovanović|
+90|Udinese|squad|93|GK|ITA|Daniele Padelli|
+90|Udinese|loaned_out||GK|ITA|Alessandro Nunziante|Arezzo (until 30 June 2027)
+90|Udinese|loaned_out||DF|GEO|Saba Goglichidze|Monza (until 30 June 2027)
+90|Udinese|loaned_out||DF|DEN|Thomas Kristensen|Atalanta (until 30 June 2027)
+90|Udinese|loaned_out||DF|CRO|Branimir Mlačić|Watford (until 30 June 2027)
+90|Udinese|loaned_out||DF|ZIM|Jordan Zemura|Watford (until 30 June 2027)
+90|Udinese|loaned_out||MF|FRA|Abdoulaye Camara|Ajax (until 30 June 2027)
+90|Udinese|loaned_out||MF|ITA|Simone Pafundi|Catanzaro (until 30 June 2027)
+90|Udinese|loaned_out||MF|SLO|David Pejičić|Koper (until 30 June 2027)
+90|Udinese|loaned_out||FW|POL|Adam Buksa|Mallorca (until 30 June 2027)
+90|Udinese|loaned_out||FW|CHI|Damián Pizarro|Audax Italiano (until 30 June 2027)
+91|Cagliari|squad|1|GK|ITA|Elia Caprile|
+91|Cagliari|squad|2|DF|POR|Zé Pedro|
+91|Cagliari|squad|3|DF|ITA|Riyad Idrissi|
+91|Cagliari|squad|4|MF|SUI|Alessandro Romano|on loan from Roma
+91|Cagliari|squad|6|MF|ENG|Harry Winks|
+91|Cagliari|squad|8|MF|FRA|Michel Ndary Adopo|
+91|Cagliari|squad|9|FW|ESP|Kevin Carlos|on loan from Nice
+91|Cagliari|squad|10|MF|ITA|Jacopo Fazzini|on loan from Fiorentina
+91|Cagliari|squad|12|GK|ALB|Alen Sherri|
+91|Cagliari|squad|14|MF|ITA|Alessandro Deiola|captain
+91|Cagliari|squad|15|DF|URU|Juan Rodríguez|
+91|Cagliari|squad|17|MF|ITA|Mattia Felici|
+91|Cagliari|squad|18|FW|ZAM|Kingstone Mutandwa|
+91|Cagliari|squad|19|FW|FRA|Yael Trepy|
+91|Cagliari|squad|21|MF|ITA|Nicolò Cavuoti|
+91|Cagliari|squad|22|DF|ITA|Raphael Kofler|on loan from Südtirol
+91|Cagliari|squad|23|GK|SRB|Boris Radunović|
+91|Cagliari|squad|24|DF|ITA|Giuseppe Aurelio|
+91|Cagliari|squad|26|DF|COL|Yerry Mina|
+91|Cagliari|squad|27|MF|ZAM|Joseph Liteta|
+91|Cagliari|squad|29|FW|ITA|Gennaro Borrelli|
+91|Cagliari|squad|30|MF|ENG|Demi Akarakiri|
+91|Cagliari|squad|31|FW|SEN|Paul Mendy|
+91|Cagliari|squad|32|MF|BUL|Ivan Sulev|
+91|Cagliari|squad|33|DF|SVK|Adam Obert|
+91|Cagliari|squad|36|MF|ITA|Nicola Grandu|
+91|Cagliari|squad|39|MF|GAM|Alieu Fadera|on loan from Como
+91|Cagliari|squad|70|FW|ITA|Daniel Maldini|on loan from Atalanta
+91|Cagliari|squad||MF|FRA|Yanis Massolin|on loan from Inter Milan
+91|Cagliari|squad||MF|ITA|Roberto Gagliardini|
+91|Cagliari|squad||FW|ITA|Riccardo Ciervo|on loan from Sassuolo
+91|Cagliari|loaned_out||GK|BUL|Velizar-Iliya Iliev|Cosenza (until 30 June 2027)
+91|Cagliari|loaned_out||DF|MLI|Francesco Gallea|Juve Stabia (until 30 June 2027)
+91|Cagliari|loaned_out||DF|ITA|Nicola Pintus|Pianese (until 30 June 2027)
+91|Cagliari|loaned_out||DF|ITA|Davide Veroli|Südtirol (until 30 June 2027)
+91|Cagliari|loaned_out||DF|ITA|Gabriele Zappa|Verona (until 30 June 2027)
+91|Cagliari|loaned_out||DF|NED|Othniël Raterink|ADO Den Haag (until 30 June 2027)
+91|Cagliari|loaned_out||MF|ITA|Roberto Malfitano|Barletta (until 30 June 2027)
+91|Cagliari|loaned_out||MF|ITA|Matteo Prati|Racing Santander (until 30 June 2027)
+91|Cagliari|loaned_out||FW|URU|Agustin Albarracin|Albacete (until 30 June 2027)
+91|Cagliari|loaned_out||FW|ITA|Sebastiano Di Paolo|Avellino (until 30 June 2027)
+91|Cagliari|loaned_out||FW|ITA|Sebastiano Esposito|Sassuolo (until 30 June 2027)
+91|Cagliari|loaned_out||FW|ANG|Zito Luvumbo|Mallorca (until 30 June 2027)
+92|Monza|squad|1|GK|SWE|Noel Törnqvist|on loan from Como
+92|Monza|squad|2|DF|GEO|Saba Goglichidze|on loan from Udinese
+92|Monza|squad|3|DF|ITA|Lorenzo Lucchesi|
+92|Monza|squad|4|DF|POL|Jan Ziółkowski|on loan from Roma
+92|Monza|squad|5|DF|FRA|Yvan Maye|on loan from Inter Milan
+92|Monza|squad|6|DF|BUL|Valentin Antov|
+92|Monza|squad|7|DF|POR|Ricardo Mangas|on loan from Sporting CP
+92|Monza|squad|8|MF|FRA|Manga Foe Ondoa|
+92|Monza|squad|9|FW|POR|Gustavo Varela|
+92|Monza|squad|10|FW|ITA|Patrick Cutrone|
+92|Monza|squad|11|MF|ENG|Omari Forson|
+92|Monza|squad|14|MF|NGR|Ebenezer Akinsanmiro|on loan from Inter Milan
+92|Monza|squad|16|FW|BEL|Cyril Ngonge|on loan from Napoli
+92|Monza|squad|17|FW|SEN|Keita Baldé|
+92|Monza|squad|19|DF|ITA|Samuele Birindelli|
+92|Monza|squad|20|GK|SEN|Demba Thiam|
+92|Monza|squad|21|MF|ITA|Leonardo Colombo|
+92|Monza|squad|22|FW|ARG|Exequiel Zeballos|
+92|Monza|squad|24|DF|ITA|Adam Bakoune|
+92|Monza|squad|26|FW|ITA|Patrick Ciurria|
+92|Monza|squad|27|MF|GER|Idrissa Touré|
+92|Monza|squad|28|FW|ITA|Andrea Colpani|
+92|Monza|squad|32|MF|ITA|Matteo Pessina|captain
+92|Monza|squad|43|GK|SLO|Aljaž Strajnar|
+92|Monza|squad|44|DF|ITA|Andrea Carboni|
+92|Monza|squad|46|MF|ENG|Jay Robinson|on loan from Southampton
+92|Monza|squad|47|FW|POR|Dany Mota|
+92|Monza|squad|60|DF|ITA|Eddy Kouadio|on loan from Fiorentina
+92|Monza|squad|70|FW|ITA|Kevin Martins|
+92|Monza|squad|80|MF|ITA|Mathis Mout|
+92|Monza|squad|90|MF|ITA|Michael Folorunsho|on loan from Napoli
+92|Monza|squad|50|GK|ITA|Aleksandr Ballabio|
+92|Monza|loaned_out||GK|ITA|Semuel Pizzignacco|Carrarese (until 30 June 2027)
+92|Monza|loaned_out||GK|ITA|Andrea Vailati|Audace Cerignola (until 30 June 2027)
+92|Monza|loaned_out||DF|ITA|Samuele Capolupo|Spezia (until 30 June 2027)
+92|Monza|loaned_out||DF|ITA|Filippo Delli Carri|Sampdoria (until 30 June 2027)
+92|Monza|loaned_out||MF|ITA|Alessandro Berretta|Pergolettese (until 30 June 2027)
+92|Monza|loaned_out||MF|ITA|Nicolas Galazzi|Padova (until 30 June 2027)
+92|Monza|loaned_out||FW|FRA|Solomon Loubao|Catanzaro (until 30 June 2027)
+93|Frosinone|squad|2|DF|ITA|Giorgio Cittadini|on loan from Atalanta
+93|Frosinone|squad|3|DF|ITA|Gabriele Calvani|on loan from Genoa
+93|Frosinone|squad|4|MF|CIV|Ben Lhassine Kone|
+93|Frosinone|squad|5|DF|ITA|Wisdom Amey|on loan from Bologna
+93|Frosinone|squad|7|FW|ALG|Farès Ghedjemis|
+93|Frosinone|squad|8|MF|GRE|Ilias Koutsoupias|
+93|Frosinone|squad|9|FW|ITA|Antonio Raimondo|on loan from Bologna
+93|Frosinone|squad|10|MF|AUT|Romano Schmid|
+93|Frosinone|squad|11|FW|ROU|Daniel Bîrligea|on loan from FCSB
+93|Frosinone|squad|12|GK|ITA|Matteo Pisseri|
+93|Frosinone|squad|14|MF|ITA|Giacomo Calò|
+93|Frosinone|squad|16|MF|ITA|Matteo Cichella|
+93|Frosinone|squad|17|FW|GEO|Giorgi Kvernadze|
+93|Frosinone|squad|20|DF|GAB|Anthony Oyono|
+93|Frosinone|squad|22|GK|ITA|Lorenzo Palmisani|
+93|Frosinone|squad|24|FW|ITA|Alessio Zerbin|
+93|Frosinone|squad|25|DF|NGA|Kevin Akpoguma|
+93|Frosinone|squad|27|MF|AUT|Florian Grillitsch|
+93|Frosinone|squad|29|FW|VEN|Alejandro Cichero|
+93|Frosinone|squad|30|DF|ITA|Ilario Monterisi|vice-captain
+93|Frosinone|squad|34|MF|MAR|Anouar El Azzouzi|
+93|Frosinone|squad|40|FW|ITA|Seydou Fini|on loan from Genoa
+93|Frosinone|squad|60|DF|EGY|Omar Fayed|
+93|Frosinone|squad|70|FW|ALB|Luis Hasa|
+93|Frosinone|squad|71|DF|SRB|Aleksa Terzić|
+93|Frosinone|squad|73|MF|ITA|Patrizio Masini|on loan from Genoa
+93|Frosinone|squad|79|DF|ITA|Gabriele Bracaglia|
+93|Frosinone|squad|91|GK|ITA|Sebastiano Desplanches|on loan from Palermo
+93|Frosinone|squad|90|DF|CMR|Enzo Tchato|
+93|Frosinone|squad|96|MF|ITA|Francesco Gelli|
+93|Frosinone|squad|99|MF|ITA|Kevin Barcella|
+93|Frosinone|squad||GK|BIH|Eldin Lolić|
+93|Frosinone|squad||FW|SVK|Tomáš Bobček|
+93|Frosinone|loaned_out||DF|ITA|Niccolò Corrado|Empoli (until 30 June 2027)
+93|Frosinone|loaned_out||DF|GAB|Jérémy Oyono|Spezia (until 30 June 2027)
+93|Frosinone|loaned_out||MF|ITA|Jacopo Gelli|Cesena (until 30 June 2027)
+93|Frosinone|loaned_out||MF|ITA|Filippo Grosso|Crotone (until 30 June 2027)
+93|Frosinone|loaned_out||FW|ITA|Lorenzo Befani|Torino U19 (until 30 June 2027)
+93|Frosinone|loaned_out||FW|GAM|Muhammed Colley|Casertana (until 30 June 2027)
+93|Frosinone|loaned_out||FW|CAN|Damar Dixon|Toronto FC II (until 30 June 2027)
+93|Frosinone|loaned_out||FW|ITA|Lorenzo Gori|Grosseto (until 30 June 2027)
+94|Lecce|squad|1|GK|ITA|Marco Bleve|
+94|Lecce|squad|3|DF|IRL|Corrie Ndaba|
+94|Lecce|squad|4|DF|ANG|Kialonda Gaspar|
+94|Lecce|squad|5|DF|GER|Jamil Siebert|
+94|Lecce|squad|7|FW|SWE|Amar Fatah|
+94|Lecce|squad|8|MF|TOG|Sadik Fofana|
+94|Lecce|squad|9|FW|SRB|Nikola Štulić|
+94|Lecce|squad|10|MF|ALB|Medon Berisha|
+94|Lecce|squad|11|FW|NIG|Konan N'Dri|
+94|Lecce|squad|14|MF|MAR|Youssef Maleh|
+94|Lecce|squad|16|MF|ISR|Omri Gandelman|
+94|Lecce|squad|17|DF|POR|Danilo Veiga|
+94|Lecce|squad|18|DF|FRA|Gaby Jean|
+94|Lecce|squad|21|DF|CIV|Owen Kouassi|
+94|Lecce|squad|22|FW|ESP|Paco Esteban|
+94|Lecce|squad|25|DF|ITA|Antonino Gallo|
+94|Lecce|squad|28|MF|NED|Olaf Gorter|
+94|Lecce|squad|29|MF|MLI|Lassana Coulibaly|
+94|Lecce|squad|30|GK|ITA|Wladimiro Falcone|captain
+94|Lecce|squad|33|GK|BUL|Plamen Penev|
+94|Lecce|squad|34|MF|DEN|Hjalte Lærke|
+94|Lecce|squad|36|DF|GER|Marlon Ubani|
+94|Lecce|squad|44|DF|POR|Tiago Gabriel|
+94|Lecce|squad|50|FW|ARG|Santiago Pierotti|
+94|Lecce|squad|69|FW|FRA|Willem Geubbels|
+94|Lecce|squad|77|MF|GUI|Mohamed Kaba|
+94|Lecce|squad|79|MF|MTN|Oumar Ngom|
+94|Lecce|squad|80|MF|BIH|Niko Kovač|
+94|Lecce|squad||DF|FRA|Ali Dembélé|on loan from Torino
+94|Lecce|squad||MF|SRB|Ivan Ilić|on loan from Torino
+94|Lecce|squad||GK|ROU|Alexandru Borbei|
+94|Lecce|squad||DF|NED|Vernon Addo|
+94|Lecce|squad||DF|AUS|Sebastian Esposito|
+94|Lecce|squad||FW|SRB|Miloš Jović|
+94|Lecce|loaned_out||GK|FIN|Jasper Samooja|HJK Helsinki (until 30 June 2027)
+94|Lecce|loaned_out||DF|CHI|Matías Pérez|Deportes La Serena (until 30 June 2027)
+94|Lecce|loaned_out||MF|POL|Filip Marchwiński|KS Cracovia (until 30 June 2027)
+94|Lecce|loaned_out||MF|IRL|Ed McJannet|Cosenza (until 30 June 2027)
+94|Lecce|loaned_out||MF|ESP|Álex Sala|Mallorca (until 30 June 2027)
+94|Lecce|loaned_out||FW|ROU|Rareș Burnete|Südtirol (until 30 June 2027)
+94|Lecce|loaned_out||FW|ITA|Marco Delle Monache|Pineto (until 30 June 2027)
+95|Venezia|squad|1|GK|SRB|Filip Stanković|
+95|Venezia|squad|2|DF|ARG|Matías Moreno|on loan from Fiorentina
+95|Venezia|squad|3|DF|BEL|Joël Schingtienne|
+95|Venezia|squad|4|DF|CRO|Bartol Franjić|
+95|Venezia|squad|5|DF|SUR|Ridgeciano Haps|
+95|Venezia|squad|6|MF|USA|Gianluca Busio|captain
+95|Venezia|squad|7|FW|KOS|Albion Rrahmani|
+95|Venezia|squad|8|MF|ESP|Lamine Fanne|
+95|Venezia|squad|9|FW|ITA|Andrea Adorante|
+95|Venezia|squad|10|FW|ECU|John Yeboah|
+95|Venezia|squad|14|DF|POR|Thierry Correia|
+95|Venezia|squad|15|DF|BRA|Juan Jesus|
+95|Venezia|squad|16|DF|GHA|Rufai Mohammed|
+95|Venezia|squad|17|DF|GER|Armel Bella-Kotchap|
+95|Venezia|squad|18|DF|FRA|Antoine Hainaut|
+95|Venezia|squad|19|MF|SUI|Simon Sohm|on loan from Fiorentina
+95|Venezia|squad|20|DF|BEL|Richie Sagrado|
+95|Venezia|squad|21|MF|ISL|Þórir Jóhann Helgason|
+95|Venezia|squad|23|GK|ITA|Matteo Grandi|
+95|Venezia|squad|25|DF|MAR|Redouane Halhal|
+95|Venezia|squad|26|MF|CRO|Toma Bašić|
+95|Venezia|squad|28|GK|ITA|Alessio Pozzi|
+95|Venezia|squad|29|FW|GER|Lion Lauberbach|
+95|Venezia|squad|30|MF|ITA|Matteo Dagasso|
+95|Venezia|squad|32|MF|GHA|Alfred Duncan|
+95|Venezia|squad|33|DF|CRO|Marin Šverko|
+95|Venezia|squad|36|MF|ITA|Lorenzo Berardi|
+95|Venezia|squad|45|FW|NGA|Akor Adams|
+95|Venezia|squad|55|MF|ITA|Simone Panada|
+95|Venezia|squad|56|MF|POL|Kornel Lisman|
+95|Venezia|squad|70|DF|ITA|Pasquale Mazzocchi|on loan from Napoli
+95|Venezia|squad|71|MF|ESP|Kike Pérez|
+95|Venezia|squad|77|MF|ESP|Toni Fernández|
+95|Venezia|squad|95|DF|ESP|Ale Gomes|
+95|Venezia|squad|96|GK|ITA|Lorenzo Montipò|
+95|Venezia|loaned_out||GK|ITA|Alessandro Plizzari|Südtirol (until 30 June 2027)
+95|Venezia|loaned_out||DF|LUX|Seid Korać|Hellas Verona (until 30 June 2027)
+95|Venezia|loaned_out||DF|SUI|Calixte Ligue|Rijeka (until 30 June 2027)
+95|Venezia|loaned_out||DF|FRA|Ahmed Sidibé|Vitória de Guimarães (until 30 June 2027)
+95|Venezia|loaned_out||DF|ITA|Michael Venturi|Avellino (until 30 June 2027)
+95|Venezia|loaned_out||MF|ITA|Nicolò Berengo|Vis Pesaro (until 30 June 2027)
+95|Venezia|loaned_out||MF|NOR|Emil Bohinen|Cesena (until 30 June 2027)
+95|Venezia|loaned_out||MF|ITA|Mattia Compagnon|Hellas Verona (until 30 June 2027)
+95|Venezia|loaned_out||MF|ITA|Edoardo Mariani|Vis Pesaro (until 30 June 2027)
+95|Venezia|loaned_out||MF|ITA|Federico Tavernaro|Vis Pesaro (until 30 June 2027)
+95|Venezia|loaned_out||FW|MLT|Kevin Cannavò|Spezia (until 30 June 2027)
+95|Venezia|loaned_out||FW|ESP|Antonio Casas|Sporting de Gijón (until 30 June 2027)
+95|Venezia|loaned_out||FW|MAR|Saad El Haddad|Rudeš (until 30 June 2027)
+95|Venezia|loaned_out||FW|CZE|Daniel Fila|Avellino (until 30 June 2027)
+95|Venezia|loaned_out||FW|ITA|Marco Ladisa|Trento (until 30 June 2027)
+95|Venezia|loaned_out||FW|ITA|Alvin Okoro|Südtirol (until 30 June 2027)
+95|Venezia|loaned_out||FW|ITA|Gaetano Oristanio|Torino (until 30 June 2027)
+459|Benevento|squad|4|MF|ITA|Antonio Prisco|
+459|Benevento|squad|5|DF|ITA|Luca Caldirola|
+459|Benevento|squad|6|MF|GRE|Antonis Siatounis|
+459|Benevento|squad|8|MF|ITA|Mattia Maita|
+459|Benevento|squad|9|FW|ITA|Francesco Salvemini|
+459|Benevento|squad|10|FW|ITA|Luigi Cherubini|on loan from Roma
+459|Benevento|squad|11|MF|ITA|Davide Lamesta|
+459|Benevento|squad|13|DF|ITA|Raffaele Celia|
+459|Benevento|squad|14|DF|ITA|Stefano Scognamillo|
+459|Benevento|squad|15|DF|ITA|Christian Dalle Mura|
+459|Benevento|squad|16|MF|ITA|Mattia Mannini|on loan from Roma
+459|Benevento|squad|17|DF|ITA|Leonardo Sernicola|
+459|Benevento|squad|18|MF|ITA|Pier Luigi Simonetti|
+459|Benevento|squad|19|FW|ITA|Vincenzo Battista|
+459|Benevento|squad|20|DF|ITA|Pietro Beruatto|
+459|Benevento|squad|21|FW|ITA|Emanuele Schimmenti|
+459|Benevento|squad|22|GK|ITA|Manuel Esposito|
+459|Benevento|squad|23|DF|ITA|Pietro Saio|
+459|Benevento|squad|25|DF|ITA|Raffaele Romano|
+459|Benevento|squad|26|GK|ITA|Gianmarco Vannucchi|
+459|Benevento|squad|28|MF|CIV|Christian Kouan|
+459|Benevento|squad|29|FW|NGR|David Okereke|
+459|Benevento|squad|30|FW|BRA|Logan|
+459|Benevento|squad|31|DF|ITA|Giacomo Ricci|
+459|Benevento|squad|32|FW|ITA|Guglielmo Mignani|
+459|Benevento|squad|38|MF|ITA|Angelo Talia|
+459|Benevento|squad|77|DF|ITA|Edoardo Pierozzi|
+459|Benevento|squad|80|MF|ITA|Matteo Donatiello|
+459|Benevento|squad|82|MF|ITA|Matteo Del Gaudio|
+459|Benevento|squad|90|FW|ITA|Simone Verdi|
+459|Benevento|squad|93|FW|ITA|Marco Tumminello|
+459|Benevento|squad|96|GK|SEN|Alioune Sylla|
+459|Benevento|loaned_out||DF|ITA|Giovanni Castaldi|Sorrento (until 30 June 2027)
+459|Benevento|loaned_out||DF|ITA|Angelo Viscardi|Sorrento (until 30 June 2027)
+459|Benevento|loaned_out||MF|ITA|Dino Mehić|Casertana (until 30 June 2027)
+459|Benevento|loaned_out|7|FW|ITA|Lorenzo Carfora|Campobasso (until 30 June 2027)
+459|Benevento|loaned_out||FW|ITA|Mario Perlingieri|Audace Cerignola (until 30 June 2027)
+460|Carrarese Calcio|squad|3|DF|ITA|Marco Imperiale|captain
+460|Carrarese Calcio|squad|4|DF|CRO|David Vujević|
+460|Carrarese Calcio|squad|6|DF|ITA|Filippo Oliana|
+460|Carrarese Calcio|squad|7|MF|ITA|Niccolò Belloni|
+460|Carrarese Calcio|squad|8|MF|MAR|Yanis Khafi|
+460|Carrarese Calcio|squad|9|FW|ITA|Fabio Abiuso|
+460|Carrarese Calcio|squad|10|MF|ITA|Tommaso Rubino|on loan from Fiorentina
+460|Carrarese Calcio|squad|11|FW|GUI|Moustapha Cissé|on loan from Atalanta
+460|Carrarese Calcio|squad|12|GK|ITA|Giovanni Garofani|
+460|Carrarese Calcio|squad|13|DF|ITA|Fabio Andrea Ruggeri|
+460|Carrarese Calcio|squad|18|MF|ARG|Nicolás Schiavi|
+460|Carrarese Calcio|squad|19|GK|ITA|Vincenzo Fiorillo|
+460|Carrarese Calcio|squad|25|MF|ITA|Filippo Liberati|
+460|Carrarese Calcio|squad|32|FW|ITA|Mattia Finotto|
+460|Carrarese Calcio|squad|33|DF|ITA|Filippo Reale|on loan from Roma
+460|Carrarese Calcio|squad|41|DF|ITA|Lorenzo Romani|on loan from Fiorentina
+460|Carrarese Calcio|squad|66|MF|ITA|Pietro Pinelli|on loan from Lazio
+460|Carrarese Calcio|squad|72|MF|ITA|Filippo Melegoni|
+460|Carrarese Calcio|squad|73|DF|SWE|Jonas Rouhi|on loan from Juventus
+460|Carrarese Calcio|squad|77|MF|ITA|Gabriele Parlanti|
+460|Carrarese Calcio|squad|78|DF|POL|Tommaso Guercio|on loan from Śląsk Wrocław
+460|Carrarese Calcio|squad|87|GK|ITA|Stefano Mazzini|
+460|Carrarese Calcio|squad|91|FW|ITA|Giacomo Marconi|on loan from Parma
+460|Carrarese Calcio|loaned_out||DF|ITA|Simone Zanon|Pisa (until 30 June 2027)
+460|Carrarese Calcio|loaned_out||FW|ITA|Federico Accornero|Trento (until 30 June 2027)
+463|Cremonese|squad|1|GK|ITA|Andrea Fulignati|
+463|Cremonese|squad|2|MF|NOR|Morten Thorsby|
+463|Cremonese|squad|3|DF|ITA|Giuseppe Pezzella|
+463|Cremonese|squad|4|DF|ITA|Tommaso Barbieri|
+463|Cremonese|squad|5|DF|ITA|Sebastiano Luperto|
+463|Cremonese|squad|6|DF|ITA|Federico Baschirotto|vice-captain
+463|Cremonese|squad|7|FW|DEN|David Stückler|
+463|Cremonese|squad|8|MF|ITA|Simone Lottici Tessadri|
+463|Cremonese|squad|9|FW|ITA|Manuel De Luca|
+463|Cremonese|squad|10|MF|GER|Adin Ličina|on loan from Juventus
+463|Cremonese|squad|11|FW|BIH|Milan Đurić|
+463|Cremonese|squad|12|GK|ITA|Marco Festa|
+463|Cremonese|squad|13|DF|ITA|Fellipe Jack|on loan from Como
+463|Cremonese|squad|14|MF|ITA|Tommaso Berti|
+463|Cremonese|squad|15|DF|ITA|Matteo Bianchetti|captain
+463|Cremonese|squad|16|DF|ITA|Fabio Gerli|
+463|Cremonese|squad|17|FW|LTU|Adrian Lickūnas|
+463|Cremonese|squad|18|MF|ITA|Michele Collocolo|
+463|Cremonese|squad|19|FW|ITA|Marco Nasti|
+463|Cremonese|squad|20|MF|ITA|Simone Pontisso|
+463|Cremonese|squad|21|DF|ITA|Yuri Rocchetti|
+463|Cremonese|squad|22|GK|ITA|Federico Agazzi|
+463|Cremonese|squad|25|MF|GEO|Dachi Lordkipanidze|
+463|Cremonese|squad|27|MF|BEL|Jari Vandeputte|
+463|Cremonese|squad|33|MF|ITA|Alberto Grassi|
+463|Cremonese|squad|38|DF|ITA|Alessandro Vogliacco|
+463|Cremonese|squad|71|MF|ITA|Salvatore Elia|
+463|Cremonese|squad|90|FW|ITA|Federico Bonazzoli|
+463|Cremonese|loaned_out||GK|ITA|Lapo Nava|Alcione (until 30 June 2027)
+463|Cremonese|loaned_out|23|DF|ITA|Francesco Folino|Modena (until 30 June 2027)
+463|Cremonese|loaned_out|35|DF|ITA|Eddy Cabianca|Catania (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Emanuele Bassi|Pergolettese (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Michele Paganotti|Ospitaletto (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Davide Pavesi|Pergolettese (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Mattia Scaringi|Torres (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Filippo Tosi|Monopoli (until 30 June 2027)
+463|Cremonese|loaned_out||DF|ITA|Daniele Triacca|Lecco (until 30 June 2027)
+463|Cremonese|loaned_out||MF|ITA|Giulio Patrignani|Savoia (until 30 June 2027)
+463|Cremonese|loaned_out||FW|ITA|Giacomo Gabbiani|Livorno (until 30 June 2027)
+463|Cremonese|loaned_out||FW|ITA|Federico Ragnoli Galli|Ospitaletto (until 30 June 2027)
+464|Empoli|squad|1|GK|ITA|Samuele Perisan|
+464|Empoli|squad|2|DF|ITA|Marco Curto|
+464|Empoli|squad|4|DF|ITA|Simone Romagnoli|
+464|Empoli|squad|5|DF|ITA|Nosa Edward Obaretin|on loan from Napoli
+464|Empoli|squad|6|MF|ITA|Duccio Degli Innocenti|
+464|Empoli|squad|7|MF|ITA|Salvatore Elia|
+464|Empoli|squad|8|MF|ITA|Luca Magnino|
+464|Empoli|squad|9|FW|ITA|Pietro Pellegri|on loan from Torino
+464|Empoli|squad|10|MF|ROU|Rareș Ilie|on loan from Nice
+464|Empoli|squad|11|FW|ALB|Stiven Shpendi|
+464|Empoli|squad|12|GK|ITA|Manuel Gasparini|
+464|Empoli|squad|14|MF|ESP|Gerard Yepes|
+464|Empoli|squad|15|MF|GAM|Joseph Ceesay|
+464|Empoli|squad|17|FW|CZE|Daniel Fila|on loan from Venezia
+464|Empoli|squad|18|MF|ITA|Andrea Ghion|on loan from Sassuolo
+464|Empoli|squad|19|FW|ITA|Marco Nasti|on loan from Cremonese
+464|Empoli|squad|20|DF|ITA|Matteo Lovato|on loan from Salernitana
+464|Empoli|squad|21|GK|ITA|Andrea Fulignati|on loan from Cremonese
+464|Empoli|squad|22|GK|ITA|Francesco Versari|
+464|Empoli|squad|24|DF|NGA|Tyronne Ebuehi|
+464|Empoli|squad|25|MF|ITA|Lorenzo Ignacchiti|
+464|Empoli|squad|26|DF|ITA|Antonio Candela|on loan from Spezia
+464|Empoli|squad|27|DF|ITA|Brando Moruzzi|on loan from Juventus
+464|Empoli|squad|28|DF|ITA|Gabriele Indragoli|
+464|Empoli|squad|32|MF|SUI|Nicolas Haas|
+464|Empoli|squad|34|DF|ITA|Gabriele Guarino|
+464|Empoli|squad|36|DF|POL|Dawid Bembnista|
+464|Empoli|squad|53|FW|ITA|Danilo Busiello|
+464|Empoli|squad|70|FW|ITA|Edoardo Saporiti|
+464|Empoli|squad|77|FW|UKR|Bohdan Popov|
+464|Empoli|squad|89|FW|ITA|Thomas Campaniello|
+464|Empoli|squad|96|FW|ITA|Andrea Orlandi|
+464|Empoli|squad|99|FW|ITA|Flavio Bianchi|
+464|Empoli|squad|38|MF|ITA|Alessio Baralla|
+464|Empoli|squad|42|DF|SWE|Kevin Pašalić|
+464|Empoli|squad|48|FW|ITA|Edoardo Zanaga|
+464|Empoli|squad||DF|BEL|Jeremy Moray|
+464|Empoli|squad||MF|DEN|Ank Asmussen|
+464|Empoli|loaned_out||GK|ITA|Federico Brancolini|Salernitana (until 30 June 2026)
+464|Empoli|loaned_out||GK|ITA|Jacopo Seghetti|Livorno (until 30 June 2026)
+464|Empoli|loaned_out||DF|ITA|Michele Tempre|Pistoiese (until 30 June 2026)
+464|Empoli|loaned_out||DF|ITA|Lorenzo Tosto|Livorno (until 30 June 2026)
+464|Empoli|loaned_out||MF|ENG|Tino Anjorin|Torino (until 30 June 2026)
+464|Empoli|loaned_out||MF|ITA|Luca Belardinelli|Reggiana (until 30 June 2026)
+464|Empoli|loaned_out||MF|GHA|Emanuel Gyasi|Palermo (until 30 June 2026)
+464|Empoli|loaned_out||MF|POL|Iwo Kaczmarski|Inter Milan U23 (until 30 June 2026)
+464|Empoli|loaned_out||MF|ITA|Francesco Fabri|Seravezza Pozzi (until 30 June 2026)
+464|Empoli|loaned_out||FW|ITA|Giuseppe Brugognone|Sangiuliano (until 30 June 2026)
+464|Empoli|loaned_out||FW|ITA|Ismaël Konaté|Lecco (until 30 June 2026)
+464|Empoli|loaned_out||FW|POR|Herculano Nabian|Pontedera (until 30 June 2026)
+464|Empoli|loaned_out||FW|ITA|Andrea Sodero|Pianese (until 30 June 2026)
+464|Empoli|loaned_out||FW|ITA|Alessandro Torri|Ospitaletto (until 30 June 2026)
+464|Empoli|loaned_out||FW|ITA|Alessio Spatari|Seravezza Pozzi (until 30 June 2026)
+466|Hellas Verona|squad|1|GK|ITA|Nicola Leali|
+466|Hellas Verona|squad|2|DF|ENG|Daniel Oyegoke|
+466|Hellas Verona|squad|3|DF|DEN|Martin Frese|
+466|Hellas Verona|squad|5|DF|FRO|Andrias Edmundsson|
+466|Hellas Verona|squad|6|DF|CRO|Domagoj Bradarić|
+466|Hellas Verona|squad|7|DF|ALG|Rafik Belghali|
+466|Hellas Verona|squad|8|MF|GER|Suat Serdar|captain
+466|Hellas Verona|squad|9|FW|SWE|Amin Sarr|
+466|Hellas Verona|squad|10|MF|SVK|Tomáš Suslov|
+466|Hellas Verona|squad|11|MF|ITA|Mattia Compagnon|on loan from Venezia
+466|Hellas Verona|squad|14|FW|CPV|Dailon Livramento|
+466|Hellas Verona|squad|17|MF|FRA|Andréa Le Borgne|on loan from Como
+466|Hellas Verona|squad|18|MF|SUI|Leorat Bega|
+466|Hellas Verona|squad|19|FW|ITA|Samuele Mulattieri|on loan from Sassuolo
+466|Hellas Verona|squad|20|MF|CYP|Grigoris Kastanos|
+466|Hellas Verona|squad|21|MF|MAR|Abdou Harroui|
+466|Hellas Verona|squad|22|GK|ITA|Giacomo Toniolo|
+466|Hellas Verona|squad|23|MF|ITA|Nunzio Lella|
+466|Hellas Verona|squad|24|MF|FRA|Antoine Bernède|
+466|Hellas Verona|squad|25|FW|COL|Daniel Mosquera|
+466|Hellas Verona|squad|27|MF|POL|Paweł Dawidowicz|
+466|Hellas Verona|squad|28|DF|DEN|Tobias Slotsager|
+466|Hellas Verona|squad|31|MF|BRA|Charlys|
+466|Hellas Verona|squad|33|DF|FRA|Noe Mael Tagne|
+466|Hellas Verona|squad|34|GK|ITA|Simone Perilli|
+466|Hellas Verona|squad|35|FW|ITA|Salvatore Cerbone|
+466|Hellas Verona|squad|37|DF|ITA|Nicolò Calabrese|
+466|Hellas Verona|squad|38|FW|FRA|Ruben Akalé|
+466|Hellas Verona|squad|47|GK|BRA|Arthur Borghi|
+466|Hellas Verona|squad|48|DF|LUX|Seid Korać|on loan from Venezia
+466|Hellas Verona|squad|70|DF|GAM|Fallou Cham|
+466|Hellas Verona|squad|71|DF|ITA|Davide De Battisti|
+466|Hellas Verona|squad|79|FW|POL|Kacper Sezonienko|
+466|Hellas Verona|squad|90|FW|ROU|Ioan Vermeșan|
+466|Hellas Verona|squad||FW|ARG|Juan Manuel Cruz|
+466|Hellas Verona|loaned_out||GK|ITA|Mirko Castagnini|Gravina (until 30 June 2027)
+466|Hellas Verona|loaned_out||GK|ITA|Federico Magro|Casertana (until 30 June 2027)
+466|Hellas Verona|loaned_out||DF|ITA|Christian Corradi|Juventus Next Gen (until 30 June 2027)
+466|Hellas Verona|loaned_out||DF|ITA|William Feola|Crotone (until 30 June 2027)
+466|Hellas Verona|loaned_out||DF|ALB|Adi Kurti|Cerignola (until 30 June 2027)
+466|Hellas Verona|loaned_out||DF|ITA|Samuel John Nwachukwu|Lumezzane (until 30 June 2027)
+466|Hellas Verona|loaned_out||DF|SWE|Karlson Nwanege|SJK (until 31 December 2026)
+466|Hellas Verona|loaned_out||MF|SEN|Cheikh Niasse|Gençlerbirliği (until 30 June 2027)
+466|Hellas Verona|loaned_out||MF|ITA|Alessandro Pavanati|Lumezzane (until 30 June 2027)
+466|Hellas Verona|loaned_out||MF|ESP|Yellu Santiago|Marítimo (until 30 June 2027)
+466|Hellas Verona|loaned_out||FW|CIV|Junior Ajayi|Casertana (until 30 June 2027)
+466|Hellas Verona|loaned_out||FW|SCO|Kieron Bowie|Sassuolo (until 30 June 2027)
+466|Hellas Verona|loaned_out||FW|BRA|Isaac|Istra 1961 (until 30 June 2027)
+466|Hellas Verona|loaned_out||FW|SRB|Stefan Mitrović|Vojvodina (until 30 June 2027)
+471|Palermo|squad|1|GK|SEN|Alfred Gomis|
+471|Palermo|squad|3|DF|ITA|Tommaso Augello|
+471|Palermo|squad|5|MF|ITA|Antonio Palumbo|
+471|Palermo|squad|6|MF|FRA|Claudio Gomes|
+471|Palermo|squad|7|FW|NOR|Dennis Johnsen|
+471|Palermo|squad|8|MF|ITA|Jacopo Segre|
+471|Palermo|squad|10|MF|ITA|Filippo Ranocchia|
+471|Palermo|squad|11|MF|GHA|Emanuel Gyasi|on loan from Empoli
+471|Palermo|squad|13|DF|ITA|Mattia Bani|
+471|Palermo|squad|14|MF|SRB|Aljoša Vasić|
+471|Palermo|squad|17|MF|ITA|Samuel Giovane|on loan from Atalanta
+471|Palermo|squad|18|DF|ANG|Rui Modesto|on loan from Udinese
+471|Palermo|squad|19|DF|POL|Bartosz Bereszyński|
+471|Palermo|squad|20|FW|FIN|Joel Pohjanpalo|
+471|Palermo|squad|21|FW|FRA|Jérémy Le Douaron|
+471|Palermo|squad|24|DF|ITA|Giangiacomo Magnani|
+471|Palermo|squad|27|DF|ITA|Niccolò Pierozzi|
+471|Palermo|squad|28|MF|FRA|Alexis Blin|
+471|Palermo|squad|29|DF|POL|Patryk Peda|
+471|Palermo|squad|31|FW|ITA|Giacomo Corona|
+471|Palermo|squad|32|DF|ITA|Pietro Ceccaroni|
+471|Palermo|squad|66|GK|FIN|Jesse Joronen|
+471|Palermo|squad|72|DF|ITA|Davide Veroli|on loan from Cagliari
+471|Palermo|squad|77|GK|ITA|Francesco Di Bartolo|
+471|Palermo|loaned_out||GK|ITA|Francesco Bardi|Mantova (until 30 June 2026)
+471|Palermo|loaned_out||GK|ITA|Sebastiano Desplanches|Pescara (until 30 June 2026)
+471|Palermo|loaned_out||GK|ITA|Francesco Cutrona|Costa Orientale Sarda (until 30 June 2026)
+471|Palermo|loaned_out||GK|ITA|Manfredi Nespola|Pescara (until 30 June 2026)
+471|Palermo|loaned_out||DF|ITA|Alessio Buttaro|Foggia (until 30 June 2026)
+471|Palermo|loaned_out||DF|MLI|Salim Diakité|Juve Stabia (until 30 June 2026)
+471|Palermo|loaned_out||DF|USA|Kristoffer Lund|1. FC Köln (until 30 June 2026)
+471|Palermo|loaned_out||DF|GRE|Dimitrios Nikolaou|Bari (until 30 June 2026)
+471|Palermo|loaned_out||DF|ITA|Ernesto Runza|Ravenna (until 30 June 2026)
+471|Palermo|loaned_out||MF|BIH|Dario Šarić|Antalyaspor (until 30 June 2026)
+471|Palermo|loaned_out||FW|FRA|Stredair Appuah|Valenciennes (until 30 June 2026)
+471|Palermo|loaned_out||FW|ITA|Matteo Brunori|Sampdoria (until 30 June 2026)
+471|Palermo|loaned_out||FW|ITA|Federico Di Francesco|Catanzaro (until 30 June 2026)
+471|Palermo|loaned_out||FW|ITA|Salvatore Di Mitri|Trapani (until 30 June 2026)
+472|Pisa|squad|2|DF|BUL|Rosen Bozhinov|
+472|Pisa|squad|3|DF|ITA|Samuele Angori|
+472|Pisa|squad|4|DF|ITA|Antonio Caracciolo|captain
+472|Pisa|squad|5|DF|ITA|Simone Canestrelli|
+472|Pisa|squad|7|MF|ALG|Mehdi Léris|
+472|Pisa|squad|8|MF|DEN|Malthe Højholt|
+472|Pisa|squad|9|FW|DEN|Henrik Meister|
+472|Pisa|squad|10|MF|FRA|Mattéo Tramoni|
+472|Pisa|squad|11|FW|FRA|Ichem Ferrah|
+472|Pisa|squad|13|DF|ITA|Andrea Primasso|
+472|Pisa|squad|14|MF|CHI|Felipe Loyola|
+472|Pisa|squad|16|FW|CZE|Louis Buffon|
+472|Pisa|squad|17|MF|ITA|Emanuele Rao|on loan from Napoli
+472|Pisa|squad|18|FW|ITA|Nicholas Bonfanti|
+472|Pisa|squad|19|MF|POR|Tomás Esteves|
+472|Pisa|squad|21|MF|TUR|İsak Vural|
+472|Pisa|squad|22|GK|ITA|Leonardo Loria|
+472|Pisa|squad|23|FW|ITA|Tommaso Marras|
+472|Pisa|squad|26|DF|ITA|Francesco Coppola|
+472|Pisa|squad|27|DF|BEL|Jeremy Mbambi|
+472|Pisa|squad|29|MF|FRA|Omar Correia|
+472|Pisa|squad|32|FW|ITA|Stefano Moreo|vice-captain
+472|Pisa|squad|33|DF|ITA|Arturo Calabresi|
+472|Pisa|squad|36|MF|ITA|Gabriele Piccinini|
+472|Pisa|squad|37|FW|ITA|Andrea Petagna|
+472|Pisa|squad|44|DF|SUI|Daniel Denoon|
+472|Pisa|squad|47|DF|BRA|Mateus Lusuardi|
+472|Pisa|squad|55|MF|ITA|Giuseppe Leone|
+472|Pisa|squad|72|DF|ITA|Simone Zanon|on loan from Carrarese
+472|Pisa|squad|98|GK|ITA|Alessandro Confente|
+472|Pisa|squad||GK|ITA|Simone Scuffet|
+472|Pisa|squad||FW|ITA|Elia Giani|
+472|Pisa|squad||FW|ITA|Emanuel Vignato|
+472|Pisa|loaned_out||GK|ITA|Matteo Luppichini|L'Aquila (until 30 June 2027)
+472|Pisa|loaned_out||GK|CRO|Ante Vuković|Juve Stabia (until 30 June 2027)
+472|Pisa|loaned_out||DF|ITA|Lorenzo Pucci|Prato (until 30 June 2027)
+472|Pisa|loaned_out||DF|LTU|Motiejus Šapola|Spezia (until 30 June 2027)
+472|Pisa|loaned_out||FW|ITA|Riccardo Bassanini|Piacenza (until 30 June 2027)
+472|Pisa|loaned_out||FW|BUL|Mert Durmush|Spezia (until 30 June 2027)
+472|Pisa|loaned_out||FW|SVN|Jan Mlakar|Maribor (until 30 June 2027)
+472|Pisa|loaned_out||FW|BUL|Adrian Raychev|Levski Sofia (until 30 June 2027)
+472|Pisa|loaned_out||FW|SUI|Filip Stojilković|Rapid București (until 30 June 2027)
+474|Sampdoria|squad|1|GK|ITA|Simone Ghidotti|
+474|Sampdoria|squad|2|DF|ITA|Mattia Viti|on loan from Nice
+474|Sampdoria|squad|4|MF|FRA|Jordan Ferri|
+474|Sampdoria|squad|5|DF|ITA|Alessandro Pio Riccio|
+474|Sampdoria|squad|7|MF|ITA|Manuel Cicconi|on loan from Carrarese
+474|Sampdoria|squad|8|MF|ITA|Matteo Ricci|
+474|Sampdoria|squad|9|FW|ITA|Massimo Coda|
+474|Sampdoria|squad|10|FW|ITA|Luigi Cherubini|on loan from Roma
+474|Sampdoria|squad|11|FW|SVN|Tjaš Begić|
+474|Sampdoria|squad|13|DF|GER|Matteo Palma|on loan from Udinese
+474|Sampdoria|squad|16|MF|SCO|Liam Henderson|
+474|Sampdoria|squad|17|DF|BIH|Dennis Hadžikadunić|on loan from Rostov
+474|Sampdoria|squad|18|DF|ITA|Lorenzo Venuti|
+474|Sampdoria|squad|20|FW|ITA|Simone Pafundi|on loan from Udinese
+474|Sampdoria|squad|21|DF|ITA|Simone Giordano|
+474|Sampdoria|squad|23|DF|ITA|Fabio Depaoli|
+474|Sampdoria|squad|25|DF|ITA|Alex Ferrari|captain
+474|Sampdoria|squad|28|MF|DEN|Oliver Abildgaard|
+474|Sampdoria|squad|29|DF|ITA|Alessandro Di Pardo|
+474|Sampdoria|squad|30|GK|ITA|Nicola Ravaglia|
+474|Sampdoria|squad|33|MF|ITA|Francesco Conti|
+474|Sampdoria|squad|34|MF|ITA|Tommaso Casalino|
+474|Sampdoria|squad|39|DF|ITA|Lorenzo Malanca|
+474|Sampdoria|squad|50|GK|ITA|Tommaso Martinelli|on loan from Fiorentina
+474|Sampdoria|squad|72|MF|CZE|Antonín Barák|on loan from Fiorentina
+474|Sampdoria|squad|77|FW|ITA|Nicholas Pierini|on loan from Sassuolo
+474|Sampdoria|squad|92|FW|ITA|Edoardo Soleri|on loan from Spezia
+474|Sampdoria|squad|94|MF|ITA|Salvatore Esposito|on loan from Spezia
+474|Sampdoria|squad|98|GK|BEL|Gaëtan Coucke|
+474|Sampdoria|squad|99|FW|ITA|Matteo Brunori|on loan from Palermo
+474|Sampdoria|squad|37|DF|ITA|Alessio Papasergio|
+474|Sampdoria|squad|38|DF|ITA|Karim Diop|
+474|Sampdoria|loaned_out||GK|ITA|Elia Tantalocchi|Campobasso (until 30 June 2026)
+474|Sampdoria|loaned_out||GK|ITA|Nicholas Scardigno|Virtus Verona (until 30 June 2026)
+474|Sampdoria|loaned_out||DF|ROU|Andrei Coubiș|Universitatea Cluj (until 30 June 2026)
+474|Sampdoria|loaned_out||MF|ITA|Stefano Girelli|Casertana (until 30 June 2026)
+474|Sampdoria|loaned_out||MF|ITA|Alessandro Bellemo|Spezia (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Antonino La Gumina|Inter Milan U23 (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ESP|Víctor Narro|Real Murcia (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ESP|Estanis Pedrola|Las Palmas (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Luca Polli|Obermais (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Gennaro Tutino|Avellino (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Nikola Sekulov|Carrarese (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Giuseppe Forte|Roma Primavera (until 30 June 2026)
+474|Sampdoria|loaned_out||FW|ITA|Lorenzo Paratici|Roma Primavera (until 30 June 2026)

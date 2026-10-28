@@ -1,0 +1,14 @@
+season 2026 353
+season 2027 863
+season 2028 1453
+season 2029 2103
+node:internal/process/promises:394
+    triggerUncaughtException(err, true /* fromPromise */);
+    ^
+
+page.evaluate: Target page, context or browser has been closed
+    at /home/claude/work/ms/msim.js:20:19 {
+  log: []
+}
+
+Node.js v22.23.4
