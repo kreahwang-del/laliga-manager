@@ -3809,7 +3809,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=248;
+const APPV=249;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -7019,7 +7019,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   // 빗나간 슛(v94): 엔진은 슛 직후 골킥 위치로 공을 옮겨 공이 순간이동 → 슈터 발끝에서 골대 옆으로 지나가는 궤적을 합성(이후 2.5초)
   if(e.t==='miss'&&e.type!=='pen'){const pre=fr.filter(f=>f.t<es);const lf=pre[pre.length-1]||fr[0];const shI=Object.keys(lf.p).find(id=>rep.ros[id]&&rep.ros[id].n===e.p);const fE=fr.find(f=>f.t>=es);const sp=shI&&fE&&fE.p[shI]||lf.b;
     const dg=((e.s===0)!==H2D?1:-1),gl=dg>0?106.5:-1.5,side=hsh('ms'+es)<.5?-1:1,over=hsh('mo'+es)<.35;const ty=over?34+side*(1+hsh('my'+es)*2.5):34+side*(4.4+hsh('my'+es)*3),hh=over?2.9:.4+hsh('mh'+es)*1.2;
-    const dur=Math.max(.45,Math.hypot(gl-sp[0],ty-sp[1])/27);fr=pre.concat(fr.filter(f=>f.t>=es).map(f=>{const u=Math.min(1,(f.t-es)/dur);return Object.assign({},f,{o:null,g:null,b:[sp[0]+(gl-sp[0])*u,sp[1]+(ty-sp[1])*u,u<1?(aerC?aerC.h*(1-u)+hh*u:hh*u+(e.type==='header'?1.5*(1-u):0)):hh*.3]})}))}
+    /* v249 크로스바 위로 넘어간 슛: 끝점이 골문 폭 안·골라인 뒤 낮은 높이라 3D에서 공이 골망 안에 있는 것처럼 보였음 → 골망 위로 넘어가 뒤쪽으로 빠지게 */const gl2=over?gl+dg*3.5:gl;const ul=Math.max(.3,Math.min(.95,Math.abs((dg>0?105:0)-sp[0])/Math.max(1,Math.abs(gl2-sp[0]))));const dur=Math.max(.45,Math.hypot(gl2-sp[0],ty-sp[1])/27);fr=pre.concat(fr.filter(f=>f.t>=es).map(f=>{const u=Math.min(1,(f.t-es)/dur);return Object.assign({},f,{o:null,g:null,b:[sp[0]+(gl2-sp[0])*u,sp[1]+(ty-sp[1])*u,u<1?(over?Math.max(aerC?aerC.h*(1-u):0,3.1*Math.min(1,u/ul)):(aerC?aerC.h*(1-u)+hh*u:hh*u+(e.type==='header'?1.5*(1-u):0))):(over?2.7:hh*.3)]})}))}
   const t0=fr[0].t,tE=fr[fr.length-1].t;const cr=(p0,p1,p2,p3,k)=>{const k2=k*k,k3=k2*k;return .5*((2*p1)+(-p0+p2)*k+(2*p0-5*p1+4*p2-p3)*k2+(-p0+3*p1-3*p2+p3)*k3)};
   const idxAt=t=>{let i=0;while(i<fr.length-2&&fr[i+1].t<=t)i++;return i};
   const at=(t,get)=>{const i=idxAt(t);const f1=fr[i],f2=fr[Math.min(fr.length-1,i+1)],f0=fr[Math.max(0,i-1)],f3=fr[Math.min(fr.length-1,i+2)];const k=f2.t>f1.t?Math.max(0,Math.min(1,(t-f1.t)/(f2.t-f1.t))):0;
