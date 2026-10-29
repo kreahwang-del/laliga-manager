@@ -1,0 +1,152 @@
+== A determinism (seeds 910001-910100)
+  ai seeds 100 identical 100 diff []
+  off seeds 100 identical 100 diff []
+  AI-side leaks: aiDec polled 0 | decTm s!=0 0 | dec events s!=0 0 | pers s=1 0
+  off/ai runs: decTm 0 dec 0
+== B caps (capped runs, real UI decWant)
+  matches 1300 decisions 3884 per match 2.99 kinds {'cross': 2197, 'box': 1519, 'fk': 168} violations 0
+    best dec/match dist {2: 8, 3: 592}
+    p0 dec/match dist {2: 4, 3: 246}
+    p1 dec/match dist {2: 1, 3: 199}
+    p2 dec/match dist {2: 3, 3: 247}
+== C persistence
+  non-FK decs 15125 with decAct 15058 (99.6%)
+  decAct delay: mean 1.82 median 0.50 p90 2.00 max 518.50
+    delay [0,1): 11856
+    delay [1,3): 2748
+    delay [3,6): 299
+    delay [6,8): 3
+    delay [8,30): 36
+    delay [30,120): 69
+    delay [120,1e+09): 47
+  stale (>8s) decAct 151 ex [('box', 'bshot', 82.5, 'pass', 1), ('cross', 'carry', 96, 'pass', 1), ('cross', 'high', 12, 'pass', 0), ('cross', 'carry', 63.5, 'pass', 1), ('cross', 'high', 51.5, 'pass', 0), ('cross', 'high', 148.5, 'pass', 0), ('cross', 'carry', 25, 'pass', 1), ('cross', 'carry', 19.5, 'pass', 1)] | by fol Counter({1: 112, 0: 39}) | by act Counter({'pass': 94, 'long': 34, 'cross': 12, 'shot': 5, 'through': 3, 'takeon': 2, 'clear': 1})
+  polled (minute-step ends) decB/decN still set: 245 of which past decT 158 max overrun s 763.5 decB set (followed) 112
+  team modifier windows: matched followed decs with until=dec+6s 10600 mismatch 0
+== D advantage (paired vs off, capped real caps)
+  best GD n=600 mean=+0.040 sd=2.024 CI95=[-0.122,+0.202] | xGD n=600 mean=+0.039 sd=0.951 CI95=[-0.038,+0.115] | pts -0.028 | xGF +0.041 xGA +0.003
+     bootstrap xGD CI [-0.037,+0.115]
+     best choices {('cross', 'low'): 614, ('box', 'bshot'): 292, ('cross', 'carry'): 136, ('box', 'bdrib'): 371, ('cross', 'high'): 266, ('fk', 'cross'): 36, ('fk', 'short'): 19, ('box', 'bpass'): 40, ('fk', 'shot'): 18}
+  p0   GD n=250 mean=+0.192 sd=1.977 CI95=[-0.053,+0.437] | xGD n=250 mean=+0.082 sd=0.868 CI95=[-0.026,+0.189] | pts +0.144 | xGF +0.066 xGA -0.015
+  p1   GD n=200 mean=+0.110 sd=1.920 CI95=[-0.156,+0.376] | xGD n=200 mean=+0.071 sd=0.889 CI95=[-0.052,+0.194] | pts +0.155 | xGF +0.037 xGA -0.034
+  p2   GD n=250 mean=+0.040 sd=1.897 CI95=[-0.195,+0.275] | xGD n=250 mean=+0.118 sd=0.862 CI95=[+0.011,+0.225] | pts +0.116 | xGF +0.009 xGA -0.109
+== E follow
+  n 15123 follow mean 0.701 fp mean 0.701 min 0.600 max 0.880
+    bshot n 1763 fol 0.718 fp 0.718
+    bpass n 1462 fol 0.706 fp 0.695
+    bdrib n 1853 fol 0.718 fp 0.721
+    low n 3606 fol 0.694 fp 0.703
+    high n 3230 fol 0.693 fp 0.682
+    carry n 3209 fol 0.695 fp 0.698
+== F option outcomes (uncapped random-assignment = main; forced uncapped = check)
+  [rnd] box
+    bshot  n= 602 ownXG=0.0507±0.0079 ownShot=0.797±0.032 loss8s=0.110±0.025 lossPoss=0.203±0.032 oppShotNext=0.043±0.016 oppXGnext=0.0040±0.0023 ownGoal=0.095±0.023 fol=0.68
+    bpass  n= 592 ownXG=0.0265±0.0068 ownShot=0.304±0.037 loss8s=0.383±0.039 lossPoss=0.696±0.037 oppShotNext=0.030±0.014 oppXGnext=0.0039±0.0022 ownGoal=0.041±0.016 fol=0.70
+    bdrib  n= 622 ownXG=0.0558±0.0093 ownShot=0.476±0.039 loss8s=0.223±0.033 lossPoss=0.524±0.039 oppShotNext=0.047±0.017 oppXGnext=0.0041±0.0024 ownGoal=0.085±0.022 fol=0.71
+  [forced] box
+    bshot  n= 574 ownXG=0.0504±0.0069 ownShot=0.878±0.027 loss8s=0.070±0.021 lossPoss=0.122±0.027 oppShotNext=0.040±0.016 oppXGnext=0.0046±0.0025 ownGoal=0.101±0.025 fol=0.77
+    bpass  n= 590 ownXG=0.0235±0.0055 ownShot=0.300±0.037 loss8s=0.393±0.039 lossPoss=0.700±0.037 oppShotNext=0.036±0.015 oppXGnext=0.0039±0.0021 ownGoal=0.032±0.014 fol=0.71
+    bdrib  n= 569 ownXG=0.0562±0.0097 ownShot=0.494±0.041 loss8s=0.216±0.034 lossPoss=0.506±0.041 oppShotNext=0.037±0.015 oppXGnext=0.0023±0.0012 ownGoal=0.074±0.021 fol=0.71
+  [rnd] cross
+    low    n=1363 ownXG=0.0332±0.0042 ownShot=0.282±0.024 loss8s=0.454±0.026 lossPoss=0.718±0.024 oppShotNext=0.031±0.009 oppXGnext=0.0029±0.0012 ownGoal=0.046±0.011 fol=0.69
+    high   n=1389 ownXG=0.0222±0.0030 ownShot=0.238±0.022 loss8s=0.446±0.026 lossPoss=0.762±0.022 oppShotNext=0.029±0.009 oppXGnext=0.0033±0.0016 ownGoal=0.036±0.010 fol=0.69
+    carry  n=1352 ownXG=0.0217±0.0042 ownShot=0.220±0.022 loss8s=0.396±0.026 lossPoss=0.780±0.022 oppShotNext=0.035±0.010 oppXGnext=0.0034±0.0017 ownGoal=0.033±0.009 fol=0.69
+  [forced] cross
+    low    n=1204 ownXG=0.0281±0.0039 ownShot=0.265±0.025 loss8s=0.431±0.028 lossPoss=0.735±0.025 oppShotNext=0.034±0.010 oppXGnext=0.0026±0.0013 ownGoal=0.040±0.011 fol=0.69
+    high   n=1230 ownXG=0.0315±0.0047 ownShot=0.280±0.025 loss8s=0.437±0.028 lossPoss=0.720±0.025 oppShotNext=0.028±0.009 oppXGnext=0.0019±0.0009 ownGoal=0.047±0.012 fol=0.70
+    carry  n=1281 ownXG=0.0214±0.0041 ownShot=0.224±0.023 loss8s=0.393±0.027 lossPoss=0.776±0.023 oppShotNext=0.033±0.010 oppXGnext=0.0035±0.0017 ownGoal=0.036±0.010 fol=0.69
+  [rnd] fk
+    shot   n=  63 ownXG=0.0587±0.0033 ownShot=1.000±0.000 loss8s=0.000±0.000 lossPoss=0.000±0.000 oppShotNext=0.016±0.031 oppXGnext=0.0000±0.0000 ownGoal=0.095±0.072 fol=0.00
+    cross  n=  67 ownXG=0.0184±0.0111 ownShot=0.433±0.119 loss8s=0.000±0.000 lossPoss=0.567±0.119 oppShotNext=0.030±0.041 oppXGnext=0.0007±0.0015 ownGoal=0.045±0.050 fol=0.00
+    short  n=  65 ownXG=0.0308±0.0167 ownShot=0.400±0.119 loss8s=0.000±0.000 lossPoss=0.600±0.119 oppShotNext=0.062±0.058 oppXGnext=0.0118±0.0131 ownGoal=0.015±0.030 fol=0.00
+  [forced] fk
+    shot   n=  57 ownXG=0.0589±0.0042 ownShot=1.000±0.000 loss8s=0.000±0.000 lossPoss=0.000±0.000 oppShotNext=0.000±0.000 oppXGnext=0.0000±0.0000 ownGoal=0.123±0.085 fol=0.00
+    cross  n=  64 ownXG=0.0242±0.0127 ownShot=0.469±0.122 loss8s=0.000±0.000 lossPoss=0.531±0.122 oppShotNext=0.047±0.052 oppXGnext=0.0056±0.0064 ownGoal=0.078±0.066 fol=0.00
+    short  n=  59 ownXG=0.0222±0.0111 ownShot=0.475±0.127 loss8s=0.000±0.000 lossPoss=0.525±0.127 oppShotNext=0.051±0.056 oppXGnext=0.0080±0.0104 ownGoal=0.034±0.046 fol=0.00
+  pairwise (rnd | forced):
+   box   bshot -bpass  | xG diff +0.0242 z=+4.54 own diff +0.4933 z=+19.70 loss8 diff -0.2738 z=-11.55 osh diff +0.0128 z=+1.17 | xG diff +0.0268 z=+5.96 own diff +0.5780 z=+24.80 loss8 diff -0.3235 z=-14.21 osh diff +0.0045 z=+0.40
+   box   bshot -bdrib  | xG diff -0.0051 z=-0.82 own diff +0.3215 z=+12.41 loss8 diff -0.1138 z=-5.42 osh diff -0.0034 z=-0.29 | xG diff -0.0058 z=-0.96 own diff +0.3842 z=+15.34 loss8 diff -0.1465 z=-7.22 osh diff +0.0032 z=+0.28
+   box   bpass -bdrib  | xG diff -0.0293 z=-4.99 own diff -0.1718 z=-6.23 loss8 diff +0.1600 z=+6.14 osh diff -0.0162 z=-1.47 | xG diff -0.0327 z=-5.72 own diff -0.1938 z=-6.87 loss8 diff +0.1771 z=+6.68 osh diff -0.0013 z=-0.12
+   cross low   -high   | xG diff +0.0110 z=+4.17 own diff +0.0434 z=+2.60 loss8 diff +0.0085 z=+0.45 osh diff +0.0020 z=+0.31 | xG diff -0.0034 z=-1.11 own diff -0.0155 z=-0.86 loss8 diff -0.0063 z=-0.32 osh diff +0.0064 z=+0.91
+   cross low   -carry  | xG diff +0.0115 z=+3.81 own diff +0.0613 z=+3.69 loss8 diff +0.0577 z=+3.04 osh diff -0.0039 z=-0.58 | xG diff +0.0067 z=+2.33 own diff +0.0409 z=+2.37 loss8 diff +0.0384 z=+1.94 osh diff +0.0013 z=+0.18
+   cross high  -carry  | xG diff +0.0005 z=+0.17 own diff +0.0179 z=+1.11 loss8 diff +0.0492 z=+2.61 osh diff -0.0060 z=-0.89 | xG diff +0.0101 z=+3.18 own diff +0.0564 z=+3.26 loss8 diff +0.0447 z=+2.28 osh diff -0.0051 z=-0.75
+   fk    shot  -cross  | xG diff +0.0404 z=+6.86 own diff +0.5672 z=+9.30 loss8 diff +0.0000 z=+0.00 osh diff -0.0140 z=-0.53 | xG diff +0.0347 z=+5.09 own diff +0.5312 z=+8.45 loss8 diff +0.0000 z=+0.00 osh diff -0.0469 z=-1.76
+   fk    shot  -short  | xG diff +0.0280 z=+3.22 own diff +0.6000 z=+9.80 loss8 diff +0.0000 z=+0.00 osh diff -0.0457 z=-1.34 | xG diff +0.0367 z=+6.09 own diff +0.5254 z=+8.01 loss8 diff +0.0000 z=+0.00 osh diff -0.0508 z=-1.76
+   fk    cross -short  | xG diff -0.0124 z=-1.22 own diff +0.0328 z=+0.38 loss8 diff +0.0000 z=+0.00 osh diff -0.0317 z=-0.87 | xG diff +0.0020 z=+0.23 own diff -0.0058 z=-0.06 loss8 diff +0.0000 z=+0.00 osh diff -0.0040 z=-0.10
+  pooled (rnd+forced) key contrasts:
+    box   bshot -bpass  oxg    diff +0.0255 z=+7.30 (n 1176/1182)
+    box   bdrib -bpass  oxg    diff +0.0310 z=+7.57 (n 1191/1182)
+    box   bshot -bdrib  oxg    diff -0.0055 z=-1.26 (n 1176/1191)
+    cross low   -high   oxg    diff +0.0042 z=+2.09 (n 2567/2619)
+    cross low   -carry  oxg    diff +0.0092 z=+4.42 (n 2567/2633)
+    cross high  -carry  oxg    diff +0.0050 z=+2.45 (n 2619/2633)
+    cross low   -carry  own    diff +0.0517 z=+4.32 (n 2567/2633)
+    cross high  -low    loss8  diff -0.0015 z=-0.11 (n 2619/2567)
+    cross high  -carry  loss8  diff +0.0472 z=+3.47 (n 2619/2633)
+    cross low   -carry  loss8  diff +0.0487 z=+3.56 (n 2567/2633)
+    box   bpass -bshot  loss8  diff +0.2982 z=+18.12 (n 1182/1176)
+    box   bdrib -bshot  loss8  diff +0.1298 z=+8.88 (n 1191/1176)
+    box   bpass -bdrib  loss8  diff +0.1683 z=+9.06 (n 1182/1191)
+    cross high  -low    loss   diff +0.0157 z=+1.28 (n 2619/2567)
+    cross high  -carry  loss   diff -0.0359 z=-3.05 (n 2619/2633)
+    cross high  -low    osh    diff -0.0041 z=-0.86 (n 2619/2567)
+    cross high  -carry  osh    diff -0.0055 z=-1.16 (n 2619/2633)
+    box   bpass -bshot  osh    diff -0.0087 z=-1.11 (n 1182/1176)
+    fk    shot  -short  oxg    diff +0.0321 z=+5.98 (n 120/124)
+    fk    shot  -cross  loss8  diff +0.0000 z=+0.00 (n 120/131)
+    fk    short -cross  osh    diff +0.0183 z=+0.68 (n 124/131)
+== H analyst
+  [rnd-unc] box n=1816 best share {'bshot': '42.5%', 'bpass': '6.2%', 'bdrib': '51.3%'}
+  [rnd-unc] cross n=4104 best share {'low': '61.4%', 'high': '26.9%', 'carry': '11.8%'}
+  [rnd-unc] fk n=195 best share {'shot': '31.3%', 'cross': '50.8%', 'short': '17.9%'}
+  [forced-unc] box n=1733 best share {'bshot': '40.5%', 'bpass': '5.9%', 'bdrib': '53.6%'}
+  [forced-unc] cross n=3715 best share {'low': '61.0%', 'high': '27.8%', 'carry': '11.2%'}
+  [forced-unc] fk n=180 best share {'shot': '32.2%', 'cross': '52.2%', 'short': '15.6%'}
+  [capped] box n=1519 best share {'bshot': '40.8%', 'bpass': '6.6%', 'bdrib': '52.6%'}
+  [capped] cross n=2197 best share {'low': '60.9%', 'high': '25.4%', 'carry': '13.7%'}
+  [capped] fk n=168 best share {'shot': '24.4%', 'cross': '49.4%', 'short': '26.2%'}
+  box nd<2: n=1139 bdrib best 57.7%
+  box nd>=3 & cone0: n=629 bshot best 82.2% bdrib best 8.4%
+  scene info dist box: nd<2 0.32, nd>=3 0.22, cone0 0.45, dist<13 0.18, ang>=14&dist>=18 0.27
+  outcome by analyst-best group (rnd-unc only; chosen option xG / own / loss8):
+   box   best=bshot  n= 772 | *bshot n239 xG 0.0643 own 0.77 l8 0.12 ;  bpass n265 xG 0.0263 own 0.26 l8 0.43 ;  bdrib n268 xG 0.0536 own 0.38 l8 0.26 | min z(best-other xG)=+1.07
+   box   best=bpass  n= 112 |  bshot n42 xG 0.0417 own 0.86 l8 0.05 ; *bpass n46 xG 0.0172 own 0.22 l8 0.50 ;  bdrib n24 xG 0.0375 own 0.29 l8 0.38 | min z(best-other xG)=-2.04
+   box   best=bdrib  n= 932 |  bshot n321 xG 0.0417 own 0.81 l8 0.11 ;  bpass n281 xG 0.0282 own 0.36 l8 0.32 ; *bdrib n330 xG 0.0589 own 0.57 l8 0.18 | min z(best-other xG)=+2.01
+   cross best=low    n=2518 | *low n855 xG 0.0374 own 0.29 l8 0.45 ;  high n847 xG 0.0229 own 0.24 l8 0.46 ;  carry n816 xG 0.0232 own 0.23 l8 0.39 | min z(best-other xG)=+3.53
+   cross best=high   n=1103 |  low n361 xG 0.0277 own 0.26 l8 0.45 ; *high n377 xG 0.0221 own 0.25 l8 0.41 ;  carry n365 xG 0.0222 own 0.22 l8 0.39 | min z(best-other xG)=-1.14
+   cross best=carry  n= 483 |  low n147 xG 0.0225 own 0.29 l8 0.47 ;  high n165 xG 0.0187 own 0.21 l8 0.44 ; *carry n171 xG 0.0138 own 0.17 l8 0.46 | min z(best-other xG)=-1.64
+   fk    best=shot   n=  61 | *shot n17 xG 0.0718 own 1.00 l8 0.00 ;  cross n23 xG 0.0200 own 0.52 l8 0.00 ;  short n21 xG 0.0338 own 0.57 l8 0.00 | min z(best-other xG)=+2.92
+   fk    best=cross  n=  99 |  shot n33 xG 0.0539 own 1.00 l8 0.00 ; *cross n31 xG 0.0248 own 0.42 l8 0.00 ;  short n35 xG 0.0346 own 0.34 l8 0.00 | min z(best-other xG)=-2.78
+   fk    best=short  n=  35 |  shot n13 xG 0.0538 own 1.00 l8 0.00 ;  cross n13 xG 0.0000 own 0.31 l8 0.00 ; *short n9 xG 0.0089 own 0.22 l8 0.00 | min z(best-other xG)=-4.61
+  same, pooled rnd+forced:
+   box   best=bshot  n=1474 xG(best)=0.0614 vs bpass diff +0.0353 z=+6.29(n512) vs bdrib diff +0.0111 z=+1.61(n491)
+   box   best=bpass  n= 214 xG(best)=0.0288 vs bshot diff -0.0085 z=-0.65(n77) vs bdrib diff -0.0058 z=-0.39(n54)
+   box   best=bdrib  n=1861 xG(best)=0.0621 vs bshot diff +0.0181 z=+2.99(n628) vs bpass diff +0.0386 z=+6.78(n587)
+   cross best=low    n=4784 xG(best)=0.0348 vs high diff +0.0080 z=+3.02(n1618) vs carry diff +0.0139 z=+5.10(n1596)
+   cross best=high   n=2135 xG(best)=0.0275 vs low diff +0.0018 z=+0.45(n723) vs carry diff +0.0028 z=+0.63(n724)
+   cross best=carry  n= 900 xG(best)=0.0180 vs low diff -0.0035 z=-0.72(n274) vs high diff -0.0052 z=-0.96(n313)
+  context bins (pooled rnd+forced): xG by chosen option, analyst best share
+   box cone =0          n=1588 best%{bshot:76,bpass:8,bdrib:16} xG{bshot:0.0646(n515),bpass:0.0272(n537),bdrib:0.0568(n536)}
+   box cone =1          n=1387 best%{bshot:15,bpass:5,bdrib:79} xG{bshot:0.0426(n482),bpass:0.0260(n440),bdrib:0.0557(n465)}
+   box cone =2          n= 574 best%{bshot:8,bpass:3,bdrib:89} xG{bshot:0.0312(n179),bpass:0.0174(n205),bdrib:0.0544(n190)}
+   box dist =13-18      n=1639 best%{bshot:40,bpass:0,bdrib:60} xG{bshot:0.0539(n531),bpass:0.0266(n546),bdrib:0.0610(n562)}
+   box dist =<13        n= 656 best%{bshot:11,bpass:0,bdrib:89} xG{bshot:0.0687(n214),bpass:0.0313(n199),bdrib:0.0837(n243)}
+   box dist =>=18       n=1254 best%{bshot:59,bpass:17,bdrib:23} xG{bshot:0.0374(n431),bpass:0.0202(n437),bdrib:0.0312(n386)}
+   box nd   =2-3.5      n=1861 best%{bshot:33,bpass:7,bdrib:60} xG{bshot:0.0424(n641),bpass:0.0273(n600),bdrib:0.0533(n620)}
+   box nd   =<2         n=1139 best%{bshot:39,bpass:3,bdrib:58} xG{bshot:0.0394(n361),bpass:0.0203(n381),bdrib:0.0572(n397)}
+   box nd   =>=3.5      n= 549 best%{bshot:74,bpass:9,bdrib:17} xG{bshot:0.1036(n174),bpass:0.0271(n201),bdrib:0.0630(n174)}
+   box wd&far=False      n=2582 best%{bshot:32,bpass:0,bdrib:68} xG{bshot:0.0547(n847),bpass:0.0260(n835),bdrib:0.0634(n900)}
+   box wd&far=True       n= 967 best%{bshot:66,bpass:22,bdrib:12} xG{bshot:0.0397(n329),bpass:0.0227(n347),bdrib:0.0332(n291)}
+   cross bA   =0          n=1596 best%{low:0,high:44,carry:56} xG{low:0.0199(n500),high:0.0224(n560),carry:0.0248(n536)}
+   cross bA   =1          n=1790 best%{low:73,high:26,carry:0} xG{low:0.0243(n607),high:0.0246(n582),carry:0.0214(n601)}
+   cross bA   =2          n=1975 best%{low:77,high:23,carry:0} xG{low:0.0399(n653),high:0.0309(n667),carry:0.0225(n655)}
+   cross bA   =3          n=2458 best%{low:79,high:21,carry:0} xG{low:0.0351(n807),high:0.0273(n810),carry:0.0189(n841)}
+   cross nd   =<3         n=2683 best%{low:59,high:29,carry:12} xG{low:0.0283(n893),high:0.0235(n901),carry:0.0217(n889)}
+   cross nd   =>=3        n=5136 best%{low:62,high:26,carry:11} xG{low:0.0322(n1674),high:0.0282(n1718),carry:0.0215(n1744)}
+== I labels (DEC_RO) vs pooled outcomes: see F pooled contrasts
+== K regression (capped on vs off, paired)
+  best goals/match n=600 mean=+0.100 sd=2.187 CI95=[-0.075,+0.275] | shots n=600 mean=+0.220 sd=6.935 CI95=[-0.335,+0.775] | userShots n=600 mean=+0.310 sd=5.543 CI95=[-0.134,+0.754] | poss(user) n=600 mean=+0.000 sd=0.029 CI95=[-0.002,+0.003]
+  p0   goals/match n=250 mean=+0.160 sd=2.313 CI95=[-0.127,+0.447] | shots n=250 mean=+0.736 sd=7.354 CI95=[-0.176,+1.648] | userShots n=250 mean=+0.816 sd=5.485 CI95=[+0.136,+1.496] | poss(user) n=250 mean=-0.002 sd=0.031 CI95=[-0.006,+0.002]
+  p1   goals/match n=200 mean=+0.010 sd=2.277 CI95=[-0.306,+0.326] | shots n=200 mean=+0.065 sd=7.265 CI95=[-0.942,+1.072] | userShots n=200 mean=-0.060 sd=5.738 CI95=[-0.855,+0.735] | poss(user) n=200 mean=-0.000 sd=0.031 CI95=[-0.004,+0.004]
+  p2   goals/match n=250 mean=-0.048 sd=2.191 CI95=[-0.320,+0.224] | shots n=250 mean=-0.388 sd=6.936 CI95=[-1.248,+0.472] | userShots n=250 mean=+0.196 sd=5.343 CI95=[-0.466,+0.858] | poss(user) n=250 mean=+0.001 sd=0.033 CI95=[-0.003,+0.005]
+  off goals/match 2.887 shots/match 26.54
+  example poss field [3247, 2687]
