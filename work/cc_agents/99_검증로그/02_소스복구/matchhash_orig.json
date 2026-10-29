@@ -1,0 +1,193 @@
+{
+ "html": "C:\\Users\\EKR\\Desktop\\W.Claude\\wsm-agents\\handoff\\cur.html",
+ "engine": 4,
+ "appv": 245,
+ "lgmkt": true,
+ "n": 12,
+ "pageAll": "128b1f4d9215a2712fe1a66a72a4a8c7a1d730ea06d259dfda3ea43702c4654b",
+ "workAll": "128b1f4d9215a2712fe1a66a72a4a8c7a1d730ea06d259dfda3ea43702c4654b",
+ "allSame": true,
+ "errs": [],
+ "rows": [
+  {
+   "h": 38,
+   "a": 57,
+   "sc": [
+    5,
+    0
+   ],
+   "scW": [
+    5,
+    0
+   ],
+   "page": "9f9f85e151b7476b",
+   "work": "9f9f85e151b7476b",
+   "same": true
+  },
+  {
+   "h": 39,
+   "a": 56,
+   "sc": [
+    4,
+    1
+   ],
+   "scW": [
+    4,
+    1
+   ],
+   "page": "198b4c0f432dce6e",
+   "work": "198b4c0f432dce6e",
+   "same": true
+  },
+  {
+   "h": 40,
+   "a": 55,
+   "sc": [
+    3,
+    0
+   ],
+   "scW": [
+    3,
+    0
+   ],
+   "page": "846a2e59e775ebef",
+   "work": "846a2e59e775ebef",
+   "same": true
+  },
+  {
+   "h": 41,
+   "a": 54,
+   "sc": [
+    3,
+    1
+   ],
+   "scW": [
+    3,
+    1
+   ],
+   "page": "f2e0991b0ad222b9",
+   "work": "f2e0991b0ad222b9",
+   "same": true
+  },
+  {
+   "h": 42,
+   "a": 53,
+   "sc": [
+    1,
+    0
+   ],
+   "scW": [
+    1,
+    0
+   ],
+   "page": "8190a4e5b8575f9f",
+   "work": "8190a4e5b8575f9f",
+   "same": true
+  },
+  {
+   "h": 43,
+   "a": 52,
+   "sc": [
+    4,
+    1
+   ],
+   "scW": [
+    4,
+    1
+   ],
+   "page": "bc27d15f3f45ec0f",
+   "work": "bc27d15f3f45ec0f",
+   "same": true
+  },
+  {
+   "h": 44,
+   "a": 51,
+   "sc": [
+    2,
+    0
+   ],
+   "scW": [
+    2,
+    0
+   ],
+   "page": "9a2a317bfb4eb600",
+   "work": "9a2a317bfb4eb600",
+   "same": true
+  },
+  {
+   "h": 45,
+   "a": 50,
+   "sc": [
+    1,
+    0
+   ],
+   "scW": [
+    1,
+    0
+   ],
+   "page": "d44e8241b6dd1ce5",
+   "work": "d44e8241b6dd1ce5",
+   "same": true
+  },
+  {
+   "h": 46,
+   "a": 49,
+   "sc": [
+    2,
+    2
+   ],
+   "scW": [
+    2,
+    2
+   ],
+   "page": "dde7cca129746c2a",
+   "work": "dde7cca129746c2a",
+   "same": true
+  },
+  {
+   "h": 47,
+   "a": 48,
+   "sc": [
+    1,
+    1
+   ],
+   "scW": [
+    1,
+    1
+   ],
+   "page": "6c418e3802a8bbba",
+   "work": "6c418e3802a8bbba",
+   "same": true
+  },
+  {
+   "h": 56,
+   "a": 38,
+   "sc": [
+    1,
+    2
+   ],
+   "scW": [
+    1,
+    2
+   ],
+   "page": "62350dc01ae721de",
+   "work": "62350dc01ae721de",
+   "same": true
+  },
+  {
+   "h": 55,
+   "a": 57,
+   "sc": [
+    1,
+    1
+   ],
+   "scW": [
+    1,
+    1
+   ],
+   "page": "67b51658a392bd86",
+   "work": "67b51658a392bd86",
+   "same": true
+  }
+ ]
+}

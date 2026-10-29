@@ -1,0 +1,1650 @@
+{
+ "players": {
+  "rows": 12042,
+  "unique_names": 11917,
+  "examples": [
+   "Alexander Sørloth",
+   "Alejandro Balde",
+   "Raúl Asencio"
+  ],
+  "id_min": 7161,
+  "id_max": 90000489,
+  "ids_ge_9e7": 489,
+  "img_field": 11089,
+  "img_tm_pattern": 4789,
+  "img_prefix_eq_id": 4836,
+  "img_examples": [
+   "238407-1716403969.jpg",
+   "636688-1662836200.jpg",
+   "935245-1731168094.jpg"
+  ],
+  "est2": 0,
+  "dob_field": 12040,
+  "nat_field": 12039,
+  "height_field": 5502,
+  "value_nonzero": 12042,
+  "wage_nonzero": 12042,
+  "clause_nonzero": 465
+ },
+ "clubs": {
+  "rows": 494,
+  "examples": [
+   [
+    "Bayern Munich",
+    "FCB",
+    "DE"
+   ],
+   [
+    "Dortmund",
+    "BVB",
+    "DE"
+   ],
+   [
+    "RB Leipzig",
+    "RB",
+    "DE"
+   ]
+  ],
+  "unique_short": 490,
+  "tm_id": 414,
+  "tm_examples": [
+   [
+    "Bayern Munich",
+    27
+   ],
+   [
+    "Dortmund",
+    16
+   ],
+   [
+    "RB Leipzig",
+    23826
+   ]
+  ],
+  "revSrc": {
+   "딜로이트 2026": 18,
+   "스쿼드 가치 추정": 304,
+   "FC27 2부 선수단 추정": 22,
+   "FC27 선수단 추정": 150
+  },
+  "deloitte_examples": [
+   [
+    "Bayern Munich",
+    860.6
+   ],
+   [
+    "Dortmund",
+    531.3
+   ],
+   [
+    "Stuttgart",
+    296.3
+   ]
+  ],
+  "by_league": {
+   "DE": 18,
+   "EN": 20,
+   "ES": 20,
+   "FR": 18,
+   "IT": 20,
+   "AT": 12,
+   "CH": 12,
+   "TR": 18,
+   "SC": 12,
+   "BE": 18,
+   "NLL": 3,
+   "DK": 12,
+   "AR": 30,
+   "BR": 20,
+   "NL": 18,
+   "US": 30,
+   "CHL": 1,
+   "PT": 18,
+   "KR": 12,
+   "TRL": 3,
+   "JP": 20,
+   "SCL": 1,
+   "ATL": 1,
+   "PTL": 2,
+   "BEL": 1,
+   "ES2": 22,
+   "SA": 18,
+   "MX": 18,
+   "CN": 16,
+   "EN2": 24,
+   "DE2": 18,
+   "IT2": 20,
+   "FR2": 18
+  }
+ },
+ "leagues": {
+  "G": {
+   "PT": "리가 포르투갈",
+   "NL": "에레디비시",
+   "BE": "벨기에 프로리그",
+   "TR": "쉬페르리그",
+   "SC": "스코티시 프리미어십",
+   "CH": "스위스 슈퍼리그",
+   "AT": "오스트리아 분데스리가",
+   "DK": "덴마크 수페르리가",
+   "BR": "브라질 세리이 A",
+   "AR": "아르헨티나 리가",
+   "US": "MLS",
+   "KR": "K리그1",
+   "JP": "J1리그",
+   "ES2": "라리가2",
+   "PTL": "리가 포르투갈 하부",
+   "NLL": "에레디비시 하부",
+   "BEL": "벨기에 프로리그 하부",
+   "TRL": "쉬페르리그 하부",
+   "SCL": "스코티시 프리미어십 하부",
+   "CHL": "스위스 슈퍼리그 하부",
+   "ATL": "오스트리아 분데스리가 하부",
+   "SA": "사우디 프로리그",
+   "MX": "리가 MX",
+   "CN": "중국 슈퍼리그",
+   "EN2": "챔피언십",
+   "DE2": "2. 분데스리가",
+   "IT2": "세리에B",
+   "FR2": "리그2",
+   "KRL": "K리그1 하부",
+   "USL": "MLS 하부",
+   "ARL": "아르헨티나 리가 하부",
+   "SAL": "사우디 프로리그 하부",
+   "MXL": "리가 MX 하부",
+   "CNL": "중국 슈퍼리그 하부",
+   "EN2L": "챔피언십 하부",
+   "DE2L": "2. 분데스리가 하부",
+   "IT2L": "세리에B 하부",
+   "FR2L": "리그2 하부"
+  },
+  "lgTm": {
+   "ES": "ES1",
+   "EN": "GB1",
+   "IT": "IT1",
+   "DE": "L1",
+   "FR": "FR1",
+   "PT": "PO1",
+   "NL": "NL1",
+   "BE": "BE1",
+   "TR": "TR1",
+   "SC": "SC1",
+   "CH": "C1",
+   "AT": "A1",
+   "DK": "DK1",
+   "BR": "BRA1",
+   "AR": "ARG1",
+   "US": "MLS1",
+   "KR": "RSK1",
+   "JP": "JAP1",
+   "EN2": "GB2",
+   "DE2": "L2",
+   "IT2": "IT2",
+   "FR2": "FR2",
+   "ES2": "ES2",
+   "CN": "CSL",
+   "SA": "SA1",
+   "MX": "MEX1"
+  }
+ },
+ "managers": {
+  "rows": 59,
+  "with_club": 20,
+  "examples": [
+   [
+    "Diego Simeone",
+    "Atlético Madrid"
+   ],
+   [
+    "Marcelino",
+    "Villarreal"
+   ],
+   [
+    "Martín Demichelis",
+    null
+   ]
+  ]
+ },
+ "keyed": {
+  "TOCAL": {
+   "n": 160,
+   "examples": [
+    "Thibaut Courtois",
+    "Éder Militão",
+    "Aurélien Tchouaméni"
+   ]
+  },
+  "DB247": {
+   "old": 1106,
+   "nw": 489,
+   "loans": 84
+  },
+  "LOOK3D": {
+   "n": 7086,
+   "keys_in_players": 3917,
+   "examples": [
+    [
+     "238407",
+     "dcae8a654e381"
+    ],
+    [
+     "636688",
+     "6e462c1a1a193"
+    ],
+    [
+     "935245",
+     "c5976e4138313"
+    ]
+   ]
+  },
+  "KITS3D": {
+   "n": 450,
+   "examples": [
+    [
+     "0",
+     [
+      [
+       "ff0000",
+       "ff0000",
+       "ff0000",
+       "ff0000",
+       0,
+       null
+      ],
+      [
+       "ffffff",
+       "ffffff",
+       "000f5a",
+       "ffffff",
+       0,
+       null
+      ]
+     ]
+    ],
+    [
+     "1",
+     [
+      [
+       "ffee00",
+       "ffee00",
+       "000000",
+       "ffee00",
+       0,
+       null
+      ],
+      [
+       "000000",
+       "000000",
+       "ffee00",
+       "000000",
+       0,
+       null
+      ]
+     ]
+    ]
+   ]
+  },
+  "STAD": {
+   "n": 409,
+   "keys_eq_club_tm": 409,
+   "examples": [
+    [
+     "27",
+     75000
+    ],
+    [
+     "16",
+     81365
+    ],
+    [
+     "23826",
+     47069
+    ]
+   ]
+  },
+  "id_keyed": {
+   "tend": 6058,
+   "pst": 5105,
+   "dtend": 4809,
+   "tendTM": 2501
+  }
+ },
+ "residue_players": {
+  "distinct": 12,
+  "total": 13,
+  "kinds": {
+   "string": 13
+  },
+  "top": [
+   [
+    "Ferreira",
+    2
+   ],
+   [
+    "Leonardo",
+    1
+   ],
+   [
+    "Matheus",
+    1
+   ],
+   [
+    "Iglesias",
+    1
+   ],
+   [
+    "Hércules",
+    1
+   ],
+   [
+    "Everton",
+    1
+   ],
+   [
+    "Christian",
+    1
+   ],
+   [
+    "Bernard",
+    1
+   ],
+   [
+    "Lautaro",
+    1
+   ],
+   [
+    "Anderson",
+    1
+   ],
+   [
+    "Gabriel",
+    1
+   ],
+   [
+    "Gustavo",
+    1
+   ]
+  ],
+  "examples": [
+   "teo','Francesco','Alessandro','Andrea','Leonardo','Gabriele','Riccardo','Tommaso','Edoar",
+   "A:{f:['João','Pedro','Gabriel','Lucas','Matheus','Rafael','Vinícius','Gustavo','Felipe'",
+   "','Ortega','Delgado','Garrido','Marín','Iglesias','Medina','Cortés','Castillo','Santos',",
+   "eira','Souza','Lima','Pereira','Costa','Ferreira','Almeida','Carvalho','Ribeiro','Gomes'"
+  ]
+ },
+ "residue_clubs": {
+  "distinct": 107,
+  "total": 154,
+  "kinds": {
+   "string": 154
+  },
+  "top": [
+   [
+    "Real Madrid",
+    8
+   ],
+   [
+    "Barcelona",
+    7
+   ],
+   [
+    "Atlético Madrid",
+    6
+   ],
+   [
+    "Real Sociedad",
+    3
+   ],
+   [
+    "Athletic Club",
+    3
+   ],
+   [
+    "Villarreal",
+    3
+   ],
+   [
+    "Real Valladolid",
+    3
+   ],
+   [
+    "Sevilla",
+    3
+   ],
+   [
+    "Manchester Utd",
+    2
+   ],
+   [
+    "Juventus",
+    2
+   ],
+   [
+    "Dortmund",
+    2
+   ],
+   [
+    "SL Benfica",
+    2
+   ]
+  ],
+  "examples": [
+   ",  ['Dortmund','Schalke 04','레비어 더비'],['Bayern Munich','Dortmund','데어 클라시커'],['Hamburger SV',",
+   "şiktaş Jimnastik Kulübü','이스탄불 더비'],  ['Club Atlético Boca Juniors','Club Atlético River Plate','수페르클라시코']",
+   "oord Rotterdam','데 클라시커'],['Celtic FC','Rangers FC','올드 펌'],  ['Galatasaray','Fenerbahce',",
+   "Sunderland','타인-위어 더비'],['Aston Villa','Birmingham City','세컨드 시티 더비'],  ['Dortmund','Schalke 04"
+  ]
+ },
+ "residue_mgrs": {
+  "distinct": 4,
+  "total": 10,
+  "kinds": {
+   "string": 10
+  },
+  "top": [
+   [
+    "Álvaro Arbeloa",
+    3
+   ],
+   [
+    "Diego Simeone",
+    3
+   ],
+   [
+    "Hansi Flick",
+    3
+   ],
+   [
+    "Sergio",
+    1
+   ]
+  ],
+  "examples": [
+   "drián','Diego','Javier','Mario','Iker','Sergio','Marcos','Rubén','Unai','Aitor','Gonza",
+   "='5-4-1';x.fam=85;return x}   if(m.n==='Álvaro Arbeloa')return Object.assign(defaultTac('4-3-3",
+   "name)&&!['Hansi Flick','Diego Simeone','Álvaro Arbeloa'].includes(m.n)){const x=defaultTac(m.f",
+   "rm||(m&&['Hansi Flick','Diego Simeone','Álvaro Arbeloa'].includes(m.n))||(!m&&(name==='Barcelo"
+  ]
+ },
+ "code_tables": {
+  "COLORS": {
+   "chars": 362,
+   "n_strings": 31,
+   "examples": [
+    "Barcelona",
+    "#A50044",
+    "#004D98",
+    "Real Madrid",
+    "#E6E9EE",
+    "#FEBE10"
+   ],
+   "line": 13
+  },
+  "YOUTH_MULT": {
+   "chars": 57,
+   "n_strings": 3,
+   "examples": [
+    "Barcelona",
+    "Real Madrid",
+    "Atlético Madrid"
+   ],
+   "line": 1920
+  },
+  "DERBY": {
+   "chars": 139,
+   "n_strings": 14,
+   "examples": [
+    "RMA|BAR",
+    "엘 클라시코",
+    "RMA|ATM",
+    "마드리드 더비",
+    "SEV|BET",
+    "세비야 더비"
+   ],
+   "line": 1710
+  },
+  "DERBY_N": {
+   "chars": 2192,
+   "n_strings": 144,
+   "examples": [
+    "Roma",
+    "Lazio",
+    "로마 더비",
+    "Inter",
+    "Milan",
+    "밀라노 더비"
+   ],
+   "line": 5999
+  },
+  "D2_CLUBS": {
+   "chars": 712,
+   "n_strings": 44,
+   "examples": [
+    "Girona FC",
+    "GIR",
+    "RCD Mallorca",
+    "RCM",
+    "Real Oviedo",
+    "OVI"
+   ],
+   "line": 3839
+  },
+  "ES3_DATA": {
+   "chars": 1247,
+   "n_strings": 89,
+   "examples": [
+    "AD Mérida",
+    "MER",
+    "Arenas Club",
+    "ARE",
+    "Athletic Club 'B'",
+    "ATB"
+   ],
+   "line": 5476
+  },
+  "ES3_POOL": {
+   "chars": 645,
+   "n_strings": 50,
+   "examples": [
+    "Sevilla Atlético",
+    "SEA",
+    "B",
+    "Sevilla FC",
+    "Barça Atlètic",
+    "FCB"
+   ],
+   "line": 5481
+  },
+  "CUPS": {
+   "chars": 315,
+   "n_strings": 25,
+   "examples": [
+    "국왕컵",
+    "ES2",
+    "FA컵",
+    "EN2",
+    "DFB 포칼",
+    "DE2"
+   ],
+   "line": 4020
+  },
+  "EUC": {
+   "chars": 346,
+   "n_strings": 3,
+   "examples": [
+    "챔피언스리그",
+    "유로파리그",
+    "컨퍼런스리그"
+   ],
+   "line": 4185
+  },
+  "MT_EU": {
+   "chars": 163,
+   "n_strings": 12,
+   "examples": [
+    "챔피언스리그",
+    "#9cc2ff",
+    "#0a1747",
+    "#ffffff",
+    "유로파리그",
+    "#ff7a1a"
+   ],
+   "line": 4940
+  },
+  "LGN": {
+   "chars": 68,
+   "n_strings": 5,
+   "examples": [
+    "라리가",
+    "프리미어리그",
+    "세리에A",
+    "분데스리가",
+    "리그1"
+   ],
+   "line": 12
+  },
+  "CC_NM": {
+   "chars": 257,
+   "n_strings": 40,
+   "examples": [
+    "724",
+    "스페인",
+    "826",
+    "잉글랜드·스코틀랜드",
+    "380",
+    "이탈리아"
+   ],
+   "line": 6999
+  },
+  "NAMES": {
+   "chars": 4641,
+   "n_strings": 498,
+   "examples": [
+    "Min-jun",
+    "Seo-jun",
+    "Ji-ho",
+    "Hyun-woo",
+    "Jun-seo",
+    "Do-yun"
+   ],
+   "line": 1900
+  }
+ },
+ "COLORS_keys": 9,
+ "terms": {
+  "챔피언스리그": {
+   "by": {
+    "string": 5,
+    "comment": 2
+   },
+   "ex": {
+    "string": [
+     "=85)return [2,'우승 경쟁(2위 이내)'];if(ep<=4)return [4,'챔피언스리그 진출(4위 이내)'];if(ep<=7)return [7,'유럽대항전 진출(7위 이내)']",
+     "사)의 50%를 이적 예산에 반영(우리 팀·AI 모두) const EUC={UCL:{n:'챔피언스리그',md:8,pots:4,dow:2,prize:{part:18.6e6,w:2.1e6,d:."
+    ],
+    "comment": [
+     "de,name,club)}}  // ================= 유럽대항전(v69): 챔피언스리그·유로파리그·컨퍼런스리그 ================= // 설계(2024~ 실제 형식 ",
+     " 바꿈 → 1위를 계속 지키면 다시 안 나오고, 떨어졌다가 되찾을 때만 나옴 // 추가: 챔피언스리그권·유로파리그권·컨퍼런스리그권(리그별 배정 순위, 국내 컵 우승 몫 제외) 진입·이탈도 같"
+    ]
+   }
+  },
+  "유로파리그": {
+   "by": {
+    "comment": 2,
+    "string": 3
+   },
+   "ex": {
+    "comment": [
+     ",club)}}  // ================= 유럽대항전(v69): 챔피언스리그·유로파리그·컨퍼런스리그 ================= // 설계(2024~ 실제 형식 단순화) /",
+     "를 계속 지키면 다시 안 나오고, 떨어졌다가 되찾을 때만 나옴 // 추가: 챔피언스리그권·유로파리그권·컨퍼런스리그권(리그별 배정 순위, 국내 컵 우승 몫 제외) 진입·이탈도 같은 방식으로 "
+    ],
+    "string": [
+     "qf:12.5e6,sf:15e6,f:18.5e6,win:6.5e6}},   UEL:{n:'유로파리그',md:8,pots:4,dow:4,prize:{part:4.3e6,w:.45e6,d:.1",
+     "리그',a:'#9cc2ff',b:'#0a1747',a2:'#ffffff'},UEL:{n:'유로파리그',a:'#ff7a1a',b:'#2b1405',a2:'#ffb37a'},UECL:{n:'컨"
+    ]
+   }
+  },
+  "컨퍼런스리그": {
+   "by": {
+    "comment": 2,
+    "string": 3
+   },
+   "ex": {
+    "comment": [
+     "}}  // ================= 유럽대항전(v69): 챔피언스리그·유로파리그·컨퍼런스리그 ================= // 설계(2024~ 실제 형식 단순화) //  · 각 ",
+     "면 다시 안 나오고, 떨어졌다가 되찾을 때만 나옴 // 추가: 챔피언스리그권·유로파리그권·컨퍼런스리그권(리그별 배정 순위, 국내 컵 우승 몫 제외) 진입·이탈도 같은 방식으로 한 번씩 fun"
+    ],
+    "string": [
+     "6,qf:2.5e6,sf:2.8e6,f:4.5e6,win:4e6}},   UECL:{n:'컨퍼런스리그',md:6,pots:6,dow:4,prize:{part:3.2e6,w:.4e6,d:.13",
+     "그',a:'#ff7a1a',b:'#2b1405',a2:'#ffb37a'},UECL:{n:'컨퍼런스리그',a:'#33e05a',b:'#05230d',a2:'#9df2ae'}}; const MT"
+    ]
+   }
+  },
+  "UCL": {
+   "by": {
+    "comment": 4,
+    "code": 5,
+    "string": 7
+   },
+   "ex": {
+    "comment": [
+     "=== // 설계(2024~ 실제 형식 단순화) //  · 각 대회 36팀 리그 페이즈: UCL·UEL 8경기(포트 4개 × 2팀, 홈·원정 1번씩), UECL 6경기(포트 6개 × 1",
+     "즌 리그 순위 + 국내 컵 우승(UEL). 첫 시즌은 선수단 전력 순위로 대신 //    UCL: 잉·스 5, 이·독·프 4, 포·네 3, 벨·튀 2, 스코·스위스·오스트리아·덴마크 1"
+    ],
+    "code": [
+     "~27 배분 근사)의 50%를 이적 예산에 반영(우리 팀·AI 모두) const EUC={UCL:{n:'챔피언스리그',md:8,pots:4,dow:2,prize:{part:18.6e6,",
+     " 0~1)에 맞춤. UEL·UECL은 실측이 없어 경기당 약 2.9골로 추정 */ LGP.UCL=[.4,.075];LGP.UEL=[.27,.07];LGP.UECL=[.25,.07];LG"
+    ],
+    "string": [
+     "LG.forEach(lg=>{for(let i=0;i<EU_UCL[lg];i++)put('UCL',nextOf(lg))});   EU_LG.forEach(lg=>{const w=cupW",
+     "0;i<EU_UECL[lg];i++)put('UECL',nextOf(lg))});   ['UCL','UEL','UECL'].forEach(k=>{let g=0;while(Q[k].len"
+    ]
+   }
+  },
+  "UEL": {
+   "by": {
+    "comment": 5,
+    "code": 5,
+    "string": 5
+   },
+   "ex": {
+    "comment": [
+     "// 설계(2024~ 실제 형식 단순화) //  · 각 대회 36팀 리그 페이즈: UCL·UEL 8경기(포트 4개 × 2팀, 홈·원정 1번씩), UECL 6경기(포트 6개 × 1팀). ",
+     ": 실제엔 다른 나라 팀도 나오지만 게임에 없음): 전 시즌 리그 순위 + 국내 컵 우승(UEL). 첫 시즌은 선수단 전력 순위로 대신 //    UCL: 잉·스 5, 이·독·프 4, "
+    ],
+    "code": [
+     "16:11e6,qf:12.5e6,sf:15e6,f:18.5e6,win:6.5e6}},   UEL:{n:'유로파리그',md:8,pots:4,dow:4,prize:{part:4.3e6,w:",
+     "L은 실측이 없어 경기당 약 2.9골로 추정 */ LGP.UCL=[.4,.075];LGP.UEL=[.27,.07];LGP.UECL=[.25,.07];LGH.UCL=.145;LGH.UEL"
+    ],
+    "string": [
+     "t w=cupW&&cupW[lg];if(w!=null&&!taken.has(w))put('UEL',w);else put('UEL',nextOf(lg));for(let i=0;i<EU_U",
+     ";if(w!=null&&!taken.has(w))put('UEL',w);else put('UEL',nextOf(lg));for(let i=0;i<EU_UEL[lg];i++)put('UE"
+    ]
+   }
+  },
+  "UECL": {
+   "by": {
+    "comment": 4,
+    "code": 5,
+    "string": 2
+   },
+   "ex": {
+    "comment": [
+     "대회 36팀 리그 페이즈: UCL·UEL 8경기(포트 4개 × 2팀, 홈·원정 1번씩), UECL 6경기(포트 6개 × 1팀). 같은 나라 팀끼리는 피함 //  · 1~8위 16강 직행,",
+     "면 다음 순위) + 다음 순위(대리그 2·기타 1~2) → 남는 자리는 나라별 차례로 / UECL: 그다음 순위 //  · 날짜: UCL 화요일, UEL·UECL 목요일(리그 주말 사이)"
+    ],
+    "code": [
+     "r16:1.75e6,qf:2.5e6,sf:2.8e6,f:4.5e6,win:4e6}},   UECL:{n:'컨퍼런스리그',md:6,pots:6,dow:4,prize:{part:3.2e6,w",
+     "9골로 추정 */ LGP.UCL=[.4,.075];LGP.UEL=[.27,.07];LGP.UECL=[.25,.07];LGH.UCL=.145;LGH.UEL=.15;LGH.UECL=.15; "
+    ],
+    "string": [
+     "G.forEach(lg=>{for(let i=0;i<EU_UECL[lg];i++)put('UECL',nextOf(lg))});   ['UCL','UEL','UECL'].forEach(k=",
+     "lg];i++)put('UECL',nextOf(lg))});   ['UCL','UEL','UECL'].forEach(k=>{let g=0;while(Q[k].length<36&&g<200"
+    ]
+   }
+  },
+  "라리가": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 1,
+    "string": 26,
+    "comment": 60,
+    "eng-comment": 18
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "헨티나 리가\",\"US\":\"MLS\",\"KR\":\"K리그1\",\"JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포르투갈 하부\",\"NLL\":\"에레디비시 하부\",\"BEL\":\"벨기에 "
+    ],
+    "string": [
+     "}   BASE[p.id]=p;}); const LGN=Object.assign({ES:'라리가',EN:'프리미어리그',IT:'세리에A',DE:'분데스리가',FR:'리그1'},G.lea",
+     "or=\"this.remove()\">`:''}LaLiga · 2026-27</div><h1>라리가 매니저</h1>   <p>2026년 7월 1일 프리시즌부터 시작합니다. 전술은 3단계 엔"
+    ],
+    "comment": [
+     "'균형':[]}; // 성향 적합도 = (필요 능력 평균 − 그 팀 전체 능력 평균) − 라리가 중앙값. 팀 전력 자체와 분리해 '상대적으로 맞는 성향'만 평가 // 기준값: 라리가 2",
+     "− 라리가 중앙값. 팀 전력 자체와 분리해 '상대적으로 맞는 성향'만 평가 // 기준값: 라리가 20팀 주전 10명(게임 능력치) 중앙값. 균형은 성향 보너스·불이익 없음 const N"
+    ],
+    "eng-comment": [
+     "'균형':[]}; // 성향 적합도 = (필요 능력 평균 − 그 팀 전체 능력 평균) − 라리가 중앙값. 팀 전력 자체와 분리해 '상대적으로 맞는 성향'만 평가 // 기준값: 라리가 2",
+     "− 라리가 중앙값. 팀 전력 자체와 분리해 '상대적으로 맞는 성향'만 평가 // 기준값: 라리가 20팀 주전 10명(게임 능력치) 중앙값. 균형은 성향 보너스·불이익 없음 const N"
+    ]
+   }
+  },
+  "프리미어리그": {
+   "by": {
+    "string": 2
+   },
+   "ex": {
+    "string": [
+     "p.id]=p;}); const LGN=Object.assign({ES:'라리가',EN:'프리미어리그',IT:'세리에A',DE:'분데스리가',FR:'리그1'},G.leagues||{});co",
+     "N[lg]}catch(e){}const N={ES:'라리가',ES2:'라리가 2',EN:'프리미어리그',EN2:'챔피언십',IT:'세리에A',IT2:'세리에B',DE:'분데스리가',DE2:'"
+    ]
+   }
+  },
+  "세리에": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "string": 6,
+    "comment": 10
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "N\":\"중국 슈퍼리그\",\"EN2\":\"챔피언십\",\"DE2\":\"2. 분데스리가\",\"IT2\":\"세리에B\",\"FR2\":\"리그2\",\"KRL\":\"K리그1 하부\",\"USL\":\"MLS 하부\",\"ARL",
+     "하부\",\"EN2L\":\"챔피언십 하부\",\"DE2L\":\"2. 분데스리가 하부\",\"IT2L\":\"세리에B 하부\",\"FR2L\":\"리그2 하부\"},\"lgTm\":{\"ES\":\"ES1\",\"EN\":\"GB"
+    ],
+    "string": [
+     "const LGN=Object.assign({ES:'라리가',EN:'프리미어리그',IT:'세리에A',DE:'분데스리가',FR:'리그1'},G.leagues||{});const LG5=n",
+     "[['ALL','전체 리그'],['ES','라리가'],['EN','EPL'],['IT','세리에A'],['DE','분데스'],['FR','리그1'],['OUT','5대 리그 밖'],['"
+    ],
+    "comment": [
+     "·일본·중국·사우디·미국·멕시코·아르헨티나·브라질)과 4대 리그 2부(챔피언십·2.분데스·세리에B·리그2) 추가. 시즌은 게임 편의상 모두 8월~5월 */ const EUL=['EN',",
+     "0장(4월 14일 전) 2경기·15장 3경기(리그만), 레드 징계는 국내 모든 대회 // 세리에A = 5·10·14·17장 이후 매 장 / UEFA 2026-27 = 4·6·8·10장("
+    ]
+   }
+  },
+  "분데스리가": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 4,
+    "string": 3,
+    "comment": 4,
+    "eng-comment": 1
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "리그\",\"SC\":\"스코티시 프리미어십\",\"CH\":\"스위스 슈퍼리그\",\"AT\":\"오스트리아 분데스리가\",\"DK\":\"덴마크 수페르리가\",\"BR\":\"브라질 세리이 A\",\"AR\":\"아르헨티나 리가",
+     ":\"스코티시 프리미어십 하부\",\"CHL\":\"스위스 슈퍼리그 하부\",\"ATL\":\"오스트리아 분데스리가 하부\",\"SA\":\"사우디 프로리그\",\"MX\":\"리가 MX\",\"CN\":\"중국 슈퍼리그\",\""
+    ],
+    "string": [
+     "Object.assign({ES:'라리가',EN:'프리미어리그',IT:'세리에A',DE:'분데스리가',FR:'리그1'},G.leagues||{});const LG5=new Set(['ES'",
+     "',EN:'프리미어리그',EN2:'챔피언십',IT:'세리에A',IT2:'세리에B',DE:'분데스리가',DE2:'2. 분데스리가',FR:'리그1',FR2:'리그2'};return N[lg]|"
+    ],
+    "comment": [
+     "(s,bx)}}   /* v184 수비 국면 최전방 잔류(역습 출구): 실측 DFL 추적(분데스리가 3경기) — 공이 우리 골문에서 16.5m 안·16~25m·25~35m일 때 가장 앞 선",
+     " 다음 경기 결장, 리그별 실제 규정 ================= // 근거: 라리가·분데스리가·리그1(2025-26~)·기본값 = 경고 5장마다 1경기 / EPL = 5장(1월 1일 "
+    ],
+    "eng-comment": [
+     "(s,bx)}}   /* v184 수비 국면 최전방 잔류(역습 출구): 실측 DFL 추적(분데스리가 3경기) — 공이 우리 골문에서 16.5m 안·16~25m·25~35m일 때 가장 앞 선"
+    ]
+   }
+  },
+  "리그1": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "string": 4,
+    "comment": 10
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "BR\":\"브라질 세리이 A\",\"AR\":\"아르헨티나 리가\",\"US\":\"MLS\",\"KR\":\"K리그1\",\"JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포르투갈 하부\",\"NLL",
+     "\"DE2\":\"2. 분데스리가\",\"IT2\":\"세리에B\",\"FR2\":\"리그2\",\"KRL\":\"K리그1 하부\",\"USL\":\"MLS 하부\",\"ARL\":\"아르헨티나 리가 하부\",\"SAL\":\"사우디"
+    ],
+    "string": [
+     "gn({ES:'라리가',EN:'프리미어리그',IT:'세리에A',DE:'분데스리가',FR:'리그1'},G.leagues||{});const LG5=new Set(['ES','EN','IT",
+     "'],['EN','EPL'],['IT','세리에A'],['DE','분데스'],['FR','리그1'],['OUT','5대 리그 밖'],['FA','자유계약']])}${UI.f.lg==='"
+    ],
+    "comment": [
+     " 결장, 리그별 실제 규정 ================= // 근거: 라리가·분데스리가·리그1(2025-26~)·기본값 = 경고 5장마다 1경기 / EPL = 5장(1월 1일 전) 1",
+     "·8·10장(이후 2장마다), 8강 종료 후 경고 소멸, 퇴장은 다음 UEFA 경기 // 리그1은 경고가 리그1+쿠프 드 프랑스 합산. 그 외 국내 컵은 레드만 다음 컵 경기 정지(컵 "
+    ]
+   }
+  },
+  "에레디비시": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "comment": 7
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "sweep\",\"gk_dist\"],\"leagues\":{\"PT\":\"리가 포르투갈\",\"NL\":\"에레디비시\",\"BE\":\"벨기에 프로리그\",\"TR\":\"쉬페르리그\",\"SC\":\"스코티시 프리미어십\",\"",
+     "JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포르투갈 하부\",\"NLL\":\"에레디비시 하부\",\"BEL\":\"벨기에 프로리그 하부\",\"TRL\":\"쉬페르리그 하부\",\"SCL\":\"스"
+    ],
+    "comment": [
+     "그 회귀, 실제 FBref 경기당 골(LGGPM)에 맞춤. 이전 값(v74 엔진 기준)은 에레디비시 3.66골(실제 3.1) 등 대부분 과다 */ const ENGF2={ES:1,EN:0.",
+     " 연봉 수준. 하위 리그로(R>1): R^0.3배 더 요구(최대 2.5배; 예: 프리미어→에레디비시 2.1배, 프리미어→K리그 2.5배, 라리가→에레디비시 1.9배) // 상위 리그로(R<"
+    ]
+   }
+  },
+  "K리그": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "comment": 1
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "\"BR\":\"브라질 세리이 A\",\"AR\":\"아르헨티나 리가\",\"US\":\"MLS\",\"KR\":\"K리그1\",\"JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포르투갈 하부\",\"NL",
+     ",\"DE2\":\"2. 분데스리가\",\"IT2\":\"세리에B\",\"FR2\":\"리그2\",\"KRL\":\"K리그1 하부\",\"USL\":\"MLS 하부\",\"ARL\":\"아르헨티나 리가 하부\",\"SAL\":\"사우"
+    ],
+    "comment": [
+     "1): R^0.3배 더 요구(최대 2.5배; 예: 프리미어→에레디비시 2.1배, 프리미어→K리그 2.5배, 라리가→에레디비시 1.9배) // 상위 리그로(R<1): R^0.06배로 조금"
+    ]
+   }
+  },
+  "J1리그": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 1
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "이 A\",\"AR\":\"아르헨티나 리가\",\"US\":\"MLS\",\"KR\":\"K리그1\",\"JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포르투갈 하부\",\"NLL\":\"에레디비시 하부\""
+    ]
+   }
+  },
+  "MLS": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "comment": 3
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "덴마크 수페르리가\",\"BR\":\"브라질 세리이 A\",\"AR\":\"아르헨티나 리가\",\"US\":\"MLS\",\"KR\":\"K리그1\",\"JP\":\"J1리그\",\"ES2\":\"라리가2\",\"PTL\":\"리가 포",
+     "\",\"IT2\":\"세리에B\",\"FR2\":\"리그2\",\"KRL\":\"K리그1 하부\",\"USL\":\"MLS 하부\",\"ARL\":\"아르헨티나 리가 하부\",\"SAL\":\"사우디 프로리그 하부\",\"MXL\""
+    ],
+    "comment": [
+     " */   if(cl.length>=26)r=r.slice(0,34); /* 30팀 리그(MLS·아르헨티나): 실제 경기 수(34)에 맞춰 1회전 + 일부 */   const ds=da",
+     "33·포르투갈 34·에레디비시 28·튀르키예 28·벨기에 22·챔피언십 22·브라질 39·MLS 33·아르헨 23 → 실제 비율에 맞춰 배율 //  자료가 없는 리그(브라질·MLS·아르"
+    ]
+   }
+  },
+  "챔피언십": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2,
+    "comment": 6,
+    "string": 1
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "SA\":\"사우디 프로리그\",\"MX\":\"리가 MX\",\"CN\":\"중국 슈퍼리그\",\"EN2\":\"챔피언십\",\"DE2\":\"2. 분데스리가\",\"IT2\":\"세리에B\",\"FR2\":\"리그2\",\"KRL\":",
+     "그 하부\",\"MXL\":\"리가 MX 하부\",\"CNL\":\"중국 슈퍼리그 하부\",\"EN2L\":\"챔피언십 하부\",\"DE2L\":\"2. 분데스리가 하부\",\"IT2L\":\"세리에B 하부\",\"FR2L\":"
+    ],
+    "comment": [
+     "v67: 비유럽(한국·일본·중국·사우디·미국·멕시코·아르헨티나·브라질)과 4대 리그 2부(챔피언십·2.분데스·세리에B·리그2) 추가. 시즌은 게임 편의상 모두 8월~5월 */ const ",
+     "Map(lgClubs)} /* R라운드 날짜: 38 이하면 주말 38일에 고르게, 넘으면(챔피언십 46) 주중 경기 추가 */ function datesN(y,R){const w=leag"
+    ],
+    "string": [
+     "){}const N={ES:'라리가',ES2:'라리가 2',EN:'프리미어리그',EN2:'챔피언십',IT:'세리에A',IT2:'세리에B',DE:'분데스리가',DE2:'2. 분데스리가',F"
+    ]
+   }
+  },
+  "리가 MX": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 2
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     " 하부\",\"ATL\":\"오스트리아 분데스리가 하부\",\"SA\":\"사우디 프로리그\",\"MX\":\"리가 MX\",\"CN\":\"중국 슈퍼리그\",\"EN2\":\"챔피언십\",\"DE2\":\"2. 분데스리가\",\"IT",
+     "부\",\"ARL\":\"아르헨티나 리가 하부\",\"SAL\":\"사우디 프로리그 하부\",\"MXL\":\"리가 MX 하부\",\"CNL\":\"중국 슈퍼리그 하부\",\"EN2L\":\"챔피언십 하부\",\"DE2L\":\"2"
+    ]
+   }
+  },
+  "1RFEF": {
+   "by": {
+    "string": 2
+   },
+   "ex": {
+    "string": [
+     " 평균 약 65) const ES3_LGS=['ES3A','ES3B'];LGN.ES3A='1RFEF 1조';LGN.ES3B='1RFEF 2조';if(typeof LGP!=='undefine",
+     "LGS=['ES3A','ES3B'];LGN.ES3A='1RFEF 1조';LGN.ES3B='1RFEF 2조';if(typeof LGP!=='undefined'&&LGP.ES)LGP.ES3A="
+    ]
+   }
+  },
+  "국왕컵": {
+   "by": {
+    "comment": 3,
+    "string": 1
+   },
+   "ex": {
+    "comment": [
+     "nder()},true);  // ================= 국내 컵대회(v68): 국왕컵 + 각국 컵 ================= // 설계 //  · 나라별 1개 대회(1부",
+     "회(1부 + 해당 나라 2부). 단판 녹아웃, 무승부 → 연장(빠른 계산) → 승부차기. 국왕컵·코파 이탈리아는 4강 홈앤어웨이(실제 규정) //  · 1라운드: 참가 팀 수가 2의 거"
+    ],
+    "string": [
+     "위 팀은 4강 전까지 로테이션을 크게 돌림(실제 컵 운영) const CUPS={ES:['국왕컵','ES2',1],EN:['FA컵','EN2',0],DE:['DFB 포칼','DE2',0"
+    ]
+   }
+  },
+  "FA컵": {
+   "by": {
+    "string": 2
+   },
+   "ex": {
+    "string": [
+     "게 돌림(실제 컵 운영) const CUPS={ES:['국왕컵','ES2',1],EN:['FA컵','EN2',0],DE:['DFB 포칼','DE2',0],IT:['코파 이탈리아','IT",
+     "트리아컵'],DK:['덴마크컵'],KR:['코리아컵'],JP:['천황배'],CN:['중국 FA컵'],SA:['킹스컵'],US:['US 오픈컵'],AR:['코파 아르헨티나'],BR:['코"
+    ]
+   }
+  },
+  "DFB 포칼": {
+   "by": {
+    "string": 1
+   },
+   "ex": {
+    "string": [
+     " CUPS={ES:['국왕컵','ES2',1],EN:['FA컵','EN2',0],DE:['DFB 포칼','DE2',0],IT:['코파 이탈리아','IT2',1],FR:['쿠프 드 프랑스','"
+    ]
+   }
+  },
+  "코파 이탈리아": {
+   "by": {
+    "comment": 1,
+    "string": 1
+   },
+   "ex": {
+    "comment": [
+     " + 해당 나라 2부). 단판 녹아웃, 무승부 → 연장(빠른 계산) → 승부차기. 국왕컵·코파 이탈리아는 4강 홈앤어웨이(실제 규정) //  · 1라운드: 참가 팀 수가 2의 거듭제곱이 아니면"
+    ],
+    "string": [
+     ",1],EN:['FA컵','EN2',0],DE:['DFB 포칼','DE2',0],IT:['코파 이탈리아','IT2',1],FR:['쿠프 드 프랑스','FR2',0],PT:['타사 드 포르투갈'"
+    ]
+   }
+  },
+  "쿠프 드 프랑스": {
+   "by": {
+    "string": 1,
+    "comment": 1
+   },
+   "ex": {
+    "string": [
+     "DE:['DFB 포칼','DE2',0],IT:['코파 이탈리아','IT2',1],FR:['쿠프 드 프랑스','FR2',0],PT:['타사 드 포르투갈'],NL:['KNVB 베이커르'],   BE"
+    ],
+    "comment": [
+     "다), 8강 종료 후 경고 소멸, 퇴장은 다음 UEFA 경기 // 리그1은 경고가 리그1+쿠프 드 프랑스 합산. 그 외 국내 컵은 레드만 다음 컵 경기 정지(컵 경고 누적은 별도로 셈하지 않음)"
+    ]
+   }
+  },
+  "엘 클라시코": {
+   "by": {
+    "comment": 1,
+    "string": 1
+   },
+   "ex": {
+    "comment": [
+     "arks[bi]={on:true,tight:false,t:star.id}}} // 더비: 엘 클라시코, 마드리드, 세비야, 바스크, 발렌시아, 바르셀로나, 갈리시아 더비(과열만 반영) con"
+    ],
+    "string": [
+     "아, 바르셀로나, 갈리시아 더비(과열만 반영) const DERBY={'RMA|BAR':'엘 클라시코','RMA|ATM':'마드리드 더비','SEV|BET':'세비야 더비','ATH|RSO'"
+    ]
+   }
+  },
+  "발롱도르": {
+   "by": {
+    "comment": 2,
+    "string": 7
+   },
+   "ex": {
+    "comment": [
+     "번 계산: 우리 리그 시상(득점왕·도움왕·MVP·영플레이어·사모라·감독상·베스트 11), 발롱도르(전 리그 상위 10), 골든보이(21세 이하) // 감독 시즌 기록(S.me.season",
+     "?m.n||m.name:'',me:m&&m.me?1:0,pos:mgr.pos}}   // 발롱도르: 전 리그, 리그 수준 × 개인 성적 + 우승 가산   const euW={};(S.eu"
+    ],
+    "string": [
+     "   if(A.bal[0]&&A.bal[0].c===S.club)mine.unshift(`발롱도르 ${A.bal[0].n}`);   if(A.mgr&&A.mgr.me){mine.unshi",
+     "'-'} · 득점왕 ${A.top?A.top.n+' '+A.top.v+'골':'-'} · 발롱도르 ${b0?b0.n+' ('+CLUBS[b0.c].short+')':'-'}${mine.l"
+    ]
+   }
+  },
+  "사모라": {
+   "by": {
+    "comment": 1,
+    "string": 3
+   },
+   "ex": {
+    "comment": [
+     "(S.seasonDone) 한 번 계산: 우리 리그 시상(득점왕·도움왕·MVP·영플레이어·사모라·감독상·베스트 11), 발롱도르(전 리그 상위 10), 골든보이(21세 이하) // 감독"
+    ],
+    "string": [
+     "lab={top:'득점왕',ast:'도움왕',mvp:'MVP',yp:'영플레이어',gk:'사모라(최소 실점 GK)'};   for(const k in lab)if(A[k]&&A[k].c",
+     "p,A.yp?`${A.yp.age}세 · 평점 ${A.yp.v}`:'')}${awRow('사모라',A.gk,A.gk?`경기당 실점 ${A.gk.v}`:'')}     ${A.mgr?`<"
+    ]
+   }
+  },
+  "UEFA": {
+   "by": {
+    "comment": 8,
+    "string": 4,
+    "asset:plGlb": 1
+   },
+   "ex": {
+    "comment": [
+     "(엔진 경기) 경기 관련 부상이 경기당 약 0.63건으로 AI 빠른 경기(실측 0.39)·UEFA 기준(경기당 약 0.45건, Ekstrand 2011)보다 많았음 */if(!(q.inj",
+     ")}},true);  // ---- 부상 빈도·기간 실데이터 보정(v87) ---- // UEFA Elite Club Injury Study(Ekstrand 2011, BJSM): 선수당"
+    ],
+    "string": [
+     "se if(scrInEu(c.i)){const fine=(cost-L*R)*.1;msg=`UEFA 벌금 €${(fine/1e6).toFixed(1)}M(초과분 10%)`;if(c.i===",
+     "S.fin.budget-=fine;S.fin.log.unshift({d:S.date,t:'UEFA 재정 규정 벌금',v:-fine})}else S.aiBudget[c.i]=(S.aiBud"
+    ],
+    "asset:plGlb": [
+     "BAoEAQQKBAgEAQQBBAgErAOsAwgEfQALBAoEDAT4AwsEDAQTBBUEFAQRBBAEFQQVBBMEEQSAAHwAewB8AIAAAwQDBLUDfACsA30AfwDs"
+    ]
+   }
+  },
+  "FIFA": {
+   "by": {
+    "comment": 5,
+    "string": 3
+   },
+   "ex": {
+    "comment": [
+     "대 후 완전 이적 옵션/의무 ================= // 에이전트 수수료 기준: FIFA(2023) 국제 이적 에이전트 수수료 USD 8.88억 / 이적료 USD 96.3억 ≈ ",
+     "(기간·연봉 분담·임대료·출전 역할·완전 이적 옵션)을 제시하고 원소속 구단이 고름 // FIFA 임대 규정(2022.7 시행, 2024-25부터 최종 단계): 시즌 중 임대 보낸 선수 "
+    ],
+    "string": [
+     "anFrom!==S.club)return '임대 중인 선수는 다시 임대 보낼 수 없습니다(FIFA 재임대 금지)';   if(!lnExempt(p)&&lnCount()>=LN_MAX)re",
+     "ount()>=LN_MAX)return `임대 보낸 선수가 이미 ${LN_MAX}명입니다(FIFA 한도, 21세 이하·자체 육성 제외)`;   if(lnCountTo(m.from)>=LN"
+    ]
+   }
+  },
+  "Opta": {
+   "by": {
+    "comment": 5,
+    "asset:plTexH": 1,
+    "eng-comment": 4
+   },
+   "ex": {
+    "comment": [
+     "p).xa+=xg;/* v237 빅찬스 메이킹: 도움 패스로 만들어진 '빅 찬스' 슈팅. Opta 빅 찬스는 정성 판정이라 표시 xG 기준으로 근사 — 엔진 xG 분포에서 0.15 이상이",
+     "15 이상이 팀·경기당 약 2.2회(EPL 상위 팀 빅 찬스 생성 경기당 2.2~3.0, Opta/football365 24-25)라 0.15 */if(xg*XGD>=(CFG.bcX??."
+    ],
+    "asset:plTexH": [
+     "YWShgZWpk6vdFtUwgVfUjpUdhq6R5H271YiUAW4KwQlE3pB9GkOptai1CmwxRwxNJDoeTPIR5n0oxaAd0du6TIPEZohV7w7NECU/Nx59"
+    ],
+    "eng-comment": [
+     "p).xa+=xg;/* v237 빅찬스 메이킹: 도움 패스로 만들어진 '빅 찬스' 슈팅. Opta 빅 찬스는 정성 판정이라 표시 xG 기준으로 근사 — 엔진 xG 분포에서 0.15 이상이",
+     "15 이상이 팀·경기당 약 2.2회(EPL 상위 팀 빅 찬스 생성 경기당 2.2~3.0, Opta/football365 24-25)라 0.15 */if(xg*XGD>=(CFG.bcX??."
+    ]
+   }
+  },
+  "StatsBomb": {
+   "by": {
+    "comment": 12,
+    "eng-comment": 12
+   },
+   "ex": {
+    "comment": [
+     "tOf=(p,s)=>st.fatigue[s][p.id]||0;   // 피로 실수: 근거(StatsBomb 라리가 15-16) 15분 구간별 패스 실패율이 23.3%→23.1%로 거의 평평 → 효",
+     "ind(q=>q.g==='GK')||t.xi[0];   // ---- 근거 기반 기본값: StatsBomb 오픈데이터 라리가 2015-16 전 경기(380) 슈팅 유형별 평균 xG·블록률 ----"
+    ],
+    "eng-comment": [
+     "tOf=(p,s)=>st.fatigue[s][p.id]||0;   // 피로 실수: 근거(StatsBomb 라리가 15-16) 15분 구간별 패스 실패율이 23.3%→23.1%로 거의 평평 → 효",
+     "ind(q=>q.g==='GK')||t.xi[0];   // ---- 근거 기반 기본값: StatsBomb 오픈데이터 라리가 2015-16 전 경기(380) 슈팅 유형별 평균 xG·블록률 ----"
+    ]
+   }
+  },
+  "FBref": {
+   "by": {
+    "comment": 9,
+    "string": 3,
+    "eng-comment": 5
+   },
+   "ex": {
+    "comment": [
+     "   // 오픈플레이 크로스 슈팅 중 발 55%·헤더 45%, GK 크로스 차단 6.3%(FBref 24-25). 코너 1개당 헤더 슈팅 약 17%.   const AER={cross:{w",
+     "].r-=.05;const ag=aggrOf(T[o],def);     // 카드: 근거 FBref 24-25 라리가 경기당 파울 24.8·경고 4.5 → 파울당 약 18%. 공격적 역할·"
+    ],
+    "string": [
+     "로 불러옵니다(오프라인이면 이니셜 배지). 숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가",
+     "p:18px;line-height:1.6\">숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가"
+    ],
+    "eng-comment": [
+     "   // 오픈플레이 크로스 슈팅 중 발 55%·헤더 45%, GK 크로스 차단 6.3%(FBref 24-25). 코너 1개당 헤더 슈팅 약 17%.   const AER={cross:{w",
+     "].r-=.05;const ag=aggrOf(T[o],def);     // 카드: 근거 FBref 24-25 라리가 경기당 파울 24.8·경고 4.5 → 파울당 약 18%. 공격적 역할·"
+    ]
+   }
+  },
+  "Transfermarkt": {
+   "by": {
+    "comment": 13,
+    "string": 5
+   },
+   "ex": {
+    "comment": [
+     "R 1점당 연 −0.08 → 절반은 평가 오차로 보고 −0.06 적용) //  · 은퇴: Transfermarkt 5대 리그 2015~2022 선수의 '이후 3시즌 모든 대회 미출전' 비율(주전 1,50",
+     " } /* v161 초고가 완만화: 6시즌 검증에서 최고 가치가 €3.6억까지 오름(실제 Transfermarkt 최고 €2억 안팎) → €2억 초과분은 0.3제곱으로 눌러 €3.6억→약 €2.4억(시작"
+    ],
+    "string": [
+     "e\" style=\"margin-top:10px;line-height:1.6\">사진·로고는 Transfermarkt 이미지 주소를 인터넷으로 불러옵니다(오프라인이면 이니셜 배지). 숫자는 상위 16명 평균",
+     " 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가치·계약: Transfermarkt 기반 공개 데이터셋. 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스"
+    ]
+   }
+  },
+  "트랜스퍼마르크트": {
+   "by": {},
+   "ex": {}
+  },
+  "TM(약칭)": {
+   "by": {
+    "comment": 5,
+    "asset:plGlb": 1
+   },
+   "ex": {
+    "comment": [
+     ", −4 이하 2.5%(26~29)·3.8%(30~33)·9.4%(34+) //  계기: TM 2016~23 시장가치 ×2.5 급등은 출전 +1,000분 늘어난 선수에서 3.7~7배,",
+     "ep.golden=true});   // 4-2) 다른 리그에서 5대 리그로 유입(근거: TM 이적 2019~24 연평균 442명) — 13개 리그 실제 선수 풀에서 우선 영입   /"
+    ],
+    "asset:plGlb": [
+     "g/uOqzPg6FWTMimiiyd6xvPwHtwD44zLcztObLsm0hbT9OP7s+TM/OspgD3DMORG4/qimyPuWuOLPCpUc0RQBwP2uttj7mlISykUCB"
+    ]
+   }
+  },
+  "Deloitte": {
+   "by": {
+    "comment": 3
+   },
+   "ex": {
+    "comment": [
+     "름 EPL €2.33bn vs 라리가 €556m(24), 사우디 2023 여름 $957m(Deloitte) //  게임 기본 예산 합(EPL=100): 세리에A 51·분데스 40·라리가 32·리",
+     "제 매출(2023/24)에 맞춰 딜로이트 외 구단 매출·연봉 한도에 배율: 5대 리그 = Deloitte Annual Review 2025(EPL £6.3bn·분데스 €3.8bn·라리가 €3.8"
+    ]
+   }
+  },
+  "딜로이트": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 18,
+    "string": 3,
+    "comment": 6,
+    "regex": 3
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     ",\"Bayern Munich\",\"FCB\",\"DE\",860.6,134.3,516.4,90,\"딜로이트 2026\",1.3,27],[1,\"Dortmund\",\"BVB\",\"DE\",531.3,91.2",
+     "27],[1,\"Dortmund\",\"BVB\",\"DE\",531.3,91.2,318.8,76,\"딜로이트 2026\",1.43,16],[2,\"RB Leipzig\",\"RB\",\"DE\",398.1,76"
+    ],
+    "string": [
+     "26-27 기본). 시장가치·계약: Transfermarkt 기반 공개 데이터셋. 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추",
+     "26-27 기본). 시장가치·계약: Transfermarkt 기반 공개 데이터셋. 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추"
+    ],
+    "comment": [
+     "지출(선수 연봉·코치 연봉·시설 유지·기타 운영비) //  · 매출 기준: 구단 연 매출(딜로이트 풋볼 머니 리그 2026 또는 스쿼드 가치 추정). 구성비는 근사치 — 딜로이트 상위 구",
+     "연 매출(딜로이트 풋볼 머니 리그 2026 또는 스쿼드 가치 추정). 구성비는 근사치 — 딜로이트 상위 구단 입장 18%·중계 34%·상업 48%, 그 외(추정 구단) 14%·62%·24"
+    ],
+    "regex": [
+     "(){const c=CLUBS[S.club],R=c.rev*1e6,mix=FIN_MIX(/딜로이트/.test(c.revSrc||''));const F=facInit();const pric",
+     "[c]||!(CLUBS[c].wageCap>0))return;const deloitte=/딜로이트/.test(CLUBS[c].revSrc||'');const mix=FIN_MIX(delo"
+    ]
+   }
+  },
+  "FC26/FC27(EA)": {
+   "by": {
+    "data:G(선수·구단·리그·감독)": 172,
+    "comment": 5,
+    "string": 1
+   },
+   "ex": {
+    "data:G(선수·구단·리그·감독)": [
+     "977],[322,\"AD Ceuta\",\"CEU\",\"ES2\",15.6,3.9,9.4,23,\"FC27 2부 선수단 추정\",1.0,null],[323,\"Albacete\",\"ALB\",\"ES2\",",
+     "ll],[323,\"Albacete\",\"ALB\",\"ES2\",30.4,7.6,18.2,28,\"FC27 2부 선수단 추정\",1.0,null],[324,\"Burgos CF\",\"BUR\",\"ES2\""
+    ],
+    "comment": [
+     "드 후계자 ================= // 근거 //  · 나이별 능력 변화: EA FC26→FC27 같은 선수 12,013명(2025-09 → 2026-09) 능력치 변화. FC ",
+     " ================= // 근거 //  · 나이별 능력 변화: EA FC26→FC27 같은 선수 12,013명(2025-09 → 2026-09) 능력치 변화. FC 점수 ÷4"
+    ],
+    "string": [
+     "px;line-height:1.6\">숫자는 상위 16명 평균 능력치. 선수 능력치: EA FC27·5대 리그 FBref 기록 기반, 시장가치·계약: Transfermarkt 공개 데이터셋"
+    ]
+   }
+  },
+  "EA": {
+   "by": {
+    "comment": 2,
+    "code": 21,
+    "string": 1,
+    "asset:plGlb": 2
+   },
+   "ex": {
+    "comment": [
+     "·레전드 후계자 ================= // 근거 //  · 나이별 능력 변화: EA FC26→FC27 같은 선수 12,013명(2025-09 → 2026-09) 능력치 변화",
+     " 2D 엔진, 다른 리그는 엔진에 맞춘 빠른 결과 계산 //  · v65: 2부 22팀은 EA FC27 2부 선수단 데이터(s2/seg.py, 496명). 인원 적은 구단은 시작 시 "
+    ],
+    "code": [
+     "금처럼 빠른 결과. 워커를 못 쓰는 환경이면 빠른 결과로 둠(화면 멈춤 방지) const EA={pre:{},q:[],n:0,done:0}; function engAllOn(){ret",
+     "ch(_){}}} function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{const cu=f.cup!="
+    ],
+    "string": [
+     ":18px;line-height:1.6\">숫자는 상위 16명 평균 능력치. 선수 능력치: EA FC27·5대 리그 FBref 기록 기반, 시장가치·계약: Transfermarkt 공개"
+    ],
+    "asset:plGlb": [
+     "Yzns/ErM2PpGFJL0Q3YY9BR57P1WdOD7atFu90liAPQnrej8w/EA+r1B1vQzAgD2VbXo/LSE+PhfSer3zqHQ98Jd6P4KXSj5sHW+9i",
+     "p/wm0QcgMP1jQVT9+anQy/zqqs+ZdXD9BSQI/FWoONMO2oTOr+EA/YzgoP1GsUrKFCR6zEWQNP29pVT/gqz+z+3KnsxPDPz/6mCk/a"
+    ]
+   }
+  },
+  "Mixamo": {
+   "by": {
+    "comment": 2
+   },
+   "ex": {
+    "comment": [
+     "{legs,arms,ph:Math.random()*6};return G}  // ---- Mixamo 사커 팩(X Bot + 동작) 스켈레탈 모델 ---- function r3LoadMode",
+     "&&pb()}}}  // ================= v178 3D 선수 모델 교체: Mixamo Ch38(사용자 제공, 사실적 축구선수) ================= //  · ve"
+    ]
+   }
+  },
+  "mixamorig": {
+   "by": {
+    "string": 5,
+    "comment": 2
+   },
+   "ex": {
+    "string": [
+     "])||1:1;       const hbn=g.scene.getObjectByName('mixamorigHead');let head=null;if(hbn){g.scene.updateMatrixW",
+     "nd'].forEach(k=>{const o=g.scene.getObjectByName('mixamorig'+k);if(o){o.getWorldPosition(wp);J[k]=[Math.abs(w"
+    ],
+    "comment": [
+     "하의·양말·축구화 합친 'main'(속성 __PART 0~4) + 'hair'. 뼈 이름 mixamorig5→mixamorig로 맞춰 기존 동작 23개 그대로 사용(엉덩이 이동은 키 비율 0.89",
+     "친 'main'(속성 __PART 0~4) + 'hair'. 뼈 이름 mixamorig5→mixamorig로 맞춰 기존 동작 23개 그대로 사용(엉덩이 이동은 키 비율 0.89 보정) //  · "
+    ]
+   }
+  },
+  "ambientCG": {
+   "by": {
+    "comment": 2
+   },
+   "ex": {
+    "comment": [
+     "cur:null,gk,arms};return G}} /* v180: 주간 경기 환경광 — ambientCG DayEnvironmentHDRI057(CC0) 톤매핑 파노라마 512×256을 PMRE",
+     ");CH.envImg=im}}return _ci(id)}} /* v180: 잔디 질감 — ambientCG Grass003(CC0, 사용자 제공) 밝기 디테일(512 흑백)을 경기장 잔디 색(줄무"
+    ]
+   }
+  },
+  "Natural Earth": {
+   "by": {
+    "comment": 1,
+    "string": 1
+   },
+   "ex": {
+    "comment": [
+     " 구단(v73, '월드 풋볼 매니저') ================= //  · 지도: Natural Earth(world-atlas) 국경, 리그가 있는 나라만 색칠·선택 가능. 끌어서 이동·두 손가"
+    ],
+    "string": [
+     " FBref 기록 기반, 시장가치·계약: Transfermarkt 공개 데이터셋, 지도: Natural Earth. 연봉·바이아웃 일부는 추정치입니다.</p></main>`}; /* 지도 조작: 나라 누"
+    ]
+   }
+  },
+  "three.js": {
+   "by": {
+    "comment": 2,
+    "asset:threeSrc": 3
+   },
+   "ex": {
+    "comment": [
+     "=========== 3D 다시보기(v81): 골·빅찬스(xG 0.2 이상 슈팅) 장면을 three.js로 재생 ================= // 엔진 4가 0.5초마다 기록하는 22명·공 ",
+     "카메라: 자동(중계 → 마지막 순간 골대 뒤)·중계·골대 뒤·추적, 슈팅 순간 슬로모션. three.js r158(MIT)은 HTML에 내장, 처음 열 때만 로드 const R3={buf:[],"
+    ],
+    "asset:threeSrc": [
+     "\"setAttribute\"in n&&n.setAttribute(\"data-engine\",`three.js r${e}`),n.addEventListener(\"webglcontextlost\",Ht,",
+     "://discourse.threejs.org/t/updates-to-lighting-in-three-js-r155/53733.\"),this._useLegacyLights}set useLegacy"
+    ]
+   }
+  },
+  "위키백과": {
+   "by": {
+    "comment": 2
+   },
+   "ex": {
+    "comment": [
+     " 난수 상관 버그 탓. v69: 2부 4개·라리가2·중국은 실제 최근 2시즌 순위표(영어 위키백과)의 경기당 골·승점 편차에 맞춤 */ const LG_GOAL={}; function l",
+     "단(EN3X 등)'을 둔 뒤 시즌 말 전력+난수로 승격 팀을 뽑음 // 명단 출처: 영어 위키백과 '2026–27 EFL League One', DFB '3. Liga 2026/27 Te"
+    ]
+   }
+  },
+  "xG": {
+   "by": {
+    "comment": 17,
+    "string": 37,
+    "asset:plGlb": 2,
+    "eng-comment": 13
+   },
+   "ex": {
+    "comment": [
+     ": StatsBomb 오픈데이터 라리가 2015-16 전 경기(380) 슈팅 유형별 평균 xG·블록률 ----   const XG={through:.226,cutback:.165,co",
+     "fMul(shooter):1.05); // 강발 1.05·약발 배수: 평균이 1이 되도록(xG 의미 유지)     if(!onT){st.ev.push({m:st.min,s,t:'mis"
+    ],
+    "string": [
+     "유율',po[0],po[1])+row('슈팅',st.sh[0],st.sh[1])+row('xG',st.xg[0],st.xg[1],x=>x.toFixed(2))} function fee",
+     "sc(e.a)} 도움`:''} <span style=\"color:var(--muted)\">xG ${e.xg}</span>`}   else if(e.t==='save')t=e.type="
+    ],
+    "asset:plGlb": [
+     "e+XNb5PsFZvL5L1ii/axvevt/b6D7jGtO+DkEmv+fQ477fvu8+xG/Nvn9SJb+xU+e+wb32PsYFxL6dziq/0XTYvjcI/D5CRbu+ncYq",
+     "Amxu/M+4Pv7p42z5epr2+ZToav1SxEL8MG98+ZyG9vgZcGL+H+xG/OMXhPmyGvb7JARa/kpcTv1Pe4z6oqr6+f0ATv+UWFr+R9+Y+w"
+    ],
+    "eng-comment": [
+     ": StatsBomb 오픈데이터 라리가 2015-16 전 경기(380) 슈팅 유형별 평균 xG·블록률 ----   const XG={through:.226,cutback:.165,co",
+     "fMul(shooter):1.05); // 강발 1.05·약발 배수: 평균이 1이 되도록(xG 의미 유지)     if(!onT){st.ev.push({m:st.min,s,t:'mis"
+    ]
+   }
+  },
+  "xA": {
+   "by": {
+    "string": 3,
+    "asset:plGlb": 1
+   },
+   "ex": {
+    "string": [
+     "/th><th>슈팅<small>유효/전체</small></th><th>xG</th><th>xA</th><th>키패스</th><th>드리블</th><th>태클</th><th>공중볼</t",
+     "SCOL=[['gl','골'],['as','도움'],['xg','xG',2],['xa','xA',2],['shs','슈팅'],['so','유효'],['kp','키패스'],['bc','"
+    ],
+    "asset:plGlb": [
+     "uaVE/WniePaPxir3Wbx8/06ZEPxYyBz7pvxy9o0YfP3/eRD+R+xA+lht4PAhqKj9gwjw//DnpPUl8wjyznSg/xkQ/PzYAsD3qeIo8B"
+    ]
+   }
+  },
+  "풋볼 매니저": {
+   "by": {
+    "html": 1,
+    "string": 4,
+    "comment": 1
+   },
+   "ex": {
+    "html": [
+     "a name=\"theme-color\" content=\"#0D1318\"> <title>월드 풋볼 매니저</title> <link rel=\"preconnect\" href=\"https://font"
+    ],
+    "string": [
+     ";if(!o||o.v!==3||o.club==null||!o.date){toast('월드 풋볼 매니저 저장 파일이 아닙니다');return}     psUnpack(o.ps||{});S=o;",
+     "xt-align:center;margin:18px 0 6px;opacity:.65\">월드 풋볼 매니저 · 버전 v${APPV}</p>`:''} {const _hv=homeView;homeVi"
+    ],
+    "comment": [
+     "============ 시작 화면: 세계 지도에서 나라 → 리그 → 구단(v73, '월드 풋볼 매니저') ================= //  · 지도: Natural Earth(world"
+    ]
+   }
+  },
+  "라리가 매니저": {
+   "by": {
+    "string": 2
+   },
+   "ex": {
+    "string": [
+     "or=\"this.remove()\">`:''}LaLiga · 2026-27</div><h1>라리가 매니저</h1>   <p>2026년 7월 1일 프리시즌부터 시작합니다. 전술은 3단계 엔진(15",
+     "o\"><div class=\"eyebrow\">LaLiga · 2026-27</div><h1>라리가 매니저</h1>   <p>2026년 7월 1일 프리시즌부터 시작합니다. 첫 시즌은 여름 이적시장"
+    ]
+   }
+  },
+  "laliga-manager": {
+   "by": {
+    "string": 2
+   },
+   "ex": {
+    "string": [
+     "===== 상태 ================= let S=null; const KEY='laliga-manager-v2'; function save(){try{localStorage.setItem(KEY",
+     "y:false}; (function(){try{const r=indexedDB.open('laliga-manager',1);r.onupgradeneeded=()=>r.result.createObjectSt"
+    ]
+   }
+  }
+ },
+ "urls": {
+  "fonts.googleapis.com": {
+   "n": 2,
+   "kinds": {
+    "html": 2
+   }
+  },
+  "tmssl.akamaized.net": {
+   "n": 2,
+   "kinds": {
+    "string": 2
+   }
+  },
+  "discourse.threejs.org": {
+   "n": 2,
+   "kinds": {
+    "asset:threeSrc": 2
+   }
+  },
+  "fonts.gstatic.com": {
+   "n": 1,
+   "kinds": {
+    "html": 1
+   }
+  },
+  "img.a.transfermarkt.technology": {
+   "n": 1,
+   "kinds": {
+    "string": 1
+   }
+  },
+  "www.w3.org": {
+   "n": 1,
+   "kinds": {
+    "asset:threeSrc": 1
+   }
+  }
+ },
+ "fetch_calls": 3,
+ "NAMES": {
+  "nations": 17,
+  "sizes": {
+   "KOR": [
+    10,
+    12
+   ],
+   "JPN": [
+    10,
+    10
+   ],
+   "USA": [
+    10,
+    10
+   ],
+   "SCO": [
+    8,
+    8
+   ],
+   "SUI": [
+    6,
+    6
+   ],
+   "AUT": [
+    6,
+    6
+   ],
+   "NED": [
+    12,
+    14
+   ],
+   "TUR": [
+    10,
+    10
+   ],
+   "DEN": [
+    8,
+    8
+   ],
+   "ESP": [
+    32,
+    44
+   ],
+   "ENG": [
+    24,
+    28
+   ],
+   "ITA": [
+    20,
+    24
+   ],
+   "GER": [
+    20,
+    24
+   ],
+   "FRA": [
+    22,
+    24
+   ],
+   "BRA": [
+    14,
+    14
+   ],
+   "ARG": [
+    12,
+    12
+   ],
+   "POR": [
+    10,
+    10
+   ]
+  },
+  "combos": 4796,
+  "collisions": {
+   "KOR": 2,
+   "JPN": 6,
+   "USA": 2,
+   "SCO": 5,
+   "NED": 3,
+   "TUR": 2,
+   "DEN": 5,
+   "ESP": 100,
+   "ENG": 28,
+   "ITA": 11,
+   "GER": 5,
+   "FRA": 1,
+   "BRA": 26,
+   "ARG": 17,
+   "POR": 17
+  },
+  "collision_examples": [
+   [
+    "KOR",
+    "Min-jun Kim"
+   ],
+   [
+    "KOR",
+    "Min-jun Kang"
+   ],
+   [
+    "JPN",
+    "Sota Nakamura"
+   ],
+   [
+    "JPN",
+    "Kaito Suzuki"
+   ],
+   [
+    "JPN",
+    "Ren Kato"
+   ],
+   [
+    "JPN",
+    "Takumi Nakamura"
+   ],
+   [
+    "JPN",
+    "Hayato Tanaka"
+   ],
+   [
+    "JPN",
+    "Kota Watanabe"
+   ]
+  ]
+ },
+ "assets": {
+  "threeSrc": {
+   "type": "three",
+   "chars": 701628
+  },
+  "plGlb": {
+   "type": "glb",
+   "chars": 1391080
+  },
+  "plTexD": {
+   "type": "img",
+   "chars": 164471
+  },
+  "plTexN": {
+   "type": "img",
+   "chars": 129615
+  },
+  "plTexH": {
+   "type": "img",
+   "chars": 340198
+  },
+  "envDay": {
+   "type": "img",
+   "chars": 30979
+  },
+  "grassD": {
+   "type": "img",
+   "chars": 166459
+  },
+  "grassN": {
+   "type": "img",
+   "chars": 109423
+  }
+ },
+ "fonts": [
+  "Barlow+Condensed",
+  "IBM+Plex+Sans+KR"
+ ],
+ "title": [
+  "월드 풋볼 매니저",
+  "${{g:'골',s:'선방',m:'빗나감',b:'막힘'}[x[3]]} · xG ${x[2]!=null?x[2].toFixed(2):'-'}",
+  "${t[0]}",
+  "${t[0]}",
+  "돌파 성공",
+  "${lab[k]} ${n[k]}회 · 성공 ${o[k]}"
+ ],
+ "three_license": true,
+ "WMAP": {
+  "keys": [
+   "vb",
+   "bg",
+   "c",
+   "ctr",
+   "ids"
+  ],
+  "chars": 168649
+ }
+}

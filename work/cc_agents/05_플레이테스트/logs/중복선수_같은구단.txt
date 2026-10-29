@@ -1,0 +1,33 @@
+Emiliano Martínez @ Chelsea :: 111873 dob1992-09-02 ovr88 est0 | 707447 dob1999-08-17 ovr74 est1
+El Hadji Malick Diouf @ Brentford :: 1111589 dob2004-12-28 ovr78 est0 | 8274915 dob2004-12-29 ovr81 est0
+Santiago Rodríguez @ Columbus Crew :: 465819 dob2000-01-08 ovr73 est0 | 439437 dob1997-08-23 ovr68 est0
+Matías Abaldo @ Club Atlético Independiente de Avellaneda :: 928647 dob2004-04-03 ovr71 est1 | 8272939 dob2004-04-02 ovr73 est0
+Parfait Guiagon @ Al Taawoun :: 624913 dob2001-02-22 ovr75 est1 | 8277975 dob2001-02-20 ovr76 est0
+Andrés Cubas @ Vancouver Whitecaps FC :: 323872 dob1996-05-22 ovr74 est1 | 8222429 dob1996-05-11 ovr77 est0
+Isa Sakamoto @ KVC Westerlo :: 814491 dob2003-08-26 ovr75 est1 | 8263496 dob2003-08-27 ovr69 est0
+Tobias Lauritsen @ Sampdoria :: 272206 dob1997-08-30 ovr75 est0 | 805055 dob2004-06-18 ovr65 est1
+Andreas Jungdal @ KVC Westerlo :: 592924 dob2002-02-22 ovr76 est1 | 8273047 dob2002-02-02 ovr62 est0
+Pedro Henrique @ Al Ettifaq :: 329720 dob1995-10-02 ovr73 est1 | 531916 dob1996-11-08 ovr69 est1
+Aaron Bibout @ KRC Genk :: 1122196 dob2004-09-09 ovr65 est1 | 8278479 dob2004-09-03 ovr67 est0
+Ibrahim Karamoko @ Standard Liège :: 538072 dob2001-07-23 ovr71 est1 | 8248694 dob2001-06-23 ovr64 est0
+André Silva @ FC Porto :: 565232 dob1997-06-03 ovr71 est1 | 8228941 dob1995-11-06 ovr80 est0
+Ignacio Perruzzi @ Club Atlético San Lorenzo de Almagro :: 1296409 dob2005-03-22 ovr68 est1 | 8078081 dob2005-04-05 ovr69 est0
+Ignacio Vázquez @ Club Atlético Platense :: 552635 dob1997-05-15 ovr73 est1 | 8264365 dob1997-06-15 ovr76 est0
+Nuno Santos @ Sporting CP :: 367468 dob1999-03-02 ovr69 est0 | 8227890 dob1995-02-13 ovr77 est0
+Facundo Mura @ Club Internacional de Fútbol Miami :: 642759 dob1999-03-23 ovr70 est1 | 8247156 dob1999-03-24 ovr72 est0
+Or Blorian @ Sporting Kansas City :: 468540 dob2000-03-07 ovr68 est1 | 8085978 dob2000-05-07 ovr50 est0
+Zé Carlos @ Gil Vicente FC :: 617679 dob1998-07-31 ovr73 est1 | 8271576 dob2001-10-30 ovr67 est0
+Findlay Curtis @ Rangers FC :: 1082993 dob2006-06-09 ovr66 est1 | 8076784 dob2006-10-01 ovr69 est0
+Juan Gutiérrez @ Córdoba CF :: 581321 dob2002-02-04 ovr71 est0 | 8277519 dob2000-01-28 ovr71 est0
+Snyder Brunell @ Seattle Sounders FC :: 999382 dob2007-03-27 ovr66 est1 | 8080610 dob2007-03-23 ovr64 est0
+Josué Reinatti @ Club Atlético Newell’s Old Boys :: 1229028 dob2003-06-02 ovr69 est1 | 8071457 dob2003-07-03 ovr59 est0
+Emmanuel Boateng @ San Diego Football Club :: 332612 dob1996-05-23 ovr68 est1 | 8217606 dob1994-01-17 ovr56 est0
+Giuliano Cerato @ Instituto Atlético Central Córdoba :: 971423 dob1998-06-10 ovr70 est1 | 8251339 dob1998-06-20 ovr72 est0
+Diego Barrera @ Club Atlético Central Córdoba :: 1103406 dob2004-06-28 ovr64 est1 | 8273976 dob2004-06-22 ovr60 est0
+Ignacio Arce @ Asociación de Fomento Deportivo Riestra Barrio Colón :: 131206 dob1992-02-08 ovr75 est1 | 8243759 dob1992-04-08 ovr77 est0
+Ross Graham @ Dundee United FC :: 396563 dob2001-02-20 ovr66 est1 | 8259147 dob2001-02-23 ovr64 est0
+Alejandro Martínez @ Club Atlético Huracán :: 729356 dob1997-04-16 ovr67 est1 | 8263365 dob1997-07-12 ovr71 est0
+Kento Hashimoto @ Tokyo Football Club :: 183436 dob1993-08-16 ovr68 est1 | 785208 dob1999-12-08 ovr65 est1
+Tomás Fernández @ Club Atlético Aldosivi :: 613364 dob1998-02-11 ovr65 est1 | 8253907 dob1998-08-08 ovr66 est0
+Mohammed Al Dawsari @ Neom :: 8078943 dob2001-04-01 ovr50 est0 | 8275499 dob2003-03-31 ovr50 est0
+[32ms]

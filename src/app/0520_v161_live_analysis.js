@@ -1,0 +1,14 @@
+// ================= v161 경기 중 선수 실시간 분석: 중계 아래 선수 기록표 이름을 누르면 리포트와 같은 히트맵·패스·슈팅·수비·돌파 화면(2초마다 갱신) =================
+{const _ad=anaData;anaData=function(id,src){if(src==='live'){try{if(typeof M==='undefined'||!M||!M.m||!M.m.st||!M.m.st.ana)return null;const A=M.m.st.ana;const H=A.H[id];if(!H)return null;
+  return {H,P:A.P[id]||[],S:A.S[id]||[],D:A.D[id]||[],K:A.K[id]||[],live:1,ttl:`실시간 · ${M.m.min||0}' · ${CLUBS[M.fx.h].short} vs ${CLUBS[M.fx.a].short}`}}catch(e){return null}}return _ad.apply(this,arguments)}}
+{const _as=anaSheet;anaSheet=function(id,src,tab){if(src==='live'){const sa=S.anaM,sc=S.anaAcc;S.anaM=[];S.anaAcc={};try{UI.anaBack=null;_as.call(this,id,src,tab);UI.anaLive={id};const sh=document.querySelector('#scrim .sheet');if(sh&&!sh.querySelector('.livetag')){const t=document.createElement('div');t.className='note livetag';t.style.cssText='margin:6px 0 0';t.textContent='경기 진행에 따라 2초마다 갱신됩니다. 중계 화면보다 몇 초 앞선 기록일 수 있습니다.';sh.appendChild(t)}}finally{S.anaM=sa;S.anaAcc=sc}return}
+  UI.anaLive=null;return _as.apply(this,arguments)}}
+setInterval(()=>{try{const L=UI.anaLive;if(!L)return;const sc=document.getElementById('scrim');if(!sc||typeof M==='undefined'||!M||!M.m){UI.anaLive=null;return}const sh=sc.querySelector('.sheet');const y=sh?sh.scrollTop:0;anaSheet(L.id,'live',UI.anaT);const sh2=document.querySelector('#scrim .sheet');if(sh2)sh2.scrollTop=y}catch(e){}},2000);
+/* 기록표가 1초 안팎마다 다시 그려져 click이 끊길 수 있어 누른 순간 선수 id를 기억하고, 떼는 순간 열기. 8px 넘게 움직였거나(스크롤) 0.7초 넘게 눌렀으면 열지 않음 */
+{let LP=null;document.addEventListener('pointerdown',e=>{const b=e.target.closest&&e.target.closest('[data-lana]');LP=b?{id:+b.dataset.lana,x:e.clientX,y:e.clientY,t:performance.now(),pid:e.pointerId}:null},true);
+ document.addEventListener('pointermove',e=>{if(LP&&e.pointerId===LP.pid&&Math.hypot(e.clientX-LP.x,e.clientY-LP.y)>8)LP=null},true);
+ document.addEventListener('pointercancel',()=>{LP=null},true);
+ document.addEventListener('pointerup',e=>{const L=LP;LP=null;if(!L||e.pointerId!==L.pid||Math.hypot(e.clientX-L.x,e.clientY-L.y)>8||performance.now()-L.t>700)return;if(!anaData(L.id,'live')){toast('아직 기록이 없습니다');return}e.preventDefault();anaSheet(L.id,'live')},true)}
+{const _mp=mpst;mpst=function(){const r=_mp.apply(this,arguments);try{const box=document.getElementById('mpst');if(!box||box.hidden||!M||!M.m)return r;const v=UI.mpst??'0';const side=v==='0'?M.me:1-M.me,st=M.m.st,T=M.m.T[side];
+  const outs=(st.subs[side]||[]).map(x=>x.out).filter(Boolean);const seen=new Set(),L=T.xi.concat(outs).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id));let i=0;
+  box.querySelectorAll('tbody td.n').forEach(td=>{const p=L[i++];if(p){td.dataset.lana=p.id;td.style.cursor='pointer';td.style.textDecoration='underline';td.style.textDecorationColor='var(--faint)';td.style.textUnderlineOffset='3px'}})}catch(e){}return r}}

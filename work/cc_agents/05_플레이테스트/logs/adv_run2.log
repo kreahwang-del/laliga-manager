@@ -1,0 +1,38 @@
+1 adv ok 1022ms -> 2027-02-02
+2 adv ok 1008ms -> 2027-02-07
+3 BUSY(다른 리그 계산) 3s @ 2027-02-08
+4 adv ok 1036ms -> 2027-02-14
+5 BUSY(다른 리그 계산) 9s @ 2027-02-22
+6 SHEET: 닫기 속보 OSA Alessio Lisci 감독 경질 OSA Osasuna · 공석 요구 평판 13 — 지원 가능
+7 adv ok 1041ms -> 2027-02-28
+8 BUSY(다른 리그 계산) 6s @ 2027-03-01
+9 adv ok 1011ms -> 2027-03-07
+10 BUSY(다른 리그 계산) 20s @ 2027-04-01
+11 adv ok 1031ms -> 2027-04-04
+12 BUSY(다른 리그 계산) 21s @ 2027-04-26
+13 SHEET: 닫기 속보 ATH Ernesto Valverde 감독 경질 ATH Athletic Club · 공석 요구 평판 37 MAL MAL Juan Funes 감독 경질 Málaga · 공석 요구 평판 17 — 지원 가능
+14 adv ok 1008ms -> 2027-05-01
+15 adv ok 1029ms -> 2027-05-02
+16 BUSY(다른 리그 계산) 3s @ 2027-05-03
+17 SHEET: 닫기 속보 OSA Alessio Lisci 감독 경질 OSA Osasuna · 공석 요구 평판 13 — 지원 가능
+18 adv ok 1041ms -> 2027-05-07
+19 adv ok 1010ms -> 2027-05-09
+20 BUSY(다른 리그 계산) 16s @ 2027-06-01
+21 adv ok 1006ms -> 2027-06-07
+22 adv ok 1028ms -> 2027-06-08
+23 adv ok 1017ms -> 2027-06-14
+24 adv ok 1010ms -> 2027-07-01
+25 adv ERR page.click: Timeout 4000ms exceeded. 4248ms -> 2027-07-01
+[1ms]
+DIV#scrim.scrim:닫기 속보 Real Madrid 라리가 우승 RMA 승점 103 RSO RSO Pelleg
+26 SHEET: 닫기 속보 Real Madrid 라리가 우승 RMA 승점 103 RSO RSO Pellegrino Matarazzo 감독 경질 Real Sociedad · 공석 요구 평판 45 BET BET Manuel Pellegrini 감독 경질 Real Betis · 공석 요구 평판 42 ATH ATH Xabi Alonso 감독 경질 Athletic Club · 공석 요구 평판 37 CEL CEL Claudio Giráldez 감독 경질 Celta Vigo · 공석 요구 평판 35
+27 adv ok 1029ms -> 2027-07-26
+28 adv ERR page.click: Timeout 4000ms exceeded. 4196ms -> 2027-07-26
+[4ms]
+DIV#scrim.scrim:닫기 속보 Fernandez-Pardo, €61.0M에 CHE 이적 F Newcastle 
+29 SHEET: 닫기 속보 Fernandez-Pardo, €61.0M에 CHE 이적 F Newcastle → Chelsea P Pedro, €84.0M에 MCI 이적 Chelsea → Manchester City R Risser, €112M에 ARS 이적 Lens → Arsenal M 라이벌 ATM, McTominay 영입 €25.5M · 능력치 87 A 라이벌 BAR, Anton 영입 €10.4M · 능력치 87
+30 adv ok 1023ms -> 2027-08-01
+31 adv ERR page.click: Timeout 4000ms exceeded. 4210ms -> 2027-08-01
+[3ms]
+DIV#scrim.scrim:닫기 속보 Banzuzi, €60.1M에 CHE 이적 B RB Leipzig → Chels
+32 SHEET: 닫기 속보 Banzuzi, €60.1M에 CHE 이적 B RB Leipzig → Chelsea K Khusanov, €95.2M에 RMA 이적 Manchester City → Real Madrid H Hall, €78.5M에 BVB 이적 Newcastle → Dortmund

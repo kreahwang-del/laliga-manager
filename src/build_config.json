@@ -1,0 +1,10 @@
+{
+ "dev": {
+  "APPV": 245,
+  "LGMKT_OFF": true
+ },
+ "deploy": {
+  "APPV": null,
+  "LGMKT_OFF": false
+ }
+}
