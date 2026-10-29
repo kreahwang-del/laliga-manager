@@ -77,6 +77,7 @@ function feed(e){const fd=$('#mfd');if(!fd)return;const nm=s=>CLUBS[s===0?M.fx.h
 function checkMoments(min,st,T,api){
   const me=M.me,o=1-me,d=st.sc[me]-st.sc[o];
   if(M.skipping)return;
+  /* v255 막판 승부수: 80~86분에 지고 있으면 한 번 */if(min>=80&&min<=86&&d<0&&!M.prompts.gamble){M.prompts.gamble=true;M.pending='gamble';return}
   if(min>=60&&min<=75&&d<0&&!M.prompts.behind){M.prompts.behind=true;M.pending='behind';return}
   if(min>=70&&d>0&&!M.prompts.lead&&Math.random()<.15){M.prompts.lead=true;M.pending='lead';return}
   // 상대 에이스가 매치업을 지배
@@ -95,6 +96,7 @@ function momentSheet(kind,data){
     <button class="btn" data-mo="resume">후반 시작</button>`}
   else if(k==='behind'){h=`<div class="note" style="margin:0">${M.m.min}' · ${d}점 뒤지고 있습니다</div><h3>어떻게 할까요?</h3>
     ${M.m.T[M.me].ment==='공격적'?'<p class="note">이미 공격 전환(공격적 성향) 적용 중입니다.</p>':opt('push','공격 전환','공격적 성향 · 라인 +1 · 템포 +1 → 득점 기회 ↑, 역습 허용 ↑')}${opt('sub','공격수 투입','교체 화면 열기')}${opt('resume','현 상태 유지','')}`}
+  else if(k==='gamble'){h=gambleSheetHTML(d,opt)}
   else if(k==='lead'){h=`<div class="note" style="margin:0">${M.m.min}' · ${d}점 앞서고 있습니다</div><h3>지킬까요, 더 갈까요?</h3>
     ${M.m.T[M.me].ment==='수비적'?'<p class="note">이미 지키기(수비적 성향) 적용 중입니다.</p>':opt('hold','지키기','수비적 성향 · 라인 −1 → 실점 위험 ↓, 상대 점유 ↑')}${opt('resume','그대로 진행','')}`}
   else if(k==='red'){h=`<div class="note" style="margin:0">${M.m.min}' · 우리 선수 퇴장</div><h3>대형을 조정할까요?</h3>
@@ -152,6 +154,7 @@ function handleMoment(id){const api=M.m.api,me=M.me,T=M.m.T[me],st=M.m.st;
     if(id==='t_angry'){dm=d<0?(pro>=11?.7:-.4):-.3;msg=d<0&&pro>=11?'선수들이 이를 악뭅니다':'질책에 분위기가 가라앉았습니다'}
     st.mom+=me===0?dm:-dm;M.talkDone=true;toast(msg);momentSheet('half');return}
   if(id==='push'){api.shout(me,'push');const ti=[...T.ti];ti[0]=Math.min(5,ti[0]+1);ti[3]=Math.min(5,ti[3]+1);api.setTactic(me,{ti});feed(st.ev[st.ev.length-1]);resume();return}
+  if(id.startsWith('g_')){gamblePick(id);resume();return}
   if(id==='hold'){api.shout(me,'hold');const ti=[...T.ti];ti[0]=Math.max(1,ti[0]-1);api.setTactic(me,{ti});feed(st.ev[st.ev.length-1]);resume();return}
   if(id==='compact'){api.setTactic(me,{form:{...T.form,def:'5-4-1'}});api.shout(me,'hold');feed(st.ev[st.ev.length-1]);resume();return}
   if(id==='sub'){subsSheet();return}
