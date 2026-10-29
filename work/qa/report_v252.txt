@@ -1,0 +1,76 @@
+== A determinism
+ai seeds 100 identical 100 diff []
+off seeds 100 identical 100 diff []
+== B advantage (paired vs off)
+best GD n=750 mean=-0.028 sd=2.004 CI95=[-0.171,+0.115] | xGD n=750 mean=+0.013 sd=0.887 CI95=[-0.050,+0.077] | GF +0.033 GA +0.061 pts +0.023 | dec/match 2.31 identical-to-off 0
+  best@150 n=150 mean=-0.020 sd=1.937 CI95=[-0.330,+0.290] xGD n=150 mean=-0.027 sd=0.923 CI95=[-0.175,+0.121]
+  bootstrap GD CI -0.167 0.115
+  off baseline GD mean 0.583 sd 1.920; off goals/match 2.812
+  on goals/match 2.907
+  best choices {('wide', 'switch'): 1384, ('wide', 'wide'): 55, ('fk', 'cross'): 120, ('wide', 'inside'): 61, ('fk', 'short'): 39, ('fk', 'shot'): 73}
+auto GD n=150 mean=-0.127 sd=1.950 CI95=[-0.439,+0.185] | xGD n=150 mean=-0.078 sd=0.941 CI95=[-0.229,+0.073] | GF -0.027 GA +0.100 pts +0.013 | dec/match 2.31 identical-to-off 0
+sw GD n=150 mean=+0.033 sd=2.005 CI95=[-0.287,+0.354] | xGD n=150 mean=+0.002 sd=0.918 CI95=[-0.145,+0.149] | GF +0.107 GA +0.073 pts +0.140 | dec/match 2.26 identical-to-off 0
+wd GD n=150 mean=+0.013 sd=2.219 CI95=[-0.342,+0.369] | xGD n=150 mean=+0.017 sd=0.947 CI95=[-0.134,+0.169] | GF +0.000 GA -0.013 pts -0.087 | dec/match 2.31 identical-to-off 0
+in GD n=150 mean=-0.100 sd=2.191 CI95=[-0.451,+0.251] | xGD n=150 mean=+0.033 sd=0.895 CI95=[-0.110,+0.177] | GF +0.053 GA +0.153 pts -0.040 | dec/match 2.28 identical-to-off 0
+rnd GD n=150 mean=-0.040 sd=2.176 CI95=[-0.388,+0.308] | xGD n=150 mean=-0.068 sd=0.979 CI95=[-0.225,+0.088] | GF -0.040 GA +0.000 pts -0.053 | dec/match 2.27 identical-to-off 0
+== C follow rate
+wide decs 2700 follow mean 0.726 fp mean 0.720 min 0.600 max 0.880
+   best n 1500 fol 0.729 fp 0.731
+   sw n 300 fol 0.770 fp 0.734
+   wd n 300 fol 0.710 fp 0.711
+   in n 300 fol 0.683 fp 0.675
+   rnd n 300 fol 0.730 fp 0.706
+  ch switch n 1786 fol 0.742 fp 0.733 blk 0.000
+  ch wide n 451 fol 0.718 fp 0.712 blk 0.246
+  ch inside n 463 fol 0.674 fp 0.679 blk 0.199
+non-follow 739 why empty 286 [('', 286), ('pro', 245), ('tend', 80), ('pro,tend', 62), ('tend,blk', 25), ('blk', 21), ('pro,blk', 11), ('pro,tend,blk', 9)]
+follow why dist [('', 1002), ('pro', 527), ('tend', 179), ('pro,tend', 116), ('tend,blk', 46)]
+  fp[0.60,0.65) n=368 fol=0.655 fpmean=0.618
+  fp[0.65,0.70) n=568 fol=0.665 fpmean=0.678
+  fp[0.70,0.75) n=914 fol=0.722 fpmean=0.723
+  fp[0.75,0.80) n=606 fol=0.797 fpmean=0.772
+  fp[0.80,0.89) n=244 fol=0.816 fpmean=0.831
+formula recompute: n 1365 match 1360 mismatch ex [(0.822, 0.705, '', 9, 2), (0.822, 0.705, '', 9, 2), (0.819, 0.719, '', 9, 2), (0.742, 0.625, 'tend', 9, 2), (0.822, 0.705, '', 9, 2)]
+fp by pro<10/10-14/>14 {'hi': (29, 0.844), 'lo': (489, 0.689), 'mid': (847, 0.737)}
+fp by blk {False: (1258, 0.731), True: (107, 0.611)}
+fp by cond {2: (1365, 0.722)}
+FK decs 400 fol field Counter({None: 400})
+== D good consistency
+wide dec->act pairs 2697 inconsistent 4 {(1, 0, 0, 0): 489, (1, 1, 1, 1): 1402, (1, 0, 1, 1): 2, (0, 0, 0, 0): 246, (0, 1, 0, 1): 556, (0, 0, 0, 1): 2}
+harness passed good vs dec.good mismatch 0
+auto dec good/fol Counter({(0, None, 'auto'): 346})
+== E labels (uncapped forced runs + capped forced runs)
+ src unc wide
+   switch  n=2154 loss=0.809 oppShot=0.045 oppGoal=0.006 ownShot=0.191 ownXG=0.0159(sd 0.050) ownGoal=0.034 fol=0.719
+   wide    n=2164 loss=0.814 oppShot=0.038 oppGoal=0.003 ownShot=0.186 ownXG=0.0176(sd 0.052) ownGoal=0.024 fol=0.700
+   inside  n=2200 loss=0.810 oppShot=0.047 oppGoal=0.005 ownShot=0.190 ownXG=0.0174(sd 0.058) ownGoal=0.025 fol=0.661
+   risk switch(high) - inside(low): loss diff -0.0013 z=-0.11 | oppShot diff -0.0027 z=-0.43
+   risk wide(mid) - inside(low): loss diff +0.0038 z=0.32 | oppShot diff -0.0089 z=-1.45
+   opp wide(high) - switch(mid): xG diff +0.0017 z=1.09 | ownShot diff -0.0050 z=-0.42
+   opp wide(high) - inside(mid): xG diff +0.0002 z=0.09 | ownShot diff -0.0038 z=-0.32
+ src unc fk
+   shot    n=  43 loss=0.000 oppShot=0.023 oppGoal=0.023 ownShot=1.000 ownXG=0.0565(sd 0.013) ownGoal=0.093 fol=-
+   cross   n=  46 loss=0.478 oppShot=0.022 oppGoal=0.000 ownShot=0.522 ownXG=0.0300(sd 0.057) ownGoal=0.022 fol=-
+   short   n=  42 loss=0.548 oppShot=0.024 oppGoal=0.000 ownShot=0.452 ownXG=0.0383(sd 0.113) ownGoal=0.024 fol=-
+   risk shot(low) - cross(mid): loss diff -0.4783 z=-5.23 | oppShot diff +0.0015 z=0.05
+   risk shot(low) - short(mid): loss diff -0.5476 z=-5.68 | oppShot diff -0.0006 z=-0.02
+   opp shot(high) - short(low): xG diff +0.0182 z=1.04 | ownGoal diff +0.0692 z=1.36
+   opp cross(mid) - short(low): xG diff -0.0083 z=-0.43
+   risk short(mid) vs cross(mid) oppShot diff +0.0021 z=0.07
+ src cand wide
+   switch  n= 300 loss=0.800 oppShot=0.047 oppGoal=0.003 ownShot=0.200 ownXG=0.0230(sd 0.070) ownGoal=0.033 fol=0.770
+   wide    n= 300 loss=0.807 oppShot=0.037 oppGoal=0.003 ownShot=0.193 ownXG=0.0193(sd 0.058) ownGoal=0.033 fol=0.710
+   inside  n= 300 loss=0.800 oppShot=0.033 oppGoal=0.000 ownShot=0.200 ownXG=0.0175(sd 0.053) ownGoal=0.023 fol=0.683
+   risk switch(high) - inside(low): loss diff +0.0000 z=0.00 | oppShot diff +0.0133 z=0.83
+   risk wide(mid) - inside(low): loss diff +0.0067 z=0.21 | oppShot diff +0.0033 z=0.22
+   opp wide(high) - switch(mid): xG diff -0.0036 z=-0.69 | ownShot diff -0.0067 z=-0.21
+   opp wide(high) - inside(mid): xG diff +0.0019 z=0.41 | ownShot diff -0.0067 z=-0.21
+ src cand fk
+   shot    n=  39 loss=0.000 oppShot=0.077 oppGoal=0.051 ownShot=1.000 ownXG=0.0549(sd 0.012) ownGoal=0.103 fol=-
+   cross   n=  47 loss=0.660 oppShot=0.064 oppGoal=0.000 ownShot=0.340 ownXG=0.0200(sd 0.066) ownGoal=0.000 fol=-
+   short   n=  41 loss=0.537 oppShot=0.000 oppGoal=0.000 ownShot=0.463 ownXG=0.0215(sd 0.035) ownGoal=0.049 fol=-
+   risk shot(low) - cross(mid): loss diff -0.6596 z=-6.34 | oppShot diff +0.0131 z=0.24
+   risk shot(low) - short(mid): loss diff -0.5366 z=-5.37 | oppShot diff +0.0769 z=1.81
+   opp shot(high) - short(low): xG diff +0.0334 z=5.76 | ownGoal diff +0.0538 z=0.91
+   opp cross(mid) - short(low): xG diff -0.0015 z=-0.13
+   risk short(mid) vs cross(mid) oppShot diff -0.0638 z=-1.65
