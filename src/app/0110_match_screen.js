@@ -77,7 +77,7 @@ function feed(e){const fd=$('#mfd');if(!fd)return;const nm=s=>CLUBS[s===0?M.fx.h
 function checkMoments(min,st,T,api){
   const me=M.me,o=1-me,d=st.sc[me]-st.sc[o];
   if(M.skipping)return;
-  /* v255 막판 승부수: 80~86분에 지고 있으면 한 번 */if(min>=80&&min<=86&&d<0&&!M.prompts.gamble){M.prompts.gamble=true;M.pending='gamble';return}
+  /* v255 막판 승부수: 80~86분에 지고 있으면 한 번 */if(typeof GMB_ON!=='undefined'&&GMB_ON&&min>=80&&min<=86&&d<0&&!M.prompts.gamble){M.prompts.gamble=true;M.pending='gamble';return}
   if(min>=60&&min<=75&&d<0&&!M.prompts.behind){M.prompts.behind=true;M.pending='behind';return}
   if(min>=70&&d>0&&!M.prompts.lead&&Math.random()<.15){M.prompts.lead=true;M.pending='lead';return}
   // 상대 에이스가 매치업을 지배
