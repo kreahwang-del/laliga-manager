@@ -1,0 +1,73 @@
+== A determinism (seeds 940001-940050, base253 vs cand254)
+  ai seeds 50 identical 50
+  off seeds 50 identical 50
+  AI-side: aiDec 0 dec s!=0 0 decTm on AI side (expected only def pass-L defPS): {(1, 'bpass'): 623}
+== B caps & time windows (capped, real UI decWant)
+  matches 1800 decisions 5398 (3.00/match) kinds {'cross': 1910, 'box': 880, 'def': 2575, 'fk': 33} violations 0
+  per-match count dist {2: 2, 3: 1798}
+  decision #1: n=1800 min=10 median=11 mean=11.3
+  decision #2: n=1800 min=35 median=36 mean=36.5
+  decision #3: n=1798 min=60 median=62 mean=62.9
+  minute bins(15) {'0-14': 0.312, '15-29': 0.022, '30-44': 0.33, '45-59': 0.004, '60-74': 0.322, '75-89': 0.011} | 1st half share 0.663
+  def per match (capped): mean 1.43 dist {0: 195, 2: 970, 1: 635}
+  def per match (best policy): 1.45
+== C def scenes (uncapped def-only)
+  rnd    n= 2644 intents {'drib': '0.346±0.018', 'pass': '0.302±0.018', 'shot': '0.351±0.018'} | res {'W': 657, 'T': 1348, 'L': 639} | oppXG/scene 0.0308±0.0026 oppShot 0.452±0.019 | fol 0.730 | /match 17.6
+  auto   n= 1104 intents {'drib': '0.312±0.027', 'pass': '0.342±0.028', 'shot': '0.346±0.028'} | res {'T': 1104} | oppXG/scene 0.0277±0.0041 oppShot 0.446±0.029 | fol - | /match 18.4
+  follow n= 1079 intents {'drib': '0.317±0.028', 'pass': '0.379±0.029', 'shot': '0.304±0.027'} | res {'L': 313, 'T': 511, 'W': 255} | oppXG/scene 0.0277±0.0038 oppShot 0.449±0.030 | fol 0.742 | /match 18.0
+  tackle n= 1060 intents {'drib': '0.358±0.029', 'pass': '0.313±0.028', 'shot': '0.329±0.028'} | res {'T': 538, 'L': 264, 'W': 258} | oppXG/scene 0.0309±0.0041 oppShot 0.443±0.030 | fol 0.731 | /match 17.7
+  block  n= 1063 intents {'drib': '0.304±0.028', 'pass': '0.284±0.027', 'shot': '0.412±0.030'} | res {'W': 224, 'T': 515, 'L': 324} | oppXG/scene 0.0341±0.0045 oppShot 0.501±0.030 | fol 0.740 | /match 17.7
+  orc    n= 1129 intents {'drib': '0.326±0.027', 'pass': '0.341±0.028', 'shot': '0.333±0.027'} | res {'W': 850, 'T': 279} | oppXG/scene 0.0207±0.0038 oppShot 0.327±0.027 | fol 0.753 | /match 18.8
+  adaptation check (beat-intent share vs auto): follow→pass, tackle→drib, block→shot
+    follow pass share: auto 0.342 | policy 0.379 (diff +0.0367 (z=+1.78, CI ±0.0403)) | first2/match 0.317 later 0.387
+    tackle drib share: auto 0.312 | policy 0.358 (diff +0.0460 (z=+2.27, CI ±0.0398)) | first2/match 0.342 later 0.360
+    block  shot share: auto 0.346 | policy 0.412 (diff +0.0660 (z=+3.17, CI ±0.0408)) | first2/match 0.350 later 0.420
+  oppXG by intent x res (all uncapped def scenes), delta vs T:
+    drib  T 0.0226±0.0040(n1453) | W 0.0116±0.0052(n735) dW -0.0110 (z=-3.28, CI ±0.0066) | L 0.0381±0.0081(n484) dL +0.0155 (z=+3.37, CI ±0.0090) | |dW|-|dL| -0.0046
+          oppShot T 0.220 W 0.105 L 0.355
+    pass  T 0.0111±0.0023(n1353) | W 0.0022±0.0013(n738) dW -0.0089 (z=-6.68, CI ±0.0026) | L 0.0167±0.0037(n514) dL +0.0056 (z=+2.51, CI ±0.0044) | |dW|-|dL| +0.0033
+          oppShot T 0.188 W 0.031 L 0.282
+    shot  T 0.0556±0.0036(n1489) | W 0.0437±0.0052(n771) dW -0.0119 (z=-3.65, CI ±0.0064) | L 0.0602±0.0057(n542) dL +0.0046 (z=+1.33, CI ±0.0067) | |dW|-|dL| +0.0073
+          oppShot T 0.972 W 0.743 L 0.980
+  same, rnd policy only:
+    drib  dW -0.0090 (z=-1.49, CI ±0.0118) dL +0.0158 (z=+2.11, CI ±0.0147) (nT 471 nW 225 nL 220)
+    pass  dW -0.0085 (z=-4.77, CI ±0.0035) dL +0.0047 (z=+1.55, CI ±0.0060) (nT 385 nW 213 nL 201)
+    shot  dW -0.0075 (z=-1.16, CI ±0.0127) dL +0.0010 (z=+0.19, CI ±0.0107) (nT 492 nW 219 nL 218)
+  pooled over intents: dW -0.0109 (z=-6.38, CI ±0.0033) dL +0.0083 (z=+3.94, CI ±0.0041)
+  policy vs auto oppXG per scene (uncapped; scene sets from different matches = same fixtures):
+    follow +0.0000 (z=+0.01, CI ±0.0056) → per match at 1.43 def/match: +0.0000 (CI ±0.0080)
+    tackle +0.0033 (z=+1.11, CI ±0.0058) → per match at 1.43 def/match: +0.0047 (CI ±0.0082)
+    block  +0.0064 (z=+2.07, CI ±0.0061) → per match at 1.43 def/match: +0.0091 (CI ±0.0087)
+    rnd    +0.0031 (z=+1.25, CI ±0.0048) → per match at 1.43 def/match: +0.0044 (CI ±0.0069)
+    orc    -0.0069 (z=-2.46, CI ±0.0055) → per match at 1.43 def/match: -0.0099 (CI ±0.0079)
+  model expectation per scene vs auto (follow rate 0.737, auto intent mix):
+    follow -0.0011/scene → -0.0016/match
+    tackle +0.0005/scene → +0.0008/match
+    block  -0.0011/scene → -0.0015/match
+    oracle -0.0078/scene → -0.0111/match (at 1.43 def/match)
+  def decAct delay: n 8063 of 8079, max 1150.0, >6s 129
+  def decAct res==dec res mismatch 65
+== D advantage (paired vs off, capped)
+  best GD n=500 mean=-0.010 sd=2.123 CI95=[-0.196,+0.176] | xGD n=500 mean=-0.001 sd=0.910 CI95=[-0.080,+0.079] | pts +0.030 | xGF +0.032 xGA +0.033
+       choices {('def', 'follow'): 247, ('cross', 'high'): 180, ('def', 'tackle'): 247, ('def', 'block'): 230, ('cross', 'low'): 284, ('fk', 'cross'): 5, ('box', 'bshot'): 105, ('cross', 'carry'): 60, ('box', 'bdrib'): 121, ('box', 'bpass'): 16, ('fk', 'shot'): 4}
+  hint GD n=300 mean=-0.203 sd=2.177 CI95=[-0.450,+0.043] | xGD n=300 mean=-0.030 sd=0.899 CI95=[-0.132,+0.072] | pts -0.107 | xGF +0.025 xGA +0.055
+       choices {('def', 'follow'): 305, ('cross', 'high'): 112, ('def', 'tackle'): 62, ('cross', 'low'): 181, ('fk', 'cross'): 2, ('box', 'bshot'): 65, ('cross', 'carry'): 37, ('def', 'block'): 57, ('box', 'bdrib'): 71, ('fk', 'short'): 1, ('box', 'bpass'): 5, ('fk', 'shot'): 2}
+  p0   GD n=250 mean=-0.216 sd=2.129 CI95=[-0.480,+0.048] | xGD n=250 mean=-0.031 sd=0.922 CI95=[-0.146,+0.083] | pts +0.004 | xGF -0.012 xGA +0.020
+       choices {('def', 'follow'): 360, ('cross', 'low'): 266, ('box', 'bshot'): 118, ('fk', 'shot'): 5}
+  p1   GD n=250 mean=-0.224 sd=2.134 CI95=[-0.488,+0.040] | xGD n=250 mean=-0.005 sd=0.959 CI95=[-0.124,+0.113] | pts -0.064 | xGF +0.049 xGA +0.055
+       choices {('def', 'tackle'): 346, ('cross', 'high'): 269, ('fk', 'cross'): 5, ('box', 'bpass'): 130}
+  p2   GD n=500 mean=+0.046 sd=2.086 CI95=[-0.137,+0.229] | xGD n=500 mean=+0.040 sd=0.890 CI95=[-0.038,+0.118] | pts +0.052 | xGF +0.064 xGA +0.024
+       choices {('def', 'block'): 721, ('cross', 'carry'): 521, ('box', 'bdrib'): 249, ('fk', 'short'): 9}
+== E follow (all non-FK decisions)
+  n 12339 follow 0.724 fp mean 0.732 min 0.600 max 0.880
+    def n 9550 fol 0.735 fp 0.739
+    box n 880 fol 0.683 fp 0.715
+    cross n 1909 fol 0.690 fp 0.702
+  capped only: n 5364 follow 0.707
+== F regression (capped vs off, paired)
+  best goals n=500 mean=-0.014 sd=2.199 CI95=[-0.207,+0.179] | shots n=500 mean=+0.428 sd=7.214 CI95=[-0.204,+1.060] | poss n=500 mean=+0.002 sd=0.030 CI95=[-0.001,+0.004]
+  hint goals n=300 mean=+0.037 sd=2.186 CI95=[-0.211,+0.284] | shots n=300 mean=+0.523 sd=6.890 CI95=[-0.256,+1.303] | poss n=300 mean=-0.002 sd=0.033 CI95=[-0.005,+0.002]
+  p0   goals n=250 mean=-0.088 sd=2.050 CI95=[-0.342,+0.166] | shots n=250 mean=+0.204 sd=7.238 CI95=[-0.693,+1.101] | poss n=250 mean=-0.000 sd=0.032 CI95=[-0.004,+0.004]
+  p1   goals n=250 mean=+0.088 sd=2.188 CI95=[-0.183,+0.359] | shots n=250 mean=+0.204 sd=7.247 CI95=[-0.694,+1.102] | poss n=250 mean=-0.000 sd=0.029 CI95=[-0.004,+0.003]
+  p2   goals n=500 mean=+0.026 sd=2.260 CI95=[-0.172,+0.224] | shots n=500 mean=+0.576 sd=7.192 CI95=[-0.054,+1.206] | poss n=500 mean=+0.001 sd=0.029 CI95=[-0.001,+0.004]
+  off goals/match 3.008 shots 26.42 n=500
