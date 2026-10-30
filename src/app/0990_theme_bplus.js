@@ -40,3 +40,18 @@
 .bpgoal span{font-weight:900;font-size:14px;color:#0A0B0D;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 @keyframes bpg{0%{transform:translateX(-105%)}14%{transform:translateX(0)}84%{transform:translateX(0);opacity:1}100%{transform:translateX(105%);opacity:0}}`;document.head.appendChild(st);
 }
+
+// ---- 리포트: 첫 줄(스코어 h3)을 대형 FT 스코어 띠로 보이게 하고, 그 아래에 경기 최우수 링 카드를 덧붙임(기존 줄·버튼은 그대로) ----
+{const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(!R||!R.sc)return h;const k=h.indexOf('</h3>');if(k<0)return h;
+  const top=R.rat&&R.rat[0];const res=R.sc[0]>R.sc[1]?'승리':R.sc[0]<R.sc[1]?'패배':'무승부';const rc=R.sc[0]>R.sc[1]?'var(--good)':R.sc[0]<R.sc[1]?'var(--bad)':'var(--muted)';
+  const mom=top?`<div class="bpmom2"><div class="ring" style="--p:${Math.round(Math.min(10,top.r)/10*100)}"><b class="num">${top.r.toFixed(1)}</b></div><div><small>경기 최우수${top.w?' · 상대':''}</small><b>${esc(shortName(top.n))}</b></div><span class="res" style="color:${rc}">${res}</span></div>`:'';
+  return '<i class="bprep" hidden></i>'+h.slice(0,k+5)+mom+h.slice(k+5)}catch(e){return h}}}
+{const st2=document.createElement('style');st2.textContent=`
+.sheet:has(.bprep)>h3:first-of-type{width:calc(100% + 32px);box-sizing:border-box;margin:10px -16px 0;padding:12px 16px;background:#0A0B0D;border-top:1px solid var(--line);border-bottom:3px solid var(--amber);gap:12px!important}
+.sheet:has(.bprep)>h3:first-of-type .num{font-size:46px!important;font-weight:900;letter-spacing:.02em}
+.sheet:has(.bprep)>h3:first-of-type .num::before{content:'FT';display:inline-block;vertical-align:14px;margin-right:10px;font-size:13px;padding:1px 8px;background:var(--text);color:var(--bg);clip-path:polygon(0 0,100% 0,calc(100% - 5px) 100%,5px 100%)}
+.bpmom2{display:flex;align-items:center;gap:12px;margin:10px 0 4px;padding:10px 12px;background:rgba(255,255,255,.04);border-left:3px solid var(--amber)}
+.bpmom2 .ring{width:52px;height:52px;border-radius:50%;flex:none;display:grid;place-items:center;background:conic-gradient(var(--amber) calc(var(--p)*1%),rgba(255,255,255,.08) 0)}
+.bpmom2 .ring b{width:42px;height:42px;border-radius:50%;background:#111317;display:grid;place-items:center;font-size:19px}
+.bpmom2 small{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted)}.bpmom2 div>b{font-size:16px;font-weight:900}
+.bpmom2 .res{margin-left:auto;font-weight:900;font-size:15px}`;document.head.appendChild(st2)}
