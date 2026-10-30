@@ -80,3 +80,20 @@ html #match.bp .board .clock{margin-top:2px;font-size:13px;padding:0 10px;backgr
 .fixture.bpnext .vs .mid{font-style:italic;font-weight:900;font-size:34px;color:var(--amber)}
 .fixture.bpnext .vs .team{font-weight:900}
 .banner.closed{border-left:3px solid var(--amber)}.banner .num{font-weight:900;color:var(--amber)}`;document.head.appendChild(st3)}
+
+// ---- 리포트 xG 흐름(시안 ProReport): 경기 이벤트의 슈팅 xG를 5분 단위 누적으로 리포트에 저장(R.xgf, 경기당 숫자 약 40개) → 리포트에 계단 그래프 ----
+{const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(R&&res&&res.ev){const o=1-me,B=19,a=[new Array(B).fill(0),new Array(B).fill(0)];
+  /* 슈팅 결과 이벤트(골·빗나감·선방·블록). xG가 없는 이벤트(선방·블록 일부)는 평균값으로 넣고, 마지막에 경기 기록 xG(R.xg)에 맞춰 비례 조정 → 모양은 실제 슈팅 시점, 합계는 기록과 일치 */
+  const SH=res.ev.filter(e=>['goal','miss','save','block','post'].includes(e.t)&&e.m!=null&&e.type!=='pen');const xs=SH.filter(e=>e.xg!=null).map(e=>+e.xg);const av=xs.length?xs.reduce((p,q)=>p+q,0)/xs.length:.1;
+  SH.forEach(e=>{const k=Math.min(B-1,Math.floor(e.m/5));a[e.s===me?0:1][k]+=e.xg!=null?+e.xg:av});
+  const cum=(v,tot)=>{let t=0;const c=v.map(x=>t+=x);const f=t>0?tot/t:0;return c.map(x=>+(x*f).toFixed(2))};R.xgf=[cum(a[0],R.xg[0]),cum(a[1],R.xg[1])];R.xgfG=res.ev.filter(e=>e.t==='goal'&&e.m!=null).map(e=>[e.m,e.s===me?0:1])}}catch(e){}return R}}
+function bpXgChart(R){if(!R||!R.xgf)return '';const W=320,H=110,P=6,mx=Math.max(.5,R.xgf[0][18],R.xgf[1][18]);const X=k=>P+(W-2*P)*k/18,Y=v=>H-P-(H-2*P)*v/mx;
+  const path=v=>{let d=`M${X(0)},${Y(0)}`;v.forEach((y,k)=>{d+=`H${X(k+1>18?18:k+1)}V${Y(y)}`});return d};
+  const gm=(R.xgfG||[]).map(([m,w])=>{const k=Math.min(18,Math.floor(m/5)+1);return `<circle cx="${X(k)}" cy="${Y(R.xgf[w][Math.min(18,Math.floor(m/5))])}" r="3.5" fill="${w===0?'var(--amber)':'#C9CDD3'}" stroke="#0A0B0D" stroke-width="1.5"/>`}).join('');
+  return `<div class="bpxg"><div class="h"><span>xG 흐름</span><span><i style="background:var(--amber)"></i>우리 ${R.xg[0].toFixed(2)} <i style="background:#C9CDD3"></i>상대 ${R.xg[1].toFixed(2)}</span></div><svg viewBox="0 0 ${W} ${H}" role="img" aria-label="경기 시간대별 누적 기대득점"><line x1="${X(9)}" x2="${X(9)}" y1="${P}" y2="${H-P}" stroke="rgba(255,255,255,.12)" stroke-dasharray="3 3"/><path d="${path(R.xgf[1])}" fill="none" stroke="#C9CDD3" stroke-width="2"/><path d="${path(R.xgf[0])}" fill="none" stroke="var(--amber)" stroke-width="2.5"/>${gm}</svg><div class="ax"><span>0'</span><span>45'</span><span>90'</span></div></div>`}
+{const _rhX=reportHTML;reportHTML=function(R){let h=_rhX.apply(this,arguments);try{const c=bpXgChart(R);if(!c)return h;const k=h.indexOf('<div class="bpmom2"');const e=k>=0?h.indexOf('</div></div>',k):-1;
+  /* 최우수 카드 바로 다음(없으면 첫 h3 다음)에 넣음 */if(e>=0){const at=h.indexOf('<span class="res"',k);const end=h.indexOf('</div>',at)+6;return h.slice(0,end)+c+h.slice(end)}const j=h.indexOf('</h3>');return j<0?h:h.slice(0,j+5)+c+h.slice(j+5)}catch(err){return h}}}
+{const st4=document.createElement('style');st4.textContent=`.bpxg{margin:10px 0 6px;padding:10px 12px 6px;background:rgba(255,255,255,.035);border:1px solid var(--line)}
+.bpxg .h{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin-bottom:4px}.bpxg .h>span:first-child{font-weight:900;letter-spacing:.1em;color:var(--text)}
+.bpxg .h i{display:inline-block;width:10px;height:3px;margin:0 4px 0 8px;vertical-align:3px}.bpxg svg{display:block;width:100%;height:auto}
+.bpxg .ax{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);font-family:var(--disp)}`;document.head.appendChild(st4)}
