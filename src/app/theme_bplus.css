@@ -108,3 +108,7 @@ html .mptab button{border-radius:2px}
 /* 재확인 반영: 지시 시트 '적용 중' 버튼(비활성+눌림)이 흐려 안 읽힘 → 불투명, 강조색 테두리 */
 .btn[aria-pressed="true"]:disabled{opacity:1;clip-path:none;border-radius:2px;background:var(--accent-soft);color:var(--amber);border:1px solid var(--amber)}
 .btn[aria-pressed="true"]:disabled .note{color:var(--amber)}
+/* 사용자 요청(2026-10-30): 한글은 어절 단위로 줄바꿈(단어 중간 끊김 방지), 긴 영문·숫자는 넘치면 줄바꿈 */
+body{word-break:keep-all;overflow-wrap:break-word}
+/* 한글 소제목 자간이 넓어 글자가 띄엄띄엄 보임 → 줄임 */
+h2{letter-spacing:.04em}

@@ -18,7 +18,7 @@ function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{cons
 function engAllWait(){if(!EA.q.length)return null;const Q=EA.q;EA.q=[];return Promise.all(Q)}
 function eaBusyTxt(){const left=Object.values(EA.pre).filter(o=>!o.r).length;return left?`다른 리그 경기 계산 중… (남은 ${left}경기)`:'다른 리그 경기 계산 중…'}
 // 우리 경기 시작 때 미리 계산: 오늘 뒤 ~ 다음 우리 경기 날(없으면 7일 뒤)까지
-function eaPrefetch(){try{if(!engAllOn())return;const nx=(S.fixtures||[]).filter(f=>!f.res&&(f.h===S.club||f.a===S.club)&&f.d>S.date).map(f=>f.d).sort()[0]||addD(S.date,7);const to=nx>addD(S.date,10)?addD(S.date,10):nx;
+function eaPrefetch(){try{if(!engAllOn())return;/* v257(사용자 지적: 우리 경기를 빨리 끝내고 '계속'을 누르면 대기): 미리 계산 범위를 '다음 우리 경기'에서 '다다음 우리 경기 날'(최대 17일)까지로 넓힘 → 다음 경기 전에 그 다음 라운드까지 백그라운드에서 끝냄. 가까운 날짜부터 계산 */const my=(S.fixtures||[]).filter(f=>!f.res&&(f.h===S.club||f.a===S.club)&&f.d>S.date).map(f=>f.d).sort();const nx=my[1]||my[0]||addD(S.date,7);const to=nx>addD(S.date,17)?addD(S.date,17):nx;
   const L=[];if(S.fixO)S.fixO.forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});
   eaKoList(S.date,to,false).forEach(f=>L.push(f));
   L.sort((a,b)=>a.d<b.d?-1:1).forEach(f=>{if(!EA.pre[eaKey(f)])eaStart(f)})}catch(e){console.error(e)}}
