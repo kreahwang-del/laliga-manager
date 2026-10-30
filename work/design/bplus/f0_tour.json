@@ -1,0 +1,245 @@
+{
+ "01_start": {
+  "btn": 50,
+  "txt": 1237,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "DIV.eyebrow:color",
+   "DIV.eyebrow:borderTopColor",
+   "DIV.eyebrow:borderLeftColor",
+   "path.:fill",
+   "circle.:fill",
+   "BUTTON.:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.03 rgb(26, 26, 26)/21,30,38",
+   "VIL 1.03 rgb(26, 26, 26)/21,30,38",
+   "SEV 1.03 rgb(26, 26, 26)/21,30,38",
+   "VAL 1.03 rgb(26, 26, 26)/21,30,38"
+  ]
+ },
+ "02_tab0_홈": {
+  "btn": 8,
+  "txt": 466,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:backgroundColor",
+   "BUTTON.:color",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "svg.:color",
+   "svg.:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24",
+   "RMA 1.03 rgb(26, 26, 26)/21,30,38"
+  ]
+ },
+ "02_tab1_스쿼드": {
+  "btn": 40,
+  "txt": 1391,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "SPAN.:color",
+   "SPAN.:borderTopColor",
+   "SPAN.:borderLeftColor",
+   "SPAN.ptag m:color",
+   "SPAN.ptag m:backgroundColor",
+   "SPAN.ptag m:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24"
+  ]
+ },
+ "02_tab2_전술": {
+  "btn": 101,
+  "txt": 1558,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:color",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "SPAN.ptag m:color",
+   "SPAN.ptag m:backgroundColor",
+   "SPAN.ptag m:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24",
+   "낮게 3.10 rgb(90, 108, 122)/21,30,38",
+   "높게 3.10 rgb(90, 108, 122)/21,30,38",
+   "좁게 3.10 rgb(90, 108, 122)/21,30,38",
+   "넓게 3.10 rgb(90, 108, 122)/21,30,38",
+   "좁게 3.10 rgb(90, 108, 122)/21,30,38",
+   "넓게 3.10 rgb(90, 108, 122)/21,30,38",
+   "느리게 3.10 rgb(90, 108, 122)/21,30,38"
+  ]
+ },
+ "02_tab3_이적": {
+  "btn": 60,
+  "txt": 2438,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "BUTTON.:backgroundColor",
+   "BUTTON.:color",
+   "svg.:color",
+   "svg.:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24"
+  ]
+ },
+ "02_tab4_리그": {
+  "btn": 44,
+  "txt": 594,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "TD.:backgroundColor",
+   "TD.t:backgroundColor",
+   "TD.pts:color",
+   "TD.pts:backgroundColor"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24"
+  ]
+ },
+ "02_tab5_감독": {
+  "btn": 56,
+  "txt": 1920,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.btn sm:backgroundColor",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "BUTTON.btn sm :backgroundColor",
+   "BUTTON.:backgroundColor",
+   "BUTTON.:color"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24",
+   "RMA 1.03 rgb(26, 26, 26)/21,30,38",
+   "VIL 1.03 rgb(26, 26, 26)/21,30,38",
+   "SEV 1.03 rgb(26, 26, 26)/21,30,38"
+  ]
+ },
+ "03_player": {
+  "btn": 7,
+  "txt": 515,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "SPAN.ptag m:color",
+   "SPAN.ptag m:backgroundColor",
+   "SPAN.ptag m:borderTopColor",
+   "SPAN.ptag m:borderLeftColor",
+   "B.:color",
+   "B.:borderTopColor"
+  ],
+  "low": [
+   "RMA 1.03 rgb(26, 26, 26)/21,30,38",
+   "★★ 2.79 rgb(90, 108, 122)/28,39,49"
+  ]
+ },
+ "04_renew": {
+  "btn": 12,
+  "txt": 173,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:color",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "BUTTON.btn:backgroundColor"
+  ],
+  "low": []
+ },
+ "05_talk": {
+  "btn": 6,
+  "txt": 92,
+  "docW": 360,
+  "over": [],
+  "old": [],
+  "low": []
+ },
+ "06_offer": {
+  "btn": 17,
+  "txt": 336,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.:color",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "BUTTON.btn:backgroundColor"
+  ],
+  "low": []
+ },
+ "07_ana": {
+  "btn": 56,
+  "txt": 1929,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.btn sm:backgroundColor",
+   "BUTTON.:borderTopColor",
+   "BUTTON.:borderLeftColor",
+   "BUTTON.btn sm :backgroundColor",
+   "BUTTON.:backgroundColor",
+   "BUTTON.:color"
+  ],
+  "low": [
+   "RMA 1.07 rgb(26, 26, 26)/13,19,24",
+   "RMA 1.03 rgb(26, 26, 26)/21,30,38",
+   "VIL 1.03 rgb(26, 26, 26)/21,30,38",
+   "SEV 1.03 rgb(26, 26, 26)/21,30,38"
+  ]
+ },
+ "08_sp": {
+  "btn": 28,
+  "txt": 419,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "circle.:fill"
+  ],
+  "low": []
+ },
+ "09_spdef": {
+  "btn": 16,
+  "txt": 136,
+  "docW": 360,
+  "over": [],
+  "old": [],
+  "low": []
+ },
+ "10_fin": {
+  "btn": 4,
+  "txt": 829,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.btn sm :backgroundColor"
+  ],
+  "low": []
+ },
+ "11_tset": {
+  "btn": 7,
+  "txt": 131,
+  "docW": 360,
+  "over": [],
+  "old": [
+   "BUTTON.btn sm:backgroundColor"
+  ],
+  "low": []
+ }
+}
