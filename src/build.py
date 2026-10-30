@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""월드 사커매니저 빌드: src/ → 단일 HTML (Python 표준 라이브러리만)
+"""월드 풋볼매니저 빌드: src/ → 단일 HTML (Python 표준 라이브러리만)
 
   python src/build.py                       → src/dist/cur.html   (개발값: build_config.json "dev")
   python src/build.py --deploy --appv 247   → src/dist/index.html (배포값: "deploy" + APPV)

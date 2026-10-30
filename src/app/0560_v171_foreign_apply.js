@@ -115,7 +115,7 @@ function aiFamGet(c,T){S.aiFam=S.aiFam||{};const m=S.aiFam[c]||(S.aiFam[c]={});c
   for(const x in m)m[x]=Math.min(100,m[x]+(x===k?2:.2))})}catch(e){console.error(e)}return o}}
 {const _dy=daily;daily=function(){const r=_dy.apply(this,arguments);try{if(S&&S.aiFam&&D(S.date).getUTCDay()===1)for(const c in S.aiFam){const T=S.aiTac&&S.aiTac[c];if(!T)continue;const k=aiFamKey(T),m=S.aiFam[c];if(m[k]!=null)m[k]=Math.min(100,m[k]+.4)}}catch(e){console.error(e)}return r}}
 /* v189: 화면에 앱 버전 표시(홈·시작 화면 맨 아래, 감독 탭) — 빌드 때 version.json의 v를 APPV로 넣음 */
-function verTag(){return typeof APPV!=='undefined'?`<p class="note" style="text-align:center;margin:18px 0 6px;opacity:.65">월드 풋볼 매니저 · 버전 v${APPV}</p>`:''}
+function verTag(){return typeof APPV!=='undefined'?`<p class="note" style="text-align:center;margin:18px 0 6px;opacity:.65">월드 풋볼매니저 · 버전 v${APPV}</p>`:''}
 {const _hv=homeView;homeView=function(){return _hv.apply(this,arguments)+verTag()}}
 {const _sv=startView;startView=function(){const h=_sv.apply(this,arguments);const k=h.lastIndexOf('</main>');return k>=0?h.slice(0,k)+verTag()+h.slice(k):h+verTag()}}
 {const _cv=careerView;careerView=function(){return _cv.apply(this,arguments)+verTag()}}

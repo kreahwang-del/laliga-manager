@@ -99,3 +99,28 @@ function bpXgChart(R){if(!R||!R.xgs)return '';const W=320,H=110,P=6,mx=Math.max(
 .bpxg .h{display:flex;justify-content:space-between;align-items:center;font-size:12px;color:var(--muted);margin-bottom:4px}.bpxg .h>span:first-child{font-weight:900;letter-spacing:.1em;color:var(--text)}
 .bpxg .h i{display:inline-block;width:10px;height:3px;margin:0 4px 0 8px;vertical-align:3px}.bpxg svg{display:block;width:100%;height:auto}
 .bpxg .ax{display:flex;justify-content:space-between;font-size:10.5px;color:var(--faint);font-family:var(--disp)}`;document.head.appendChild(st4)}
+
+// ---- 홈: 다음 경기 승·무·패 예상(사용자 결정 2026-10-30) + 스태프 조언 타일 ----
+// 확률은 다른 리그 빠른 계산과 같은 모형(FASTM: 게임 엔진 296경기 포아송 회귀, log λ = a + b·선발 평균 능력 차 ± 홈)으로 계산 → 게임 안 결과와 일관
+// 계산 중에는 Math.random을 임시 고정값으로 바꿔 게임의 난수 흐름을 건드리지 않음. 같은 날·같은 경기는 캐시
+function bpNextFx(){try{const mn=myNext();const fr=S.friendlies.find(x=>!x.res);return [fr,mn,(typeof cupNextMine==='function'?cupNextMine():null)].filter(Boolean).sort((a,b)=>a.d<b.d?-1:1)[0]||null}catch(e){return null}}
+function bpPred(fx){if(!fx||typeof FASTM==='undefined')return null;const key=S.date+'|'+fx.d+'|'+fx.h+'|'+fx.a+'|'+(S.xi||[]).join(',');if(bpPred.k===key)return bpPred.v;
+  const R0=Math.random;let out=null;try{Math.random=()=>.5;const H=teamFor(fx.h),A=teamFor(fx.a);if(H&&A&&H.xi&&A.xi){const av=t=>t.xi.reduce((s,p)=>s+effO(p),0)/Math.max(1,t.xi.length);
+    const d=av(H)-av(A),a=(typeof divOf==='function'&&divOf(fx.h)===2)?FASTM.a2:FASTM.a,lh=Math.exp(a+FASTM.b*d+FASTM.h),la=Math.exp(a-FASTM.b*d-FASTM.h);
+    const P=l=>{const r=[];let p=Math.exp(-l);for(let k=0;k<11;k++){r.push(p);p*=l/(k+1)}return r};const ph=P(lh),pa=P(la);let w=0,dr=0,lo=0;
+    for(let i=0;i<11;i++)for(let j=0;j<11;j++){const q=ph[i]*pa[j];if(i>j)w+=q;else if(i===j)dr+=q;else lo+=q}const t=w+dr+lo;
+    const me=fx.h===S.club?0:1;const mine=me===0?[w,dr,lo]:[lo,dr,w];
+    const us=me===0?H:A,them=me===0?A:H;out={p:mine.map(x=>x/t),us,them,me}}}catch(e){out=null}finally{Math.random=R0}bpPred.k=key;bpPred.v=out;return out}
+function bpStaff(pr){try{const T=[];const us=pr.us,th=pr.them;const pct=Math.round(pr.p[0]*100);
+  const avg=L=>L.reduce((s,p)=>s+(p.ovr||70),0)/Math.max(1,L.length);const dv=avg(us.xi)-avg(th.xi);
+  T.push(['수석코치',dv>=2?`전력은 우리가 앞섭니다(선발 평균 ${avg(us.xi).toFixed(0)} vs ${avg(th.xi).toFixed(0)}). 이길 확률 ${pct}%.`:dv<=-2?`상대 선발이 더 강합니다(${avg(th.xi).toFixed(0)} vs ${avg(us.xi).toFixed(0)}). 승점 1점도 나쁘지 않습니다.`:`비슷한 전력입니다(${avg(us.xi).toFixed(0)} vs ${avg(th.xi).toFixed(0)}). 작은 차이가 승부를 가릅니다.`]);
+  const ids=new Set(us.xi.map(p=>p.id));const tired=us.xi.filter(p=>(S.ps[p.id]?.fit??100)<80);const inj=squadOf(S.club).filter(p=>(S.ps[p.id]?.injD||0)>0);
+  T.push(['피지컬 코치',tired.length?`선발 중 체력 80% 미만 ${tired.length}명: ${tired.slice(0,2).map(p=>esc(shortName(p.name))).join(', ')}${tired.length>2?' 외':''}. 로테이션을 고려하세요.`:inj.length?`부상자 ${inj.length}명(${inj.slice(0,2).map(p=>esc(shortName(p.name))).join(', ')}${inj.length>2?' 외':''}). 선발 체력은 양호합니다.`:'선발 체력 양호, 부상자 없습니다.']);
+  if(typeof decAir==='function'){const oa=decAir(us.xi),da=decAir(th.xi),ad=oa-da;T.push(['분석관',ad>=1.5?`공중볼 우위(${oa.toFixed(1)} vs ${da.toFixed(1)}). 지고 있으면 크로스 공략이 통합니다.`:ad<=-1.5?`공중볼은 상대가 강합니다(${da.toFixed(1)} vs ${oa.toFixed(1)}). 크로스보다 땅볼·중거리가 낫습니다.`:`공중볼은 대등합니다(${oa.toFixed(1)} vs ${da.toFixed(1)}).`])}
+  return `<div class="bpstaff">${T.map(([w,t])=>`<div><small>${w}</small><p>${t}</p></div>`).join('')}</div>`}catch(e){return ''}}
+{const _hvP=homeView;homeView=function(){let h=_hvP.apply(this,arguments);try{const k=h.indexOf('<section class="card fixture bpnext"');if(k<0)return h;const e=h.indexOf('</section>',k);if(e<0)return h;
+  const pr=bpPred(bpNextFx());if(!pr)return h;const [w,d,l]=pr.p.map(x=>Math.round(x*100));const bar=`<div class="bpwdl" aria-label="예상 승 ${w}% 무 ${d}% 패 ${l}%"><div class="b"><i class="w" style="width:${w}%"></i><i class="d" style="width:${d}%"></i><i class="l" style="width:${l}%"></i></div><div class="t"><span>승 <b class="num">${w}%</b></span><span>무 <b class="num">${d}%</b></span><span>패 <b class="num">${l}%</b></span></div><small>전력 기준 예상</small></div>`;
+  return h.slice(0,e)+bar+h.slice(e,e+10)+bpStaff(pr)+h.slice(e+10)}catch(err){return h}}}
+{const st5=document.createElement('style');st5.textContent=`.bpwdl{position:relative;margin-top:12px}.bpwdl .b{display:flex;height:6px;background:#0A0B0D}.bpwdl .b i{display:block;height:6px}.bpwdl .b .w{background:var(--good)}.bpwdl .b .d{background:#5A6068}.bpwdl .b .l{background:var(--bad)}
+.bpwdl .t{display:flex;justify-content:space-between;margin-top:4px;font-size:12px;color:#C9CDD3}.bpwdl .t b{font-size:16px;color:var(--text);margin-left:3px}.bpwdl small{display:block;text-align:center;font-size:10.5px;color:var(--faint);margin-top:2px}
+.bpstaff{display:grid;gap:6px;margin-top:10px}.bpstaff>div{background:rgba(255,255,255,.035);border-left:3px solid var(--amber);padding:8px 12px}.bpstaff small{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--amber)}.bpstaff p{margin:2px 0 0;font-size:13px;line-height:1.45}`;document.head.appendChild(st5)}
