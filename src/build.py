@@ -59,7 +59,7 @@ def build(cfg):
 
     page = rd('page.html')
     page = re.sub(r'@@ASSET:(\w+):([^@]+)@@', asset, page)
-    for tok, val in (('@@CSS@@', rd('app/style.css')), ('@@APP@@', app)):
+    for tok, val in (('@@CSS@@', rd('app/style.css') + (('\n/* ==== theme_bplus.css ==== */\n' + rd('app/theme_bplus.css')) if os.path.exists(os.path.join(ROOT, 'app/theme_bplus.css')) else '')), ('@@APP@@', app)):
         assert page.count(tok) == 1, tok
         a = page.index(tok)
         page = page[:a] + val + page[a + len(tok):]

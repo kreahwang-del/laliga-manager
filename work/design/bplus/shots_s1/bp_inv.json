@@ -1,0 +1,188 @@
+{
+ "R": {
+  "01_start": {
+   "btn": 50,
+   "data": [
+    "data-cc",
+    "data-imgtog",
+    "data-mode",
+    "data-mz",
+    "data-new",
+    "data-scc",
+    "data-slg",
+    "data-sv"
+   ],
+   "txt": 1237,
+   "docW": 390,
+   "over": [
+    "[object SVGAnimatedString]:2536",
+    "[object SVGAnimatedString]:1312",
+    "[object SVGAnimatedString]:919",
+    "[object SVGAnimatedString]:478",
+    "[object SVGAnimatedString]:1003",
+    "[object SVGAnimatedString]:931"
+   ]
+  },
+  "02_tab0_홈": {
+   "btn": 8,
+   "data": [
+    "data-act",
+    "data-tab"
+   ],
+   "txt": 466,
+   "docW": 390,
+   "over": []
+  },
+  "02_tab1_스쿼드": {
+   "btn": 40,
+   "data": [
+    "data-act",
+    "data-player",
+    "data-sq",
+    "data-sqv",
+    "data-tab"
+   ],
+   "txt": 1391,
+   "docW": 390,
+   "over": []
+  },
+  "02_tab2_전술": {
+   "btn": 101,
+   "data": [
+    "data-act",
+    "data-applyxi",
+    "data-bench",
+    "data-chem",
+    "data-kick",
+    "data-ment",
+    "data-mslot",
+    "data-os",
+    "data-phase",
+    "data-pickm",
+    "data-preset",
+    "data-shape",
+    "data-showopp",
+    "data-slot",
+    "data-tab",
+    "data-taf",
+    "data-tfocus",
+    "data-tfold",
+    "data-ti",
+    "data-tsets",
+    "data-v",
+    "data-zones"
+   ],
+   "txt": 1558,
+   "docW": 390,
+   "over": []
+  },
+  "02_tab3_이적": {
+   "btn": 60,
+   "data": [
+    "data-act",
+    "data-f",
+    "data-fopen",
+    "data-player",
+    "data-tab",
+    "data-tt",
+    "data-v"
+   ],
+   "txt": 2438,
+   "docW": 390,
+   "over": []
+  },
+  "02_tab4_리그": {
+   "btn": 44,
+   "data": [
+    "data-act",
+    "data-elg",
+    "data-ldv",
+    "data-lt",
+    "data-tab"
+   ],
+   "txt": 594,
+   "docW": 390,
+   "over": []
+  },
+  "02_tab5_감독": {
+   "btn": 56,
+   "data": [
+    "data-abapp",
+    "data-ablg",
+    "data-abpref",
+    "data-act",
+    "data-engall",
+    "data-hof",
+    "data-lgopen",
+    "data-resign",
+    "data-sv",
+    "data-tab"
+   ],
+   "txt": 1923,
+   "docW": 390,
+   "over": []
+  },
+  "03_player": {
+   "btn": 7,
+   "data": [
+    "data-act",
+    "data-close",
+    "data-id",
+    "data-relopen",
+    "data-res",
+    "data-sp"
+   ],
+   "txt": 515,
+   "docW": 390,
+   "over": []
+  },
+  "04_match60": {
+   "btn": 21,
+   "data": [
+    "data-act",
+    "data-lana",
+    "data-mpst",
+    "data-pid",
+    "data-r3d",
+    "data-rpopen",
+    "data-tab"
+   ],
+   "txt": 1280,
+   "docW": 390,
+   "over": []
+  },
+  "05_match_end": {
+   "btn": 21,
+   "data": [
+    "data-act",
+    "data-lana",
+    "data-mpst",
+    "data-pid",
+    "data-r3d",
+    "data-rpopen",
+    "data-tab"
+   ],
+   "txt": 1284,
+   "docW": 390,
+   "over": []
+  },
+  "06_report": {
+   "btn": 21,
+   "data": [
+    "data-act",
+    "data-lana",
+    "data-mpst",
+    "data-pid",
+    "data-r3d",
+    "data-rpopen",
+    "data-tab"
+   ],
+   "txt": 1284,
+   "docW": 390,
+   "over": []
+  }
+ },
+ "errs": [
+  "Cannot read properties of undefined (reading 'k')"
+ ]
+}
