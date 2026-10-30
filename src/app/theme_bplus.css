@@ -104,4 +104,4 @@ html .mptab button{border-radius:2px}
 .hero .eyebrow{font-weight:800;letter-spacing:.24em}
 
 /* ---- 알림 ---- */
-.toast{border-radius:0;background:var(--amber);color:var(--amber-ink);font-weight:800;clip-path:polygon(8px 0,100% 0,calc(100% - 8px) 100%,0 100%);padding:10px 22px}
+.toast{border-radius:2px;background:#1B1E23;color:var(--text);font-weight:700;border-left:4px solid var(--amber);box-shadow:0 8px 22px rgba(0,0,0,.6);padding:10px 18px}
