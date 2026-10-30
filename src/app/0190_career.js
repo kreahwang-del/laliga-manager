@@ -177,8 +177,9 @@ function careerView(){const me=S.me,emp=!unemp();
   const cur=emp?spellRec(S.club,me.since):null;
   const hist=[...me.hist].reverse();
   const vac=S.vac.map(v=>{const req=reqRep(v.c);return `<div class="li"><span class="nm">${crest(v.c)}<span><b>${esc(CLUBS[v.c].name)}</b><span>요구 평판 ${req} · 목표 ${S.exp[v.c]?S.exp[v.c].lb:'-'}</span></span></span>${v.c===S.club?'':v.pend?'<span class="note">제안 대기</span>':v.app?'<span class="note">지원함</span>':v.userOut?'<span class="note">탈락</span>':`<button class="btn sm ${me.rep>=req-10?'':'ghost'}" data-apply="${v.c}">지원</button>`}</div>`}).join('');
-  const mgs=LIGA.map(c=>{const m=c===S.club?null:mgrOf(c);const t=m?Math.round(m.trust):null;
-    return `<div class="li"><span class="nm">${crest(c)}<span><b>${c===S.club?esc(me.name)+' (나)':m?esc(m.n):'<span style="color:var(--muted)">공석</span>'}</b><span>${esc(CLUBS[c].short)}${m?` · ${mgAge(m)}세 · 평판 ${m.rep}${m.real?'':' · 신예'}`:''}</span></span></span>${t!=null?`<span class="num" style="font-size:14px;color:${trustCol(t)}">${t<CK.warn2?'🔥 ':''}${t}</span>`:''}</div>`}).join('');
+  const mgR=LIGA.map(c=>{const m=c===S.club?null:mgrOf(c);const t=m?Math.round(m.trust):null;
+    return [c===S.club||(t!=null&&t<CK.warn1)||!m,`<div class="li"><span class="nm">${crest(c)}<span><b>${c===S.club?esc(me.name)+' (나)':m?esc(m.n):'<span style="color:var(--muted)">공석</span>'}</b><span>${esc(CLUBS[c].short)}${m?` · ${mgAge(m)}세 · 평판 ${m.rep}${m.real?'':' · 신예'}`:''}</span></span></span>${t!=null?`<span class="num" style="font-size:14px;color:${trustCol(t)}">${t<CK.warn2?'🔥 ':''}${t}</span>`:''}</div>`]});/* v262: 나·공석·신뢰도 경고(38 미만) 감독만 먼저, 나머지는 펼치기 */
+  const mgs=foldRows('mgs',mgR.filter(x=>x[0]).map(x=>x[1]),mgR.filter(x=>!x[0]).map(x=>x[1]),`전체 감독 ${mgR.length}명 보기`);
   return `<section class="card pad" style="margin-top:14px"><div class="eyebrow">${me.mode==='challenge'?'도전 모드':'구단 선택 모드'}</div><h2 style="margin:4px 0 2px">${esc(me.name)}</h2>
     <div class="note">${emp?esc(CLUBS[S.club].name)+' 감독 · 계약 '+fmtD(me.cEnd):'무소속'} · 우승 ${me.titles}회${me.sacked?` · 경질 ${me.sacked}회`:''}</div>
     <div style="margin-top:10px"><b>평판 ${me.rep}</b> <span class="note">${tierOf(me.rep)}</span>${tbar(me.rep,'var(--c2)')}</div>

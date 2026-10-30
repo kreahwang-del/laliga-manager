@@ -29,12 +29,13 @@ function abCard(){if(!S.me)return '';const lgs=abLgs();if(!lgs.length)return '';
   const lg=lgs.includes(UI.abLg)?UI.abLg:(lgs.includes(pref)?pref:lgs[0]);const rep=S.me.rep;
   const apps=(S.abApp||[]).filter(a=>!a.res),napp=apps.length;
   const tried=c=>(S.abApp||[]).find(a=>a.c===c&&a.s===S.season);
-  const rows=CLUBS.filter(c=>c&&c.i>=0&&c.lg===lg).map(c=>({c,q:reqRep(c.i)})).sort((a,b)=>b.q-a.q).map(({c,q})=>{
+  const rowA=CLUBS.filter(c=>c&&c.i>=0&&c.lg===lg).map(c=>({c,q:reqRep(c.i)})).sort((a,b)=>b.q-a.q).map(({c,q})=>{
     const t=tried(c.i),p=abChance(c.i),lab=p>=.6?'가능성 높음':p>=.3?'보통':'낮음';let btn;
     if(t)btn=`<span class="note">${t.res||'지원함'}</span>`;else if(S.pendJob)btn='<span class="note">-</span>';
     else if(q>rep+8)btn='<span class="note">평판 부족</span>';else if(napp>=AB_MAX)btn='<button class="btn sm ghost" disabled>지원</button>';
     else btn=`<button class="btn sm ${p>=.3?'':'ghost'}" data-abapp="${c.i}">지원</button>`;
-    return `<div class="li"><span class="nm">${crest(c.i)}<span><b>${esc(c.name)}</b><span>요구 평판 ${q}${q<=rep+8?' · '+lab:''}</span></span></span>${btn}</div>`}).join('');
+    return [q<=rep+8||t,`<div class="li"><span class="nm">${crest(c.i)}<span><b>${esc(c.name)}</b><span>요구 평판 ${q}${q<=rep+8?' · '+lab:''}</span></span></span>${btn}</div>`]});
+  /* v262: 지원 가능한 구단만 먼저, 평판 부족 구단은 펼치기 */const okR=rowA.filter(x=>x[0]).map(x=>x[1]),noR=rowA.filter(x=>!x[0]).map(x=>x[1]),hidR=okR.slice(6).concat(noR);const rows=foldRows('ab'+lg,okR.slice(0,6),hidR,okR.length?`나머지 ${hidR.length}곳 보기${noR.length?` (평판 부족 ${noR.length}곳 포함)`:''}`:`평판 부족 구단 ${noR.length}곳 보기`);
   return `<h2>해외 구단</h2><section class="card pad">
     <div class="tabs" style="margin-bottom:8px;overflow-x:auto;white-space:nowrap">${lgs.map(x=>`<button data-ablg="${x}" aria-selected="${x===lg}">${x===pref?'★ ':''}${esc(LGN[x]||x)}</button>`).join('')}</div>
     <div style="display:flex;gap:8px;align-items:center;flex-wrap:wrap"><span class="note">희망 국가: <b style="color:var(--text)">${pref?esc(LGN[pref]||pref):'없음'}</b></span>

@@ -35,7 +35,7 @@ function homeView(){
     :nw?`<div class="banner closed"><span>다음 이적시장 ${fmtD(nw.from)} 개장</span><span class="num" style="font-size:17px">D-${daysBetween(S.date,nw.from)}</span></div>`:''}
   ${up?`<section class="card fixture"><div class="md"><span>${up.r?`${up.r}라운드`:(up.cup||up.po||up.eu)?esc(cupLabel(up)):'프리시즌 친선경기'} · ${fmtD(up.d)}</span><span>${up.h===S.club?'홈':'원정'}</span></div>
     <div class="vs"><div class="team">${crest(up.h)}${esc(CLUBS[up.h].name)}</div><div class="mid">VS</div><div class="team">${crest(up.a)}${esc(CLUBS[up.a].name)}</div></div>
-    <p class="note" style="text-align:center">오른쪽 아래 '계속'을 누르면 경기일까지 진행합니다. 도중에 처리할 소식이 생기면 멈춥니다.</p></section>`
+    ${(S.reports||[]).length?'':`<p class="note" style="text-align:center">오른쪽 아래 '계속'을 누르면 경기일까지 진행합니다. 도중에 처리할 소식이 생기면 멈춥니다.</p>`}</section>`
    :`<section class="card pad" style="margin-top:14px">남은 경기가 없습니다. '계속'을 눌러 다음 시즌으로 넘어가세요.</section>`}
   <h2>받은 소식</h2><div class="card inbox">${msgs.length?msgs.map(msgHTML).join(''):'<div class="msg"><p>새 소식이 없습니다.</p></div>'}</div>
   ${S.fixtures.some(x=>x.res)?`<h2>순위 · ${pos}위</h2><div class="card">${tableHTML(tb.slice(Math.max(0,pos-3),Math.max(5,pos+2)),true)}</div>`:''}`;

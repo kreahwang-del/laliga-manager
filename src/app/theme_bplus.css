@@ -112,3 +112,5 @@ html .mptab button{border-radius:2px}
 body{word-break:keep-all;overflow-wrap:break-word}
 /* 한글 소제목 자간이 넓어 글자가 띄엄띄엄 보임 → 줄임 */
 h2{letter-spacing:.04em}
+/* v262 접힌 목록 펼치기 버튼: 줄 전체가 눌림(44px 이상) */
+.foldbtn{display:flex;justify-content:center;align-items:center;width:100%;min-height:44px;background:transparent;border:0;cursor:pointer}

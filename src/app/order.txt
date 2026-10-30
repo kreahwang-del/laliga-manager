@@ -2,6 +2,7 @@ app/0000_data_G.js
 app/0010_data.js
 app/0020_util.js
 app/0025_app_back.js
+app/0026_fold.js
 app/0030_state.js
 app/0040_calendar.js
 app/0050_engine_header.js
