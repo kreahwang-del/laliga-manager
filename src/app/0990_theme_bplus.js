@@ -55,3 +55,15 @@
 .bpmom2 .ring b{width:42px;height:42px;border-radius:50%;background:#111317;display:grid;place-items:center;font-size:19px}
 .bpmom2 small{display:block;font-size:11px;letter-spacing:.08em;color:var(--muted)}.bpmom2 div>b{font-size:16px;font-weight:900}
 .bpmom2 .res{margin-left:auto;font-weight:900;font-size:15px}`;document.head.appendChild(st2)}
+
+// ---- 홈: 다음 경기 카드를 두 팀 색 사선 분할 'NEXT MATCH' 카드로(마크업·버튼 그대로, 색만 CSS 변수로 주입) ----
+{const _hvB=homeView;homeView=function(){let h=_hvB.apply(this,arguments);try{const k=h.indexOf('<section class="card fixture"');if(k<0)return h;
+  const seg=h.slice(k,k+4000);const cs=[...seg.matchAll(/class="crest[^"]*" style="background:linear-gradient\(135deg,(.+?) 50%/g)].map(m=>m[1]).slice(0,2);if(cs.length<2)return h;
+  return h.slice(0,k)+`<section class="card fixture bpnext" style="--hc:${cs[0]};--ac:${cs[1]}"`+h.slice(k+'<section class="card fixture"'.length)}catch(e){return h}}}
+{const st3=document.createElement('style');st3.textContent=`
+.fixture.bpnext{position:relative;overflow:hidden;border:0;border-top:3px solid var(--amber);background:linear-gradient(105deg,color-mix(in srgb,var(--hc) 34%,#0A0B0D) 0 49.6%,#0A0B0D 49.6% 50.4%,color-mix(in srgb,var(--ac) 34%,#0A0B0D) 50.4%)}
+.fixture.bpnext::before{content:'NEXT MATCH';position:absolute;right:-6px;bottom:-14px;font-family:var(--disp);font-weight:900;font-style:italic;font-size:64px;line-height:1;color:rgba(255,255,255,.05);pointer-events:none}
+.fixture.bpnext .md{color:#C9CDD3;font-weight:700;letter-spacing:.04em}
+.fixture.bpnext .vs .mid{font-style:italic;font-weight:900;font-size:34px;color:var(--amber)}
+.fixture.bpnext .vs .team{font-weight:900}
+.banner.closed{border-left:3px solid var(--amber)}.banner .num{font-weight:900;color:var(--amber)}`;document.head.appendChild(st3)}
