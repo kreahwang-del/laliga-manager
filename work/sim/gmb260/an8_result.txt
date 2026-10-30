@@ -1,27 +1,27 @@
-유효 1075
+유효 1200
 [전체]
-  전체                     n=1075 | g_all +0.035±0.013 | g_air +0.056±0.012 | g_long +0.057±0.012 | 1위:g_long 동률:g_all,g_air,g_long
-  g_all: 기회 +0.071±0.010 실점 +0.036±0.008 승점 +0.046±0.037
-  g_air: 기회 +0.056±0.009 실점 -0.000±0.007 승점 +0.041±0.037
-  g_long: 기회 +0.050±0.009 실점 -0.007±0.007 승점 +0.060±0.038
+  전체                     n=1200 | g_all +0.038±0.012 | g_air +0.063±0.011 | g_long +0.057±0.011 | 1위:g_air 동률:g_all,g_air,g_long
+  g_all: 기회 +0.070±0.009 실점 +0.032±0.008 승점 +0.043±0.034
+  g_air: 기회 +0.063±0.009 실점 -0.000±0.007 승점 +0.059±0.035
+  g_long: 기회 +0.050±0.009 실점 -0.007±0.007 승점 +0.068±0.035
 [공중볼 ad]
-  ad 하                   n= 360 | g_all +0.029±0.023 | g_air +0.024±0.020 | g_long +0.059±0.020 | 1위:g_long 동률:g_all,g_air,g_long
-  ad 중                   n= 329 | g_all +0.004±0.024 | g_air +0.054±0.023 | g_long +0.045±0.024 | 1위:g_air 동률:g_all,g_air,g_long
-  ad 상                   n= 386 | g_all +0.067±0.022 | g_air +0.087±0.020 | g_long +0.065±0.019 | 1위:g_air 동률:g_all,g_air,g_long
+  ad 하                   n= 392 | g_all +0.022±0.022 | g_air +0.023±0.019 | g_long +0.063±0.018 | 1위:g_long 동률:g_all,g_air,g_long
+  ad 중                   n= 378 | g_all +0.013±0.022 | g_air +0.061±0.021 | g_long +0.042±0.022 | 1위:g_air 동률:g_all,g_air,g_long
+  ad 상                   n= 430 | g_all +0.073±0.021 | g_air +0.100±0.020 | g_long +0.065±0.018 | 1위:g_air 동률:g_all,g_air,g_long
 [속도 op-dp]
-  op-dp 하(상대 느림)         n= 370 | g_all +0.077±0.023 | g_air +0.092±0.021 | g_long +0.058±0.022 | 1위:g_air 동률:g_all,g_air,g_long
-  op-dp 중                n= 362 | g_all +0.007±0.023 | g_air +0.042±0.021 | g_long +0.054±0.021 | 1위:g_long 동률:g_all,g_air,g_long
-  op-dp 상(상대 빠름)         n= 343 | g_all +0.019±0.023 | g_air +0.031±0.021 | g_long +0.058±0.019 | 1위:g_long 동률:g_all,g_air,g_long
+  op-dp 하(상대 느림)         n= 414 | g_all +0.083±0.021 | g_air +0.108±0.020 | g_long +0.063±0.020 | 1위:g_air 동률:g_all,g_air,g_long
+  op-dp 중                n= 408 | g_all +0.009±0.022 | g_air +0.045±0.020 | g_long +0.049±0.020 | 1위:g_long 동률:g_all,g_air,g_long
+  op-dp 상(상대 빠름)         n= 378 | g_all +0.019±0.021 | g_air +0.032±0.020 | g_long +0.059±0.018 | 1위:g_long 동률:g_all,g_air,g_long
 [슈팅 ls]
-  ls 하                   n= 307 | g_all +0.023±0.023 | g_air +0.023±0.022 | g_long +0.034±0.022 | 1위:g_long 동률:g_all,g_air,g_long,none
-  ls 중                   n= 401 | g_all +0.029±0.022 | g_air +0.030±0.019 | g_long +0.065±0.019 | 1위:g_long 동률:g_all,g_air,g_long
-  ls 상                   n= 367 | g_all +0.052±0.023 | g_air +0.111±0.022 | g_long +0.066±0.022 | 1위:g_air 동률:g_all,g_air,g_long
+  ls 하                   n= 339 | g_all +0.013±0.021 | g_air +0.028±0.021 | g_long +0.041±0.020 | 1위:g_long 동률:g_all,g_air,g_long
+  ls 중                   n= 446 | g_all +0.038±0.021 | g_air +0.038±0.018 | g_long +0.059±0.018 | 1위:g_long 동률:g_all,g_air,g_long
+  ls 상                   n= 415 | g_all +0.057±0.022 | g_air +0.117±0.021 | g_long +0.068±0.020 | 1위:g_air 동률:g_air,g_long
 [상대 잠그기]
-  잠금                     n=1003 | g_all +0.041±0.013 | g_air +0.064±0.012 | g_long +0.062±0.012 | 1위:g_air 동률:g_all,g_air,g_long
-  안 잠금                   n=  72 | g_all -0.043±0.057 | g_air -0.056±0.045 | g_long -0.014±0.041 | 1위:none 동률:g_all,g_air,g_long,none
+  잠금                     n=1120 | g_all +0.042±0.013 | g_air +0.069±0.012 | g_long +0.061±0.012 | 1위:g_air 동률:g_all,g_air,g_long
+  안 잠금                   n=  80 | g_all -0.026±0.052 | g_air -0.021±0.046 | g_long -0.003±0.041 | 1위:none 동률:g_all,g_air,g_long,none
 
 [자기 상황 판정]
-  g_air @ ad 상: n=386 1위/동률 (1위 g_air)
-  g_long @ ls 상: n=367 1위/동률 (1위 g_air)
-  g_all @ 잠금: n=1003 1위/동률 (1위 g_air)
-  g_all @ op-dp 하(상대 느림): n=370 1위/동률 (1위 g_air)
+  g_air @ ad 상: n=430 1위/동률 (1위 g_air)
+  g_long @ ls 상: n=415 1위/동률 (1위 g_air)
+  g_all @ 잠금: n=1120 1위/동률 (1위 g_air)
+  g_all @ op-dp 하(상대 느림): n=414 1위/동률 (1위 g_air)
