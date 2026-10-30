@@ -68,7 +68,7 @@ function mgView(){const sq=squadOf(S.club);const hs=sq.map(p=>(S.ps[p.id]||{}).h
     <p class="note" style="margin-top:10px;line-height:1.55">칭찬은 최근 평점 7.0 이상일 때, 격려는 부진(6.6 미만)하거나 컨디션이 나쁠 때 효과가 큽니다. 질책은 부진한 선수에게만 통하며 프로의식 13 이상은 분발, 9 이하는 반발합니다. 선수별 21일에 한 번. 기자회견 답변은 받은 소식에서 고르며, 자신감 발언은 이기면 사기 상승·지면 비판을 받습니다.</p>`}
 sqTabs=function(){const v=UI.sqv||'sq';return `<div class="chips" style="margin-top:14px">${[['sq','선수단'],['trn','훈련·코치진'],['mgmt','선수 관리']].map(([k,l])=>`<button class="chip" data-sqv="${k}" aria-pressed="${v===k}">${l}</button>`).join('')}</div>`};
 {const _sv=squadView;squadView=function(){if(UI.sqv==='mgmt')return mgView();return _sv()}}
-document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-pr],[data-talk]');if(!b||!S)return;e.stopPropagation();e.preventDefault();
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-pr],[data-talk][data-pid]');/* v256 수정: 선수 상세 '면담' 시트(data-talk+data-id)는 0180 핸들러가 처리하도록 data-pid 있는 버튼만 잡음 */if(!b||!S)return;e.stopPropagation();e.preventDefault();
   if(b.dataset.talk){mgTalk(+b.dataset.pid,b.dataset.talk);return}const m=S.inbox.find(x=>x.id===+b.dataset.msg);if(!m||m.done)return;prAnswer(m,b.dataset.pr)},true);
 
 // ---- 경기 전 기자회견 순서 보장(v89): 답하지 않은 채 경기를 시작하면 킥오프 전에 질문 창, 지난 경기의 미답변 질문은 만료 ----

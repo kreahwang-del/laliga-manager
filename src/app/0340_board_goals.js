@@ -31,5 +31,5 @@ function bdEval(){const G=S.goals;if(!G||G.ev||G.y!==S.season||G.c!==S.club)retu
   if(S.date>=`${S.season+1}-06-15`)bdEval()}}catch(e){console.error(e)}return r}}
 function bdCard(){const G=S.goals;if(!G||G.y!==S.season||G.c!==S.club)return '';
   return `<section class="card pad" style="margin-bottom:12px"><h2 style="margin-top:0">이사회 시즌 목표</h2>${G.items.map(g=>{const s=bdStat(g);return `<div class="li" style="padding:6px 0;border-bottom:1px solid var(--line)"><span class="nm"><span style="color:${s.ok?'var(--good)':'var(--muted)'};font-weight:700;width:18px;display:inline-block">${s.ok?'✓':'·'}</span><span><b>${esc(g.t)}</b><span>${esc(s.txt)}</span></span></span></div>`}).join('')}<p class="note" style="margin:8px 0 0">리그 외 목표는 6월 중순 평가: 달성 1개당 신뢰도 +2·이적 예산 +매출 1.5%, 미달성 −2.</p></section>`}
-{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if(!UI.cv||UI.cv==='me'||UI.cv==='career'){return bdCard()+h}}catch(e){}return h}}
+{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if(!UI.cv||UI.cv==='mgr'||UI.cv==='me'||UI.cv==='career'){return bdCard()+h}}catch(e){}return h}}
 

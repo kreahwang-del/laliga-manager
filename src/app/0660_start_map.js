@@ -27,6 +27,7 @@ startView=function(){const saved=loadSave();const mode=UI.mode||'club';const cc=
   <div class="pick">${clubRows(ids,mode)}</div>
   ${lg!=='ES'&&lg!=='ES2'?'<p class="note" style="margin-top:6px">스페인 외 리그 감독은 게임이 만든 감독입니다.</p>':''}
   <h2>저장 파일 불러오기</h2><div class="card pad"><button class="btn sm ghost" data-sv="imp">백업 파일에서 이어하기</button></div>
+  <div class="chips" style="margin-top:14px"><button class="chip" data-imgtog aria-pressed="${IMG.on}">선수 사진·로고 표시 ${IMG.on?'켬':'끔'}</button></div>
   <p class="note" style="margin-top:18px;line-height:1.6">숫자는 상위 16명 평균 능력치. 선수 능력치: EA FC27·5대 리그 FBref 기록 기반, 시장가치·계약: Transfermarkt 공개 데이터셋, 지도: Natural Earth. 연봉·바이아웃 일부는 추정치입니다.</p></main>`};
 /* 지도 조작: 나라 누르기(조금만 움직였을 때), 끌어서 이동, 두 손가락 확대, 버튼 확대·축소 */
 (function(){let P=new Map(),start=null,moved=0,pinch=null;const svgEl=()=>document.getElementById('wmap');
