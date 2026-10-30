@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>온보딩 B 추천 구단</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#F2A93B}a:hover{color:#FFC46B}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #0E1419; color: #E8EEF2; font-family: 'IBM Plex Sans KR', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="display: flex; align-items: center; justify-content: space-between; padding: 16px 16px 8px">
+    <button aria-label="뒤로" style="width: 44px; height: 44px; border-radius: 12px; border: 1px solid #2A3A47; background: #17212A; color: #E8EEF2; display: flex; align-items: center; justify-content: center">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M15 18l-6-6 6-6"></path></svg>
+    </button>
+    <span style="font-size: 13px; color: #9AAAB6">4/5 · 스페인 1부</span>
+    <span style="width: 44px"></span>
+  </div>
+  <div style="padding: 4px 16px 12px">
+    <h1 style="margin: 0; font-size: 22px; font-weight: 700">맡을 구단을 고르세요</h1>
+    <p style="margin: 6px 0 0; font-size: 13px; color: #9AAAB6">처음이라면 '추천'부터 시작해 보세요</p>
+  </div>
+  <div style="display: flex; gap: 8px; padding: 0 16px 12px">
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 0; background: {{accent}}; color: #1A1206; font-size: 13px; font-weight: 700; font-family: inherit">추천</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #2A3A47; background: transparent; color: #C9D4DC; font-size: 13px; font-family: inherit">쉬움</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #2A3A47; background: transparent; color: #C9D4DC; font-size: 13px; font-family: inherit">보통</button>
+    <button style="height: 36px; padding: 0 14px; border-radius: 18px; border: 1px solid #2A3A47; background: transparent; color: #C9D4DC; font-size: 13px; font-family: inherit">도전</button>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 16px">
+    <button style="text-align: left; padding: 14px; border-radius: 16px; border: 2px solid {{accent}}; background: #17212A; color: #E8EEF2; font-family: inherit; display: flex; flex-direction: column; gap: 12px">
+      <div style="display: flex; gap: 12px; align-items: center; width: 100%">
+        <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="카스텔로 FC 엠블럼"><path d="M24 2 L44 9 V28 C44 42 34 50 24 54 C14 50 4 42 4 28 V9 Z" fill="#2E6B5E" stroke="#E7D7A8" stroke-width="2"></path><path d="M14 30 L24 16 L34 30 Z" fill="#E7D7A8"></path><rect x="18" y="32" width="12" height="8" fill="#E7D7A8"></rect></svg>
+        <div style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+          <span style="font-size: 17px; font-weight: 700">카스텔로 FC</span>
+          <span style="font-size: 13px; color: #9AAAB6">이사회 목표 · 중위권 안착</span>
+        </div>
+        <span style="padding: 4px 10px; border-radius: 10px; background: #173A2B; color: #6FDCA6; font-size: 12px; font-weight: 700">쉬움</span>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; width: 100%">
+        <div style="padding: 8px; border-radius: 10px; background: #1F2C37"><div style="font-size: 12px; color: #9AAAB6">팀 평균</div><div style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700">74</div></div>
+        <div style="padding: 8px; border-radius: 10px; background: #1F2C37"><div style="font-size: 12px; color: #9AAAB6">이적 예산</div><div style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700">€38M</div></div>
+        <div style="padding: 8px; border-radius: 10px; background: #1F2C37"><div style="font-size: 12px; color: #9AAAB6">팬 기대</div><div style="font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700">보통</div></div>
+      </div>
+    </button>
+    <button style="text-align: left; padding: 14px; border-radius: 16px; border: 1px solid #2A3A47; background: #17212A; color: #E8EEF2; font-family: inherit; display: flex; gap: 12px; align-items: center">
+      <svg width="40" height="46" viewBox="0 0 48 56" role="img" aria-label="리베라 시티 엠블럼"><circle cx="24" cy="28" r="22" fill="#4A3F7A" stroke="#F0B7A4" stroke-width="2"></circle><path d="M12 34 C18 22 30 22 36 34" fill="none" stroke="#F0B7A4" stroke-width="3"></path><circle cx="24" cy="20" r="4" fill="#F0B7A4"></circle></svg>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 15px; font-weight: 700">리베라 시티</span>
+        <span style="font-size: 13px; color: #9AAAB6">팀 평균 77 · 예산 €55M · 유럽 대항전 진출</span>
+      </div>
+      <span style="padding: 4px 10px; border-radius: 10px; background: #3A2F14; color: #F2C46B; font-size: 12px; font-weight: 700">보통</span>
+    </button>
+    <button style="text-align: left; padding: 14px; border-radius: 16px; border: 1px solid #2A3A47; background: #17212A; color: #E8EEF2; font-family: inherit; display: flex; gap: 12px; align-items: center">
+      <svg width="40" height="46" viewBox="0 0 48 56" role="img" aria-label="노르데 SC 엠블럼"><path d="M6 6 H42 V30 L24 52 L6 30 Z" fill="#1E4E7A" stroke="#D8E3EA" stroke-width="2"></path><path d="M14 14 L34 34 M34 14 L14 34" stroke="#D8E3EA" stroke-width="3"></path></svg>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 15px; font-weight: 700">노르데 SC</span>
+        <span style="font-size: 13px; color: #9AAAB6">팀 평균 70 · 예산 €12M · 강등 피하기</span>
+      </div>
+      <span style="padding: 4px 10px; border-radius: 10px; background: #3D1D1A; color: #F79A8E; font-size: 12px; font-weight: 700">도전</span>
+    </button>
+    <button style="text-align: left; padding: 14px; border-radius: 16px; border: 1px solid #2A3A47; background: #17212A; color: #E8EEF2; font-family: inherit; display: flex; gap: 12px; align-items: center">
+      <svg width="40" height="46" viewBox="0 0 48 56" role="img" aria-label="산타 루나 엠블럼"><path d="M24 2 L44 14 V40 L24 54 L4 40 V14 Z" fill="#7A2E3A" stroke="#F3E3C3" stroke-width="2"></path><path d="M30 18 A12 12 0 1 0 30 38 A9 9 0 1 1 30 18 Z" fill="#F3E3C3"></path></svg>
+      <div style="flex: 1; display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 15px; font-weight: 700">산타 루나</span>
+        <span style="font-size: 13px; color: #9AAAB6">팀 평균 72 · 예산 €20M · 중위권</span>
+      </div>
+      <span style="padding: 4px 10px; border-radius: 10px; background: #173A2B; color: #6FDCA6; font-size: 12px; font-weight: 700">쉬움</span>
+    </button>
+  </div>
+  <div style="position: absolute; left: 0; right: 0; bottom: 0; padding: 16px 16px 24px; background: #0E1419; border-top: 1px solid #1F2C37">
+    <button style="width: 100%; height: 52px; border-radius: 14px; border: 0; background: {{accent}}; color: #1A1206; font-size: 17px; font-weight: 700; font-family: inherit">카스텔로 FC 감독 취임</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#F2A93B","options":["#F2A93B","#4FB8C9","#8E7CF0"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#F2A93B' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,178 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "Home.dc.html": {
+      "h": 844,
+      "title": "홈",
+      "w": 390,
+      "x": 940,
+      "y": 0
+    },
+    "HomeCard.dc.html": {
+      "h": 844,
+      "title": "스타일 C · 모바일 게임 카드형",
+      "w": 390,
+      "x": 940,
+      "y": 2864
+    },
+    "HomeCast.dc.html": {
+      "h": 844,
+      "title": "스타일 B · 중계방송 그래픽형",
+      "w": 390,
+      "x": 470,
+      "y": 2864
+    },
+    "HomeTiles.dc.html": {
+      "h": 844,
+      "title": "스타일 A · 타일·카드형",
+      "w": 390,
+      "x": 0,
+      "y": 2864
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "title": "온보딩 A · 지도 중심",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "MatchA.dc.html": {
+      "h": 844,
+      "title": "경기 A · 세로 피치",
+      "w": 390,
+      "x": 0,
+      "y": 1264
+    },
+    "MatchB.dc.html": {
+      "h": 844,
+      "title": "경기 B · 가로 전폭 피치 + 통합 지시 시트",
+      "w": 390,
+      "x": 470,
+      "y": 1264
+    },
+    "OnboardB.dc.html": {
+      "h": 844,
+      "title": "온보딩 B · 추천 구단 카드",
+      "w": 390,
+      "x": 470,
+      "y": 0
+    },
+    "System.dc.html": {
+      "h": 1180,
+      "title": "디자인 시스템",
+      "w": 880,
+      "x": 940,
+      "y": 1264
+    },
+    "CastMatch.dc.html": {
+      "x": 0,
+      "y": 4128,
+      "w": 390,
+      "h": 844,
+      "title": "B · 경기 화면"
+    },
+    "CastReport.dc.html": {
+      "x": 470,
+      "y": 4128,
+      "w": 390,
+      "h": 844,
+      "title": "B · 경기 리포트"
+    },
+    "CastSquad.dc.html": {
+      "x": 940,
+      "y": 4128,
+      "w": 390,
+      "h": 844,
+      "title": "B · 스쿼드"
+    },
+    "ProHome.dc.html": {
+      "x": 0,
+      "y": 5392,
+      "w": 390,
+      "h": 844,
+      "title": "B+ · 홈 (정교화)"
+    },
+    "ProMatch.dc.html": {
+      "x": 470,
+      "y": 5392,
+      "w": 390,
+      "h": 844,
+      "title": "B+ · 경기 (정교화)"
+    },
+    "ProReport.dc.html": {
+      "x": 940,
+      "y": 5392,
+      "w": 390,
+      "h": 844,
+      "title": "B+ · 리포트 (정교화)"
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-30T00:30:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "t1": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "첫 실행 · 홈",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "t2": {
+      "kind": "title1",
+      "maxW": 1820,
+      "text": "경기 화면 · 디자인 시스템",
+      "w": 240,
+      "x": 0,
+      "y": 964
+    },
+    "t3": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "홈 화면 스타일 비교 A · B · C",
+      "w": 240,
+      "x": 0,
+      "y": 2564
+    },
+    "t4": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "스타일 B 확장 · 경기 · 리포트 · 스쿼드",
+      "x": 0,
+      "y": 3828
+    },
+    "t5": {
+      "kind": "title1",
+      "maxW": 1330,
+      "text": "B+ 정교화 · 홈 · 경기 · 리포트",
+      "x": 0,
+      "y": 5092
+    }
+  },
+  "order": [
+    "Main.dc.html",
+    "OnboardB.dc.html",
+    "Home.dc.html",
+    "MatchA.dc.html",
+    "MatchB.dc.html",
+    "System.dc.html",
+    "HomeTiles.dc.html",
+    "HomeCast.dc.html",
+    "HomeCard.dc.html",
+    "CastMatch.dc.html",
+    "CastReport.dc.html",
+    "CastSquad.dc.html",
+    "ProHome.dc.html",
+    "ProMatch.dc.html",
+    "ProReport.dc.html"
+  ],
+  "pages": [],
+  "title": "월드 사커매니저 리디자인 시안"
+}

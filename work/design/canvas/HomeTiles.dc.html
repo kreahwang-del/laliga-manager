@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>스타일 A 타일 카드형 홈</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&amp;family=Noto+Sans+KR:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#3DDC97}a:hover{color:#7BEDBB}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #111316; color: #ECEFF3; font-family: 'Noto Sans KR', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 14px 16px 10px; border-bottom: 1px solid #23272D">
+    <span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; letter-spacing: 1px">CASTELO FC</span>
+    <span style="font-size: 12px; color: #9BA3AD">· 8월 14일 금</span>
+    <span style="flex: 1"></span>
+    <button aria-label="검색" style="width: 44px; height: 44px; border-radius: 10px; border: 0; background: transparent; color: #ECEFF3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="6"></circle><path d="M20 20l-4-4"></path></svg></button>
+    <button aria-label="메뉴" style="width: 44px; height: 44px; border-radius: 10px; border: 0; background: transparent; color: #ECEFF3; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"></path></svg></button>
+  </div>
+  <div style="display: flex; gap: 6px; padding: 12px 16px 4px">
+    <button style="height: 34px; padding: 0 14px; border-radius: 8px; border: 0; background: #ECEFF3; color: #111316; font-size: 13px; font-weight: 700; font-family: inherit">전체</button>
+    <button style="height: 34px; padding: 0 14px; border-radius: 8px; border: 1px solid #2E333A; background: transparent; color: #C5CBD3; font-size: 13px; font-family: inherit">할 일 <b style="color: {{accent}}">3</b></button>
+    <button style="height: 34px; padding: 0 14px; border-radius: 8px; border: 1px solid #2E333A; background: transparent; color: #C5CBD3; font-size: 13px; font-family: inherit">새 소식</button>
+    <button style="height: 34px; padding: 0 14px; border-radius: 8px; border: 1px solid #2E333A; background: transparent; color: #C5CBD3; font-size: 13px; font-family: inherit">일정</button>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; padding: 10px 16px 0">
+    <div style="grid-column: span 2; padding: 14px; border-radius: 8px; background: #1A1D22; border: 1px solid #262A30; display: flex; flex-direction: column; gap: 10px">
+      <div style="display: flex; justify-content: space-between; font-size: 12px; color: #9BA3AD"><span>다음 경기 · 리그 1R · 홈</span><span>내일 21:00</span></div>
+      <div style="display: flex; align-items: center; gap: 12px">
+        <span style="width: 40px; height: 40px; border-radius: 6px; background: #2E6B5E; color: #E7D7A8; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">CAS</span>
+        <span style="font-family: 'Space Grotesk', sans-serif; font-size: 15px; color: #9BA3AD">vs</span>
+        <span style="width: 40px; height: 40px; border-radius: 6px; background: #4A3F7A; color: #F0B7A4; font-family: 'Space Grotesk', sans-serif; font-size: 13px; font-weight: 700; display: flex; align-items: center; justify-content: center">RIB</span>
+        <div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">리베라 시티</span><span style="font-size: 12px; color: #9BA3AD">상대 3위 · 최근 W W D L W</span></div>
+      </div>
+      <div style="display: flex; gap: 6px"><span style="flex: 1; height: 6px; border-radius: 3px; background: {{accent}}"></span><span style="width: 28%; height: 6px; border-radius: 3px; background: #4B5058"></span><span style="width: 30%; height: 6px; border-radius: 3px; background: #6E5AA8"></span></div>
+      <div style="display: flex; justify-content: space-between; font-size: 12px; color: #9BA3AD"><span>승 42%</span><span>무 28%</span><span>패 30%</span></div>
+    </div>
+    <div style="grid-column: span 2; padding: 12px 14px; border-radius: 8px; background: #16241E; border: 1px solid #24463A; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-size: 12px; font-weight: 700; color: {{accent}}">결정 필요 3</span>
+      <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px"><span>이적 제안 2건 · 응답 기한 2일</span><span style="color: #9BA3AD">›</span></div>
+      <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px"><span>선발 GK 부상 · 대체 선수 지정</span><span style="color: #9BA3AD">›</span></div>
+      <div style="display: flex; align-items: center; justify-content: space-between; font-size: 14px"><span>계약 만료 임박 3명</span><span style="color: #9BA3AD">›</span></div>
+    </div>
+    <div style="padding: 12px; border-radius: 8px; background: #1A1D22; border: 1px solid #262A30"><div style="font-size: 12px; color: #9BA3AD">리그 순위</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700">7<span style="font-size: 15px; color: #9BA3AD">/20</span></div><div style="font-size: 12px; color: #9BA3AD">목표 중위권</div></div>
+    <div style="padding: 12px; border-radius: 8px; background: #1A1D22; border: 1px solid #262A30"><div style="font-size: 12px; color: #9BA3AD">이사회 신뢰</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700; color: {{accent}}">82</div><div style="font-size: 12px; color: #9BA3AD">지난주 +3</div></div>
+    <div style="padding: 12px; border-radius: 8px; background: #1A1D22; border: 1px solid #262A30"><div style="font-size: 12px; color: #9BA3AD">이적 예산</div><div style="font-family: 'Space Grotesk', sans-serif; font-size: 32px; font-weight: 700">€38M</div><div style="font-size: 12px; color: #9BA3AD">주급 여유 €210K</div></div>
+    <div style="padding: 12px; border-radius: 8px; background: #1A1D22; border: 1px solid #262A30"><div style="font-size: 12px; color: #9BA3AD">스태프 조언</div><div style="font-size: 14px; font-weight: 500; margin-top: 6px; line-height: 1.4">왼쪽 풀백 보강이 필요합니다</div><div style="font-size: 12px; color: #9BA3AD; margin-top: 4px">수석코치</div></div>
+  </div>
+  <div style="position: absolute; left: 16px; right: 16px; bottom: 24px">
+    <button style="width: 100%; height: 52px; border-radius: 8px; border: 0; background: {{accent}}; color: #0B1A13; font-size: 16px; font-weight: 700; font-family: inherit">계속</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#3DDC97","options":["#3DDC97","#5AB0F0","#F2A93B"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#3DDC97' };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>B+ 홈 정교화</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#F5D547}a:hover{color:#FFE680}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background-color: #0A0B0D; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.022) 0 1px, transparent 1px 10px); color: #F2F3F5; font-family: 'Noto Sans KR', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="position: absolute; right: -18px; top: -24px; font-family: 'Big Shoulders Display', sans-serif; font-size: 210px; font-weight: 900; font-style: italic; line-height: 1; color: rgba(46,107,94,.16); letter-spacing: -4px" aria-hidden="true">CAS</div>
+  <div style="position: relative; display: flex; align-items: center; gap: 10px; padding: 18px 20px 0">
+    <span style="width: 6px; height: 28px; background: {{accent}}; clip-path: polygon(40% 0, 100% 0, 60% 100%, 0 100%)"></span>
+    <div style="display: flex; flex-direction: column; gap: 2px">
+      <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 26px; font-weight: 900; font-style: italic; letter-spacing: .5px; line-height: 1">CASTELO FC</span>
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: #8C939D">2026.08.14 FRI · 리그 7위</span>
+    </div>
+  </div>
+  <div style="position: relative; display: flex; align-items: center; gap: 8px; margin: 26px 20px 0">
+    <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 3px; color: {{accent}}">NEXT MATCH</span>
+    <span style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(245,213,71,.5), transparent)"></span>
+    <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 1px; color: #C9CDD3">SAT 21:00</span>
+  </div>
+  <div style="position: relative; margin: 10px 20px 0; height: 108px; display: flex; filter: drop-shadow(0 14px 22px rgba(0,0,0,.55))">
+    <div style="flex: 1; background: #2E6B5E; clip-path: polygon(0 0, 100% 0, 88% 100%, 0 100%); display: flex; flex-direction: column; justify-content: center; padding-left: 16px; box-shadow: inset 0 1px 0 rgba(255,255,255,.18)">
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: rgba(243,235,210,.8)">HOME · 7위</span>
+      <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 50px; font-weight: 900; font-style: italic; color: #F3EBD2; line-height: .95">CAS</span>
+    </div>
+    <div style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 50px; height: 50px; background: #F2F3F5; color: #0A0B0D; clip-path: polygon(20% 0, 100% 0, 80% 100%, 0 100%); display: flex; align-items: center; justify-content: center; font-family: 'Big Shoulders Display', sans-serif; font-size: 22px; font-weight: 900; font-style: italic">VS</div>
+    <div style="flex: 1; background: #4A3F7A; clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%); display: flex; flex-direction: column; justify-content: center; align-items: flex-end; padding-right: 16px">
+      <span style="font-size: 11px; font-weight: 700; letter-spacing: 2px; color: rgba(247,217,206,.85)">AWAY · 3위</span>
+      <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 50px; font-weight: 900; font-style: italic; color: #F7D9CE; line-height: .95">RIB</span>
+    </div>
+  </div>
+  <div style="position: relative; margin: 12px 20px 0; display: flex; flex-direction: column; gap: 6px">
+    <div style="display: flex; height: 4px; gap: 3px"><span style="width: 42%; background: {{accent}}"></span><span style="width: 28%; background: #5A6068"></span><span style="width: 30%; background: #6E5AA8"></span></div>
+    <div style="display: flex; justify-content: space-between; font-family: 'Big Shoulders Display', sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 1px; color: #A7ADB5"><span>WIN 42</span><span>DRAW 28</span><span>LOSS 30</span></div>
+  </div>
+  <div style="position: relative; display: flex; align-items: center; gap: 8px; margin: 26px 20px 10px">
+    <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 15px; font-weight: 800; letter-spacing: 3px; color: {{accent}}">BREAKING</span>
+    <span style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(245,213,71,.5), transparent)"></span>
+    <span style="font-size: 11px; font-weight: 700; color: #8C939D">결정 필요 3</span>
+  </div>
+  <div style="position: relative; display: flex; flex-direction: column; gap: 6px; margin: 0 20px">
+    <button style="display: flex; align-items: center; height: 54px; border: 0; padding: 0; background: rgba(255,255,255,.04); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); color: #F2F3F5; font-family: inherit; text-align: left">
+      <span style="width: 78px; height: 54px; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box; background: #E5484D; clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%); font-family: 'Big Shoulders Display', sans-serif; font-size: 17px; font-weight: 900; font-style: italic; letter-spacing: .5px">INJURY</span>
+      <span style="flex: 1; display: flex; flex-direction: column; padding-left: 6px"><span style="font-size: 14px; font-weight: 900">선발 GK 로사스 부상</span><span style="font-size: 12px; color: #8C939D">대체 선수를 지정하세요</span></span>
+      <span style="width: 44px; display: flex; justify-content: center; color: #8C939D"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span>
+    </button>
+    <button style="display: flex; align-items: center; height: 54px; border: 0; padding: 0; background: rgba(255,255,255,.04); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); color: #F2F3F5; font-family: inherit; text-align: left">
+      <span style="width: 78px; height: 54px; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box; background: {{accent}}; color: #0A0B0D; clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%); font-family: 'Big Shoulders Display', sans-serif; font-size: 17px; font-weight: 900; font-style: italic; letter-spacing: .5px">OFFER</span>
+      <span style="flex: 1; display: flex; flex-direction: column; padding-left: 6px"><span style="font-size: 14px; font-weight: 900">이적 제안 2건</span><span style="font-size: 12px; color: #8C939D">응답 기한 2일</span></span>
+      <span style="width: 44px; display: flex; justify-content: center; color: #8C939D"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span>
+    </button>
+    <button style="display: flex; align-items: center; height: 54px; border: 0; padding: 0; background: rgba(255,255,255,.04); box-shadow: inset 0 1px 0 rgba(255,255,255,.06); color: #F2F3F5; font-family: inherit; text-align: left">
+      <span style="width: 78px; height: 54px; display: flex; align-items: center; padding-left: 12px; box-sizing: border-box; background: #E7E9EC; color: #0A0B0D; clip-path: polygon(0 0, 100% 0, 84% 100%, 0 100%); font-family: 'Big Shoulders Display', sans-serif; font-size: 17px; font-weight: 900; font-style: italic; letter-spacing: .5px">DEAL</span>
+      <span style="flex: 1; display: flex; flex-direction: column; padding-left: 6px"><span style="font-size: 14px; font-weight: 900">계약 만료 임박 3명</span><span style="font-size: 12px; color: #8C939D">6월 30일 만료</span></span>
+      <span style="width: 44px; display: flex; justify-content: center; color: #8C939D"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path d="M9 6l6 6-6 6"></path></svg></span>
+    </button>
+  </div>
+  <div style="position: relative; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); margin: 22px 20px 0; border-top: 1px solid rgba(255,255,255,.08); border-bottom: 1px solid rgba(255,255,255,.08)">
+    <div style="padding: 12px 0; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #8C939D">이사회 신뢰</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 34px; font-weight: 900; font-style: italic; line-height: 1">82<span style="font-size: 15px; color: #6FDCA6"> ▲3</span></span></div>
+    <div style="padding: 12px 0 12px 14px; display: flex; flex-direction: column; gap: 2px; border-left: 1px solid rgba(255,255,255,.08)"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #8C939D">이적 예산</span><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 34px; font-weight: 900; font-style: italic; line-height: 1">€38M</span></div>
+    <div style="padding: 12px 0 12px 14px; display: flex; flex-direction: column; gap: 4px; border-left: 1px solid rgba(255,255,255,.08)"><span style="font-size: 11px; font-weight: 700; letter-spacing: 1.5px; color: #8C939D">최근 5경기</span><span style="display: flex; gap: 3px; margin-top: 4px"><span style="width: 18px; height: 18px; background: #2F9E6E"></span><span style="width: 18px; height: 18px; background: #5A6068"></span><span style="width: 18px; height: 18px; background: #2F9E6E"></span><span style="width: 18px; height: 18px; background: #C2453F"></span><span style="width: 18px; height: 18px; background: #2F9E6E"></span></span><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 3px; color: #A7ADB5">W D W L W</span></div>
+  </div>
+  <div style="position: absolute; left: 20px; right: 20px; bottom: 26px; filter: drop-shadow(0 10px 20px rgba(245,213,71,.18))">
+    <button style="width: 100%; height: 56px; border: 0; background: {{accent}}; color: #0A0B0D; clip-path: polygon(3% 0, 100% 0, 97% 100%, 0 100%); display: flex; align-items: center; justify-content: space-between; padding: 0 26px; font-family: inherit">
+      <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 24px; font-weight: 900; font-style: italic; letter-spacing: 1px">CONTINUE</span>
+      <span style="font-size: 13px; font-weight: 900">경기일까지 1일 ›</span>
+    </button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#F5D547","options":["#F5D547","#46D6A3","#5AB8F5"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#F5D547' };
+  }
+}
+</script>
+</body>
+</html>

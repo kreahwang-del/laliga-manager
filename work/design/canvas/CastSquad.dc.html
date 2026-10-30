@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>B 스쿼드</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@600;800&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#FFD60A}a:hover{color:#FFE566}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #08090B; color: #F4F5F7; font-family: 'Noto Sans KR', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="display: flex; align-items: stretch; height: 52px; margin-top: 12px">
+    <div style="width: 10px; background: {{accent}}"></div>
+    <div style="flex: 1; display: flex; align-items: center; padding: 0 14px; background: #15171B"><span style="font-family: 'Saira Condensed', sans-serif; font-size: 24px; font-weight: 800; font-style: italic">SQUAD · 스쿼드</span></div>
+    <div style="display: flex; align-items: center; padding: 0 14px; background: #1F2227; font-family: 'Saira Condensed', sans-serif; font-size: 17px; font-weight: 800; font-style: italic">24명</div>
+  </div>
+  <div style="display: flex; gap: 6px; padding: 12px 16px 8px">
+    <button style="height: 40px; padding: 0 14px; border: 0; background: {{accent}}; color: #0A0A0A; font-size: 13px; font-weight: 900; font-family: inherit; transform: skewX(-8deg)">선발 XI</button>
+    <button style="height: 40px; padding: 0 14px; border: 0; background: #15171B; color: #C5CBD3; font-size: 13px; font-weight: 700; font-family: inherit; transform: skewX(-8deg)">교체</button>
+    <button style="height: 40px; padding: 0 14px; border: 0; background: #15171B; color: #C5CBD3; font-size: 13px; font-weight: 700; font-family: inherit; transform: skewX(-8deg)">유스</button>
+    <button style="height: 40px; padding: 0 14px; border: 0; background: #15171B; color: #C5CBD3; font-size: 13px; font-weight: 700; font-family: inherit; transform: skewX(-8deg)">임대</button>
+  </div>
+  <div style="display: flex; justify-content: space-between; padding: 6px 16px; margin: 0 16px; background: #1F2227; font-family: 'Saira Condensed', sans-serif; font-size: 13px; font-weight: 800; font-style: italic; letter-spacing: 1px; color: #A9AFB8"><span>NO · 선수</span><span>체력 · 평점 · OVR</span></div>
+  <div style="display: flex; flex-direction: column; margin: 0 16px">
+    <sc-for list="{{players}}" as="p" hint-placeholder-count="9">
+      <button style="display: flex; align-items: stretch; min-height: 54px; border: 0; border-bottom: 1px solid #1B1D21; padding: 0; background: #111316; color: #F4F5F7; font-family: inherit; text-align: left">
+        <span style="width: 44px; display: flex; align-items: center; justify-content: center; background: #2E6B5E; color: #F3EBD2; font-family: 'Saira Condensed', sans-serif; font-size: 22px; font-weight: 800; font-style: italic">{{p.n}}</span>
+        <span style="width: 40px; display: flex; align-items: center; justify-content: center; font-family: 'Saira Condensed', sans-serif; font-size: 15px; font-weight: 800; font-style: italic; color: #A9AFB8">{{p.pos}}</span>
+        <span style="flex: 1; display: flex; flex-direction: column; justify-content: center"><span style="font-size: 14px; font-weight: 900">{{p.name}}</span><span style="font-size: 12px; color: {{p.noteC}}">{{p.note}}</span></span>
+        <span style="width: 46px; display: flex; align-items: center; justify-content: center"><span style="width: 30px; height: 6px; background: #2A2D33"><span style="display: block; width: {{p.fit}}%; height: 6px; background: {{p.fitC}}"></span></span></span>
+        <span style="width: 38px; display: flex; align-items: center; justify-content: center; font-family: 'Saira Condensed', sans-serif; font-size: 17px; font-weight: 800; font-style: italic">{{p.r}}</span>
+        <span style="width: 46px; display: flex; align-items: center; justify-content: center; background: {{p.ovrBg}}; color: {{p.ovrC}}; font-family: 'Saira Condensed', sans-serif; font-size: 24px; font-weight: 800; font-style: italic">{{p.ovr}}</span>
+      </button>
+    </sc-for>
+  </div>
+  <div style="position: absolute; left: 16px; right: 16px; bottom: 24px; display: flex; gap: 8px">
+    <button style="flex: 1; height: 52px; border: 0; background: #15171B; color: #F4F5F7; font-size: 14px; font-weight: 700; font-family: inherit">자동 선발</button>
+    <button style="flex: 1; height: 52px; border: 0; background: {{accent}}; color: #0A0A0A; font-family: 'Saira Condensed', sans-serif; font-size: 20px; font-weight: 800; font-style: italic; transform: skewX(-8deg)">TACTICS ›</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#FFD60A","options":["#FFD60A","#3DDC97","#5AB0F0"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const raw = [
+      [1, 'GK', '다니엘 로사스', '컨디션 좋음', 96, '7.2', 78],
+      [2, 'RB', '토마스 페냐', '최근 3경기 선발', 88, '6.8', 74],
+      [4, 'CB', '마르코 비달레', '주장', 92, '7.4', 81],
+      [5, 'CB', '이반 코르테스', '경고 누적 주의', 85, '6.9', 76],
+      [3, 'LB', '안드레스 몰리나', '부상 · 2주', 0, '-', 73],
+      [6, 'DM', '파블로 수아레스', '컨디션 보통', 79, '7.0', 77],
+      [8, 'CM', '세르히오 몬테로', '체력 회복 중', 61, '6.6', 75],
+      [10, 'AM', '니코 피에리', '폼 상승', 90, '7.6', 80],
+      [9, 'ST', '루이스 오르테가', '시즌 7골', 74, '8.1', 84]
+    ];
+    const players = raw.map(([n, pos, name, note, fit, r, ovr]) => ({
+      n, pos, name, note, fit, r, ovr,
+      noteC: fit === 0 ? '#F79A8E' : '#A9AFB8',
+      fitC: fit >= 80 ? '#7EE3B0' : fit >= 60 ? '#FFD60A' : '#F79A8E',
+      ovrBg: ovr >= 80 ? '#FFD60A' : '#24272C',
+      ovrC: ovr >= 80 ? '#0A0A0A' : '#F4F5F7'
+    }));
+    return { accent: this.props.accent ?? '#FFD60A', players };
+  }
+}
+</script>
+</body>
+</html>

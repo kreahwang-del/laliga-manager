@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>B+ 리포트 정교화</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&amp;family=Noto+Sans+KR:wght@400;500;700;900&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#F5D547}a:hover{color:#FFE680}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background-color: #0A0B0D; background-image: repeating-linear-gradient(135deg, rgba(255,255,255,.022) 0 1px, transparent 1px 10px); color: #F2F3F5; font-family: 'Noto Sans KR', sans-serif; display: flex; flex-direction: column; position: relative; overflow: hidden">
+  <div style="position: relative; height: 196px; overflow: hidden">
+    <div style="position: absolute; inset: 0; background: #2E6B5E; clip-path: polygon(0 0, 62% 0, 46% 100%, 0 100%)"></div>
+    <div style="position: absolute; inset: 0; background: #4A3F7A; clip-path: polygon(62% 0, 100% 0, 100% 100%, 46% 100%)"></div>
+    <div style="position: absolute; inset: 0; background: linear-gradient(180deg, rgba(10,11,13,0) 40%, #0A0B0D)"></div>
+    <div style="position: absolute; left: 20px; top: 18px; display: flex; align-items: center; gap: 8px"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 14px; font-weight: 800; letter-spacing: 3px; color: #0A0B0D; background: {{accent}}; padding: 3px 10px; clip-path: polygon(6% 0, 100% 0, 94% 100%, 0 100%)">FULL TIME</span><span style="font-size: 12px; font-weight: 700; color: rgba(255,255,255,.85)">리그 1R · 카스텔로 홈</span></div>
+    <div style="position: absolute; left: 20px; right: 20px; top: 52px; display: flex; align-items: center; justify-content: space-between">
+      <div style="display: flex; flex-direction: column"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 30px; font-weight: 900; font-style: italic; color: #F3EBD2; line-height: 1">CAS</span><span style="font-size: 11px; color: rgba(243,235,210,.85)">오르테가 58' 74'</span></div>
+      <span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 96px; font-weight: 900; font-style: italic; line-height: .9; letter-spacing: -2px; text-shadow: 0 8px 24px rgba(0,0,0,.5)">2–1</span>
+      <div style="display: flex; flex-direction: column; align-items: flex-end"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 30px; font-weight: 900; font-style: italic; color: #F7D9CE; line-height: 1">RIB</span><span style="font-size: 11px; color: rgba(247,217,206,.85)">바스케스 39'</span></div>
+    </div>
+  </div>
+  <div style="display: flex; align-items: center; margin: 4px 20px 0; height: 72px; background: rgba(255,255,255,.04); box-shadow: inset 0 1px 0 rgba(255,255,255,.06)">
+    <div style="position: relative; width: 72px; height: 72px; display: flex; align-items: center; justify-content: center">
+      <svg width="58" height="58" viewBox="0 0 58 58" role="img" aria-label="평점 8.9"><circle cx="29" cy="29" r="25" fill="none" stroke="rgba(255,255,255,.1)" stroke-width="4"></circle><circle cx="29" cy="29" r="25" fill="none" stroke="{{accent}}" stroke-width="4" stroke-dasharray="140 157" transform="rotate(-90 29 29)"></circle></svg>
+      <span style="position: absolute; font-family: 'Big Shoulders Display', sans-serif; font-size: 22px; font-weight: 900">8.9</span>
+    </div>
+    <div style="flex: 1; display: flex; flex-direction: column"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 12px; font-weight: 800; letter-spacing: 3px; color: {{accent}}">PLAYER OF THE MATCH</span><span style="font-size: 16px; font-weight: 900">루이스 오르테가</span><span style="font-size: 12px; color: #8C939D">2골 · 슈팅 5 · xG 1.12</span></div>
+  </div>
+  <div style="margin: 18px 20px 0">
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 3px; color: {{accent}}">xG FLOW</span><span style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(245,213,71,.5), transparent)"></span><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 14px; font-weight: 800"><span style="color: {{accent}}">1.84</span> · <span style="color: #A99BE6">0.92</span></span></div>
+    <svg width="350" height="84" viewBox="0 0 350 84" role="img" aria-label="경기 흐름 xG 누적 그래프">
+      <line x1="0" y1="83" x2="350" y2="83" stroke="rgba(255,255,255,.15)"></line>
+      <line x1="175" y1="0" x2="175" y2="84" stroke="rgba(255,255,255,.08)" stroke-dasharray="3 4"></line>
+      <polyline points="0,83 40,83 40,76 96,76 96,70 150,70 150,62 200,62 200,48 226,48 226,30 262,30 262,26 290,26 290,12 350,12" fill="none" stroke="{{accent}}" stroke-width="2.5"></polyline>
+      <polyline points="0,83 70,83 70,72 128,72 128,58 236,58 236,52 310,52 310,46 350,46" fill="none" stroke="#A99BE6" stroke-width="2.5"></polyline>
+      <circle cx="226" cy="30" r="4" fill="{{accent}}"></circle><circle cx="290" cy="12" r="4" fill="{{accent}}"></circle><circle cx="128" cy="58" r="4" fill="#A99BE6"></circle>
+    </svg>
+  </div>
+  <div style="margin: 16px 20px 0">
+    <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 8px"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 3px; color: {{accent}}">MANAGER CALLS</span><span style="flex: 1; height: 1px; background: linear-gradient(90deg, rgba(245,213,71,.5), transparent)"></span><span style="font-size: 11px; font-weight: 700; color: #8C939D">좋음 2 · 무난 1</span></div>
+    <div style="display: flex; flex-direction: column; border-top: 1px solid rgba(255,255,255,.08)">
+      <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 56px; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.08)"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 18px; font-weight: 900; color: #A7ADB5">29'</span><span style="display: flex; flex-direction: column"><span style="font-size: 13px; font-weight: 900">코너킥 · 니어포스트</span><span style="font-size: 12px; color: #8C939D">슈팅 없음</span></span><span style="text-align: center; font-size: 12px; font-weight: 900; color: #0A0B0D; background: #6FDCA6; padding: 4px 0; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%)">좋음</span></div>
+      <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 56px; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.08)"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 18px; font-weight: 900; color: #A7ADB5">57'</span><span style="display: flex; flex-direction: column"><span style="font-size: 13px; font-weight: 900">박스 안 · 패스·컷백</span><span style="font-size: 12px; color: {{accent}}">골로 연결 · 오르테가</span></span><span style="text-align: center; font-size: 12px; font-weight: 900; color: #0A0B0D; background: #6FDCA6; padding: 4px 0; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%)">좋음</span></div>
+      <div style="display: grid; grid-template-columns: 40px minmax(0, 1fr) 56px; align-items: center; gap: 8px; padding: 9px 0; border-bottom: 1px solid rgba(255,255,255,.08)"><span style="font-family: 'Big Shoulders Display', sans-serif; font-size: 18px; font-weight: 900; color: #A7ADB5">71'</span><span style="display: flex; flex-direction: column"><span style="font-size: 13px; font-weight: 900">수비 1대1 · 태클</span><span style="font-size: 12px; color: #8C939D">비김 — 상대 패스</span></span><span style="text-align: center; font-size: 12px; font-weight: 900; color: #F2F3F5; background: #3A3E45; padding: 4px 0; clip-path: polygon(10% 0, 100% 0, 90% 100%, 0 100%)">무난</span></div>
+    </div>
+  </div>
+  <div style="position: absolute; left: 20px; right: 20px; bottom: 26px; display: flex; gap: 8px">
+    <button style="flex: 1; height: 56px; border: 0; background: rgba(255,255,255,.06); box-shadow: inset 0 1px 0 rgba(255,255,255,.08); color: #F2F3F5; font-size: 14px; font-weight: 900; font-family: inherit">2D 복기</button>
+    <button style="flex: 2; height: 56px; border: 0; background: {{accent}}; color: #0A0B0D; clip-path: polygon(5% 0, 100% 0, 95% 100%, 0 100%); font-family: 'Big Shoulders Display', sans-serif; font-size: 24px; font-weight: 900; font-style: italic; letter-spacing: 1px">CONTINUE</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"accent":{"editor":"color","default":"#F5D547","options":["#F5D547","#46D6A3","#5AB8F5"]},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return { accent: this.props.accent ?? '#F5D547' };
+  }
+}
+</script>
+</body>
+</html>

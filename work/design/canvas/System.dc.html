@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<title>디자인 시스템</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&amp;family=IBM+Plex+Sans+KR:wght@400;500;700&amp;display=swap">
+<style>
+body{margin:0}
+a{color:#F2A93B}a:hover{color:#FFC46B}
+</style>
+</helmet>
+<div style="width: 880px; height: 1180px; box-sizing: border-box; padding: 48px; background: #0E1419; color: #E8EEF2; font-family: 'IBM Plex Sans KR', sans-serif; display: flex; flex-direction: column; gap: 36px">
+  <div>
+    <h1 style="margin: 0; font-size: 32px; font-weight: 700">월드 사커매니저 · 디자인 시스템 v0</h1>
+    <p style="margin: 8px 0 0; font-size: 15px; color: #9AAAB6">다크 기본 · 앰버 강조 1색 · 숫자는 Barlow Condensed, 글은 IBM Plex Sans KR</p>
+  </div>
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-size: 17px; font-weight: 700">색</h2>
+    <div style="display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px">
+      <sc-for list="{{colors}}" as="c" hint-placeholder-count="10">
+        <div style="border-radius: 12px; border: 1px solid #2A3A47; overflow: hidden; background: #17212A">
+          <div style="height: 56px; background: {{c.hex}}"></div>
+          <div style="padding: 8px 10px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 13px; font-weight: 700">{{c.name}}</span>
+            <span style="font-size: 12px; color: #9AAAB6">{{c.hex}} · {{c.role}}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+    <p style="margin: 0; font-size: 13px; color: #9AAAB6">글자색은 배경 대비 4.5:1 이상만 사용(보조 글자 #9AAAB6 ≈ 7.2:1). 좋음·나쁨은 색과 함께 아이콘·문구로도 구분.</p>
+  </section>
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-size: 17px; font-weight: 700">글자 크기 6단 (+ 숫자 강조)</h2>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 32px">
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">32</span><span style="font-size: 32px; font-weight: 700">화면 제목</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">52 숫자</span><span style="font-family: 'Barlow Condensed', sans-serif; font-size: 52px; font-weight: 700; line-height: 1">2 : 1</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">22</span><span style="font-size: 22px; font-weight: 700">섹션 제목</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">17</span><span style="font-size: 17px; font-weight: 700">카드 제목 · 버튼</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">15</span><span style="font-size: 15px">본문 · 목록 행</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">13</span><span style="font-size: 13px">보조 본문 · 칩</span></div>
+      <div style="display: flex; align-items: baseline; gap: 16px; padding: 8px 0; border-bottom: 1px solid #22303B"><span style="width: 56px; font-size: 12px; color: #9AAAB6">12</span><span style="font-size: 12px; color: #9AAAB6">라벨 · 최소 크기</span></div>
+    </div>
+  </section>
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-size: 17px; font-weight: 700">간격 · 모서리</h2>
+    <div style="display: flex; align-items: flex-end; gap: 20px">
+      <sc-for list="{{spaces}}" as="s" hint-placeholder-count="6">
+        <div style="display: flex; flex-direction: column; align-items: center; gap: 6px"><span style="width: {{s.v}}px; height: {{s.v}}px; background: #F2A93B; border-radius: 2px"></span><span style="font-size: 12px; color: #9AAAB6">{{s.v}}</span></div>
+      </sc-for>
+      <span style="width: 32px"></span>
+      <div style="width: 88px; height: 56px; border-radius: 10px; border: 1px solid #3A4C5A; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #9AAAB6">카드 10</div>
+      <div style="width: 88px; height: 56px; border-radius: 16px; border: 1px solid #3A4C5A; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #9AAAB6">시트 16</div>
+      <div style="width: 88px; height: 56px; border-radius: 14px; border: 1px solid #3A4C5A; display: flex; align-items: center; justify-content: center; font-size: 12px; color: #9AAAB6">버튼 14</div>
+    </div>
+  </section>
+  <section style="display: flex; flex-direction: column; gap: 12px">
+    <h2 style="margin: 0; font-size: 17px; font-weight: 700">공통 부품 (터치 영역 44px 이상)</h2>
+    <div style="display: flex; flex-wrap: wrap; gap: 12px; align-items: center">
+      <button style="height: 52px; padding: 0 28px; border-radius: 14px; border: 0; background: #F2A93B; color: #1A1206; font-size: 17px; font-weight: 700; font-family: inherit">주 버튼</button>
+      <button style="height: 52px; padding: 0 28px; border-radius: 14px; border: 1px solid #2A3A47; background: #17212A; color: #E8EEF2; font-size: 15px; font-family: inherit">보조 버튼</button>
+      <button style="height: 44px; padding: 0 16px; border-radius: 22px; border: 0; background: #F2A93B; color: #1A1206; font-size: 13px; font-weight: 700; font-family: inherit">칩 선택</button>
+      <button style="height: 44px; padding: 0 16px; border-radius: 22px; border: 1px solid #2A3A47; background: transparent; color: #C9D4DC; font-size: 13px; font-family: inherit">칩</button>
+      <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 4px; padding: 4px; width: 260px; border-radius: 12px; background: #17212A"><button style="height: 40px; border-radius: 9px; border: 0; background: #2A3A47; color: #E8EEF2; font-size: 13px; font-weight: 700; font-family: inherit">지시</button><button style="height: 40px; border-radius: 9px; border: 0; background: transparent; color: #9AAAB6; font-size: 13px; font-family: inherit">전술</button><button style="height: 40px; border-radius: 9px; border: 0; background: transparent; color: #9AAAB6; font-size: 13px; font-family: inherit">교체</button></div>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px">
+      <div style="border-radius: 12px; background: #17212A; border: 1px solid #2A3A47; overflow: hidden">
+        <div style="display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 14px; border-bottom: 1px solid #22303B">
+          <span style="padding: 3px 8px; border-radius: 6px; background: #15303D; color: #7CC4F2; font-size: 12px; font-weight: 700">CB</span>
+          <div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">마르코 비달레</span><span style="font-size: 12px; color: #9AAAB6">26세 · 체력 92% · 컨디션 좋음</span></div>
+          <span style="width: 44px; height: 36px; border-radius: 8px; background: #173A2B; color: #6FDCA6; font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center">81</span>
+        </div>
+        <div style="display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 14px">
+          <span style="padding: 3px 8px; border-radius: 6px; background: #3A2F14; color: #F2C46B; font-size: 12px; font-weight: 700">ST</span>
+          <div style="flex: 1; display: flex; flex-direction: column"><span style="font-size: 15px; font-weight: 700">루이스 오르테가</span><span style="font-size: 12px; color: #9AAAB6">29세 · 체력 64% · 부상 위험</span></div>
+          <span style="width: 44px; height: 36px; border-radius: 8px; background: #1F2C37; color: #E8EEF2; font-family: 'Barlow Condensed', sans-serif; font-size: 22px; font-weight: 700; display: flex; align-items: center; justify-content: center">76</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <span style="font-size: 13px; color: #9AAAB6">가명 엠블럼 틀 (외형 × 상징 × 2색 자동 조합 · 실제 구단 색 조합 금지 목록 검사)</span>
+        <div style="display: flex; gap: 14px">
+          <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="방패형"><path d="M24 2 L44 9 V28 C44 42 34 50 24 54 C14 50 4 42 4 28 V9 Z" fill="#2E6B5E" stroke="#E7D7A8" stroke-width="2"></path><path d="M14 30 L24 16 L34 30 Z" fill="#E7D7A8"></path></svg>
+          <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="원형"><circle cx="24" cy="28" r="22" fill="#4A3F7A" stroke="#F0B7A4" stroke-width="2"></circle><path d="M12 34 C18 22 30 22 36 34" fill="none" stroke="#F0B7A4" stroke-width="3"></path></svg>
+          <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="깃발형"><path d="M6 6 H42 V30 L24 52 L6 30 Z" fill="#1E4E7A" stroke="#D8E3EA" stroke-width="2"></path><path d="M14 14 L34 34 M34 14 L14 34" stroke="#D8E3EA" stroke-width="3"></path></svg>
+          <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="육각형"><path d="M24 2 L44 14 V40 L24 54 L4 40 V14 Z" fill="#7A2E3A" stroke="#F3E3C3" stroke-width="2"></path><path d="M30 18 A12 12 0 1 0 30 38 A9 9 0 1 1 30 18 Z" fill="#F3E3C3"></path></svg>
+          <svg width="48" height="56" viewBox="0 0 48 56" role="img" aria-label="왕관형"><path d="M6 12 L16 22 L24 8 L32 22 L42 12 V44 H6 Z" fill="#5E5A2A" stroke="#E9E4D0" stroke-width="2"></path><circle cx="24" cy="32" r="6" fill="#E9E4D0"></circle></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":880,"height":1180}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const colors = [
+      { name: 'bg', hex: '#0E1419', role: '바탕' },
+      { name: 'surf', hex: '#17212A', role: '카드' },
+      { name: 'surf2', hex: '#1F2C37', role: '카드 안 칸' },
+      { name: 'line', hex: '#2A3A47', role: '테두리' },
+      { name: 'text', hex: '#E8EEF2', role: '본문' },
+      { name: 'muted', hex: '#9AAAB6', role: '보조 글자' },
+      { name: 'accent', hex: '#F2A93B', role: '강조·주 버튼' },
+      { name: 'good', hex: '#6FDCA6', role: '좋음' },
+      { name: 'bad', hex: '#F79A8E', role: '나쁨·부상' },
+      { name: 'info', hex: '#7CC4F2', role: '정보' }
+    ];
+    const spaces = [4, 8, 12, 16, 24, 32].map((v) => ({ v }));
+    return { colors, spaces };
+  }
+}
+</script>
+</body>
+</html>
