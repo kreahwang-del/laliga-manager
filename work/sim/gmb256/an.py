@@ -9,10 +9,10 @@ def ld(p):
         if l.strip():
             o=json.loads(l);d[o['k']]=o
     return d
-P={'none':ld(Q%'none'),'g_all':ld(Q%'g_all'),'g_long':ld(Q%'g_long'),'g_air(현행)':ld(Q%'g_air'),'airA(가)':ld(B%'airA'),'airAB(가+나)':ld(B%'airABk05')}
+P={'none':ld(Q%'none'),'g_all':ld(Q%'g_all'),'g_long':ld(Q%'g_long'),'g_air(현행)':ld(Q%'g_air'),'airA(가)':ld(B%'airA'),'airAB(가+나)':ld(B%'airABk05'),'airC(QA안)':ld(B%'airC')}
 K=sorted(set.intersection(*[set(v) for v in P.values()]))
 bad=[k for k in K if any(P[p][k]['r']!=P['none'][k]['r'] or P[p][k]['d']!=P['none'][k]['d'] for p in P)]
-print('공통 경기',len(K),'80분 상태 불일치',len(bad))
+print('공통 경기',len(K),'80분 상태 불일치',len(bad),'→ 제외');K=[k for k in K if k not in set(bad)]
 def pts(o):
     f=o['gf']-o['ga']+(-o['d'])  # 최종 득실(우리 기준): 80분 -d 에서 출발
     return 3 if f>0 else 1 if f==0 else 0
@@ -32,7 +32,7 @@ for lo,hi,nm in ((-99,.5,'공중볼 열세·대등 ad<0.5'),(.5,1.5,'0.5≤ad<1.
     rep([k for k in K if lo<=ad(k)<hi],nm)
 # 상대 비교: 공중볼 변형 vs 전원 공격(우월안 검사)
 print('\n[우월안 검사: 공중볼 변형 − 전원 공격]')
-for p in ('g_air(현행)','airA(가)','airAB(가+나)'):
+for p in ('g_air(현행)','airA(가)','airAB(가+나)','airC(QA안)'):
     out=[]
     for name,f in (('xG',lambda o:o['xf']),('실점xG',lambda o:o['xa'])):
         m,se=st([f(P[p][k])-f(P['g_all'][k]) for k in K]);out.append(f'{name} {m:+.3f}±{se:.3f}')
