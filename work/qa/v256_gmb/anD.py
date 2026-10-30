@@ -2,7 +2,7 @@
 import json,sys,math,os,random
 from collections import Counter
 D=os.path.dirname(os.path.abspath(__file__))+'/outd/'
-SEEDS=[5309,6271];PO=['none','g_all','g_air','g_long']
+SEEDS=[int(x) for x in (sys.argv[1] if len(sys.argv)>1 else '5309,6271').split(',')];PO=['none','g_all','g_air','g_long']
 def load(f):
     R={}
     if os.path.exists(f):
