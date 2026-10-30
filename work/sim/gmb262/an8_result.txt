@@ -1,0 +1,27 @@
+유효 1200
+[전체]
+  전체                     n=1200 | g_all +0.036±0.012 | g_air +0.051±0.011 | g_long +0.027±0.010 | 1위:g_air 동률:g_all,g_air,g_long
+  g_all: 기회 +0.070±0.009 실점 +0.035±0.007 승점 +0.134±0.035
+  g_air: 기회 +0.062±0.009 실점 +0.011±0.007 승점 +0.159±0.034
+  g_long: 기회 +0.021±0.008 실점 -0.006±0.006 승점 +0.071±0.033
+[공중볼 ad]
+  ad 하                   n= 411 | g_all +0.019±0.020 | g_air +0.008±0.019 | g_long +0.001±0.018 | 1위:g_all 동률:g_all,g_air,g_long,none
+  ad 중                   n= 366 | g_all +0.036±0.021 | g_air +0.065±0.020 | g_long +0.058±0.018 | 1위:g_air 동률:g_all,g_air,g_long
+  ad 상                   n= 423 | g_all +0.051±0.020 | g_air +0.080±0.019 | g_long +0.025±0.017 | 1위:g_air 동률:g_all,g_air
+[속도 op-dp]
+  op-dp 하(상대 느림)         n= 420 | g_all +0.045±0.020 | g_air +0.067±0.019 | g_long +0.018±0.018 | 1위:g_air 동률:g_all,g_air,g_long
+  op-dp 중                n= 423 | g_all +0.041±0.019 | g_air +0.028±0.020 | g_long +0.016±0.016 | 1위:g_all 동률:g_all,g_air,g_long
+  op-dp 상(상대 빠름)         n= 357 | g_all +0.019±0.022 | g_air +0.058±0.019 | g_long +0.050±0.018 | 1위:g_air 동률:g_all,g_air,g_long
+[슈팅 ls]
+  ls 하                   n= 339 | g_all +0.038±0.021 | g_air +0.044±0.019 | g_long +0.046±0.018 | 1위:g_long 동률:g_all,g_air,g_long
+  ls 중                   n= 443 | g_all +0.042±0.019 | g_air +0.049±0.018 | g_long +0.017±0.016 | 1위:g_air 동률:g_all,g_air,g_long
+  ls 상                   n= 418 | g_all +0.028±0.021 | g_air +0.058±0.021 | g_long +0.021±0.018 | 1위:g_air 동률:g_all,g_air,g_long
+[상대 잠그기]
+  잠금                     n=1127 | g_all +0.034±0.012 | g_air +0.048±0.011 | g_long +0.024±0.010 | 1위:g_air 동률:g_all,g_air,g_long
+  안 잠금                   n=  73 | g_all +0.056±0.055 | g_air +0.084±0.056 | g_long +0.063±0.048 | 1위:g_air 동률:g_all,g_air,g_long,none
+
+[자기 상황 판정]
+  g_air @ ad 상: n=423 1위/동률 (1위 g_air)
+  g_long @ ls 상: n=418 1위/동률 (1위 g_air)
+  g_all @ 잠금: n=1127 1위/동률 (1위 g_air)
+  g_all @ op-dp 하(상대 느림): n=420 1위/동률 (1위 g_air)
