@@ -41,15 +41,18 @@ function evalOne(c,st){const ex=S.exp&&S.exp[c];if(!ex)return;const r=recOf(c,st
   let s=.6*(ppg-e)*n/(n+6)+.4*(p5-e)*.7;
   if(pos>=18&&ex.tp>=17)s-=.12;if(pos>ex.tp+4)s-=.08;if(pos<=ex.tp)s+=.05;
   const big=CLUBS[c].rep>=70?1.4:1;
-  const T=Math.max(0,Math.min(100,62+CK.k*s*(s<0?big:1)));
+  const lgF=s<0?(SACK_LG[(typeof hl==='function'&&hl())||'ES']??1):1;const T=Math.max(0,Math.min(100,62+CK.k*s*(s<0?big*lgF:1)));
   st.trust=Math.max(0,Math.min(100,st.trust+(T-st.trust)*CK.rate));
   return n}
-const CK={k:135,rate:.22,sack:14,warn1:38,warn2:24};  // k: 실제 라리가 시즌 중 경질 연 7~12건(2015~25 평균 9.7)에 맞춤
-function careerWeekly(){if(!S.mg||!S.exp)return;const rd=(typeof fxOf==='function'?fxOf(1):S.fixtures).filter(f=>f.res).length/10;
+const CK={k:135,rate:.22,sack:14,warn1:38,warn2:24};
+/* v262 리그별 경질 성향(사용자 지적: MLS 9라운드에 AI 감독 6명 경질). 실제 시즌 중 경질 MLS 약 6명/30팀(2024 6, 2025 6~8; mlssoccer.com coach carousel) = 라리가(9.7/20팀)의 약 0.4배 → 몬테카를로(work/sim/sack)로 실제 세이브 결과 재생(replay.py)에서 0.65배가 9라운드 경질 2명(이전 규칙 6명, 실제 기대 약 1.6명), 시즌 약 5명. 강등 없는 리그. 나머지 리그는 라리가 기준 유지 */
+const SACK_LG={US:.65};const SACK_MIN=8;/* 최소 지휘 경기(실제 초반 경질은 대개 8라운드 이후) */
+function sackRd(){const n=Math.max(2,LIGA.length),per=n/2,tot=2*(n-1);const done=(typeof fxOf==='function'?fxOf(1):S.fixtures).filter(f=>f.res).length/per;return done<=tot-3}/* v262 버그 수정: 라운드 수를 20팀(10경기/라운드·38라운드) 고정으로 계산하던 것 → 리그 팀 수 기준(30팀 MLS는 23라운드 이후 경질이 멈췄음) */  // k: 실제 라리가 시즌 중 경질 연 7~12건(2015~25 평균 9.7)에 맞춤
+function careerWeekly(){if(!S.mg||!S.exp)return;const okRd=sackRd();
   LIGA.forEach(c=>{if(c===S.club)return;const m=mgrOf(c);if(!m)return;const n=evalOne(c,m);
-    if(n>=6&&m.trust<CK.sack&&rd<=35)sackAI(m,'성적 부진')});
+    if(n>=SACK_MIN&&m.trust<CK.sack&&okRd)sackAI(m,'성적 부진')});
   if(!unemp()){const n=evalOne(S.club,S.me);const t=S.me.trust,w0=S.me.warn;
-    if(n>=6&&t<CK.sack&&rd<=35){sackMe('성적 부진으로 경질');return}
+    if(n>=SACK_MIN&&t<CK.sack&&okRd){sackMe('성적 부진으로 경질');return}
     const w=t<CK.warn2?2:t<CK.warn1?1:0;
     if(w>w0){inbox('board','',w===2?'이사회 최후통첩':'이사회 경고',w===2?`성적이 개선되지 않으면 경질될 수 있습니다. 신뢰도 ${Math.round(t)} · 목표 ${S.exp[S.club].lb} · 현재 ${posOf(S.club)}위`:`이사회가 최근 성적을 우려하고 있습니다. 신뢰도 ${Math.round(t)} · 목표 ${S.exp[S.club].lb} · 현재 ${posOf(S.club)}위`)}
     if(w<w0&&w===0)inbox('eval','','이사회 신뢰 회복','최근 성적으로 이사회의 우려가 해소됐습니다.');
@@ -185,7 +188,7 @@ function careerView(){const me=S.me,emp=!unemp();
     <div style="margin-top:10px"><b>평판 ${me.rep}</b> <span class="note">${tierOf(me.rep)}</span>${tbar(me.rep,'var(--c2)')}</div>
     ${emp?`<div style="margin-top:10px"><b>이사회 신뢰도 ${Math.round(me.trust)}</b> <span class="note">${me.warn===2?'최후통첩':me.warn===1?'경고':'안정'} · 목표 ${S.exp[S.club].lb}</span>${tbar(me.trust,trustCol(me.trust))}</div>
     <p class="note" style="margin-top:8px">이번 부임 리그 ${cur.P}경기 ${cur.W}승 ${cur.D}무 ${cur.L}패</p>`:''}
-    <p class="note" style="margin-top:8px;line-height:1.55">신뢰도는 매주 전력 순위 기대 승점 대비 성적(누적 60% + 최근 5경기 40%)으로 움직입니다. 38 미만 경고, 24 미만 최후통첩, 14 미만(6경기 이상 지휘) 경질. 빅클럽(평판 70+)은 부진에 1.4배 민감합니다.</p>
+    <p class="note" style="margin-top:8px;line-height:1.55">신뢰도는 매주 전력 순위 기대 승점 대비 성적(누적 60% + 최근 5경기 40%)으로 움직입니다. 38 미만 경고, 24 미만 최후통첩, 14 미만(8경기 이상 지휘) 경질.${(SACK_LG[(typeof hl==='function'&&hl())||'ES']??1)<1?' 이 리그는 강등이 없어 경질이 드문 편이라 부진에 덜 민감합니다.':''} 빅클럽(평판 70+)은 부진에 1.4배 민감합니다.</p>
     ${emp?`<button class="btn sm ghost" data-resign="1" style="margin-top:6px">사임</button>`:''}</section>
   <h2>${esc((typeof LGN!=='undefined'&&typeof hl==='function'&&LGN[hl()])||'라리가')} 공석 ${S.vac.length}곳</h2><div class="card list">${vac||'<div class="li"><span class="note">지금은 공석이 없습니다.</span></div>'}</div>
   <h2>경력 <span class="note" style="font-size:12px;font-weight:400">리그 승·무·패</span></h2><div class="card list">${hist.length?hist.map(h=>`<div class="li"><span class="nm">${crest(h.c)}<span><b>${esc(CLUBS[h.c].name)}</b><span>${fmtD(h.from)} ~ ${fmtD(h.to)} · ${h.why}</span></span></span>${histRec(h)}</div>`).join(''):'<div class="li"><span class="note">첫 부임 중</span></div>'}</div>

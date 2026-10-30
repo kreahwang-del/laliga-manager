@@ -16,7 +16,7 @@
   function bpMatchInit(){const d=document.getElementById('match');if(!d||!M||!M.fx)return;
     const h=bpCol(M.fx.h)[0];let a=bpCol(M.fx.a)[0];if(bpNear(h,a)){const a2=bpCol(M.fx.a)[1];a=a2&&!bpNear(h,a2)?a2:'#3A3E45'}d.classList.add('bp');
     /* 팀 이름을 span으로 감싸 2줄 말줄임·순위 줄 배치(글자는 그대로) */d.querySelectorAll('.board>.team').forEach(t=>{[...t.childNodes].forEach(n=>{if(n.nodeType===3&&n.textContent.trim()){const sp=document.createElement('span');sp.className='bpnm';const full=n.textContent.trim();const dn=bpDisp(full);sp.textContent=dn;if(dn!==full)sp.title=full;t.replaceChild(sp,n)}})});d.style.setProperty('--hc',h);d.style.setProperty('--ac',a);d.style.setProperty('--hink',bpInk(h));d.style.setProperty('--aink',bpInk(a));
-    const b=d.querySelector('.board');if(b&&!d.querySelector('.bpmom'))b.insertAdjacentHTML('afterend',`<div class="bpmom" aria-label="최근 10분 흐름"><span class="l">흐름</span><div class="bar2"><i style="width:50%"></i></div><span class="r">최근 10분</span></div>`);
+    const b=d.querySelector('.board');if(b&&!d.querySelector('.bpmom'))b.insertAdjacentHTML('afterend',`<div class="bpmom" aria-label="최근 10분 흐름(왼쪽 ${esc(CLUBS[M.fx.h].short||'')} · 오른쪽 ${esc(CLUBS[M.fx.a].short||'')})"><span class="l">흐름</span><span class="tm" style="color:var(--hc2,var(--text))">${esc(CLUBS[M.fx.h].short||'')}</span><div class="bar2"><i style="width:50%"></i></div><span class="tm">${esc(CLUBS[M.fx.a].short||'')}</span><span class="r">최근 10분</span></div>`/* v262 사용성 점검: 막대 양끝이 어느 팀인지 표시 */);
     setTimeout(()=>{try{d.querySelectorAll('.board .mrk').forEach(e=>{const t=e.textContent;const m=t.match(/(\d+위\s*·\s*-?\d+점)\s*$/);if(m&&!e.title){e.title=t;e.textContent=m[1]}})}catch(_){}},0);
     M.bpH=[]}
   function bpMom(){const d=document.getElementById('match');if(!d||!M||!M.m||M.done)return;const el=d.querySelector('.bpmom i');if(!el)return;const st=M.m.st,mn=M.m.min;
@@ -47,6 +47,7 @@ html #match.bp .board .clock{margin-top:2px;font-size:13px;padding:0 10px;backgr
 #match.bp .bpmom{display:flex;align-items:center;gap:8px;height:22px;padding:0 10px;background:#15171B;font-size:11px;color:var(--muted)}
 #match.bp .bpmom .bar2{flex:1;height:4px;background:var(--ac);display:flex}#match.bp .bpmom .bar2 i{display:block;height:4px;background:var(--hc);transition:width .6s}
 #match.bp .bpmom .l{font-weight:800;letter-spacing:.1em;color:var(--amber)}
+.bpmom .tm{font-weight:800;color:var(--text);font-size:11px}
 #match.bp .m2dw{position:relative}
 .bpgoal{position:absolute;left:0;right:0;bottom:30px;height:44px;display:flex;align-items:center;gap:12px;padding:0 18px;background:linear-gradient(90deg,var(--amber) 0 64%,var(--gc,#2E6B5E) 64%);clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);animation:bpg 2.5s cubic-bezier(.2,.8,.2,1) forwards;pointer-events:none;z-index:4}
 .bpgoal b{font-family:var(--disp);font-size:32px;font-weight:900;font-style:italic;color:#0A0B0D;letter-spacing:.04em}
@@ -124,3 +125,6 @@ function bpStaff(pr){try{const T=[];const us=pr.us,th=pr.them;const pct=Math.rou
 {const st5=document.createElement('style');st5.textContent=`.bpwdl{position:relative;margin-top:12px}.bpwdl .b{display:flex;height:6px;background:#0A0B0D}.bpwdl .b i{display:block;height:6px}.bpwdl .b .w{background:var(--good)}.bpwdl .b .d{background:#5A6068}.bpwdl .b .l{background:var(--bad)}
 .bpwdl .t{display:flex;justify-content:space-between;margin-top:4px;font-size:12px;color:#C9CDD3}.bpwdl .t b{font-size:16px;color:var(--text);margin-left:3px}.bpwdl small{display:block;text-align:center;font-size:10.5px;color:var(--faint);margin-top:2px}
 .bpstaff{display:grid;gap:6px;margin-top:10px}.bpstaff>div{background:rgba(255,255,255,.035);border-left:3px solid var(--amber);padding:8px 12px}.bpstaff small{font-size:11px;font-weight:900;letter-spacing:.08em;color:var(--amber)}.bpstaff p{margin:2px 0 0;font-size:13px;line-height:1.45}`;document.head.appendChild(st5)}
+/* v262 사용성 점검: 경기 기록 표처럼 가로로 넘치는 표는 오른쪽 끝을 흐리게 해 '옆으로 더 있음'을 알림(끝까지 밀면 사라짐) */
+{const pk=()=>{document.querySelectorAll('.pstw').forEach(w=>{const m=w.scrollLeft+w.clientWidth<w.scrollWidth-4;if(w.classList.contains('more')!==m)w.classList.toggle('more',m)})};setInterval(pk,700);document.addEventListener('scroll',e=>{if(e.target&&e.target.classList&&e.target.classList.contains('pstw'))pk()},true);
+ const st5=document.createElement('style');st5.textContent=`.pstw.more{-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 28px),transparent)}`;document.head.appendChild(st5)}
