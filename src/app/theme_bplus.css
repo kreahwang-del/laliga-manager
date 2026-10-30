@@ -1,0 +1,110 @@
+/* =====================================================================
+   디자인 B+ "중계방송 그래픽형" 테마 레이어 (1단계)
+   - style.css 뒤에 붙는 덮어쓰기 전용 파일. 선택자·클래스·data-* 는 바꾸지 않음
+   - 이 파일을 지우면 빌드가 기존(v256)과 바이트 단위로 같아짐(build.py 확인)
+   - JS가 나중에 넣는 <style>을 이겨야 하는 규칙은 앞에 html 을 붙여 우선순위를 올림
+   ===================================================================== */
+:root{
+  --bg:#0A0B0D;--surf:#131519;--surf2:#1B1E23;--line:#262A30;--text:#F2F3F5;--muted:#A7ADB5;--faint:#8C939D;
+  --amber:#F5D547;--amber-ink:#0A0B0D;--pitch:#17402F;--pitch2:#1B4A36;
+  --good:#46D6A3;--ok:#E8C547;--warn:#F0954A;--bad:#E5484D;--info:#5AB8F5;
+  --c1:#F5D547;--c2:#5AB8F5;--c3:#E07AB8;
+  --accent-soft:rgba(245,213,71,.10);--accent-line:rgba(245,213,71,.45);
+  --stripe:repeating-linear-gradient(135deg,rgba(255,255,255,.022) 0 1px,transparent 1px 10px);
+  --cut:polygon(0 0,100% 0,calc(100% - 10px) 100%,0 100%);
+  --cut-l:polygon(10px 0,100% 0,100% 100%,0 100%);
+  --disp:'Big Shoulders Display','Noto Sans KR','Arial Narrow',sans-serif;
+  --body:'Noto Sans KR','Apple SD Gothic Neo','Malgun Gothic',sans-serif}
+
+/* ---- 바탕·글꼴 ---- */
+body{background-color:var(--bg);background-image:var(--stripe);background-attachment:fixed}
+.num,.ovr,.facts b,td,.board .score,.stepper .v{font-weight:800}
+h2{font-family:var(--body);font-size:12.5px;font-weight:900;letter-spacing:.14em;color:var(--muted);display:flex;align-items:center;gap:8px}
+h2::before{content:'';flex:none;width:12px;height:12px;background:var(--amber);clip-path:polygon(40% 0,100% 0,60% 100%,0 100%)}
+.sheet h3,.phead h3{font-weight:900;letter-spacing:-.01em}
+
+/* ---- 상단 바 ---- */
+.top{background:rgba(10,11,13,.94);border-bottom:2px solid var(--amber);backdrop-filter:blur(6px)}
+.top h1{font-size:24px;font-weight:900;font-style:italic;letter-spacing:.01em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:46vw}
+.top .money b{font-size:19px;font-weight:800}
+
+/* ---- 하단 탭바·계속 버튼 ---- */
+.nav{background:#0E1013;border-top:1px solid var(--line)}
+.nav button[aria-current="true"]{color:var(--amber);font-weight:700}
+.nav button[aria-current="true"]::before{content:'';position:absolute;top:0;left:22%;right:22%;height:3px;background:var(--amber);clip-path:polygon(6px 0,100% 0,calc(100% - 6px) 100%,0 100%)}
+.go button{border-radius:0;clip-path:polygon(12px 0,100% 0,calc(100% - 12px) 100%,0 100%);padding:13px 26px;font-weight:900;letter-spacing:.04em;box-shadow:none;filter:drop-shadow(0 8px 16px rgba(0,0,0,.55))}
+
+/* ---- 카드·목록 ---- */
+.card{background:rgba(255,255,255,.035);border:1px solid var(--line);border-radius:2px}
+.pick button,.rec,.role,.nxo,.bch,.pinned{border-radius:2px}
+.pick button{background:rgba(255,255,255,.035)}
+.li,.inbox .msg,.row,.mu,.qs,.hl,.chg{border-bottom-color:rgba(255,255,255,.07)}
+.banner{border-radius:2px}
+.banner.open{background:rgba(70,214,163,.10);border:1px solid rgba(70,214,163,.4);border-left:3px solid var(--good)}
+.msg.new b::before{border-radius:0;width:8px;height:8px;clip-path:polygon(30% 0,100% 0,70% 100%,0 100%)}
+
+/* ---- 버튼 ---- */
+.btn{border-radius:0;clip-path:var(--cut);font-weight:900;letter-spacing:.02em;padding:13px 12px}
+.btn.ghost{clip-path:none;border-radius:2px;border-color:#33373E;font-weight:700}
+.btn.sm{padding:8px 14px}
+.btn.sm:not(.ghost){clip-path:polygon(0 0,100% 0,calc(100% - 7px) 100%,0 100%)}
+.btn.danger{clip-path:none;border-radius:2px}
+.x{border-radius:2px}
+
+/* ---- 칩·탭·세그먼트 ---- */
+.chip{border-radius:2px;border-color:#33373E;color:var(--muted)}
+.chip[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);border-color:var(--amber);font-weight:800}
+.tabs{border-bottom-color:var(--line);gap:20px}
+.tabs button[aria-selected="true"]{border-bottom-width:3px;font-weight:800}
+.seg,.duty{border-radius:2px}
+.seg button[aria-pressed="true"],.duty button[aria-pressed="true"]{background:var(--amber);color:var(--amber-ink);font-weight:800}
+.steps button,.stepper button{border-radius:0}
+.steps button[aria-pressed="true"]{background:var(--amber)}
+.search,.inp{border-radius:2px!important}
+html .metab button{border-radius:2px}
+html .metab button[aria-pressed=true]{color:var(--amber-ink)}
+
+/* ---- 시트(바텀시트) ---- */
+.scrim{background:rgba(0,0,0,.66)}
+.sheet{background:#111317;background-image:var(--stripe);border-radius:0;border-top:3px solid var(--amber)}
+.facts div{border-radius:0;background:rgba(255,255,255,.045);border-left:2px solid var(--line)}
+.resp{border-radius:2px}
+
+/* ---- 의미 색 배지(포지션·상태) ---- */
+.pos{border-radius:0;clip-path:polygon(3px 0,100% 0,calc(100% - 3px) 100%,0 100%);width:32px}
+.pos.GK{background:#3A3010;color:#F5D547}.pos.CB,.pos.FB{background:#10304A;color:#7FC4F2}
+.pos.DM,.pos.CM,.pos.AM{background:#0F3A2C;color:#6FDCA6}.pos.W,.pos.ST{background:#46181A;color:#F5878A}
+.pill,.vd,.st,.ptag,.cnt{border-radius:0}
+.pill.g,.vd.up{background:#0F3A2C;color:#6FDCA6}.pill.y{background:#3A3410;color:#F5D547}
+.pill.r,.vd.dn{background:#46181A;color:#F5878A}.pill.b{background:#10304A;color:#7FC4F2}
+.ptag.m{background:var(--accent-soft);color:var(--amber)}
+.resp.ok{background:rgba(70,214,163,.10);color:#8FE8C6}.resp.mid{background:rgba(245,213,71,.10);color:#F2E08A}.resp.no{background:rgba(229,72,77,.12);color:#F5A3A5}
+.cd.y{background:#F5D547}.cd.r{background:var(--bad)}
+
+/* ---- 표 ---- */
+th{letter-spacing:.06em}
+td{font-size:16px}
+tr.me td{background:var(--accent-soft)}
+tr.me td.t{box-shadow:inset 3px 0 0 var(--amber)}
+
+/* ---- 경기 화면(구조 그대로, 스코어버그 느낌) ---- */
+.match{background-color:var(--bg);background-image:var(--stripe)}
+.board .score{font-size:58px;font-weight:900;letter-spacing:.02em}
+.board .clock{display:inline-block;background:var(--text);color:var(--bg);font-weight:900;font-size:17px;padding:1px 12px 0;clip-path:polygon(0 0,100% 0,calc(100% - 6px) 100%,6px 100%)}
+html #match.mth .clock{background:var(--mta);color:var(--mton)}
+.ev.goal{background:linear-gradient(90deg,rgba(245,213,71,.18),transparent 75%);border-radius:0;box-shadow:inset 3px 0 0 var(--amber)}
+.tag{border-radius:0;clip-path:polygon(4px 0,100% 0,calc(100% - 4px) 100%,0 100%);padding:1px 8px;font-weight:900}
+html .mptab button{border-radius:2px}
+.mctl .btn{padding:12px 4px}
+.slot.hov .dot{box-shadow:0 0 0 4px var(--accent-line)}
+.rec.best,.role[aria-pressed="true"],.pinned{background:var(--accent-soft)}
+
+/* ---- 시작 화면 ---- */
+.hero h1{font-size:52px;font-weight:900;font-style:italic;letter-spacing:-.01em}
+.hero .eyebrow{font-weight:800;letter-spacing:.24em}
+
+/* ---- 알림 ---- */
+.toast{border-radius:2px;background:#1B1E23;color:var(--text);font-weight:700;border-left:4px solid var(--amber);box-shadow:0 8px 22px rgba(0,0,0,.6);padding:10px 18px}
+/* 재확인 반영: 지시 시트 '적용 중' 버튼(비활성+눌림)이 흐려 안 읽힘 → 불투명, 강조색 테두리 */
+.btn[aria-pressed="true"]:disabled{opacity:1;clip-path:none;border-radius:2px;background:var(--accent-soft);color:var(--amber);border:1px solid var(--amber)}
+.btn[aria-pressed="true"]:disabled .note{color:var(--amber)}

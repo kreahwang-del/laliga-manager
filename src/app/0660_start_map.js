@@ -1,4 +1,4 @@
-// ================= 시작 화면: 세계 지도에서 나라 → 리그 → 구단(v73, '월드 풋볼 매니저') =================
+// ================= 시작 화면: 세계 지도에서 나라 → 리그 → 구단(v73, '월드 풋볼매니저') =================
 //  · 지도: Natural Earth(world-atlas) 국경, 리그가 있는 나라만 색칠·선택 가능. 끌어서 이동·두 손가락/버튼으로 확대
 //  · 영국은 잉글랜드(1·2부)·스코틀랜드를 함께 보여 줌
 const CC_LG={'724':['ES','ES2'],'826':['EN','EN2','SC'],'380':['IT','IT2'],'276':['DE','DE2'],'250':['FR','FR2'],'620':['PT'],'528':['NL'],'056':['BE'],'792':['TR'],'756':['CH'],'040':['AT'],'208':['DK'],'410':['KR'],'392':['JP'],'156':['CN'],'682':['SA'],'840':['US'],'484':['MX'],'032':['AR'],'076':['BR']};
@@ -15,7 +15,7 @@ function clubRows(ids,mode){const row=c=>{const sq=squadOfBase(c).sort((a,b)=>b.
   return L.map(t=>`<button data-new="${t.i}">${crest(t.i)}<span><b>${esc(CLUBS[t.i].name)}</b><small>${mode==='challenge'?'요구 평판 '+reqRep(t.i)+' · ':''}${t.star?'에이스 '+esc(t.star.name)+' · ':''}이적 예산 ${mM(CLUBS[t.i].budget)}</small></span><span class="ovr num ${ovrCls(t.avg)}">${t.avg}</span></button>`).join('')}
 startView=function(){const saved=loadSave();const mode=UI.mode||'club';const cc=CC_LG[UI.scc]?UI.scc:'724';const lgs=CC_LG[cc];const lg=lgs.includes(UI.slg)?UI.slg:lgs[0];
   const ids=CLUBS.filter(c=>c&&c.lg===lg).map(c=>c.i);
-  return `<main class="wrap"><section class="hero"><div class="eyebrow">26개 리그 · 2026-27</div><h1>월드 풋볼 매니저</h1>
+  return `<main class="wrap"><section class="hero"><div class="eyebrow">26개 리그 · 2026-27</div><h1>월드 풋볼매니저</h1>
   <p>지도에서 나라를 고르고, 리그와 구단을 선택하세요. 고른 나라 리그는 2D 엔진으로, 나머지 리그는 빠른 계산으로 함께 진행됩니다. 2026년 7월 1일 프리시즌부터 시작합니다.</p></section>
   ${saved?`<button class="btn" data-act="resume">이어하기 · ${esc(saved.me?saved.me.name+' · ':'')}${esc(CLUBS[saved.club]?CLUBS[saved.club].name:'')} · ${fmtD(saved.date)}</button><p class="note">새 게임을 시작하면 저장된 진행은 지워집니다.</p>`:''}
   <h2>감독 이름</h2><input id="mgname" class="inp" maxlength="16" placeholder="이름을 입력하세요" value="${esc(UI.nm||'')}" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--surf);color:var(--text);font-size:16px">

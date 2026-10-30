@@ -18,7 +18,7 @@ function svExport(){try{const str=svSerialize();const name=`laliga-save-${S.date
   if(window.AndroidApp&&AndroidApp.saveFile){const m=AndroidApp.saveFile(name,str);toast(m||'저장 파일을 내보냈습니다');return}
   const a=document.createElement('a');a.href=URL.createObjectURL(new Blob([str],{type:'application/json'}));a.download=name;document.body.appendChild(a);a.click();setTimeout(()=>{URL.revokeObjectURL(a.href);a.remove()},1000);toast('저장 파일을 내려받았습니다')}catch(e){console.error(e);toast('내보내기 실패')}}
 function svImport(){const inp=document.createElement('input');inp.type='file';inp.accept='.json,application/json,text/plain';inp.onchange=()=>{const f=inp.files&&inp.files[0];if(!f)return;const rd=new FileReader();
-  rd.onload=()=>{try{const o=JSON.parse(rd.result);if(!o||o.v!==3||o.club==null||!o.date){toast('월드 풋볼 매니저 저장 파일이 아닙니다');return}
+  rd.onload=()=>{try{const o=JSON.parse(rd.result);if(!o||o.v!==3||o.club==null||!o.date){toast('월드 풋볼매니저 저장 파일이 아닙니다');return}
     psUnpack(o.ps||{});S=o;save();toast(`불러오는 중… ${fmtD(o.date)}`);setTimeout(()=>location.reload(),1200)}catch(e){console.error(e);toast('파일을 읽지 못했습니다')}};rd.readAsText(f)};document.body.appendChild(inp);inp.click();setTimeout(()=>inp.remove(),60000)}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-sv]');if(!b)return;e.stopPropagation();if(b.dataset.sv==='exp')svExport();else svImport()},true);
 const SV_BOX=()=>`<h2>저장 백업</h2><div class="card pad"><p class="note" style="margin:0 0 8px">앱을 지우거나 기기를 바꿀 때를 대비해 저장을 파일로 보관합니다. 앱에서는 '다운로드' 폴더에 저장됩니다.</p><div style="display:flex;gap:8px;flex-wrap:wrap">${S?'<button class="btn sm" data-sv="exp">저장 내보내기</button>':''}<button class="btn sm ghost" data-sv="imp">저장 파일 불러오기</button></div></div>`;

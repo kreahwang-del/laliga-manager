@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-"""월드 사커매니저 빌드: src/ → 단일 HTML (Python 표준 라이브러리만)
+"""월드 풋볼매니저 빌드: src/ → 단일 HTML (Python 표준 라이브러리만)
 
   python src/build.py                       → src/dist/cur.html   (개발값: build_config.json "dev")
   python src/build.py --deploy --appv 247   → src/dist/index.html (배포값: "deploy" + APPV)
@@ -40,7 +40,15 @@ def build(cfg):
         return re.sub(r'__CFG__\("([^"]+)"\)', lambda m: json.dumps(cfg[m.group(1)]), t)
 
     engine = ''.join(subst(rd(f)) for f in order('engine/order.txt'))
-    app = ''.join(engine if f == '@engine' else subst(rd(f)) for f in order('app/order.txt'))
+    pal = json.loads(rd('app/theme_bplus_palette.json')) if os.path.exists(os.path.join(ROOT, 'app/theme_bplus_palette.json')) and os.path.exists(os.path.join(ROOT, 'app/theme_bplus.css')) else None
+    def palette(f, t):
+        # B+ 테마 전용: 예전 색 리터럴을 새 팔레트로(데이터 파일·엔진 제외). 테마 파일이 없으면 아무것도 안 바꿈
+        if not pal or f in pal.get('skip', []):
+            return t
+        for a, b in pal['map'].items():
+            t = re.sub(re.escape(a), b, t, flags=re.I)
+        return t
+    app = ''.join(engine if f == '@engine' else palette(f, subst(rd(f))) for f in order('app/order.txt'))
     assert app.count('__ENGINE_SRC__') == 1
     app = app.replace('__ENGINE_SRC__', json.dumps(engine, ensure_ascii=False))
     for tok in ('__DATA__(', '__CFG__('):
@@ -59,7 +67,7 @@ def build(cfg):
 
     page = rd('page.html')
     page = re.sub(r'@@ASSET:(\w+):([^@]+)@@', asset, page)
-    for tok, val in (('@@CSS@@', rd('app/style.css')), ('@@APP@@', app)):
+    for tok, val in (('@@CSS@@', palette('app/style.css', rd('app/style.css')) + (('\n/* ==== theme_bplus.css ==== */\n' + rd('app/theme_bplus.css')) if os.path.exists(os.path.join(ROOT, 'app/theme_bplus.css')) else '')), ('@@APP@@', app)):
         assert page.count(tok) == 1, tok
         a = page.index(tok)
         page = page[:a] + val + page[a + len(tok):]
