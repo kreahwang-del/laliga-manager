@@ -158,7 +158,7 @@ function handleMoment(id){const api=M.m.api,me=M.me,T=M.m.T[me],st=M.m.st;
   if(id==='hold'){api.shout(me,'hold');const ti=[...T.ti];ti[0]=Math.max(1,ti[0]-1);api.setTactic(me,{ti});feed(st.ev[st.ev.length-1]);resume();return}
   if(id==='compact'){api.setTactic(me,{form:{...T.form,def:'5-4-1'}});api.shout(me,'hold');feed(st.ev[st.ev.length-1]);resume();return}
   if(id==='sub'){subsSheet();return}
-  if(id.startsWith('shout:')){const k=id.slice(6);const MV={push:'공격적',hold:'수비적',calm:'균형'};if(MV[k]&&(T.ment||'균형')===MV[k]){toast('이미 적용 중인 지시입니다');return}if(k==='fire'){if((M.m.fireN||0)>=2){toast('정신 차려!는 경기당 2번까지 쓸 수 있습니다');return}M.m.fireN=(M.m.fireN||0)+1}api.shout(me,k);if(k!=='fire')T.gsx=0;feed(st.ev[st.ev.length-1]);resume();return}
+  if(id.startsWith('shout:')){const k=id.slice(6);const MV={push:'공격적',hold:'수비적',calm:'균형'};if(MV[k]&&(T.ment||'균형')===MV[k]){toast('이미 적용 중인 지시입니다');return}if(k==='fire'){if((M.m.fireN||0)>=2){toast('정신 차려!는 경기당 2번까지 쓸 수 있습니다');return}M.m.fireN=(M.m.fireN||0)+1}api.shout(me,k);if(k!=='fire')T.gsx=T.gmbGsx||0;/* v256: 막판 승부수로 켠 공세 강도는 이후 외침에도 유지(사용자 결정 2026-10-30) */feed(st.ev[st.ev.length-1]);resume();return}
   if(id.startsWith('focus:')){const v=id.slice(6);T.focus=v==='null'?null:v==='W'?'W':+v;toast(v==='null'?'공격 방향 자동':'공격 집중 레인 변경');shoutSheet();return}
   if(id.startsWith('preset:')){const k=id.slice(7);api.setTactic(me,{preset:k,ti:[...E3.PRESETS[k]],fam:famGet(k,T.form.base)});toast(`${k}(으)로 전환`);mtacSheet();return}
   if(id.startsWith('def:')){api.setTactic(me,{form:{...T.form,def:id.slice(4)}});mtacSheet();return}

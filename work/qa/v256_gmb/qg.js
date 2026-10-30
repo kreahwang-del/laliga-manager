@@ -1,0 +1,28 @@
+// QA v256 승부수 재검증: q256.js(MODE=gmb) 사본 + 특성(oa,da,op,dp,ls,ment,gsx 90분 잔존) 기록. 경기별 재시드, 해시 대진
+const {chromium}=require('playwright');const fs=require('fs');
+const HTML=process.env.HTML||'/home/claude/work/cur256.html',N=+(process.env.N||100),SEED=+(process.env.SEED||8642),POLS=(process.env.POLS||'none,g_all,g_air,g_long').split(','),OUT=process.env.OUT,CH=+(process.env.CH||25),K0=+(process.env.K0||0);
+(async()=>{const b=await chromium.launch();const pg=await b.newPage();const errs=[];pg.on('pageerror',e=>errs.push(e.message));
+await pg.route(/tmssl|transfermarkt|googleapis/,r=>r.abort());await pg.goto('file://'+HTML);await pg.waitForTimeout(400);
+await pg.evaluate(()=>{UI.mode='club';UI.nm='t';startGame(LIGA[0]);window.__all=CLUBS.filter(c=>c&&['ES','EN','IT','DE','FR'].includes(c.lg));});
+fs.writeFileSync(OUT,'');
+for(let c0=K0;c0<K0+N;c0+=CH){
+ const out=await pg.evaluate(([c0,n,SEED,POLS])=>{let x=1;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};
+  const all=window.__all,R=[];const hs=v=>{v=(v^61)^(v>>>16);v=Math.imul(v,9);v^=v>>>4;v=Math.imul(v,0x27d4eb2d);v^=v>>>15;return v>>>0};
+  const av=(L,k,f)=>{const v=L.filter(f).map(p=>p[k]??10);return v.length?v.reduce((a,x)=>a+x,0)/v.length:10};
+  for(let k=c0;k<c0+n;k++){const hi=hs(SEED*100003+k*2)%all.length;let ai=hs(SEED*100003+k*2+1)%all.length;if(ai===hi)ai=(ai+1)%all.length;
+   const h=all[hi],a=all[ai];
+   for(const POL of POLS){x=((SEED*7919+k*104729)%2147483646)+1;
+   const H=teamFor(h.i),A=teamFor(a.i);let snap=null;H._pl=1;H.aiGs=null;let g85=null;
+   const m=runMatch(H,A,{afterMinute:(min,st,T,api)=>{
+     if(min===80&&!snap){if(st.sc[0]>=st.sc[1])st.sc[1]=st.sc[0]+1;
+       snap={d:st.sc[1]-st.sc[0],g0:st.sc[0],g1:st.sc[1],x0:st.xg[0],x1:st.xg[1],s0:st.sh[0],s1:st.sh[1],r:Math.round(x%100000),
+         oa:+decAir(T[0].xi).toFixed(2),da:+decAir(T[1].xi).toFixed(2),op:+av(T[1].xi,'pace',p=>['ST','W','AM'].includes(p.g)).toFixed(2),dp:+av(T[0].xi,'pace',p=>['CB','FB'].includes(p.g)).toFixed(2),
+         ment:T[0].ment||'',oppG:+(T[1].gsx||0).toFixed(2)};
+       if(POL!=='none')gambleApply(api,0,T[0],POL)}
+     if(min===85)g85=+(T[0].gsx||0).toFixed(2)}});
+   while(!m.done)m.step();const st=m.st;
+   R.push({k,pol:POL,h:h.i,a:a.i,d:snap.d,r:snap.r,oa:snap.oa,da:snap.da,op:snap.op,dp:snap.dp,ment:snap.ment,oppG:snap.oppG,g85,g90:+(m.T?0:0),
+     gf:st.sc[0]-snap.g0,ga:st.sc[1]-snap.g1,xf:+(st.xg[0]-snap.x0).toFixed(3),xa:+(st.xg[1]-snap.x1).toFixed(3),sf:st.sh[0]-snap.s0,sa:st.sh[1]-snap.s1})}}
+  return R},[c0,Math.min(CH,K0+N-c0),SEED,POLS]);
+ fs.appendFileSync(OUT,out.map(o=>JSON.stringify(o)).join('\n')+'\n');}
+if(errs.length)console.error(errs.slice(0,3));await b.close()})();
