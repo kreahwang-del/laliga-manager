@@ -3,7 +3,7 @@ const TI=['수비라인','수비 폭','공격 폭','템포','패스 길이','압
 const TI_END=[['낮게','높게'],['좁게','넓게'],['좁게','넓게'],['느리게','빠르게'],['짧게','길게'],['약하게','강하게']];
 const TAC={phase:'base',showZones:false,sel:null,bsel:null};
 const slotKeys=(ph)=>E3.phaseSlots(S.tac,ph).map(q=>q.key);
-const grpAt=i=>{const bk=E3.FORMS[S.tac.form.base][i],ek=E3.effKey(S.tac,i);return ek!==bk?E3.SLOT[ek][0]:pl(S.xi[i]).g};
+const grpAt=i=>{const bk=E3.FORMS[S.tac.form.base][i],ek=E3.effKey(S.tac,i);return ((ek!==bk?E3.SLOT[ek]:null)||E3.SLOT[bk]||[pl(S.xi[i]).g])[0]};
 const SLOTNM=k=>{const g=(E3.SLOT[k]||[''])[0];if(g==='W')return /M$/.test(k)?'측면 MF':'윙어';if(g==='FB')return /WB$/.test(k)?'윙백':'풀백';return {DM:'수비형 MF',CM:'중앙 MF',AM:'공격형 MF',ST:'스트라이커',CB:'센터백',GK:'골키퍼'}[g]||k};
 /* v197 공격·수비 대형 점 = 그 국면에 실제로 서는 위치(공격: 공이 상대 진영 70m 지점, 수비: 우리 진영 35m 지점일 때 실측 위치표). 드래그한 점도 '실제로 설 위치'로 해석됨 */
 /* v199 공격·수비 탭: 가로 경기장 + 선수들이 모인 구간 확대 + 공 위치 슬라이더 */
@@ -168,7 +168,7 @@ Object.assign(PI_DESC,{gkk:'짧게: 센터백이 박스 옆으로 벌려 받는 
  gks:'적극: 뒷공간·박스 앞 루즈볼과 높은 공을 더 멀리 나와 처리(범위 1.3배), 1대1 선방 +1.2 · 중거리 선방 −1.2. 자제: 골문을 지킴(범위 0.75배), 1대1 −1 · 중거리 +0.6'});
 const PI_LB={sh:'슈팅',dr:'드리블',cr:'크로스',rn:'전진 침투',ov:'앞지르는 길',wd:'활동 폭',pr:'압박',tk:'태클',gkk:'골킥',gkh:'잡은 뒤 배급',gkd:'배급 거리',gks:'스위퍼 성향'};
 function piSum(p){const o=piGet(p.id);return E3.PIK.concat(GK_PIK).filter(k=>o[k]!=null&&o[k]!==1).map(k=>E3.PI[k][o[k]])}
-function piHTML(cur){const o=piGet(cur.id);const gk=cur.g==='GK';const keys=gk?GK_PIK:E3.PIK.filter(k=>k!=='ov'||['FB','CM','DM'].includes(cur.g));
+function piHTML(cur){const o=piGet(cur.id);const gk=cur.g==='GK';const keys=gk?GK_PIK:E3.PIK.filter(k=>k!=='ov'||['FB','CM','DM'].includes(grpAt(SH.slot)));
   return `<div class="meta" style="margin-bottom:6px">개인 지시 · ${esc(shortName(cur.name))}</div>
   ${keys.map(k=>`<div style="margin-bottom:10px"><div style="display:flex;justify-content:space-between;align-items:baseline"><b style="font-size:13.5px">${PI_LB[k]}</b><span class="note">${PI_HINT[k](cur)}</span></div>
     <div class="duty" style="margin:4px 0 2px">${[0,1,2].map(v=>`<button data-pi="${k}" data-v="${v}" aria-pressed="${(o[k]??1)===v}">${E3.PI[k][v]}</button>`).join('')}</div><div class="note" style="font-size:11.5px">${PI_DESC[k]}</div></div>`).join('')}

@@ -130,7 +130,7 @@ function shapeOf(T,ph){const ps=phaseSlots(T,ph||'base').filter(q=>q.key!=='GK')
 function prep(T,side){ // side 0 홈(아래→위 공격) / 1 원정: 상대 좌표는 반전
   const out={...T};
   out.k=(ph)=>{const ps=phaseSlots(out,ph);return out.xi.map((p,i)=>{const q=ps[Math.min(i,ps.length-1)];return {p,i,slotKey:q.key,x:q.x,y:q.y}})};
-  out.grpOf=(i)=>{const p=out.xi[i];const bk=FORMS[out.form.base][Math.min(i,10)];const ek=effKey(out,Math.min(i,10));return ek!==bk?(SLOT[ek]||[p.g])[0]:p.g};
+  out.grpOf=(i)=>{const p=out.xi[i];const bk=FORMS[out.form.base][Math.min(i,10)];const ek=effKey(out,Math.min(i,10));return ((ek!==bk?SLOT[ek]:null)||SLOT[bk]||[p.g])[0]};/* v261 사용자 결정(2026-10-30): 움직임·역할 그룹은 선수 원래 포지션이 아니라 서 있는 자리 기준(능력 감소는 적합도로 따로 반영) */
   out.roleOf=(i)=>{const rs=ROLES[out.grpOf(i)]||ROLES.CM;return rs[Math.min((out.roles||[])[i]||0,rs.length-1)]};
   out.dutyOf=(i)=>(out.duties||[])[i]??1;
   out.pi=(p,k)=>{const o=out.pi_&&out.pi_[p.id];return o&&o[k]!=null?o[k]:1};out.pi_=T.pi||{};
@@ -482,7 +482,7 @@ function autoPick(players,form){const keys=FORMS[form];const C=players.filter(p=
       for(let j=0;j<=n;j++){if(used[j]){u[pp[j]]+=d;w[j]-=d}else minv[j]-=d}j0=j1}while(pp[j0]!==0);
     do{const j1=way[j0];pp[j0]=pp[j1];j0=j1}while(j0)}
   const xi=new Array(keys.length).fill(null);for(let j=1;j<=n;j++){const i=pp[j]-1;if(i>=0&&i<keys.length&&j-1<C.length)xi[i]=C[j-1].id}return xi}
-function defaultRoles(xi,form){return xi.map((p,i)=>{const rs=ROLES[p.g]||ROLES.CM;let bi=0,bv=-1;rs.forEach((rl,j)=>{const v=roleFit(p,rl);if(v>bv){bv=v;bi=j}});return bi})}
+function defaultRoles(xi,form){return xi.map((p,i)=>{const sk=FORMS[form]&&FORMS[form][Math.min(i,10)];const rs=ROLES[((sk&&SLOT[sk])||[p.g])[0]]||ROLES.CM;let bi=0,bv=-1;rs.forEach((rl,j)=>{const v=roleFit(p,rl);if(v>bv){bv=v;bi=j}});return bi})}
 root.E3={PICKM,prep,styleOf,keyFromPos,shapeOf,bestAssign,slotAlt,effKey,phaseSlots,SLOT_H,styleMap,FORMS,SLOT,COORD,ROLES,DUTY,PI,PIK,PRESETS,BEATS,NEEDS,NEED_REF,COND_M,fitOf,posMul,roleFit,mapSlots,simulate,createMatch,autoPick,defaultRoles,grid,cell};
 })(typeof module!=='undefined'?module.exports:window);
 
