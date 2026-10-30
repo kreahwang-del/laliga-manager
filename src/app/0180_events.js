@@ -93,7 +93,7 @@ document.addEventListener('click',e=>{
       if(p.ovr>ourLevel(p)+2){toast('핵심 선수라 임대 보낼 수 없습니다');break}
       completeTransfer(p.id,to.i,0,{loan:true});S.ps[p.id].loanFrom=S.club;save();closeSheet();render();toast(`${p.name}, ${to.name}로 임대`);break}
     case 'talk':talkSheet(+d.id);break;
-    case 'speed':M.speed=M.speed===1?3:M.speed===3?.5:M.speed===.5?.25:1;UI.mspd=M.speed;b.textContent=spdLbl(M.speed);break;
+    case 'speed':M.speed=M.speed===.5?1:M.speed>=1?.25:.5;/* v258: 보통(½)→빠르게(1)→느리게(¼)→보통 */UI.mspd=M.speed;b.textContent=spdLbl(M.speed);break;
     case 'skip':finish();break;
     case 'closematch':$('#match').remove();M=null;closeSheet();render();setTimeout(hlShow,250);break;
     case 'mreport':reportSheet(S.reports&&S.reports[0]);break;

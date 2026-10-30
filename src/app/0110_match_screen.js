@@ -3,7 +3,7 @@ let M=null;
 function startMatch(fx){
   const H=teamFor(fx.h),Aw=teamFor(fx.a); if(!H||!Aw){fx.res={sc:[0,0],ev:[]};render();return}
   const league=!!fx.r, me=fx.h===S.club?0:1;
-  M={fx,H,Aw,me,league,speed:(UI.mspd||1),timer:null,done:false,paused:false,subsLeft:5,prompts:{},talkDone:false,shoutCd:0};
+  M={fx,H,Aw,me,league,speed:(UI.mspd>1?1:(UI.mspd||.5)),/* v258: 기본 보통(½), 예전 3배속 저장값은 빠르게(1)로 */timer:null,done:false,paused:false,subsLeft:5,prompts:{},talkDone:false,shoutCd:0};
   try{M.pos0=posOf(S.club)}catch(e){}
   M.m=runMatch(H,Aw,{
     halftime:(st,T,api)=>{if(!M.skipping)pause('half')},

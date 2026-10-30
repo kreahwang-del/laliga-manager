@@ -27,7 +27,7 @@ function rpGet(key){return new Promise(res=>{try{if(!IDB||!IDB.db)return res(nul
 {const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(M&&M.rp&&M.rp.F.length>60&&fx){const key='rp:'+fx.d+':'+fx.h+':'+fx.a;R.rpk=key;
     try{rpAdd(M.rp,M.m.st.frames)}catch(e){}const ob=rpPack(M.rp,res.ev||M.m.st.ev);M.rpObj=ob;rpPut(key,ob)}}catch(e){console.error(e)}return R}}
 // ---- 보기 화면 ----
-const RV={on:false,o:null,t:0,play:false,spd:4,raf:0,last:0,lbl:false,live:false};
+const RV={on:false,o:null,t:0,play:false,spd:1,/* v258(사용자 요청): 복기 재생 기본 4배속→1배속, 0.5배속 추가 */raf:0,last:0,lbl:false,live:false};
 function rpLiveObj(){const R=M&&M.rp;if(!R)return null;try{rpAdd(R,M.m.st.frames)}catch(e){}const n=R.F.length,buf=new Int16Array(n*RP_W);R.F.forEach((a,i)=>buf.set(a,i*RP_W));return {v:2,ts:2,fx:R.fx,me:R.me,cols:R.cols,kc:R.kc,n,mk:rpMarks(M.m.st.ev),buf:buf.buffer}}
 function rpOpen(o,live){if(!o||!o.n){toast('복기할 기록이 없습니다');return}RV.o=o;RV.A=new Int16Array(o.buf);RV.live=!!live;RV.ts=o.ts||1;RV.t0=RV.A[0]/RV.ts;RV.t1=RV.A[(o.n-1)*RP_W]/RV.ts;RV.t=RV.t0;RV.play=false;RV.on=true;
   if(live&&M&&!M.done){RV.wasRun=!M.paused;M.paused=true;clearTimeout(M.timer);try{if(typeof stopAnim==='function')stopAnim()}catch(e){}}
@@ -73,7 +73,7 @@ document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest
   if(d.rpm!=null){const x=RV.mk[+d.rpm];if(x){RV.t=Math.max(RV.t0,x.t-8);rpDraw(RV.t);rpSetPlay(true)}return}
   if(d.rpj){RV.t=Math.max(RV.t0,Math.min(RV.t1,RV.t+(+d.rpj)));rpDraw(RV.t);return}
   if(d.rpplay){rpSetPlay(!RV.play);return}
-  if(d.rpspd){const L=[1,2,4,8,16];RV.spd=L[(L.indexOf(RV.spd)+1)%L.length];t.textContent=RV.spd+'배속';return}
+  if(d.rpspd){const L=[.5,1,2,4,8];RV.spd=L[(L.indexOf(RV.spd)+1)%L.length];t.textContent=RV.spd+'배속';return}
   if(d.rplbl){RV.lbl=!RV.lbl;t.setAttribute('aria-pressed',RV.lbl);(RV.tx||[]).forEach(x=>x.style.display=RV.lbl?'':'none');return}},true);
 function R_KEY_OK(k){return M&&M.rpObj&&M.fx&&k==='rp:'+M.fx.d+':'+M.fx.h+':'+M.fx.a}
 document.addEventListener('input',e=>{if(!e.target)return;if(e.target.id==='rpr'){RV.drag=true;RV.t=+e.target.value;RV.fb=null;const f=document.getElementById('rpf');if(f)f.value=0;rpDraw(RV.t);RV.drag=false}
