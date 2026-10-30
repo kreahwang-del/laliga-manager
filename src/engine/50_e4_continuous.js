@@ -341,8 +341,8 @@ function createMatch(H,A,opt={}){
     const diff=(low?(attr(tg.p,'offball',s)-attr(dm.p,'posit',o))*.8:airC(tg.p,s)-airC(dm.p,o))+(free?3:0)+(As.length-Ds.length)*.4;
     const Ae=AER[type];flight(ball.x,ball.y,tg.x,tg.y,low?.7:1.1,low?.3:1);
     const tdi=T[o].ti;
-    const gA=ta.gmbAir&&type==='cross'?(CFG.gmbAirK||0):0;/* v256 막판 승부수 '공중볼 폭격'(유저 전용 ta.gmbAir): 공중볼 우열(diff) 효과를 (1+gmbAirK)배 → 우위면 더 이기고 열세면 더 짐. AI는 이 값을 쓰지 않음 */
-    if(r()>clamp(Ae.win+(CFG.xrOn&&type==='cross'?CFG.xrWinD:0)+((q-13)*.012+diff*.035*(tdi[0]<=2?1.3:1)*(1+gA)),.1,.75)){pr(dm.p).aw++;TR({k:'air',p:tg.p.name,vs:dm.p.name,won:false});ev({s,t:'aerialLost',p:tg.p.name,d:dm.p.name,type});pr(dm.p).r+=RW.airW;pr(tg.p).r-=RW.airL;duelRec(tg,dm,s,false,2,true);
+    const gA=ta.gmbAir&&type==='cross'&&!low?clamp((ta.gmbAirD||0)*(CFG.gmbAirK||0),-.15,.15):0;/* v256 막판 승부수 '공중볼 폭격'(유저 전용 ta.gmbAir): 높은 크로스 경합 승률에 경기 단위 공중볼 우열(화면의 decAir 우리−상대 = ta.gmbAirD)×gmbAirK를 더함 → 우위면 더 이기고 열세면 더 짐(QA 의견: 개별 경합 diff는 free·인원·낮은 크로스가 섞여 증폭 대상으로 부적합). AI는 이 값을 쓰지 않음 */
+    if(r()>clamp(Ae.win+(CFG.xrOn&&type==='cross'?CFG.xrWinD:0)+((q-13)*.012+diff*.035*(tdi[0]<=2?1.3:1)+gA),.1,.75)){pr(dm.p).aw++;TR({k:'air',p:tg.p.name,vs:dm.p.name,won:false});ev({s,t:'aerialLost',p:tg.p.name,d:dm.p.name,type});pr(dm.p).r+=RW.airW;pr(tg.p).r-=RW.airL;duelRec(tg,dm,s,false,2,true);
       if(CFG.xrOn&&type==='cross'){/* v135 크로스 실패 갈래(실측 오픈플레이 크로스 22.4회/경기 중 공격 실패 71%: 걷어내기 51%·수비 회수 18%·라인 밖 11%·블록 6%·코너 일부) */const u=r();
         if(u<CFG.xrOut){ball.last=s;st.after=()=>restart('gk',o,F(o,5.5),34);return 'lost'}
         if(u<CFG.xrOut+CFG.xrRec){st.after=()=>{dm.x=tg.x;dm.y=tg.y;give(dm,'regain',.5)};return 'lost'}
@@ -355,7 +355,7 @@ function createMatch(H,A,opt={}){
     if(r()>(type==='cross'&&CFG.crShotP?CFG.crShotP:Ae.shot)){TR({k:'air',p:tg.p.name,vs:dm.p.name,won:true,held:true});ev({s,t:'aerialWon',p:tg.p.name,type});st.after=()=>{if(r()<.5){tg.recvFrom=dl.a;tg.recvAt=st.sec;give(tg,'keep',.4)}else loose(tg.x,tg.y,(s?1:-1)*-6,(r()-.5)*8)};return 'held'}
     const t=low?'lowcross':type;TR({k:'air',p:tg.p.name,vs:dm.p.name,won:true,low});
     let sx=F(s,tg.x),sy=Lt(s,tg.y);{const lx=low?86+r()*9:91.5+r()*5.5,ly=29+r()*10;if(sx<lx-1||Math.abs(sy-34)>9){sx=lx;sy=ly}}
-    const xg=CFG.hdK?clamp(xgGeo(sx,sy)*(low?CFG.lcK:CFG.hdK)*(1+(q-13)*.05)*(1+diff*.05*(1+gA)),.02,.45):clamp(XG[t]*(1+(q-13)*.05)*(1+diff*.05),.02,.45);
+    const xg=CFG.hdK?clamp(xgGeo(sx,sy)*(low?CFG.lcK:CFG.hdK)*(1+(q-13)*.05)*(1+diff*.05),.02,.45):clamp(XG[t]*(1+(q-13)*.05)*(1+diff*.05),.02,.45);
     st.after=()=>{tg.x=F(s,sx);tg.y=Lt(s,sy);ball.x=tg.x;ball.y=tg.y;shoot(tg,low?'lowcross':'header',xg,dl.a)};return 'shot'}
   // ---- 패스 차단 위험(실제 수비 위치) ----
   function laneRisk(o,x0,y0,x1,y1,sp,lofted){const dx=x1-x0,dy=y1-y0,d2=dx*dx+dy*dy||1,d=Math.sqrt(d2);let keep=1,best=null,bp=0,bt=1;

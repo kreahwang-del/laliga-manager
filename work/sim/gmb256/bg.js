@@ -19,7 +19,7 @@ for(let c0=K0;c0<K0+N;c0+=CH){
        snap={d:st.sc[1]-st.sc[0],g0:st.sc[0],g1:st.sc[1],x0:st.xg[0],x1:st.xg[1],s0:st.sh[0],s1:st.sh[1],r:Math.round(x%100000),
          oa:+decAir(T[0].xi).toFixed(2),da:+decAir(T[1].xi).toFixed(2),op:+av(T[1].xi,'pace',p=>['ST','W','AM'].includes(p.g)).toFixed(2),dp:+av(T[0].xi,'pace',p=>['CB','FB'].includes(p.g)).toFixed(2),
          ment:T[0].ment||'',oppG:+(T[1].gsx||0).toFixed(2)};
-       if(POL==='airA'||POL==='airAB'){gambleApply(api,0,T[0],'g_air');T[0].gsx=2.5;if(POL==='airAB')T[0].gmbAir=1}else if(POL!=='none')gambleApply(api,0,T[0],POL)}
+       if(POL==='airA'||POL==='airAB'){gambleApply(api,0,T[0],'g_air');T[0].gsx=2.5;if(POL==='airAB'){T[0].gmbAir=1;T[0].gmbAirD=decAir(T[0].xi)-decAir(T[1].xi)}}else if(POL!=='none')gambleApply(api,0,T[0],POL)}
      if(min===85)g85=+(T[0].gsx||0).toFixed(2)}});
    while(!m.done)m.step();const st=m.st;
    R.push({k,pol:POL,h:h.i,a:a.i,d:snap.d,r:snap.r,oa:snap.oa,da:snap.da,op:snap.op,dp:snap.dp,ment:snap.ment,oppG:snap.oppG,g85,g90:+(m.T?0:0),
