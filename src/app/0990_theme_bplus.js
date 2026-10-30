@@ -9,10 +9,13 @@
   const bpLum=rgb=>{const f=v=>{v/=255;return v<=.03928?v/12.92:Math.pow((v+.055)/1.055,2.4)};return .2126*f(rgb[0])+.7152*f(rgb[1])+.0722*f(rgb[2])};
   const bpInk=c=>{const rgb=bpRgb(c);if(!rgb)return '#fff';const L=bpLum(rgb);return (L+.05)/(.0074+.05)>1.05/(L+.05)?'#0A0B0D':'#fff'};
   const bpNear=(a,b)=>{const x=bpRgb(a),y=bpRgb(b);if(!x||!y)return a===b;return Math.hypot(x[0]-y[0],x[1]-y[1],x[2]-y[2])<90};
+  /* 재확인 반영: 긴 정식 구단명은 앞의 공통 단어만 남아 구분이 안 됨 → 'Football Club'·'Club Atlético' 같은 공통어를 빼고, 그래도 20자 넘으면 3글자 약칭(정식명은 title로 보존) */
+  const BP_GEN=/\b(Football Club|Futebol Clube|Fútbol Club|Club Atlético|Clube Atlético|Clube de Regatas|Clube|Club Deportivo|Asociación Atlética|Asociación|Associação|Sociedade Esportiva|Esporte Clube|Sport Club|Club Social y Deportivo|Club Social|Club de Fútbol|Club|FC|CF|SC|AC|CA|CD|SD|UD|AFC|Inc\.|Ltd\.|Co\.)\b\.?/gi;
+  const bpDisp=n=>{if(n.length<=16)return n;const t=n.replace(BP_GEN,' ').replace(/\s+/g,' ').trim().replace(/^(de|do|da|del|dos|das|of)\s+/i,'');if(t&&t.length<=20)return t;const sh=(CLUBS.find(c=>c&&c.name===n)||{}).short;return sh||t.slice(0,18)+'…'};
   const bpCol=c=>{try{return clubCol(c)}catch(e){return ['#2E6B5E','#4A3F7A']}};
   function bpMatchInit(){const d=document.getElementById('match');if(!d||!M||!M.fx)return;
     const h=bpCol(M.fx.h)[0];let a=bpCol(M.fx.a)[0];if(bpNear(h,a)){const a2=bpCol(M.fx.a)[1];a=a2&&!bpNear(h,a2)?a2:'#3A3E45'}d.classList.add('bp');
-    /* 팀 이름을 span으로 감싸 2줄 말줄임·순위 줄 배치(글자는 그대로) */d.querySelectorAll('.board>.team').forEach(t=>{[...t.childNodes].forEach(n=>{if(n.nodeType===3&&n.textContent.trim()){const sp=document.createElement('span');sp.className='bpnm';sp.textContent=n.textContent;t.replaceChild(sp,n)}})});d.style.setProperty('--hc',h);d.style.setProperty('--ac',a);d.style.setProperty('--hink',bpInk(h));d.style.setProperty('--aink',bpInk(a));
+    /* 팀 이름을 span으로 감싸 2줄 말줄임·순위 줄 배치(글자는 그대로) */d.querySelectorAll('.board>.team').forEach(t=>{[...t.childNodes].forEach(n=>{if(n.nodeType===3&&n.textContent.trim()){const sp=document.createElement('span');sp.className='bpnm';const full=n.textContent.trim();const dn=bpDisp(full);sp.textContent=dn;if(dn!==full)sp.title=full;t.replaceChild(sp,n)}})});d.style.setProperty('--hc',h);d.style.setProperty('--ac',a);d.style.setProperty('--hink',bpInk(h));d.style.setProperty('--aink',bpInk(a));
     const b=d.querySelector('.board');if(b&&!d.querySelector('.bpmom'))b.insertAdjacentHTML('afterend',`<div class="bpmom" aria-label="최근 10분 흐름"><span class="l">흐름</span><div class="bar2"><i style="width:50%"></i></div><span class="r">최근 10분</span></div>`);
     setTimeout(()=>{try{d.querySelectorAll('.board .mrk').forEach(e=>{const t=e.textContent;const m=t.match(/(\d+위\s*·\s*-?\d+점)\s*$/);if(m&&!e.title){e.title=t;e.textContent=m[1]}})}catch(_){}},0);
     M.bpH=[]}
