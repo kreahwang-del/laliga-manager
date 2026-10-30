@@ -69,3 +69,4 @@ app/0650_v178_player_model.js
 app/0655_data_wmap.js
 app/0660_start_map.js
 app/0670_breaking_popup.js
+app/0990_theme_bplus.js
