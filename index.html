@@ -2950,6 +2950,8 @@ function capOf4(e){const nm=x=>`<b>${esc(shortN(x))}</b>`,tn=s=>CLUBS[s===0?M.fx
 function play4(frames,evs){return new Promise(res=>{if(!M||M.skipping||!frames.length)return res();const tok=++A2.token;A2.busy=true;draw4Init(frames[0]);
   const hl=evs.filter(e=>HL4[e.t]&&e.sec!=null).map(e=>({a:e.sec-(e.t==='goal'?5:3.5),b:e.sec+(e.t==='goal'?2.5:1.2),r:HL4[e.t]}));
   const caps=evs.filter(e=>e.sec!=null).map(e=>({t:e.sec,c:capOf4(e)})).filter(x=>x.c);
+  /* v263 사용자 지적: 득점 직후 공이 골대로 들어가지 않고 바로 센터서클로 미끄러져 보임 — 기록 프레임 사이에서 골(비행 끝)과 킥오프 재배치가 한꺼번에 일어나 직선 보간됨. 복기(rpGoalAnim)와 같은 방식: 골 직후 공 위치가 15m 넘게 뛰는 프레임 구간에서는 공을 골문 안으로 보낸 뒤 그 자리에 둠 */
+  const GA={};evs.filter(e=>e.t==='goal'&&e.sec!=null).forEach(e=>{for(let j=0;j<frames.length-1;j++){const a=frames[j],b=frames[j+1];if(a.t<e.sec-4||a.t>e.sec+6)continue;if(Math.hypot(b.b[0]-a.b[0],b.b[1]-a.b[1])>15){GA[j]={gx:a.b[0]<52.5?-1.2:106.2,gy:Math.max(31,Math.min(37,a.b[1]))};break}}});
   const t0=frames[0].t-.5,t1=frames[frames.length-1].t;let gt=t0,last=performance.now(),ci=0;
   const rsAt=t=>{let i=0;while(i<frames.length-1&&frames[i+1].t<t)i++;return frames[i].rs};
   const rate=t=>{const base=20*(M.speed||1);let r=base;for(const w of hl)if(t>=w.a&&t<=w.b)r=Math.min(r,w.r*Math.sqrt(M.speed||1));if(r===base&&rsAt(t))r=base*((M.speed||1)<1?2:4); /* v152 느린 속도에선 재개 구간 빨리감기를 2배로만 */return r};
@@ -2958,7 +2960,7 @@ function play4(frames,evs){return new Promise(res=>{if(!M||M.skipping||!frames.l
     if(M.evQ&&M.evQ.length&&typeof evFlush==='function')evFlush(gt);else if(M.clk!=null&&typeof evFlush==='function'&&(gt-M.clk)>2)evFlush(gt);
     while(ci<caps.length&&caps[ci].t<=gt){const c=caps[ci++].c;cap(c[0],c[1])}
     if(gt>=t1){const f=frames[frames.length-1];draw4(f,null,0);A2.busy=false;return res()}
-    let i=0;while(i<frames.length-1&&frames[i+1].t<gt)i++;const f0=frames[i],f1=frames[i+1];const k=f1?Math.max(0,Math.min(1,(gt-f0.t)/(f1.t-f0.t||1))):0;draw4(f0,f1,k);
+    let i=0;while(i<frames.length-1&&frames[i+1].t<gt)i++;const f0=frames[i],f1=frames[i+1];const k=f1?Math.max(0,Math.min(1,(gt-f0.t)/(f1.t-f0.t||1))):0;draw4(f0,f1,k);const ga=GA[i];if(ga){const bl=$('#m2dBall');if(bl){const B0=f0.b,q=Math.min(1,k*2.5);bl.setAttribute('cx',(B0[0]+(ga.gx-B0[0])*q).toFixed(2));bl.setAttribute('cy',(B0[1]+(ga.gy-B0[1])*q-B0[2]*1.2*(1-q)).toFixed(2));bl.setAttribute('r','1')}}
     requestAnimationFrame(loop)};requestAnimationFrame(loop)})}
 // 기존 함수 교체: v4 경기면 프레임 재생
 {const _pe=playEvents;playEvents=function(evs){if(M&&M.m&&M.m.v===4)return play4(M.m.st.frames||[],evs);return _pe(evs)}}
@@ -3952,7 +3954,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=262;
+const APPV=263;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
