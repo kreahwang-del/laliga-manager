@@ -20,18 +20,18 @@ function dvClear(){DV.anim++;const svg=document.getElementById('m2d');if(svg){if
 function dvShow(d){const svg=document.getElementById('m2d');const f=dvFrame();if(!svg||!f||!d)return null;if(DV.vb==null)DV.vb=svg.getAttribute('viewBox')||'0 0 105 68';
   const me=M.me,atk=d.k==='def'?1-d.s:d.s,opp=1-atk,gx=dvGoalX(atk),gy=34,dir=gx>52?1:-1;
   let ball=[f.b[0],f.b[1]],our=[],their=[],marks=[],info='',zw=44,zc=null;
-  if(d.k==='fk'){ball=dvE2D(d.x,d.y);our=[d.tk&&d.tk.id];info=`골문까지 ${d.info.d}m · 정면에서 ${d.info.ang}m 옆`;marks=[[gx,gy,'1'],[gx-dir*11,gy,'2'],[ball[0]-dir*6,ball[1]+(ball[1]<34?6:-6),'3']]}
-  else if(d.k==='corner'){const L_=(d.info||{}).side==='L';const ey=d.s?(L_?67.5:.5):(L_?.5:67.5);ball=dvE2D(d.s?0:105,ey);our=dvTopAir(atk);their=dvTopAir(opp);const tid=dvIdByName((d.info||{}).tk);if(tid)our.unshift(tid);
-    const ny=ball[1]<34?30.3:37.7;marks=[[gx-dir*11,gy,'1'],[gx-dir*3,ny,'2'],[ball[0]-dir*9,ball[1]<34?ball[1]+3:ball[1]-3,'3']];info=`박스 공중볼 상위 3명 표시 · 우리(노랑) vs 상대(빨강)`;zc=[gx-dir*14,gy];zw=40}
+  if(d.k==='fk'){ball=dvE2D(d.x,d.y);our=[d.tk&&d.tk.id];info=`정면에서 ${d.info.ang}m 옆 · 번호는 선택지별로 공이 갈 곳 · 선수들은 아직 위치로 이동 중`;marks=[[gx,gy,'1'],[gx-dir*11,gy,'2'],[ball[0]-dir*6,ball[1]+(ball[1]<34?6:-6),'3']]}
+  else if(d.k==='corner'){const L_=(d.info||{}).side==='L';const ey=d.s?(L_?67.5:.5):(L_?.5:67.5);ball=dvE2D(d.s?0:105,ey);our=[];their=[];const tid=dvIdByName((d.info||{}).tk);if(tid)our.unshift(tid);/* v268 검증 의견: 결정 순간 선수 위치는 코너 배치 전(이동 중)이라 공중볼 상위 선수 링은 판단을 왜곡 → 키커만 표시, 공중볼 비교는 글로 */
+    const ny=ball[1]<34?30.3:37.7;marks=[[gx-dir*11,gy,'1'],[gx-dir*3,ny,'2'],[ball[0]-dir*9,ball[1]<34?ball[1]+3:ball[1]-3,'3']];info=`선수들은 아직 코너 위치로 이동 중 · 번호는 선택지별로 공이 갈 곳`;zc=[(ball[0]+gx-dir*11)/2,(ball[1]+gy)/2];zw=58}
   else if(d.k==='def'){const ap=dvPos(f,d.atk),dp=dvPos(f,d.aid);if(ap)ball=ap;our=[d.aid];their=[d.atk];info=`상대 ${esc(shortName((d.info||{}).an||''))} → 골문까지 ${(d.info||{}).dist}m`;zw=38;zc=ap&&dp?[(ap[0]+dp[0])/2,(ap[1]+dp[1])/2]:null}
   else{const ap=dvPos(f,d.aid);if(ap)ball=ap;our=[d.aid];their=dvNear(f,opp,ball,1);const I=d.info||{};
     info=d.k==='box'?`골문까지 ${I.dist}m · 슈팅 길 수비 ${I.cone??'-'}명 · 가장 가까운 수비 ${I.nd}m · 박스 안 우리 ${I.bA} : 상대 ${I.bD}`:d.k==='cross'?`가장 가까운 수비 ${I.nd}m · 박스 안 우리 ${I.bA} : 상대 ${I.bD}`:`박스 안 우리 ${I.bA??'-'} : 상대 ${I.bD??'-'} · 가장 가까운 수비 ${I.nd??'-'}m`;zw=d.k==='box'?40:44;zc=[(ball[0]+gx)/2,(ball[1]+gy)/2]}
   if(!zc)zc=[(ball[0]+gx)/2,(ball[1]+gy)/2];
   const NS='http://www.w3.org/2000/svg';let g=document.getElementById('dvL');if(g)g.remove();g=document.createElementNS(NS,'g');g.id='dvL';g.setAttribute('pointer-events','none');
-  const ring=(id,col,r)=>{const q=dvPos(f,id);if(!q)return '';return `<circle cx="${q[0]}" cy="${q[1]}" r="${r}" fill="none" stroke="${col}" stroke-width=".55"/>`};
-  const dist=Math.hypot(gx-ball[0],gy-ball[1]);let h='';
-  h+=`<line x1="${ball[0]}" y1="${ball[1]}" x2="${gx}" y2="${gy}" stroke="#F5D547" stroke-width=".35" stroke-dasharray="1.2 .9" opacity=".85"/><text x="${ball[0]+(gx-ball[0])*.3}" y="${ball[1]+(gy-ball[1])*.3-1.4}" text-anchor="middle" font-size="2.3" font-weight="800" fill="#F5D547" stroke="#0A0B0D" stroke-width=".35" paint-order="stroke">${Math.round(dist)}m</text>`;
-  our.filter(Boolean).forEach((id,i)=>h+=ring(id,'#F5D547',i===0?2.9:2.4));their.filter(Boolean).forEach(id=>h+=ring(id,'#E5484D',2.6));
+  const ring=(id,col,r,dash)=>{const q=dvPos(f,id);if(!q)return '';return `<circle cx="${q[0]}" cy="${q[1]}" r="${r+.25}" fill="none" stroke="#0A0B0D" stroke-width="1"/><circle cx="${q[0]}" cy="${q[1]}" r="${r}" fill="none" stroke="${col}" stroke-width=".6"${dash?' stroke-dasharray="1 .6"':''}/>`};/* 검증 의견: 노랑·빨강 링이 겹쳐 구분 어려움 → 우리 큰 실선, 상대 작은 점선 + 검은 테두리 */
+  const dist=Math.hypot(gx-ball[0],gy-ball[1]);const lt=marks.length?.22:.6;let h='';
+  h+=`<line x1="${ball[0]}" y1="${ball[1]}" x2="${gx}" y2="${gy}" stroke="#F5D547" stroke-width=".35" stroke-dasharray="1.2 .9" opacity=".85"/><text x="${ball[0]+(gx-ball[0])*lt}" y="${ball[1]+(gy-ball[1])*lt+(ball[1]<34?-2.4:3.4)}" text-anchor="middle" font-size="2.3" font-weight="800" fill="#F5D547" stroke="#0A0B0D" stroke-width=".35" paint-order="stroke">${Math.round(dist)}m</text>`;
+  our.filter(Boolean).forEach((id,i)=>h+=ring(id,'#F5D547',i===0?3.2:2.6));their.filter(Boolean).forEach(id=>h+=ring(id,'#E5484D',2.1,1));
   h+=`<circle cx="${ball[0]}" cy="${ball[1]}" r="1.9" fill="none" stroke="#fff" stroke-width=".4"><animate attributeName="r" values="1.4;2.6;1.4" dur="1.2s" repeatCount="indefinite"/></circle>`;
   marks.forEach(([x,y,t])=>h+=`<g><circle cx="${x}" cy="${y}" r="1.7" fill="#0A0B0D" stroke="#F5D547" stroke-width=".35"/><text x="${x}" y="${y+.8}" text-anchor="middle" font-size="2.2" font-weight="900" fill="#F5D547">${t}</text></g>`);
   g.innerHTML=h;svg.appendChild(g);svg.classList.add('dvz');dvZoom(svg,zc[0],zc[1],zw);return {info,marks:marks.length}}
@@ -45,5 +45,5 @@ function dvShow(d){const svg=document.getElementById('m2d');const f=dvFrame();if
 {const _rl=r3Lab;r3Lab=function(e){return e&&e.t==='dec'?'지시 결과':_rl.apply(this,arguments)}}
 {const st=document.createElement('style');st.textContent=`.scrim.dvm{background:transparent;pointer-events:none}.scrim.dvm .sheet{pointer-events:auto;max-height:50%;box-shadow:0 -10px 28px rgba(0,0,0,.7);padding-top:12px}
 .scrim.dvm .sheet h3{margin:2px 0 4px}.scrim.dvm .sheet .btn{padding:9px 12px;margin-top:6px}.dvinfo{margin:0 0 6px;padding:6px 8px;background:rgba(245,213,71,.10);border-left:3px solid var(--amber,#F5D547);font-size:12.5px;font-weight:700;color:var(--text,#F2F3F5)}
-#m2d.dvz .pl text{font-size:1.25px;stroke-width:.15px}#m2d.dvz .pl circle{r:1.25px}
+body:has(.scrim.dvm) .bpgoal{display:none!important}#m2d.dvz .pl text{font-size:1.25px;stroke-width:.15px}#m2d.dvz .pl circle{r:1.25px}
 .dvn{display:inline-grid;place-items:center;width:18px;height:18px;margin-right:6px;border:1.5px solid var(--amber,#F5D547);color:var(--amber,#F5D547);font-size:11px;font-weight:900;border-radius:50%;vertical-align:1px}`;document.head.appendChild(st)}
