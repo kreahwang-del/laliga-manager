@@ -1,0 +1,286 @@
+{
+ "log": [
+  {
+   "k": "cross",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "64.00 33.00 44.00 28.50",
+   "info": "가장 가까운 수비 8.7m · 박스 안 우리 0 : 상대 1",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "fk",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "64.00 21.68 44.00 28.50",
+   "info": "골문까지 19.9m · 정면에서 3.9m 옆",
+   "nums": 3,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "corner",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "-3.00 21.05 40.00 25.90",
+   "info": "박스 공중볼 상위 3명 표시 · 우리(노랑) vs 상대(빨강)",
+   "nums": 3,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "chips": [
+    "2' 골 · Valverde",
+    "15' 골 · Diomandé",
+    "25' 지시 결과 · Diomandé",
+    "40' 지시 결과 · Vinicius",
+    "56' 골 · Mbappé",
+    "59' 골 · García",
+    "61' 지시 결과 · Vinicius",
+    "91' 골 · Gómez"
+   ]
+  },
+  {
+   "chips": []
+  },
+  {
+   "k": "cross",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "64.00 35.25 44.00 28.50",
+   "info": "가장 가까운 수비 2.4m · 박스 안 우리 0 : 상대 1",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "cross",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "64.00 6.00 44.00 28.50",
+   "info": "가장 가까운 수비 3m · 박스 안 우리 1 : 상대 3",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "box",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "-3.00 25.80 40.00 25.90",
+   "info": "골문까지 18.7m · 슈팅 길 수비 1명 · 가장 가까운 수비 1.3m · 박스 안 우리 2 : 상대 5",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "chips": [
+    "14' 지시 결과 · Simeone",
+    "28' 빅찬스 · Sørloth",
+    "34' 선방 · Lookman",
+    "35' 지시 결과 · Lookman",
+    "65' 지시 결과 · Koke",
+    "67' 빅찬스 · Simeone"
+   ]
+  },
+  {
+   "k": "def",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "-3.00 -3.00 38.00 24.61",
+   "info": "상대 Femenía → 골문까지 29.5m",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "def",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "9.30 29.65 38.00 24.61",
+   "info": "상대 Satriano → 골문까지 30m",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "cross",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "-3.00 34.85 44.00 28.50",
+   "info": "가장 가까운 수비 5.7m · 박스 안 우리 2 : 상대 3",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "chips": [
+    "15' 지시 결과 · Romero",
+    "37' 지시 결과 · Mouriño",
+    "67' 지시 결과 · Pérez",
+    "72' 골 · Romero",
+    "79' 골 · Mikautadze",
+    "83' 골 · Mikautadze"
+   ]
+  },
+  {
+   "k": "def",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "0.90 38.45 38.00 24.61",
+   "info": "상대 Luismi → 골문까지 26.6m",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "def",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "7.35 13.60 38.00 24.61",
+   "info": "상대 Casado → 골문까지 28m",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "box",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "-3.00 22.90 40.00 25.90",
+   "info": "골문까지 15.7m · 슈팅 길 수비 1명 · 가장 가까운 수비 1m · 박스 안 우리 0 : 상대 2",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "chips": [
+    "17' 지시 결과 · Kubo",
+    "22' 빅찬스 · Barrenetxea",
+    "31' 선방 · Aubameyang",
+    "40' 지시 결과 · Oyarzabal",
+    "67' 지시 결과 · Kubo",
+    "70' 빅찬스 · Soriano"
+   ]
+  },
+  {
+   "k": "box",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "68.00 27.10 40.00 25.90",
+   "info": "골문까지 19.7m · 슈팅 길 수비 1명 · 가장 가까운 수비 2.2m · 박스 안 우리 1 : 상대 1",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "cross",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "64.00 36.40 44.00 28.50",
+   "info": "가장 가까운 수비 2m · 박스 안 우리 1 : 상대 1",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "k": "def",
+   "sheetTop": 390,
+   "sheetH": 390,
+   "pitchBottom": 328,
+   "vb": "66.35 12.70 38.00 24.61",
+   "info": "상대 Camello → 골문까지 22.1m",
+   "nums": 0,
+   "btnsVisible": 3,
+   "layer": true,
+   "after": {
+    "vb": "0 0 105 68",
+    "layer": false
+   }
+  },
+  {
+   "chips": [
+    "1' 골 · Cucho",
+    "11' 지시 결과 · Cucho",
+    "43' 지시 결과 · Cucho",
+    "43' 빅찬스 · Antony",
+    "52' 선방 · Cucho",
+    "63' 지시 결과 · Antony",
+    "92' 골 · Cucho"
+   ]
+  }
+ ],
+ "errs": []
+}
