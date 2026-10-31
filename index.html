@@ -3299,7 +3299,7 @@ function homeView(){
     :nw?`<div class="banner closed"><span>다음 이적시장 ${fmtD(nw.from)} 개장</span><span class="num" style="font-size:17px">D-${daysBetween(S.date,nw.from)}</span></div>`:''}
   ${up?`<section class="card fixture"><div class="md"><span>${up.r?`${up.r}라운드`:(up.cup||up.po||up.eu)?esc(cupLabel(up)):'프리시즌 친선경기'} · ${fmtD(up.d)}</span><span>${up.h===S.club?'홈':'원정'}</span></div>
     <div class="vs"><div class="team">${crest(up.h)}${esc(CLUBS[up.h].name)}</div><div class="mid">VS</div><div class="team">${crest(up.a)}${esc(CLUBS[up.a].name)}</div></div>
-    ${(S.reports||[]).length?'':`<p class="note" style="text-align:center">오른쪽 아래 '계속'을 누르면 경기일까지 진행합니다. 도중에 처리할 소식이 생기면 멈춥니다.</p>`}</section>`
+    <!--hintmk-->${(S.reports||[]).length?'':`<p class="note" style="text-align:center">오른쪽 아래 '계속'을 누르면 경기일까지 진행합니다. 도중에 처리할 소식이 생기면 멈춥니다.</p>`}</section>`
    :`<section class="card pad" style="margin-top:14px">남은 경기가 없습니다. '계속'을 눌러 다음 시즌으로 넘어가세요.</section>`}
   <h2>받은 소식</h2><div class="card inbox">${msgs.length?msgs.map(msgHTML).join(''):'<div class="msg"><p>새 소식이 없습니다.</p></div>'}</div>
   ${S.fixtures.some(x=>x.res)?`<h2>순위 · ${pos}위</h2><div class="card">${tableHTML(tb.slice(Math.max(0,pos-3),Math.max(5,pos+2)),true)}</div>`:''}`;
@@ -3959,7 +3959,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=266;
+const APPV=267;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -6030,7 +6030,7 @@ function form5HTML(c){const L=last5(c);if(!L.length)return '<div class="note" st
   return `<div style="display:flex;gap:3px;justify-content:center">${L.map(f=>{const home=f.h===c,[a,b]=f.res.sc,g=home?a-b:b-a,o=home?f.a:f.h;const k=g>0?['승','var(--good)']:g<0?['패','var(--bad)']:['무','#8C939D'];
     return `<span title="${fmtD(f.d)} ${home?'홈':'원정'} ${esc(CLUBS[o].short)} ${home?a:b}:${home?b:a}" style="display:inline-flex;flex-direction:column;align-items:center;min-width:26px"><span style="background:${k[1]};color:#fff;border-radius:4px;font-size:12px;font-weight:700;width:22px;line-height:20px;text-align:center">${k[0]}</span><span style="font-size:9px;color:var(--muted);margin-top:1px">${esc(CLUBS[o].short)}</span></span>`}).join('')}</div><div style="font-size:9px;color:var(--muted);text-align:center;margin-top:1px">과거 → 최근</div>`}
 {const _hv=homeView;homeView=function(){let h=_hv.apply(this,arguments);try{const mn=myNext(),fr=(S.friendlies||[]).find(x=>!x.res);const cn=typeof cupNextMine==='function'?cupNextMine():null;const up=[fr,mn,cn].filter(Boolean).sort((a,b)=>a.d<b.d?-1:1)[0];
-  if(up&&CLUBS[up.h]&&CLUBS[up.a]){const mk='<p class="note" style="text-align:center">오른쪽 아래';const i=h.indexOf(mk);if(i>=0){const row=`<div class="note" style="margin:6px 0 2px;font-size:11px;text-align:center">최근 5경기</div><div style="display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:10px;margin:0 0 2px"><div>${form5HTML(up.h)}</div><div>${form5HTML(up.a)}</div></div>`;h=h.slice(0,i)+row+h.slice(i)}}}catch(e){console.error(e)}return h}}
+  if(up&&CLUBS[up.h]&&CLUBS[up.a]){const mk='<!--hintmk-->';/* v267: v262에서 '계속' 안내를 첫 경기 전에만 보이게 바꾼 뒤 이 자리표가 사라져 최근 5경기(·1차전 결과)가 안 보였음 → 항상 남는 표식 사용 */const i=h.indexOf(mk);if(i>=0){const row=`<div class="note" style="margin:6px 0 2px;font-size:11px;text-align:center">최근 5경기</div><div style="display:grid;grid-template-columns:1fr 1fr;align-items:start;gap:10px;margin:0 0 2px"><div>${form5HTML(up.h)}</div><div>${form5HTML(up.a)}</div></div>`;h=h.slice(0,i)+row+h.slice(i)}}}catch(e){console.error(e)}return h}}
 // ================= v151: 체력 회복을 남은 피로에 비례해 빠르게 =================
 // 이전: 하루 +3 고정(경기 하락 9~15) → 주 2경기 뛰는 주전이 쉬어도 못 따라가 시즌 중 39 수준까지 계속 하락(주 1경기면 완전 회복)
 // 실제 경기 후 회복 72시간 안팎 → 추가 회복 (100-체력)×0.05/일: 같은 11명이 주 2경기를 계속 뛰어도 90 안팎에서 멈춤(이전엔 주마다 약 2씩 계속 하락), 주 1경기면 100
@@ -6283,7 +6283,7 @@ function aggTxt(f,sc){const a=aggOf(f,sc);if(!a)return '';return `합계 ${CLUBS
 {const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(fx&&fx.leg===2){const t=aggTxt(fx,res.sc);if(t)R.agg=t}}catch(e){}return R}}
 {const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(R&&R.agg)h=`<div class="banner closed" style="margin:0 0 8px;justify-content:center"><b style="color:var(--amber)">${esc(R.agg)}</b></div>`+h}catch(e){}return h}}
 {const _hv=homeView;homeView=function(){let h=_hv.apply(this,arguments);try{const mn=myNext(),cn=typeof cupNextMine==='function'?cupNextMine():null;const up=[mn,cn].filter(Boolean).sort((a,b)=>a.d<b.d?-1:1)[0];
-  if(up&&up.leg===2){const l1=legFirst(up);if(l1){const mk='<p class="note" style="text-align:center">오른쪽 아래';const i=h.indexOf(mk);const row=`<div class="note" style="text-align:center;margin:4px 0;color:var(--amber);font-weight:700">2차전 · 1차전 ${esc(CLUBS[l1.h].short)} ${l1.res.sc[0]}-${l1.res.sc[1]} ${esc(CLUBS[l1.a].short)}</div>`;if(i>=0)h=h.slice(0,i)+row+h.slice(i)}}}catch(e){console.error(e)}return h}}
+  if(up&&up.leg===2){const l1=legFirst(up);if(l1){const mk='<!--hintmk-->';/* v267: v262에서 '계속' 안내를 첫 경기 전에만 보이게 바꾼 뒤 이 자리표가 사라져 최근 5경기(·1차전 결과)가 안 보였음 → 항상 남는 표식 사용 */const i=h.indexOf(mk);const row=`<div class="note" style="text-align:center;margin:4px 0;color:var(--amber);font-weight:700">2차전 · 1차전 ${esc(CLUBS[l1.h].short)} ${l1.res.sc[0]}-${l1.res.sc[1]} ${esc(CLUBS[l1.a].short)}</div>`;if(i>=0)h=h.slice(0,i)+row+h.slice(i)}}}catch(e){console.error(e)}return h}}
 
 // ================= 해외 구단 직접 지원 · 희망 국가(v171) =================
 //  · 감독 탭 '해외 구단' 카드: 나라 탭 → 그 나라 1부 구단 목록, 요구 평판 ≤ 내 평판+8 이면 지원 가능
