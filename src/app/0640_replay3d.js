@@ -7,9 +7,10 @@ function r3Big(e){return e.t==='goal'||((e.t==='save'||e.t==='miss')&&(e.xg||0)>
 function r3Roster(){const R={};[0,1].forEach(s=>{(M.m.P[s]||[]).forEach(a=>{R[a.p.id]={s,gk:!!a.gk,n:a.p.name}})});return R}
 function r3Capture(evs){if(!M||!M.m||M.m.v!==4)return;if(M.r3fx!==M.fx){M.r3fx=M.fx;R3.buf=[];R3.pend=[];M.reps=[]}r3Keep(M.m.st.frames);
   (evs||[]).forEach(e=>{if(!r3Big(e)||e.sec==null)return;const k=e.t+e.sec+e.p;if(R3.key[k])return;R3.key[k]=1;R3.pend.push({e,t0:e.sec-9,t1:e.sec+2.5,ros:r3Roster()})});r3Flush(false)}
-function r3Flush(all){const lastT=R3.buf.length?R3.buf[R3.buf.length-1].t:-1;R3.pend=R3.pend.filter(p=>{if(!all&&lastT<p.t1)return true;const fr=R3.buf.filter(f=>f.t>=p.t0&&f.t<=p.t1);
+function r3Flush(all){const bufT=R3.buf.length?R3.buf[R3.buf.length-1].t:-1;/* v265: 3D 다시보기 칩(예: '골 · 부앙가')이 1분 계산 직후 바로 떠 2D보다 먼저 득점을 알려 버림 → 2D 재생 시각(M.clk)이 장면 끝을 지난 뒤에만 추가 */const lastT=(!all&&typeof M!=='undefined'&&M&&M.clk!=null)?Math.min(bufT,M.clk):bufT;R3.pend=R3.pend.filter(p=>{if(!all&&lastT<p.t1)return true;const fr=R3.buf.filter(f=>f.t>=p.t0&&f.t<=p.t1);
     if(fr.length>=6){Object.assign(p.ros,r3Roster());M.reps=(M.reps||[]).concat([{e:p.e,fr,ros:p.ros,sc:M.m.st?[...M.m.st.sc]:null}]).slice(-16);r3Bar()}return false})}
 {const _pe=playEvents;playEvents=function(evs){try{r3Capture(evs)}catch(e){console.error(e)}return _pe.apply(this,arguments)}}
+{const _ef=evFlush;evFlush=function(t){const o=_ef.apply(this,arguments);try{if(R3.pend&&R3.pend.length)r3Flush(false)}catch(e){}return o}}
 {const _fin=finish;finish=function(){try{if(M&&M.m&&M.m.v===4){r3Keep(M.m.st.frames);r3Flush(true)}}catch(e){}return _fin.apply(this,arguments)}}
 {const _r=render;render=function(){const o=_r.apply(this,arguments);try{if(typeof M!=='undefined'&&M&&M.reps&&M.reps.length)r3Bar()}catch(e){}return o}}
 function r3Lab(e){return e.t==='goal'?'골':e.t==='save'?'선방':'빅찬스'}
