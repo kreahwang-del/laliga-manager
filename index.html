@@ -2617,7 +2617,8 @@ function clkMin(){const m=M.m.min;if(M.clk==null||M.min0==null)return m;return M
 function updateBoard(){const st=M.m.st;M.subsLeft=Math.max(0,5-st.subs[M.me].length);{const el=$('#msl');if(el)el.textContent=M.subsLeft}{const q=M.evQ||[],g=x=>st.sc[x]-q.filter(e=>e.t==='goal'&&e.s===x).length;$('#msc').textContent=`${g(0)} : ${g(1)}`}$('#mck').textContent=`${clkMin()}'`;mstats();mpst()}
 function mstats(){const st=M.m.st,tp=st.pos[0]+st.pos[1]||1,po=[Math.round(st.pos[0]/tp*100)];po[1]=100-po[0];
   const row=(l,a,b,f=x=>x)=>{const m=Math.max(a,b,.01);return `<div class="cmp"><div class="row"><span class="v">${f(a)}</span><div class="bar l"><i style="width:${a/m*100}%;background:${a>=b?'var(--amber)':'var(--faint)'}"></i></div><span class="lab">${l}</span><div class="bar"><i style="width:${b/m*100}%;background:${b>=a?'var(--amber)':'var(--faint)'}"></i></div><span class="v">${f(b)}</span></div></div>`};
-  $('#mst').innerHTML=row('점유율',po[0],po[1])+row('슈팅',st.sh[0],st.sh[1])+row('xG',st.xg[0],st.xg[1],x=>x.toFixed(2))}
+  /* v265: 아직 재생 안 된 슈팅은 빼고 표시 */const pS=[0,0],pX=[0,0];(M.evQ||[]).forEach(e=>{if(['goal','save','miss','block'].includes(e.t)&&(e.s===0||e.s===1)){pS[e.s]++;pX[e.s]+=+e.xg||0}});
+  $('#mst').innerHTML=row('점유율',po[0],po[1])+row('슈팅',Math.max(0,st.sh[0]-pS[0]),Math.max(0,st.sh[1]-pS[1]))+row('xG',Math.max(0,st.xg[0]-pX[0]),Math.max(0,st.xg[1]-pX[1]),x=>x.toFixed(2))}
 function feed(e){const fd=$('#mfd');if(!fd)return;const nm=s=>CLUBS[s===0?M.fx.h:M.fx.a].short;let t='',cls='ev';
   const TY={cross:'크로스 헤더',lowcross:'낮은 크로스',cutback:'컷백',through:'스루패스',longshot:'중거리',combo:'연계',solo:'개인 돌파',rebound:'리바운드',spfoot:'세트피스 세컨드볼',gkErr:'빌드업 실수 틈탄',corner:'코너킥 헤더',fkx:'프리킥 헤더',fk:'직접 프리킥',pen:'페널티킥'};
   if(e.t==='corner')t=`${e.side==='L'?'왼쪽':'오른쪽'} 코너킥 · ${esc(e.p)}${e.sw==='in'?' (인스윙)':e.sw==='out'?' (아웃스윙)':''}`;else if(e.t==='fkShot')t=`<span class="tag" style="background:var(--surf2);color:var(--text)">프리킥</span>${e.side==='L'?'왼쪽':e.side==='R'?'오른쪽':'정면'}에서 ${esc(e.p)}의 직접 슈팅${e.sw==='in'?' (감아 차기)':''}`;else if(e.t==='fkCross')t=`프리킥 크로스 · ${esc(e.p)}`;else if(e.t==='penAward'){cls+=' goal';t=`<span class="tag" style="background:var(--bad);color:#fff">PK</span>${nm(e.s)} 페널티킥! 키커 ${esc(e.p)}`}else if(e.t==='offside')t=`오프사이드 · ${esc(e.p)}`;else if(e.t==='claim')t=`${esc(e.gk)}가 크로스를 잡아냅니다`;else if(e.t==='aerialLost'||e.t==='aerialWon'||e.t==='secondBall'||e.t==='longWon'||e.t==='longLost'||e.t==='intercept'){return}
@@ -2820,7 +2821,8 @@ function mpst(){const box=document.getElementById('mpst');if(!box||!M||!M.m)retu
   const side=v==='0'?M.me:1-M.me,st=M.m.st,T=M.m.T[side];const outs=(st.subs[side]||[]).map(x=>x.out).filter(Boolean);const inIds=new Set((st.subs[side]||[]).map(x=>x.inP&&x.inP.id));
   const seen=new Set(),L=T.xi.concat(outs).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id));const outIds=new Set(outs.map(p=>p.id));
   const fr=(a,b)=>b?`${a}/${b}`:'–';const goals={},asts={};st.ev.forEach(e=>{if(e.t==='goal'&&e.s===side){if(e.pid)goals[e.pid]=(goals[e.pid]||0)+1}});
-  const rows=L.map(p=>{const q=st.pr[p.id]||{};const fat=st.fatigue[side][p.id]||0,sta=Math.max(0,Math.round(100-fat));const out=outIds.has(p.id);const card=st.cards[p.id];
+  /* v265 사용자 지적(빠르게 속도): 2D가 아직 골 장면 전인데 기록 표에 골이 먼저 뜸 — 1분 계산 직후 표를 그려서. 아직 재생 안 된 사건(M.evQ)만큼 골·도움·슈팅·xG를 빼고 보여줌 */const PQ=(M.evQ||[]).filter(e=>e.s===side),pq={};const pqa=(k,n,v)=>{if(!n)return;const o=pq[n]||(pq[n]={g:0,a:0,sh:0,so:0,xg:0});o[k]+=v};PQ.forEach(e=>{if(['goal','save','miss','block'].includes(e.t)){pqa('sh',e.p,1);if(e.t!=='miss'&&e.t!=='block')pqa('so',e.p,1);pqa('xg',e.p,+e.xg||0)}if(e.t==='goal'){pqa('g',e.p,1);pqa('a',e.a,1)}});
+  const rows=L.map(p=>{const q0=st.pr[p.id]||{},dq=pq[p.name];const q=dq?Object.assign({},q0,{g:Math.max(0,(q0.g||0)-dq.g),a:Math.max(0,(q0.a||0)-dq.a),sh:Math.max(0,(q0.sh||0)-dq.sh),so:Math.max(0,(q0.so||0)-dq.so),xg:Math.max(0,(q0.xg||0)-dq.xg)}):q0;const fat=st.fatigue[side][p.id]||0,sta=Math.max(0,Math.round(100-fat));const out=outIds.has(p.id);const card=st.cards[p.id];
     const col=out?'var(--faint)':sta>=65?'var(--good)':sta>=45?'var(--ok)':'var(--bad)';
     return `<tr style="${out?'opacity:.5':''}"><td class="n">${esc(shortName(p.name))}${(()=>{try{const t=M.m.T[side];const ks=slotKeysLR(t);const i=t.xi.findIndex(x=>x&&x.id===p.id);const k=i>=0&&ks&&ks[i]?ks[i]:p.g;return ` <span class="note" style="font-size:10px">${esc(String(k||p.g))}</span>`}catch(e){return ''}})()}${inIds.has(p.id)?' <span class="note">↑교체</span>':''}${out?' <span class="note">↓아웃</span>':''}${card?` <i class="yc" style="display:inline-block;width:7px;height:10px;background:${card>=2?'var(--bad)':'#F5D547'};border-radius:1px;vertical-align:-1px"></i>`:''}</td>
       <td>${q.r!=null?q.r.toFixed(1):'–'}</td><td>${q.g?`<b style="color:var(--amber)">${q.g}</b>`:'<span class="note">0</span>'}</td><td>${q.a?`<b style="color:var(--amber)">${q.a}</b>`:'<span class="note">0</span>'}</td>
@@ -3954,7 +3956,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=264;
+const APPV=265;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -7021,9 +7023,10 @@ function r3Big(e){return e.t==='goal'||((e.t==='save'||e.t==='miss')&&(e.xg||0)>
 function r3Roster(){const R={};[0,1].forEach(s=>{(M.m.P[s]||[]).forEach(a=>{R[a.p.id]={s,gk:!!a.gk,n:a.p.name}})});return R}
 function r3Capture(evs){if(!M||!M.m||M.m.v!==4)return;if(M.r3fx!==M.fx){M.r3fx=M.fx;R3.buf=[];R3.pend=[];M.reps=[]}r3Keep(M.m.st.frames);
   (evs||[]).forEach(e=>{if(!r3Big(e)||e.sec==null)return;const k=e.t+e.sec+e.p;if(R3.key[k])return;R3.key[k]=1;R3.pend.push({e,t0:e.sec-9,t1:e.sec+2.5,ros:r3Roster()})});r3Flush(false)}
-function r3Flush(all){const lastT=R3.buf.length?R3.buf[R3.buf.length-1].t:-1;R3.pend=R3.pend.filter(p=>{if(!all&&lastT<p.t1)return true;const fr=R3.buf.filter(f=>f.t>=p.t0&&f.t<=p.t1);
+function r3Flush(all){const bufT=R3.buf.length?R3.buf[R3.buf.length-1].t:-1;/* v265: 3D 다시보기 칩(예: '골 · 부앙가')이 1분 계산 직후 바로 떠 2D보다 먼저 득점을 알려 버림 → 2D 재생 시각(M.clk)이 장면 끝을 지난 뒤에만 추가 */const lastT=(!all&&typeof M!=='undefined'&&M&&M.clk!=null)?Math.min(bufT,M.clk):bufT;R3.pend=R3.pend.filter(p=>{if(!all&&lastT<p.t1)return true;const fr=R3.buf.filter(f=>f.t>=p.t0&&f.t<=p.t1);
     if(fr.length>=6){Object.assign(p.ros,r3Roster());M.reps=(M.reps||[]).concat([{e:p.e,fr,ros:p.ros,sc:M.m.st?[...M.m.st.sc]:null}]).slice(-16);r3Bar()}return false})}
 {const _pe=playEvents;playEvents=function(evs){try{r3Capture(evs)}catch(e){console.error(e)}return _pe.apply(this,arguments)}}
+{const _ef=evFlush;evFlush=function(t){const o=_ef.apply(this,arguments);try{if(R3.pend&&R3.pend.length)r3Flush(false)}catch(e){}return o}}
 {const _fin=finish;finish=function(){try{if(M&&M.m&&M.m.v===4){r3Keep(M.m.st.frames);r3Flush(true)}}catch(e){}return _fin.apply(this,arguments)}}
 {const _r=render;render=function(){const o=_r.apply(this,arguments);try{if(typeof M!=='undefined'&&M&&M.reps&&M.reps.length)r3Bar()}catch(e){}return o}}
 function r3Lab(e){return e.t==='goal'?'골':e.t==='save'?'선방':'빅찬스'}
