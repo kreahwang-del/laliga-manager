@@ -57,6 +57,6 @@ function eaKoList(from,to,incl){const L=[];const mineOn=!(typeof unemp==='functi
   try{if(typeof cupAll==='function')cupAll().forEach(add)}catch(e){}try{if(typeof euAll==='function')euAll().forEach(add)}catch(e){}return L}
 // 진행: 그날 경기(리그·컵·유럽)를 처리하기 전에 미리 계산이 끝나길 기다림(없으면 지금 시작)
 function engAllPre(){try{if(!engAllOn())return null;const L=eaKoList(S.date,S.date,true);if(S.fixO)S.fixO.forEach(f=>{if(!f.res&&f.d===S.date)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d===S.date)L.push(f)});
-  const P=[];L.forEach(f=>{const o=EA.pre[eaKey(f)]||eaStart(f);if(o&&!o.r)P.push(o.p)});return P.length?Promise.all(P):null}catch(e){console.error(e);return null}}
+  const P=[];L.forEach(f=>{const o=EA.pre[eaKey(f)]||eaStart(f);if(o&&!o.r){if(typeof simBump==='function')simBump(o.p,'');P.push(o.p)}});/* v266: 오늘 경기는 대기열 맨 앞으로 */return P.length?Promise.all(P):null}catch(e){console.error(e);return null}}
 {const _cfE=cupFast;cupFast=function(f){try{if(engAllOn()){const k=eaKey(f),o=EA.pre[k];if(o&&o.r){delete EA.pre[k];const res=o.r;res.T=res.T||[{club:o.H.club,xi:[]},{club:o.A.club,xi:[]}];try{applyMatch(o.H,o.A,res,false)}catch(e){}f.res=Object.assign(pack(res),{eng:1});return}}}catch(e){console.error(e)}return _cfE.apply(this,arguments)}}
 

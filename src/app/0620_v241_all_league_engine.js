@@ -10,13 +10,13 @@ function engAllOn(){return S&&S.engAll!==false&&typeof SIMW!=='undefined'&&(SIMW
 function eaKey(f){return f.d+':'+f.h+':'+f.a}
 function eaIsLg(f){if(!f||f.cup!=null||f.eu||f.po||f.ko||f.md)return false;if(f.lg&&S.fxE&&S.fxE[f.lg])return true;return !!(S.fixO&&S.fixO.indexOf(f)>=0)}
 function eaApply(f,H,A,res){try{if(f.res)return;res.T=res.T||[{club:H.club,xi:[]},{club:A.club,xi:[]}];applyMatch(H,A,res,true);f.res=pack(res)}catch(e){console.error(e);try{if(!f.res)f.res={sc:res.sc||[0,0],ev:[]}}catch(_){}}}
-function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{const cu=f.cup!=null&&S.cups?S.cups[f.cup]:null;const early=cu&&f.rd<cu.R-3;const r0=early&&typeof ROT!=='undefined'?{...ROT}:null;if(r0){ROT.base=.3;ROT.eu=.35;ROT.gk=.6}try{H=teamFor(f.h);A=teamFor(f.a)}finally{if(r0)Object.assign(ROT,r0)}}if(!H||!A)return null;const o={f,H,A,r:null};o.p=simAsync(H,A).then(res=>{o.r=res;EA.done++;return res});EA.n++;EA.pre[k]=o;return o}
+function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{const cu=f.cup!=null&&S.cups?S.cups[f.cup]:null;const early=cu&&f.rd<cu.R-3;const r0=early&&typeof ROT!=='undefined'?{...ROT}:null;if(r0){ROT.base=.3;ROT.eu=.35;ROT.gk=.6}try{H=teamFor(f.h);A=teamFor(f.a)}finally{if(r0)Object.assign(ROT,r0)}}if(!H||!A)return null;const o={f,H,A,r:null};const p0=simAsync(H,A,f.d||'');o.p=p0.then(res=>{o.r=res;EA.done++;return res});o.p.job=p0.job;EA.n++;EA.pre[k]=o;return o}
 // 리그 경기 빠른 결과 대신 엔진(대기열)
 {const _fmE=fastMatch;fastMatch=function(f){if(!engAllOn()||!eaIsLg(f))return _fmE.apply(this,arguments);try{const k=eaKey(f);let o=EA.pre[k];if(!o)o=eaStart(f);if(!o)return _fmE.apply(this,arguments);delete EA.pre[k];
-    if(o.r){eaApply(f,o.H,o.A,o.r);return}EA.q.push(o.p.then(res=>eaApply(f,o.H,o.A,res)))}catch(e){console.error(e);return _fmE.apply(this,arguments)}}}
+    if(o.r){eaApply(f,o.H,o.A,o.r);return}if(typeof simBump==='function')simBump(o.p,'');EA.q.push(o.p.then(res=>eaApply(f,o.H,o.A,res)))}catch(e){console.error(e);return _fmE.apply(this,arguments)}}}
 // 진행(advance)에서 그날 다른 리그 경기가 다 끝날 때까지 기다림
 function engAllWait(){if(!EA.q.length)return null;const Q=EA.q;EA.q=[];return Promise.all(Q)}
-function eaBusyTxt(){const left=Object.values(EA.pre).filter(o=>!o.r).length;return left?`다른 리그 경기 계산 중… (남은 ${left}경기)`:'다른 리그 경기 계산 중…'}
+function eaBusyTxt(){/* v266: 미리 계산 전체(며칠 치)가 아니라 지금 기다리는 오늘 경기 수만 표시 */const left=Object.values(EA.pre).filter(o=>!o.r&&o.f&&o.f.d<=S.date).length;return left?`오늘 다른 경기 계산 중… (남은 ${left}경기)`:'다른 리그 경기 계산 중…'}
 // 우리 경기 시작 때 미리 계산: 오늘 뒤 ~ 다음 우리 경기 날(없으면 7일 뒤)까지
 function eaPrefetch(){try{if(!engAllOn())return;/* v257(사용자 지적: 우리 경기를 빨리 끝내고 '계속'을 누르면 대기): 미리 계산 범위를 '다음 우리 경기'에서 '다다음 우리 경기 날'(최대 17일)까지로 넓힘 → 다음 경기 전에 그 다음 라운드까지 백그라운드에서 끝냄. 가까운 날짜부터 계산 */const my=(S.fixtures||[]).filter(f=>!f.res&&(f.h===S.club||f.a===S.club)&&f.d>S.date).map(f=>f.d).sort();const nx=my[1]||my[0]||addD(S.date,7);const to=nx>addD(S.date,17)?addD(S.date,17):nx;
   const L=[];if(S.fixO)S.fixO.forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});
