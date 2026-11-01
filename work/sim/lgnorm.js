@@ -4,9 +4,10 @@ const {chromium}=require('playwright');const fs=require('fs');
 const LGS=(process.env.LGS||'US,CN,EN,ES,DE,IT,FR').split(','),N=+(process.env.N||40),OV=JSON.parse(process.env.OV||'{}'),FAST=+(process.env.FAST||0);
 (async()=>{const b=await chromium.launch();const pg=await b.newPage();const errs=[];pg.on('pageerror',e=>errs.push(e.message));
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1000);
-await pg.evaluate(OV=>{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0);save=()=>{};window.__OV=OV;const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{cfg:Object.assign({},(o&&o.cfg)||{},window.__OV)}))},OV);
+if(process.env.SAVE)await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
+await pg.evaluate(OV=>{if(window.__SV){S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null}else{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0)}save=()=>{};window.__OV=OV;const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{cfg:Object.assign({},(o&&o.cfg)||{},window.__OV)}))},OV);
 const out=[];
-for(const lg of LGS){const r=await pg.evaluate(([lg,N,FAST])=>{const C=CLUBS.filter(c=>c&&c.lg===lg);if(C.length<4)return null;let x=17;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};
+for(const lg of LGS){const r=await pg.evaluate(([lg,N,FAST])=>{const C=CLUBS.filter(c=>c&&c.lg===lg&&c.i!==S.club);if(C.length<4)return null;let x=17;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};
   const R={lg,n:0,g:0,xg:0,sv:0,sh:0,a:0,d:0,fg:0,fn:0};
   for(let k=0;k<N;k++){const h=C[(k*7)%C.length],a=C[(k*11+3)%C.length];if(h===a)continue;x=(k*7919+31)%2147483646+1;const H=teamFor(h.i),A=teamFor(a.i);const m=runMatch(H,A,{});while(!m.done)m.step();const st=m.st;
    R.n++;R.g+=st.sc[0]+st.sc[1];R.xg+=st.xg[0]+st.xg[1];R.d+=st.sc[0]===st.sc[1];if(st.lgc){R.sv+=st.lgc.sv;R.sh+=st.lgc.sh;R.a+=st.lgc.a}}

@@ -103,6 +103,8 @@ function createMatch(H,A,opt={}){
      두 팀 GK 선방 평균(LGC.sv)과 두 팀 공격수 상위 3명씩 슈팅 평균(LGC.sh)의 차이가 5대 리그 기준(lgSh0−lgSv0)보다 큰 만큼 일부(lgN)만 결정력에서 뺌. 같은 경기 안의 개인 차는 그대로 */
   const LGC=(()=>{const g=[],h=[];[0,1].forEach(q=>{const x=(T[q].xi||[]).filter(p=>p);const k=x.find(p=>p.g==='GK');if(k)g.push(k.gk_save??12);x.filter(p=>['ST','W','AM'].includes(p.g)).map(p=>p.shoot??12).sort((a,b)=>b-a).slice(0,3).forEach(v=>h.push(v))});const m=a=>a.length?a.reduce((t,v)=>t+v,0)/a.length:null;return {sv:m(g),sh:m(h)}})();
   const LGA=CFG.lgN&&LGC.sv!=null&&LGC.sh!=null?CFG.lgN*((LGC.sh-CFG.lgSh0)-(LGC.sv-CFG.lgSv0)):0;st.lgc={sv:LGC.sv,sh:LGC.sh,a:LGA};
+  /* v272 리그별 결정력 보정(사용자 승인 2026-11-02): 실측(세이브 상태, 리그별 AI끼리 경기)과 실제 리그 경기당 득점(2024-25)의 비율. 팀 객체의 lgF(앱 teamFor가 리그별 값 부여)를 두 팀 기하평균으로 */
+  const LGF=Math.sqrt(Math.max(.5,Math.min(1.6,T[0].lgF||1))*Math.max(.5,Math.min(1.6,T[1].lgF||1)));st.lgc.f=LGF;
   const counter=[0,0];[0,1].forEach(s=>{const bw=CFG.tiltOn?E3.beatW(T[s],T[1-s]):(BEATS[T[s].preset].includes(T[1-s].preset)?1:0);if(bw)counter[s]=bw*CFG.beatK*Math.max(0,.5+.5*T[s].styleBonus)});
   // ---- 능력 실효값(분 단위 캐시) ----
   const fitF=p=>.72+.28*Math.min(1,(p.fit??100)/100);
@@ -239,9 +241,9 @@ function createMatch(H,A,opt={}){
     /* v195 스위퍼 성향 대가: 적극=1대1(스루) 선방↑·먼 거리 슈팅 선방↓(앞으로 나와 있음), 자제=반대 */{const g=T[o].pi?T[o].pi(gk.p,'gks'):1;if(g!==1){const k=CFG.gksSv[g===2?0:1];sv+=type==='through'?k[0]:type==='longshot'?k[1]:0}}
     let pG;const cp=V(p,'comp',12)*eff(p,s);
     if(type==='pen')pG=clamp(.8+(V(p,'pen',12)-13)*.012+(cp-13)*.008-(sv-13)*.01,.55,.93);
-    else if(sh5&&CFG.d5){pG=clamp(sig(Math.log(sh5.pGoal/(1-sh5.pGoal))+ab5(a,'shoot',CFG.d5FinK)+ab5(a,'comp',CFG.d5FinK*.5)-(sv-13.5)*CFG.d5GkK-LGA*CFG.d5GkK)*CFG.finK5*lq,.02,.95);/* v260 중거리 득점률 보정(lsG·승부수 중거리 슈터 질 lq, d5 경로는 xg 대신 pGoal을 써서 별도 곱함): 엔진 중거리는 길목 수비 없는 상황이 많아 실제(박스 밖 3~4%)보다 약 3배 → 사용자 승인 2026-10-30 */st.ref.n++;st.ref.sv+=sv;st.ref.cp+=cp}
+    else if(sh5&&CFG.d5){pG=clamp(sig(Math.log(sh5.pGoal/(1-sh5.pGoal))+ab5(a,'shoot',CFG.d5FinK)+ab5(a,'comp',CFG.d5FinK*.5)-(sv-13.5)*CFG.d5GkK-LGA*CFG.d5GkK)*CFG.finK5*lq*LGF,.02,.95);/* v260 중거리 득점률 보정(lsG·승부수 중거리 슈터 질 lq, d5 경로는 xg 대신 pGoal을 써서 별도 곱함): 엔진 중거리는 길목 수비 없는 상황이 많아 실제(박스 밖 3~4%)보다 약 3배 → 사용자 승인 2026-10-30 */st.ref.n++;st.ref.sv+=sv;st.ref.cp+=cp}
     else{pG=xg/((1-pB)*baseOn)*(1-(sv-CFG.refSave)*.03-LGA*.03)*(1+(cp-CFG.refComp)*.02*(xg>.2?1.6:1));st.ref.n++;st.ref.sv+=sv;st.ref.cp+=cp;
-      if(st.min>75&&Math.abs(st.sc[0]-st.sc[1])<=1)pG*=1+(cp-CFG.refComp)*.012;pG=clamp(pG*CFG.finK*(1+TVc(a,'결정력','shoot')*CFG.trFin)*gapF(s)*Math.max(.5,1+(V(p,'shoot',10)-(CFG.finC??13))*(CFG.finS??0)),.03,.92)}
+      if(st.min>75&&Math.abs(st.sc[0]-st.sc[1])<=1)pG*=1+(cp-CFG.refComp)*.012;pG=clamp(pG*LGF*CFG.finK*(1+TVc(a,'결정력','shoot')*CFG.trFin)*gapF(s)*Math.max(.5,1+(V(p,'shoot',10)-(CFG.finC??13))*(CFG.finS??0)),.03,.92)}
     {const D=st.dbg||(st.dbg={});D.pgSum=(D.pgSum||0)+pG;D.pgN=(D.pgN||0)+1;if(sh5){D.pgM=(D.pgM||0)+sh5.pGoal;D.onM=(D.onM||0)+sh5.pOn;D.onN=(D.onN||0)+1}}if(r()<pG){st.sc[s]++;pr(p).g++;pr(p).r+=RW.goal[Math.min(3,pr(p).g-1)];if(assist&&assist!==a){pr(assist.p).a++;pr(assist.p).r+=RW.ast;pr(assist.p).kp++}pr(gk.p).r-=RW.gkCon*(1.2-Math.min(1,xg*1.5));st.mom=s===0?.6:-.6;
       (cur&&cur.counter?((st.trG||(st.trG=[0,0]))[s]++):0),ev({s,t:'goal',p:p.name,pid:p.id,a:assist&&assist!==a?assist.p.name:null,type:ty,lane:(cur&&cur.lane!=null&&CFG.laneAtk?cur.lane:laneOfFy(fy)),sl:laneOfFy(fy),xg:+(xg*XGD).toFixed(2),sc:[...st.sc],weak});flight(a.x,a.y,gx+(s?-1:1),gy,.5,type==='header'?.4:.15);
       restartLater('kick',o,52.5,34,true);return 'goal'}
