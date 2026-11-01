@@ -160,7 +160,7 @@ function handleMoment(id){const api=M.m.api,me=M.me,T=M.m.T[me],st=M.m.st;
     if(id==='t_praise'){dm=d>0?.5:d===0?.15:-.2;msg=d>0?'선수들이 자신감을 얻었습니다':'뒤진 상황에서의 칭찬에 선수들이 어리둥절합니다'}
     if(id==='t_calm'){dm=.25;msg='선수들이 차분하게 후반을 준비합니다'}
     if(id==='t_angry'){dm=d<0?(pro>=11?.7:-.4):-.3;msg=d<0&&pro>=11?'선수들이 이를 악뭅니다':'질책에 분위기가 가라앉았습니다'}
-    st.mom+=me===0?dm:-dm;M.talkDone=true;toast(msg);momentSheet('half');return}
+    st.mom+=me===0?dm:-dm;/* v275 버그 수정(에이전트 발견): 엔진은 st.mom을 계산에 쓰지 않아 팀토크 효과가 0이었음 → '정신 차려!'와 같은 집중 경로(st.fm: 패스 정확도·속도 소폭, 분당 10% 감소)에 반영. 동기부여 능력 ±30% */{const mv=(T.mgr&&T.mgr.mot)||0;st.fm=st.fm||[0,0];st.fm[me]=Math.max(-.3,Math.min(1.2,st.fm[me]+dm*.6*(dm>0?1+.3*mv:1-.3*mv)))}M.talkG=dm>=.25?1:dm<0?-1:0;M.talkDone=true;toast(msg);momentSheet('half');return}
   if(id==='push'){api.shout(me,'push');const ti=[...T.ti];ti[0]=Math.min(5,ti[0]+1);ti[3]=Math.min(5,ti[3]+1);api.setTactic(me,{ti});feed(st.ev[st.ev.length-1]);resume();return}
   if(id.startsWith('g_')){gamblePick(id);resume();return}
   if(id==='hold'){api.shout(me,'hold');const ti=[...T.ti];ti[0]=Math.max(1,ti[0]-1);api.setTactic(me,{ti});feed(st.ev[st.ev.length-1]);resume();return}

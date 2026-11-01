@@ -7,7 +7,7 @@ function render(){
   app.innerHTML=`<header class="top"><div class="in">${crest(S.club)}<div><h1>${esc(CLUBS[S.club].name)}</h1><div class="sub">${fmtD(S.date)} · ${S.season}-${String(S.season+1).slice(2)} 시즌${w?' · <span style="color:var(--good)">이적시장</span>':''}</div></div>
     ${unemp()?'<span class="money" style="opacity:.7">평판<b>'+S.me.rep+'</b></span>':'<button class="money" data-act="fin">이적 예산<b>'+money(S.fin.budget)+'</b></button>'}</div></header>
   <main class="wrap">${({home:homeView,squad:squadView,tac:tacView,trans:transView,league:leagueView,career:careerView})[unemp()&&['squad','tac','trans'].includes(UI.tab)?'home':UI.tab]()}</main>
-  <div class="go"><div class="in"><button data-act="advance">계속 <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5l8 7-8 7"/></svg></button></div></div>
+  <div class="go"><div class="in"><button data-act="advance">${typeof goLbl==='function'?goLbl():'계속'} <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5l8 7-8 7"/></svg></button></div></div>
   <nav class="nav"><div class="in">
    ${nb('home','홈','<path d="M3 11l9-7 9 7v9H3z"/><path d="M9 20v-6h6v6"/>',unread)}
    ${unemp()?'':nb('squad','스쿼드','<circle cx="9" cy="8" r="3.2"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><circle cx="17" cy="9" r="2.4"/><path d="M16 14c2.8 0 5 2.2 5 5"/>')}${unemp()?'':nb('tac','전술','<rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 12h18"/><circle cx="12" cy="12" r="3"/>')}${unemp()?'':nb('trans','이적','<path d="M4 8h13l-3-3M20 16H7l3 3"/>')}

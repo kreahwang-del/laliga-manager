@@ -76,3 +76,4 @@ app/0990_theme_bplus.js
 app/0995_dec_view.js
 app/0996_ai_scout.js
 app/0997_v272_lgf.js
+app/0998_v275_mgr.js
