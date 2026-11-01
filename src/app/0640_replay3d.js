@@ -172,7 +172,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
    <div id="r3diag" style="position:absolute;left:10px;bottom:96px;z-index:2;color:#9aa6b5;font:500 10px/1.3 sans-serif;pointer-events:none;opacity:.8"></div>
    <div id="r3slow" style="position:absolute;right:14px;top:${TH?76:58}px;z-index:2;color:${TH?TH.a:'#F0B429'};font:700 12px sans-serif;display:none">슬로모션</div>
    <div style="position:absolute;left:0;right:0;bottom:0;padding:10px 10px calc(10px + env(safe-area-inset-bottom));z-index:2;display:flex;gap:6px;flex-wrap:wrap;justify-content:center;background:linear-gradient(#0000,#000c)">
-   ${[['auto','자동'],['tv','중계'],['goal','골대 뒤'],['chase','추적'],['sky','공중']].map(([k,l])=>`<button class="chip" data-r3cam="${k}" aria-pressed="${k==='auto'}" style="color:#fff">${l}</button>`).join('')}
+   ${[['auto','자동'],['tv','중계'],['goal','골대 뒤'],['chase','추적'],['sky','높은 중계']].map(([k,l])=>`<button class="chip" data-r3cam="${k}" aria-pressed="${k==='auto'}" style="color:#fff">${l}</button>`).join('')}
    <button class="chip" data-r3spd style="color:#fff">1배속</button><button class="chip" data-r3re style="color:#fff">다시</button><button class="chip" data-r3x style="color:#fff;border-color:${TH?TH.a:'#F0B429'}">닫기</button></div>`;
   const ren=new T.WebGLRenderer({antialias:true});let fpsN=0,fpsT=performance.now(),fpsV=0;ren.setPixelRatio(Math.min(window.devicePixelRatio||1,2));ren.setSize(innerWidth,innerHeight);ren.shadowMap.enabled=true;ren.shadowMap.type=T.PCFSoftShadowMap;ov.appendChild(ren.domElement);
   const night=r3Night(M.fx);const SKY=night?'#070d18':'#9cc3e6';const sc=new T.Scene();sc.background=new T.Color(SKY);sc.fog=new T.Fog(SKY,110,230);
@@ -288,7 +288,8 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
       cp.set(cl(bx*(por?.92:.85)-dir*back,-48,48),h0+Math.max(0,(D-av))*.08,Math.min(zmax,bz+D));lk.set(bx,.3+by*.4,bz)}
     else if(m==='goal'){/* v97: 크로스 비행 중엔 공과 헤더 접촉점의 중간을 봐서 공이 높이 떠도 관중석만 보이지 않게 */let lx=bx,lz=bz,ly=.8+Math.min(by,3)*.5;if(aerC&&t<es){const w=.55;lx=bx*(1-w)+(aerC.x-52.5)*w;lz=bz*(1-w)+(aerC.y-34)*w;ly=.8+Math.min(by,3)*.3}cp.set(gX+dir*8.5,4.6,lz*.3);lk.set(lx,ly,lz)}
     /* v233 공중(사용자 요청): 전체 위치 파악용 높은 비스듬한 시점 — 가로 화면은 관중석 위 높은 곳에서 경기장 전체, 세로 화면은 경기장 길이가 화면 세로로 오도록 거의 위에서 */
-    else if(m==='sky'){const asp=innerWidth/innerHeight;if(por){const h=Math.max(130,88/Math.max(.3,asp));cp.set(-h*.3,h,0);lk.set(0,0,0)}else{const k=Math.max(1,1.9/Math.max(1,asp));cp.set(bx*.1,82*k,44*k);lk.set(bx*.1,0,5)}}
+    /* v272 사용자 의견+디자인 에이전트: 예전 '공중'(경기장 전체를 190m 위에서)은 폰 세로 화면에서 선수가 9px로 보여 쓸모없음(전체 위치는 2D 중계가 담당) → '높은 중계'로 교체: 공 주변 25~30m의 수비 라인·대형이 보이는 높은 비스듬한 시점(높이 27m, 거리 34m, 시야각 50°, 공보다 공격 방향 6m 앞을 봄) */
+    else if(m==='sky'){const cl=(v,a,b)=>Math.max(a,Math.min(b,v));const D=por?34:46,zmax=por?35:37,h0=por?27:30,av=Math.max(0,zmax-bz);const back=Math.sqrt(Math.max(0,D*D-av*av));cp.set(cl(bx*(por?.9:.85)-dir*back,-50,50),h0,Math.min(zmax+4,bz+D*.75));lk.set(bx+dir*6,0,bz)}
     else{cp.set(bx-dir*11,5.5,bz*.85+(bz>0?-3:3));lk.set(bx+dir*4,.8+by*.3,bz)}};
   const RP={},RV={},CEN=[0,0];const SEP=.8;
   // 공 위치: 공을 가진 선수가 있으면 그 선수 발 앞(드리블 터치), 없으면 엔진 공 궤적
@@ -364,7 +365,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
     if(kick&&kick.id&&P[kick.id]){if(tt<es&&tt>=kick.t0){const q=feet(kick.id);if(q){B=q;kick.last=q}}else if(tt>=es&&tt<es+.5&&kick.last){const B1=ballAt(Math.min(tE,es+.5));const u=(tt-es)/.5;B=kick.last.map((v,j)=>v+((B1[j]||0)-v)*u)}}
     const bx=B[0]-52.5,bz=B[1]-34,by=Math.max(0,B[2]);const pb=ball.position;const mvb=Math.hypot(bx-pb.x,bz-pb.z);ball.position.set(bx,.2+by*1.05,bz);ball.rotation.x+=mvb*5;bsh.position.set(bx,.02,bz);
     fpsN++;if(now-fpsT>1000){fpsV=Math.round(fpsN*1000/(now-fpsT));fpsN=0;fpsT=now;const dg=document.getElementById('r3diag');if(dg){let ani='';try{const u=Object.values(P)[0].g.userData;ani=u.sk?(u.cur||'-'):'인형'}catch(e){}dg.textContent=`${R3.model?'선수 모델 OK':'단순 인형'+(R3.err?' ('+R3.err+')':'')} · ${ren.capabilities.isWebGL2?'WebGL2':'WebGL1'}${ren.capabilities.floatVertexTextures?'':' · 뼈텍스처X'} · ${fpsV}fps · 동작 ${ani}${R3.aerr?' · 오류 '+R3.aerr:''}`}}
-    camFor(mode,bx,bz,by);if(sc.fog){const sk=mode==='sky';sc.fog.near=sk?260:110;sc.fog.far=sk?460:230}if(first){cpS.copy(cp);lkS.copy(lk);first=false}cpS.lerp(cp,Math.min(1,dt*(mode==='sky'?5:2.6)));lkS.lerp(lk,Math.min(1,dt*7));cam.position.copy(cpS);cam.lookAt(lkS);ren.render(sc,cam)};
+    camFor(mode,bx,bz,by);if(sc.fog){const sk=mode==='sky';sc.fog.near=sk?150:110;sc.fog.far=sk?320:230}{const fv=mode==='sky'?50:45;if(cam.fov!==fv){cam.fov=fv;cam.updateProjectionMatrix()}}if(first){cpS.copy(cp);lkS.copy(lk);first=false}cpS.lerp(cp,Math.min(1,dt*(mode==='sky'?5:2.6)));lkS.lerp(lk,Math.min(1,dt*7));cam.position.copy(cpS);cam.lookAt(lkS);ren.render(sc,cam)};
   window.__r3={setT:x=>{t=x},getT:()=>t,setSpd:x=>{spd=x},SCH,fr,es,t0,tE,P,cam,ball};
   raf=requestAnimationFrame(loop);
   const onR=()=>{ren.setSize(innerWidth,innerHeight);cam.aspect=innerWidth/innerHeight;cam.updateProjectionMatrix()};addEventListener('resize',onR);

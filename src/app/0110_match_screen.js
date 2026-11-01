@@ -21,7 +21,7 @@ function startMatch(fx){
     <div class="m2dw">${pitchSVG()}<div class="mcap" id="mcap">&nbsp;</div></div>
     <div class="mstats" id="mst"></div><div class="feed" id="mfd"></div><div class="mptab" id="mptab">${[["feed","중계만"],["0","우리 기록"],["1","상대 기록"]].map(([k,l])=>`<button data-mpst="${k}" aria-pressed="${(UI.mpst??"0")===k}">${l}</button>`).join("")}</div><div class="mpst" id="mpst"${(UI.mpst??"0")==="feed"?" hidden":""}></div>
     <div class="mctl" id="mct">
-      <button class="btn ghost" data-act="speed">${spdLbl(M.speed)}</button><button class="btn ghost" data-act="mshout">지시</button><button class="btn ghost" data-act="msubs">전술·교체 <span id="msl">5</span></button><button class="btn" data-act="skip">결과 보기</button></div></div>`;
+      <button class="btn ghost" data-act="speed">${spdLbl(M.speed)}</button><button class="btn ghost" data-act="mshout">지시</button><button class="btn ghost" data-act="msubs">전술·교체 <span id="msl">5</span></button><button class="btn ghost" data-act="ffdec" id="mff">${ffLbl()}</button><button class="btn" data-act="skip">결과 보기</button></div></div>`;
   document.body.appendChild(d);
   feed({m:0,t:'sys',txt:`킥오프 · ${CLUBS[S.club].short} ${S.tac.form.base} · ${S.tac.preset}`});
   drawPlayers(); mstats(); mpst(); tick();
@@ -35,8 +35,12 @@ function afterPlay(){if(!M||M.done)return;M.animating=false;
   if(M.m.min===45&&!M.m.st.htDone)feed({m:45,t:'sys',txt:'전반 종료'});
   M.timer=setTimeout(tick,M.ff?0:90/M.speed)}
 /* v272 사용자 요청: 경기 전체 건너뛰기 말고 '다음 감독 지시까지' 빨리 감기 — 화면 재생 없이 계산만 진행하다 지시·하프타임·PK·퇴장·부상 등 멈춤 순간에 정상 재생으로 복귀 */
-function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'⏩ 다음 지시까지 빨리 감기'});if(!M.paused&&!M.animating)tick()}
-function ffStop(){if(!M||!M.ff)return;M.ff=false;document.getElementById('match')?.classList.remove('ffon');try{const fr=M.m.st.frames;const lf=fr&&fr[fr.length-1];if(lf&&typeof draw4Init==='function'){draw4Init(lf);draw4(lf,lf,0)}}catch(e){}}
+function ffLeft(){if(!M||!M.m)return 0;if(S.decOn===false||(M.m.min||0)>=80)return 0;return Math.max(0,3-(M.decN||0))}
+function ffLbl(){return M&&M.ff?'■ 멈춤':ffLeft()?`⏩ 지시 ${ffLeft()}`:'지시 없음'}
+function ffRef(){const b=document.getElementById('mff');if(!b)return;const t=ffLbl();if(b.textContent!==t)b.textContent=t;b.disabled=!(M&&M.ff)&&!ffLeft();b.style.opacity=b.disabled?.45:1}
+setInterval(()=>{try{ffRef()}catch(e){}},700);
+function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'⏩ 다음 지시 장면까지 빨리 감는 중'});ffRef();if(!M.paused&&!M.animating)tick()}
+function ffStop(){if(!M||!M.ff)return;M.ff=false;document.getElementById('match')?.classList.remove('ffon');setTimeout(ffRef,0);try{const fr=M.m.st.frames;const lf=fr&&fr[fr.length-1];if(lf&&typeof draw4Init==='function'){draw4Init(lf);draw4(lf,lf,0)}}catch(e){}}
 function resume(){closeSheet();M.paused=false;M.inSubs=false;UI.subOut=null;if(M.done)return;
   if(M.m.st.pendingPen&&!M.skipping){pause('pen');return}   if(M.m.st.pendingDec&&!M.m.st.pendingDec.done&&!M.skipping){pause('dec');return}
   if(M.pending){const k=M.pending;M.pending=null;pause(k);return}

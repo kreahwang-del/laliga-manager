@@ -9,7 +9,7 @@ for(let g=0;g<G;g++){await pg.goto('file://'+H,{waitUntil:'domcontentloaded'});a
  for(let i=0;i<n;i++){const ok=await pg.evaluate(i=>{const r=M.reps[i];if(!r||r.e.t!=='dec')return false;r3Open(r);return true},i);if(!ok)continue;
   await pg.waitForFunction(()=>window.__r3,null,{timeout:20000}).catch(()=>{});
   const o=await pg.evaluate(async i=>{const R=window.__r3;if(!R)return {i,err:'no r3'};R.setSpd(0);const out={i,k:M.reps[i].e.k,in:0,maxJ:0,cams:{}};let prev=null;
-   for(let t=R.t0;t<R.tE;t+=.05){R.setT(t);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));const p=R.ball.position;const x=p.x+52.5,y=p.z+34,z=p.y;
+   for(let t=R.t0;t<R.tE;t+=.1){R.setT(t);await new Promise(r=>requestAnimationFrame(()=>requestAnimationFrame(r)));const p=R.ball.position;const x=p.x+52.5,y=p.z+34,z=p.y;
     if((x>105.05||x<-.05)&&y>30.34&&y<37.66&&z<2.44)out.in++;if(prev)out.maxJ=Math.max(out.maxJ,Math.hypot(x-prev[0],y-prev[1]));prev=[x,y];const c=R.cam.position;const cy=Math.round(c.y);out.cams[cy]=(out.cams[cy]||0)+1}
    document.querySelector('[data-r3x],[data-r3close]')?.click();return out},i);
   res.push(Object.assign({g},o));await pg.evaluate(()=>{const c=document.querySelector('#r3 [data-r3c="close"],#r3wrap button:last-child');}).catch(()=>{});

@@ -95,6 +95,7 @@ document.addEventListener('click',e=>{
     case 'talk':talkSheet(+d.id);break;
     case 'speed':M.speed=M.speed===.5?1:M.speed>=1?.25:.5;/* v258: 보통(½)→빠르게(1)→느리게(¼)→보통 */UI.mspd=M.speed;b.textContent=spdLbl(M.speed);break;
     case 'skip':finish();break;
+    case 'ffdec':if(M.ff){ffStop();if(!M.paused&&!M.animating)tick()}else if(ffLeft())ffStart();break;/* v272 다음 지시까지 빨리 감기 */
     case 'closematch':$('#match').remove();M=null;closeSheet();render();setTimeout(hlShow,250);break;
     case 'mreport':reportSheet(S.reports&&S.reports[0]);break;
     case 'lastrep':reportSheet(S.reports&&S.reports[+(b.dataset.i||0)]);break;
