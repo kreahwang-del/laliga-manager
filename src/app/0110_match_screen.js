@@ -55,7 +55,7 @@ function tick(){
   /* v155 중계 동기화: 이전엔 1분 단위 계산 직후 문자 중계·점수·시계를 먼저 바꾸고 그 1분을 재생 → 느린 속도에서 골 표시가 장면보다 수십 초 먼저 나왔음. 이제 시각(sec)이 있는 이벤트는 재생 시점에 표시 */
   const v4=!M.skipping&&!M.ff&&M.m.v===4&&(M.m.st.frames||[]).length;M.evQ=v4?evs.filter(e=>e.sec!=null):[];M.clk=v4?M.m.st.frames[0].t:null;
   evs.forEach(e=>{if(!M.evQ.includes(e))feed(e)}); updateBoard();
-  if(M.skipping||M.ff){evFlush();afterPlay();return}
+  if(M.skipping||M.ff){/* v275 사용자 지적: 빨리 감기 중 골·빅찬스 3D 다시보기가 안 생김(장면 기록이 2D 재생 함수에 걸려 있었음) → 빨리 감기에서도 기록 */if(M.ff&&typeof r3Capture==='function'){try{r3Capture(evs)}catch(e){console.error(e)}}evFlush();afterPlay();return}
   playEvents(evs).then(()=>{evFlush();if(M&&M.chain===id)afterPlay()});
 }
 function evFlush(t){if(!M||!M.evQ)return;let ch=false;while(M.evQ.length&&(t==null||M.evQ[0].sec<=t)){feed(M.evQ.shift());ch=true}if(t==null){M.evQ=[];M.clk=null}else M.clk=t;if(ch||t==null)updateBoard();else{const el=$('#mck');if(el)el.textContent=`${clkMin()}'`}}
