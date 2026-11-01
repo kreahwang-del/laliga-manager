@@ -214,6 +214,11 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
     for(const id of ids0){for(let i=1;i<fr.length;i++){if(fr[i].t>es)break;const a=fr[i-1].p[id],c=fr[i].p[id];if(!a||!c)continue;const d=Math.hypot(c[0]-a[0],c[1]-a[1]),dt=fr[i].t-fr[i-1].t||.5;if(d<=9*dt||d>40)continue;
       const k=Math.min(i,Math.ceil(d/(7*dt)));const j=i-k;const s0=fr[j].p[id];if(!s0)continue;for(let q=j+1;q<i;q++){const u=(q-j)/k;fr[q].p[id]=[s0[0]+(c[0]-s0[0])*u,s0[1]+(c[1]-s0[1])*u]}}}}catch(er){console.error(er)}
   // 페널티킥(v87): 엔진은 키커만 순간이동시키므로(주변 선수는 파울 위치 그대로) 장면을 합성 — 다른 선수는 박스 밖, GK는 골라인, 키커는 2.6m 도움닫기
+  /* v272 사용자 제보: 지시 결과 장면 안에 골이 들어가면 엔진이 골 순간 공·선수를 킥오프 위치로 옮겨 기록 → 3D에선 슈터가 뒤로 뛰고 공이 센터서클로 '슈팅'되는 것처럼 보임.
+     골 직후 공이 센터로 순간이동한 프레임을 찾아 그 앞에서 자르고, 마지막 공 위치에서 가까운 골문 안으로 들어가는 공 궤적을 붙임(선수는 그 자리 유지) */
+  if(e.t==='dec'){try{let gi=-1;for(let i=1;i<fr.length;i++){const b2=fr[i].b,p2=fr[i-1].b;if(Math.hypot(b2[0]-52.5,b2[1]-34)<2.5&&Math.abs(p2[0]-52.5)>25){gi=i;break}}
+    if(gi>0){const lf=fr[gi-1];const sh=lf.o!=null&&lf.p[lf.o]?lf.p[lf.o]:lf.b;const gx=sh[0]>52.5?105.8:-.8,gy=Math.max(31,Math.min(37,sh[1]+(34-sh[1])*.35)),hh=.5+hsh(es+'dg')*1.4;const dist=Math.hypot(gx-sh[0],gy-sh[1]),dur=Math.max(.45,dist/26);
+      const keep=fr.slice(0,gi);const P2=lf.p;for(let k=1;k<=6;k++){const tt=lf.t+k*.5,u=Math.min(1,k*.5/dur);keep.push({t:tt,b:[sh[0]+(gx-sh[0])*u,sh[1]+(gy-sh[1])*u,u<1?hh*u+.6*Math.sin(u*Math.PI):Math.max(.12,hh-.4*(k*.5-dur))],o:null,p:P2})}fr=keep}}catch(er){console.error(er)}}
   if(e.type==='pen'){const f0=fr.filter(f=>f.t<es);const lf=f0[f0.length-1]||fr[0];const dg=((e.s===0)!==H2D?1:-1);const spot=dg>0?94:11,gl=dg>0?105:0;const ros=rep.ros;
     const ids0=Object.keys(lf.p);const kId=ids0.find(id=>ros[id]&&ros[id].n===e.p);const kS=kId?ros[kId].s:e.s;const gkId=ids0.find(id=>ros[id]&&ros[id].gk&&ros[id].s!==kS);
     const out=ids0.filter(id=>id!==kId&&id!==gkId&&!(ros[id]&&ros[id].gk)).sort((a,b)=>hsh('pk'+a)-hsh('pk'+b));const base={};
@@ -275,7 +280,7 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   const evOf=(id,t)=>{const L=SCH[id];if(!L)return null;for(const x of L)if(t>=x.s&&t<=x.e)return x;return null};
   let mode='auto',spd=1,t=t0,last=performance.now(),raf=0,done=false;const cp=new T.Vector3(),lk=new T.Vector3(),cpS=new T.Vector3(),lkS=new T.Vector3();let first=true;
   const camFor=(m,bx,bz,by)=>{const fo=window.__r3&&window.__r3.focus;if(fo&&P[fo]){const o=P[fo].g.position;cp.set(o.x+4,2.2,o.z+4);lk.set(o.x,.9,o.z);return}
-    const por=innerHeight>innerWidth*1.2;if(m==='auto'){if(cel&&cel.id&&P[cel.id]&&t>es+1.7)m='cel';else m=t>es-2.2&&!aerC?'goal':'tv'}
+    const por=innerHeight>innerWidth*1.2;if(m==='auto'){if(cel&&cel.id&&P[cel.id]&&t>es+1.7)m='cel';else m=t>es-2.2&&!aerC&&e.t!=='dec'?'goal':'tv'}/* v272: 지시 결과(코너킥·수비 등)는 슈팅 장면이 아니므로 골대 뒤(그물 너머) 시점으로 바꾸지 않고 중계 시점 유지 — 코너는 코너 카메라 */
     if(m==='cel'){const o=P[cel.id].g.position;const L0=Math.hypot(o.x,o.z)||1;cp.set(o.x-o.x/L0*8,3.2,o.z-o.z/L0*8);lk.set(o.x,1.1,o.z)}
     // 공 중심(v92, 사용자 요청): 모든 카메라가 공을 화면 가운데에 두도록 바라보는 점 = 공
     else if(m==='tv'&&((Math.abs(bz)>29&&Math.abs(bx)>46&&by<.5)||(aerC&&aerC.cn&&t>=aerC.ta-.5&&t<es+1.6))){/* v97 코너킥 카메라: 코너 뒤 높은 곳에서 크로스가 향하는 접촉점(헤더 지점, 모르면 페널티 스폿 앞) 쪽을 바라봄 → 키커·공 궤적·박스·골대가 한 줄로 화면에 */const gx0=(bx>0?52.5:-52.5),dd=bx>0?1:-1;const k0=aerC&&aerC.cn?aerC.k0:[bx,bz];const cx=aerC&&aerC.cn?aerC.x-52.5:gx0-dd*4.5,cz=aerC&&aerC.cn?aerC.y-34:0;let vx=cx-k0[0],vz=cz-k0[1];const vl=Math.hypot(vx,vz)||1;vx/=vl;vz/=vl;cp.set(Math.max(-57,Math.min(57,k0[0]-vx*5)),por?10:9,Math.max(-37.5,Math.min(37.5,k0[1]-vz*5)));lk.set(k0[0]+(cx-k0[0])*.5,.6,k0[1]+(cz-k0[1])*.5)}
@@ -294,7 +299,12 @@ function r3Open(rep){if(!rep)return;if(!r3LoadThree()){toast('3D 엔진을 불�
   const ballAt=tt=>{const i=idxAt(tt),f1=fr[i],f2=fr[Math.min(fr.length-1,i+1)];const k=f2.t>f1.t?Math.max(0,Math.min(1,(tt-f1.t)/(f2.t-f1.t))):0;
     if(f1.o!=null&&f1.o===f2.o&&P[f1.o])return feet(f1.o)||f1.b;const A=anc(i),B=anc(i+1);
     if(Math.abs(A[0]-B[0])+Math.abs(A[1]-B[1])+Math.abs((A[2]||0)-(B[2]||0))<.03)return A;
-    if(f1.o!=null||f2.o!=null)return A.map((v,j)=>v+(B[j]-v)*k);const A0=anc(i-1),B3=anc(i+2);return A.map((v,j)=>cr(A0[j],v,B[j],B3[j],k))};
+    /* v272 사용자 제보: 코너킥이 골라인 밖으로 나가 반대편 코너킥이 되는 장면에서, 엔진이 공을 다음 프레임에 반대편 코너로 바로 옮기는데(재시작 순간이동) 이를 곡선으로 이어 공이 골라인을 따라 골문 안을 지나가 '들어갔다 나온' 것처럼 보임
+       → 0.5초에 19m 넘는(38m/s 초과) 이동은 순간이동으로 보고: 앞 구간은 직전 속도 그대로 조금 더 굴러가고(골대 사이 골라인을 넘으면 크로스바 위로), 뒤 구간에서 새 위치에 나타남. 곡선 보간도 순간이동 너머 점을 쓰지 않음 */
+    const dtF=(f2.t-f1.t)||.5,jump=(a,b,dt)=>a&&b&&Math.hypot(b[0]-a[0],b[1]-a[1])>38*(dt||.5);
+    if(jump(A,B,dtF)){if(k>=.55)return B;const P0=anc(i-1);const d0=(f1.t-(fr[Math.max(0,i-1)]||f1).t)||.5;let vx=P0&&!jump(P0,A,d0)?(A[0]-P0[0])/d0:0,vy=P0&&!jump(P0,A,d0)?(A[1]-P0[1])/d0:0;const vs=Math.hypot(vx,vy);if(vs>30){vx*=30/vs;vy*=30/vs}
+      const q=k*dtF;const x=A[0]+vx*q,y=A[1]+vy*q;let z=Math.max(0,(A[2]||0)*(1-k*1.8));if((x>104.6||x<.4)&&y>29.8&&y<38.2)z=Math.max(z,2.9);return [x,y,z]}
+    if(f1.o!=null||f2.o!=null)return A.map((v,j)=>v+(B[j]-v)*k);let A0=anc(i-1),B3=anc(i+2);const f0=fr[Math.max(0,i-1)],f3=fr[Math.min(fr.length-1,i+2)];if(jump(A0,A,f1.t-f0.t))A0=A;if(jump(B,B3,f3.t-f2.t))B3=B;return A.map((v,j)=>cr(A0[j],v,B[j],B3[j],k))};
   const loop=now=>{if(done)return;raf=requestAnimationFrame(loop);let dt=Math.min(.05,(now-last)/1000);last=now;const slow=t>es-1.8&&t<es+1.2;$('#r3slow').style.display=slow?'block':'none';
     t+=dt*spd*(slow?.42:1);if(t>tE+.6){t=tE+.6}
     const tt=Math.min(t,tE);const dA=dt*spd*(slow?.42:1);const fi=idxAt(tt),psN=fr[fi].ps;

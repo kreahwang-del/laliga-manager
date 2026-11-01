@@ -26,14 +26,17 @@ function startMatch(fx){
   feed({m:0,t:'sys',txt:`킥오프 · ${CLUBS[S.club].short} ${S.tac.form.base} · ${S.tac.preset}`});
   drawPlayers(); mstats(); mpst(); tick();
 }
-function pause(kind,data){if(M.animating){M.deferred=[kind,data];return}M.paused=true;clearTimeout(M.timer);momentSheet(kind,data)}
+function pause(kind,data){if(M.animating){M.deferred=[kind,data];return}if(M.ff)ffStop();M.paused=true;clearTimeout(M.timer);momentSheet(kind,data)}
 function afterPlay(){if(!M||M.done)return;M.animating=false;
   if(M.paused)return;
   if(M.m.st.pendingPen&&!M.skipping){pause('pen');return}   if(M.m.st.pendingDec&&!M.m.st.pendingDec.done&&!M.skipping){pause('dec');return}
   if(M.pending){const k=M.pending;M.pending=null;pause(k);return}
   if(M.deferred){const d=M.deferred;M.deferred=null;pause(d[0],d[1]);return}
   if(M.m.min===45&&!M.m.st.htDone)feed({m:45,t:'sys',txt:'전반 종료'});
-  M.timer=setTimeout(tick,90/M.speed)}
+  M.timer=setTimeout(tick,M.ff?0:90/M.speed)}
+/* v272 사용자 요청: 경기 전체 건너뛰기 말고 '다음 감독 지시까지' 빨리 감기 — 화면 재생 없이 계산만 진행하다 지시·하프타임·PK·퇴장·부상 등 멈춤 순간에 정상 재생으로 복귀 */
+function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'⏩ 다음 지시까지 빨리 감기'});if(!M.paused&&!M.animating)tick()}
+function ffStop(){if(!M||!M.ff)return;M.ff=false;document.getElementById('match')?.classList.remove('ffon');try{const fr=M.m.st.frames;const lf=fr&&fr[fr.length-1];if(lf&&typeof draw4Init==='function'){draw4Init(lf);draw4(lf,lf,0)}}catch(e){}}
 function resume(){closeSheet();M.paused=false;M.inSubs=false;UI.subOut=null;if(M.done)return;
   if(M.m.st.pendingPen&&!M.skipping){pause('pen');return}   if(M.m.st.pendingDec&&!M.m.st.pendingDec.done&&!M.skipping){pause('dec');return}
   if(M.pending){const k=M.pending;M.pending=null;pause(k);return}
@@ -46,9 +49,9 @@ function tick(){
   M.animating=true;const id=M.chain=(M.chain||0)+1;
   M.min0=M.m.min;const evs=M.m.step(); if(evs===null){M.animating=false;finish();return}if(typeof oppAccum==='function')oppAccum();
   /* v155 중계 동기화: 이전엔 1분 단위 계산 직후 문자 중계·점수·시계를 먼저 바꾸고 그 1분을 재생 → 느린 속도에서 골 표시가 장면보다 수십 초 먼저 나왔음. 이제 시각(sec)이 있는 이벤트는 재생 시점에 표시 */
-  const v4=!M.skipping&&M.m.v===4&&(M.m.st.frames||[]).length;M.evQ=v4?evs.filter(e=>e.sec!=null):[];M.clk=v4?M.m.st.frames[0].t:null;
+  const v4=!M.skipping&&!M.ff&&M.m.v===4&&(M.m.st.frames||[]).length;M.evQ=v4?evs.filter(e=>e.sec!=null):[];M.clk=v4?M.m.st.frames[0].t:null;
   evs.forEach(e=>{if(!M.evQ.includes(e))feed(e)}); updateBoard();
-  if(M.skipping){evFlush();afterPlay();return}
+  if(M.skipping||M.ff){evFlush();afterPlay();return}
   playEvents(evs).then(()=>{evFlush();if(M&&M.chain===id)afterPlay()});
 }
 function evFlush(t){if(!M||!M.evQ)return;let ch=false;while(M.evQ.length&&(t==null||M.evQ[0].sec<=t)){feed(M.evQ.shift());ch=true}if(t==null){M.evQ=[];M.clk=null}else M.clk=t;if(ch||t==null)updateBoard();else{const el=$('#mck');if(el)el.textContent=`${clkMin()}'`}}
