@@ -33,7 +33,7 @@ function aiPlan(T,O,home){if(!AIP.on||!AIP.plan||!T||!O||!T._aiMark||T.club===S.
   const av=x=>x.xi.reduce((a,p)=>a+(p.ovr||70),0)/Math.max(1,x.xi.length);const d=av(T)-av(O)+(home?1:-1);T.aiGs={q,ment0:T.ment||'균형',fav:d>=3};
   try{const beatsMe=(E3.BEATS[O.preset]||[]).includes(T.preset);if((E3.BEATS[T.preset]||[]).includes(O.preset))return;const sm=E3.styleMap(T.xi);
     const opts=Object.keys(E3.BEATS).filter(k=>(E3.BEATS[k]||[]).includes(O.preset)&&(sm[k]??0)>=0).sort((a,b)=>(sm[b]||0)-(sm[a]||0));
-    if(opts.length&&hsh('apl'+T.club+':'+O.club+':'+S.date)<(beatsMe?q:q*.5)){const k=opts[0];T.preset=k;T.ti=[...E3.PRESETS[k]];T.fam=Math.max(40,(T.fam||60)-10);T.pi=aiPI(T.xi,k);T._plan=k}}catch(e){}}
+    const sl=(O.club===S.club&&typeof aigStudyLv==='function')?aigStudyLv(O.preset):0;/* v270 '연구당함' 단계(0546): 상성 아닐 때 대응 확률 q×(0.5+0.1×단계), 전술 변경 숙련도 감점 −(10−2×단계) */if(opts.length&&hsh('apl'+T.club+':'+O.club+':'+S.date)<(beatsMe?q:q*(.5+.1*sl))){const k=opts[0];T.preset=k;T.ti=[...E3.PRESETS[k]];T.fam=Math.max(40,(T.fam||60)-(10-2*sl));T.pi=aiPI(T.xi,k);T._plan=k}}catch(e){}}
 /* v165 상대별 세부 계획: ① 전력 차가 크면(선발 평균 ±4) 감독 선호 대형 중 수비 숫자가 가장 많은/적은 대형으로(확률 q) ② 상대 최전방 최고 속도 17+면 수비 라인 한 칸 내림, 12 이하면 한 칸 올림 ③ 상대 최고 공격수(84+)를 가장 빠른 수비수가 전담 마크(확률 q, 이전엔 87+ 50%) */
 function aiPlan2(T,O,home){if(!AIP.on||!AIP.plan||!T||!O||!T._aiMark||T.club===S.club||T._pl2)return;T._pl2=1;const q=aiQ(T.club,O.club===S.club);const av=x=>x.xi.reduce((a,p)=>a+(p.ovr||70),0)/Math.max(1,x.xi.length);const d=av(T)-av(O)+(home?1:-1);
   try{const m=typeof mgrOf==='function'?mgrOf(T.club):null;const fd=(mgrFD(m)||[]).map(x=>x[0]).filter(f=>E3.FORMS[f]);

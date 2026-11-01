@@ -74,3 +74,4 @@ app/0660_start_map.js
 app/0670_breaking_popup.js
 app/0990_theme_bplus.js
 app/0995_dec_view.js
+app/0996_ai_scout.js
