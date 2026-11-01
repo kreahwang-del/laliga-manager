@@ -9,11 +9,22 @@ const EA={pre:{},q:[],n:0,done:0};
 function engAllOn(){return S&&S.engAll!==false&&typeof SIMW!=='undefined'&&(SIMW.init?SIMW.ok:(simPoolInit(),SIMW.ok))&&!(typeof EA_OFF!=='undefined'&&EA_OFF)}
 function eaKey(f){return f.d+':'+f.h+':'+f.a}
 function eaIsLg(f){if(!f||f.cup!=null||f.eu||f.po||f.ko||f.md)return false;if(f.lg&&S.fxE&&S.fxE[f.lg])return true;return !!(S.fixO&&S.fixO.indexOf(f)>=0)}
-function eaApply(f,H,A,res){try{if(f.res)return;res.T=res.T||[{club:H.club,xi:[]},{club:A.club,xi:[]}];applyMatch(H,A,res,true);f.res=pack(res)}catch(e){console.error(e);try{if(!f.res)f.res={sc:res.sc||[0,0],ev:[]}}catch(_){}}}
+function eaApply(f,H,A,res){try{if(f.res)return;res.T=res.T||[{club:H.club,xi:[]},{club:A.club,xi:[]}];applyMatch(H,A,res,true);f.res=pack(res);f.res.eng=1}catch(e){console.error(e);try{if(!f.res)f.res={sc:res.sc||[0,0],ev:[]}}catch(_){}}}
 function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{const cu=f.cup!=null&&S.cups?S.cups[f.cup]:null;const early=cu&&f.rd<cu.R-3;const r0=early&&typeof ROT!=='undefined'?{...ROT}:null;if(r0){ROT.base=.3;ROT.eu=.35;ROT.gk=.6}try{H=teamFor(f.h);A=teamFor(f.a)}finally{if(r0)Object.assign(ROT,r0)}}if(!H||!A)return null;const o={f,H,A,r:null};const p0=simAsync(H,A,f.d||'');o.p=p0.then(res=>{o.r=res;EA.done++;return res});o.p.job=p0.job;EA.n++;EA.pre[k]=o;return o}
 // 리그 경기 빠른 결과 대신 엔진(대기열)
-{const _fmE=fastMatch;fastMatch=function(f){if(f&&f.__fast){delete f.__fast;return _fmE.apply(this,arguments)}if(!engAllOn()||!eaIsLg(f))return _fmE.apply(this,arguments);try{const k=eaKey(f);let o=EA.pre[k];if(!o)o=eaStart(f);if(!o)return _fmE.apply(this,arguments);delete EA.pre[k];
-    if(o.r){eaApply(f,o.H,o.A,o.r);return}if(typeof simBump==='function')simBump(o.p,'');EA.q.push(o.p.then(res=>eaApply(f,o.H,o.A,res)))}catch(e){console.error(e);return _fmE.apply(this,arguments)}}}
+/* v274 사용자 결정(2026-11-02, "모든 선수 세부 기록을 위해 전부 엔진, 백그라운드에서 미리"): 미리 계산이 안 끝난 다른 리그 경기를 빠른 모델로 바꾸지 않고(v273) '늦게 반영' — '계속'은 바로 넘어가고 엔진 계산이 끝나는 대로 결과·기록 반영.
+   미리 계산이 아예 없던 경기(앱 재실행 직후)는 그 자리에서 팀 구성하지 않고 늦게 반영 대기열(EA.lateQ)에 넣어 조금씩 시작. 시즌 넘김 전에 남은 것이 있으면 그때만 빠른 모델로 마무리 */
+EA.late=0;EA.lateQ=[];
+function eaLateRun(){if(EA.lateT)return;const tick=()=>{EA.lateT=0;if(!EA.lateQ.length)return;if(document.querySelector('.busy')){EA.lateT=setTimeout(tick,300);return}const t0=performance.now();while(EA.lateQ.length&&performance.now()-t0<8){const f=EA.lateQ.shift();if(f.res)continue;const o=EA.pre[eaKey(f)]||eaStart(f);if(!o){EA.fast&&EA.fast(f);continue}eaLateHook(f,o)}if(EA.lateQ.length)EA.lateT=setTimeout(tick,40)};EA.lateT=setTimeout(tick,0)}
+function eaLateHook(f,o){const k=eaKey(f);if(EA.pre[k]===o)delete EA.pre[k];if(o.r){eaApply(f,o.H,o.A,o.r);return}EA.late++;o.p.then(res=>{try{eaApply(f,o.H,o.A,res)}finally{EA.late=Math.max(0,EA.late-1)}})}
+function eaLateAdd(f){if(!f||f.res||EA.lateQ.indexOf(f)>=0)return;EA.lateQ.push(f);eaLateRun()}
+{const _fmE=fastMatch;EA.fast=f=>{try{_fmE(f)}catch(e){console.error(e)}};fastMatch=function(f){if(f&&f.__fast){delete f.__fast;return _fmE.apply(this,arguments)}if(!engAllOn()||!eaIsLg(f))return _fmE.apply(this,arguments);try{const k=eaKey(f);let o=EA.pre[k];
+    if(!o){if(f.__late){delete f.__late;eaLateAdd(f);return}o=eaStart(f)}if(!o)return _fmE.apply(this,arguments);delete f.__late;
+    if(o.r){delete EA.pre[k];eaApply(f,o.H,o.A,o.r);return}if(typeof simBump==='function')simBump(o.p,'');eaLateHook(f,o)}catch(e){console.error(e);return _fmE.apply(this,arguments)}}}
+/* 불러오기 직후: 지난 날짜인데 결과 없는 다른 리그 경기(늦게 반영 중 저장된 경우)를 다시 대기열로 */
+function eaCatchUp(){try{if(!engAllOn())return;const L=[];if(S.fixO)S.fixO.forEach(f=>{if(!f.res&&f.d<S.date)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d<S.date)L.push(f)});L.sort((a,b)=>a.d<b.d?-1:1).forEach(f=>{EA.lateQ.push(f)});if(L.length)eaLateRun()}catch(e){console.error(e)}}
+/* 시즌 넘김 전: 남은 늦은 경기는 빠른 모델로 마무리(순위·이적 정산이 맞도록) */
+{const _roL=rollover;rollover=function(){try{const L=[];if(S.fixO)S.fixO.forEach(f=>{if(!f.res)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d<S.date)L.push(f)});L.forEach(f=>{f.__fast=1;fastMatch(f)});EA.lateQ=[]}catch(e){console.error(e)}return _roL.apply(this,arguments)}}
 // 진행(advance)에서 그날 다른 리그 경기가 다 끝날 때까지 기다림
 function engAllWait(){if(!EA.q.length)return null;const Q=EA.q;EA.q=[];return Promise.all(Q)}
 function eaBusyTxt(){/* v266: 미리 계산 전체(며칠 치)가 아니라 지금 기다리는 오늘 경기 수만 표시 */const left=Object.values(EA.pre).filter(o=>!o.r&&o.f&&o.f.d<=S.date).length;return left?`오늘 다른 경기 계산 중… (남은 ${left}경기)`:'다른 리그 경기 계산 중…'}
@@ -23,8 +34,9 @@ function eaPrefetch(){try{if(!engAllOn())return;/* v257(사용자 지적: 우리
   eaKoList(S.date,to,false).forEach(f=>L.push(f));/* v260: 우리 리그의 같은 날 다른 경기도 미리 계산(우리 경기는 제외) */(S.fixtures||[]).forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to&&f.h!==S.club&&f.a!==S.club)L.push(f)});
   /* v273: 한 번에 수백 경기 팀 구성을 하면 화면이 멈춤 → 8경기씩 나눠서 */L.sort((a,b)=>a.d<b.d?-1:1);const tok=EA.pfT=(EA.pfT||0)+1;let i=0;const step=()=>{if(EA.pfT!==tok)return;/* 진행(계속) 처리 중엔 양보 */if(document.querySelector('.busy')){setTimeout(step,300);return}const t0=performance.now();while(i<L.length&&performance.now()-t0<8){const f=L[i++];if(!f.res&&!EA.pre[eaKey(f)])eaStart(f)}if(i<L.length)setTimeout(step,40)};step()}catch(e){console.error(e)}}
 {const _smE=startMatch;startMatch=function(fx){const r=_smE.apply(this,arguments);try{setTimeout(eaPrefetch,1500)}catch(e){}return r}}
+/* v274 합의대로 우리 경기가 끝나는 즉시 다음 라운드까지 미리 계산 */{const _fiE=finish;finish=function(){const r=_fiE.apply(this,arguments);try{setTimeout(eaPrefetch,300)}catch(e){}return r}}
 /* v273: 미리 계산을 우리 경기 시작 때만이 아니라 하루 진행 뒤·불러오기 뒤에도(앱을 다시 열면 미리 계산 결과가 사라지므로) */{const _adE=advance;advance=function(){const r=_adE.apply(this,arguments);try{Promise.resolve(r).then(()=>setTimeout(eaPrefetch,800))}catch(e){}return r}}
-setTimeout(()=>{try{if(S&&S.club!=null)eaPrefetch()}catch(e){}},4000);
+setTimeout(()=>{try{if(S&&S.club!=null){eaCatchUp();eaPrefetch()}}catch(e){}},4000);
 // 시즌이 넘어가면 남은 미리 계산 정리
 {const _roE=rollover;rollover=function(){EA.pre={};EA.q=[];return _roE.apply(this,arguments)}}
 // 설정: 경력 화면 아래 켜기/끄기
