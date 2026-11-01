@@ -12,7 +12,7 @@ function eaIsLg(f){if(!f||f.cup!=null||f.eu||f.po||f.ko||f.md)return false;if(f.
 function eaApply(f,H,A,res){try{if(f.res)return;res.T=res.T||[{club:H.club,xi:[]},{club:A.club,xi:[]}];applyMatch(H,A,res,true);f.res=pack(res)}catch(e){console.error(e);try{if(!f.res)f.res={sc:res.sc||[0,0],ev:[]}}catch(_){}}}
 function eaStart(f){const k=eaKey(f);if(EA.pre[k])return EA.pre[k];let H,A;{const cu=f.cup!=null&&S.cups?S.cups[f.cup]:null;const early=cu&&f.rd<cu.R-3;const r0=early&&typeof ROT!=='undefined'?{...ROT}:null;if(r0){ROT.base=.3;ROT.eu=.35;ROT.gk=.6}try{H=teamFor(f.h);A=teamFor(f.a)}finally{if(r0)Object.assign(ROT,r0)}}if(!H||!A)return null;const o={f,H,A,r:null};const p0=simAsync(H,A,f.d||'');o.p=p0.then(res=>{o.r=res;EA.done++;return res});o.p.job=p0.job;EA.n++;EA.pre[k]=o;return o}
 // 리그 경기 빠른 결과 대신 엔진(대기열)
-{const _fmE=fastMatch;fastMatch=function(f){if(!engAllOn()||!eaIsLg(f))return _fmE.apply(this,arguments);try{const k=eaKey(f);let o=EA.pre[k];if(!o)o=eaStart(f);if(!o)return _fmE.apply(this,arguments);delete EA.pre[k];
+{const _fmE=fastMatch;fastMatch=function(f){if(f&&f.__fast){delete f.__fast;return _fmE.apply(this,arguments)}if(!engAllOn()||!eaIsLg(f))return _fmE.apply(this,arguments);try{const k=eaKey(f);let o=EA.pre[k];if(!o)o=eaStart(f);if(!o)return _fmE.apply(this,arguments);delete EA.pre[k];
     if(o.r){eaApply(f,o.H,o.A,o.r);return}if(typeof simBump==='function')simBump(o.p,'');EA.q.push(o.p.then(res=>eaApply(f,o.H,o.A,res)))}catch(e){console.error(e);return _fmE.apply(this,arguments)}}}
 // 진행(advance)에서 그날 다른 리그 경기가 다 끝날 때까지 기다림
 function engAllWait(){if(!EA.q.length)return null;const Q=EA.q;EA.q=[];return Promise.all(Q)}
@@ -21,8 +21,10 @@ function eaBusyTxt(){/* v266: 미리 계산 전체(며칠 치)가 아니라 지�
 function eaPrefetch(){try{if(!engAllOn())return;/* v257(사용자 지적: 우리 경기를 빨리 끝내고 '계속'을 누르면 대기): 미리 계산 범위를 '다음 우리 경기'에서 '다다음 우리 경기 날'(최대 17일)까지로 넓힘 → 다음 경기 전에 그 다음 라운드까지 백그라운드에서 끝냄. 가까운 날짜부터 계산 */const my=(S.fixtures||[]).filter(f=>!f.res&&(f.h===S.club||f.a===S.club)&&f.d>S.date).map(f=>f.d).sort();const nx=my[1]||my[0]||addD(S.date,7);const to=nx>addD(S.date,17)?addD(S.date,17):nx;
   const L=[];if(S.fixO)S.fixO.forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});if(S.fxE)for(const lg in S.fxE)S.fxE[lg].forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to)L.push(f)});
   eaKoList(S.date,to,false).forEach(f=>L.push(f));/* v260: 우리 리그의 같은 날 다른 경기도 미리 계산(우리 경기는 제외) */(S.fixtures||[]).forEach(f=>{if(!f.res&&f.d>S.date&&f.d<=to&&f.h!==S.club&&f.a!==S.club)L.push(f)});
-  L.sort((a,b)=>a.d<b.d?-1:1).forEach(f=>{if(!EA.pre[eaKey(f)])eaStart(f)})}catch(e){console.error(e)}}
+  /* v273: 한 번에 수백 경기 팀 구성을 하면 화면이 멈춤 → 8경기씩 나눠서 */L.sort((a,b)=>a.d<b.d?-1:1);const tok=EA.pfT=(EA.pfT||0)+1;let i=0;const step=()=>{if(EA.pfT!==tok)return;/* 진행(계속) 처리 중엔 양보 */if(document.querySelector('.busy')){setTimeout(step,300);return}const t0=performance.now();while(i<L.length&&performance.now()-t0<8){const f=L[i++];if(!f.res&&!EA.pre[eaKey(f)])eaStart(f)}if(i<L.length)setTimeout(step,40)};step()}catch(e){console.error(e)}}
 {const _smE=startMatch;startMatch=function(fx){const r=_smE.apply(this,arguments);try{setTimeout(eaPrefetch,1500)}catch(e){}return r}}
+/* v273: 미리 계산을 우리 경기 시작 때만이 아니라 하루 진행 뒤·불러오기 뒤에도(앱을 다시 열면 미리 계산 결과가 사라지므로) */{const _adE=advance;advance=function(){const r=_adE.apply(this,arguments);try{Promise.resolve(r).then(()=>setTimeout(eaPrefetch,800))}catch(e){}return r}}
+setTimeout(()=>{try{if(S&&S.club!=null)eaPrefetch()}catch(e){}},4000);
 // 시즌이 넘어가면 남은 미리 계산 정리
 {const _roE=rollover;rollover=function(){EA.pre={};EA.q=[];return _roE.apply(this,arguments)}}
 // 설정: 경력 화면 아래 켜기/끄기

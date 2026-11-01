@@ -62,7 +62,7 @@ document.addEventListener('click',e=>{
     q.happy=Math.max(0,Math.min(100,h+dh));save();closeSheet();toast(msg);render();return}
   if(d.msg){const m=S.inbox.find(x=>x.id===+d.msg);handleMsg(m,d.do);return}
   switch(d.act){
-    case 'resume':S=loadSave();devLoad();careerLoad();SQC=null;render();break;
+    case 'resume':S=loadSave();devLoad();careerLoad();SQC=null;render();try{setTimeout(()=>{if(typeof eaPrefetch==='function')eaPrefetch()},1500)}catch(e){}break;
     case 'advance':advance();break;
     case 'auto':S.xi=E3.autoPick(squadOf(S.club).filter(canUse),S.tac.form.base);S.tac.roles=E3.defaultRoles(S.xi.map(pl),S.tac.form.base);save();render();toast('체력·컨디션·포지션을 반영해 선발을 짰습니다');break;
     case 'msubs':UI.subOut=null;M.paused=true;clearTimeout(M.timer);subsSheet();break;

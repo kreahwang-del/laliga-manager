@@ -1,0 +1,14 @@
+// v273 '계속' 대기 시간: 사용자 세이브를 불러온 직후(미리 계산 없음) 하루씩 진행하며 날짜별 걸린 시간·대기 문구 최대 경기 수
+const {chromium}=require('playwright');const fs=require('fs');const DAYS=+(process.env.DAYS||6);
+(async()=>{const b=await chromium.launch();const pg=await b.newPage({viewport:{width:390,height:844}});const errs=[];pg.on('pageerror',e=>errs.push(e.message));
+await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1500);
+await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
+await pg.evaluate(()=>{S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null;save=()=>{};render();window.__PF={};const W=n=>{const f=window[n];if(typeof f!=='function')return;window[n]=function(){const t=performance.now();const r=f.apply(this,arguments);const add=()=>{const P=window.__PF[n]=window.__PF[n]||{n:0,ms:0};P.n++;P.ms+=performance.now()-t;if(n==='teamFor'&&window.__STK){const st=(new Error().stack||'').split('\n').slice(2,6).map(l=>(l.match(/at (\S+)/)||[])[1]).join('<');window.__TC=window.__TC||{};window.__TC[st]=(window.__TC[st]||0)+1}};if(r&&r.then)r.then(add,add);else add();return r}};[].forEach(W)});
+const out=[];await pg.waitForTimeout(+(process.env.IDLE||0));
+for(let i=0;i<DAYS;i++){const t0=Date.now();const r=await pg.evaluate(async()=>{S.inbox.forEach(m=>m.read=true);const d0=S.date;const mine=S.fixtures.some(f=>f.d===S.date&&!f.res&&(f.h===S.club||f.a===S.club));if(mine){/* 우리 경기 날은 건너뜀(빠른 결과) */}
+  let mx=0;const iv=setInterval(()=>{const t=document.querySelector('.busy')?.textContent||'';const m=t.match(/남은 (\d+)/);if(m)mx=Math.max(mx,+m[1])},100);
+  try{advance()}catch(e){}await new Promise(r=>{const iv2=setInterval(()=>{if(!document.querySelector('.busy')&&(S.date!==d0||M)){clearInterval(iv2);r()}},50)});clearInterval(iv);
+  if(typeof M!=='undefined'&&M&&!M.done){try{finish()}catch(e){}}return {d0,d1:S.date,mx,mine}});
+ r.pf=await pg.evaluate(()=>{const o={};for(const k in window.__PF)o[k]=[window.__PF[k].n,Math.round(window.__PF[k].ms)];window.__PF={};o.tc=Object.entries(window.__TC||{}).sort((a,b)=>b[1]-a[1]).slice(0,6);window.__TC={};return o});out.push(Object.assign(r,{sec:((Date.now()-t0)/1000).toFixed(1)}));console.log(JSON.stringify(out[out.length-1]));
+ await pg.evaluate(()=>{try{if(typeof M!=='undefined'&&M&&M.done){M=null;UI.tab='home';render()}}catch(e){}})}
+if(errs.length)console.error('ERR',errs.slice(0,4));process.exit(0)})().catch(e=>{console.log('E',e.message);process.exit(1)});
