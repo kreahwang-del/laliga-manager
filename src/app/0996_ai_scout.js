@@ -27,9 +27,9 @@ function aigPlanTxt(o){const a=[];if(o.pre)a.push(`평소 '${o.pre[0]}' 대신 �
   h+=`<h2>상대 감독의 대비</h2><div class="card pad"><ul class="note" style="margin:0;padding-left:18px;line-height:1.7">${a.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>`}}catch(e){}return h}}
 /* 경기 전 분석 칸: 가능성만 예고 */
 function aigLab(p){return p>=.6?'높음':p>=.3?'있음':'낮음'}
-{const _bs=bpStaff;bpStaff=function(pr){let h=_bs.apply(this,arguments);try{if(!h||!pr||!pr.them||!S.tac)return h;const c=pr.them.club;const base=(S.aiTac&&S.aiTac[c])||pr.them;const their=base.preset,mine=S.tac.preset;const B=E3.BEATS;const q=aiQ(c,true),lv=aigStudyLv(mine);const t=[];
+{const _bs=bpStaff;bpStaff=function(pr){let h=_bs.apply(this,arguments);try{if(!h||!pr||!pr.them||!S.tac)return h;const c=pr.them.club;const base=(S.aiTac&&S.aiTac[c])||pr.them;const their=base.preset,tl=E3.tiltOf?E3.tiltOf(S.tac.preset,S.tac.ti):null,mine=tl&&tl.w>=.3?tl.k:S.tac.preset;const B=E3.BEATS;const q=aiQ(c,true),lv=aigStudyLv(mine);const t=[];
   if((B[their]||[]).includes(mine))t.push(`상대 평소 전술 '${their}'은(는) 우리 '${mine}'에 강한 상성입니다`);
   else{const opts=Object.keys(B).filter(k=>(B[k]||[]).includes(mine));if(opts.length){const p=(B[mine]||[]).includes(their)?q:q*(.5+.1*lv);t.push(`상대 감독이 우리 '${mine}'에 강한 '${opts.join("'·'")}' 쪽으로 바꿀 가능성 <b>${aigLab(p)}</b>`)}}
   const star=(pr.us&&pr.us.xi||[]).filter(p=>['ST','W','AM'].includes(p.g)).sort((a,b)=>b.ovr-a.ovr)[0];if(star&&star.ovr>=84)t.push(`${esc(shortName(star.name))} 전담 마크 가능성 <b>${aigLab(q)}</b>`);
-  if(lv)t.push(`리그가 우리 '${mine}'을(를) 연구 중 <b>${lv}/3단계</b> — 성향을 바꾸면 풀립니다`);
+  if(tl&&tl.w>=.3)t.push(`우리 '균형'은 지시값이 '${tl.k}' 쪽으로 ${Math.round(tl.w*100)}% 기울어 그 상성이 일부 적용됩니다`);if(lv)t.push(`리그가 우리 '${mine}'을(를) 연구 중 <b>${lv}/3단계</b> — 성향을 바꾸면 풀립니다`);
   if(!t.length)return h;const tile=`<div><small>상대 분석</small><p>${t.join('<br>')}</p></div>`;const k=h.lastIndexOf('</div>');return k>0?h.slice(0,k)+tile+h.slice(k):h}catch(e){return h}}}

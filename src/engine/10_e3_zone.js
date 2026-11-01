@@ -58,6 +58,14 @@ const PRESETS={'티키타카':[4,3,4,2,1,4,0],'게겐프레싱':[5,3,3,5,3,5,1],
    다이렉트 > 게겐·측면 공략 / 두 줄 수비·티키타카에 약함
    측면 공략 > 두 줄 수비·역습 / 게겐·다이렉트에 약함 */
 const BEATS={'선수비 후 역습':['게겐프레싱','티키타카'],'티키타카':['두 줄 수비','다이렉트'],'게겐프레싱':['티키타카','측면 공략'],'두 줄 수비':['선수비 후 역습','다이렉트'],'다이렉트':['게겐프레싱','측면 공략'],'측면 공략':['두 줄 수비','선수비 후 역습'],'균형':[]};
+/* v272 균형 기울기(사용자 승인 2026-11-02, 세이브 검증): '균형'은 상성표에 천적이 없어 지시값을 공격적으로(각 ±1) 바꿔도 상성 손해·AI 맞춤 대비가 전혀 없었음.
+   균형 기본값에서 벗어난 방향을 각 성향 방향에 투영(0~1)해 가장 큰 쪽을 '기울기'로 보고, 그 성향의 상성을 기울기×0.8(최대 0.6)만큼 적용(양쪽 모두: 불리·유리). 기본값 그대로의 균형은 영향 없음 */
+function tiltOf(pre,ti){if(pre!=='균형'||!ti)return null;const b=PRESETS['균형'];const d=ti.map((v,i)=>v-b[i]);if(d.every(v=>!v))return null;let best=null;
+  for(const k in PRESETS){if(k==='균형')continue;const v=PRESETS[k].map((x,i)=>x-b[i]);const vv=v.reduce((a,x)=>a+x*x,0);if(!vv)continue;const w=Math.max(0,Math.min(1,d.reduce((a,x,i)=>a+x*v[i],0)/vv));if(!best||w>best.w)best={k,w}}
+  return best&&best.w>0?best:null}
+function beatW(a,b){/* a팀이 b팀에 상성 우위인 정도(0~1): 이름 상성 1, 균형 기울기는 일부 */if(BEATS[a.preset]&&BEATS[a.preset].includes(b.preset))return 1;
+  const ta=tiltOf(a.preset,a.ti),tb=tiltOf(b.preset,b.ti);const wa=ta?Math.min(.6,ta.w*.8):0,wb=tb?Math.min(.6,tb.w*.8):0;
+  if(ta&&(BEATS[ta.k]||[]).includes(b.preset))return wa;if(tb&&(BEATS[a.preset]||[]).includes(tb.k))return wb;if(ta&&tb&&(BEATS[ta.k]||[]).includes(tb.k))return wa*wb;return 0}
 // 성향 적합도 = (필요 능력 평균 − 그 팀 전체 능력 평균) − 라리가 중앙값. 팀 전력 자체와 분리해 '상대적으로 맞는 성향'만 평가
 // 기준값: 라리가 20팀 주전 10명(게임 능력치) 중앙값. 균형은 성향 보너스·불이익 없음
 const NEED_REF={'티키타카':.46,'게겐프레싱':.83,'두 줄 수비':-.1,'선수비 후 역습':-.23,'다이렉트':-.69,'측면 공략':-.2,'균형':null};
@@ -483,6 +491,6 @@ function autoPick(players,form){const keys=FORMS[form];const C=players.filter(p=
     do{const j1=way[j0];pp[j0]=pp[j1];j0=j1}while(j0)}
   const xi=new Array(keys.length).fill(null);for(let j=1;j<=n;j++){const i=pp[j]-1;if(i>=0&&i<keys.length&&j-1<C.length)xi[i]=C[j-1].id}return xi}
 function defaultRoles(xi,form){return xi.map((p,i)=>{const sk=FORMS[form]&&FORMS[form][Math.min(i,10)];const rs=ROLES[((sk&&SLOT[sk])||[p.g])[0]]||ROLES.CM;let bi=0,bv=-1;rs.forEach((rl,j)=>{const v=roleFit(p,rl);if(v>bv){bv=v;bi=j}});return bi})}
-root.E3={PICKM,prep,styleOf,keyFromPos,shapeOf,bestAssign,slotAlt,effKey,phaseSlots,SLOT_H,styleMap,FORMS,SLOT,COORD,ROLES,DUTY,PI,PIK,PRESETS,BEATS,NEEDS,NEED_REF,COND_M,fitOf,posMul,roleFit,mapSlots,simulate,createMatch,autoPick,defaultRoles,grid,cell};
+root.E3={tiltOf,beatW,PICKM,prep,styleOf,keyFromPos,shapeOf,bestAssign,slotAlt,effKey,phaseSlots,SLOT_H,styleMap,FORMS,SLOT,COORD,ROLES,DUTY,PI,PIK,PRESETS,BEATS,NEEDS,NEED_REF,COND_M,fitOf,posMul,roleFit,mapSlots,simulate,createMatch,autoPick,defaultRoles,grid,cell};
 })(typeof module!=='undefined'?module.exports:window);
 

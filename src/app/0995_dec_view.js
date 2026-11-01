@@ -54,3 +54,11 @@ body:has(.scrim.dvm) .bpgoal{display:none!important}#m2d.dvz .pl text{font-size:
 
 /* v269 검증 의견: 크로스 장면 위험·기회 등급이 고정이라 박스 안 우리 0명이어도 '낮은 크로스 기회 높음'으로 나옴 → 박스 안 우리 숫자(화면에 보이는 사실)로만 조정. 엔진 실측(v253 강제 선택 5,600장면): 박스에 우리 선수가 없으면 낮은 크로스 가치 ×.55·높은 크로스 ×.72, 3명 이상이면 ×1.15 */
 {const _rl=decRL;decRL=function(id){try{const d=M&&M.m&&M.m.st.pendingDec;if(d&&d.k==='cross'&&(id==='low'||id==='high')&&DEC_RO[id]){const bA=(d.info||{}).bA||0;const base=DEC_RO[id];const sv=DEC_RO[id];const lv=['낮음','중간','높음'];let i=lv.indexOf(base[1]);if(bA===0)i=0;else if(bA>=3)i=Math.min(2,i+1);DEC_RO[id]=[base[0],lv[Math.max(0,i)]];try{return _rl.apply(this,arguments)}finally{DEC_RO[id]=sv}}}catch(e){}return _rl.apply(this,arguments)}}
+/* v272 사용자 요청: 지시 장면 확대 화면이 가장자리가 조금씩 잘려 보임 → 확대된 2D 경기장을 손가락으로 끌어 움직여 볼 수 있게(확대 배율은 그대로, 경기장 밖 3m까지) */
+{let DG=null;const vbOf=svg=>(svg.getAttribute('viewBox')||'0 0 105 68').split(/[ ,]+/).map(Number);
+ document.addEventListener('pointerdown',e=>{const svg=e.target.closest&&e.target.closest('#m2d.dvz');if(!svg)return;DG={svg,x:e.clientX,y:e.clientY,vb:vbOf(svg),id:e.pointerId,mv:0};try{svg.setPointerCapture(e.pointerId)}catch(er){}},true);
+ document.addEventListener('pointermove',e=>{if(!DG||e.pointerId!==DG.id)return;if(!DG.svg.classList.contains('dvz')){DG=null;return}const r=DG.svg.getBoundingClientRect();const [x0,y0,w,h]=DG.vb;const k=Math.max(w/r.width,h/r.height);
+  const nx=Math.max(-3,Math.min(108-w,x0-(e.clientX-DG.x)*k)),ny=Math.max(-3,Math.min(71-h,y0-(e.clientY-DG.y)*k));DG.mv=Math.max(DG.mv,Math.hypot(e.clientX-DG.x,e.clientY-DG.y));dvVB(DG.svg,nx,ny,w,h);e.preventDefault()},true);
+ const end=e=>{if(DG&&e.pointerId===DG.id)DG=null};document.addEventListener('pointerup',end,true);document.addEventListener('pointercancel',end,true);
+ const st=document.createElement('style');st.textContent='#m2d.dvz{touch-action:none;cursor:grab}';document.head.appendChild(st)}
+{const _ds=decSheet;decSheet=function(){const r=_ds.apply(this,arguments);try{const i=document.querySelector('#scrim .dvinfo');if(i&&!i.querySelector('.dvdrag'))i.insertAdjacentHTML('beforeend','<span class="dvdrag" style="display:block;font-weight:400;font-size:11px;color:var(--muted,#A7ADB5);margin-top:2px">경기장을 끌어서 주변을 볼 수 있습니다</span>')}catch(e){}return r}}

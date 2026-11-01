@@ -127,7 +127,7 @@ function tacView(){
     <div class="ti"><span>상대 공략 지시</span><div class="seg" style="grid-template-columns:repeat(5,1fr);margin:0">${AF_OPTS.map(([v,l])=>`<button data-taf="${v}" aria-pressed="${(T.af||'')===v}">${l}</button>`).join('')}</div></div>
     <p class="note" style="margin:2px 0 8px">${esc((AF_OPTS.find(x=>x[0]===(T.af||''))||AF_OPTS[0])[2])}</p>
     <div class="ti"><span>기본 성향</span><div class="seg" style="grid-template-columns:repeat(3,1fr);margin:0">${['수비적','균형','공격적'].map(m=>`<button data-ment="${m}" aria-pressed="${T.ment===m}">${m}</button>`).join('')}</div></div>
-    ${devs?`<div class="warnline">${devs}개 항목이 ${T.preset} 기본값에서 2단계 이상 벗어나 성향 보너스가 줄어듭니다.</div>`:`<div class="okline">${T.preset} 성향 보너스 적용 중. 점 표시가 기본값입니다. 성향을 바꾸면 숙련도가 떨어지고, 경기를 치를수록 오릅니다.</div>`}
+    ${(()=>{const tl=E3.tiltOf?E3.tiltOf(T.preset,T.ti):null;return tl&&tl.w>=.15?`<div class="warnline">지시값이 '${tl.k}' 쪽으로 ${Math.round(tl.w*100)}% 기울었습니다 → 상대 상성이 ${Math.round(Math.min(.6,tl.w*.8)*100)}%만큼 적용되고(유리·불리 모두), 상대 감독이 그 쪽을 노릴 수 있습니다.</div>`:''})()}${devs?`<div class="warnline">${devs}개 항목이 ${T.preset} 기본값에서 2단계 이상 벗어나 성향 보너스가 줄어듭니다.</div>`:`<div class="okline">${T.preset} 성향 보너스 적용 중. 점 표시가 기본값입니다. 성향을 바꾸면 숙련도가 떨어지고, 경기를 치를수록 오릅니다.</div>`}
   </section>`;
 }
 function zonesHTML(sup,range){let h='';for(let r=0;r<3;r++)for(let l=0;l<5;l++){const v=sup?sup[r][l]:0;const lv=range?range.get(r+','+l):undefined;const cls=range?(lv===2?'a':lv===1?'e':'x'):'';h+=`<div class="${cls}">${sup?`<b class="${v>0.4?'p':v<-0.4?'m':'z'}">${v>0?'+':''}${Math.round(v*2)/2}</b>`:''}</div>`}return h}
