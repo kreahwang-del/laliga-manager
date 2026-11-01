@@ -47,3 +47,6 @@ function dvShow(d){const svg=document.getElementById('m2d');const f=dvFrame();if
 .scrim.dvm .sheet h3{margin:2px 0 4px}.scrim.dvm .sheet .btn{padding:9px 12px;margin-top:6px}.dvinfo{margin:0 0 6px;padding:6px 8px;background:rgba(245,213,71,.10);border-left:3px solid var(--amber,#F5D547);font-size:12.5px;font-weight:700;color:var(--text,#F2F3F5)}
 body:has(.scrim.dvm) .bpgoal{display:none!important}#m2d.dvz .pl text{font-size:1.25px;stroke-width:.15px}#m2d.dvz .pl circle{r:1.25px}
 .dvn{display:inline-grid;place-items:center;width:18px;height:18px;margin-right:6px;border:1.5px solid var(--amber,#F5D547);color:var(--amber,#F5D547);font-size:11px;font-weight:900;border-radius:50%;vertical-align:1px}`;document.head.appendChild(st)}
+
+/* v269 검증 의견: 크로스 장면 위험·기회 등급이 고정이라 박스 안 우리 0명이어도 '낮은 크로스 기회 높음'으로 나옴 → 박스 안 우리 숫자(화면에 보이는 사실)로만 조정. 엔진 실측(v253 강제 선택 5,600장면): 박스에 우리 선수가 없으면 낮은 크로스 가치 ×.55·높은 크로스 ×.72, 3명 이상이면 ×1.15 */
+{const _rl=decRL;decRL=function(id){try{const d=M&&M.m&&M.m.st.pendingDec;if(d&&d.k==='cross'&&(id==='low'||id==='high')&&DEC_RO[id]){const bA=(d.info||{}).bA||0;const base=DEC_RO[id];const sv=DEC_RO[id];const lv=['낮음','중간','높음'];let i=lv.indexOf(base[1]);if(bA===0)i=0;else if(bA>=3)i=Math.min(2,i+1);DEC_RO[id]=[base[0],lv[Math.max(0,i)]];try{return _rl.apply(this,arguments)}finally{DEC_RO[id]=sv}}}catch(e){}return _rl.apply(this,arguments)}}
