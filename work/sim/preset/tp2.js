@@ -1,0 +1,14 @@
+// 약팀 수비 전술 원인 진단(에이전트 합의 설계): 약팀 홈 vs 강팀 원정, 같은 대진·시드, 약팀 전술 조건만 바꿈. 슈팅 기록(shotLog)으로 상대 슈팅 수·유형·거리·역습 여부·박스 안 수비 수
+// COND: 쉼표로 여러 조건. 이름=성향[:ti6=0][:ti1=3][:bzN=1]
+const {chromium}=require('playwright');const fs=require('fs');const HTML=process.env.HTML,N=+(process.env.N||300),SEED=+(process.env.SEED||5),OUT=process.env.OUT,CONDS=(process.env.COND||'균형').split(',');
+(async()=>{const b=await chromium.launch();const pg=await b.newPage();await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(500);
+await pg.evaluate(()=>{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0);AIP.plan=0;window.__OV={};const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{shotLog:true,cfg:Object.assign({},(o&&o.cfg)||{},window.__OV)}))});fs.writeFileSync(OUT,'');
+for(let c0=0;c0<N;c0+=10){const R=await pg.evaluate(([c0,N,SEED,CONDS])=>{const all=LIGA.slice();const hs=v=>{v=(v^61)^(v>>>16);v=Math.imul(v,9);v^=v>>>4;v=Math.imul(v,0x27d4eb2d);v^=v>>>15;return v>>>0};const so=all.slice().sort((x,y)=>CLUBS[x].rep-CLUBS[y].rep);const weak=so.slice(0,8),strong=so.slice(-6);const out=[];
+ for(let k=c0;k<Math.min(N,c0+10);k++){const h=weak[hs(SEED*7+k)%8],a=strong[hs(SEED*11+k)%6];S.date='2026-09-'+String(1+k%28).padStart(2,'0');const row={k,h,a};
+  for(const cd of CONDS){const [pre,...mods]=cd.split(':');let x=(SEED*7919+k*104729)%2147483646+1;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};window.__OV={};const H=teamFor(h),A=teamFor(a);H.preset=pre;H.ti=[...E3.PRESETS[pre]];
+   mods.forEach(m=>{const [kk,v]=m.split('=');if(kk==='ti6')H.ti[6]=+v;else if(kk==='ti1')H.ti[1]=+v;else if(kk==='ti0')H.ti[0]=+v;else if(kk==='ti5')H.ti[5]=+v;else if(kk==='ti4')H.ti[4]=+v;else window.__OV[kk]=+v});
+   const m=runMatch(H,A);while(!m.done)m.step();const r=m.finalize();const shl=m.st.shl||[];const Anames=new Set(A.xi.concat(A.bench||[]).map(p=>p.name));const opp=shl.filter(s=>Anames.has(s[4]));
+   const agg={n:opp.length,xg:0,ty:{},band:{},cnt:0,cntX:0,nb:0};opp.forEach(s=>{const d=Math.hypot(105-s[0],34-s[1]);const bd=d<12?'a<12':d<18?'b12-18':d<25?'c18-25':'d25+';agg.xg+=s[3];agg.ty[s[2]]=(agg.ty[s[2]]||[0,0]);agg.ty[s[2]][0]++;agg.ty[s[2]][1]+=s[3];agg.band[bd]=(agg.band[bd]||[0,0]);agg.band[bd][0]++;agg.band[bd][1]+=s[3];if(s[8]){agg.cnt++;agg.cntX+=s[3]}agg.nb+=s[6]});
+   row[cd]={sc:r.sc,xg:[+r.stats.xg[0].toFixed(2),+r.stats.xg[1].toFixed(2)],poss:r.stats.poss?r.stats.poss[0]:null,sh:[r.stats.shots[0],r.stats.shots[1]],opp:agg,apre:A.preset}}
+  out.push(row)}return out},[c0,N,SEED,CONDS]);fs.appendFileSync(OUT,R.map(o=>JSON.stringify(o)).join('\n')+'\n')}
+process.exit(0)})().catch(e=>{console.log('E',e.message);process.exit(1)})
