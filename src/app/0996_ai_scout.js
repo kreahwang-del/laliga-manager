@@ -22,7 +22,7 @@ function aigPlanTxt(o){const a=[];if(o.pre)a.push(`평소 '${o.pre[0]}' 대신 �
 /* 경기 종료: 연구당함 갱신(리그 경기) + 리포트에 대비 기록 */
 {const _fi=finish;finish=function(){let info=null;try{if(M&&!M.done&&M.H&&M.Aw){const us=M.me===0?M.H:M.Aw;info={pre:us.preset,league:!!M.league}}}catch(e){}const r=_fi.apply(this,arguments);
   try{if(info&&info.league&&M&&M.res){const sc=M.res.sc,me=M.me;const res=sc[me]>sc[1-me]?'W':sc[me]<sc[1-me]?'L':'D';aigStudyUpdate(info.pre,res)}}catch(e){console.error(e)}return r}}
-{const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(R&&M&&M.aigPlan){R.aigPlan=M.aigPlan;const o=M.aigPlan;if(o.mk){const id=(Object.values(M.m.P[me]||[]).find(a=>a.p&&a.p.name===o.mk[0])||{}).p;const rt=id&&res.ratings&&res.ratings[id.id];R.aigPlan.mkR=rt!=null?+(+rt).toFixed(1):null}}}catch(e){}return R}}
+{const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(R&&M&&M.aigPlan){R.aigPlan=M.aigPlan;const o=M.aigPlan;if(o.mk){const id=(Object.values(M.m.P[me]||[]).find(a=>a.p&&a.p.name===o.mk[0])||{}).p;const rt=id&&res.ratings&&res.ratings[id.id];const rv=rt&&typeof rt==='object'?rt.r:rt;R.aigPlan.mkR=rv!=null&&!isNaN(+rv)?+(+rv).toFixed(1):null}}}catch(e){}return R}}
 {const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(R&&R.aigPlan){const a=aigPlanTxt(R.aigPlan);if(R.aigPlan.mkR!=null)a.push(`전담 마크 당한 ${shortName(R.aigPlan.mk[0])} 평점 ${R.aigPlan.mkR}`);
   h+=`<h2>상대 감독의 대비</h2><div class="card pad"><ul class="note" style="margin:0;padding-left:18px;line-height:1.7">${a.map(t=>`<li>${esc(t)}</li>`).join('')}</ul></div>`}}catch(e){}return h}}
 /* 경기 전 분석 칸: 가능성만 예고 */
