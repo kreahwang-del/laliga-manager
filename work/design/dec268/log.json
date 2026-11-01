@@ -61,44 +61,14 @@
    "chips": []
   },
   {
-   "k": "cross",
-   "sheetTop": 390,
-   "sheetH": 390,
-   "pitchBottom": 328,
-   "vb": "64.00 34.35 44.00 28.50",
-   "info": "가장 가까운 수비 2.2m · 박스 안 우리 3 : 상대 5",
-   "nums": 0,
-   "btnsVisible": 3,
-   "layer": true,
-   "after": {
-    "vb": "0 0 105 68",
-    "layer": false
-   }
-  },
-  {
-   "k": "cross",
-   "sheetTop": 390,
-   "sheetH": 390,
-   "pitchBottom": 328,
-   "vb": "64.00 33.10 44.00 28.50",
-   "info": "가장 가까운 수비 2.5m · 박스 안 우리 0 : 상대 4",
-   "nums": 0,
-   "btnsVisible": 3,
-   "layer": true,
-   "after": {
-    "vb": "0 0 105 68",
-    "layer": false
-   }
-  },
-  {
    "k": "def",
    "sheetTop": 390,
    "sheetH": 390,
    "pitchBottom": 328,
-   "vb": "63.70 18.80 38.00 24.61",
-   "info": "상대 Larrubia → 골문까지 22.9m",
+   "vb": "4.25 16.50 38.00 24.61",
+   "info": "상대 Puga → 골문까지 25.5m\n돌파\n패스\n슈팅\n고른 편",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",
@@ -107,15 +77,8 @@
   },
   {
    "chips": [
-    "15' 지시 결과 · Llorente",
-    "25' 골 · Sørloth",
-    "37' 지시 결과 · Sørloth",
-    "51' 빅찬스 · Lookman",
-    "62' 골 · Sørloth",
-    "65' 지시 결과 · Barrios",
-    "75' 선방 · Jauregi",
-    "80' 선방 · Chupete",
-    "85' 빅찬스 · Barrios"
+    "13' 지시 결과 · Lookman",
+    "16' 골 · Sørloth"
    ]
   },
   {
@@ -124,9 +87,9 @@
    "sheetH": 390,
    "pitchBottom": 328,
    "vb": "-3.00 -3.00 38.00 24.61",
-   "info": "상대 Femenía → 골문까지 29.5m",
+   "info": "상대 Femenía → 골문까지 29.5m\n돌파\n패스\n슈팅\n살짝 기움",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",
@@ -139,9 +102,9 @@
    "sheetH": 390,
    "pitchBottom": 328,
    "vb": "9.30 29.65 38.00 24.61",
-   "info": "상대 Satriano → 골문까지 30m",
+   "info": "상대 Satriano → 골문까지 30m\n돌파\n패스\n슈팅\n고른 편",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",
@@ -179,9 +142,9 @@
    "sheetH": 390,
    "pitchBottom": 328,
    "vb": "0.90 38.45 38.00 24.61",
-   "info": "상대 Luismi → 골문까지 26.6m",
+   "info": "상대 Luismi → 골문까지 26.6m\n돌파\n패스\n슈팅\n고른 편",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",
@@ -194,9 +157,9 @@
    "sheetH": 390,
    "pitchBottom": 328,
    "vb": "7.35 13.60 38.00 24.61",
-   "info": "상대 Casado → 골문까지 28m",
+   "info": "상대 Casado → 골문까지 28m\n돌파\n패스\n슈팅\n살짝 기움",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",
@@ -264,9 +227,9 @@
    "sheetH": 390,
    "pitchBottom": 328,
    "vb": "66.35 12.70 38.00 24.61",
-   "info": "상대 Camello → 골문까지 22.1m",
+   "info": "상대 Camello → 골문까지 22.1m\n돌파\n패스\n슈팅\n살짝 기움",
    "nums": 0,
-   "btnsVisible": 3,
+   "btnsVisible": 2,
    "layer": true,
    "after": {
     "vb": "0 0 105 68",

@@ -106,7 +106,7 @@ function bpXgChart(R){if(!R||!R.xgs)return '';const W=320,H=110,P=6,mx=Math.max(
 // 계산 중에는 Math.random을 임시 고정값으로 바꿔 게임의 난수 흐름을 건드리지 않음. 같은 날·같은 경기는 캐시
 function bpNextFx(){try{const mn=myNext();const fr=S.friendlies.find(x=>!x.res);return [fr,mn,(typeof cupNextMine==='function'?cupNextMine():null)].filter(Boolean).sort((a,b)=>a.d<b.d?-1:1)[0]||null}catch(e){return null}}
 function bpPred(fx){if(!fx||typeof FASTM==='undefined')return null;const key=S.date+'|'+fx.d+'|'+fx.h+'|'+fx.a+'|'+(S.xi||[]).join(',');if(bpPred.k===key)return bpPred.v;
-  const R0=Math.random;let out=null;try{Math.random=()=>.5;const H=teamFor(fx.h),A=teamFor(fx.a);if(H&&A&&H.xi&&A.xi){const av=t=>t.xi.reduce((s,p)=>s+effO(p),0)/Math.max(1,t.xi.length);
+  const R0=Math.random;let out=null;try{Math.random=()=>.5;const H=teamFor(fx.h),A=teamFor(fx.a);if(H&&A&&H.xi&&A.xi){const cm=p=>{try{return (typeof E3!=='undefined'&&E3.COND_M)?E3.COND_M[p.cond??2]??1:1}catch(e){return 1}};const av=t=>t.xi.reduce((s,p)=>s+effO(p)*cm(p),0)/Math.max(1,t.xi.length);/* v269 사용자 지적(5연승 vs 5연패 팀 예상이 비슷): 예상에 선수 컨디션(경기 엔진과 같은 배율 ±8%, 연승·연패·최근 평점이 반영됨)을 넣음. 이전엔 능력·체력·홈만 */
     const d=av(H)-av(A),a=(typeof divOf==='function'&&divOf(fx.h)===2)?FASTM.a2:FASTM.a,lh=Math.exp(a+FASTM.b*d+FASTM.h),la=Math.exp(a-FASTM.b*d-FASTM.h);
     const P=l=>{const r=[];let p=Math.exp(-l);for(let k=0;k<11;k++){r.push(p);p*=l/(k+1)}return r};const ph=P(lh),pa=P(la);let w=0,dr=0,lo=0;
     for(let i=0;i<11;i++)for(let j=0;j<11;j++){const q=ph[i]*pa[j];if(i>j)w+=q;else if(i===j)dr+=q;else lo+=q}const t=w+dr+lo;
