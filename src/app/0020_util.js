@@ -18,7 +18,7 @@ function avatar(p,cls=''){const u=IMG.on&&faceUrl(p,cls==='lg');return `<span cl
 function crest(c,cls=''){const [a,b,ink]=clubCol(c);const u=IMG.on&&clubLogo(c);return `<span class="crest ${cls}${u?' img':''}" style="background:linear-gradient(135deg,${a} 50%,${b} 50%);color:${ink||'#fff'}">${u?`<img src="${u}" loading="lazy" alt="" onerror="this.parentNode.classList.remove('img');this.remove()">`:''}<b>${CLUBS[c].short}</b></span>`}
 const shortName=n=>{const w=n.split(' ');const l=w[w.length-1];if(w.length>1&&['Júnior','Junior','Jr.'].includes(l))return w[0];const pre=(w[w.length-2]||'').toLowerCase();return w.length>2&&['de','van','ter','da','di','dos'].includes(pre)?w[w.length-2]+' '+l:l};
 const ovrCls=o=>o>=85?'hi':o>=75?'':'lo';
-function toast(t){const o=$('.toast');if(o)o.remove();const d=document.createElement('div');d.className='toast';d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2800)}
+function toast(t){const o=$('.toast');if(o)o.remove();const d=document.createElement('div');d.className='toast';d.setAttribute('role','status');d.setAttribute('aria-live','polite');d.textContent=t;document.body.appendChild(d);setTimeout(()=>d.remove(),2800)}
 const GN={GK:'골키퍼',CB:'센터백',FB:'풀백',DM:'수비형 MF',CM:'중앙 MF',AM:'공격형 MF',W:'윙어',ST:'스트라이커'};
 const AN={shoot:'슈팅',pass:'패스',drib:'드리블',cross:'크로스',tackle:'태클',posit:'위치선정',offball:'침투',aerial:'공중볼',pace:'속도',stamina:'체력',gk_save:'선방',gk_air:'공중장악',gk_sweep:'스위핑',gk_dist:'배급'};
 const OUTA=['shoot','pass','drib','cross','tackle','posit','offball','aerial','pace','stamina'],GKA=['gk_save','gk_air','gk_sweep','gk_dist','pass','stamina'];

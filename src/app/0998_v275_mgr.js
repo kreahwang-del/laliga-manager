@@ -28,7 +28,7 @@ function mgaCard(){const A=mgaAll(),R=A.R,tl=(S.me&&S.me.mtl)||{},ts=(S.me&&S.me
      <div style="height:6px;background:var(--line);margin:4px 0"><i style="display:block;height:6px;width:${r.n?pct:50}%;background:${v>=15?'var(--good)':v<8?'var(--bad)':'var(--amber,#F5D547)'}"></i></div>
      <div class="note" style="margin:0">${MGA[k].why} · ${r.n?`좋음 ${r.g} · 아쉬움 ${r.b} / ${r.n}회`:'기록 없음'} · ${MGA[k].fx} ${r.n?fx:'±0'}${v>=15&&tl[k]!=='on'?` · 칭호까지 ${Math.max(0,10-(ts[k]||0))}경기`:''}</div></div>`};
   return `<h2>감독 기록 <span class="note" style="display:inline">최근 ${R.m}경기(최대 20) · 직접 치른 경기만</span></h2><div class="card pad">${row('tac')}${row('mot')}<p class="note" style="margin:6px 0 0">10이 기본(효과 없음). 최근 경기의 판단으로만 오르내립니다. 15 이상을 10경기 유지하면 칭호가 붙습니다.</p></div>`}
-{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if((!UI.cv||UI.cv==='mgr'||UI.cv==='me'||UI.cv==='career')&&!(typeof unemp==='function'&&unemp())){const k=h.indexOf('<h2>');return k>=0?h.slice(0,k)+mgaCard()+h.slice(k):mgaCard()+h}}catch(e){console.error(e)}return h}}
+{const _cv=careerView;careerView=function(){const h=_cv.apply(this,arguments);try{if((!UI.cv||UI.cv==='mgr'||UI.cv==='me'||UI.cv==='career')&&!(typeof unemp==='function'&&unemp())){return mgaCard()+h}}catch(e){console.error(e)}return h}}
 /* 경기 전 분석: 상대 감독 성향 한 줄(판단력 aiQ 기준) */
 {const _bs=bpStaff;bpStaff=function(pr){let h=_bs.apply(this,arguments);try{if(!h||!pr||!pr.them)return h;const c=pr.them.club;const q=aiQ(c,true);const m=typeof mgrOf==='function'?mgrOf(c):null;const nm=m?shortName(m.n):'상대 감독';
   const t=q>=.75?`${esc(nm)}: 상대에 맞춰 전술을 자주 바꾸는 유형(판단력 높음)`:q>=.5?`${esc(nm)}: 상황에 따라 대응하는 유형`:`${esc(nm)}: 자기 전술을 고수하는 유형`;

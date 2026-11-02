@@ -10,6 +10,6 @@ setInterval(()=>{try{if(typeof M!=='undefined'&&M&&M.m&&M.m.st&&M.m.st.pendingDe
  document.addEventListener('pointermove',e=>{if(LP&&e.pointerId===LP.pid&&Math.hypot(e.clientX-LP.x,e.clientY-LP.y)>8)LP=null},true);
  document.addEventListener('pointercancel',()=>{LP=null},true);
  document.addEventListener('pointerup',e=>{const L=LP;LP=null;if(!L||e.pointerId!==L.pid||Math.hypot(e.clientX-L.x,e.clientY-L.y)>8||performance.now()-L.t>700)return;if(!anaData(L.id,'live')){toast('아직 기록이 없습니다');return}e.preventDefault();anaSheet(L.id,'live')},true)}
-{const _mp=mpst;mpst=function(){const r=_mp.apply(this,arguments);try{const box=document.getElementById('mpst');if(!box||box.hidden||!M||!M.m)return r;const v=UI.mpst??'0';const side=v==='0'?M.me:1-M.me,st=M.m.st,T=M.m.T[side];
+{const _mp=mpst;mpst=function(){const r=_mp.apply(this,arguments);try{const box=document.getElementById('mpst');if(!box||box.hidden||!M||!M.m)return r;const v=UI.mpst??'feed';const side=v==='0'?M.me:1-M.me,st=M.m.st,T=M.m.T[side];
   const outs=(st.subs[side]||[]).map(x=>x.out).filter(Boolean);const seen=new Set(),L=T.xi.concat(outs).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id));let i=0;
   box.querySelectorAll('tbody td.n').forEach(td=>{const p=L[i++];if(p){td.dataset.lana=p.id;td.style.cursor='pointer';td.style.textDecoration='underline';td.style.textDecorationColor='var(--faint)';td.style.textUnderlineOffset='3px'}})}catch(e){}return r}}

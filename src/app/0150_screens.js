@@ -4,7 +4,7 @@ function render(){
   const app=$('#app');
   if(!S){app.innerHTML=startView();return}
   const w=winNow(),unread=S.inbox.filter(m=>!m.read).length;
-  app.innerHTML=`<header class="top"><div class="in">${crest(S.club)}<div><h1>${esc(CLUBS[S.club].name)}</h1><div class="sub">${fmtD(S.date)} · ${S.season}-${String(S.season+1).slice(2)} 시즌${w?' · <span style="color:var(--good)">이적시장</span>':''}</div></div>
+  app.innerHTML=`<header class="top"><div class="in">${crest(S.club)}<div><h1>${esc(typeof clubDisp==='function'?clubDisp(CLUBS[S.club].name):CLUBS[S.club].name)}</h1><div class="sub">${fmtD(S.date)} · ${S.season}-${String(S.season+1).slice(2)} 시즌${w?' · <span style="color:var(--good)">이적시장</span>':''}</div></div>
     ${unemp()?'<span class="money" style="opacity:.7">평판<b>'+S.me.rep+'</b></span>':'<button class="money" data-act="fin">이적 예산<b>'+money(S.fin.budget)+'</b></button>'}</div></header>
   <main class="wrap">${({home:homeView,squad:squadView,tac:tacView,trans:transView,league:leagueView,career:careerView})[unemp()&&['squad','tac','trans'].includes(UI.tab)?'home':UI.tab]()}</main>
   <div class="go"><div class="in"><button data-act="advance">${typeof goLbl==='function'?goLbl():'계속'} <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M8 5l8 7-8 7"/></svg></button></div></div>

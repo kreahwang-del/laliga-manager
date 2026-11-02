@@ -31,7 +31,7 @@ function mtApply(){const d=document.getElementById('match');if(!d||!M||!M.fx)ret
   const inn=d.querySelector('.in');if(inn&&!inn.querySelector('.mtbadge'))inn.insertAdjacentHTML('afterbegin',`<div class="mtbadge"><i></i>${esc(t.n)}</div>`)}
 {const _sm=startMatch;startMatch=function(fx){MTH=null;const r=_sm.apply(this,arguments);try{mtApply()}catch(e){console.error(e)}return r}}
 // ---- 순위 표시(v104): 경기 화면 팀 이름 아래·전술 화면 다음 상대 배너에 리그 순위 ----
-function lgRank(c){try{const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return null;const fx=typeof fxLg==='function'?fxLg(lg):[];const T={};let any=0;
+function lgRank(c){try{const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return null;/* v276 사용자 화면 불일치(경기 점수판 3위 vs 순위표 1위): 우리 리그는 순위표와 같은 table()로 */if(S&&CLUBS[S.club]&&CLUBS[S.club].lg===lg&&typeof table==='function'){const tb=table();const i=tb.findIndex(t=>t.id===c);if(i>=0&&tb.some(t=>t.p>0))return {r:i+1,n:tb.length,pts:tb[i].pts,lg}}const fx=typeof fxLg==='function'?fxLg(lg):[];const T={};let any=0;
   for(const f of fx){if(!f.res||!f.res.sc)continue;any=1;[[f.h,0],[f.a,1]].forEach(([id,s])=>{const t=T[id]=T[id]||{id,pts:0,gd:0,gf:0,p:0};const g=f.res.sc[s],o=f.res.sc[1-s];t.p++;t.gf+=g;t.gd+=g-o;t.pts+=g>o?3:g===o?1:0})}
   if(!any)return null;fx.forEach(f=>{[f.h,f.a].forEach(id=>{if(!T[id])T[id]={id,pts:0,gd:0,gf:0,p:0}})});
   const L=Object.values(T).sort((a,b)=>b.pts-a.pts||b.gd-a.gd||b.gf-a.gf);const i=L.findIndex(t=>t.id===c);return i<0?null:{r:i+1,n:L.length,pts:L[i].pts,lg}}catch(e){return null}}

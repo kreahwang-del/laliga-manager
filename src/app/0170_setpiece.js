@@ -115,7 +115,7 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-showopp]');if(!b)return;e.stopPropagation();TAC.showOpp=TAC.showOpp===false?true:TAC.showOpp==='lbl'?false:'lbl';render()},true);
 
 /* v229 대형·도구 줄 접기: 세부 조정(공격·수비)은 기본 접힘, 기본 대형은 기본 펼침 — 한 화면에 경기장까지 보이게. 선택은 국면별로 기억 */
-function tacFold(ph){const F=TAC.fold||(TAC.fold={});return F[ph]!=null?F[ph]:ph!=='base'}
+function tacFold(ph){const F=TAC.fold||(TAC.fold={});return F[ph]!=null?F[ph]:true}/* v276: 기본 접힘 → 경기장이 위로 */
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-tfold]');if(!b)return;e.stopPropagation();const ph=TAC.phase||'base';const F=TAC.fold||(TAC.fold={});F[ph]=!tacFold(ph);render()},true);
 
 // ---- 이적 ----

@@ -15,7 +15,7 @@ function r3Flush(all){const bufT=R3.buf.length?R3.buf[R3.buf.length-1].t:-1;/* v
 {const _r=render;render=function(){const o=_r.apply(this,arguments);try{if(typeof M!=='undefined'&&M&&M.reps&&M.reps.length)r3Bar()}catch(e){}return o}}
 function r3Lab(e){return e.t==='goal'?'골':e.t==='save'?'선방':'빅찬스'}
 function r3Bar(){const fd=$('#mfd');if(!fd||!M||!M.reps||!M.reps.length)return;let bar=$('#r3dbar');if(!bar){bar=document.createElement('div');bar.id='r3dbar';bar.className='chips';bar.style.cssText='margin:6px 0';fd.parentNode.insertBefore(bar,fd)}
-  bar.innerHTML=`<span class="note" style="flex:none;align-self:center">🎥 3D</span>`+M.reps.map((r,i)=>`<button class="chip" data-r3d="${i}" style="${r.e.t==='goal'?'border-color:var(--amber);color:var(--text)':''}">${r.e.m}' ${r3Lab(r.e)} · ${esc(shortN(r.e.p))}</button>`).join('')}
+  bar.innerHTML=`<span class="note" style="flex:none;align-self:center;font-weight:700">3D 하이라이트</span>`+M.reps.map((r,i)=>`<button class="chip" data-r3d="${i}" style="${r.e.t==='goal'?'border-color:var(--amber);color:var(--text)':''}">${r.e.m}' ${r3Lab(r.e)} · ${esc(shortN(r.e.p))}</button>`).join('')}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-r3d]');if(!b||!M||!M.reps)return;e.stopPropagation();e.preventDefault();r3Open(M.reps[+b.dataset.r3d])},true);
 // ---- 3D 재생 ----
 function r3LoadThree(){if(window.THREE)return true;const src=document.getElementById('threeSrc');if(!src)return false;const s=document.createElement('script');s.textContent=src.textContent;document.head.appendChild(s);return !!window.THREE}

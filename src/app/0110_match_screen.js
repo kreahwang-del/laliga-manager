@@ -19,7 +19,7 @@ function startMatch(fx){
     <div><div class="score num" id="msc">0 : 0</div><div class="clock" id="mck">${league?`${fx.r}라운드`:(fx.cup||fx.po||fx.eu)?esc(cupLabel(fx)):'친선경기'}${derbyOf(fx.h,fx.a)?` · <b style="color:var(--amber)">${derbyOf(fx.h,fx.a)}</b>`:''}</div></div>
     <div class="team">${crest(fx.a)}${esc(CLUBS[fx.a].name)}</div></div>
     <div class="m2dw">${pitchSVG()}<div class="mcap" id="mcap">&nbsp;</div></div>
-    <div class="mstats" id="mst"></div><div class="feed" id="mfd"></div><div class="mptab" id="mptab">${[["feed","중계만"],["0","우리 기록"],["1","상대 기록"]].map(([k,l])=>`<button data-mpst="${k}" aria-pressed="${(UI.mpst??"0")===k}">${l}</button>`).join("")}</div><div class="mpst" id="mpst"${(UI.mpst??"0")==="feed"?" hidden":""}></div>
+    <div class="mstats" id="mst"></div><div class="feed" id="mfd"></div><div class="mptab" id="mptab">${[["feed","중계만"],["0","우리 기록"],["1","상대 기록"]].map(([k,l])=>`<button data-mpst="${k}" aria-pressed="${(UI.mpst??"feed")===k}">${l}</button>`).join("")}</div><div class="mpst" id="mpst"${(UI.mpst??"0")==="feed"?" hidden":""}></div>
     <div class="mctl" id="mct">
       <button class="btn ghost" data-act="speed">${spdLbl(M.speed)}</button><button class="btn ghost" data-act="mshout">지시</button><button class="btn ghost" data-act="msubs">전술·교체 <span id="msl">5</span></button><button class="btn ghost" data-act="ffdec" id="mff">${ffLbl()}</button><button class="btn" data-act="skip">결과 보기</button></div></div>`;
   document.body.appendChild(d);
@@ -36,10 +36,10 @@ function afterPlay(){if(!M||M.done)return;M.animating=false;
   M.timer=setTimeout(tick,M.ff?0:90/M.speed)}
 /* v272 사용자 요청: 경기 전체 건너뛰기 말고 '다음 감독 지시까지' 빨리 감기 — 화면 재생 없이 계산만 진행하다 지시·하프타임·PK·퇴장·부상 등 멈춤 순간에 정상 재생으로 복귀 */
 function ffLeft(){if(!M||!M.m)return 0;if(S.decOn===false||(M.m.min||0)>=80)return 0;return Math.max(0,3-(M.decN||0))}
-function ffLbl(){return M&&M.ff?'■ 멈춤':ffLeft()?`⏩ 지시 ${ffLeft()}`:'지시 없음'}
-function ffRef(){const b=document.getElementById('mff');if(!b)return;const t=ffLbl();if(b.textContent!==t)b.textContent=t;b.disabled=!(M&&M.ff)&&!ffLeft();b.style.opacity=b.disabled?.45:1}
+function ffLbl(){return M&&M.ff?'■ 멈춤':ffLeft()?`${typeof IC_FF!=='undefined'?IC_FF:''} 지시 ${ffLeft()}`:'지시 없음'}
+function ffRef(){const b=document.getElementById('mff');if(!b)return;const t=ffLbl();if(b.innerHTML!==t)b.innerHTML=t;b.disabled=!(M&&M.ff)&&!ffLeft();b.style.opacity=b.disabled?.45:1}
 setInterval(()=>{try{ffRef()}catch(e){}},700);
-function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'⏩ 다음 지시 장면까지 빨리 감는 중'});ffRef();if(!M.paused&&!M.animating)tick()}
+function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'다음 지시 장면까지 빨리 감는 중…'});ffRef();if(!M.paused&&!M.animating)tick()}
 function ffStop(){if(!M||!M.ff)return;M.ff=false;document.getElementById('match')?.classList.remove('ffon');setTimeout(ffRef,0);try{const fr=M.m.st.frames;const lf=fr&&fr[fr.length-1];if(lf&&typeof draw4Init==='function'){draw4Init(lf);draw4(lf,lf,0)}}catch(e){}}
 function resume(){closeSheet();M.paused=false;M.inSubs=false;UI.subOut=null;if(M.done)return;
   if(M.m.st.pendingPen&&!M.skipping){pause('pen');return}   if(M.m.st.pendingDec&&!M.m.st.pendingDec.done&&!M.skipping){pause('dec');return}
@@ -92,7 +92,7 @@ function checkMoments(min,st,T,api){
   if(!M.prompts.ace&&min>=20){const dom=Object.values(st.duels).find(x=>x.w>=3&&x.w-x.l>=2&&T[o].xi.some(p=>p.name===x.a));if(dom){M.prompts.ace=true;M.pending={k:'ace',d:dom};return}}
   // 경기 중 부상(우리 팀)
 }
-function momentSheet(kind,data){
+function momentSheet(kind,data){/* v276: 결정 창이 열릴 때 알림(토스트)·GOAL 배너가 선택지를 덮지 않게 치움 */try{document.querySelectorAll('.bpgoal').forEach(x=>x.remove())}catch(e){}
   const st=M.m.st,me=M.me,o=1-me,d=st.sc[me]-st.sc[o];const k=typeof kind==='string'?kind:kind.k;
   const opt=(id,l,sub)=>`<button class="btn ghost" data-mo="${id}" style="text-align:left;display:block"><b>${l}</b>${sub?`<div class="note" style="margin:2px 0 0">${sub}</div>`:''}</button>`;
   let h='';
@@ -186,7 +186,7 @@ function finish(){
   applyMatch(H,Aw,res,league);fx.res=pack(res);
   try{hlFromMatch(fx,res,me,M.pos0)}catch(e){console.error(e)}
   const mine=me===0?H:Aw;
-  const rts=mine.xi.concat(res.subs[me].map(x=>x.out)).map(p=>({p,r:res.ratings[p.id]})).filter(x=>x.r).sort((a,b)=>b.r.r-a.r.r);
+  const rts=((seen)=>mine.xi.concat(res.subs[me].map(x=>x.out)).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id)))(new Set()).map(p=>({p,r:res.ratings[p.id]})).filter(x=>x.r).sort((a,b)=>b.r.r-a.r.r);/* v276: 교체 기록에 같은 선수가 여러 번 있어 평점 목록에 중복으로 나오던 문제 */
   const TY={cross:'크로스',cutback:'컷백',through:'스루패스',longshot:'중거리',combo:'연계'};
   const lanes=res.stats.lane[me];const lt=lanes.reduce((a,b)=>a+b,0)||1;
   const el=document.createElement('div');el.className='ev sys';el.innerHTML=`<span></span><span class="t" style="color:var(--text)">
@@ -199,7 +199,7 @@ function finish(){
   $('#mfd').prepend(el);
   {const mt=document.getElementById('match');if(mt)mt.classList.remove('mp-on');const bx=document.getElementById('mpst');if(bx)bx.hidden=true;document.querySelectorAll('#mptab [data-mpst]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.mpst==='feed'));}
   try{const R=buildReport(res,me,fx);S.reports=[R].concat(S.reports||[]).slice(0,5)}catch(e){console.error(e)}
-  $('#mct').innerHTML=`<button class="btn ghost" data-act="mreport">경기 리포트</button><button class="btn" data-act="closematch">확인</button>`;
+  $('#mct').innerHTML=`<button class="btn ghost" data-act="mreport">경기 리포트</button><button class="btn" data-act="closematch">${typeof nextStepLbl==='function'?nextStepLbl():'확인'}</button>`;
   save();
 }
 
@@ -263,7 +263,7 @@ document.addEventListener('click',e=>{const b=e.target.closest('[data-mev],[data
  document.addEventListener('touchend',e=>{if(!M||!M.edit||sx==null)return;const t=e.changedTouches[0];const dx=t.clientX-sx,dy=t.clientY-sy;sx=null;if(Math.abs(dx)>70&&Math.abs(dx)>Math.abs(dy)*1.5&&!e.target.closest('.pitch,.slot,.bench,.opitch .od,[draggable],.chips,input,select')&&!(()=>{for(let el=e.target;el&&el!==document.body;el=el.parentElement){if(el.scrollWidth>el.clientWidth+4){const ox=getComputedStyle(el).overflowX;if(ox==='auto'||ox==='scroll')return true}}return false})()){M.edit.view=dx<0?'opp':'us';render();scrollTo(0,0)}},{passive:true})}
 
 /* ---- 경기 중 실시간 선수 기록(중계 아래, 우리/상대 탭) ---- */
-function mpst(){const box=document.getElementById('mpst');if(!box||!M||!M.m)return;const v=UI.mpst??'0';const mt=document.getElementById('match');if(mt)mt.classList.toggle('mp-on',v!=='feed');if(v==='feed'){box.hidden=true;return}box.hidden=false;
+function mpst(){const box=document.getElementById('mpst');if(!box||!M||!M.m)return;const v=UI.mpst??'feed';const mt=document.getElementById('match');if(mt)mt.classList.toggle('mp-on',v!=='feed');if(v==='feed'){box.hidden=true;return}box.hidden=false;
   const side=v==='0'?M.me:1-M.me,st=M.m.st,T=M.m.T[side];const outs=(st.subs[side]||[]).map(x=>x.out).filter(Boolean);const inIds=new Set((st.subs[side]||[]).map(x=>x.inP&&x.inP.id));
   const seen=new Set(),L=T.xi.concat(outs).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id));const outIds=new Set(outs.map(p=>p.id));
   const fr=(a,b)=>b?`${a}/${b}`:'–';const goals={},asts={};st.ev.forEach(e=>{if(e.t==='goal'&&e.s===side){if(e.pid)goals[e.pid]=(goals[e.pid]||0)+1}});

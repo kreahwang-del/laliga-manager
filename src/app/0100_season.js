@@ -58,4 +58,5 @@ function table(){const t={};LIGA.forEach(id=>t[id]={id,p:0,w:0,d:0,l:0,gf:0,ga:0
 
 function rnd0(v){return v==null||isNaN(v)?'-':Math.round(v)}
 // v150 속도 버튼은 '지금 속도'를 표시(이전엔 다음 단계 이름이 보여, 3배속인데 '느리게'로 보였음). 고른 속도는 다음 경기에도 유지
-function spdLbl(v){return v>=1?'▶ 빠르게':v<=.25?'▶ 느리게':'▶ 보통'}/* v272: 하단 버튼 5개로 늘어 짧게 */ // v258(사용자 요청): 3단계 — 예전 보통(1)=빠르게, 예전 느리게(½)=보통, 예전 아주 느리게(¼)=느리게, 예전 빠르게(3배) 없앰
+const IC_PLAY='<svg class="ic" viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg>',IC_FF='<svg class="ic" viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><path d="M3 5l9 7-9 7zM12 5l9 7-9 7z" fill="currentColor"/></svg>';
+function spdLbl(v){return IC_PLAY+(v>=1?' 빠르게':v<=.25?' 느리게':' 보통')}/* v272: 하단 버튼 5개로 늘어 짧게 */ // v258(사용자 요청): 3단계 — 예전 보통(1)=빠르게, 예전 느리게(½)=보통, 예전 아주 느리게(¼)=느리게, 예전 빠르게(3배) 없앰

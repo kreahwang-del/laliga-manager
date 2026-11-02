@@ -1,5 +1,5 @@
 // 디자인 검토용 주요 화면 캡처(사용자 세이브, 390×844 폰 세로)
-const {chromium}=require('playwright');const fs=require('fs');const OUT='/home/claude/work/qa/design276';
+const {chromium}=require('playwright');const fs=require('fs');const OUT=process.env.OUT||'/home/claude/work/qa/design276';
 (async()=>{const b=await chromium.launch();const pg=await b.newPage({viewport:{width:390,height:844},deviceScaleFactor:2});const errs=[];pg.on('pageerror',e=>errs.push(e.message));
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1500);
 await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
