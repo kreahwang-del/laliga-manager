@@ -44,3 +44,7 @@ table td,.pst td,.num{font-variant-numeric:tabular-nums}
 /* 하프타임 등 결정 창이 열려 있으면 알림은 위쪽에 */
 body:has(#scrim) .toast{top:calc(12px + env(safe-area-inset-top,0px));bottom:auto}
 `;document.head.appendChild(st)}
+/* v277 사용자 지적: 아래 '계속' 바가 스크롤 중 글자를 가림 → 아래로 내리면 숨기고, 위로 올리거나 페이지 끝에 닿으면 다시 보임 */
+{let ly=0,acc=0;addEventListener('scroll',()=>{try{const g=document.querySelector('.go');if(!g)return;const y=scrollY,dy=y-ly;ly=y;const end=innerHeight+y>=document.documentElement.scrollHeight-24;
+  if(end||y<40){g.classList.remove('gohide');acc=0;return}acc=(acc>0)===(dy>0)?acc+dy:dy;if(acc>24)g.classList.add('gohide');else if(acc<-12)g.classList.remove('gohide')}catch(e){}},{passive:true});
+ const st=document.createElement('style');st.textContent='.go{transition:transform .22s ease}.go.gohide{transform:translateY(calc(100% + 70px))}@media (prefers-reduced-motion:reduce){.go{transition:none}}';document.head.appendChild(st)}
