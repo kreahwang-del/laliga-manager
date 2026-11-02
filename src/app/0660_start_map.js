@@ -15,8 +15,8 @@ function clubRows(ids,mode){const row=c=>{const sq=squadOfBase(c).sort((a,b)=>b.
   return L.map(t=>`<button data-new="${t.i}">${crest(t.i)}<span><b>${esc(CLUBS[t.i].name)}</b><small>${mode==='challenge'?'요구 평판 '+reqRep(t.i)+' · ':''}${t.star?'에이스 '+esc(t.star.name)+' · ':''}이적 예산 ${mM(CLUBS[t.i].budget)}</small></span><span class="ovr num ${ovrCls(t.avg)}">${t.avg}</span></button>`).join('')}
 startView=function(){const saved=loadSave();const mode=UI.mode||'club';const cc=CC_LG[UI.scc]?UI.scc:'724';const lgs=CC_LG[cc];const lg=lgs.includes(UI.slg)?UI.slg:lgs[0];
   const ids=CLUBS.filter(c=>c&&c.lg===lg).map(c=>c.i);
-  return `<main class="wrap"><section class="hero"><div class="eyebrow">26개 리그 · 2026-27</div><h1>월드 풋볼매니저</h1>
-  <p>지도에서 나라를 고르고, 리그와 구단을 선택하세요. 고른 나라 리그는 2D 엔진으로, 나머지 리그는 빠른 계산으로 함께 진행됩니다. 2026년 7월 1일 프리시즌부터 시작합니다.</p></section>
+  return `<main class="wrap"><section class="hero"><div class="eyebrow">20개국 27개 리그 · 2026-27</div><h1>월드 풋볼매니저</h1>
+  <p>지도에서 나라를 고르고 리그와 구단을 선택하세요. 2026년 7월 1일 프리시즌부터 시작합니다.</p></section>
   ${saved?`<button class="btn" data-act="resume">이어하기 · ${esc(saved.me?saved.me.name+' · ':'')}${esc(CLUBS[saved.club]?CLUBS[saved.club].name:'')} · ${fmtD(saved.date)}</button><p class="note">새 게임을 시작하면 저장된 진행은 지워집니다.</p>`:''}
   <h2>감독 이름</h2><input id="mgname" class="inp" maxlength="16" placeholder="이름을 입력하세요" value="${esc(UI.nm||'')}" style="width:100%;padding:12px;border-radius:10px;border:1px solid var(--line);background:var(--surf);color:var(--text);font-size:16px">
   <h2>시작 방식</h2><div class="chips"><button class="chip" data-mode="club" aria-pressed="${mode==='club'}">구단 선택</button><button class="chip" data-mode="challenge" aria-pressed="${mode==='challenge'}">도전 모드</button></div>
