@@ -1,0 +1,10 @@
+// ================= v277 이적시장 밖 판매 = 사전 합의(사용자 지적 2026-11-02: "이적시장이 아닌데 판매하자마자 바로 그쪽으로 가버림") =================
+// 이적설·바이아웃·이적 요청 제안은 시장 밖에서도 오는데, 수락하면 즉시 completeTransfer → 시장 밖에서도 선수가 바로 떠났음
+// → 우리 선수가 다른 구단으로 가는 이적·임대는 시장이 닫혀 있으면 '사전 합의'로 저장하고 다음 이적시장 개장일에 실행(그때까지 우리 팀에서 뜀, 이적료도 그때 입금)
+function tfPendOf(id){return (S.tfPend||[]).find(x=>x.id===id)}
+{const _ct=completeTransfer;completeTransfer=function(id,to,fee,o){try{const from=clubOf(id);if(from===S.club&&to!==S.club&&typeof winNow==='function'&&!winNow()&&!(o&&o.__now)&&to!==FA&&to!==RET){const nw=nextWin();const d=nw?nw.from:null;
+      S.tfPend=S.tfPend||[];if(!tfPendOf(id)){S.tfPend.push({id,to,fee,o:Object.assign({},o||{}),d,at:S.date});const p=pl(id);try{inbox('window','',`${p.name} ${CLUBS[to].short||CLUBS[to].name} 이적 합의`,`이적시장이 닫혀 있어 ${d?fmtD(d)+' 이적시장 개장일':'다음 이적시장'}에 이적합니다. 그때까지 우리 팀에서 뛰고, 이적료 ${money(fee||0)}도 그때 들어옵니다.`)}catch(e){}try{toast(`이적 합의 · ${d?fmtD(d):'다음 이적시장'}에 이적`)}catch(e){}}return}}catch(e){console.error(e)}return _ct.apply(this,arguments)}}
+function tfPendRun(){try{if(!S.tfPend||!S.tfPend.length||!winNow())return;const L=S.tfPend;S.tfPend=[];L.forEach(x=>{try{if(clubOf(x.id)!==S.club)return;completeTransfer(x.id,x.to,x.fee,Object.assign({},x.o,{__now:1}));const p=pl(x.id);inbox('window','',`${p.name} 이적 완료`,`${CLUBS[x.to].name}로 이적했습니다.${x.fee?` 이적료 ${money(x.fee)}`:''}`)}catch(e){console.error(e)}})}catch(e){console.error(e)}}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{tfPendRun()}catch(e){}return r}}
+/* 선수 목록·상세에 '이적 합의' 표시 */
+{const _pn=typeof playerSheet==='function'?playerSheet:null;if(_pn){playerSheet=function(id){const r=_pn.apply(this,arguments);try{const x=tfPendOf(typeof id==='object'?id.id:id);if(x){const sh=document.querySelector('#scrim .sheet');if(sh&&!sh.querySelector('.tfpd'))sh.insertAdjacentHTML('afterbegin',`<div class="warnline tfpd" style="margin:0 0 8px">${esc(CLUBS[x.to].name)} 이적 합의 · ${x.d?fmtD(x.d):'다음 이적시장'}에 이적</div>`)}}catch(e){}return r}}}

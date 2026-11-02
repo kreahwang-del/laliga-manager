@@ -78,3 +78,4 @@ app/0996_ai_scout.js
 app/0997_v272_lgf.js
 app/0998_v275_mgr.js
 app/0999_v276_design.js
+app/1000_v277_window.js
