@@ -20,7 +20,7 @@ const DNA_K={ti:.5,refF:.08,refC:.10,refR:.25,ls:.15,open:.15,ident:.5};
 function lgDna(lg){if(!lg)return null;return LG_DNA[lg]||LG_DNA[typeof baseLg==='function'?baseLg(lg):lg]||null}
 {const _cfg=engCfg;engCfg=function(H,Aw){let c=null;try{c=_cfg(H,Aw)}catch(e){}try{const k=engLg(H,Aw);if(!k)return c;const d=lgDna(k);if(!d||k==='ES')return c;
   const o=Object.assign({},c||{});delete o.finK;delete o.finK5;delete o.xgDisp;/* v285 배율 제거 */
-  o.refF=+(1.35*(1+DNA_K.refF*d[6])).toFixed(3);o.refC=+(.95*(1+DNA_K.refC*d[7])).toFixed(3);o.refR=+(1.3*Math.max(.25,1+DNA_K.refR*d[8])).toFixed(3);
+  o.refF=+(1.35*(1+DNA_K.refF*d[6])).toFixed(3);o.refFB=1.35;/* PK 판정은 리그 공통 */o.refC=+(.95*(1+DNA_K.refC*d[7])).toFixed(3);o.refR=+(1.3*Math.max(.25,1+DNA_K.refR*d[8])).toFixed(3);
   if(d[5])o.dcK=+Math.max(.5,1-DNA_K.open*d[5]).toFixed(3);
   if(d[4]){const ls=DNA_K.ls*d[4];o.d5ShBand={'ib<12':+(.9-ls).toFixed(3),'ib12-18':+(.9-ls).toFixed(3),'ob12-18':+(.1+ls).toFixed(3),'ob18-25':+(.5+ls).toFixed(3),'ob25-32':+(.5+ls).toFixed(3),'ob32+':+(-.3+ls).toFixed(3)}}
   o._dna=k;return o}catch(e){return c}}}
@@ -28,5 +28,5 @@ function lgDna(lg){if(!lg)return null;return LG_DNA[lg]||LG_DNA[typeof baseLg===
 const DNA_IDENT=(()=>{try{const s=String(aiTacFor),m=s.match(/name===['"]([^'"]+)['"]/g)||[];return new Set(m.map(x=>x.replace(/name===['"]|['"]$/g,'')))}catch(e){return new Set()}})();
 {const _sh=engShift;engShift=function(T,lg){const R=_sh(T,lg);try{if(!R||!R.ti||!S||R.club===S.club)return R;const d=lgDna(lg);if(!d||lg==='ES')return R;
   const C=CLUBS[R.club];const f=DNA_K.ti*(C&&DNA_IDENT.has(C.name)?DNA_K.ident:1);const ti=R.ti.slice();
-  [[3,0],[5,1],[0,2],[4,3]].forEach(([i,j])=>{const v=d[j]+(i===3?.5*d[5]:0);if(v)ti[i]=Math.max(1,Math.min(5,(ti[i]??3)+f*v))});/* 개방성은 템포 강세에 절반 반영(공수 전환이 잦은 리그) */
+  const W={3:d[0]+.5*d[5]+.5*d[1],5:.5*d[1],4:.5*d[3]};for(const i in W){const v=W[i];if(v)ti[i]=Math.max(1,Math.min(5,(ti[i]??3)+f*v))}/* 3차(전문가 검토): 개방성·압박은 템포에 절반 반영(실제 고압박 리그 = 다득점, 엔진 압박 단독은 골 감소), 압박 지시는 절반만, 직선성 절반, 라인은 근거 약하고 효과 없어 제외 */
   return R===T?Object.assign({},T,{ti}):Object.assign(R,{ti})}catch(e){return R}}}
