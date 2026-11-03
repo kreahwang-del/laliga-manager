@@ -4,7 +4,11 @@ RAW=sys.argv[1];OUT=sys.argv[2];comps=[tuple(map(int,x.split(':'))) for x in sys
 B='https://raw.githubusercontent.com/statsbomb/open-data/master/data/'
 def get(path):
   fn=os.path.join(RAW,path.replace('/','_'))
-  if not os.path.exists(fn):urllib.request.urlretrieve(B+path,fn)
+  for k in range(4):
+    if os.path.exists(fn):return fn
+    try:urllib.request.urlretrieve(B+path,fn+'.part');os.replace(fn+'.part',fn)
+    except Exception as ex:
+      print('retry',path,ex,flush=True);import time;time.sleep(3)
   return fn
 res={}
 for cid,sid in comps:
@@ -52,5 +56,4 @@ for cid,sid in comps:
   r={k:round(v/n,3) for k,v in A.items()};r['matches']=n
   r['ppda']=round(A.get('ppda_pass',0)/max(1,A.get('ppda_def',1)),2)
   r['aerial']=round((A.get('duel_AerialLost',0)*2)/n,2)
-  res[f'{cid}:{sid}']=r;print(cid,n,flush=True)
-json.dump(res,open(OUT,'w'),indent=1)
+  res[f'{cid}:{sid}']=r;print(cid,n,flush=True);json.dump(res,open(OUT,'w'),indent=1)
