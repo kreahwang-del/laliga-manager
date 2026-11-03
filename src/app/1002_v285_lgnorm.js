@@ -5,8 +5,8 @@
 //       ② 보정표 하나(ENGF3, 실제 2024-25 경기당 득점 ÷ 엔진 실측)로 통합, v272 LGF 제거(국제전은 보정 없음)
 //       ③ 표시 xG에도 같은 계수(xgDisp) → 리그 공통 득점/xG 1 근처 유지 ④ 중거리 결정력 기본값 1.12로 통일
 // 라리가(ES) 경기는 이동·계수 없음(기준선 불변)
-// 계수 = (실제 2024-25 경기당 득점 ÷ 엔진 실측(신규·진행 세이브 각 120경기 평균))^(1/0.964), 0.75~1.35 제한, ±4% 이내는 1
-const ENGF3={US:1.27,EN:1.06,DE:1.18,FR:1.19,PT:1.16,NL:1.35,BE:1.19,TR:1.14,SC:1.35,CH:1.35,AT:1.35,DK:1.35,EN2:1.3,DE2:1.35,IT2:1.11,FR2:1.28,ES2:1.06,ES3B:.93,SA:1.17,MX:1.25,BR:.92,JP:1.11,CN:1.35,KR:1.28};
+// 계수 = (실제 2024-25 경기당 득점 ÷ 엔진 실측(신규·진행 세이브 각 120경기 평균))^(1/0.964), 0.75~1.35 제한(확인 측정에서 10% 넘게 모자란 NL·AT·DK·CN만 1.45~1.5), ±4% 이내는 1
+const ENGF3={US:1.27,EN:1.06,DE:1.18,FR:1.19,PT:1.16,NL:1.45,BE:1.19,TR:1.14,SC:1.35,CH:1.35,AT:1.5,DK:1.5,EN2:1.3,DE2:1.35,IT2:1.11,FR2:1.28,ES2:1.06,ES3B:.93,SA:1.17,MX:1.25,BR:.92,JP:1.11,CN:1.45,KR:1.28};
 function engF3(k){const f=ENGF3[k];return f==null?1:f}
 engShift=function(T,lg){if(!lg||lg==='ES'||!T||!T.xi)return T;const d=lgOff(lg);if(!d)return T;
   const sh=p=>{if(!p)return p;const q=Object.assign({},p);ENG_K.forEach(k=>{if(typeof q[k]==='number')q[k]=Math.max(1,Math.min(20,q[k]+d))});return q};
