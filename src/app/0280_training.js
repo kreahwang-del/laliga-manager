@@ -78,11 +78,14 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 const INJ_DIST={m:[.05,.20,.50,.25],k:[.33,.31,.27,.09],t:[.35,.30,.27,.08],a:[.22,.26,.37,.16]};
 function injDays(kind,rnd){const r=rnd||Math.random;const D=INJ_DIST[kind]||INJ_DIST.a;let u=r(),b=0;while(b<3&&u>=D[b]){u-=D[b];b++}const v=r();
   return b===0?1+Math.floor(v*3):b===1?4+Math.floor(v*4):b===2?8+Math.floor(v*21):Math.min(240,29+Math.round(-Math.log(Math.max(1e-6,1-v))*35))}
+/* v284 나이 반영: 30세부터 부상 확률 연 +8%(36세 이상 최대 ×1.5), 회복 기간 연 +5%(최대 ×1.35). 29세 이하는 그대로 */
+function ageInjM(p){const a=p&&p.dob?ageOf(p):25;return a<30?1:Math.min(1.5,1+(a-29)*.08)}
+function ageInjD(p,d){const a=p&&p.dob?ageOf(p):25;return a<=30?d:Math.max(1,Math.round(d*Math.min(1.35,1+(a-30)*.05)))}
 function injMsg(p,d,why){return d<=3?null:`${why?why+' · ':''}약 ${d<7?d+'일':Math.max(1,Math.round(d/7))+'주'} 결장 예상입니다.`}
 // 훈련 부상: 시즌 중(6월 제외) 선수당 하루 0.0038(팀당 시즌 약 22건 — 이미 부상 중인 기간·측정 누락 감안해 상향) × 부상 성향 × (우리 팀) 훈련 강도·초점
 function injTrainDaily(){const mo=+S.date.slice(5,7);if(mo===6)return;const mine=new Set(squadOf(S.club).map(p=>p.id));const f=trInjF();
-  if(!SQC)buildSQ();for(const c in SQC)for(const id of SQC[c]){const b=BASE[id];if(!b)continue;const q0=S.ps[id];if(q0&&q0.injD>0)continue;const k=.0038*(1+((b.inj||8)-8)*.06)*(mine.has(+id)||mine.has(id)?f:1);
-    if(Math.random()<k){const q=S.ps[id]=S.ps[id]||{};q.injD=injDays('t');if(q.injD>=30)q.injLong=S.season;if((mine.has(+id)||mine.has(id))&&!(typeof unemp==='function'&&unemp())){const m=injMsg(b,q.injD,'훈련 중 부상');if(m)inbox('부상','',`${b.name} 부상`,m)}}}}
+  if(!SQC)buildSQ();for(const c in SQC)for(const id of SQC[c]){const b=BASE[id];if(!b)continue;const q0=S.ps[id];if(q0&&q0.injD>0)continue;const k=.0038*(1+((b.inj||8)-8)*.06)*ageInjM(b)*(mine.has(+id)||mine.has(id)?f:1);
+    if(Math.random()<k){const q=S.ps[id]=S.ps[id]||{};q.injD=ageInjD(b,injDays('t'));if(q.injD>=30)q.injLong=S.season;if((mine.has(+id)||mine.has(id))&&!(typeof unemp==='function'&&unemp())){const m=injMsg(b,q.injD,'훈련 중 부상');if(m)inbox('부상','',`${b.name} 부상`,m)}}}}
 {const _d=daily;daily=function(){const o=_d.apply(this,arguments);try{injTrainDaily()}catch(e){console.error(e)}return o}}
 
 const STAD=__DATA__("STAD");

@@ -72,8 +72,8 @@ const FIT_K=.1;function effO(p){return (p.ovr||70)-(100-Math.min(100,p.fit??100)
 function gN(u1,u2){return Math.sqrt(-2*Math.log(Math.max(1e-9,u1)))*Math.cos(2*Math.PI*u2)}
 function fastAfter(f,H,A,x,y,ev,counts){const k=(f.cup?'c'+f.cup+f.rd:'')+f.d+':'+f.h+':'+f.a;
   [[H,0,x,y],[A,1,y,x]].forEach(([T,s,gf,ga])=>{const tav=T.xi.reduce((a,p)=>a+(p.ovr||70),0)/Math.max(1,T.xi.length);
-    T.xi.forEach(p=>{const q=S.ps[p.id]=S.ps[p.id]||{};const ip=.026+(p.inj||8)/20*.065;
-      if(!(q.injD>0)&&hsh('inj'+p.id+k)<ip){let ri=0;q.injD=typeof injDays==='function'?injDays('a',()=>hsh('id'+p.id+k+(ri++))):(5+Math.floor(hsh('id'+p.id+k)*11));if(q.injD>=30)q.injLong=S.season;
+    T.xi.forEach(p=>{const q=S.ps[p.id]=S.ps[p.id]||{};const ip=(.026+(p.inj||8)/20*.065)*(typeof ageInjM==='function'?ageInjM(p):1);
+      if(!(q.injD>0)&&hsh('inj'+p.id+k)<ip){let ri=0;q.injD=typeof injDays==='function'?ageInjD(p,injDays('a',()=>hsh('id'+p.id+k+(ri++)))):(5+Math.floor(hsh('id'+p.id+k)*11));if(q.injD>=30)q.injLong=S.season;
         if(T.club===S.club&&!(typeof unemp==='function'&&unemp())){const m=typeof injMsg==='function'?injMsg(p,q.injD,''):`약 ${Math.max(1,Math.round(q.injD/7))}주 결장 예상입니다.`;if(m)inbox('부상','',`${p.name} 부상`,m)}}
       if(!counts)return;
       const g=ev.filter(e=>e.pid===p.id&&e.s===s).length,as=ev.filter(e=>e.aid===p.id&&e.s===s).length;const res=gf>ga?.35:gf<ga?-.35:0;const gd=Math.max(-3,Math.min(3,gf-ga))*.08;
