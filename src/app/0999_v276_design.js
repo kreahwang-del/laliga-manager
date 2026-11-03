@@ -48,3 +48,15 @@ body:has(#scrim) .toast{top:calc(12px + env(safe-area-inset-top,0px));bottom:aut
 {let ly=0,acc=0;addEventListener('scroll',()=>{try{const g=document.querySelector('.go');if(!g)return;const y=scrollY,dy=y-ly;ly=y;const end=innerHeight+y>=document.documentElement.scrollHeight-24;
   if(end||y<40){g.classList.remove('gohide');acc=0;return}acc=(acc>0)===(dy>0)?acc+dy:dy;if(acc>24)g.classList.add('gohide');else if(acc<-12)g.classList.remove('gohide')}catch(e){}},{passive:true});
  const st=document.createElement('style');st.textContent='.go{transition:transform .22s ease}.go.gohide{transform:translateY(calc(100% + 70px))}@media (prefers-reduced-motion:reduce){.go{transition:none}}';document.head.appendChild(st)}
+/* v280 사용자 요청: 홈 경기 전 브리핑(수석코치·피지컬·분석관·상대 분석·상대 감독) 카드가 길어 한 화면에 안 들어옴 → 한 줄씩 요약해 한 카드로, 누르면 전체 내용 팝업 */
+let BP_FULL='';
+{const _bs=bpStaff;bpStaff=function(pr){const h=_bs.apply(this,arguments);try{if(!h)return h;const t=document.createElement('div');t.innerHTML=h;const box=t.querySelector('.bpstaff');if(!box)return h;BP_FULL=box.outerHTML;
+  const rows=[...box.children].map(d=>{const w=(d.querySelector('small')||{}).textContent||'';const p=d.querySelector('p');let s=p?p.innerHTML.split(/<br\s*\/?>/i)[0]:'';if(w==='상대 분석'&&p){const L=p.innerHTML.split(/<br\s*\/?>/i).map(x=>{const t=x.replace(/<[^>]+>/g,'');const b=(x.match(/<b>([^<]*)<\/b>/)||[])[1]||'';if(/바꿀 가능성/.test(t))return `맞춤 전술 ${b}`;if(/전담 마크/.test(t))return `${t.split(' 전담')[0]} 마크 ${b}`;if(/연구 중/.test(t))return `연구 ${b}`;if(/기울어/.test(t)){const m=t.match(/'([^']+)' 쪽으로 (\d+)%/);return m?`${m[1]} ${m[2]}%`:''}if(/강한 상성/.test(t))return '상대가 상성 우위';return ''}).filter(Boolean);if(L.length)s=L.join(' · ')}return `<div class="r"><small>${w}</small><span>${s}</span></div>`}).join('');
+  return `<div class="bpstaff bpc" data-bpsheet="1" role="button" tabindex="0" aria-label="경기 전 브리핑 자세히 보기"><div class="bph"><b>경기 전 브리핑</b><span>자세히 ›</span></div>${rows}</div>`}catch(e){return h}}}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-bpsheet]');if(!b)return;e.preventDefault();sheet(`<button class="x" data-close>닫기</button><h3>경기 전 브리핑</h3>${BP_FULL}`)},true);
+{const st=document.createElement('style');st.textContent=`.bpc{display:block;background:rgba(255,255,255,.035);border-left:3px solid var(--amber);padding:8px 12px;cursor:pointer}
+.bpc>div{background:none;border-left:0;padding:0}.bpc>.r{display:grid;grid-template-columns:64px 1fr;gap:8px;align-items:baseline;padding:4px 0;border-top:1px solid rgba(255,255,255,.05)}.bpc>.r:first-of-type{border-top:0}
+.bpc>.r small{font-size:11px;font-weight:900;letter-spacing:.02em;color:var(--amber);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bpc>.r span{font-size:13px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bpc .bph{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}.bpc .bph b{font-size:13px}.bpc .bph span{font-size:12px;color:var(--muted);font-weight:700}
+#scrim .bpstaff:not(.bpc){margin-top:4px}`;document.head.appendChild(st)}

@@ -1,0 +1,6 @@
+// v280 홈 경기 전 브리핑 요약·팝업 확인(사용자 세이브)
+const {chromium}=require('playwright');const fs=require('fs');(async()=>{const b=await chromium.launch();const pg=await b.newPage({viewport:{width:390,height:844},deviceScaleFactor:2});const errs=[];pg.on('pageerror',e=>errs.push(e.message));await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1200);
+await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));await pg.evaluate(()=>{S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null;save=()=>{};UI.tab='home';render()});await pg.waitForTimeout(500);
+const r=await pg.evaluate(()=>{const c=document.querySelector('.bpc');if(!c)return null;c.scrollIntoView({block:'center'});return {h:Math.round(c.getBoundingClientRect().height),rows:c.querySelectorAll('.r').length}});await pg.screenshot({path:'/home/claude/work/qa/v280_home.png'});
+await pg.click('.bpc');await pg.waitForTimeout(300);r.sheet=await pg.evaluate(()=>!!document.querySelector('#scrim .bpstaff'));await pg.screenshot({path:'/home/claude/work/qa/v280_sheet.png'});
+console.log(JSON.stringify(r),errs.slice(0,3));process.exit(0)})();
