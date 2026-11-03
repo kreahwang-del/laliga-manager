@@ -114,7 +114,7 @@ function reportHTML(R){const H=R.fx.h,A=R.fx.a,me=R.me;const us=me===0?H:A,them=
   const my=R.my,op=R.op;
   const nx=nextOppInfo();
   return `<button class="x" data-close>닫기</button><div class="note" style="margin:0">${R.fx.r?`${R.fx.r}라운드`:'친선경기'} · ${fmtD(R.d)}</div>
-  <h3 style="display:flex;align-items:center;gap:8px">${crest(us)}<span class="num" style="font-size:26px">${R.sc[0]} : ${R.sc[1]}</span>${crest(them)}<span style="font-size:14px;font-weight:600">${esc(CLUBS[them].name)}</span></h3>
+  <h3 style="display:flex;align-items:center;gap:8px">${crest(us)}<span class="num" style="font-size:26px">${R.sc[0]} : ${R.sc[1]}</span>${crest(them)}<span class="rpvs" style="font-size:14px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(typeof clubDisp==='function'?clubDisp(CLUBS[them].name):CLUBS[them].name)}</span></h3>
   <p style="margin:4px 0 10px;font-weight:600">${esc(R.head)}</p>
   ${R.log?logHTML(R):''}
   ${bar('xG',R.xg[0],R.xg[1],x=>x.toFixed(2))}${bar('슈팅',R.sh[0],R.sh[1])}${bar('유효슈팅',R.sot[0],R.sot[1])}${bar('점유율',R.poss[0],R.poss[1])}

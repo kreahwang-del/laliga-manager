@@ -60,3 +60,6 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 .bpc>.r span{font-size:13px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bpc .bph{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}.bpc .bph b{font-size:13px}.bpc .bph span{font-size:12px;color:var(--muted);font-weight:700}
 #scrim .bpstaff:not(.bpc){margin-top:4px}`;document.head.appendChild(st)}
+
+/* v283 사용자 지적: 경기 리포트 맨 위 점수(3 : 2)가 긴 상대 구단명에 밀려 두 줄로 깨짐 → 점수는 줄바꿈 금지·줄지 않게, 구단명은 줄임 */
+{const st=document.createElement('style');st.textContent='.sheet h3 .num{white-space:nowrap;flex:none}.sheet h3 .rpvs{flex:1 1 auto}';document.head.appendChild(st)}
