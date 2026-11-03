@@ -15,18 +15,18 @@ const LG_DNA={
   ES2:[-1,0,-1,1,0,-1,1,1,0],ES3A:[-1,0,-1,1,0,-1,1,1,0],ES3B:[-1,0,-1,1,0,-1,1,1,0],ES3:[-1,0,-1,1,0,-1,1,1,0],
   SA:[0,-1,0,0,1,1,-1,0,1],MX:[1,0,0,0,1,1,1,1,0],US:[1,0,0,1,0,2,-1,-1,0],BR:[-1,-1,0,0,1,0,2,1,0],
   AR:[-2,0,-1,1,0,-2,2,2,1],JP:[0,1,1,-2,-1,0,-2,-2,-1],CN:[0,-1,0,1,1,1,0,0,0],KR:[1,1,0,1,0,0,1,0,0]};
-// 점수 1당 폭(엔진 민감도 실측 기준): 전술 지시 ±0.5칸, 심판 파울 ±8%·경고 ±10%·퇴장 ±25%, 중거리 슈팅 선택 ±0.15, 커버 강도 ∓10%
-const DNA_K={ti:.5,refF:.08,refC:.10,refR:.25,ls:.15,open:.10,ident:.5};
+// 점수 1당 폭(엔진 민감도 실측 기준): 전술 지시 ±0.5칸, 심판 파울 ±8%·경고 ±10%·퇴장 ±25%, 중거리 슈팅 선택 ±0.15(박스 안 선택 ∓0.15 → 슈팅 수는 유지, 비중만 이동), 커버 강도 ∓15%
+const DNA_K={ti:.5,refF:.08,refC:.10,refR:.25,ls:.15,open:.15,ident:.5};
 function lgDna(lg){if(!lg)return null;return LG_DNA[lg]||LG_DNA[typeof baseLg==='function'?baseLg(lg):lg]||null}
 {const _cfg=engCfg;engCfg=function(H,Aw){let c=null;try{c=_cfg(H,Aw)}catch(e){}try{const k=engLg(H,Aw);if(!k)return c;const d=lgDna(k);if(!d||k==='ES')return c;
   const o=Object.assign({},c||{});delete o.finK;delete o.finK5;delete o.xgDisp;/* v285 배율 제거 */
   o.refF=+(1.35*(1+DNA_K.refF*d[6])).toFixed(3);o.refC=+(.95*(1+DNA_K.refC*d[7])).toFixed(3);o.refR=+(1.3*Math.max(.25,1+DNA_K.refR*d[8])).toFixed(3);
   if(d[5])o.dcK=+Math.max(.5,1-DNA_K.open*d[5]).toFixed(3);
-  if(d[4]){const ls=DNA_K.ls*d[4];o.d5ShBand={'ib<12':.9,'ib12-18':.9,'ob12-18':+(.1+ls).toFixed(3),'ob18-25':+(.5+ls).toFixed(3),'ob25-32':+(.5+ls).toFixed(3),'ob32+':+(-.3+ls).toFixed(3)}}
+  if(d[4]){const ls=DNA_K.ls*d[4];o.d5ShBand={'ib<12':+(.9-ls).toFixed(3),'ib12-18':+(.9-ls).toFixed(3),'ob12-18':+(.1+ls).toFixed(3),'ob18-25':+(.5+ls).toFixed(3),'ob25-32':+(.5+ls).toFixed(3),'ob32+':+(-.3+ls).toFixed(3)}}
   o._dna=k;return o}catch(e){return c}}}
 // 실제 명문 정체성(aiTacFor에 이름으로 고정된 팀)은 성향 강세 절반
 const DNA_IDENT=(()=>{try{const s=String(aiTacFor),m=s.match(/name===['"]([^'"]+)['"]/g)||[];return new Set(m.map(x=>x.replace(/name===['"]|['"]$/g,'')))}catch(e){return new Set()}})();
 {const _sh=engShift;engShift=function(T,lg){const R=_sh(T,lg);try{if(!R||!R.ti||!S||R.club===S.club)return R;const d=lgDna(lg);if(!d||lg==='ES')return R;
   const C=CLUBS[R.club];const f=DNA_K.ti*(C&&DNA_IDENT.has(C.name)?DNA_K.ident:1);const ti=R.ti.slice();
-  [[3,0],[5,1],[0,2],[4,3]].forEach(([i,j])=>{if(d[j])ti[i]=Math.max(1,Math.min(5,(ti[i]??3)+f*d[j]))});
+  [[3,0],[5,1],[0,2],[4,3]].forEach(([i,j])=>{const v=d[j]+(i===3?.5*d[5]:0);if(v)ti[i]=Math.max(1,Math.min(5,(ti[i]??3)+f*v))});/* 개방성은 템포 강세에 절반 반영(공수 전환이 잦은 리그) */
   return R===T?Object.assign({},T,{ti}):Object.assign(R,{ti})}catch(e){return R}}}
