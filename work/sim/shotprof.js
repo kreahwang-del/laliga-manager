@@ -1,11 +1,12 @@
 // 엔진 근본 보정 1단계: 슈팅 종류·위치별 xG(모델)·실제 결과 실측. 리그 계수(ENGF3) 1로 고정(F 기본 전부 1)
-// 사용: HTML=.. LGS=ES,EN N=60 OUT=.. [SAVE=..] node work/sim/shotprof.js
+// 사용: HTML=.. LGS=ES,EN N=60 OUT=.. [SAVE=..] [OV='{"d5ShB":-.5}'(엔진 CFG 덮어쓰기)] node work/sim/shotprof.js
 const {chromium}=require('playwright');const fs=require('fs');
 const LGS=(process.env.LGS||'ES').split(','),N=+(process.env.N||40);
 (async()=>{const b=await chromium.launch();const pg=await b.newPage();const errs=[];pg.on('pageerror',e=>errs.push(e.message));
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1000);
 if(process.env.SAVE)await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
 await pg.evaluate(()=>{if(window.__SV){S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null}else{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0)}save=()=>{};for(const k in ENGF3)ENGF3[k]=1});
+const OV=JSON.parse(process.env.OV||'{}');await pg.evaluate(OV=>{const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{cfg:Object.assign({},(o&&o.cfg)||{},OV)}))},OV);
 const out={};
 for(const lg of LGS){const r=await pg.evaluate(([lg,N])=>{const C=CLUBS.filter(c=>c&&c.lg===lg&&c.i!==S.club);if(C.length<4)return null;let x=17;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};
   const R={n:0,g:0,xg:0,sh:0,sot:0,blk:0,ty:{},dbg:{}};
