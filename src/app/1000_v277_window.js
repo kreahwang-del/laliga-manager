@@ -39,3 +39,17 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
   const room=CLUBS[S.club].wageCap*1e6-wageBill(S.club);if(w>room){const need=Math.ceil((w-room)/1e6);const lim=wxLim()-wxAdd();const can=need<=lim&&S.fin.budget>=need*1e6;
    const fa=sh.querySelector('.facts');const html=`<div class="warnline" style="margin:6px 0">연봉 한도가 ${money(w-room)} 모자랍니다. ${can?`<button class="btn sm" data-wxneed="${need}" data-wxid="${id}" style="margin-top:6px;width:100%">이적 예산 ${money(need*1e6)} → 연봉 한도로 옮기기</button>`:`이번 시즌 전환 가능액(${money(Math.max(0,lim)*1e6)})이나 이적 예산이 부족합니다.`}</div>`;
    (fa||sh.firstElementChild).insertAdjacentHTML('afterend',html)}}catch(e){console.error(e)}return r}}
+
+// ================= v282 경기 후 문자중계 다시 보기(사용자 요청 2026-11-03: "경기 결과에서도 문자중계를 볼 수 있게, 복기는 되던데") =================
+// ① 경기 끝날 때 전체 사건을 중계 문장으로 만들어 복기 기록(IndexedDB)과 같은 키에 함께 저장 → 경기 리포트의 '문자중계' 버튼으로 다시 보기
+// ② '결과 보기'로 건너뛴 뒤에도 남은 경기 중계를 피드에 채움(이전엔 건너뛴 구간 중계가 비어 있었음)
+function cmBuild(ev){try{const real=document.getElementById('mfd');if(real)real.id='mfd__live';const tmp=document.createElement('div');tmp.id='mfd';tmp.style.display='none';document.body.appendChild(tmp);
+  try{(ev||[]).forEach(e=>{try{feed(e)}catch(_){}})}finally{const out=[...tmp.children].reverse().map(x=>x.outerHTML);tmp.remove();if(real)real.id='mfd';return out}}catch(e){console.error(e);return []}}
+{const _br=buildReport;buildReport=function(res,me,fx){const R=_br.apply(this,arguments);try{if(R&&R.rpk&&M&&M.rpObj){const L=cmBuild(res.ev||M.m.st.ev);if(L.length){M.rpObj.cm=L;rpPut(R.rpk,M.rpObj)}}}catch(e){console.error(e)}return R}}
+{const _rh=reportHTML;reportHTML=function(R){let h=_rh.apply(this,arguments);try{if(R&&R.rpk&&(S.rpKeys||[]).includes(R.rpk))h=`<button class="btn ghost" data-cmopen="${esc(R.rpk)}" style="width:100%;margin:0 0 10px">문자중계 다시 보기</button>`+h}catch(e){}return h}}
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-cmopen]');if(!b)return;e.preventDefault();e.stopPropagation();const k=b.dataset.cmopen;
+  rpGet(k).then(o=>{if(!o||!o.cm||!o.cm.length){toast('이 경기는 문자중계 기록이 없습니다(v282 이후 경기부터)');return}const back=document.querySelector('#scrim .sheet')?document.querySelector('#scrim .sheet').innerHTML:null;
+    sheet(`<button class="x" data-close>닫기</button><h3>문자중계</h3><p class="note" style="margin:0 0 8px">킥오프부터 순서대로</p><div class="feed cmfeed">${o.cm.join('')}</div>`)})},true);
+{const st=document.createElement('style');st.textContent='.cmfeed{max-height:none;overflow:visible}.cmfeed .ev{display:flex;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:13px}.cmfeed .ev .m{flex:none;width:30px;color:var(--muted)}';document.head.appendChild(st)}
+/* ② 결과 보기: 건너뛴 구간 사건도 피드에 */
+{const _fi=finish;finish=function(){let n0=null;try{if(M&&!M.done&&M.m&&M.m.st)n0=M.m.st.ev.length}catch(e){}const r=_fi.apply(this,arguments);try{if(n0!=null&&M&&M.m&&M.m.st){const L=M.m.st.ev.slice(n0);if(L.length&&!M.__cmf){M.__cmf=1;const fd=document.getElementById('mfd');const end=fd&&fd.firstElementChild;L.forEach(e=>{try{feed(e)}catch(_){}});if(fd&&end)fd.prepend(end)}}}catch(e){console.error(e)}return r}}
