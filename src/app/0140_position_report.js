@@ -13,7 +13,7 @@ function traceStats(res,s){const set=new Set();res.ev.forEach(e=>{if(e.tr&&e.tr.
   set.forEach(tr=>{o.n++;let lane=null;const st=tr[0]||{};if(st.tr)o.counter++;if(tr.some(x=>x.k==='sp'))o.sp++;
     const isB=st.k==='start'&&!st.tr&&!st.sec&&!st.sp&&!tr.some(x=>x.k==='long');if(isB)o.build++;
     tr.forEach(x=>{switch(x.k){case 'lane':lane=x.lane;o.lane[lane].n++;break;
-      case 'lost':if(x.how==='press'){if(isB)o.pressLost++}else if(x.how==='tackle')o.tackleLost++;break;
+      case 'lost':/* v285 빌드업 중 압박에 뺏김: 압박 차단만 세던 것을 터치 미스·태클·드리블·몸싸움 패배까지(멀리서 패스 차단 intc 제외) */if(isB&&x.how!=='intc')o.pressLost++;if(x.how==='tackle')o.tackleLost++;break;
       case 'long':o.long++;if(x.won)o.longWon++;break;
       case 'duel':o.duel++;if(x.win)o.duelWon++;break;
       case 'wall':o.wall++;break;case 'final':o.final++;break;case 'intercept':o.intc++;break;case 'off':o.off++;break;
@@ -45,8 +45,8 @@ function buildReport(res,me,fx){const o=1-me,T=res.T,st=res.stats,sc=res.sc;
   if(R.matchup<0)N.push(['bad',`성향 상성 열세: 상대 ${R.pre[1]}가 우리 ${R.pre[0]}에 강함`]);
   if(R.sb[0]<=-.25)N.push(['bad',`선수 구성이 ${R.pre[0]}와 잘 안 맞음(적합도 ▼)`]);else if(R.sb[0]>=.25)N.push(['good',`선수 구성이 ${R.pre[0]}와 잘 맞음(적합도 ▲)`]);
   // 빌드업·압박
-  if(my.build>=6){const pr=my.pressLost/my.build;if(pr>=.18){N.push(['bad',`빌드업 ${my.build}회 중 ${my.pressLost}회 압박에 걸려 탈취(${Math.round(pr*100)}%)`]);P.push('상대 압박이 강함 → 패스 길이를 늘리거나(롱볼), 배급 좋은 골키퍼·볼 플레잉 수비수 기용')}
-    else if(pr<=.06&&my.build>=10)N.push(['good',`빌드업 안정: 압박 탈취 ${my.pressLost}/${my.build}`])}
+  if(my.build>=6){const pr=my.pressLost/my.build;if(pr>=.4){N.push(['bad',`빌드업 ${my.build}회 중 ${my.pressLost}회 압박에 뺏김(${Math.round(pr*100)}%, 평균 약 27%)`]);P.push('상대 압박이 강함 → 패스 길이를 늘리거나(롱볼), 배급 좋은 골키퍼·볼 플레잉 수비수 기용')}
+    else if(pr<=.12&&my.build>=10)N.push(['good',`빌드업 안정: 압박에 뺏김 ${my.pressLost}/${my.build}`])}
   if(my.long>=5){const w=my.longWon/my.long;if(w<.4){N.push(['bad',`롱볼 공중 경합 ${my.longWon}/${my.long} 승 — 타깃이 밀림`]);P.push('롱볼이 통하지 않음 → 짧은 패스로 전환하거나 공중볼 강한 공격수(타깃맨)')}}
   // 돌파
   if(my.duel>=6){const w=my.duelWon/my.duel;if(w>=.6)N.push(['good',`1대1 돌파 ${my.duelWon}/${my.duel} 성공 — 측면·드리블이 먹힘`]);else if(w<=.35){N.push(['bad',`1대1 돌파 ${my.duelWon}/${my.duel} 성공에 그침`]);P.push('돌파가 막힘 → 드리블 자제·연계 위주 지시, 또는 속도 빠른 선수를 상대 느린 수비수 쪽에')}}
@@ -123,7 +123,7 @@ function reportHTML(R){const H=R.fx.h,A=R.fx.a,me=R.me;const us=me===0?H:A,them=
   <div class="lbl">전술</div><div class="note">우리 ${esc(R.form[0])} · ${esc(R.pre[0])} vs 상대 ${esc(R.form[1])} · ${esc(R.pre[1])} — ${R.matchup>0?'<b style="color:var(--good)">상성 우위</b>':R.matchup<0?'<b style="color:var(--bad)">상성 열세</b>':'상성 중립'}</div>
   <div class="lbl">공격 전개 (우리 / 상대)</div>
   <div class="rt2">
-   <div><span>빌드업 중 압박 탈취</span><b>${my.pressLost}/${my.build}</b><b>${op.pressLost}/${op.build}</b></div>
+   <div><span>빌드업 중 압박에 뺏김</span><b>${my.pressLost}/${my.build}</b><b>${op.pressLost}/${op.build}</b></div>
    <div><span>1대1 돌파 성공</span><b>${my.duelWon}/${my.duel}</b><b>${op.duelWon}/${op.duel}</b></div>
    <div><span>마지막 패스 차단</span><b>${my.intc}/${my.final}</b><b>${op.intc}/${op.final}</b></div>
    <div><span>크로스(경합 승)</span><b>${my.cross}(${my.airWon})</b><b>${op.cross}(${op.airWon})</b></div>
