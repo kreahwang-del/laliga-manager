@@ -80,3 +80,4 @@ app/0998_v275_mgr.js
 app/0999_v276_design.js
 app/1000_v277_window.js
 app/1001_v285_minorpro.js
+app/1002_v285_lgnorm.js
