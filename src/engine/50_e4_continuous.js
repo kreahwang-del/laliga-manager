@@ -177,7 +177,7 @@ function createMatch(H,A,opt={}){
   function foul(att,def,how){ // att(공격 팀)이 def에게 파울 당함
     if(rec)(st.tg||(st.tg=[])).push(['fo',def.p.id,att.p.id]);
     const s=att.s,o=def.s;st.fouls[o]++;pr(def.p).r-=RW.foul;pr(def.p).fc++;pr(att.p).fd++;const fx=F(s,att.x),fy=Lt(s,att.y),row=fx>70?0:fx>35?1:2;
-    const pC=clamp(CFG.cardPerFoul*(CFG.refC??1)*(1+aggr(def)*.4)*(1+(12-attr(def.p,'tackle',o))*.05)*(row===0?1.3:row===2?.85:1),.04,.5);if(r()<CFG.redD*(1+aggr(def)*.4)*(row===0?1.5:1)){st.cards[def.p.id]=1;st._dr=1;card(o,def.p);st._dr=0}else if(r()<pC*(st.cards[def.p.id]?CFG.ylC:1))card(o,def.p);
+    const pC=clamp(CFG.cardPerFoul*(CFG.refC??1)*(1+aggr(def)*.4)*(1+(12-attr(def.p,'tackle',o))*.05)*(row===0?1.3:row===2?.85:1),.04,.5);if(r()<CFG.redD*(CFG.refR??1)*(1+aggr(def)*.4)*(row===0?1.5:1)){st.cards[def.p.id]=1;st._dr=1;card(o,def.p);st._dr=0}else if(r()<pC*(st.cards[def.p.id]?CFG.ylC:1))card(o,def.p);
     const pI=clamp(.012*(1+aggr(def)*.6)*(1+(V(def.p,'str',10)-V(att.p,'str',10))*.03)*(1+(V(att.p,'inj',8)-8)*.04),.002,.05);if(r()<pI)injure(s,att.p,'foul');
     ev({s,t:'foul',p:att.p.name,d:def.p.name,how});
     const inBox=fx>=88.5&&fy>=13.8&&fy<=54.2;
