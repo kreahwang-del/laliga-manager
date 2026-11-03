@@ -177,7 +177,7 @@ function createMatch(H,A,opt={}){
   function foul(att,def,how){ // att(공격 팀)이 def에게 파울 당함
     if(rec)(st.tg||(st.tg=[])).push(['fo',def.p.id,att.p.id]);
     const s=att.s,o=def.s;st.fouls[o]++;pr(def.p).r-=RW.foul;pr(def.p).fc++;pr(att.p).fd++;const fx=F(s,att.x),fy=Lt(s,att.y),row=fx>70?0:fx>35?1:2;
-    const pC=clamp(CFG.cardPerFoul*(1+aggr(def)*.4)*(1+(12-attr(def.p,'tackle',o))*.05)*(row===0?1.3:row===2?.85:1),.04,.5);if(r()<CFG.redD*(1+aggr(def)*.4)*(row===0?1.5:1)){st.cards[def.p.id]=1;st._dr=1;card(o,def.p);st._dr=0}else if(r()<pC*(st.cards[def.p.id]?CFG.ylC:1))card(o,def.p);
+    const pC=clamp(CFG.cardPerFoul*(CFG.refC??1)*(1+aggr(def)*.4)*(1+(12-attr(def.p,'tackle',o))*.05)*(row===0?1.3:row===2?.85:1),.04,.5);if(r()<CFG.redD*(1+aggr(def)*.4)*(row===0?1.5:1)){st.cards[def.p.id]=1;st._dr=1;card(o,def.p);st._dr=0}else if(r()<pC*(st.cards[def.p.id]?CFG.ylC:1))card(o,def.p);
     const pI=clamp(.012*(1+aggr(def)*.6)*(1+(V(def.p,'str',10)-V(att.p,'str',10))*.03)*(1+(V(att.p,'inj',8)-8)*.04),.002,.05);if(r()<pI)injure(s,att.p,'foul');
     ev({s,t:'foul',p:att.p.name,d:def.p.name,how});
     const inBox=fx>=88.5&&fy>=13.8&&fy<=54.2;
@@ -528,7 +528,7 @@ function createMatch(H,A,opt={}){
       const q=attr(a.p,'cross',s)*(footSide(a.p)==='B'?1:invF(a.p,fy)?(r()<CFG.ftW*(.6+.1*V(a.p,'wf',3))?(1+wfMul(a.p))/2:.97):(r()<.04?(1+wfMul(a.p))/2:1))-1.5+(T[o].ti[1]<=2?3:0)+(T[s].ti[2]>=4?1:0);
       pr(a.p).kp+=0;{const rr=aerial(s,{a,sw,lowF:dLow},q+(dG?CFG.decGQ:0),'cross');const D=st.dbg||(st.dbg={});D['xr_'+rr]=(D['xr_'+rr]||0)+1;return rr}}
     if(ch.k==='takeon'){cur&&cur.acts++;const b=ch.b;const win=dfx&&dfx.res==='W'?r()<Math.max(0,2*ch.pW-1):dfx&&dfx.res==='L'?r()<ch.pW+(1-ch.pW)*.8:r()<ch.pW+(dG?CFG.decGB:0);pr(a.p).da++;if(win)pr(a.p).dw++;const lane=laneOfFy(fy);TR({k:'duel',p:a.p.name,vs:b.p.name,win});duelRec(a,b,s,win,lane);
-      if(win){pr(a.p).duelW++;pr(a.p).r+=RW.drib+(fx>70?RW.drib3:0);pr(b.p).duelL++;pr(b.p).ta++;if(rec&&((Math.floor(st.sec*10)+b.p.id)%5)<3)(st.tg||(st.tg=[])).push(['tm',b.p.id,a.p.id]);if(r()<CFG.foulDuel*(1+aggr(b)*.5)*(fx>88.5&&Math.abs(fy-34)<20.2?CFG.boxF:1)){cur.tr[cur.tr.length-1].foul=true;return foul(a,b,'duel')}
+      if(win){pr(a.p).duelW++;pr(a.p).r+=RW.drib+(fx>70?RW.drib3:0);pr(b.p).duelL++;pr(b.p).ta++;if(rec&&((Math.floor(st.sec*10)+b.p.id)%5)<3)(st.tg||(st.tg=[])).push(['tm',b.p.id,a.p.id]);if(r()<CFG.foulDuel*(CFG.refF??1)*(1+aggr(b)*.5)*(fx>88.5&&Math.abs(fy-34)<20.2?CFG.boxF:1)){cur.tr[cur.tr.length-1].foul=true;return foul(a,b,'duel')}
         b.stun=1.1;a.lastBeat=st.sec;const ang=(s?Math.PI:0)+(fy<34?.25:-.25)*(fx>80?1:0);const cl=fx>88.5?(CFG.beatCB??8):(CFG.beatC??8);a.carry={x:clamp(a.x+Math.cos(ang)*cl,1,L-1),y:clamp(a.y+Math.sin(ang)*cl,1,W-1)};a.cd=.6;ev({s,t:'dribble',p:a.p.name,d:b.p.name});return}
       pr(a.p).duelL++;pr(b.p).duelW++;pr(b.p).tkw++;pr(b.p).ta++;if(rec)(st.tg||(st.tg=[])).push(['tk',b.p.id,a.p.id]);/* v227 1대1 돌파를 막은 태클도 3D 태클 동작 */pr(b.p).r+=RW.tkw;pr(a.p).r-=RW.dribL;TR({k:'lost',p:a.p.name,by:b.p.name,how:'duel'});lz5(a,'duel');
       if(r()<.65)give(b,'regain');else loose(b.x,b.y,(r()-.5)*8,(r()-.5)*8);return}
@@ -813,7 +813,7 @@ function createMatch(H,A,opt={}){
       let pF=CFG.foulTk*(1+aggr(b)*.4)*(1+(12-attr(b.p,'tackle',d))*.04)*(1+(pi-1)*(CFG.piTF??.4))*(b.press===st.sec?(CFG.pfPr??1)*Math.min(1,Math.pow(CFG.pfI??1,((T[d].ti||[])[5]??3)-3)):1)*(1+Math.max(0,(st.fatigue[d][b.p.id]||0)-45)/55*.15);
       {const D=st.dbg||(st.dbg={});D.tka=(D.tka||0)+1}/* v240 기록 정의: 압박 접근 실패는 태클 시도로 세지 않음(Opta 태클 시도 = 태클 성공 + 돌파 허용) → 성공했을 때만 시도·성공 */
       {const cfx=F(c.s,c.x),cfy=Lt(c.s,c.y);if(cfx>88.5&&Math.abs(cfy-34)<20.2)pF*=CFG.boxF}pF*=(1+TV(c,'파울 유도')*CFG.trFld)*Math.pow(DH(b,0),-CFG.dhF);
-      if(bk)pF*=CFG.bkF??1;if(r()<pF){foul(c,b,'tackle');return}
+      if(bk)pF*=CFG.bkF??1;if(CFG.refF!=null)pF*=CFG.refF;/* v286 리그 DNA: 심판 파울 기준(refF) */if(r()<pF){foul(c,b,'tackle');return}
       const pW=clamp(CFG.tkWin+TVc(b,'태클 장인','tackle')*CFG.trTk+(attr(b.p,'tackle',d)-attr(c.p,'drib',c.s)*.85)*.03+(V(b.p,'str',10)-V(c.p,'str',10))*.01+tw(d)*.02,.12,.8);
       if(r()<pW*(c.gk?.2:1)){if(rec)(st.tg||(st.tg=[])).push(['tk',b.p.id,c.p.id]);pr(b.p).tk++;pr(b.p).tkw++;pr(b.p).ta++;pr(b.p).r+=RW.tkw;pr(c.p).r-=RW.lost*(F(c.s,c.x)<35?2:1);const how=F(c.s,c.x)<60&&b.press&&st.sec-b.press<1.5?'press':'tackle';TR({k:'lost',p:c.p.name,by:b.p.name,how});lz5(c,how);
         c.stun=Math.max(c.stun||0,CFG.d5TkStun);if(r()<.62)give(b,'regain',.5);else if(r()<CFG.oTk)looseOut(c.x,c.y,r()<.5?c.s:d);else loose(c.x,c.y,(r()-.5)*9,(r()-.5)*9);return}
