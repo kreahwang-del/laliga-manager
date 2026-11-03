@@ -3124,7 +3124,7 @@ function reportHTML(R){const H=R.fx.h,A=R.fx.a,me=R.me;const us=me===0?H:A,them=
   const my=R.my,op=R.op;
   const nx=nextOppInfo();
   return `<button class="x" data-close>닫기</button><div class="note" style="margin:0">${R.fx.r?`${R.fx.r}라운드`:'친선경기'} · ${fmtD(R.d)}</div>
-  <h3 style="display:flex;align-items:center;gap:8px">${crest(us)}<span class="num" style="font-size:26px">${R.sc[0]} : ${R.sc[1]}</span>${crest(them)}<span style="font-size:14px;font-weight:600">${esc(CLUBS[them].name)}</span></h3>
+  <h3 style="display:flex;align-items:center;gap:8px">${crest(us)}<span class="num" style="font-size:26px">${R.sc[0]} : ${R.sc[1]}</span>${crest(them)}<span class="rpvs" style="font-size:14px;font-weight:600;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(typeof clubDisp==='function'?clubDisp(CLUBS[them].name):CLUBS[them].name)}</span></h3>
   <p style="margin:4px 0 10px;font-weight:600">${esc(R.head)}</p>
   ${R.log?logHTML(R):''}
   ${bar('xG',R.xg[0],R.xg[1],x=>x.toFixed(2))}${bar('슈팅',R.sh[0],R.sh[1])}${bar('유효슈팅',R.sot[0],R.sot[1])}${bar('점유율',R.poss[0],R.poss[1])}
@@ -3984,7 +3984,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=282;
+const APPV=283;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -7974,6 +7974,9 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 .bpc>.r span{font-size:13px;line-height:1.4;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .bpc .bph{display:flex;justify-content:space-between;align-items:center;margin-bottom:2px}.bpc .bph b{font-size:13px}.bpc .bph span{font-size:12px;color:var(--muted);font-weight:700}
 #scrim .bpstaff:not(.bpc){margin-top:4px}`;document.head.appendChild(st)}
+
+/* v283 사용자 지적: 경기 리포트 맨 위 점수(3 : 2)가 긴 상대 구단명에 밀려 두 줄로 깨짐 → 점수는 줄바꿈 금지·줄지 않게, 구단명은 줄임 */
+{const st=document.createElement('style');st.textContent='.sheet h3 .num{white-space:nowrap;flex:none}.sheet h3 .rpvs{flex:1 1 auto}';document.head.appendChild(st)}
 // ================= v277 이적시장 밖 판매 = 사전 합의(사용자 지적 2026-11-02: "이적시장이 아닌데 판매하자마자 바로 그쪽으로 가버림") =================
 // 이적설·바이아웃·이적 요청 제안은 시장 밖에서도 오는데, 수락하면 즉시 completeTransfer → 시장 밖에서도 선수가 바로 떠났음
 // → 우리 선수가 다른 구단으로 가는 이적·임대는 시장이 닫혀 있으면 '사전 합의'로 저장하고 다음 이적시장 개장일에 실행(그때까지 우리 팀에서 뜀, 이적료도 그때 입금)
