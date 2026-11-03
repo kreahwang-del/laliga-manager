@@ -18,8 +18,8 @@ const LG_DNA={
 // 점수 1당 폭(엔진 민감도 실측 기준): 전술 지시 ±0.5칸, 심판 파울 ±8%·경고 ±10%·퇴장 ±25%, 중거리 슈팅 선택 ±0.15(박스 안 선택 ∓0.15 → 슈팅 수는 유지, 비중만 이동), 커버 강도 ∓15%
 const DNA_K={ti:.5,refF:.08,refC:.10,refR:.25,ls:.15,open:.15,ident:.5};
 function lgDna(lg){if(!lg)return null;return LG_DNA[lg]||LG_DNA[typeof baseLg==='function'?baseLg(lg):lg]||null}
-{const _cfg=engCfg;engCfg=function(H,Aw){let c=null;try{c=_cfg(H,Aw)}catch(e){}try{const k=engLg(H,Aw);if(!k)return c;const d=lgDna(k);if(!d||k==='ES')return c;
-  const o=Object.assign({},c||{});delete o.finK;delete o.finK5;delete o.xgDisp;/* v285 배율 제거 */
+{const _cfg=engCfg;engCfg=function(H,Aw){let c=null;try{c=_cfg(H,Aw)}catch(e){}try{const k=engLg(H,Aw);if(!k)return c;if(c){c=Object.assign({},c);delete c.finK;delete c.finK5;delete c.xgDisp}/* v285 배율 제거(DNA 표에 없는 리그 포함, QA 지적) */const d=lgDna(k);if(!d||k==='ES')return c;
+  const o=Object.assign({},c||{});
   o.refF=+(1.35*(1+DNA_K.refF*d[6])).toFixed(3);o.refFB=1.35;/* PK 판정은 리그 공통 */o.refC=+(.95*(1+DNA_K.refC*d[7])).toFixed(3);o.refR=+(1.3*Math.max(.25,1+DNA_K.refR*d[8])).toFixed(3);
   if(d[5])o.dcK=+Math.max(.5,1-DNA_K.open*d[5]).toFixed(3);
   if(d[4]){const ls=DNA_K.ls*d[4];o.d5ShBand={'ib<12':+(.9-ls).toFixed(3),'ib12-18':+(.9-ls).toFixed(3),'ob12-18':+(.1+ls).toFixed(3),'ob18-25':+(.5+ls).toFixed(3),'ob25-32':+(.5+ls).toFixed(3),'ob32+':+(-.3+ls).toFixed(3)}}
