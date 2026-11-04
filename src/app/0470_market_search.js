@@ -3,6 +3,7 @@
 // 세부 포지션 판정 순서: 세부 포지션 기록 → 실제 출전 위치 비중 → (공격수) 능력치 유형
 //  · 세컨드 스트라이커: 기록이 'Second Striker'이거나, 공격형 미드필더 출전 비중 25% 이상, 또는 (패스+드리블)/2 − (공중볼+몸싸움)/2 ≥ 3인 공격수
 //  · 측면(윙어·풀백): 기록의 Left/Right → 출전 위치 왼/오 비중 → 둘 다 없으면 주발 반대쪽(윙어)·같은 쪽(풀백)
+const SMULTI=['g','sp','ft','age'];/* v290 중복 선택 필터(리그는 별도 처리) */
 const SPN={CF:'센터포워드',SS:'세컨드 스트라이커',LW:'왼쪽 윙어',RW:'오른쪽 윙어',AM:'공격형 미드필더',CM:'중앙 미드필더',DM:'수비형 미드필더',CB:'센터백',LB:'왼쪽 풀백',RB:'오른쪽 풀백',GK:'골키퍼'};
 const SP_OF={FW:['CF','SS','LW','RW'],MF:['DM','CM','AM'],DF:['CB','LB','RB'],GK:['GK']};
 const FTN={left:'왼발',right:'오른발',both:'양발'};
@@ -28,23 +29,23 @@ function srchStatOK(p,f){const on=k=>f[k]&&f[k]!=='ALL';if(!SRST.some(on))return
   /* v238 성공률 단계는 엔진 기록 분포 기준(라리가 3라운드, 세트피스 크로스 시도 집계 수정 후: 크로스 중앙값 37%·상위10% 50%, 태클 27%·46%, 드리블 64%·80%, 패스 71%·76%) → v240 기록 정의 보정 뒤 태클 50%·67%, 패스 78%·84% — 엔진의 시도 정의가 Opta와 달라 실제 수치(태클 약 60%, 패스 약 80%)와 다름. 성공률은 시도 횟수 하한(크로스·태클·드리블 10회, 패스 100회), 경기당 값은 3경기 이상 */const pct=(w,t,mn,th)=>(ss[t]||0)>=mn&&(ss[w]||0)/(ss[t]||1)*100>=th;
   if(on('scr')&&!pct('crc','cr',10,+f.scr))return false;if(on('stk')&&!pct('tkw','ta',10,+f.stk))return false;if(on('sdr')&&!pct('dw','da',10,+f.sdr))return false;if(on('spp')&&!pct('pc','pa',100,+f.spp))return false;
   if(on('sdw')&&(ap<3||(ss.dw||0)/ap<+f.sdw))return false;if(on('sit')&&(ap<3||(ss.it||0)/ap<+f.sit))return false;return true}
-searchView=function(){const f=UI.f;if(f.wg==null)f.wg='ALL';if(f.lg==null)f.lg='ALL';const LGS=f.lg==='ALL'?null:String(f.lg).split(',').filter(Boolean);SRST.forEach(k=>{if(f[k]==null)f[k]='ALL'});if(f.sp==null)f.sp='ALL';if(f.ft==null)f.ft='ALL';if(f.sp!=='ALL'&&!(SP_OF[f.g]||[]).includes(f.sp))f.sp='ALL';
+searchView=function(){const f=UI.f;if(f.wg==null)f.wg='ALL';if(f.lg==null)f.lg='ALL';const LGS=f.lg==='ALL'?null:String(f.lg).split(',').filter(Boolean);SRST.forEach(k=>{if(f[k]==null)f[k]='ALL'});if(f.sp==null)f.sp='ALL';if(f.ft==null)f.ft='ALL';/* v290 여러 개 동시 선택(사용자 요청): 포지션·세부 포지션·주발·나이·리그 */const MS=k=>f[k]==null||f[k]==='ALL'?null:String(f[k]).split(',').filter(Boolean);const GS=MS('g'),SPOK=GS?[].concat(...GS.map(g=>g==='GK'?[]:(SP_OF[g]||[]))):[];{const sp=MS('sp');if(sp){const v=sp.filter(x=>SPOK.includes(x));f.sp=v.length?v.join(','):'ALL'}}const SPS=MS('sp'),FTS=MS('ft'),AGS=MS('age');
   let L=[];for(const id in BASE){const c=clubOf(+id);if(c===S.club||c===RET)continue;const p=pl(+id);
-    if(f.g!=='ALL'&&LINE[p.g]!==f.g)continue;if(LGS&&!LGS.some(x=>x==='FA'?c===FA:x==='OUT'?(c!==FA&&CLUBS[c]&&!LG5.has(CLUBS[c].lg)):(c!==FA&&CLUBS[c]&&CLUBS[c].lg===x)))continue;/* v290 리그 여러 개 동시 선택(사용자 요청) */
-    if(f.sp!=='ALL'&&subPos(p)!==f.sp)continue;if(f.ft!=='ALL'&&(p.foot||'right')!==f.ft)continue;
-    const a=ageOf(p);if(f.age==='U21'&&a>21||f.age==='22-27'&&(a<22||a>27)||f.age==='28+'&&a<28)continue;
+    if(GS&&!GS.includes(LINE[p.g]))continue;if(LGS&&!LGS.some(x=>x==='FA'?c===FA:x==='OUT'?(c!==FA&&CLUBS[c]&&!LG5.has(CLUBS[c].lg)):(c!==FA&&CLUBS[c]&&CLUBS[c].lg===x)))continue;/* v290 리그 여러 개 동시 선택(사용자 요청) */
+    if(SPS&&!SPS.includes(subPos(p)))continue;if(FTS&&!FTS.includes(p.foot||'right'))continue;
+    const a=ageOf(p);if(AGS&&!AGS.some(x=>x==='U21'?a<=21:x==='22-27'?(a>=22&&a<=27):x==='28+'?a>=28:true))continue;
     const v=valueNow(p);if(f.price!=='ALL'&&v>+f.price*1e6)continue;if(f.wg!=='ALL'&&(p.wage||0)>+f.wg*1e6)continue;/* v290 연봉 조건 */
     if(f.q&&!p.name.toLowerCase().includes(f.q.toLowerCase()))continue;if(!srchStatOK(p,f))continue;L.push(p)}
   const shownMid=p=>{const k=know(p.id);if(k>=3)return p.ovr;const r=[7,4,2][k];const o=Math.round(hsh(p.id+'r'+k)*r*2);return p.ovr+r-o};
   const sk={ovr:p=>shownMid(p),val:p=>valueNow(p),age:p=>ageOf(p),exp:p=>p.cEnd}[f.sort]||(p=>shownMid(p));const SDIR=f.sdir||(['ovr','val'].includes(f.sort||'ovr')?'desc':'asc');const sg=SDIR==='desc'?-1:1;/* v290 오름·내림차순 선택(사용자 요청) */L.sort((a,b)=>{const x=sk(a),y=sk(b);return x<y?-sg:x>y?sg:0});
-  const ch=(k,opts)=>`<div class="chips">${opts.map(([v,l])=>`<button class="chip" data-f="${k}" data-v="${v}" aria-pressed="${k==='lg'?(LGS?LGS.includes(v):v==='ALL'):k==='sdir'?(SDIR===v):f[k]===v}">${k==='lg'&&IMG.on&&lgLogo(v)?`<img class="lgi" src="${lgLogo(v)}" loading="lazy" alt="" onerror="this.remove()">`:''}${l}</button>`).join('')}</div>`;
+  const ch=(k,opts)=>`<div class="chips">${opts.map(([v,l])=>`<button class="chip" data-f="${k}" data-v="${v}" aria-pressed="${SMULTI.includes(k)?((MS(k)||['ALL']).includes(v)):k==='lg'?(LGS?LGS.includes(v):v==='ALL'):k==='sdir'?(SDIR===v):f[k]===v}">${k==='lg'&&IMG.on&&lgLogo(v)?`<img class="lgi" src="${lgLogo(v)}" loading="lazy" alt="" onerror="this.remove()">`:''}${l}</button>`).join('')}</div>`;
   const row=p=>{const h=rowP(p);const i=h.indexOf('</span></span>');return i<0?h:h.slice(0,i)+` · ${SPN[subPos(p)]||p.g}·${FTN[p.foot]||'오른발'}`+h.slice(i)};
   return `<input class="search" id="q" placeholder="선수 이름 검색" value="${esc(f.q)}" autocomplete="off">
   ${ch('g',[['ALL','전체'],['GK','GK'],['DF','수비'],['MF','미드필더'],['FW','공격']])}
-  ${SP_OF[f.g]&&f.g!=='GK'?ch('sp',[['ALL','세부 전체'],...SP_OF[f.g].map(k=>[k,SPN[k]])]):''}
+  ${SPOK.length?ch('sp',[['ALL','세부 전체'],...SPOK.map(k=>[k,SPN[k]])]):''}
   ${(()=>{const O={ft:[['ALL','주발 무관'],['left','왼발'],['right','오른발'],['both','양발']],lg:[['ALL','전체 리그'],['ES','라리가'],['EN','EPL'],['IT','세리에A'],['DE','분데스'],['FR','리그1'],['OUT','5대 리그 밖'],['FA','자유계약']],age:[['ALL','전 연령'],['U21','21세 이하'],['22-27','22~27세'],['28+','28세 이상']],price:[['ALL','가격 무관'],...[1,3,10,30,60].map(x=>[String(x),money(x*1e6)+' 이하'])],wg:[['ALL','연봉 무관'],...[.05,.1,.3,1,3].map(x=>[String(x),'연봉 '+money(x*1e6)+' 이하'])],sort:[['ovr','능력치순'],['val','가치순'],['age','나이순'],['exp','계약 만료일순']],sdir:[['desc','내림차순 ↓'],['asc','오름차순 ↑']],...SRST_O};
     /* v216 필터 접기: 포지션만 항상 보이고 나머지는 '필터' 버튼 안으로. 적용 중인 조건은 버튼에 요약 */
-    const lab=k=>{if(k==='lg'&&LGS)return LGS.map(x=>((O.lg.find(o=>o[0]===x)||[])[1])||LGN[x]||x).join('+');const o=(O[k]||[]).find(x=>x[0]===f[k]);if(o)return o[1];if(k==='lg'&&LGN[f[k]])return LGN[f[k]];return null};
+    const lab=k=>{if(SMULTI.includes(k)&&MS(k))return MS(k).map(x=>((O[k]||[]).find(o=>o[0]===x)||[])[1]||x).join('+');if(k==='lg'&&LGS)return LGS.map(x=>((O.lg.find(o=>o[0]===x)||[])[1])||LGN[x]||x).join('+');const o=(O[k]||[]).find(x=>x[0]===f[k]);if(o)return o[1];if(k==='lg'&&LGN[f[k]])return LGN[f[k]];return null};
     const act=['ft','lg','age','price','wg',...SRST].filter(k=>f[k]&&f[k]!=='ALL').map(lab).filter(Boolean);if(f.sort&&f.sort!=='ovr')act.push(lab('sort'));
     const body=UI.fOpen?`${ch('ft',O.ft)}${ch('lg',O.lg)}${LGS&&LGS.some(x=>x==='OUT'||(!LG5.has(x)&&x!=='FA'))?ch('lg',Object.keys(LGN).filter(k=>!LG5.has(k)).map(k=>[k,LGN[k]])):''}${ch('age',O.age)}${ch('price',O.price)}${ch('wg',O.wg)}${ch('sort',O.sort)}${ch('sdir',O.sdir)}<div class="note" style="margin:8px 0 2px">이번 시즌 기록 (리그 경기) — 골·도움·평점 외 지표는 경기 엔진으로 치른 리그만 기록(설정 '다른 리그 경기 계산'이 켜져 있으면 모든 리그)</div>${SRST.map(k=>ch(k,O[k])).join('')}`:'';
     return `<div class="chips"><button class="chip" data-fopen="1" aria-pressed="${!!UI.fOpen||act.length>0}">필터${act.length?' · '+esc(act.join(' · ')):''} ${UI.fOpen?'▲':'▼'}</button></div>${body}`})()}
