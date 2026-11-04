@@ -1,0 +1,75 @@
+{
+ "note": "CN 2025 실제 득점 기록(topscorersfootball.com 분/골) 대비 엔진 90분당 득점(리그 200경기 측정) — 슈팅 +3×ln(실제/엔진)(−1~+2.5), 침투 절반",
+ "players": {
+  "Felipe Silva": {
+   "id": 8244723,
+   "real_g90": 0.52,
+   "engine_g90": 0.65,
+   "dShoot": -0.67,
+   "shoot": [
+    13,
+    12
+   ],
+   "offball": [
+    11,
+    11
+   ]
+  },
+  "Fábio Abreu": {
+   "id": 8227527,
+   "real_g90": 0.97,
+   "engine_g90": 0.64,
+   "dShoot": 1.25,
+   "shoot": [
+    14,
+    15
+   ],
+   "offball": [
+    12,
+    13
+   ]
+  },
+  "Quiles": {
+   "id": 8236810,
+   "real_g90": 0.58,
+   "engine_g90": 0.4,
+   "dShoot": 1.11,
+   "shoot": [
+    12,
+    13
+   ],
+   "offball": [
+    13,
+    14
+   ]
+  },
+  "Leonardo": {
+   "id": 8254894,
+   "real_g90": 0.78,
+   "engine_g90": 0.47,
+   "dShoot": 1.52,
+   "shoot": [
+    12,
+    14
+   ],
+   "offball": [
+    13,
+    14
+   ]
+  },
+  "Wang Yudong": {
+   "id": 8277782,
+   "real_g90": 0.45,
+   "engine_g90": 0.26,
+   "dShoot": 1.65,
+   "shoot": [
+    9,
+    11
+   ],
+   "offball": [
+    9,
+    10
+   ]
+  }
+ }
+}
