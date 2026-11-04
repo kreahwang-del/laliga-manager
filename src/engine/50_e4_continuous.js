@@ -405,7 +405,8 @@ function createMatch(H,A,opt={}){
   const MUSIT5={pass:12.9,shoot:13.3,comp:11.6,drib:13.5,tackle:13.6,pace:12.5,aerial:12.5};
   /* a: 선수 객체, key: 능력, k: 1점당 로짓 → 이동량 */
   function ab5(a,key,k){const g=a.gk?'GK':(a.g||'CM');const mu=(MU5[g]||MU5.CM)[key]??12,sd=SD5[key]||2;const v=V(a.p,key,mu)*eff(a.p,a.s);const d=v-mu;
-    return k*(CFG.ab5P*(mu-(MUSIT5[key]??12))+CFG.ab5I*d+CFG.ab5E*Math.max(0,d-sd))}
+    const E=(key==='shoot'||key==='comp')&&CFG.ab5Esh!=null?CFG.ab5Esh:CFG.ab5E;/* v290 결정력 상단 보너스(ab5E)는 슈팅·침착성만 따로 조절(ab5Esh, 기본 없음 = 기존과 동일) */
+    return k*(CFG.ab5P*(mu-(MUSIT5[key]??12))+CFG.ab5I*d+E*Math.max(0,d-sd))}
   /* ===== 엔진5 판단 모델 =====
      터치 = 받음 → [운반] → 종료 행동. 실측(StatsBomb 360) 적합:
        A) 받은 직후 운반 여부 P(carry≥5m) 로지스틱 + 운반 거리 분위수(구역×압박)
