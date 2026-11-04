@@ -83,3 +83,4 @@ app/1001_v285_minorpro.js
 app/1002_v285_lgnorm.js
 app/1003_v286_dna.js
 app/1004_v287_lastseason.js
+app/1005_v290_migrate.js
