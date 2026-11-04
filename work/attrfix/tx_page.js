@@ -14,6 +14,12 @@ for(const lg in TX){const t=TX[lg];const C=CLUBS.filter(c=>c&&c.lg===lg).map(c=>
     for(const k of (p.g==='GK'?GKK:FK)){if(typeof p[k]!=='number')continue;let v=p[k]+d;if(p.g!=='GK'&&t.a){if(ATT.includes(k))v+=t.a;if(DEF.includes(k))v-=t.a}if(v>20||v<1)cut++;p[k]=cl(v)}
     if(t.fs&&['ST','W','AM'].includes(p.g)&&typeof p.shoot==='number'){const v=p.shoot+t.fs;if(v>20)cut++;p.shoot=cl(v)}
     if(typeof p.ovr==='number')p.ovr=Math.max(40,Math.min(95,p.ovr+d*4.15))}}
-  rep[lg]={clubs:vals.length,lm:+lm.toFixed(2),sd0:+Math.sqrt(vals.reduce((a,b)=>a+(b-lm)**2,0)/vals.length).toFixed(3),cut,tot}}
+  // ④ 리그 수준(lv): 리그 전원 능력치 +lv(OVR +lv×4.15) — EA 비교로 리그 전체가 낮게 들어간 리그(KR)
+  // ⑤ 최상위 상한 열기(topT): 리그 상위 3명 평균 OVR이 '라리가 상위 10명(90.2) + topT'에 못 미치면, 리그 90백분위 위 선수만 거리에 비례해 끌어올림
+  {const ids=[].concat(...C.map(c=>byC[c]||[]));if(t.lv){for(const id of ids){const p=BASE[id];for(const k of (p.g==='GK'?GKK:FK))if(typeof p[k]==='number')p[k]=cl(p[k]+t.lv);p.ovr=Math.max(40,Math.min(95,p.ovr+t.lv*4.15))}}
+   if(t.topT!=null){const ps=ids.map(id=>BASE[id]).sort((a,b)=>b.ovr-a.ovr);const top3=(ps[0].ovr+ps[1].ovr+ps[2].ovr)/3,p90=ps[Math.floor(ps.length*.1)].ovr;const need=(90.2+t.topT)-top3;
+    if(need>0&&top3>p90){for(const p of ps){if(p.ovr<=p90)break;const d=need*Math.min(1,(p.ovr-p90)/(top3-p90));for(const k of (p.g==='GK'?GKK:FK))if(typeof p[k]==='number')p[k]=cl(p[k]+d/4.15);p.ovr=Math.max(40,Math.min(95,p.ovr+d))}}
+    t._top={top3:+top3.toFixed(1),p90,need:+need.toFixed(1)}}}
+  rep[lg]={top:t._top,clubs:vals.length,lm:+lm.toFixed(2),sd0:+Math.sqrt(vals.reduce((a,b)=>a+(b-lm)**2,0)/vals.length).toFixed(3),cut,tot}}
 for(const k in LGM)delete LGM[k];try{for(const k in LGOFF)delete LGOFF[k]}catch(e){}SQC=null;
 return rep;
