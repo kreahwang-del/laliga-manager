@@ -9,19 +9,19 @@ await pg.evaluate(()=>{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed(
 if(process.env.TX){const rep=await pg.evaluate(([src,tx])=>(new Function('TX',src))(tx),[fs.readFileSync(__dirname+'/tx_page.js','utf8'),JSON.parse(process.env.TX)]);console.log('TX',JSON.stringify(rep))}
 const out={};
 for(const lg of LGS){const r=await pg.evaluate(([lg,RUNS])=>{
-  const str=c=>{const T=teamFor(c);return T.xi.reduce((a,p)=>a+(p?p.ovr:0),0)};
+  const D0=S.date;const str=c=>{const T=teamFor(c);return T.xi.reduce((a,p)=>a+(p?p.ovr:0),0)};
   const ES=CLUBS.filter(c=>c&&c.lg==='ES').map(c=>c.i).sort((a,b)=>str(b)-str(a));const tgt=ES[9];/* 라리가 10위권 전력 */
   const C=CLUBS.filter(c=>c&&c.lg===lg).map(c=>c.i);const cand=[];for(const id in BASE){const c=clubOf(+id);if(C.includes(c)&&BASE[id].g==='ST')cand.push(+id)}
   cand.sort((a,b)=>(BASE[b].ovr+BASE[b].shoot)-(BASE[a].ovr+BASE[a].shoot));const pid=cand[0];const p=BASE[pid];const home=clubOf(pid);
   const run=(club,opps,seed)=>{let x=seed;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};let st=0,g=0,n=0;
-    for(let i=0;i<opps.length;i++){x=(seed*31+i*7919)%2147483646+1;const T=teamFor(club),O=teamFor(opps[i]);const on=T.xi.some(q=>q&&q.id===pid);const hm=i%2===0;
+    for(let i=0;i<opps.length;i++){x=(seed*31+i*7919)%2147483646+1;{const dd=new Date(D0);dd.setDate(dd.getDate()+((seed*13+i*7)%280));S.date=dd.toISOString().slice(0,10)}const T=teamFor(club),O=teamFor(opps[i]);const on=T.xi.some(q=>q&&q.id===pid);const hm=i%2===0;
       const m=hm?runMatch(T,O,{}):runMatch(O,T,{});while(!m.done)m.step();n++;if(on)st++;for(const e of m.st.ev)if(e.t==='goal'&&!e.og&&e.p===p.name)g++}
     return {n,st,g}};
   const dom=C.filter(c=>c!==home);const domOpp=dom.concat(dom);const esOpp=ES.filter(c=>c!==tgt);const esO=esOpp.concat(esOpp);
   const R={name:p.name,ovr:Math.round(p.ovr),shoot:+p.shoot.toFixed(1),home:CLUBS[home].name,tgt:CLUBS[tgt].name,dom:{n:0,st:0,g:0},es:{n:0,st:0,g:0}};
   for(let k=0;k<RUNS;k++){const a=run(home,domOpp,1000+k);['n','st','g'].forEach(z=>R.dom[z]+=a[z])}
   {/* 기준: 옮기기 전 라리가 팀 주전 공격수의 90분당 득점 */const T0=teamFor(tgt);const st0=T0.xi.filter(q=>q&&q.g==='ST').sort((a,b)=>b.ovr-a.ovr)[0];if(st0){const keep={pid:st0.id,name:st0.name};let x=1;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};let s=0,gg=0;
-    for(let k=0;k<RUNS;k++)for(let i=0;i<esO.length;i++){x=((3000+k)*31+i*7919)%2147483646+1;const T=teamFor(tgt),O=teamFor(esO[i]);const on=T.xi.some(q=>q&&q.id===keep.pid);const m=i%2===0?runMatch(T,O,{}):runMatch(O,T,{});while(!m.done)m.step();if(on)s++;for(const e of m.st.ev)if(e.t==='goal'&&!e.og&&e.p===keep.name)gg++}
+    for(let k=0;k<RUNS;k++)for(let i=0;i<esO.length;i++){x=((3000+k)*31+i*7919)%2147483646+1;{const dd=new Date(D0);dd.setDate(dd.getDate()+((k*13+i*7)%280));S.date=dd.toISOString().slice(0,10)}const T=teamFor(tgt),O=teamFor(esO[i]);const on=T.xi.some(q=>q&&q.id===keep.pid);const m=i%2===0?runMatch(T,O,{}):runMatch(O,T,{});while(!m.done)m.step();if(on)s++;for(const e of m.st.ev)if(e.t==='goal'&&!e.og&&e.p===keep.name)gg++}
     R.base={name:keep.name,ovr:Math.round(st0.ovr),shoot:st0.shoot,g90:+(s?gg/s:0).toFixed(2),start:+(s/(esO.length*RUNS)).toFixed(2)}}}
   S.ps[pid]=S.ps[pid]||{};const old=S.ps[pid].club;S.ps[pid].club=tgt;SQC=null;
   for(let k=0;k<RUNS;k++){const a=run(tgt,esO,2000+k);['n','st','g'].forEach(z=>R.es[z]+=a[z])}
