@@ -1,9 +1,11 @@
 // ================= v161 금액 입력: 단계 버튼(±) 사이 금액을 누르면 숫자 직접 입력(백만 유로 단위), 좌우로 끌면 세밀하게 조절(빠르게 끌수록 큰 단위) =================
+/* v288 사용자 지적(원 단위 연봉이 1.5억원 아래로 안 내려감): 연봉 하한 10만 유로(=1.49억원)가 K리그·J리그·중국·3부 선수 대부분(K리그 중앙값 5.4만 유로)보다 높았음 → 10만 유로 미만은 1천 유로 단위, 하한 5천 유로 */
+function wRnd(v){v=+v||0;return v<1e5?Math.max(5e3,Math.round(v/1e3)*1e3):Math.round(v/1e4)*1e4}
 function stpInfo(st){const b=st.querySelector('button');if(!b)return null;const d=b.dataset;
   if(d.o==='fee'&&UI.off)return {get:()=>UI.off.fee,set:v=>{UI.off.fee=Math.max(0,Math.round(v/1e5)*1e5);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
-  if(d.o==='wage'&&UI.off)return {get:()=>UI.off.wage,set:v=>{UI.off.wage=Math.max(1e5,Math.round(v/1e4)*1e4);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:1e4};
-  if(d.tfo==='lfee'&&UI.off&&typeof tfOff==='function')return {get:()=>tfOff().lfee||0,set:v=>{const O=tfOff();O.lfee=Math.max(1e6,Math.round(v/1e5)*1e5);O.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
-  if(d.r==='wage'&&UI.ren)return {get:()=>UI.ren.wage,set:v=>{UI.ren.wage=Math.max(1e5,Math.round(v/1e4)*1e4);UI.ren.resp=null},re:()=>renewSheet(UI.ren.id),fine:1e4};
+  if(d.o==='wage'&&UI.off)return {get:()=>UI.off.wage,set:v=>{UI.off.wage=wRnd(v);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:UI.off.wage<1e5?1e3:1e4};
+  if(d.tfo==='lfee'&&UI.off&&typeof tfOff==='function')return {get:()=>tfOff().lfee||0,set:v=>{const O=tfOff();O.lfee=Math.max(1e5,Math.round(v/1e5)*1e5);O.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
+  if(d.r==='wage'&&UI.ren)return {get:()=>UI.ren.wage,set:v=>{UI.ren.wage=wRnd(v);UI.ren.resp=null},re:()=>renewSheet(UI.ren.id),fine:UI.ren.wage<1e5?1e3:1e4};
   return null}
 function stpEnhance(){document.querySelectorAll('#scrim .stepper').forEach(st=>{if(st.dataset.enh)return;const I=stpInfo(st);if(!I)return;st.dataset.enh=1;const v=st.querySelector('.v');if(!v)return;
   v.classList.add('stpv');v.setAttribute('role','button');v.setAttribute('aria-label','금액 입력 또는 좌우로 끌어 조절');

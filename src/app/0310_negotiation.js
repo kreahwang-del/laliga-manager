@@ -18,12 +18,12 @@ function tfClauseVal(p,lv){return Math.max(1,Math.round(valueNow(p)*TF_CL[lv][0]
       <p class="note">수수료를 낮게 주면 선수 측 연봉 요구가 약 8% 오르고, 넉넉히 주면 약 5% 내려갑니다. 바이아웃을 높게 걸면 다른 구단이 빼 가기 어렵지만 연봉 요구가 약 6% 오릅니다. 수수료는 영입 때 이적 예산에서 바로 나갑니다.</p>`;
     bt.insertAdjacentHTML('beforebegin',h)}
   const bo=document.querySelector('[data-act="sendOffer"]');
-  if(bo&&O.loan){const ask=asking(p,S.club);if(O.lfee==null)O.lfee=Math.round(ask/1e6)*1e6;
+  if(bo&&O.loan){const ask=asking(p,S.club);if(O.lfee==null)O.lfee=ask<2e6?Math.max(1e5,Math.round(ask/1e5)*1e5):Math.round(ask/1e6)*1e6;
     const h=`<div class="lbl">완전 이적 조항</div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${[[0,'없음'],[1,'구매 옵션'],[2,'구매 의무']].map(([v,l])=>`<button data-tfo="lopt" data-v="${v}" aria-pressed="${O.lopt===v}">${l}</button>`).join('')}</div>
       ${O.lopt?`<div class="stepper" style="margin-top:6px"><button data-tfo="lfee" data-v="-5">-5</button><div class="v">${money(O.lfee)}</div><button data-tfo="lfee" data-v="5">+5</button></div><p class="note">시즌이 끝날 때 ${O.lopt===2?'자동으로':'원하면'} ${money(O.lfee)}에 완전 영입합니다(그때 예산에서 지급). 상대 희망가 근처면 주전급도 임대에 응할 수 있고, 의무는 나중에 내는 이적이라 희망가의 92% 이상이면 받아들입니다.</p>`:''}`;
     bo.insertAdjacentHTML('beforebegin',h)}}catch(e){console.error(e)}return r}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-tfo]');if(!b||!UI.off)return;e.stopPropagation();e.preventDefault();const O=tfOff(),k=b.dataset.tfo,v=+b.dataset.v;
-  if(k==='lfee')O.lfee=Math.max(1e6,(O.lfee||0)+v*1e6);else O[k]=v;O.resp=null;offerSheet(O.id)},true);
+  if(k==='lfee')O.lfee=Math.max(1e5,(O.lfee||0)+v*1e6);else O[k]=v;O.resp=null;offerSheet(O.id)},true);
 // 구단 응답: 임대 + 완전 이적 조항
 {const _cr=clubRespond;clubRespond=function(p,o){if(o&&o.loan&&o.lopt){const n=S.negs[p.id]||(S.negs[p.id]={stage:'club',tries:0});const seller=clubOf(p.id);
   if(!(n.stage==='broken'&&S.date<n.until)&&!(RIVAL(seller,S.club)&&hsh(p.id+'rival'+S.season)<.85)){const ask=asking(p,S.club),rk=rankInClub(p);

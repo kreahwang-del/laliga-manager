@@ -51,9 +51,9 @@ document.addEventListener('click',e=>{
   if(d.kick){kickSheet(d.kick);return}
   if(d.kickset){S.tac.setp=S.tac.setp||{};S.tac.setp[d.kickset]=d.v?+d.v:null;save();closeSheet();render();return}
   if(d.o){const O=UI.off,v=+d.v;
-    if(d.o==='fee')O.fee=Math.max(0,O.fee+v*1e6);else if(d.o==='feeset')O.fee=Math.round(v/1e5)*1e5;else if(d.o==='wage')O.wage=Math.max(1e5,Math.round(O.wage*(1+v*.05)/1e4)*1e4);else if(d.o==='loan')O.loan=!!v;else O[d.o]=v;
+    if(d.o==='fee')O.fee=Math.max(0,O.fee+v*1e6);else if(d.o==='feeset')O.fee=Math.round(v/1e5)*1e5;else if(d.o==='wage')O.wage=wRnd(O.wage*(1+v*.05));else if(d.o==='loan')O.loan=!!v;else O[d.o]=v;
     O.resp=null;offerSheet(O.id);return}
-  if(d.r){const R=UI.ren,v=+d.v;if(d.r==='wage')R.wage=Math.max(1e5,Math.round(R.wage*(1+v*.05)/1e4)*1e4);else R[d.r]=v;R.resp=null;renewSheet(R.id);return}
+  if(d.r){const R=UI.ren,v=+d.v;if(d.r==='wage')R.wage=wRnd(R.wage*(1+v*.05));else R[d.r]=v;R.resp=null;renewSheet(R.id);return}
   if(d.talk){const q=S.ps[+d.id]=S.ps[+d.id]||{},p=pl(+d.id);const h=q.happy??60;let dh=0,msg='';q.cndv=Math.min(100,(q.cndv??50)+(d.talk==='criticize'?(p.pro>=12?6:-10):d.talk==='encourage'?6:4));
     if(d.talk==='praise'){dh=(p.apps||0)>0?6:-2;msg=dh>0?'칭찬을 반기며 의욕을 보였습니다.':'뛴 경기도 없는데 칭찬이 어색하다는 반응입니다.'}
     if(d.talk==='encourage'){dh=h<50?7:2;msg='격려를 고맙게 받아들였습니다.'}

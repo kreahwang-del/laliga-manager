@@ -207,7 +207,7 @@ function posLine(p){if(!p.pos2)return `<div class="note">포지션: ${GN[p.g]} (
 // ---- 제안 시트 ----
 function offerSheet(id,step){
   const p=pl(id),c=clubOf(id),n=S.negs[id],ask=c===FA?0:asking(p,S.club);
-  const O=UI.off&&UI.off.id===id?UI.off:(UI.off={id,fee:Math.round(valueNow(p)*.8/1e6)*1e6,inst:1,sellOn:0,loan:false,share:75,wage:wageDemand(p,S.club),years:ageOf(p)<=27?5:ageOf(p)<=30?3:2,role:expectRole(p,S.club),resp:null});
+  const O=UI.off&&UI.off.id===id?UI.off:(UI.off={id,fee:(v8=>v8<2e6?Math.round(v8/1e5)*1e5:Math.round(v8/1e6)*1e6)(valueNow(p)*.8)/* v288 2백만 유로 미만은 10만 유로 단위(0원 제안 방지) */,inst:1,sellOn:0,loan:false,share:75,wage:wageDemand(p,S.club),years:ageOf(p)<=27?5:ageOf(p)<=30?3:2,role:expectRole(p,S.club),resp:null});
   const pre=c!==FA&&monthsLeft(p)<=6&&!winNow();
   const clubStage=!(n&&n.stage==='player')&&c!==FA&&!pre;
   const B=spendable();
