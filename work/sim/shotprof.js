@@ -6,6 +6,7 @@ const LGS=(process.env.LGS||'ES').split(','),N=+(process.env.N||40);
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1000);
 if(process.env.SAVE)await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
 await pg.evaluate(()=>{if(window.__SV){S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null}else{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0)}save=()=>{};for(const k in ENGF3)ENGF3[k]=1});
+if(process.env.PRE)await pg.evaluate(src=>(new Function(src))(),process.env.PRE);/* PRE: 페이지 안 임의 설정(예: LG_DNA.DK[0]=2) */
 if(process.env.TX){const rep=await pg.evaluate(([src,tx])=>(new Function('TX',src))(tx),[fs.readFileSync(__dirname+'/../attrfix/tx_page.js','utf8'),JSON.parse(process.env.TX)]);console.log('TX',JSON.stringify(rep))}
 const OV=JSON.parse(process.env.OV||'{}');await pg.evaluate(OV=>{const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{cfg:Object.assign({},(o&&o.cfg)||{},OV)}))},OV);
 const out={};
