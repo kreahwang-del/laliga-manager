@@ -3814,7 +3814,7 @@ function posLine(p){if(!p.pos2)return `<div class="note">포지션: ${GN[p.g]} (
 // ---- 제안 시트 ----
 function offerSheet(id,step){
   const p=pl(id),c=clubOf(id),n=S.negs[id],ask=c===FA?0:asking(p,S.club);
-  const O=UI.off&&UI.off.id===id?UI.off:(UI.off={id,fee:Math.round(valueNow(p)*.8/1e6)*1e6,inst:1,sellOn:0,loan:false,share:75,wage:wageDemand(p,S.club),years:ageOf(p)<=27?5:ageOf(p)<=30?3:2,role:expectRole(p,S.club),resp:null});
+  const O=UI.off&&UI.off.id===id?UI.off:(UI.off={id,fee:(v8=>v8<2e6?Math.round(v8/1e5)*1e5:Math.round(v8/1e6)*1e6)(valueNow(p)*.8)/* v288 2백만 유로 미만은 10만 유로 단위(0원 제안 방지) */,inst:1,sellOn:0,loan:false,share:75,wage:wageDemand(p,S.club),years:ageOf(p)<=27?5:ageOf(p)<=30?3:2,role:expectRole(p,S.club),resp:null});
   const pre=c!==FA&&monthsLeft(p)<=6&&!winNow();
   const clubStage=!(n&&n.stage==='player')&&c!==FA&&!pre;
   const B=spendable();
@@ -3908,9 +3908,9 @@ document.addEventListener('click',e=>{
   if(d.kick){kickSheet(d.kick);return}
   if(d.kickset){S.tac.setp=S.tac.setp||{};S.tac.setp[d.kickset]=d.v?+d.v:null;save();closeSheet();render();return}
   if(d.o){const O=UI.off,v=+d.v;
-    if(d.o==='fee')O.fee=Math.max(0,O.fee+v*1e6);else if(d.o==='feeset')O.fee=Math.round(v/1e5)*1e5;else if(d.o==='wage')O.wage=Math.max(1e5,Math.round(O.wage*(1+v*.05)/1e4)*1e4);else if(d.o==='loan')O.loan=!!v;else O[d.o]=v;
+    if(d.o==='fee')O.fee=Math.max(0,O.fee+v*1e6);else if(d.o==='feeset')O.fee=Math.round(v/1e5)*1e5;else if(d.o==='wage')O.wage=wRnd(O.wage*(1+v*.05));else if(d.o==='loan')O.loan=!!v;else O[d.o]=v;
     O.resp=null;offerSheet(O.id);return}
-  if(d.r){const R=UI.ren,v=+d.v;if(d.r==='wage')R.wage=Math.max(1e5,Math.round(R.wage*(1+v*.05)/1e4)*1e4);else R[d.r]=v;R.resp=null;renewSheet(R.id);return}
+  if(d.r){const R=UI.ren,v=+d.v;if(d.r==='wage')R.wage=wRnd(R.wage*(1+v*.05));else R[d.r]=v;R.resp=null;renewSheet(R.id);return}
   if(d.talk){const q=S.ps[+d.id]=S.ps[+d.id]||{},p=pl(+d.id);const h=q.happy??60;let dh=0,msg='';q.cndv=Math.min(100,(q.cndv??50)+(d.talk==='criticize'?(p.pro>=12?6:-10):d.talk==='encourage'?6:4));
     if(d.talk==='praise'){dh=(p.apps||0)>0?6:-2;msg=dh>0?'칭찬을 반기며 의욕을 보였습니다.':'뛴 경기도 없는데 칭찬이 어색하다는 반응입니다.'}
     if(d.talk==='encourage'){dh=h<50?7:2;msg='격려를 고맙게 받아들였습니다.'}
@@ -3984,7 +3984,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=287;
+const APPV=288;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -5125,12 +5125,12 @@ function tfClauseVal(p,lv){return Math.max(1,Math.round(valueNow(p)*TF_CL[lv][0]
       <p class="note">수수료를 낮게 주면 선수 측 연봉 요구가 약 8% 오르고, 넉넉히 주면 약 5% 내려갑니다. 바이아웃을 높게 걸면 다른 구단이 빼 가기 어렵지만 연봉 요구가 약 6% 오릅니다. 수수료는 영입 때 이적 예산에서 바로 나갑니다.</p>`;
     bt.insertAdjacentHTML('beforebegin',h)}
   const bo=document.querySelector('[data-act="sendOffer"]');
-  if(bo&&O.loan){const ask=asking(p,S.club);if(O.lfee==null)O.lfee=Math.round(ask/1e6)*1e6;
+  if(bo&&O.loan){const ask=asking(p,S.club);if(O.lfee==null)O.lfee=ask<2e6?Math.max(1e5,Math.round(ask/1e5)*1e5):Math.round(ask/1e6)*1e6;
     const h=`<div class="lbl">완전 이적 조항</div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${[[0,'없음'],[1,'구매 옵션'],[2,'구매 의무']].map(([v,l])=>`<button data-tfo="lopt" data-v="${v}" aria-pressed="${O.lopt===v}">${l}</button>`).join('')}</div>
       ${O.lopt?`<div class="stepper" style="margin-top:6px"><button data-tfo="lfee" data-v="-5">-5</button><div class="v">${money(O.lfee)}</div><button data-tfo="lfee" data-v="5">+5</button></div><p class="note">시즌이 끝날 때 ${O.lopt===2?'자동으로':'원하면'} ${money(O.lfee)}에 완전 영입합니다(그때 예산에서 지급). 상대 희망가 근처면 주전급도 임대에 응할 수 있고, 의무는 나중에 내는 이적이라 희망가의 92% 이상이면 받아들입니다.</p>`:''}`;
     bo.insertAdjacentHTML('beforebegin',h)}}catch(e){console.error(e)}return r}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-tfo]');if(!b||!UI.off)return;e.stopPropagation();e.preventDefault();const O=tfOff(),k=b.dataset.tfo,v=+b.dataset.v;
-  if(k==='lfee')O.lfee=Math.max(1e6,(O.lfee||0)+v*1e6);else O[k]=v;O.resp=null;offerSheet(O.id)},true);
+  if(k==='lfee')O.lfee=Math.max(1e5,(O.lfee||0)+v*1e6);else O[k]=v;O.resp=null;offerSheet(O.id)},true);
 // 구단 응답: 임대 + 완전 이적 조항
 {const _cr=clubRespond;clubRespond=function(p,o){if(o&&o.loan&&o.lopt){const n=S.negs[p.id]||(S.negs[p.id]={stage:'club',tries:0});const seller=clubOf(p.id);
   if(!(n.stage==='broken'&&S.date<n.until)&&!(RIVAL(seller,S.club)&&hsh(p.id+'rival'+S.season)<.85)){const ask=asking(p,S.club),rk=rankInClub(p);
@@ -6222,11 +6222,13 @@ setInterval(()=>{try{if(typeof M!=='undefined'&&M&&M.m&&M.m.st&&M.m.st.pendingDe
   const outs=(st.subs[side]||[]).map(x=>x.out).filter(Boolean);const seen=new Set(),L=T.xi.concat(outs).filter(p=>p&&!seen.has(p.id)&&seen.add(p.id));let i=0;
   box.querySelectorAll('tbody td.n').forEach(td=>{const p=L[i++];if(p){td.dataset.lana=p.id;td.style.cursor='pointer';td.style.textDecoration='underline';td.style.textDecorationColor='var(--faint)';td.style.textUnderlineOffset='3px'}})}catch(e){}return r}}
 // ================= v161 금액 입력: 단계 버튼(±) 사이 금액을 누르면 숫자 직접 입력(백만 유로 단위), 좌우로 끌면 세밀하게 조절(빠르게 끌수록 큰 단위) =================
+/* v288 사용자 지적(원 단위 연봉이 1.5억원 아래로 안 내려감): 연봉 하한 10만 유로(=1.49억원)가 K리그·J리그·중국·3부 선수 대부분(K리그 중앙값 5.4만 유로)보다 높았음 → 10만 유로 미만은 1천 유로 단위, 하한 5천 유로 */
+function wRnd(v){v=+v||0;return v<1e5?Math.max(5e3,Math.round(v/1e3)*1e3):Math.round(v/1e4)*1e4}
 function stpInfo(st){const b=st.querySelector('button');if(!b)return null;const d=b.dataset;
   if(d.o==='fee'&&UI.off)return {get:()=>UI.off.fee,set:v=>{UI.off.fee=Math.max(0,Math.round(v/1e5)*1e5);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
-  if(d.o==='wage'&&UI.off)return {get:()=>UI.off.wage,set:v=>{UI.off.wage=Math.max(1e5,Math.round(v/1e4)*1e4);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:1e4};
-  if(d.tfo==='lfee'&&UI.off&&typeof tfOff==='function')return {get:()=>tfOff().lfee||0,set:v=>{const O=tfOff();O.lfee=Math.max(1e6,Math.round(v/1e5)*1e5);O.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
-  if(d.r==='wage'&&UI.ren)return {get:()=>UI.ren.wage,set:v=>{UI.ren.wage=Math.max(1e5,Math.round(v/1e4)*1e4);UI.ren.resp=null},re:()=>renewSheet(UI.ren.id),fine:1e4};
+  if(d.o==='wage'&&UI.off)return {get:()=>UI.off.wage,set:v=>{UI.off.wage=wRnd(v);UI.off.resp=null},re:()=>offerSheet(UI.off.id),fine:UI.off.wage<1e5?1e3:1e4};
+  if(d.tfo==='lfee'&&UI.off&&typeof tfOff==='function')return {get:()=>tfOff().lfee||0,set:v=>{const O=tfOff();O.lfee=Math.max(1e5,Math.round(v/1e5)*1e5);O.resp=null},re:()=>offerSheet(UI.off.id),fine:1e5};
+  if(d.r==='wage'&&UI.ren)return {get:()=>UI.ren.wage,set:v=>{UI.ren.wage=wRnd(v);UI.ren.resp=null},re:()=>renewSheet(UI.ren.id),fine:UI.ren.wage<1e5?1e3:1e4};
   return null}
 function stpEnhance(){document.querySelectorAll('#scrim .stepper').forEach(st=>{if(st.dataset.enh)return;const I=stpInfo(st);if(!I)return;st.dataset.enh=1;const v=st.querySelector('.v');if(!v)return;
   v.classList.add('stpv');v.setAttribute('role','button');v.setAttribute('aria-label','금액 입력 또는 좌우로 끌어 조절');
