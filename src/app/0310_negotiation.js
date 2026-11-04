@@ -8,13 +8,13 @@ function tfFeeNow(p){const c=clubOf(p.id);const pre=c!==FA&&monthsLeft(p)<=6&&!w
 function tfAgentAsk(p){const f=tfFeeNow(p);const ag=tfAgreed(p.id)||{};if(ag.loan)return Math.round(wageDemand(p,S.club)*.1/1e4)*1e4;return Math.round((f>0?f*.09:wageDemand(p,S.club)*.5)/1e4)*1e4}
 function tfOff(){const O=UI.off;if(!O)return null;if(O.ag==null)O.ag=1;if(O.cl==null)O.cl=2;if(O.lopt==null)O.lopt=0;return O}
 function tfAgentFee(p,O){return Math.round(tfAgentAsk(p)*(O.ag??1)/1e4)*1e4}
-function tfClauseVal(p,lv){return Math.max(1,Math.round(valueNow(p)*TF_CL[lv][0]/1e6))}
+function tfClauseVal(p,lv){const v=valueNow(p)*TF_CL[lv][0]/1e6;return v<2?Math.max(.1,Math.round(v*10)/10):Math.round(v)}/* v289 2백만 유로 미만은 0.1M 단위(K리그 등 저가 선수 최소 1M 고정 방지) */
 // 화면: 개인 조건 단계에 수수료·바이아웃, 구단 단계(임대)에 완전 이적 옵션
 {const _os=offerSheet;offerSheet=function(id,step){const r=_os.apply(this,arguments);try{const O=tfOff();if(!O||O.id!==id)return r;const p=pl(id);
   const bt=document.querySelector('[data-act="sendTerms"]');
   if(bt){const ask=tfAgentAsk(p);const ag=tfAgreed(id)||{};
     const h=`<div class="lbl">에이전트 수수료 <span style="font-weight:400">(요구 ${money(ask)}${tfFeeNow(p)>0?' · 이적료의 9%':ag.loan?'':' · 계약금 포함'})</span></div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${[['.6',TF_AG[.6]],['1',TF_AG[1]],['1.4',TF_AG[1.4]]].map(([k,v])=>`<button data-tfo="ag" data-v="${k}" aria-pressed="${+k===O.ag}">${v[1]} ${money(ask*k)}</button>`).join('')}</div>
-      ${ag.loan?'':`<div class="lbl">바이아웃 조항</div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${Object.entries(TF_CL).map(([k,v])=>`<button data-tfo="cl" data-v="${k}" aria-pressed="${+k===O.cl}">${v[2]} €${tfClauseVal(p,+k)}M</button>`).join('')}</div>`}
+      ${ag.loan?'':`<div class="lbl">바이아웃 조항</div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${Object.entries(TF_CL).map(([k,v])=>`<button data-tfo="cl" data-v="${k}" aria-pressed="${+k===O.cl}">${v[2]} ${mM(tfClauseVal(p,+k))}</button>`).join('')}</div>`}
       <p class="note">수수료를 낮게 주면 선수 측 연봉 요구가 약 8% 오르고, 넉넉히 주면 약 5% 내려갑니다. 바이아웃을 높게 걸면 다른 구단이 빼 가기 어렵지만 연봉 요구가 약 6% 오릅니다. 수수료는 영입 때 이적 예산에서 바로 나갑니다.</p>`;
     bt.insertAdjacentHTML('beforebegin',h)}
   const bo=document.querySelector('[data-act="sendOffer"]');
@@ -70,7 +70,7 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 {const _os2=offerSheet;offerSheet=function(id,step){const pre=(S.pre||[]).find(x=>x.id===id);if(pre){const p=pl(id);sheet(`<button class="x" data-close>닫기</button><div class="note" style="margin:0">사전 계약 완료</div><h3>${esc(p.name)}</h3><p class="note">7월 1일에 자유계약으로 합류합니다 · 연봉 ${money(pre.wage)} · ${pre.cEnd.slice(0,4)}년 6월까지. 추가 제안은 필요 없습니다.</p>`);return}return _os2.apply(this,arguments)}}
 // ---- 재계약 바이아웃(v91): 재계약 창에서도 바이아웃 수준 선택(연봉 요구 ×0.97/×1/×1.06) ----
 {const _rs3=renewSheet;renewSheet=function(id){const R0=UI.ren;const r=_rs3.apply(this,arguments);try{const R=UI.ren;if(!R||R.id!==id)return r;if(R._w!=null){R.wage=R._w;R._w=null}if(R.cl==null)R.cl=2;const p=pl(id);
-  const b=document.querySelector('[data-act="sendRenew"]');if(b){b.insertAdjacentHTML('beforebegin',`<div class="lbl">바이아웃 조항 <span style="font-weight:400">(현재 ${p.clause?'€'+p.clause+'M':'없음'})</span></div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${Object.entries(TF_CL).map(([k,v])=>`<button data-rcl="${k}" aria-pressed="${+k===R.cl}">${v[2]} €${tfClauseVal(p,+k)}M</button>`).join('')}</div><p class="note">높게 걸수록 다른 구단이 빼 가기 어렵지만 선수 측 연봉 요구가 오릅니다(낮음 −3%, 높음 +6%).</p>`)}}catch(e){console.error(e)}return r}}
+  const b=document.querySelector('[data-act="sendRenew"]');if(b){b.insertAdjacentHTML('beforebegin',`<div class="lbl">바이아웃 조항 <span style="font-weight:400">(현재 ${p.clause?mM(p.clause):'없음'})</span></div><div class="seg" style="grid-template-columns:repeat(3,1fr)">${Object.entries(TF_CL).map(([k,v])=>`<button data-rcl="${k}" aria-pressed="${+k===R.cl}">${v[2]} ${mM(tfClauseVal(p,+k))}</button>`).join('')}</div><p class="note">높게 걸수록 다른 구단이 빼 가기 어렵지만 선수 측 연봉 요구가 오릅니다(낮음 −3%, 높음 +6%).</p>`)}}catch(e){console.error(e)}return r}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-rcl]');if(!b||!UI.ren)return;e.stopPropagation();e.preventDefault();UI.ren.cl=+b.dataset.rcl;UI.ren.resp=null;renewSheet(UI.ren.id)},true);
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-act="sendRenew"]');if(!b||!UI.ren)return;const R=UI.ren;const m=(TF_CL[R.cl||2]||TF_CL[2])[1];R._w=R.wage;R._cl=R.cl||2;R.wage=Math.round(R.wage/m);
   setTimeout(()=>{try{if(R._w!=null){R.wage=R._w;R._w=null}if(R.resp&&R.resp.k==='ok'&&!R.clSet){R.clSet=1;const p=pl(R.id);setP(R.id,{wage:R.wage,clause:tfClauseVal(p,R._cl)});save()}}catch(err){}},0)},true);
