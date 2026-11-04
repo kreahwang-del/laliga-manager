@@ -9,7 +9,7 @@ document.addEventListener('click',e=>{
   if(d.sq){UI.sq=d.sq;render();return}
   if(d.tt){UI.tt=d.tt;UI.lim=40;render();return}
   if(d.lt){UI.lt=d.lt;render();return}
-  if(d.f){UI.f[d.f]=d.v;UI.lim=40;render();return}
+  if(d.f){if(d.f==='lg'&&d.v!=='ALL'){const L=(UI.f.lg&&UI.f.lg!=='ALL'?String(UI.f.lg).split(','):[]).filter(Boolean);const i=L.indexOf(d.v);if(i>=0)L.splice(i,1);else L.push(d.v);UI.f.lg=L.length?L.join(','):'ALL'}/* v290 리그 여러 개 선택 */else{UI.f[d.f]=d.v;if(d.f==='sort')UI.f.sdir=null}UI.lim=40;render();return}
   if(d.player){playerSheet(+d.player);return}
   if(d.close!==undefined){closeSheet();return}
   if(suppressClick){suppressClick=false;e.preventDefault();return}
