@@ -6,6 +6,7 @@ const LGS=(process.env.LGS||'ES').split(','),N=+(process.env.N||40);
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1000);
 if(process.env.SAVE)await pg.evaluate(sv=>{window.__SV=sv},fs.readFileSync(process.env.SAVE,'utf8'));
 await pg.evaluate(()=>{if(window.__SV){S=JSON.parse(window.__SV);devLoad();careerLoad();SQC=null}else{UI.mode='club';UI.nm='t';startGame(LIGA[0]);goUnemployed('t',0)}save=()=>{};for(const k in ENGF3)ENGF3[k]=1});
+if(process.env.TX){const rep=await pg.evaluate(([src,tx])=>(new Function('TX',src))(tx),[fs.readFileSync(__dirname+'/../attrfix/tx_page.js','utf8'),JSON.parse(process.env.TX)]);console.log('TX',JSON.stringify(rep))}
 const OV=JSON.parse(process.env.OV||'{}');await pg.evaluate(OV=>{const _c=E4.createMatch;E4.createMatch=(H,A,o)=>_c(H,A,Object.assign({},o,{cfg:Object.assign({},(o&&o.cfg)||{},OV)}))},OV);
 const out={};
 for(const lg of LGS){const r=await pg.evaluate(([lg,N])=>{const C=CLUBS.filter(c=>c&&c.lg===lg&&c.i!==S.club);if(C.length<4)return null;let x=17;Math.random=()=>{x=(x*16807)%2147483647;return x/2147483647};
