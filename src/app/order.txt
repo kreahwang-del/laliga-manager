@@ -88,3 +88,4 @@ app/1006_v292_migrate.js
 app/1007_v293_gobar.js
 app/1008_v293_krname.js
 app/1009_v293_migrate.js
+app/1010_v295_lgfmt.js

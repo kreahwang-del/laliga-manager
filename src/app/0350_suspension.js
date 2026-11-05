@@ -3,7 +3,13 @@
 // 세리에A = 5·10·14·17장 이후 매 장 / UEFA 2026-27 = 4·6·8·10장(이후 2장마다), 8강 종료 후 경고 소멸, 퇴장은 다음 UEFA 경기
 // 리그1은 경고가 리그1+쿠프 드 프랑스 합산. 그 외 국내 컵은 레드만 다음 컵 경기 정지(컵 경고 누적은 별도로 셈하지 않음)
 // 경고 2장 퇴장 = 1경기. 다이렉트 레드 = 1경기 50%·2경기 25%·3경기 25%(EPL 기준: 명백한 득점 기회 저지 1, 폭언 2, 폭력·심한 반칙 3), 분데스리가는 2경기 60%·3경기 40%
-const BAN_R={ES:{every:5},DE:{every:5,red:[[2,.6],[3,.4]]},FR:{every:5,dom:1},IT:{thr:[5,10,14,17],tail:1},EN:{en:1,dom:1},def:{every:5}};
+const BAN_R={ES:{every:5},DE:{every:5,red:[[2,.6],[3,.4]]},FR:{every:5,dom:1},IT:{thr:[5,10,14,17],tail:1},EN:{en:1,dom:1},def:{every:5},
+  /* v295 리그별 규정(사용자 요청 2026-11-05, 웹 검색). 확인: 잉글랜드 2부(EFL: 5장 19번째 리그 경기까지 1경기·10장 37번째까지 2경기·15장 3경기), 브라질(CBF 2026 매 3장 1경기), 튀르키예(4장 1경기),
+     K리그(5장 → 이후 3장 → 이후 2장마다 1경기, 2020~), J리그(4장마다, 첫 번째 1경기·두 번째부터 2경기), 리가 MX(5장), 네덜란드(5·10장 뒤 매 장, 2016 기사), 스위스(4·8·11·15장, 2016 기사).
+     추정(공식 규정 못 찾음): 포르투갈 5·9·12·14장, 스코틀랜드 6장 1경기·12장 2경기, 오스트리아·중국 4장, 세리에B는 세리에A와 같게. 그 밖의 리그(벨기에·덴마크·사우디·MLS·아르헨티나 등)는 5장마다 */
+  EN2:{en:1,dom:1,c1:'11-30',c2:'03-20'},DE2:{every:5,red:[[2,.6],[3,.4]]},FR2:{every:5,dom:1},IT2:{thr:[5,10,14,17],tail:1},
+  BR:{every:3},TR:{every:4},KR:{thr:[5,8],tail:2},JP:{every:4,lens:[1,2]},MX:{every:5},NL:{thr:[5,10],tail:1},CH:{thr:[4,8,11,15],tail:1},
+  PT:{thr:[5,9,12,14],tail:1},SC:{thr:[6,12],tail:3,lens:[1,2]},AT:{every:4},CN:{every:4}};
 const BAN_RED={ES:.22,IT:.25,FR:.22,EN:.12,DE:.15}; // 경기당 레드(VAR 도입 후 시즌 평균, RunRepeat 2009/10~2019/20 분석) — 빠른 계산 경기용
 const BAN_Y=2.2; // 빠른 계산 경기 팀당 경고 평균(유럽 주요 리그 경기당 약 4~5장)
 function banRule(c){const lg=CLUBS[c]&&CLUBS[c].lg;return BAN_R[lg]||BAN_R.def}
@@ -18,8 +24,11 @@ function banAdd(id,k,n,why){const q=S.ps[id]=S.ps[id]||{};q.bn=q.bn||{};q.bn[k]=
 function banServe(c,sc){for(const id of (SQC&&SQC[c])||[]){const q=S.ps[id];if(!q||!q.bn)continue;const b=q.bn;
   if(sc==='eu'){if(b.eu>0)b.eu--}else if(sc==='cup'){if(b.cup>0)b.cup--;else if(b.dom>0)b.dom--}else{if(b.lg>0)b.lg--;else if(b.dom>0)b.dom--}
   if(!(b.lg>0||b.cup>0||b.dom>0||b.eu>0))delete q.bn}}
-function banYThr(R,n,sc){if(sc==='eu')return n>=4&&n%2===0?1:0;if(R.en){const d=S.date,y=S.season;if(n===5&&d<`${y+1}-01-01`)return 1;if(n===10&&d<`${y+1}-04-14`)return 2;if(n===15)return 3;return 0}
-  if(R.thr)return R.thr.includes(n)||(R.tail&&n>R.thr[R.thr.length-1])?1:0;return n%R.every===0?1:0}
+function banYThr(R,n,sc){if(sc==='eu')return n>=4&&n%2===0?1:0;if(R.en){const d=S.date,y=S.season;if(n===5&&d<(R.c1?`${y}-${R.c1}`:`${y+1}-01-01`))return 1;if(n===10&&d<(R.c2?`${y+1}-${R.c2}`:`${y+1}-04-14`))return 2;if(n===15)return 3;return 0}
+  let k=-1;/* 몇 번째 징계인지(ban 길이 lens용) */
+  if(R.thr){const L=R.thr[R.thr.length-1];const i=R.thr.indexOf(n);if(i>=0)k=i;else if(R.tail&&n>L&&(n-L)%R.tail===0)k=R.thr.length+(n-L)/R.tail-1}
+  else if(n%R.every===0)k=n/R.every-1;
+  if(k<0)return 0;return R.lens?R.lens[Math.min(k,R.lens.length-1)]:1}
 function banRedLen(R,u){const L=R.red||[[1,.5],[2,.25],[3,.25]];let a=0;for(const [n,w] of L){a+=w;if(u<a)return n}return L[L.length-1][0]}
 // cards: [{pid,y,r}] (y=경고 수, r=퇴장 여부) — sc: lg/cup/eu, f: 경기(UEFA 4강 이후 경고 소멸 판단용)
 function banProc(sc,clubs,cards,f){try{clubs.forEach(c=>banServe(c,sc));
