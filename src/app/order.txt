@@ -85,3 +85,4 @@ app/1003_v286_dna.js
 app/1004_v287_lastseason.js
 app/1005_v290_migrate.js
 app/1006_v292_migrate.js
+app/1007_v293_gobar.js
