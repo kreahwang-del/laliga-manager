@@ -98,7 +98,7 @@ function divOtherDone(){if(!LIGA2.length||!S.fixO||!S.fixO.length)return true;re
 // ---- 시즌 말 승강 ----
 function legs2(h,a){const f1={d:S.date,h,a,dv:2},f2={d:addD(S.date,3),h:a,a:h,dv:2};fastMatch(f1);fastMatch(f2);const gh=f1.res.sc[0]+f2.res.sc[1],ga=f1.res.sc[1]+f2.res.sc[0];
   return {w:gh>ga?h:gh<ga?a:(hsh(h+':'+a+S.season)<.5?h:a),sc:`${f1.res.sc[0]}-${f1.res.sc[1]}, ${f2.res.sc[1]}-${f2.res.sc[0]}`}}
-const isB=c=>/ B$|\(B\)/.test(CLUBS[c].name);
+const isB=c=>!!CLUBS[c]&&(/ B$|\(B\)/.test(CLUBS[c].name)||CLUBS[c].par!=null);/* v296 이름에 B가 없는 2군(Real Madrid Castilla 등, par = 1군)도 B팀 — 3시즌 시뮬에서 카스티야가 1부까지 승격(실제 규정상 불가) */
 function promoteRelegate(){const t1=tableOf(1),t2a=tableOf(2);if(t2a.length<6||!t2a.some(t=>t.p>0))return;const t2=t2a.filter(t=>!isB(t.id)); /* B팀(리저브)은 승격 불가 — 실제 규정 */
   const down=t1.slice(-3).map(t=>t.id),up=[t2[0].id,t2[1].id];const s1=legs2(t2[5].id,t2[2].id),s2=legs2(t2[4].id,t2[3].id);const fin=legs2(s2.w,s1.w);up.push(fin.w);
   const po=`플레이오프: ${CLUBS[t2[2].id].short}–${CLUBS[t2[5].id].short} ${s1.sc} · ${CLUBS[t2[3].id].short}–${CLUBS[t2[4].id].short} ${s2.sc} → 결승 ${CLUBS[s1.w].short}–${CLUBS[s2.w].short} ${fin.sc}`;
