@@ -7,7 +7,3 @@
  addEventListener('touchmove',e=>{try{if(ty==null||!e.touches||!e.touches[0])return;const y=e.touches[0].clientY,dy=ty-y;ty=y;const end=innerHeight+scrollY>=document.documentElement.scrollHeight-24;if(end||scrollY<40){set(false);acc=0;return}acc=(acc>0)===(dy>0)?acc+dy:dy;if(acc>24)set(true);else if(acc<-12)set(false)}catch(err){}},{passive:true});
  addEventListener('scroll',()=>{try{const g=document.querySelector('.go');if(g)hid=g.classList.contains('gohide')}catch(e){}},{passive:true});
  const _r=render;render=function(){const r=_r.apply(this,arguments);try{if(hid&&scrollY>=40){const g=document.querySelector('.go');if(g)g.classList.add('gohide')}}catch(e){}return r}}
-/* v293 2D 경기 끊김(사용자 지적: 디자인 개편 v276 이후): 폰 성능 4배 낮춘 측정에서 경기 화면 37fps(느린 프레임 95% 50ms)
-   원인: 본문 배경 줄무늬 고정(background-attachment:fixed)·그림자 필터(drop-shadow)·사선 자르기(clip-path, 점수판·시계·버튼)가 매 프레임 다시 그려짐
-   → 배경 고정 해제(전체), 경기 화면에서만 필터·사선 자르기 끔 → 58fps(느린 프레임 95% 16.8ms) */
-{const st=document.createElement('style');st.textContent='body{background-attachment:scroll!important}body:has(#match){background-image:none!important}#match *{filter:none!important;clip-path:none!important}';document.head.appendChild(st)}
