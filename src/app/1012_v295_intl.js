@@ -19,7 +19,12 @@ function monNear(s){const d=new Date(s+'T00:00:00Z');const w=d.getUTCDay();const
 function intlWins(y){if(INTL_T[y])return INTL_T[y];const a=monNear(`${y}-09-21`),b=monNear(`${y}-11-10`),c=monNear(`${y+1}-03-21`);return [[a,addD(a,15)],[b,addD(b,8)],[c,addD(c,8)]]}
 function intlTours(y){return INTL_TOUR[y]||[]}
 // 리그 일정: A매치 기간의 주말을 뺌(기존: 10/11·11/15·3/28 고정)
-{const _ld=leagueDates;leagueDates=function(y){try{const W=intlWins(y);let d=`${y}-08-16`;const out=[];let g=0;while(out.length<38&&g++<80){if(!W.some(([a,b])=>d>=a&&d<=b))out.push(d);d=addD(d,7)}return out}catch(e){return _ld(y)}}}
+/* v296(새 게임 2시즌째 시즌 종료 지연 수정): 주말만으로는 휴식 주가 늘어 6월 중순까지 밀려 승격 PO·리기야가 6월 30일 안에 못 끝남
+   → 5월 31일까지 주말로 모자라면 A매치 기간 밖 주중(+3일) 라운드를 고르게 넣음(실제 리그와 같은 방식) */
+{const _ld=leagueDates;leagueDates=function(y){try{const W=intlWins(y);const inW=d=>W.some(([a,b])=>d>=a&&d<=b);const end=`${y+1}-05-31`;let d=`${y}-08-16`;{const w=new Date(d+'T00:00:00Z').getUTCDay();if(w)d=addD(d,7-w)}/* 시작을 일요일로(8/16이 월요일인 해는 월요일 라운드가 A매치 기간과 겹쳐 많이 빠짐) */const wk=[];let g=0;
+  while(d<=end&&g++<80){if(!inW(d))wk.push(d);d=addD(d,7)}if(wk.length>=38)return wk.slice(0,38);
+  const need=38-wk.length;const mid=wk.slice(2,-2).map(x=>addD(x,3)).filter(x=>!inW(x)&&!wk.includes(x));const add=[];for(let k=0;k<need&&mid.length;k++)add.push(mid[Math.min(mid.length-1,Math.round((k+.5)*mid.length/need))]);
+  return [...new Set(wk.concat(add))].sort().slice(0,38)}catch(e){return _ld(y)}}}
 // ---- 소집 ----
 function intlPool(){const by={};for(const c of CLUBS){if(!c||c.i===FA||c.i===RET)continue;for(const p of squadOf(c.i)){if(!p.nat||((S.ps[p.id]||{}).injD>0))continue;(by[p.nat]=by[p.nat]||[]).push(p)}}for(const n in by)by[n].sort((a,b)=>b.ovr-a.ovr);return by}
 function intlStr(list){const t=list.slice(0,11);return t.reduce((a,p)=>a+p.ovr,0)/Math.max(1,t.length)}
