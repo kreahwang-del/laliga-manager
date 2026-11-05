@@ -5,7 +5,9 @@
 //   기간은 다음 등록 기간까지 이상·최대 1년, 재임대(임대 중 다시 임대) 금지
 const LN_MAX=6,LN_PER=3;
 function lnExempt(p){return ageOf(p)<=21||(typeof ythOf==='function'&&ythOf(p)===S.club)}
-function lnOut(){const L=[];for(const id in S.ps){const q=S.ps[id];if(q&&q.loanFrom===S.club&&q.club!==S.club)L.push(+id)}return L}
+/* v293 2D 끊김 원인(프로파일): AI 팀 선발(teamFor)마다 전체 선수 기록(S.ps, 진행 세이브 1만 명+)을 훑어 경기 중 백그라운드 경기 준비가 메인 스레드를 막음 → 같은 날짜·1초 안에는 결과 재사용 */
+let LNO_C={k:null,t:0,v:null};
+function lnOut(){const k=S.date+'|'+S.club,now=Date.now();if(LNO_C.v&&LNO_C.k===k&&now-LNO_C.t<1000)return LNO_C.v;const L=[];for(const id in S.ps){const q=S.ps[id];if(q&&q.loanFrom===S.club&&q.club!==S.club)L.push(+id)}LNO_C={k,t:now,v:L};return L}
 function lnCount(to){return lnOut().filter(id=>{const p=pl(id);return !lnExempt(p)&&(to==null||clubOf(id)===to)}).length}
 function lnCountTo(to){return lnOut().filter(id=>clubOf(id)===to).length}
 // 제안 구단은 경기가 실제로 시뮬레이션되는 리그 소속만(출전 시간·성장이 기록되도록)
