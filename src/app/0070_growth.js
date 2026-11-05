@@ -208,7 +208,7 @@ function devSeasonEnd(){const y=S.season+1,mine=S.club,rep={ret:[],myRet:[],yout
     rep.legend.push([p,L.club,L]);if(L.club!==mine)inbox('news','',`${CLUBS[L.club].short} 유스에 '${fam?L.name+'의 '+p.legendRel:'제2의 '+L.name}' 등장`,`${p.name}(${ageOf(p)}세, ${GN[p.g]})가 ${CLUBS[L.club].name} 유스에 입단했습니다.`)});
   // 6) AI 구단 인원 정리(28명 초과 시 방출 → 다음 시즌까지 무소속이면 해외 이적, 20명 미만이면 자유계약 영입). 근거: 5대 리그 → 다른 리그 연 460명 유출
   CLUBS.forEach(c=>{if(c.i===mine)return;const big=LG5.has(c.lg)||c.lg==='ES2'||(typeof OTL!=='undefined'&&OTL.includes(c.lg)),mx=big?28:20,mn=big?20:13;let sq=squadOf(c.i);if(sq.length>mx){sq.sort((a,b)=>(a.ovr-ageAt(a,S.date)*.3)-(b.ovr-ageAt(b,S.date)*.3));sq.slice(0,sq.length-mx).forEach(p=>{if(!p.youth||p.youth.y<y)setP(p.id,{club:FA})})}
-    sq=squadOf(c.i);if(sq.length<mn){const fa=squadOf(FA).sort((a,b)=>b.ovr-a.ovr);fa.slice(0,mn-sq.length).forEach(p=>setP(p.id,{club:c.i,cEnd:`${y+1}-06-30`,faS:0}))}});
+    sq=squadOf(c.i);if(sq.length<mn){const fa=squadOf(FA).filter(p=>typeof aiFAok!=='function'||aiFAok(p,c.i)).sort((a,b)=>b.ovr-a.ovr);fa.slice(0,mn-sq.length).forEach(p=>setP(p.id,{club:c.i,cEnd:`${y+1}-06-30`,faS:0}))}});
   SQC=null;
   // 7) 다음 시즌 기준점
   for(const id in BASE){if(clubOf(+id)===RET)continue;const q=S.ps[id]=S.ps[id]||{};q.shareLast=playShare(pl(+id));q.ovrS=q.ovrF??BASE[id].ovr;q.mins=0;q.starts=0;q.shs=0}

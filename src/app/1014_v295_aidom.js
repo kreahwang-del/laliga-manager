@@ -19,3 +19,7 @@ function mig295y(){if(!S||S.mig295y||!S.gen)return;let n=0;for(const id in S.gen
   const lg=typeof baseLg==='function'?baseLg(C.lg):C.lg;const nat={CN:'CHN',SA:'KSA',MX:'MEX'}[lg];if(nat){p.nat=nat;if(BASE[id])BASE[id].nat=nat;n++}}S.mig295y=1;if(n)SQC=null;return n}
 {const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);try{mig295y()}catch(e){console.error(e)}return r}}
 {const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);try{if(S)S.mig295y=1}catch(e){}return r}}
+// v296 원인 분석(새 게임 2시즌 추적): 이적 관문을 거치지 않는 외국인 유입 3경로 — 시즌 시작 선수단 보충(squadFill, 시즌당 115명)·시즌 말 인원 보충(0070, 20명)·유스 외국 국적(22%, 27명)
+// → 보충은 한도가 차면 자국 선수만(aiFAok), 한도 리그 유스는 외국 국적 5%
+function aiFAok(p,c){if(!sqrOn()||c==null||c<0||c===S.club||!CLUBS[c])return true;const cap=aiCap(c);if(!cap||!isFor(p,c))return true;return forCnt(c)<cap}
+{const _my=makeYouth;makeYouth=function(c,y,o){try{if(sqrOn()&&aiCap(c)&&!(o&&o.nat)){const lg=sqrLg(c);const n0=LG_NAT[lg];if(n0){const id=9000000+(S.genSeq||0)+1;if(hsh(id+':nat5:'+y)>=.05)o=Object.assign({},o||{},{nat:n0})}}}catch(e){}return _my.call(this,c,y,o)}}
