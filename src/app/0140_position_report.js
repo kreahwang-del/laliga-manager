@@ -11,10 +11,13 @@ function traceStats(res,s){const set=new Set();res.ev.forEach(e=>{if(e.tr&&e.tr.
     lane:[0,1,2,3,4].map(()=>({n:0,sh:0,xg:0,g:0}))};
   const goalsBy=new Set(res.ev.filter(e=>e.t==='goal'&&e.s===s&&e.tr).map(e=>e.tr));
   set.forEach(tr=>{o.n++;let lane=null;const st=tr[0]||{};if(st.tr)o.counter++;if(tr.some(x=>x.k==='sp'))o.sp++;
-    const isB=st.k==='start'&&!st.tr&&!st.sec&&!st.sp&&!tr.some(x=>x.k==='long');if(isB)o.build++;
+    /* v295 빌드업 기준 정정(사용자 지적: 다이렉트 팀 빌드업 0/0): 엔진 'long'은 높이 뜬 패스 전체(짧은 띄움 포함)·걷어내기라 공격 중 한 번만 나와도 빌드업에서 빠졌음
+       → 자기 진영 일반 공격 시작 중 첫 패스가 짧은 패스(30m 미만)면 빌드업. 압박에 뺏김은 첫 30m+ 롱볼 이전 구간만 */
+    const isLB=x=>x.k==='long'&&(x.clear||x.d==null||x.d>=30);const fp=tr.find((x,i)=>i>0&&(x.k==='pass'||x.k==='long'));
+    const isB=st.k==='start'&&!st.tr&&!st.sec&&!st.sp&&!!fp&&!isLB(fp);if(isB)o.build++;let inB=isB;
     tr.forEach(x=>{switch(x.k){case 'lane':lane=x.lane;o.lane[lane].n++;break;
-      case 'lost':/* v285 빌드업 중 압박에 뺏김: 압박 차단만 세던 것을 터치 미스·태클·드리블·몸싸움 패배까지(멀리서 패스 차단 intc 제외) */if(isB&&x.how!=='intc')o.pressLost++;if(x.how==='tackle')o.tackleLost++;break;
-      case 'long':o.long++;if(x.won)o.longWon++;break;
+      case 'lost':/* v285 빌드업 중 압박에 뺏김: 압박 차단만 세던 것을 터치 미스·태클·드리블·몸싸움 패배까지(멀리서 패스 차단 intc 제외) */if(inB&&x.how!=='intc')o.pressLost++;if(x.how==='tackle')o.tackleLost++;break;
+      case 'long':if(isLB(x)){inB=false;if(!x.clear){o.long++;if(x.won)o.longWon++}else o.clr=(o.clr||0)+1}break;/* v295 30m+ 롱패스만(짧은 띄움·걷어내기 제외) */
       case 'duel':o.duel++;if(x.win)o.duelWon++;break;
       case 'wall':o.wall++;break;case 'final':o.final++;break;case 'intercept':o.intc++;break;case 'off':o.off++;break;
       case 'cross':o.cross++;break;case 'air':if(x.won)o.airWon++;else o.airLost++;break;case 'claim':o.claim++;break;
@@ -45,9 +48,9 @@ function buildReport(res,me,fx){const o=1-me,T=res.T,st=res.stats,sc=res.sc;
   if(R.matchup<0)N.push(['bad',`성향 상성 열세: 상대 ${R.pre[1]}가 우리 ${R.pre[0]}에 강함`]);
   if(R.sb[0]<=-.25)N.push(['bad',`선수 구성이 ${R.pre[0]}와 잘 안 맞음(적합도 ▼)`]);else if(R.sb[0]>=.25)N.push(['good',`선수 구성이 ${R.pre[0]}와 잘 맞음(적합도 ▲)`]);
   // 빌드업·압박
-  if(my.build>=6){const pr=my.pressLost/my.build;if(pr>=.4){N.push(['bad',`빌드업 ${my.build}회 중 ${my.pressLost}회 압박에 뺏김(${Math.round(pr*100)}%, 평균 약 27%)`]);P.push('상대 압박이 강함 → 패스 길이를 늘리거나(롱볼), 배급 좋은 골키퍼·볼 플레잉 수비수 기용')}
-    else if(pr<=.12&&my.build>=10)N.push(['good',`빌드업 안정: 압박에 뺏김 ${my.pressLost}/${my.build}`])}
-  if(my.long>=5){const w=my.longWon/my.long;if(w<.4){N.push(['bad',`롱볼 공중 경합 ${my.longWon}/${my.long} 승 — 타깃이 밀림`]);P.push('롱볼이 통하지 않음 → 짧은 패스로 전환하거나 공중볼 강한 공격수(타깃맨)')}}
+  if(my.build>=6){const pr=my.pressLost/my.build;if(pr>=.28){/* v295 새 기준 평균 약 13%(ES 실측) */N.push(['bad',`빌드업 ${my.build}회 중 ${my.pressLost}회 압박에 뺏김(${Math.round(pr*100)}%, 평균 약 13%)`]);P.push('상대 압박이 강함 → 패스 길이를 늘리거나(롱볼), 배급 좋은 골키퍼·볼 플레잉 수비수 기용')}
+    else if(pr<=.05&&my.build>=10)N.push(['good',`빌드업 안정: 압박에 뺏김 ${my.pressLost}/${my.build}`])}
+  if(my.long>=5){const w=my.longWon/my.long;if(w<.4){N.push(['bad',`롱패스(30m+) 성공 ${my.longWon}/${my.long} — 타깃이 밀림`]);P.push('롱볼이 통하지 않음 → 짧은 패스로 전환하거나 공중볼 강한 공격수(타깃맨)')}}
   // 돌파
   if(my.duel>=6){const w=my.duelWon/my.duel;if(w>=.6)N.push(['good',`1대1 돌파 ${my.duelWon}/${my.duel} 성공 — 측면·드리블이 먹힘`]);else if(w<=.35){N.push(['bad',`1대1 돌파 ${my.duelWon}/${my.duel} 성공에 그침`]);P.push('돌파가 막힘 → 드리블 자제·연계 위주 지시, 또는 속도 빠른 선수를 상대 느린 수비수 쪽에')}}
   // 마지막 패스
@@ -127,7 +130,7 @@ function reportHTML(R){const H=R.fx.h,A=R.fx.a,me=R.me;const us=me===0?H:A,them=
    <div><span>1대1 돌파 성공</span><b>${my.duelWon}/${my.duel}</b><b>${op.duelWon}/${op.duel}</b></div>
    <div><span>마지막 패스 차단</span><b>${my.intc}/${my.final}</b><b>${op.intc}/${op.final}</b></div>
    <div><span>크로스(경합 승)</span><b>${my.cross}(${my.airWon})</b><b>${op.cross}(${op.airWon})</b></div>
-   <div><span>롱볼 경합 승</span><b>${my.longWon}/${my.long}</b><b>${op.longWon}/${op.long}</b></div>
+   <div><span>롱패스(30m+) 성공</span><b>${my.longWon}/${my.long}</b><b>${op.longWon}/${op.long}</b></div>
    <div><span>2대1 패스 성공</span><b>${my.wall}</b><b>${op.wall}</b></div>
    <div><span>역습</span><b>${my.counter}</b><b>${op.counter}</b></div>
    <div><span>빅찬스(놓침)</span><b>${my.big}(${my.bigMiss})</b><b>${op.big}(${op.bigMiss})</b></div>
