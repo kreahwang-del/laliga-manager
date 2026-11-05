@@ -13,3 +13,5 @@ function krRename(P){try{if(!P||!(P.nat==='KOR'||P.nat==='PRK')||!P.name||P._krn
 const KR_SHORT=window.__KRS={};
 function krShortBuild(){try{for(const id in BASE){const p=BASE[id];krRename(p);if(p&&(p.nat==='KOR'||p.nat==='PRK')&&p.name&&KR_SHORT[p.name]===undefined)KR_SHORT[p.name]=krGiven(p.name)||''}}catch(e){}}
 krShortBuild();{const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);krShortBuild();return r}}
+/* v293 승부처 지시 꺼짐(사용자 질문 "왜 갑자기 꺼진 거지?"): 승부처 팝업의 '이 기능 끄기'가 시간 칩(10초·20초·제한 없음) 바로 옆이라 잘못 눌리기 쉬움 → 한 번 더 눌러야 꺼지게 */
+document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-mo="decoff:1"]');if(!b)return;if(b._arm)return;e.stopPropagation();e.preventDefault();b._arm=1;b.textContent='한 번 더 누르면 끔';b.style.color='var(--bad,#d33)';setTimeout(()=>{if(b.isConnected){b._arm=0;b.textContent='이 기능 끄기';b.style.color=''}},3000)},true);
