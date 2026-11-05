@@ -12,6 +12,7 @@ for(const lg in TX){const t=TX[lg];const C=CLUBS.filter(c=>c&&c.lg===lg).map(c=>
   const vals=Object.values(cm);const lm=vals.reduce((a,b)=>a+b,0)/vals.length;let cut=0,tot=0;
   for(const c in cm){const d=((t.k||1)-1)*(cm[c]-lm);for(const id of byC[c]){const p=BASE[id];tot++;
     for(const k of (p.g==='GK'?GKK:FK)){if(typeof p[k]!=='number')continue;let v=p[k]+d;if(p.g!=='GK'&&t.a){if(ATT.includes(k))v+=t.a;if(DEF.includes(k))v-=t.a}if(v>20||v<1)cut++;p[k]=cl(v)}
+    if(t.gk&&p.g==='GK'){for(const k of GKK)if(typeof p[k]==='number'){const v=p[k]+t.gk;if(v>20)cut++;p[k]=cl(v)}}/* ⑥ GK 능력(gk): 5대 리그 밖 GK는 EA 70% 혼합 과정에서 팀 수준 대비 5대 리그보다 낮게 들어감 */
     if(t.fs&&['ST','W','AM'].includes(p.g)&&typeof p.shoot==='number'){const v=p.shoot+t.fs;if(v>20)cut++;p.shoot=cl(v)}
     if(typeof p.ovr==='number')p.ovr=Math.max(40,Math.min(95,p.ovr+d*4.15))}}
   // ④ 리그 수준(lv): 리그 전원 능력치 +lv(OVR +lv×4.15) — EA 비교로 리그 전체가 낮게 들어간 리그(KR)
