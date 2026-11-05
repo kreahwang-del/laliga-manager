@@ -1,6 +1,6 @@
 // QA v295: 1시즌 완주 + rollover + 저장 왕복. env: HTML, MODE(unemp|KR|MX|save), SV, POST(rollover 후 진행 일수)
 const {chromium}=require('playwright');const fs=require('fs');(async()=>{const b=await chromium.launch();const pg=await b.newPage();const errs=[];
-pg.on('pageerror',e=>errs.push('PE '+e.message.slice(0,200)));pg.on('console',m=>{if(m.type()==='error'&&!/Failed to load resource/.test(m.text()))errs.push('CE '+m.text().slice(0,200))});
+pg.on('pageerror',e=>errs.push('PE '+e.message.slice(0,200)));pg.on('console',m=>{if(m.type()==='error'&&!/Failed to load resource/.test(m.text()))errs.push('CE '+m.text().slice(0,3000))});
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1200);
 if(process.env.SV)await pg.evaluate(t=>{window.__SV=t},fs.readFileSync(process.env.SV,'utf8'));
 const r=await pg.evaluate(async([MODE,POST])=>{const o={mode:MODE,v:typeof APPV!=='undefined'?APPV:null};
@@ -49,4 +49,4 @@ const r=await pg.evaluate(async([MODE,POST])=>{const o={mode:MODE,v:typeof APPV!
   g=0;let dd=0;while(g++<(+POST||60)){step();dd++}o.postDate=S.date;o.postKR=(()=>{const fx=fxOfLg('KR');return fx.filter(f=>f.res).length+'/'+fx.length})();
   o.badPsKeys=Object.keys(S.ps).filter(k=>isNaN(+k)).slice(0,5);
   return o},[process.env.MODE,process.env.POST||'60']);
-console.log(JSON.stringify(r,null,0));console.log('ERRS',errs.length,JSON.stringify(errs.slice(0,8)));await b.close();process.exit(0)})().catch(e=>{console.log('E',e.message);process.exit(1)});
+console.log(JSON.stringify(r,null,0));const grp={};for(const e of errs){const ln=(e.match(/html:(\d+)/g)||[]).map(x=>x.slice(5)).join('>');const k=e.split('\n')[0].slice(0,90)+' @'+ln.slice(0,160);grp[k]=(grp[k]||0)+1}console.log('ERRS',errs.length,JSON.stringify(grp));await b.close();process.exit(0)})().catch(e=>{console.log('E',e.message);process.exit(1)});

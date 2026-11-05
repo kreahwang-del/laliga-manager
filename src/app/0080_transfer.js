@@ -34,7 +34,7 @@ function completeTransfer(id,to,fee,o){
   if(to!==S.club&&S.aiBudget[to]!==undefined)S.aiBudget[to]-=fee;
   S.know[id]=to===S.club?3:S.know[id];
   const big=fee>=2e7||CLUBS[to]?.lg==='ES'||(from>=0&&CLUBS[from]?.lg==='ES');
-  S.news.unshift({d:S.date,t:`${p.name}: ${from===FA?'자유계약':CLUBS[from].name} → ${CLUBS[to].name}${o.loan?' (임대)':''}`,v:fee,big});
+  S.news.unshift({d:S.date,t:`${p.name}: ${from===FA?'자유계약':CLUBS[from].name} → ${to===FA?'계약 해지':CLUBS[to]?CLUBS[to].name:'?'}${o.loan?' (임대)':''}`,v:fee,big});
   S.news=S.news.slice(0,200);
   delete S.negs[id];
 }

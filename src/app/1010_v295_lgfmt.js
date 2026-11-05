@@ -74,7 +74,7 @@ function lfWin(lg,ties,two,final,et){const L=ties[ties.length-1];if(!L.res)retur
   if(w==null){w=lfPen(L);L.pk=1}L.w=w;L.agg=[A,ga,gb,B];return w}
 function lfNews(lg,t,b,big){S.news.unshift({d:S.date,t,b,v:0,big:!!big})}
 function lfChamp(lg,c,what){const st=lfSt(lg);st.ch=st.ch||{};st.ch[what]=c;const home=lg===(S.fxHL||'');lfNews(lg,`${LGN[lg]||lg} ${what} 우승: ${CLUBS[c].name}`,'',home);
-  if(home&&c===S.club&&!(typeof unemp==='function'&&unemp())){S.me&&(S.me.titles=(S.me.titles||0)+1);if(typeof hlPush==='function')hlPush({key:'lf'+lg+what+S.season,pri:7,tone:'good',c,t:`${what} 우승!`,b:LGN[lg]||lg})}}
+  if(home&&c===S.club&&!(typeof unemp==='function'&&unemp())){/* 서포터스 실드·연간표 1위는 시즌 말 최종 순위 1위로 이미 셈(0190) */if(!['서포터스 실드','리그(연간표)'].includes(what))S.me&&(S.me.titles=(S.me.titles||0)+1);if(typeof hlPush==='function')hlPush({key:'lf'+lg+what+S.season,pri:7,tone:'good',c,t:`${what} 우승!`,b:LGN[lg]||lg})}}
 function lfPoTick(lg,st){const C=LGF[lg];const fx=lfFx(lg);if(!fx)return false;let ch=false;
   const stages=C.t==='us'?['P']:['A','C'];
   for(const stg of stages){const lgF=C.t==='us'?fx:fx.filter(f=>f.st===stg);if(!lgF.length||!lgF.every(f=>f.res))continue;const dq=st.dq[stg];const fd=k=>{let d=dq[k]||addD(S.date,4*(k+1));return d<=S.date?addD(S.date,2+3*k):d};
@@ -123,7 +123,7 @@ function lfLabel(f){const C=LGF[f.lgpo];const n=C&&C.t==='us'?['콘퍼런스 8�
   if(fx.w!=null)feed({m:0,t:'sys',txt:fx.w===S.club?'다음 라운드 진출':'탈락'+(fx.seedW?' (합계 동점, 상위 시드 진출)':'')});else if(fx.leg===1)feed({m:0,t:'sys',txt:'1차전 종료 · 2차전에서 승부'});save()}catch(e){console.error(e)}}}
 // 시즌 말 우승 기록: 플레이오프 리그는 플레이오프 우승팀
 {const _ns=newSeason;newSeason=function(y,first){const prev=S&&S.lgf?JSON.parse(JSON.stringify(Object.fromEntries(Object.entries(S.lgf).filter(([k,v])=>v&&v.ch).map(([k,v])=>[k,v.ch])))):{};_ns(y,first);
-  try{const e=S.euroCh&&S.euroCh[S.euroCh.length-1];if(e&&!first)e.ch=e.ch.map(([lg,id])=>{const c=prev[lg];if(!c)return [lg,id];const w=c['MLS컵']??c['클라우수라']??c['리그(연간표)'];return [lg,w!=null?w:id]})}catch(er){console.error(er)}}}
+  try{const e=S.euroCh&&S.euroCh[S.euroCh.length-1];if(e&&!first)e.ch=e.ch.map(([lg,id])=>{const c=prev[lg];if(!c)return [lg,id];const w=c['MLS컵']??c['리그(연간표)']??c['클라우수라'];/* QA 지적: 아르헨티나는 연간표 1위가 리그 우승 */return [lg,w!=null?w:id]})}catch(er){console.error(er)}}}
 // ---- 화면 ----
 function lfTblHtml(rows,cut){return `<div class="tbl-wrap"><table><thead><tr><th>#</th><th style="text-align:left">구단</th><th>경기</th><th>득실</th><th>승점</th></tr></thead><tbody>${rows.map((r,i)=>`<tr${cut&&i===cut-1?' style="border-bottom:2px solid var(--line)"':''}><td>${i+1}</td><td class="t">${esc(CLUBS[r.id].name)}</td><td>${r.p}</td><td>${r.gf-r.ga>0?'+':''}${r.gf-r.ga}</td><td class="pts">${r.pts}</td></tr>`).join('')}</tbody></table></div>`}
 function lfPoHtml(st,stg){const C=LGF[st.lg];const rows=[];const nR=C.t==='mx'?3:4;for(let rd=0;rd<nR;rd++){const ties=lfTies(st,stg,rd);if(!ties.length)break;rows.push(`<div class="li note"><b>${lfLabel(Object.assign({},ties[0][0],{leg:0})).replace(/^\S+ (리기야 )?/,'')}</b></div>`);
@@ -137,3 +137,5 @@ function lfView(lg){const st=lfSt(lg),C=LGF[lg];if(!st||!C)return '';let h='';
   if(st.ch)h+=`<div class="note" style="margin-top:6px">우승: ${Object.entries(st.ch).map(([k,v])=>`${k} ${esc(CLUBS[v].short)}`).join(' · ')}</div>`;return h}
 {const _ev=euroView;euroView=function(lg){return _ev(lg)+lfView(lg)}}
 {const _lv=leagueView;leagueView=function(){const h=_lv();try{if(!UI.elg&&LGF[S.fxHL]&&lfSt(S.fxHL)&&(UI.lt||'table')==='table')return h+lfView(S.fxHL)}catch(e){}return h}}
+// QA 지적: 리가MX는 합산표 1위가 우승이 아님 → 시즌 말 순위 1위로 우승 횟수가 오르지 않게(우승은 리기야 결승에서 셈)
+{const _ce=careerSeasonEnd;careerSeasonEnd=function(){const t0=S&&S.me?S.me.titles:null;const r=_ce.apply(this,arguments);try{if(t0!=null&&LGF[S.fxHL]&&LGF[S.fxHL].t==='mx'&&lfSt(S.fxHL)&&S.me.titles===t0+1)S.me.titles=t0}catch(e){}return r}}

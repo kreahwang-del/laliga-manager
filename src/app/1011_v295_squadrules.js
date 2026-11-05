@@ -6,6 +6,8 @@
 //  아르헨티나 계약 6·출전 5는 확인 필요(추정)
 const SQR={KR:{m:5},JP:{m:5},CN:{m:5,h:6},MX:{m:7,h:9},BR:{m:9},AR:{m:5,h:6},SA:{h:10},TR:{h:14}};
 const SQMAX=30;/* 1군 최대 인원(선수 사재기 방지) */
+/* QA 지적: 경기 날만 끄는 식의 공략 방지 → 시즌 첫 리그 경기 전(또는 무소속)에만 바꿀 수 있음 */
+function sqrCanToggle(){try{return (typeof unemp==='function'&&unemp())||!S.fixtures.some(f=>f.res)}catch(e){return true}}
 function sqrOn(){return !!S&&S.sqr!==false}
 function sqrLg(c){const C=CLUBS[c];if(!C)return null;return typeof baseLg==='function'?baseLg(C.lg):C.lg}
 function sqrRule(c){const lg=sqrLg(c);return lg?SQR[lg]||null:null}
@@ -30,10 +32,11 @@ function sizeOK(p,to){if(!sqrOn()||to==null||to<0||!CLUBS[to]||clubOf(p.id)===to
 function sqrAvail(p,c){return p&&!((S.ps[p.id]||{}).injD>0)&&!(p.ban>0)}
 function sqrRepl(c,out,used){const sq=squadOf(c).filter(q=>!used.has(q.id)&&!isFor(q,c)&&sqrAvail(q,c));const g=out.g,ln=LINE[out.g];
   const pick=f=>sq.filter(f).sort((a,b)=>b.ovr-a.ovr)[0];return pick(q=>q.g===g)||pick(q=>LINE[q.g]===ln)||(g==='GK'?null:pick(q=>q.g!=='GK'))||null}
-function sqrFix(c,xi,bench){const R=sqrRule(c);const sw=[];if(!sqrOn()||!R||!R.m||!xi)return sw;const used=new Set(xi.filter(Boolean).map(p=>p.id).concat((bench||[]).map(p=>p.id)));
+function sqrFix(c,xi,bench){const R=sqrRule(c);const sw=[];if(!sqrOn()||!R||!R.m||!xi)return sw;const used=new Set(xi.filter(Boolean).map(p=>p.id));/* QA 지적: 벤치 자국 선수도 선발 교체 후보로(벤치에서 빼고 올림) */
   let n=xi.filter(p=>p&&isFor(p,c)).length;
   while(n>R.m){let wi=-1;xi.forEach((p,i)=>{if(p&&isFor(p,c)&&(wi<0||p.ovr<xi[wi].ovr))wi=i});if(wi<0)break;const q=sqrRepl(c,xi[wi],used);if(!q)break;sw.push([xi[wi],q]);used.add(q.id);xi[wi]=q;n--;
     if(bench){const bi=bench.findIndex(b=>b.id===q.id);if(bi>=0)bench.splice(bi,1)}}
+  if(bench)bench.forEach(b=>used.add(b.id));
   if(bench){let left=Math.max(0,R.m-n);for(let i=0;i<bench.length;i++){if(!isFor(bench[i],c))continue;if(left>0){left--;continue}const q=squadOf(c).filter(x=>!used.has(x.id)&&!isFor(x,c)&&sqrAvail(x,c)).sort((a,b)=>b.ovr-a.ovr)[0];
     if(q){used.add(q.id);bench[i]=q}else{bench.splice(i,1);i--}}}
   return sw}
@@ -50,8 +53,8 @@ function sqrRuleTxt(c){const R=sqrRule(c);const a=[];if(R&&R.m)a.push(`경기 �
   const box=`<div class="card pad" style="margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="note" style="margin:0;flex:1;min-width:160px">${esc(LGN[sqrLg(S.club)]||'리그')} 규정: ${sqrRuleTxt(S.club)}</span>${k?`<b class="num" style="color:${k.n>k.m?'var(--bad)':'var(--text)'}">선발 외국인 ${k.n}/${k.m}</b>${k.n>k.m?'<button class="chip" data-sqrfix="1">자동 맞춤</button>':''}`:''}${R&&R.h?`<span class="note" style="margin:0">보유 ${forCnt(S.club)}/${R.h}</span>`:''}</div>`;
   return box+h}catch(e){return h}}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-sqrfix],[data-sqron]');if(!b)return;e.preventDefault();e.stopPropagation();
-  if(b.dataset.sqrfix){sqrAutoFix(false);save();render();return}S.sqr=S.sqr===false?true:false;save();render();toast(S.sqr!==false?'현실 선수단 규정을 켰습니다(AI 구단 포함)':'현실 선수단 규정을 껐습니다(AI 구단 포함)')},true);
-{const _cv=careerView;careerView=function(){let h=_cv();try{h+=`<h2>현실 선수단 규정</h2><div class="card pad"><p class="note" style="margin:0 0 8px">리그별 외국인 출전·보유 한도와 1군 최대 인원(${SQMAX}명). 영입 전에 막고, 경기 전에는 선발을 자동으로 맞춥니다. AI 구단에도 똑같이 적용됩니다. 처음 선수단은 그대로 인정합니다.</p><button class="chip" data-sqron="1" aria-pressed="${S.sqr!==false}">${S.sqr!==false?'켜짐':'꺼짐'}</button></div>`}catch(e){}return h}}
+  if(b.dataset.sqrfix){sqrAutoFix(false);save();render();return}if(!sqrCanToggle()){toast('규정 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다');return}S.sqr=S.sqr===false?true:false;save();render();toast(S.sqr!==false?'현실 선수단 규정을 켰습니다(AI 구단 포함)':'현실 선수단 규정을 껐습니다(AI 구단 포함)')},true);
+{const _cv=careerView;careerView=function(){let h=_cv();try{h+=`<h2>현실 선수단 규정</h2><div class="card pad"><p class="note" style="margin:0 0 8px">리그별 외국인 출전·보유 한도와 1군 최대 인원(${SQMAX}명). 영입 전에 막고, 경기 전에는 선발을 자동으로 맞춥니다. AI 구단에도 똑같이 적용됩니다. 처음 선수단은 그대로 인정합니다. 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다.</p><button class="chip" data-sqron="1" aria-pressed="${S.sqr!==false}">${S.sqr!==false?'켜짐':'꺼짐'}</button></div>`}catch(e){}return h}}
 // 리그 규정 안내: 그 리그 구단을 처음 맡았을 때 한 번
 function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);if(!lg)return;S.sqrSeen=S.sqrSeen||{};if(S.sqrSeen[lg])return;S.sqrSeen[lg]=1;
   inbox('news','',`${LGN[lg]||lg} 선수단 규정`,`${sqrRuleTxt(S.club)}. 전술 탭 위에서 현재 인원을 볼 수 있고, 넘으면 경기 전에 자동으로 맞춥니다. 감독 탭에서 끌 수 있습니다.`)}catch(e){}}
