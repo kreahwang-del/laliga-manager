@@ -27,5 +27,9 @@ function aiFAok(p,c){if(!sqrOn()||c==null||c<0||c===S.club||!CLUBS[c])return tru
 // 이적시장 기간에 하루 1명씩 24세 이상 가장 약한 선수(임대 온 선수 제외)와 계약 해지. 유망주는 남김
 function aiSqTrimDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiSqD===S.date)return;S.aiSqD=S.date;
   for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;if(sqSize(C.i)<=SQMAX)continue;
-    try{const w=squadOf(C.i).filter(p=>!p.loanFrom&&ageOf(p)>=24).sort((a,b)=>a.ovr-b.ovr)[0];if(w)completeTransfer(w.id,FA,0,{wage:w.wage})}catch(e){console.error(e)}}}
+    try{const sq=squadOf(C.i).filter(p=>!p.loanFrom);const old=sq.filter(p=>ageOf(p)>=24).sort((a,b)=>a.ovr-b.ovr);const young=sq.filter(p=>ageOf(p)<24).sort((a,b)=>a.ovr-b.ovr);
+      /* 24세 이상 하위권(팀 내 22위 밖)은 해지, 아니면 가장 약한 유망주를 하위 구단으로 임대(빅클럽 방식) */const rk=sq.slice().sort((a,b)=>b.ovr-a.ovr);const w=old.find(p=>rk.indexOf(p)>=22);
+      if(w){completeTransfer(w.id,FA,0,{wage:w.wage});continue}const y=young[0];if(!y)continue;
+      const to=CLUBS.find(b=>b&&b.i!==C.i&&b.i!==S.club&&b.i!==FA&&b.i!==RET&&S.aiBudget[b.i]!==undefined&&b.par==null&&(b.rep||0)<(C.rep||0)&&(b.rep||0)>=(C.rep||0)-30&&sqSize(b.i)<26&&quotaOK(y,b.i,true));
+      if(to){completeTransfer(y.id,to.i,0,{loan:true});const q=S.ps[y.id];if(q){q.lnRole=1;q.res=false;(S.aiLn=S.aiLn||[]).push(y.id)}}else completeTransfer(y.id,FA,0,{wage:y.wage})}catch(e){console.error(e)}}}
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{aiSqTrimDay()}catch(e){console.error(e)}return r}}
