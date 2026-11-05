@@ -2367,7 +2367,7 @@ function devSeasonEnd(){const y=S.season+1,mine=S.club,rep={ret:[],myRet:[],yout
     rep.legend.push([p,L.club,L]);if(L.club!==mine)inbox('news','',`${CLUBS[L.club].short} 유스에 '${fam?L.name+'의 '+p.legendRel:'제2의 '+L.name}' 등장`,`${p.name}(${ageOf(p)}세, ${GN[p.g]})가 ${CLUBS[L.club].name} 유스에 입단했습니다.`)});
   // 6) AI 구단 인원 정리(28명 초과 시 방출 → 다음 시즌까지 무소속이면 해외 이적, 20명 미만이면 자유계약 영입). 근거: 5대 리그 → 다른 리그 연 460명 유출
   CLUBS.forEach(c=>{if(c.i===mine)return;const big=LG5.has(c.lg)||c.lg==='ES2'||(typeof OTL!=='undefined'&&OTL.includes(c.lg)),mx=big?28:20,mn=big?20:13;let sq=squadOf(c.i);if(sq.length>mx){sq.sort((a,b)=>(a.ovr-ageAt(a,S.date)*.3)-(b.ovr-ageAt(b,S.date)*.3));sq.slice(0,sq.length-mx).forEach(p=>{if(!p.youth||p.youth.y<y)setP(p.id,{club:FA})})}
-    sq=squadOf(c.i);if(sq.length<mn){const fa=squadOf(FA).sort((a,b)=>b.ovr-a.ovr);fa.slice(0,mn-sq.length).forEach(p=>setP(p.id,{club:c.i,cEnd:`${y+1}-06-30`,faS:0}))}});
+    sq=squadOf(c.i);if(sq.length<mn){const fa=squadOf(FA).filter(p=>typeof aiFAok!=='function'||aiFAok(p,c.i)).sort((a,b)=>b.ovr-a.ovr);fa.slice(0,mn-sq.length).forEach(p=>setP(p.id,{club:c.i,cEnd:`${y+1}-06-30`,faS:0}))}});
   SQC=null;
   // 7) 다음 시즌 기준점
   for(const id in BASE){if(clubOf(+id)===RET)continue;const q=S.ps[id]=S.ps[id]||{};q.shareLast=playShare(pl(+id));q.ovrS=q.ovrF??BASE[id].ovr;q.mins=0;q.starts=0;q.shs=0}
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=295;
+const APPV=296;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -4313,7 +4313,7 @@ function divOtherDone(){if(!LIGA2.length||!S.fixO||!S.fixO.length)return true;re
 // ---- 시즌 말 승강 ----
 function legs2(h,a){const f1={d:S.date,h,a,dv:2},f2={d:addD(S.date,3),h:a,a:h,dv:2};fastMatch(f1);fastMatch(f2);const gh=f1.res.sc[0]+f2.res.sc[1],ga=f1.res.sc[1]+f2.res.sc[0];
   return {w:gh>ga?h:gh<ga?a:(hsh(h+':'+a+S.season)<.5?h:a),sc:`${f1.res.sc[0]}-${f1.res.sc[1]}, ${f2.res.sc[1]}-${f2.res.sc[0]}`}}
-const isB=c=>/ B$|\(B\)/.test(CLUBS[c].name);
+const isB=c=>!!CLUBS[c]&&(/ B$|\(B\)/.test(CLUBS[c].name)||CLUBS[c].par!=null);/* v296 이름에 B가 없는 2군(Real Madrid Castilla 등, par = 1군)도 B팀 — 3시즌 시뮬에서 카스티야가 1부까지 승격(실제 규정상 불가) */
 function promoteRelegate(){const t1=tableOf(1),t2a=tableOf(2);if(t2a.length<6||!t2a.some(t=>t.p>0))return;const t2=t2a.filter(t=>!isB(t.id)); /* B팀(리저브)은 승격 불가 — 실제 규정 */
   const down=t1.slice(-3).map(t=>t.id),up=[t2[0].id,t2[1].id];const s1=legs2(t2[5].id,t2[2].id),s2=legs2(t2[4].id,t2[3].id);const fin=legs2(s2.w,s1.w);up.push(fin.w);
   const po=`플레이오프: ${CLUBS[t2[2].id].short}–${CLUBS[t2[5].id].short} ${s1.sc} · ${CLUBS[t2[3].id].short}–${CLUBS[t2[4].id].short} ${s2.sc} → 결승 ${CLUBS[s1.w].short}–${CLUBS[s2.w].short} ${fin.sc}`;
@@ -4334,8 +4334,8 @@ function promoteRelegate(){const t1=tableOf(1),t2a=tableOf(2);if(t2a.length<6||!
 function squadFill(c,y){if(c===S.club)return;let sq=squadOf(c);const lvl=(()=>{const s=sq.slice().sort((a,b)=>b.ovr-a.ovr).slice(0,16);return s.length?s.reduce((a,p)=>a+p.ovr,0)/s.length:72})();
   const need=g=>g==='GK'?2-sq.filter(p=>p.g==='GK').length:0;let k=0;
   const sign=p=>{setP(p.id,{club:c,cEnd:`${y+2}-06-30`,faS:0});SQC=null;sq=squadOf(c)};
-  for(let n=need('GK');n>0;n--){const fa=squadOf(FA).filter(p=>p.g==='GK'&&p.ovr<=lvl+2).sort((a,b)=>b.ovr-a.ovr)[0];if(fa)sign(fa);else{const p=makeYouth(c,y,{g:'GK',age:24+Math.floor(hsh(c+'gk'+y+n)*8),ovrSet:Math.round(lvl-3),pa:Math.round(lvl),grade:'C'});delete p.youth;p.cEnd=`${y+2}-06-30`;sq=squadOf(c)}}
-  const G2=['CB','FB','CM','W','ST','DM','AM','CB','FB','CM'];while(sq.length<20&&k<30){const g=G2[k%G2.length];k++;const fa=squadOf(FA).filter(p=>p.g===g&&p.ovr<=lvl+2&&p.ovr>=lvl-10).sort((a,b)=>b.ovr-a.ovr)[0];
+  for(let n=need('GK');n>0;n--){const fa=squadOf(FA).filter(p=>p.g==='GK'&&p.ovr<=lvl+2&&(typeof aiFAok!=='function'||aiFAok(p,c))).sort((a,b)=>b.ovr-a.ovr)[0];if(fa)sign(fa);else{const p=makeYouth(c,y,{g:'GK',age:24+Math.floor(hsh(c+'gk'+y+n)*8),ovrSet:Math.round(lvl-3),pa:Math.round(lvl),grade:'C'});delete p.youth;p.cEnd=`${y+2}-06-30`;sq=squadOf(c)}}
+  const G2=['CB','FB','CM','W','ST','DM','AM','CB','FB','CM'];while(sq.length<20&&k<30){const g=G2[k%G2.length];k++;const fa=squadOf(FA).filter(p=>p.g===g&&p.ovr<=lvl+2&&p.ovr>=lvl-10&&(typeof aiFAok!=='function'||aiFAok(p,c))/* v296 외국인 한도 리그는 한도가 차면 자국 선수만 */).sort((a,b)=>b.ovr-a.ovr)[0];
     if(fa)sign(fa);else{const p=makeYouth(c,y,{g,age:22+Math.floor(hsh(c+g+y+k)*10),ovrSet:Math.round(lvl-3+hsh(c+'o'+y+k)*3),pa:Math.round(lvl+1),grade:'C'});delete p.youth;p.cEnd=`${y+2}-06-30`;SQC=null;sq=squadOf(c)}}}
 {const _ns=newSeason;newSeason=function(y,first){if(!first&&(S.fxHL||'ES')==='ES'&&LIGA2.length&&S.fixO)promoteRelegate();if(!first||hl()!=='ES')setHomeLeague(hl());_ns(y,first);if(hl()!=='ES')S.fixtures=euroFixtures(hl(),y).map(f=>{delete f.lg;return f});S.fxHL=hl();S.fxHL2=hl2();if(LIGA2.length){[...LIGA,...LIGA2].forEach(c=>{try{squadFill(c,y)}catch(e){console.error(e)}});const f1=S.fixtures,f2=div2Fixtures(y);divAssign(f1,f2);LIGA2.forEach(c=>{if(S.aiBudget&&S.aiBudget[c]==null)S.aiBudget[c]=CLUBS[c].budget*1e6})}}}
 {const _sg=startGame;startGame=function(club){_sg(club);genDiv2();const f1=S.myDiv===2?S.fixO:S.fixtures;divAssign(f1,div2Fixtures(S.season));if(typeof careerSeasonStart==='function'&&S.mg)careerSeasonStart();save();render()}}
@@ -8437,7 +8437,12 @@ function monNear(s){const d=new Date(s+'T00:00:00Z');const w=d.getUTCDay();const
 function intlWins(y){if(INTL_T[y])return INTL_T[y];const a=monNear(`${y}-09-21`),b=monNear(`${y}-11-10`),c=monNear(`${y+1}-03-21`);return [[a,addD(a,15)],[b,addD(b,8)],[c,addD(c,8)]]}
 function intlTours(y){return INTL_TOUR[y]||[]}
 // 리그 일정: A매치 기간의 주말을 뺌(기존: 10/11·11/15·3/28 고정)
-{const _ld=leagueDates;leagueDates=function(y){try{const W=intlWins(y);let d=`${y}-08-16`;const out=[];let g=0;while(out.length<38&&g++<80){if(!W.some(([a,b])=>d>=a&&d<=b))out.push(d);d=addD(d,7)}return out}catch(e){return _ld(y)}}}
+/* v296(새 게임 2시즌째 시즌 종료 지연 수정): 주말만으로는 휴식 주가 늘어 6월 중순까지 밀려 승격 PO·리기야가 6월 30일 안에 못 끝남
+   → 5월 31일까지 주말로 모자라면 A매치 기간 밖 주중(+3일) 라운드를 고르게 넣음(실제 리그와 같은 방식) */
+{const _ld=leagueDates;leagueDates=function(y){try{const W=intlWins(y);const inW=d=>W.some(([a,b])=>d>=a&&d<=b);const end=`${y+1}-05-31`;let d=`${y}-08-16`;{const w=new Date(d+'T00:00:00Z').getUTCDay();if(w)d=addD(d,7-w)}/* 시작을 일요일로(8/16이 월요일인 해는 월요일 라운드가 A매치 기간과 겹쳐 많이 빠짐) */const wk=[];let g=0;
+  while(d<=end&&g++<80){if(!inW(d))wk.push(d);d=addD(d,7)}if(wk.length>=38)return wk.slice(0,38);
+  const need=38-wk.length;const mid=wk.slice(2,-2).map(x=>addD(x,3)).filter(x=>!inW(x)&&!wk.includes(x));const add=[];for(let k=0;k<need&&mid.length;k++)add.push(mid[Math.min(mid.length-1,Math.round((k+.5)*mid.length/need))]);
+  return [...new Set(wk.concat(add))].sort().slice(0,38)}catch(e){return _ld(y)}}}
 // ---- 소집 ----
 function intlPool(){const by={};for(const c of CLUBS){if(!c||c.i===FA||c.i===RET)continue;for(const p of squadOf(c.i)){if(!p.nat||((S.ps[p.id]||{}).injD>0))continue;(by[p.nat]=by[p.nat]||[]).push(p)}}for(const n in by)by[n].sort((a,b)=>b.ovr-a.ovr);return by}
 function intlStr(list){const t=list.slice(0,11);return t.reduce((a,p)=>a+p.ovr,0)/Math.max(1,t.length)}
@@ -8475,6 +8480,41 @@ function dupNameBuild(){try{const K=window.__KRS;if(!K||!SQC||!S)return;if(DUPN_
   for(const c in SQC){if(+c<0)continue;const L=SQC[c];if(!L||L.length<2)continue;const m={};for(const id of L){const p=BASE[id];if(!p||!p.name)continue;const s=shortName(p.name);(m[s]=m[s]||[]).push(p.name)}
     for(const s in m){const a=[...new Set(m[s])];if(a.length<2)continue;for(const n of a){if(n===s)continue;if(!(n in DUPN))DUPN[n]=K[n]??null;K[n]=n}}}}catch(e){}}
 {const _b=buildSQ;buildSQ=function(){const r=_b.apply(this,arguments);dupNameBuild();return r}}
+// ================= v295 AI 구단 자국 선수 확보(사용자 결정 2026-11-05) =================
+// 문제(사용자 세이브 2028-08): AI가 국적을 보지 않고 영입·방출 → 중국 CHO 30명 중 외국인 28명, 중국 선수 55명 자유계약·77명 은퇴. 중국·사우디·멕시코 유스는 스페인 국적으로 생성(0070 버그, v295에서 수정)
+// ① AI 외국인 보유 한도 = 리그 보유 한도(있으면) 또는 경기 명단 한도+2(K리그·J1 7, 브라질 11). 실제 구단도 못 쓰는 외국인은 사지 않음. 더 나은 외국인이면 영입하고 가장 약한 외국인 해지
+// ② 이미 넘긴 AI 구단은 이적시장 기간에 하루 1명씩 가장 약한 외국인과 계약 해지, 인원이 모자라면 자유계약 자국 선수를 먼저 영입
+// ③ 기존 세이브: 중국·사우디·멕시코 구단이 만든 유스 중 스페인 국적(버그)을 그 나라 국적으로
+function aiCap(c){const R=sqrRule(c);if(!R)return null;return R.h||(R.m?R.m+2:null)}
+{const _q=quotaOK;quotaOK=function(p,to,ai){const isAI=ai??(to!==S.club);if(!isAI||!sqrOn()||to==null||to<0||!CLUBS[to])return _q(p,to,ai);
+  const cap=aiCap(to);if(!cap||!isFor(p,to)||clubOf(p.id)===to)return true;if(forCnt(to,p.id)<cap)return true;const w=sqrWeakFor(to,p.id);return !!w&&p.ovr>=w.ovr+3}}
+{const _ct=completeTransfer;completeTransfer=function(id,to,fee,o){const p=pl(id);const r=_ct.apply(this,arguments);
+  try{if(sqrOn()&&p&&to!==S.club&&to>=0&&CLUBS[to]&&clubOf(id)===to&&isFor(p,to)){const cap=aiCap(to);if(cap&&forCnt(to)>cap){const w=sqrWeakFor(to,id);if(w)_ct(w.id,FA,0,{wage:w.wage})}}}catch(e){console.error(e)}return r}}
+function aiDomDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiDomD===S.date)return;S.aiDomD=S.date;
+  let fa=null;const faDom=c=>{fa=fa||squadOf(FA);const L=LGNAT[sqrLg(c)]||[];return fa.filter(p=>L.includes(p.nat)&&clubOf(p.id)===FA&&ageOf(p)<=33).sort((a,b)=>b.ovr-a.ovr)[0]||null};
+  for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;const cap=aiCap(C.i);if(!cap)continue;if(forCnt(C.i)<=cap)continue;
+    try{if(sqSize(C.i)<=21){const d=faDom(C.i);if(d){completeTransfer(d.id,C.i,0,{wage:d.wage,cEnd:`${S.season+2}-06-30`});fa=null}}
+      if(sqSize(C.i)>=19){const w=sqrWeakFor(C.i);if(w)completeTransfer(w.id,FA,0,{wage:w.wage})}}catch(e){console.error(e)}}}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{aiDomDay()}catch(e){console.error(e)}return r}}
+// ③ 세이브 이전
+function mig295y(){if(!S||S.mig295y||!S.gen)return;let n=0;for(const id in S.gen){const p=S.gen[id];if(!p||p.nat!=='ESP'||!p.youth)continue;const c0=p.youth.c!=null?p.youth.c:p.club;const C=CLUBS[c0];if(!C)continue;
+  const lg=typeof baseLg==='function'?baseLg(C.lg):C.lg;const nat={CN:'CHN',SA:'KSA',MX:'MEX'}[lg];if(nat){p.nat=nat;if(BASE[id])BASE[id].nat=nat;n++}}S.mig295y=1;if(n)SQC=null;return n}
+{const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);try{mig295y()}catch(e){console.error(e)}return r}}
+{const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);try{if(S)S.mig295y=1}catch(e){}return r}}
+// v296 원인 분석(새 게임 2시즌 추적): 이적 관문을 거치지 않는 외국인 유입 3경로 — 시즌 시작 선수단 보충(squadFill, 시즌당 115명)·시즌 말 인원 보충(0070, 20명)·유스 외국 국적(22%, 27명)
+// → 보충은 한도가 차면 자국 선수만(aiFAok), 한도 리그 유스는 외국 국적 5%
+function aiFAok(p,c){if(!sqrOn()||c==null||c<0||c===S.club||!CLUBS[c])return true;const cap=aiCap(c);if(!cap||!isFor(p,c))return true;return forCnt(c)<cap}
+{const _my=makeYouth;makeYouth=function(c,y,o){try{if(sqrOn()&&aiCap(c)&&!(o&&o.nat)){const lg=sqrLg(c);const n0=LG_NAT[lg];if(n0){const id=9000000+(S.genSeq||0)+1;if(hsh(id+':nat5:'+y)>=.05)o=Object.assign({},o||{},{nat:n0})}}}catch(e){}return _my.call(this,c,y,o)}}
+// v296 AI 1군 30명 초과 정리(QA 지적·새 게임 3시즌 검증: 레알 35·바르사 33 — 유스 입단·임대 복귀로 늘고 줄이는 장치가 없음)
+// 이적시장 기간에 하루 1명씩 24세 이상 가장 약한 선수(임대 온 선수 제외)와 계약 해지. 유망주는 남김
+function aiSqTrimDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiSqD===S.date)return;S.aiSqD=S.date;
+  for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;if(sqSize(C.i)<=SQMAX)continue;
+    try{const sq=squadOf(C.i).filter(p=>!p.loanFrom);const old=sq.filter(p=>ageOf(p)>=24).sort((a,b)=>a.ovr-b.ovr);const young=sq.filter(p=>ageOf(p)<24).sort((a,b)=>a.ovr-b.ovr);
+      /* 24세 이상 하위권(팀 내 22위 밖)은 해지, 아니면 가장 약한 유망주를 하위 구단으로 임대(빅클럽 방식) */const rk=sq.slice().sort((a,b)=>b.ovr-a.ovr);const w=old.find(p=>rk.indexOf(p)>=22);
+      if(w){completeTransfer(w.id,FA,0,{wage:w.wage});continue}const y=young[0];if(!y)continue;
+      const to=CLUBS.find(b=>b&&b.i!==C.i&&b.i!==S.club&&b.i!==FA&&b.i!==RET&&S.aiBudget[b.i]!==undefined&&b.par==null&&(b.rep||0)<(C.rep||0)&&(b.rep||0)>=(C.rep||0)-30&&sqSize(b.i)<26&&quotaOK(y,b.i,true));
+      if(to){completeTransfer(y.id,to.i,0,{loan:true});const q=S.ps[y.id];if(q){q.lnRole=1;q.res=false;(S.aiLn=S.aiLn||[]).push(y.id)}}else completeTransfer(y.id,FA,0,{wage:y.wage})}catch(e){console.error(e)}}}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{aiSqTrimDay()}catch(e){console.error(e)}return r}}
 </script>
 <script type="text/x-three" id="threeSrc">void 0,
 /**
