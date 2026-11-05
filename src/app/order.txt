@@ -91,3 +91,4 @@ app/1009_v293_migrate.js
 app/1010_v295_lgfmt.js
 app/1011_v295_squadrules.js
 app/1012_v295_intl.js
+app/1013_v295_dupname.js
