@@ -33,11 +33,12 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
     if(o.lopt===1&&rk<=8&&!(ageOf(p)<=24&&rk>3)){n.tries++;return {k:'no',msg:'핵심 선수라 옵션 임대로는 보내지 않겠답니다. 구매 의무 조항이면 검토하겠다고 합니다.'}}
     if(o.lopt===1){n.tries++;return {k:'mid',msg:`${CLUBS[seller].name}: 옵션 금액을 ${money(Math.round(ask*1.05/1e5)*1e5)} 이상으로 해 달라고 합니다.`}}}}
   return _cr.apply(this,arguments)}}
+function tfMult(p){try{const O=UI.off&&UI.off.id===p.id?tfOff():null;if(!O)return 1;const ag=tfAgreed(p.id)||{};return (TF_AG[O.ag]||TF_AG[1])[0]*(ag.loan?1:(TF_CL[O.cl]||TF_CL[2])[1])}catch(e){return 1}}
 // 선수 응답: 수수료·바이아웃이 연봉 요구에 반영, 수수료 포함 예산 확인
 {const _pr=playerRespond;playerRespond=function(p,t){const O=UI.off&&UI.off.id===p.id?tfOff():null;if(!O)return _pr.apply(this,arguments);
   const ag=tfAgreed(p.id)||{};const mult=(TF_AG[O.ag]||TF_AG[1])[0]*(ag.loan?1:(TF_CL[O.cl]||TF_CL[2])[1]);const fee=tfFeeNow(p);const up=ag.loan?0:fee/(ag.inst||1);const af=tfAgentFee(p,O);
   if(up+af>spendable())return {k:'no',msg:`이적료 선지급 ${money(up)} + 에이전트 수수료 ${money(af)}가 예산 ${money(spendable())}를 넘습니다.`};
-  const r=_pr(p,Object.assign({},t,{wage:t.wage/mult}));if(r&&r.k!=='ok'&&mult!==1&&r.msg){const dm=Math.round(wageDemand(p,S.club)*(t.role<expectRole(p,S.club)?1.15:1)*mult/1e4)*1e4;r.msg+=` 수수료·바이아웃 조건까지 반영한 요구 연봉은 약 ${money(dm)}입니다.`}return r}}
+  const C=CLUBS[S.club],cap0=C.wageCap,adj=(t.wage/mult-t.wage)/1e6;let r;try{/* v293 연봉 한도 검사는 실제 연봉으로(사용자 지적: 여유 8,195만원·연봉 8,046만원인데 '한도 넘음' — 수수료·바이아웃 환산 연봉으로 한도를 검사하던 오류) */if(adj>0)C.wageCap=cap0+adj;r=_pr(p,Object.assign({},t,{wage:t.wage/mult}))}finally{C.wageCap=cap0}if(r&&r.k!=='ok'&&mult!==1&&r.msg){const dm0=wageDemand(p,S.club)*(t.role<expectRole(p,S.club)?1.15:1)*mult;const dm=dm0<1e5?Math.ceil(dm0/1e3)*1e3:Math.ceil(dm0/1e4)*1e4;/* v293 '약 ○○원'을 내림해 보여 주면 그 금액을 넣어도 거절됨(사용자 화면) → 올림 */r.msg+=` 수수료·바이아웃 조건까지 반영한 요구 연봉은 약 ${money(dm)}입니다.`}return r}}
 // 영입 완료: 수수료 차감·바이아웃 설정·임대 옵션 기록
 {const _ct=completeTransfer;completeTransfer=function(id,to,fee,o){const seller=clubOf(id);const O=to===S.club&&UI.off&&UI.off.id===id?tfOff():null;const p0=pl(id);const af=O?tfAgentFee(p0,O):0;const r=_ct.apply(this,arguments);
   try{if(O){if(af>0){S.fin.budget-=af;S.fin.log.unshift({d:S.date,t:`${p0.name} 에이전트 수수료`,v:-af})}
