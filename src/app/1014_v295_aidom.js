@@ -23,3 +23,9 @@ function mig295y(){if(!S||S.mig295y||!S.gen)return;let n=0;for(const id in S.gen
 // → 보충은 한도가 차면 자국 선수만(aiFAok), 한도 리그 유스는 외국 국적 5%
 function aiFAok(p,c){if(!sqrOn()||c==null||c<0||c===S.club||!CLUBS[c])return true;const cap=aiCap(c);if(!cap||!isFor(p,c))return true;return forCnt(c)<cap}
 {const _my=makeYouth;makeYouth=function(c,y,o){try{if(sqrOn()&&aiCap(c)&&!(o&&o.nat)){const lg=sqrLg(c);const n0=LG_NAT[lg];if(n0){const id=9000000+(S.genSeq||0)+1;if(hsh(id+':nat5:'+y)>=.05)o=Object.assign({},o||{},{nat:n0})}}}catch(e){}return _my.call(this,c,y,o)}}
+// v296 AI 1군 30명 초과 정리(QA 지적·새 게임 3시즌 검증: 레알 35·바르사 33 — 유스 입단·임대 복귀로 늘고 줄이는 장치가 없음)
+// 이적시장 기간에 하루 1명씩 24세 이상 가장 약한 선수(임대 온 선수 제외)와 계약 해지. 유망주는 남김
+function aiSqTrimDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiSqD===S.date)return;S.aiSqD=S.date;
+  for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;if(sqSize(C.i)<=SQMAX)continue;
+    try{const w=squadOf(C.i).filter(p=>!p.loanFrom&&ageOf(p)>=24).sort((a,b)=>a.ovr-b.ovr)[0];if(w)completeTransfer(w.id,FA,0,{wage:w.wage})}catch(e){console.error(e)}}}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{aiSqTrimDay()}catch(e){console.error(e)}return r}}
