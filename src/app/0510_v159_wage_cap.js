@@ -56,7 +56,7 @@ if(typeof moveTo==='function'){const _mt=moveTo;moveTo=function(){const r=_mt.ap
 // 시장 연봉 = 시작 데이터의 가치-연봉 관계(가치 구간별 중앙값을 로그 회귀: 2M→1.57M, 기울기 0.725, 0.5M→0.6M·32M→11.7M·75M→22M)
 function mktWage(p){const v=Math.max(2e5,valueNow?valueNow(p):p.val||0);return 1.57e6*Math.pow(v/2e6,.725)}
 // 사용자 구단 재계약·영입 요구 연봉: 이전엔 '지금 연봉×1.15~1.4'(재계약할 때마다 복리로 오름) 또는 가치×12% → 시장 연봉과 지금 연봉 중 큰 쪽 × 1.0~1.15
-{const _wd=wageDemand;wageDemand=function(p,club){try{const h=hsh(p.id+'w'+S.season);const base=Math.max(mktWage(p)*(.95+.2*h),p.wage*(1+.15*h));const fromRep=CLUBS[clubOf(p.id)]?.rep||40,diff=fromRep-CLUBS[club].rep;return Math.round(base*(1+Math.max(0,diff)/100)/1e4)*1e4}catch(e){return _wd.apply(this,arguments)}}}
+{const _wd=wageDemand;wageDemand=function(p,club){try{const h=hsh(p.id+'w'+S.season);const mw=mktWage(p);const base=Math.max(mw*(.95+.2*h),(clubOf(p.id)===FA?Math.min(p.wage,mw*1.2):p.wage)*(1+.15*h));/* v293 자유계약: 데이터의 옛 계약 연봉(예: OVR 64 Cortes 281만 유로, OVR 65 Cestero 675만 유로)을 그대로 요구하던 문제 → 시장 연봉의 1.2배까지만 */const fromRep=CLUBS[clubOf(p.id)]?.rep||40,diff=fromRep-CLUBS[club].rep;return Math.round(base*(1+Math.max(0,diff)/100)/1e4)*1e4}catch(e){return _wd.apply(this,arguments)}}}
 // AI 구단: 시즌 전환 때 계약이 새로 정해진 선수(재계약·자유계약 영입·이적)는 시장 연봉(±15%), 계약 중이라도 시장 연봉의 45% 밑이면 중간값으로 재협상
 {const _ro=rollover;rollover=function(){const before={};try{for(const id in BASE){const q=S.ps[id];const c=clubOf(+id);if(c>=0&&c!==S.club){const p=pl(+id);before[id]=[c,p.cEnd]}}}catch(e){console.error(e)}
   const r=_ro.apply(this,arguments);
