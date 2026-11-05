@@ -1,6 +1,6 @@
 // QA v295: 1시즌 완주 + rollover + 저장 왕복. env: HTML, MODE(unemp|KR|MX|save), SV, POST(rollover 후 진행 일수)
 const {chromium}=require('playwright');const fs=require('fs');(async()=>{const b=await chromium.launch();const pg=await b.newPage();const errs=[];
-pg.on('pageerror',e=>errs.push('PE '+e.message.slice(0,200)));pg.on('console',m=>{if(m.type()==='error')errs.push('CE '+m.text().slice(0,200))});
+pg.on('pageerror',e=>errs.push('PE '+e.message.slice(0,200)));pg.on('console',m=>{if(m.type()==='error'&&!/Failed to load resource/.test(m.text()))errs.push('CE '+m.text().slice(0,200))});
 await pg.route(/tmssl|transfermarkt|googleapis|gstatic|githubusercontent/,r=>r.abort());await pg.goto('file://'+process.env.HTML,{waitUntil:'domcontentloaded'});await pg.waitForTimeout(1200);
 if(process.env.SV)await pg.evaluate(t=>{window.__SV=t},fs.readFileSync(process.env.SV,'utf8'));
 const r=await pg.evaluate(async([MODE,POST])=>{const o={mode:MODE,v:typeof APPV!=='undefined'?APPV:null};
