@@ -116,7 +116,7 @@ function lgW(c){const lg=CLUBS[c]&&CLUBS[c].lg;if(!lg)return .3;return LGW[lg]??
 // v236 예외(사용자 요청): 하위 리그 할증을 줄이는 계수 s(0~1) — 출전 시간·나이·고향 복귀
 //  출전: 팀 내 능력 순위 11위 안 1, 12~16위 .25, 17위 밖 .1. 만족도 40 미만이면서 비주전이면 연봉 삭감(×.85)도 받아들임(출전 시간을 위해)
 //  나이: 31~32세 ×.5, 33세 이상 ×.15(커리어 말년). 고향 복귀(국적 = 갈 리그 나라): 할증 없음 + 이적 의향 +8
-const LGNAT={EN:['ENG'],ES:['ESP','SPA'],IT:['ITA'],DE:['GER'],FR:['FRA'],PT:['POR'],NL:['NED','HOL','NET'],BE:['BEL'],TR:['TUR','TÜR'],SC:['SCO'],CH:['SWI','SUI'],AT:['AUT','AUS'],DK:['DEN'],KR:['KOR'],JP:['JAP','JPN'],CN:['CHI','CHN'],SA:['SAU','KSA'],US:['USA','UNI'],MX:['MEX'],AR:['ARG'],BR:['BRA']};
+const LGNAT={EN:['ENG'],ES:['ESP'],IT:['ITA'],DE:['GER'],FR:['FRA'],PT:['POR'],NL:['NED'],BE:['BEL'],TR:['TUR'],SC:['SCO'],CH:['SUI'],AT:['AUT'],DK:['DEN'],KR:['KOR'],JP:['JPN'],CN:['CHN'],SA:['KSA'],US:['USA'],MX:['MEX'],AR:['ARG'],BR:['BRA']}/* v295 국적 FIFA 코드 통일(이전엔 AUS=호주까지 오스트리아, CHI=칠레까지 중국으로 판정) */;
 function lgHome(p,to){try{const lg=CLUBS[to].lg,b=(typeof baseLg==='function'?baseLg(lg):lg);return (LGNAT[b]||LGNAT[lg]||[]).includes(p.nat)}catch(e){return false}}
 function lgSoft(p,to){if(lgHome(p,to))return 0;let s=1;let rk=11;try{rk=rankInClub(p)}catch(e){}s*=rk<=11?1:rk<=16?.25:.1;const a=ageOf(p);if(a>=33)s*=.15;else if(a>=31)s*=.5;return s}
 // R = 지금 리그 연봉 수준 ÷ 갈 리그. 하위 리그로(R>1): R^(0.3×s)배(최대 2배). 상위 리그로(R<1): R^0.06배(최저 0.85배). 같은 수준이면 1배

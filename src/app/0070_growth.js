@@ -124,7 +124,7 @@ const NAMES={KOR:{f:['Min-jun','Seo-jun','Ji-ho','Hyun-woo','Jun-seo','Do-yun','
  BRA:{f:['João','Pedro','Gabriel','Lucas','Matheus','Rafael','Vinícius','Gustavo','Felipe','Thiago','Caio','Igor','Enzo','Davi'],l:['Silva','Santos','Oliveira','Souza','Lima','Pereira','Costa','Ferreira','Almeida','Carvalho','Ribeiro','Gomes','Rocha','Barbosa']},
  ARG:{f:['Santiago','Mateo','Thiago','Benjamín','Valentín','Joaquín','Tomás','Franco','Facundo','Agustín','Lautaro','Nahuel'],l:['González','Rodríguez','Gómez','Fernández','López','Díaz','Martínez','Pérez','Romero','Sosa','Acosta','Benítez']},
  POR:{f:['João','Diogo','Tiago','Rodrigo','Gonçalo','Rafael','Tomás','Afonso','Duarte','Martim'],l:['Silva','Santos','Ferreira','Pereira','Oliveira','Costa','Rodrigues','Martins','Sousa','Fernandes']}};
-const LG_NAT={ES:'ESP',EN:'ENG',IT:'ITA',DE:'GER',FR:'FRA',PT:'POR',NL:'NED',BE:'NED',TR:'TUR',SC:'SCO',CH:'SUI',AT:'AUT',DK:'DEN',BR:'BRA',AR:'ARG',US:'USA',KR:'KOR',JP:'JPN'};
+const LG_NAT={ES:'ESP',EN:'ENG',IT:'ITA',DE:'GER',FR:'FRA',PT:'POR',NL:'NED',BE:'NED',TR:'TUR',SC:'SCO',CH:'SUI',AT:'AUT',DK:'DEN',BR:'BRA',AR:'ARG',US:'USA',KR:'KOR',JP:'JPN',CN:'CHN',SA:'KSA',MX:'MEX'};/* v295 중국·사우디·멕시코 유스가 ESP(외국인)로 생성되던 문제 */
 const GRADES=[['S',[88,95],.02],['A',[82,87],.08],['B',[75,81],.20],['C',[68,74],.35],['D',[60,67],.35]];
 const YOUTH_MULT={'Barcelona':1.5,'Real Madrid':1.3,'Atlético Madrid':1.2};
 const POS_W={GK:10,CB:18,FB:16,DM:8,CM:14,AM:8,W:14,ST:12};
