@@ -86,3 +86,4 @@ app/1004_v287_lastseason.js
 app/1005_v290_migrate.js
 app/1006_v292_migrate.js
 app/1007_v293_gobar.js
+app/1008_v293_krname.js

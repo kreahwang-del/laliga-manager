@@ -36,8 +36,8 @@ function afterPlay(){if(!M||M.done)return;M.animating=false;
   M.timer=setTimeout(tick,M.ff?0:90/M.speed)}
 /* v272 사용자 요청: 경기 전체 건너뛰기 말고 '다음 감독 지시까지' 빨리 감기 — 화면 재생 없이 계산만 진행하다 지시·하프타임·PK·퇴장·부상 등 멈춤 순간에 정상 재생으로 복귀 */
 function ffLeft(){if(!M||!M.m)return 0;if(S.decOn===false||(M.m.min||0)>=80)return 0;return Math.max(0,3-(M.decN||0))}
-function ffLbl(){return M&&M.ff?'■ 멈춤':ffLeft()?`${typeof IC_FF!=='undefined'?IC_FF:''} 지시 ${ffLeft()}`:'지시 없음'}
-function ffRef(){const b=document.getElementById('mff');if(!b)return;const t=ffLbl();if(b.innerHTML!==t)b.innerHTML=t;b.disabled=!(M&&M.ff)&&!ffLeft();b.style.opacity=b.disabled?.45:1}
+function ffLbl(){return M&&M.ff?'■ 멈춤':ffLeft()?`${typeof IC_FF!=='undefined'?IC_FF:''} 지시 ${ffLeft()}`:(S&&S.decOn===false?'승부처 꺼짐':'승부처 끝')}/* v293 '지시 없음'이 무슨 뜻인지 모호(사용자 질문) → 꺼짐/끝 구분, 꺼짐이면 눌러서 켜기 화면 */
+function ffRef(){const b=document.getElementById('mff');if(!b)return;const t=ffLbl();if(b.innerHTML!==t)b.innerHTML=t;b.disabled=!(M&&M.ff)&&!ffLeft()&&!(S&&S.decOn===false);b.style.opacity=b.disabled?.45:1}
 setInterval(()=>{try{ffRef()}catch(e){}},700);
 function ffStart(){if(!M||M.done||M.skipping)return;M.ff=true;stopAnim();document.getElementById('match')?.classList.add('ffon');feed({m:M.m.min,t:'sys',txt:'다음 지시 장면까지 빨리 감는 중…'});ffRef();if(!M.paused&&!M.animating)tick()}
 function ffStop(){if(!M||!M.ff)return;M.ff=false;document.getElementById('match')?.classList.remove('ffon');setTimeout(ffRef,0);try{const fr=M.m.st.frames;const lf=fr&&fr[fr.length-1];if(lf&&typeof draw4Init==='function'){draw4Init(lf);draw4(lf,lf,0)}}catch(e){}}
