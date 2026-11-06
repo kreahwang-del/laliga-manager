@@ -65,3 +65,7 @@ function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);i
 {const _bl=benchList;benchList=function(){const L=_bl.apply(this,arguments);try{if(!sqrOn()||!M||!M.m||M.fx&&M.fx.eu)return L;const R=sqrRule(S.club);if(!R||!R.m)return L;
   M.sqrSeen=M.sqrSeen||new Set();for(const p of M.m.T[M.me].xi)if(p&&isFor(p,S.club))M.sqrSeen.add(p.id);
   if(M.sqrSeen.size<R.m)return L;return L.filter(p=>!isFor(p,S.club)||M.sqrSeen.has(p.id))}catch(e){return L}}}
+// v297 자동 선발도 외국인 규정 반영(사용자 요청 2026-11-06): 한도를 넘으면 선발된 외국인 중 가장 약한 선수를 후보에서 빼고 다시 뽑음(포지션 배치까지 다시 최적화)
+function sqrAutoPick(){const form=S.tac.form.base;let pool=squadOf(S.club).filter(canUse);let xi=E3.autoPick(pool,form);const R=sqrRule(S.club);if(!sqrOn()||!R||!R.m)return xi;
+  for(let k=0;k<12;k++){const ps=xi.map(id=>id!=null?pl(id):null).filter(Boolean);const f=ps.filter(p=>isFor(p,S.club));if(f.length<=R.m)break;const w=f.sort((a,b)=>a.ovr-b.ovr)[0];pool=pool.filter(p=>p.id!==w.id);if(pool.length<11)break;xi=E3.autoPick(pool,form)}
+  setTimeout(()=>{try{const k=sqrMyCheck();if(k)toast(`외국인 ${k.n}/${k.m}명 규정에 맞춰 선발했습니다`)}catch(e){}},1200);return xi}
