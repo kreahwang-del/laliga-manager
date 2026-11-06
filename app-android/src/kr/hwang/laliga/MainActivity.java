@@ -250,5 +250,14 @@ public class MainActivity extends Activity {
             return "저장 위치를 고르세요";
         }
         @JavascriptInterface public int version() { return curV(); }
+        // v259: 게임의 '업데이트 확인' 버튼 — 10분 간격 제한 없이 바로 확인(받아 둔 새 버전이 있으면 바로 적용 안내)
+        @JavascriptInterface public void checkUpdate() {
+            ui.post(new Runnable() { public void run() {
+                int pv = prefs.getInt("pend", 0);
+                if (pv > curV() && pend().exists()) { showReady(pv); return; }
+                showText("업데이트 확인 중…"); ui.postDelayed(new Runnable() { public void run() { if (bApply.getVisibility() != View.VISIBLE) banner.setVisibility(View.GONE); } }, 6000);
+                check();
+            } });
+        }
     }
 }
