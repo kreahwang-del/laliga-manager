@@ -60,3 +60,8 @@ function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);i
   inbox('news','',`${LGN[lg]||lg} 선수단 규정`,`${sqrRuleTxt(S.club)}. 전술 탭 위에서 현재 인원을 볼 수 있고, 넘으면 경기 전에 자동으로 맞춥니다. 감독 탭에서 끌 수 있습니다.`)}catch(e){}}
 {const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);sqrIntro();return r}}
 {const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);try{if(S&&!S.sqrSeen){S.sqrSeen={}}sqrIntro()}catch(e){}return r}}
+// v297 경기 중 교체도 외국인 규정 검사(사용자 질문 2026-11-06): 교체 목록(benchList)은 벤치가 아니라 선수단 전체라 외국인을 마음껏 넣을 수 있었음
+// 규정 = 경기 명단(선발+벤치) 외국인 N명 → 이번 경기에 한 번이라도 뛴 외국인이 N명이면 새 외국인은 교체 목록에서 뺌
+{const _bl=benchList;benchList=function(){const L=_bl.apply(this,arguments);try{if(!sqrOn()||!M||!M.m||M.fx&&M.fx.eu)return L;const R=sqrRule(S.club);if(!R||!R.m)return L;
+  M.sqrSeen=M.sqrSeen||new Set();for(const p of M.m.T[M.me].xi)if(p&&isFor(p,S.club))M.sqrSeen.add(p.id);
+  if(M.sqrSeen.size<R.m)return L;return L.filter(p=>!isFor(p,S.club)||M.sqrSeen.has(p.id))}catch(e){return L}}}
