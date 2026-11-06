@@ -26,7 +26,7 @@
     el.style.width=Math.round(Math.max(.06,Math.min(.94,p))*100)+'%'}
   function bpGoal(e){try{if(!e||e.t!=='goal'||(M&&M.skipping))return;if(matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;const w=document.querySelector('#match .m2dw');if(!w)return;
     const old=w.querySelector('.bpgoal');if(old)old.remove();const s=e.s===0?M.fx.h:M.fx.a;
-    const g=document.createElement('div');g.className='bpgoal';g.style.setProperty('--gc',bpCol(s)[0]);g.innerHTML=`<b>GOAL</b><span>${esc(typeof shortName==='function'?shortName(e.p||''):(e.p||''))} · ${esc(CLUBS[s].short||'')}</span>`;w.appendChild(g);setTimeout(()=>g.remove(),2600)}catch(_){}}
+    const g=document.createElement('div');g.className='bpgoal'+(e.s===1?' r':'');/* v300 원정 팀(오른쪽) 골은 오른쪽에서(사용자 요청) */g.style.setProperty('--gc',bpCol(s)[0]);g.innerHTML=`<b>GOAL</b><span>${esc(typeof shortName==='function'?shortName(e.p||''):(e.p||''))} · ${esc(CLUBS[s].short||'')}</span>`;w.appendChild(g);setTimeout(()=>g.remove(),2600)}catch(_){}}
   {const _sm=startMatch;startMatch=function(){const r=_sm.apply(this,arguments);try{bpMatchInit()}catch(e){console.error(e)}return r}}
   {const _ub=updateBoard;updateBoard=function(){const r=_ub.apply(this,arguments);try{bpMom()}catch(e){}return r}}
   {const _fd=feed;feed=function(e){const r=_fd.apply(this,arguments);bpGoal(e);return r}}
@@ -52,6 +52,8 @@ html #match.bp .board .clock{margin-top:2px;font-size:13px;padding:0 10px;backgr
 .bpgoal{position:absolute;left:0;right:0;bottom:30px;height:44px;display:flex;align-items:center;gap:12px;padding:0 18px;background:linear-gradient(90deg,var(--amber) 0 64%,var(--gc,#2E6B5E) 64%);clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);animation:bpg 2.5s cubic-bezier(.2,.8,.2,1) forwards;pointer-events:none;z-index:4}
 .bpgoal b{font-family:var(--disp);font-size:32px;font-weight:900;font-style:italic;color:#0A0B0D;letter-spacing:.04em}
 .bpgoal span{font-weight:900;font-size:14px;color:#0A0B0D;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bpgoal.r{flex-direction:row-reverse;background:linear-gradient(270deg,var(--amber) 0 64%,var(--gc,#2E6B5E) 64%);clip-path:polygon(0 0,100% 0,100% 100%,14px 100%);animation-name:bpgr}
+@keyframes bpgr{0%{transform:translateX(105%)}14%{transform:translateX(0)}84%{transform:translateX(0);opacity:1}100%{transform:translateX(-105%);opacity:0}}
 @keyframes bpg{0%{transform:translateX(-105%)}14%{transform:translateX(0)}84%{transform:translateX(0);opacity:1}100%{transform:translateX(105%);opacity:0}}`;document.head.appendChild(st);
 }
 
