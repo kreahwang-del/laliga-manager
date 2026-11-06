@@ -3925,7 +3925,7 @@ document.addEventListener('click',e=>{
   switch(d.act){
     case 'resume':S=loadSave();devLoad();careerLoad();SQC=null;render();try{setTimeout(()=>{if(typeof eaCatchUp==='function')eaCatchUp();if(typeof eaPrefetch==='function')eaPrefetch()},1500)}catch(e){}break;
     case 'advance':advance();break;
-    case 'auto':S.xi=E3.autoPick(squadOf(S.club).filter(canUse),S.tac.form.base);S.tac.roles=E3.defaultRoles(S.xi.map(pl),S.tac.form.base);save();render();toast('체력·컨디션·포지션을 반영해 선발을 짰습니다');break;
+    case 'auto':S.xi=typeof sqrAutoPick==='function'?sqrAutoPick():E3.autoPick(squadOf(S.club).filter(canUse),S.tac.form.base);S.tac.roles=E3.defaultRoles(S.xi.map(pl),S.tac.form.base);save();render();toast('체력·컨디션·포지션을 반영해 선발을 짰습니다');break;
     case 'msubs':UI.subOut=null;M.paused=true;clearTimeout(M.timer);subsSheet();break;
     case 'mshout':M.paused=true;clearTimeout(M.timer);shoutSheet();break;
     case 'mtac':M.paused=true;clearTimeout(M.timer);mtacSheet();break;
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=297;
+const APPV=298;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -8421,6 +8421,10 @@ function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);i
 {const _bl=benchList;benchList=function(){const L=_bl.apply(this,arguments);try{if(!sqrOn()||!M||!M.m||M.fx&&M.fx.eu)return L;const R=sqrRule(S.club);if(!R||!R.m)return L;
   M.sqrSeen=M.sqrSeen||new Set();for(const p of M.m.T[M.me].xi)if(p&&isFor(p,S.club))M.sqrSeen.add(p.id);
   if(M.sqrSeen.size<R.m)return L;return L.filter(p=>!isFor(p,S.club)||M.sqrSeen.has(p.id))}catch(e){return L}}}
+// v297 자동 선발도 외국인 규정 반영(사용자 요청 2026-11-06): 한도를 넘으면 선발된 외국인 중 가장 약한 선수를 후보에서 빼고 다시 뽑음(포지션 배치까지 다시 최적화)
+function sqrAutoPick(){const form=S.tac.form.base;let pool=squadOf(S.club).filter(canUse);let xi=E3.autoPick(pool,form);const R=sqrRule(S.club);if(!sqrOn()||!R||!R.m)return xi;
+  for(let k=0;k<12;k++){const ps=xi.map(id=>id!=null?pl(id):null).filter(Boolean);const f=ps.filter(p=>isFor(p,S.club));if(f.length<=R.m)break;const w=f.sort((a,b)=>a.ovr-b.ovr)[0];pool=pool.filter(p=>p.id!==w.id);if(pool.length<11)break;xi=E3.autoPick(pool,form)}
+  setTimeout(()=>{try{const k=sqrMyCheck();if(k)toast(`외국인 ${k.n}/${k.m}명 규정에 맞춰 선발했습니다`)}catch(e){}},1200);return xi}
 // ================= v295 A매치·대륙 대회 소집(사용자 결정 2026-11-05) =================
 // 날짜: FIFA 국제경기 일정(2026~2030, 남자). 2026-27부터 9·10월이 합쳐진 4경기 기간. 그 뒤 시즌은 같은 패턴으로
 //  출처: FIFA International Match Calendar(위키백과 정리), 아시안컵 2027 사우디 1/7~2/5(AFC 발표). 6월 기간·여름 대회(유로·코파·네이션스컵·골드컵)는 비시즌이라 결장 없음
