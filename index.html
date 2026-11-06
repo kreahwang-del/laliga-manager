@@ -2694,7 +2694,7 @@ function momentSheet(kind,data){/* v276: 결정 창이 열릴 때 알림(토스�
   else if(k==='ace'){const dm=kind.d;h=`<div class="note" style="margin:0">${M.m.min}' · 상대 ${esc(dm.a)}이(가) ${esc(dm.d)}을(를) ${dm.w}번 제쳤습니다</div><h3>전담 마크를 붙일까요?</h3>
     ${opt('mark:'+dm.a,'밀착 맨마킹','가장 가까운 수비수가 따라붙음 · 공간 노출 위험')}${opt('resume','그대로 진행','')}`}
   else if(k==='inj'){const p=kind.p;const key=(M.m.T[M.me].k('base').find(q=>q.p.id===p.id)||{}).slotKey||p.g;const bench=benchList().sort((a,b)=>E3.fitOf(b,key)*b.ovr-E3.fitOf(a,key)*a.ovr);h=`<div class="note" style="margin:0">${M.m.min}' · ${esc(p.name)} 부상</div><h3>교체 선수를 고르세요</h3>
-    ${M.subsLeft>0?bench.slice(0,8).map(b=>`<button class="li" data-subin="${b.id}" data-subout="${p.id}">${avatar(b,'sm')}<span class="pos ${b.g}">${b.g}</span><span class="nm"><b>${esc(b.name)}</b><span>${GN[b.g]} · 컨디션 ${cnd(b).a}</span></span><span class="ovr num ${ovrCls(b.ovr)}">${b.ovr}</span></button>`).join(''):'<p class="note">교체 카드가 없어 부상 선수가 계속 뜁니다(능력 20% 저하).</p><button class="btn" data-mo="resume">계속</button>'}`}
+    ${M.subsLeft>0&&!bench.length?'<p class="note">교체로 넣을 수 있는 선수가 없습니다(부상·출장정지·외국인 출전 한도). 부상 선수가 계속 뜁니다(능력 20% 저하).</p><button class="btn" data-mo="resume">계속</button>':''}${M.subsLeft>0?bench.slice(0,8).map(b=>`<button class="li" data-subin="${b.id}" data-subout="${p.id}">${avatar(b,'sm')}<span class="pos ${b.g}">${b.g}</span><span class="nm"><b>${esc(b.name)}</b><span>${GN[b.g]} · 컨디션 ${cnd(b).a}</span></span><span class="ovr num ${ovrCls(b.ovr)}">${b.ovr}</span></button>`).join(''):'<p class="note">교체 카드가 없어 부상 선수가 계속 뜁니다(능력 20% 저하).</p><button class="btn" data-mo="resume">계속</button>'}`}
   sheet(`<div class="note" style="text-align:right;margin:0"><span class="pill n">경기 일시정지</span></div>${h}`);
 }
 function benchList(){const inXI=new Set(M.m.T[M.me].xi.map(p=>p.id));const red=new Set(M.m.st.ev.filter(e=>e.t==='red'&&e.pid!=null).map(e=>e.pid));return squadOf(S.club).filter(p=>!inXI.has(p.id)&&!red.has(p.id)&&!(p.injD>0)&&!M.m.st.subs[M.me].some(x=>x.out.id===p.id)).sort((a,b)=>b.ovr-a.ovr)}
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=299;
+const APPV=300;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -7687,7 +7687,7 @@ render();
     el.style.width=Math.round(Math.max(.06,Math.min(.94,p))*100)+'%'}
   function bpGoal(e){try{if(!e||e.t!=='goal'||(M&&M.skipping))return;if(matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;const w=document.querySelector('#match .m2dw');if(!w)return;
     const old=w.querySelector('.bpgoal');if(old)old.remove();const s=e.s===0?M.fx.h:M.fx.a;
-    const g=document.createElement('div');g.className='bpgoal';g.style.setProperty('--gc',bpCol(s)[0]);g.innerHTML=`<b>GOAL</b><span>${esc(typeof shortName==='function'?shortName(e.p||''):(e.p||''))} · ${esc(CLUBS[s].short||'')}</span>`;w.appendChild(g);setTimeout(()=>g.remove(),2600)}catch(_){}}
+    const g=document.createElement('div');g.className='bpgoal'+(e.s===1?' r':'');/* v300 원정 팀(오른쪽) 골은 오른쪽에서(사용자 요청) */g.style.setProperty('--gc',bpCol(s)[0]);g.innerHTML=`<b>GOAL</b><span>${esc(typeof shortName==='function'?shortName(e.p||''):(e.p||''))} · ${esc(CLUBS[s].short||'')}</span>`;w.appendChild(g);setTimeout(()=>g.remove(),2600)}catch(_){}}
   {const _sm=startMatch;startMatch=function(){const r=_sm.apply(this,arguments);try{bpMatchInit()}catch(e){console.error(e)}return r}}
   {const _ub=updateBoard;updateBoard=function(){const r=_ub.apply(this,arguments);try{bpMom()}catch(e){}return r}}
   {const _fd=feed;feed=function(e){const r=_fd.apply(this,arguments);bpGoal(e);return r}}
@@ -7713,6 +7713,8 @@ html #match.bp .board .clock{margin-top:2px;font-size:13px;padding:0 10px;backgr
 .bpgoal{position:absolute;left:0;right:0;bottom:30px;height:44px;display:flex;align-items:center;gap:12px;padding:0 18px;background:linear-gradient(90deg,var(--amber) 0 64%,var(--gc,#2E6B5E) 64%);clip-path:polygon(0 0,100% 0,calc(100% - 14px) 100%,0 100%);animation:bpg 2.5s cubic-bezier(.2,.8,.2,1) forwards;pointer-events:none;z-index:4}
 .bpgoal b{font-family:var(--disp);font-size:32px;font-weight:900;font-style:italic;color:#0A0B0D;letter-spacing:.04em}
 .bpgoal span{font-weight:900;font-size:14px;color:#0A0B0D;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.bpgoal.r{flex-direction:row-reverse;background:linear-gradient(270deg,var(--amber) 0 64%,var(--gc,#2E6B5E) 64%);clip-path:polygon(0 0,100% 0,100% 100%,14px 100%);animation-name:bpgr}
+@keyframes bpgr{0%{transform:translateX(105%)}14%{transform:translateX(0)}84%{transform:translateX(0);opacity:1}100%{transform:translateX(-105%);opacity:0}}
 @keyframes bpg{0%{transform:translateX(-105%)}14%{transform:translateX(0)}84%{transform:translateX(0);opacity:1}100%{transform:translateX(105%);opacity:0}}`;document.head.appendChild(st);
 }
 
@@ -8406,7 +8408,7 @@ function sqrAutoFix(silent){const k=sqrMyCheck();if(!k||k.n<=k.m)return [];const
 // ---- 화면: 전술 탭 카운터·자동 맞춤, 규정 안내, 감독 탭 켜기/끄기 ----
 function sqrRuleTxt(c){const R=sqrRule(c);const a=[];if(R&&R.m)a.push(`경기 명단(선발+벤치) 외국인 ${R.m}명`);if(R&&R.h)a.push(`1군 외국인 보유 ${R.h}명`);a.push(`1군 최대 ${SQMAX}명`);return a.join(' · ')}
 {const _tv=tacView;tacView=function(){const h=_tv.apply(this,arguments);try{if(!sqrOn()||!S||unemp())return h;const k=sqrMyCheck();const R=sqrRule(S.club);
-  const box=`<div class="card pad" style="margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="note" style="margin:0;flex:1;min-width:160px">${esc(LGN[sqrLg(S.club)]||'리그')} 규정: ${sqrRuleTxt(S.club)}</span>${k?`<b class="num" style="color:${k.n>k.m?'var(--bad)':'var(--text)'}">선발 외국인 ${k.n}/${k.m}</b>${k.n>k.m?'<button class="chip" data-sqrfix="1">자동 맞춤</button>':''}`:''}${R&&R.h?`<span class="note" style="margin:0">보유 ${forCnt(S.club)}/${R.h}</span>`:''}</div>`;
+  const box=`<div class="card pad" style="margin-bottom:8px;display:flex;align-items:center;gap:8px;flex-wrap:wrap"><span class="note" style="margin:0;flex:1;min-width:160px">${esc(LGN[sqrLg(S.club)]||'리그')} 규정: ${sqrRuleTxt(S.club)}</span>${k?`<b class="num" style="color:${k.n>k.m?'var(--bad)':'var(--text)'}">선발 외국인 ${k.n}/${k.m}</b>${k.n>k.m?'<button class="chip" data-sqrfix="1">자동 맞춤</button>':''}`:''}${R&&R.h?`<span class="note" style="margin:0">보유 ${forCnt(S.club)}/${R.h}</span>`:''}${(()=>{if(!R||!R.m||!k)return '';const xi=new Set(S.xi);const d=squadOf(S.club).filter(p=>!xi.has(p.id)&&!isFor(p,S.club)&&canUse(p)).length;return d<3?`<span class="note" style="margin:0;width:100%;color:var(--bad)">교체로 쓸 수 있는 자국 선수가 ${d}명뿐입니다. 외국인이 한도만큼 뛰면 교체할 선수가 부족할 수 있으니 자국 선수 영입을 권합니다.</span>`:''})()}</div>`;/* v300 벤치 자국 선수 부족 경고(광주 1군 17명 중 외국인 9명 → 부상 교체 목록이 비어 멈춤) */
   return box+h}catch(e){return h}}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-sqrfix],[data-sqron]');if(!b)return;e.preventDefault();e.stopPropagation();
   if(b.dataset.sqrfix){sqrAutoFix(false);save();render();return}if(!sqrCanToggle()){toast('규정 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다');return}S.sqr=S.sqr===false?true:false;save();render();toast(S.sqr!==false?'현실 선수단 규정을 켰습니다(AI 구단 포함)':'현실 선수단 규정을 껐습니다(AI 구단 포함)')},true);
