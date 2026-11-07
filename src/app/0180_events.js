@@ -9,7 +9,7 @@ document.addEventListener('click',e=>{
   if(d.sq){UI.sq=d.sq;render();return}
   if(d.tt){UI.tt=d.tt;UI.lim=40;render();return}
   if(d.lt){UI.lt=d.lt;render();return}
-  if(d.f){if(['lg','g','sp','ft','age'].includes(d.f)&&d.v!=='ALL'){const L=(UI.f[d.f]&&UI.f[d.f]!=='ALL'?String(UI.f[d.f]).split(','):[]).filter(Boolean);const i=L.indexOf(d.v);if(i>=0)L.splice(i,1);else L.push(d.v);UI.f[d.f]=L.length?L.join(','):'ALL'}/* v290 리그 여러 개 선택 */else{UI.f[d.f]=d.v;if(d.f==='sort')UI.f.sdir=null}UI.lim=40;{const y=scrollY;render();scrollTo(0,y)}/* v293 필터 누르면 화면 맨 위로 가던 문제(사용자 지적) → 보던 위치 유지 */return}
+  if(d.f){if(['lg','g','sp','ft','age'].includes(d.f)&&d.v!=='ALL'){const L=(UI.f[d.f]&&UI.f[d.f]!=='ALL'?String(UI.f[d.f]).split(','):[]).filter(Boolean);const i=L.indexOf(d.v);if(i>=0)L.splice(i,1);else{L.push(d.v);/* v301 '5대 리그 밖'은 개별 리그 목록을 여는 버튼 겸용이라, 개별 리그(K리그 등)를 고르면 함께 켜져 있던 '5대 리그 밖'을 끔(사용자 지적: K리그만 골랐는데 다른 리그까지 나옴) */if(d.f==='lg'){const big=['ES','EN','IT','DE','FR','FA','OUT'];if(!big.includes(d.v)){const o=L.indexOf('OUT');if(o>=0)L.splice(o,1)}else if(d.v==='OUT'){for(let j=L.length-1;j>=0;j--)if(!big.includes(L[j]))L.splice(j,1)}}}UI.f[d.f]=L.length?L.join(','):'ALL'}/* v290 리그 여러 개 선택 */else{UI.f[d.f]=d.v;if(d.f==='sort')UI.f.sdir=null}UI.lim=40;{const y=scrollY;render();scrollTo(0,y)}/* v293 필터 누르면 화면 맨 위로 가던 문제(사용자 지적) → 보던 위치 유지 */return}
   if(d.player){playerSheet(+d.player);return}
   if(d.close!==undefined){closeSheet();return}
   if(suppressClick){suppressClick=false;e.preventDefault();return}
