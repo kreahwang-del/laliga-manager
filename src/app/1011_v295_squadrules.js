@@ -69,3 +69,16 @@ function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);i
 function sqrAutoPick(){const form=S.tac.form.base;let pool=squadOf(S.club).filter(canUse);let xi=E3.autoPick(pool,form);const R=sqrRule(S.club);if(!sqrOn()||!R||!R.m)return xi;
   for(let k=0;k<12;k++){const ps=xi.map(id=>id!=null?pl(id):null).filter(Boolean);const f=ps.filter(p=>isFor(p,S.club));if(f.length<=R.m)break;const w=f.sort((a,b)=>a.ovr-b.ovr)[0];pool=pool.filter(p=>p.id!==w.id);if(pool.length<11)break;xi=E3.autoPick(pool,form)}
   setTimeout(()=>{try{const k=sqrMyCheck();if(k)toast(`외국인 ${k.n}/${k.m}명 규정에 맞춰 선발했습니다`)}catch(e){}},1200);return xi}
+// v305 스쿼드 탭 외국인 요약·선수 표시(사용자 요청 2026-11-08)
+// 아시아·미주 리그 = '외'(리그 나라 국적이 아님) / 유럽 리그 = '비EU'(EU·EEA·스위스 밖, 참고용 — 이중국적 데이터가 없어 실제보다 많게 나올 수 있음) / 잉글랜드·스코틀랜드 = '외'(영국 밖)
+const NT_EU_NAT=new Set('AUT BEL BUL CRO CYP CZE DEN EST FIN FRA GER GRE HUN IRL ITA LVA LTU LUX MLT NED POL POR ROU SVK SVN ESP SWE ISL NOR LIE SUI'.split(' '));
+const NT_UK_NAT=new Set(['ENG','SCO','WAL','NIR']);
+const NT_EU_LG=new Set(['ES','IT','DE','FR','PT','NL','BE','AT','DK','CH']);
+function natTag(p,c){const lg=sqrLg(c);if(!lg||!p||!p.nat)return null;if(NT_EU_LG.has(lg))return NT_EU_NAT.has(p.nat)?null:'비EU';if(lg==='EN'||lg==='SC')return NT_UK_NAT.has(p.nat)?null:'외';return isFor(p,c)?'외':null}
+{const _sv=squadView;squadView=function(){let h=_sv.apply(this,arguments);try{if(UI.sqv==='trn'||UI.sqv==='mgmt'||!S||unemp())return h;const c=S.club,lg=sqrLg(c),sq=squadOf(c),R=sqrRule(c);
+  const tg={};sq.forEach(p=>{const t=natTag(p,c);if(t)tg[p.id]=t});const n=Object.keys(tg).length,eu=NT_EU_LG.has(lg);
+  h=h.replace(/(data-player="(\d+)">[\s\S]{0,800}?<span class="nm"><b>)([^<]*)/g,(m,a,id,nm)=>tg[id]?`${a}${nm} <span class="pill n" style="font-size:10px;padding:0 5px;vertical-align:1px">${tg[id]}</span>`:m);
+  const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`보유 한도 ${R.h}명`);parts.push(`1군 ${sq.length}/${SQMAX}명`);
+  const note=eu?' · 이중국적이 반영되지 않아 실제보다 많을 수 있습니다(참고용, 아직 제한 없음)':!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
+  const box=`<div class="card pad" style="margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center"><b>${parts.join(' · ')}</b><span class="note" style="margin:0">${note}</span></div>`;
+  const i=h.indexOf('<div class="card list"');h=i>=0?h.slice(0,i)+box+h.slice(i):box+h}catch(e){console.error(e)}return h}}
