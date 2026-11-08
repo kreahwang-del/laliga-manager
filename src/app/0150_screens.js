@@ -48,7 +48,7 @@ function msgHTML(m){let acts='';
   }
   if(m.type==='scout')acts=`<button class="btn sm ghost" data-player="${m.pid}">선수 보기</button>`;
   return `<div class="msg ${m.read?'':'new'}"><div class="h"><span>${fmtD(m.d)}</span><span>${{offer:'영입 제안',request:'선수 면담',clause:'바이아웃',scout:'스카우트',window:'이적시장',board:'이사회',contract:'계약','부상':'의료진'}[m.type]||''}</span></div>
-    <b>${esc(m.title)}</b><p>${esc(m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p>${acts?`<div class="acts">${acts}</div>`:''}</div>`}
+    <b>${esc(m.title)}</b><p style="white-space:pre-line">${esc(/^이사회 시즌 목표 평가/.test(m.title||'')?String(m.body).replace(/ \/ (?=[○×])/g,'\n').replace(/ → 신뢰도/,'\n→ 신뢰도'):m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p>${acts?`<div class="acts">${acts}</div>`:''}</div>`}
 
 function squadView(){
   const f=UI.sq, sq=squadOf(S.club).filter(p=>f==='ALL'||LINE[p.g]===f).sort((a,b)=>b.ovr-a.ovr), xi=new Set(S.xi||[]);

@@ -25,7 +25,7 @@ function bdEval(){const G=S.goals;if(!G||G.ev||G.y!==S.season||G.c!==S.club)retu
   G.items.forEach(g=>{const s=bdStat(g);g.res=s.ok;lines.push(`${s.ok?'○':'×'} ${g.t} (${s.txt})`);if(g.k==='lg')return;if(s.ok)ok++;else no++});
   const rev=CLUBS[S.club].rev*1e6;const bonus=Math.round(rev*.015*ok/1e5)*1e5;S.me.trust=Math.max(0,Math.min(100,(S.me.trust||60)+2*ok-2*no));if(bonus>0){S.fin.budget+=bonus;S.fin.log.unshift({d:S.date,t:`이사회 목표 달성 보너스(${ok}개)`,v:bonus})}
   const all=G.items.every(g=>g.res);if(all){S.me.rep=Math.min(100,(S.me.rep||50)+1)}
-  inbox('board','',`이사회 시즌 목표 평가 · ${ok}/${ok+no}`,lines.join(' / ')+` → 신뢰도 ${2*ok-2*no>=0?'+':''}${2*ok-2*no}${bonus?` · 이적 예산 +${money(bonus)}`:''}${all?' · 모든 목표 달성: 평판 +1':''}`)}
+  inbox('board','',`이사회 시즌 목표 평가 · ${ok}/${ok+no}`,lines.join('\n')+`\n→ 신뢰도 ${2*ok-2*no>=0?'+':''}${2*ok-2*no}${bonus?` · 이적 예산 +${money(bonus)}`:''}${all?' · 모든 목표 달성: 평판 +1':''}`)}
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{if(S&&S.club>=0&&S.me&&!(typeof unemp==='function'&&unemp())){
   if((!S.goals||S.goals.y!==S.season||S.goals.c!==S.club)&&S.date>=`${S.season}-07-01`&&S.date<`${S.season}-09-01`)bdMake();
   if(S.date>=`${S.season+1}-06-15`)bdEval()}}catch(e){console.error(e)}return r}}
