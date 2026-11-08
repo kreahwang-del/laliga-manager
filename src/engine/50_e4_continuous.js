@@ -957,16 +957,16 @@ if(H.length===16){const c=H[10],fu=H[15],p1=H[5];if(c&&fu&&p1&&c.bx>=60&&fu.s===
     if(!ball.rs)for(const q of [0,1])for(const a of P[q]){const [x,y]=N(q,a.x,a.y);const gi=Math.min(15,Math.max(0,Math.floor(x/105*16))),gj=Math.min(9,Math.max(0,Math.floor(y/68*10)));(A.H[a.p.id]||(A.H[a.p.id]=new Array(160).fill(0)))[gj*16+gi]++}
     let shotBy=null,goal=false;
     for(let i=A.e0;i<st.ev.length;i++){const e=st.ev[i];
-      if(e.t==='goal'||e.t==='save'||e.t==='miss'||e.t==='block'){const ag=byN(e.p);if(ag){push(A.S,ag.p.id,[...N(ag.s,ag.x,ag.y),e.xg!=null?+e.xg:null,e.t[0]]);shotBy=ag.p.id;const c=A.cur;if(c&&c.id!==ag.p.id&&c.s===ag.s&&!c.shot&&f.t-c.t<8){push(A.P,c.id,[c.x,c.y,...N(ag.s,ag.x,ag.y),1,c.k||'']);A.cur=null}}if(e.t==='goal')goal=true}
+      if(e.t==='goal'||e.t==='save'||e.t==='miss'||e.t==='block'){const ag=byN(e.p);if(ag){push(A.S,ag.p.id,[...N(ag.s,ag.x,ag.y),e.xg!=null?+e.xg:null,e.t[0]]);shotBy=ag.p.id;const c=A.cur;if(c&&c.id!==ag.p.id&&c.s===ag.s&&!c.shot&&c.kk&&f.t-c.t<8){push(A.P,c.id,[c.x,c.y,...N(ag.s,ag.x,ag.y),1,c.k||'']);A.cur=null}}if(e.t==='goal')goal=true}
       else if(e.t==='dribble'){const ag=byN(e.p);if(ag)push(A.K,ag.p.id,N(ag.s,ag.x,ag.y))}
       else if(e.t==='clear'||e.t==='intercept'||e.t==='aerialWon'||e.t==='aerialLost'){const ag=byN(e.p);if(ag)push(A.D,ag.p.id,[...N(ag.s,ag.x,ag.y),{clear:'cl',intercept:'it',aerialWon:'aw',aerialLost:'al'}[e.t]])}
       else if(e.t==='foul'){const ag=byN(e.d);if(ag)push(A.D,ag.p.id,[...N(ag.s,ag.x,ag.y),'fo'])}}
     A.e0=st.ev.length;let tk=new Set();
-    (f.g||[]).forEach(g=>{if(g[0]==='tk'||g[0]==='tm'){const ag=byI(g[1]);if(ag){push(A.D,ag.p.id,[...N(ag.s,ag.x,ag.y),g[0]]);if(g[0]==='tk')tk.add(ag.p.id)}}else if(g[0]==='kk'&&A.cur&&A.cur.id===g[1])A.cur.k=g[2]});
+    (f.g||[]).forEach(g=>{if(g[0]==='tk'||g[0]==='tm'){const ag=byI(g[1]);if(ag){push(A.D,ag.p.id,[...N(ag.s,ag.x,ag.y),g[0]]);if(g[0]==='tk')tk.add(ag.p.id)}}else if(g[0]==='kk'&&A.cur&&A.cur.id===g[1]){A.cur.k=g[2];A.cur.kk=1}});
     if(ball.rs){/* 재시작(스로인·골킥·코너·프리킥·킥오프) 중엔 소유 이어짐을 끊음 — 재시작으로 받은 공을 '볼 탈취'로 세던 문제. 상대 재시작으로 끝난 마지막 패스는 실패로 기록 */
-      const c=A.cur;if(c&&!c.shot&&!goal&&ball.rs.s!==c.s&&['throw','gk','corner'].includes(ball.rs.k)&&f.t-c.t<8){const to=N(c.s,ball.rs.x,ball.rs.y);push(A.P,c.id,[c.x,c.y,to[0],to[1],0,c.k||''])}A.cur=null;return}
+      const c=A.cur;if(c&&c.kk&&!c.shot&&!goal&&ball.rs.s!==c.s&&['throw','gk','corner'].includes(ball.rs.k)&&f.t-c.t<8){const to=N(c.s,ball.rs.x,ball.rs.y);push(A.P,c.id,[c.x,c.y,to[0],to[1],0,c.k||''])}A.cur=null;return}
     const o=ball.own;
-    if(o){const [ox,oy]=N(o.s,o.x,o.y);if(A.cur&&A.cur.id!==o.p.id){const c=A.cur;if(!goal&&!c.shot&&f.t-c.t<8&&!(f.rs&&o.s!==c.s&&ball.rs)){const to=N(c.s,o.x,o.y);push(A.P,c.id,[c.x,c.y,to[0],to[1],o.s===c.s?1:0,c.k||'']);if(o.s!==c.s&&!o.gk&&!tk.has(o.p.id))push(A.D,o.p.id,[ox,oy,'rc',c.k||'',+(f.t-c.t).toFixed(1)])}}
+    if(o){const [ox,oy]=N(o.s,o.x,o.y);if(A.cur&&A.cur.id!==o.p.id){const c=A.cur;if(!goal&&!c.shot&&f.t-c.t<8&&!(f.rs&&o.s!==c.s&&ball.rs)){const to=N(c.s,o.x,o.y);/* v305 공을 차지 않고 뺏긴 것(드리블 중 태클)은 패스 실패가 아님 — 패스 맵·성공률에서 뺌 */if(c.kk)push(A.P,c.id,[c.x,c.y,to[0],to[1],o.s===c.s?1:0,c.k||'']);if(o.s!==c.s&&!o.gk&&!tk.has(o.p.id))push(A.D,o.p.id,[ox,oy,'rc',c.k||'',+(f.t-c.t).toFixed(1)])}}
       if(!A.cur||A.cur.id!==o.p.id)A.cur={id:o.p.id,s:o.s,x:ox,y:oy,t:f.t,k:null,shot:false};else{A.cur.x=ox;A.cur.y=oy;A.cur.t=f.t}}
     if(shotBy&&A.cur&&A.cur.id===shotBy)A.cur.shot=true;if(goal)A.cur=null}
   // ---- 인터페이스 ----
