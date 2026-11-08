@@ -3340,7 +3340,7 @@ function msgHTML(m){let acts='';
   }
   if(m.type==='scout')acts=`<button class="btn sm ghost" data-player="${m.pid}">선수 보기</button>`;
   return `<div class="msg ${m.read?'':'new'}"><div class="h"><span>${fmtD(m.d)}</span><span>${{offer:'영입 제안',request:'선수 면담',clause:'바이아웃',scout:'스카우트',window:'이적시장',board:'이사회',contract:'계약','부상':'의료진'}[m.type]||''}</span></div>
-    <b>${esc(m.title)}</b><p>${esc(m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p>${acts?`<div class="acts">${acts}</div>`:''}</div>`}
+    <b>${esc(m.title)}</b><p style="white-space:pre-line">${esc(/^이사회 시즌 목표 평가/.test(m.title||'')?String(m.body).replace(/ \/ (?=[○×])/g,'\n').replace(/ → 신뢰도/,'\n→ 신뢰도'):m.body)}${m.result?` <span style="color:var(--text)">→ ${esc(m.result)}</span>`:''}</p>${acts?`<div class="acts">${acts}</div>`:''}</div>`}
 
 function squadView(){
   const f=UI.sq, sq=squadOf(S.club).filter(p=>f==='ALL'||LINE[p.g]===f).sort((a,b)=>b.ovr-a.ovr), xi=new Set(S.xi||[]);
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=301;
+const APPV=302;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -5273,7 +5273,7 @@ function bdEval(){const G=S.goals;if(!G||G.ev||G.y!==S.season||G.c!==S.club)retu
   G.items.forEach(g=>{const s=bdStat(g);g.res=s.ok;lines.push(`${s.ok?'○':'×'} ${g.t} (${s.txt})`);if(g.k==='lg')return;if(s.ok)ok++;else no++});
   const rev=CLUBS[S.club].rev*1e6;const bonus=Math.round(rev*.015*ok/1e5)*1e5;S.me.trust=Math.max(0,Math.min(100,(S.me.trust||60)+2*ok-2*no));if(bonus>0){S.fin.budget+=bonus;S.fin.log.unshift({d:S.date,t:`이사회 목표 달성 보너스(${ok}개)`,v:bonus})}
   const all=G.items.every(g=>g.res);if(all){S.me.rep=Math.min(100,(S.me.rep||50)+1)}
-  inbox('board','',`이사회 시즌 목표 평가 · ${ok}/${ok+no}`,lines.join(' / ')+` → 신뢰도 ${2*ok-2*no>=0?'+':''}${2*ok-2*no}${bonus?` · 이적 예산 +${money(bonus)}`:''}${all?' · 모든 목표 달성: 평판 +1':''}`)}
+  inbox('board','',`이사회 시즌 목표 평가 · ${ok}/${ok+no}`,lines.join('\n')+`\n→ 신뢰도 ${2*ok-2*no>=0?'+':''}${2*ok-2*no}${bonus?` · 이적 예산 +${money(bonus)}`:''}${all?' · 모든 목표 달성: 평판 +1':''}`)}
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{if(S&&S.club>=0&&S.me&&!(typeof unemp==='function'&&unemp())){
   if((!S.goals||S.goals.y!==S.season||S.goals.c!==S.club)&&S.date>=`${S.season}-07-01`&&S.date<`${S.season}-09-01`)bdMake();
   if(S.date>=`${S.season+1}-06-15`)bdEval()}}catch(e){console.error(e)}return r}}
@@ -6173,7 +6173,7 @@ function wcSet(c,v){wcInit();v=Math.round(v*10)/10;CLUBS[c].wageCap=v;S.wcap[c]=
 {const _fe=finSeasonEnd;finSeasonEnd=function(){const done0=S&&S.fin&&S.fin.ps&&S.fin.ps.done;const r=_fe.apply(this,arguments);try{const ps=S.fin.ps;if(done0||!ps||!ps.done||S.club<0)return r;wcInit();
   const b=finBase(),inc=Object.values(ps.inc).reduce((a,v)=>a+v,0);const ratio=Math.max(.75,Math.min(1.35,inc/Math.max(1,b.R)));const c=S.club;const d2=wcDivF(c);
   const cur=CLUBS[c].wageCap,tgt=S.wc0[c]*ratio*d2,nv=(cur+tgt)/2;wcSet(c,nv);
-  inbox('board','',`다음 시즌 연봉 총액 한도 ${money(cur*1e6)} → ${money(CLUBS[c].wageCap*1e6)}`,`이번 시즌 매출 ${money(inc)}(기준 대비 ${Math.round(inc/b.R*100)}%)${d2<1?' · 하위 리그 기준 적용':d2>1?' · 상위 리그 승격 반영':''}. 한도는 매출에 따라 시즌마다 다시 정해집니다(실제 라리가 선수단 비용 한도처럼). 시즌 중에는 재정 화면에서 이사회에 증액을 요청할 수 있습니다.`)}catch(e){console.error(e)}return r}}
+  inbox('board','',`다음 시즌 연봉 총액 한도 ${money(cur*1e6)} → ${money(CLUBS[c].wageCap*1e6)}`,`이번 시즌 매출 ${money(inc)}(기준 대비 ${Math.round(inc/b.R*100)}%)${d2<1?' · 하위 리그 기준 적용':d2>1?' · 상위 리그 승격 반영':''}. 한도는 매출에 따라 시즌마다 다시 정해집니다(실제 구단 비용 한도처럼). 시즌 중에는 재정 화면에서 이사회에 증액을 요청할 수 있습니다.`)}catch(e){console.error(e)}return r}}
 // ② 이사회 요청
 function wcReqOpts(){const t=S.me?S.me.trust:60;const used=S.wreq===S.season;const cap=CLUBS[S.club].wageCap*1e6;
   return [5,10].map(pc=>{const add=cap*pc/100,cost=add*3;const ok=!used&&(pc===5?t>=45:t>=60)&&S.fin.budget>=cost;
