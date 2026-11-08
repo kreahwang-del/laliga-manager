@@ -18,7 +18,7 @@ function wcSet(c,v){wcInit();v=Math.round(v*10)/10;CLUBS[c].wageCap=v;S.wcap[c]=
 {const _fe=finSeasonEnd;finSeasonEnd=function(){const done0=S&&S.fin&&S.fin.ps&&S.fin.ps.done;const r=_fe.apply(this,arguments);try{const ps=S.fin.ps;if(done0||!ps||!ps.done||S.club<0)return r;wcInit();
   const b=finBase(),inc=Object.values(ps.inc).reduce((a,v)=>a+v,0);const ratio=Math.max(.75,Math.min(1.35,inc/Math.max(1,b.R)));const c=S.club;const d2=wcDivF(c);
   const cur=CLUBS[c].wageCap,tgt=S.wc0[c]*ratio*d2,nv=(cur+tgt)/2;wcSet(c,nv);
-  inbox('board','',`다음 시즌 연봉 총액 한도 ${money(cur*1e6)} → ${money(CLUBS[c].wageCap*1e6)}`,`이번 시즌 매출 ${money(inc)}(기준 대비 ${Math.round(inc/b.R*100)}%)${d2<1?' · 하위 리그 기준 적용':d2>1?' · 상위 리그 승격 반영':''}. 한도는 매출에 따라 시즌마다 다시 정해집니다(실제 라리가 선수단 비용 한도처럼). 시즌 중에는 재정 화면에서 이사회에 증액을 요청할 수 있습니다.`)}catch(e){console.error(e)}return r}}
+  inbox('board','',`다음 시즌 연봉 총액 한도 ${money(cur*1e6)} → ${money(CLUBS[c].wageCap*1e6)}`,`이번 시즌 매출 ${money(inc)}(기준 대비 ${Math.round(inc/b.R*100)}%)${d2<1?' · 하위 리그 기준 적용':d2>1?' · 상위 리그 승격 반영':''}. 한도는 매출에 따라 시즌마다 다시 정해집니다(실제 구단 비용 한도처럼). 시즌 중에는 재정 화면에서 이사회에 증액을 요청할 수 있습니다.`)}catch(e){console.error(e)}return r}}
 // ② 이사회 요청
 function wcReqOpts(){const t=S.me?S.me.trust:60;const used=S.wreq===S.season;const cap=CLUBS[S.club].wageCap*1e6;
   return [5,10].map(pc=>{const add=cap*pc/100,cost=add*3;const ok=!used&&(pc===5?t>=45:t>=60)&&S.fin.budget>=cost;
