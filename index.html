@@ -3445,12 +3445,12 @@ function tacSeg(ph){if(ph==='atk'||ph==='def')return `<div class="subhd"><button
 function tacFineHTML(){posZMig();const T=S.tac,n=ph=>{const Z=(T.posZ&&T.posZ[ph])||{};return ZN.filter(([k])=>Z[k]&&Object.keys(Z[k]).length).map(([k,b,l])=>l).join('·')};const fa=T.form.atk!==T.form.base,fd=T.form.def!==T.form.base;const sub=[fa?`공격 시 대형 ${T.form.atk}`:'',fd?`수비 시 대형 ${T.form.def}`:'',n('atk')?`공격 시 ${n('atk')} 위치 지정`:'',n('def')?`수비 시 ${n('def')} 위치 지정`:''].filter(Boolean);
   return `<button class="finebtn" data-phase="atk"><span><b>공격·수비 위치 세부 조정</b><small>${sub.length?esc(sub.join(' · ')):'조정 없음 · 실제 데이터 기준 기본 위치로 뜁니다'}</small></span><span class="go">›</span></button>`}
 function tacView(){
-  if(TAC.phase==='sp'){ensureXI();const on=oppNext(),O=oppTeam();return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(S.tac.fam)}</span></div>`:''}${tacSeg('sp')}${spView()}`}
+  if(TAC.phase==='sp'){ensureXI();const on=oppNext(),O=oppTeam();return `${on!=null?`<div class="banner closed" style="margin-top:12px;flex-wrap:nowrap"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1">다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(S.tac.fam)}</span></div>`:''}${tacSeg('sp')}${spView()}`}
   ensureXI();const T=S.tac,ph=TAC.phase,xi=S.xi,keys=slotKeys(ph),coords=coordsOf(ph),O=oppTeam(),on=oppNext();const HZL=hzOn()&&window.E4&&E4.refCoords?hzLayout(ph):null;const disp=HZL?HZL.disp:coords;
   const pv=E3.PRESETS[T.preset],devs=T.ti.map((v,i)=>Math.abs(v-pv[i])).filter(d=>d>1).length;
   const sup=O?superiority(ph,coords):null;const bench=squadOf(S.club).filter(p=>!xi.includes(p.id)&&canUse(p)).sort((a,b)=>b.ovr-a.ovr);const shp=E3.shapeOf(T,ph);
   const note={base:'점은 자리·역할 배치도입니다(실제 경기 위치는 아래 「공격·수비 위치 세부 조정」). 한 번 누르면 정보·교체 버튼, 길게 눌러 끌면 선수끼리 교체하거나 다른 자리로 옮깁니다.',atk:'점 = 공 위치별 실제 서는 자리. 길게 눌러 끌거나, 선수를 누르고 화살표로 1m씩 옮깁니다.',def:'점 = 공 위치별 실제 서는 자리. 길게 눌러 끌거나, 선수를 누르고 화살표로 1m씩 옮깁니다.'}[ph];
-  return `${on!=null?`<div class="banner closed" style="margin-top:12px"><span>다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num">숙련도 ${Math.round(T.fam)}</span></div>`:''}
+  return `${on!=null?`<div class="banner closed" style="margin-top:12px;flex-wrap:nowrap"><span style="white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0;flex:1">다음 상대 <b style="color:var(--text)">${esc(CLUBS[on].name)}</b>${typeof lgRankTxt==='function'&&lgRankTxt(on,1)?` <span class="note" style="display:inline">(${lgRankTxt(on,1)}${lgRankTxt(S.club,1)?` · 우리 ${lgRankTxt(S.club,1)}`:''})</span>`:''} <span class="note" style="display:inline">${esc(nextFxLabel(typeof M!=='undefined'&&M&&M.edit?M.fx:nextFxAll()))}</span> · ${O.preset} · ${O.form.base}</span><span class="num" style="white-space:nowrap;flex:none;margin-left:8px">숙련 ${Math.round(T.fam)}</span></div>`:''}
   ${tacSeg(ph)}
   ${(()=>{const fo=tacFold(ph);return `<button class="chip" data-tfold="1" style="margin-top:8px;width:100%;justify-content:space-between;display:flex"><span>대형 <b>${T.form[ph]}</b> · 저장·상대 대형·자동 선발</span><span>${fo?'펼치기 ▼':'접기 ▲'}</span></button>`})()}<div ${tacFold(ph)?'hidden':''}>
   ${typeof M!=='undefined'&&M&&M.edit&&TAC.showOpp!==false&&O?`<div class="note" style="margin:6px 0 0;color:#ffb4b4">경기 중: 상대 점은 최근 10분(재시작 제외) ${ph==='base'?'평균 위치':ph==='atk'?'우리가 공을 가졌을 때 상대 평균 위치':'상대가 공을 가졌을 때 평균 위치'}입니다. 버튼을 한 번 더 누르면 포지션 글자를 표시합니다.</div>`:''}${ph!=='base'?`<div class="lbl" style="margin-top:10px">${ph==='atk'?'공격 시':'수비 시'} 대형 (기본 ${T.form.base}과 다르게 둘 수 있음)</div>`:''}<div class="chips">${Object.keys(E3.FORMS).map(k=>`<button class="chip" data-shape="${k}" aria-pressed="${T.form[ph]===k}">${k}</button>`).join('')}</div>
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=303;
+const APPV=304;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -8542,6 +8542,16 @@ document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest
 // v303 받은 소식 본문에 <br>·<b>가 글자로 보이던 문제(사용자 지적: 시장가치 재평가·선수단 비용·임대 리포트): 본문은 안전하게 이스케이프되는데 일부 메시지가 <br><b>로 작성됨
 // → 모든 소식 카드(msgHTML 최종 결과)에서 이 두 태그만 되살리고, 본문의 줄바꿈(\n)도 표시
 {const _mh=msgHTML;msgHTML=function(m){const h=_mh.apply(this,arguments);return typeof h==='string'?h.replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/&lt;(\/?)b&gt;/g,'<$1b>').replace(/<p>/g,'<p style="white-space:pre-line">'):h}}
+// v304 프리시즌 친선경기 상대가 우리 팀 자신으로 잡히던 문제(사용자 지적: Sanfrecce vs Sanfrecce)
+// 원인: 0100 친선 상대 = '라리가 아닌 구단' 아무나(라리가만 있던 시절 코드) → 다른 리그 감독은 자기 팀·같은 리그 팀이 뽑힘. 이직하면 옛 팀 기준 일정이 남기도 함
+// → 우리 팀·같은 리그·2군·자유계약 제외하고 다시 고름. 새 시즌 일정과 기존 세이브(아직 안 치른 친선) 모두
+function frOpp(i){const my=CLUBS[S.club];const ml=my?(typeof baseLg==='function'?baseLg(my.lg):my.lg):null;
+  const L=CLUBS.filter(c=>c&&c.i!==S.club&&c.i!==FA&&c.i!==RET&&c.par==null&&(typeof baseLg==='function'?baseLg(c.lg):c.lg)!==ml&&!/^ES3/.test(c.lg));return L.length?L[Math.floor(hsh(S.season+'f'+i+S.club)*L.length)].i:null}
+function frFix(){try{if(!S||!S.friendlies||typeof unemp==='function'&&unemp())return;const my=CLUBS[S.club];if(!my)return;const ml=typeof baseLg==='function'?baseLg(my.lg):my.lg;
+  S.friendlies.forEach((f,i)=>{if(f.res)return;f.h=S.club;const o=CLUBS[f.a];if(!o||f.a===S.club||(typeof baseLg==='function'?baseLg(o.lg):o.lg)===ml){const n=frOpp(i);if(n!=null)f.a=n}})}catch(e){console.error(e)}}
+{const _ns=newSeason;newSeason=function(){const r=_ns.apply(this,arguments);frFix();return r}}
+{const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);frFix();return r}}
+{const _d=daily;daily=function(){const r=_d.apply(this,arguments);frFix();return r}}
 </script>
 <script type="text/x-three" id="threeSrc">void 0,
 /**
