@@ -11,3 +11,6 @@ function updCheck(){toast('최신 버전 확인 중…');const A=window.AndroidA
   .catch(()=>toast('확인 실패(인터넷 연결 확인)'))}
 {const _vt=verTag;verTag=function(){const h=_vt.apply(this,arguments);return h?h.replace('</p>',' · <button class="chip" data-updchk style="padding:2px 10px;font-size:12px">업데이트 확인</button></p>'):h}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-updchk]');if(!b)return;e.preventDefault();e.stopPropagation();updCheck()},true);
+// v303 받은 소식 본문에 <br>·<b>가 글자로 보이던 문제(사용자 지적: 시장가치 재평가·선수단 비용·임대 리포트): 본문은 안전하게 이스케이프되는데 일부 메시지가 <br><b>로 작성됨
+// → 모든 소식 카드(msgHTML 최종 결과)에서 이 두 태그만 되살리고, 본문의 줄바꿈(\n)도 표시
+{const _mh=msgHTML;msgHTML=function(m){const h=_mh.apply(this,arguments);return typeof h==='string'?h.replace(/&lt;br\s*\/?&gt;/g,'<br>').replace(/&lt;(\/?)b&gt;/g,'<$1b>').replace(/<p>/g,'<p style="white-space:pre-line">'):h}}
