@@ -95,3 +95,4 @@ app/1013_v295_dupname.js
 app/1014_v295_aidom.js
 app/1015_v299_updbtn.js
 app/1016_v306_homegrown.js
+app/1017_v307_addpl.js
