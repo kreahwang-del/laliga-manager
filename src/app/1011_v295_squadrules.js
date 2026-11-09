@@ -77,8 +77,9 @@ const NT_EU_LG=new Set(['ES','IT','DE','FR','PT','NL','BE','AT','DK','CH']);
 function natTag(p,c){const lg=sqrLg(c);if(!lg||!p||!p.nat)return null;const has=S=>S.has(p.nat)||(!!p.nat2&&S.has(p.nat2));if(NT_EU_LG.has(lg))return has(NT_EU_NAT)?null:'비EU';if(lg==='EN'||lg==='SC')return has(NT_UK_NAT)?null:'외';return isFor(p,c)?'외':null}
 {const _sv=squadView;squadView=function(){let h=_sv.apply(this,arguments);try{if(UI.sqv==='trn'||UI.sqv==='mgmt'||!S||unemp())return h;const c=S.club,lg=sqrLg(c),sq=squadOf(c),R=sqrRule(c);
   const tg={};sq.forEach(p=>{const t=natTag(p,c);if(t)tg[p.id]=t});const n=Object.keys(tg).length,eu=NT_EU_LG.has(lg);
-  h=h.replace(/(data-player="(\d+)">[\s\S]{0,800}?<span class="nm"><b>)([^<]*)/g,(m,a,id,nm)=>tg[id]?`${a}${nm} <span class="pill n" style="font-size:10px;padding:0 5px;vertical-align:1px">${tg[id]}</span>`:m);
-  const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`보유 한도 ${R.h}명`);parts.push(`1군 ${sq.length}/${SQMAX}명`);
+  const hg={};if(typeof hgStat==='function')sq.forEach(p=>{const t=hgStat(p,c);if(t)hg[p.id]=t});const bd=t=>`<span class="pill n" style="font-size:10px;padding:0 5px;vertical-align:1px">${t}</span>`;
+  h=h.replace(/(data-player="(\d+)">[\s\S]{0,800}?<span class="nm"><b>)([^<]*)/g,(m,a,id,nm)=>tg[id]||hg[id]?`${a}${nm}${tg[id]?' '+bd(tg[id]):''}${hg[id]?' '+bd(hg[id]==='c'?'HG':'HG협'):''}`:m);
+  const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`보유 한도 ${R.h}명`);parts.push(`1군 ${sq.length}/${SQMAX}명`);const hc=Object.values(hg).filter(x=>x==='c').length,ha=Object.values(hg).length-hc;const hgNote=typeof HG_RULE!=='undefined'&&HG_RULE[lg]?HG_RULE[lg]:'';if(hgNote||hc)parts.push(`홈그로운 ${hc+ha}명(구단 ${hc}·협회 ${ha})`);
   const note=eu?' · 이중국적(EU 여권) 반영 · 참고용, 아직 제한 없음':!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
-  const box=`<div class="card pad" style="margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center"><b>${parts.join(' · ')}</b><span class="note" style="margin:0">${note}</span></div>`;
+  const box=`<div class="card pad" style="margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center"><b>${parts.join(' · ')}</b><span class="note" style="margin:0">${note}${hgNote?' · '+hgNote:''}</span></div>`;
   const i=h.indexOf('<div class="card list"');h=i>=0?h.slice(0,i)+box+h.slice(i):box+h}catch(e){console.error(e)}return h}}
