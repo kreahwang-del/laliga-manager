@@ -11,7 +11,7 @@ function sqrCanToggle(){try{return (typeof unemp==='function'&&unemp())||!S.fixt
 function sqrOn(){return !!S&&S.sqr!==false}
 function sqrLg(c){const C=CLUBS[c];if(!C)return null;return typeof baseLg==='function'?baseLg(C.lg):C.lg}
 function sqrRule(c){const lg=sqrLg(c);return lg?SQR[lg]||null:null}
-function isFor(p,c){const lg=sqrLg(c);const L=LGNAT[lg];return !!(L&&p&&p.nat&&!L.includes(p.nat))}
+/* v306 이중국적(사용자 제공 자료): 두 번째 국적이 리그 나라면 자국 선수 */function isFor(p,c){const lg=sqrLg(c);const L=LGNAT[lg];return !!(L&&p&&p.nat&&!L.includes(p.nat)&&!(p.nat2&&L.includes(p.nat2)))}
 function forCnt(c,ex){return squadOf(c).filter(q=>q.id!==ex&&isFor(q,c)).length}
 function sqrWeakFor(c,ex){return squadOf(c).filter(q=>q.id!==ex&&isFor(q,c)&&!q.loanFrom).sort((a,b)=>a.ovr-b.ovr)[0]||null}
 /* AI 구단은 한도가 차 있어도 더 나은 외국인이면 영입하고 가장 약한 외국인과 계약 해지(실제 사우디·튀르키예 구단 방식). 사용자 구단은 먼저 내보내야 함 */
@@ -70,15 +70,15 @@ function sqrAutoPick(){const form=S.tac.form.base;let pool=squadOf(S.club).filte
   for(let k=0;k<12;k++){const ps=xi.map(id=>id!=null?pl(id):null).filter(Boolean);const f=ps.filter(p=>isFor(p,S.club));if(f.length<=R.m)break;const w=f.sort((a,b)=>a.ovr-b.ovr)[0];pool=pool.filter(p=>p.id!==w.id);if(pool.length<11)break;xi=E3.autoPick(pool,form)}
   setTimeout(()=>{try{const k=sqrMyCheck();if(k)toast(`외국인 ${k.n}/${k.m}명 규정에 맞춰 선발했습니다`)}catch(e){}},1200);return xi}
 // v305 스쿼드 탭 외국인 요약·선수 표시(사용자 요청 2026-11-08)
-// 아시아·미주 리그 = '외'(리그 나라 국적이 아님) / 유럽 리그 = '비EU'(EU·EEA·스위스 밖, 참고용 — 이중국적 데이터가 없어 실제보다 많게 나올 수 있음) / 잉글랜드·스코틀랜드 = '외'(영국 밖)
+// 아시아·미주 리그 = '외'(리그 나라 국적이 아님) / 유럽 리그 = '비EU'(EU·EEA·스위스 밖, 참고용 — v306부터 두 번째 국적 반영) / 잉글랜드·스코틀랜드 = '외'(영국 밖)
 const NT_EU_NAT=new Set('AUT BEL BUL CRO CYP CZE DEN EST FIN FRA GER GRE HUN IRL ITA LVA LTU LUX MLT NED POL POR ROU SVK SVN ESP SWE ISL NOR LIE SUI'.split(' '));
 const NT_UK_NAT=new Set(['ENG','SCO','WAL','NIR']);
 const NT_EU_LG=new Set(['ES','IT','DE','FR','PT','NL','BE','AT','DK','CH']);
-function natTag(p,c){const lg=sqrLg(c);if(!lg||!p||!p.nat)return null;if(NT_EU_LG.has(lg))return NT_EU_NAT.has(p.nat)?null:'비EU';if(lg==='EN'||lg==='SC')return NT_UK_NAT.has(p.nat)?null:'외';return isFor(p,c)?'외':null}
+function natTag(p,c){const lg=sqrLg(c);if(!lg||!p||!p.nat)return null;const has=S=>S.has(p.nat)||(!!p.nat2&&S.has(p.nat2));if(NT_EU_LG.has(lg))return has(NT_EU_NAT)?null:'비EU';if(lg==='EN'||lg==='SC')return has(NT_UK_NAT)?null:'외';return isFor(p,c)?'외':null}
 {const _sv=squadView;squadView=function(){let h=_sv.apply(this,arguments);try{if(UI.sqv==='trn'||UI.sqv==='mgmt'||!S||unemp())return h;const c=S.club,lg=sqrLg(c),sq=squadOf(c),R=sqrRule(c);
   const tg={};sq.forEach(p=>{const t=natTag(p,c);if(t)tg[p.id]=t});const n=Object.keys(tg).length,eu=NT_EU_LG.has(lg);
   h=h.replace(/(data-player="(\d+)">[\s\S]{0,800}?<span class="nm"><b>)([^<]*)/g,(m,a,id,nm)=>tg[id]?`${a}${nm} <span class="pill n" style="font-size:10px;padding:0 5px;vertical-align:1px">${tg[id]}</span>`:m);
   const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`보유 한도 ${R.h}명`);parts.push(`1군 ${sq.length}/${SQMAX}명`);
-  const note=eu?' · 이중국적이 반영되지 않아 실제보다 많을 수 있습니다(참고용, 아직 제한 없음)':!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
+  const note=eu?' · 이중국적(EU 여권) 반영 · 참고용, 아직 제한 없음':!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
   const box=`<div class="card pad" style="margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center"><b>${parts.join(' · ')}</b><span class="note" style="margin:0">${note}</span></div>`;
   const i=h.indexOf('<div class="card list"');h=i>=0?h.slice(0,i)+box+h.slice(i):box+h}catch(e){console.error(e)}return h}}
