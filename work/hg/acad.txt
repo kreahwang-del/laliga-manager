@@ -1,0 +1,172 @@
+# 선수 이름|육성 구단|나라(구단이 게임에 없을 때) — Claude가 아는 범위(15~21세 3시즌 이상 확실한 경우만), 2026-11-10
+Bukayo Saka|Arsenal
+Myles Lewis-Skelly|Arsenal
+Ethan Nwaneri|Arsenal
+Emile Smith Rowe|Arsenal
+Eddie Nketiah|Arsenal
+Folarin Balogun|Arsenal
+Joe Willock|Arsenal
+Ainsley Maitland-Niles|Arsenal
+Alex Iwobi|Arsenal
+Chuba Akpom|Arsenal
+Ayden Heaven|Arsenal
+Omari Hutchinson|Arsenal
+Brooke Norton-Cuffy|Arsenal
+Reece James|Chelsea
+Levi Colwill|Chelsea
+Trevoh Chalobah|Chelsea
+Conor Gallagher|Chelsea
+Tino Livramento|Chelsea
+Callum Hudson-Odoi|Chelsea
+Tammy Abraham|Chelsea
+Marc Guéhi|Chelsea
+Ian Maatsen|Chelsea
+Lewis Hall|Chelsea
+Ethan Ampadu|Chelsea
+Billy Gilmour|Chelsea
+Ruben Loftus-Cheek|Chelsea
+Dominic Solanke|Chelsea
+Tariq Lamptey|Chelsea
+Joshua Acheampong|Chelsea
+Mason Mount|Chelsea
+Fikayo Tomori|Chelsea
+Jamal Musiala|Chelsea
+Kobbie Mainoo|Manchester Utd
+Marcus Rashford|Manchester Utd
+Shea Lacey|Manchester Utd
+Scott McTominay|Manchester Utd
+James Garner|Manchester Utd
+Angel Gomes|Manchester Utd
+Axel Tuanzebe|Manchester Utd
+Mason Greenwood|Manchester Utd
+Alejandro Garnacho|Manchester Utd
+Dean Henderson|Manchester Utd
+Phil Foden|Manchester City
+Rico Lewis|Manchester City
+Nico O'Reilly|Manchester City
+Cole Palmer|Manchester City
+Oscar Bobb|Manchester City
+Liam Delap|Manchester City
+James McAtee|Manchester City
+Morgan Rogers|Manchester City
+Taylor Harwood-Bellis|Manchester City
+James Trafford|Manchester City
+Brahim Díaz|Manchester City
+Adrián Bernabé|Manchester City
+Trent Alexander-Arnold|Liverpool
+Curtis Jones|Liverpool
+Jarell Quansah|Liverpool
+Harvey Elliott|Liverpool
+Tyler Morton|Liverpool
+Trey Nyoni|Liverpool
+Ben Gannon-Doak|Liverpool
+Lewis Koumas|Liverpool
+Harry Wilson|Liverpool
+Archie Gray|Leeds United
+Charlie Cresswell|Leeds United
+Lewis Cook|Leeds United
+Harry Kane|Tottenham
+Mikey Moore|Tottenham
+Dennis Cirkin|Tottenham
+Declan Rice|West Ham
+Anthony Gordon|Everton
+Harrison Armstrong|Everton
+Ross Barkley|Everton
+Tyler Dibling|Southampton
+Jordan Pickford|Sunderland
+Chris Rigg|Sunderland
+Jack Grealish|Aston Villa
+Jacob Ramsey|Aston Villa
+Tim Iroegbunam|Aston Villa
+Lamare Bogarde|Aston Villa
+Adam Wharton|Blackburn Rovers
+Elliot Anderson|Newcastle
+Lewis Miley|Newcastle
+Sean Longstaff|Newcastle
+Alex Murphy|Newcastle
+Jack Hinshelwood|Brighton
+Lewis Dunk|Brighton
+Ben White|Brighton
+Ryan Sessegnon|Fulham
+Jude Bellingham|Birmingham City
+Jobe Bellingham|Birmingham City
+Nathan Collins|Stoke City
+Jaidon Anthony|Bournemouth
+Keane Lewis-Potter|Hull City
+Jacob Greaves|Hull City
+Brennan Johnson|Nottingham
+Ezri Konsa|Charlton Ath
+Aaron Wan-Bissaka|Crystal Palace
+Tyrick Mitchell|Crystal Palace
+Dwight McNeil|Burnley
+Harry Maguire|Sheffield Utd
+Kyle Walker|Sheffield Utd
+Luke Shaw|Southampton
+Matt Targett|Southampton
+John Stones|-|ENG
+Ben Chilwell|-|ENG
+Harvey Barnes|-|ENG
+Morgan Gibbs-White|-|ENG
+Dara O'Shea|-|ENG
+James Justin|-|ENG
+Federico Dimarco|Inter
+Francesco Esposito|Inter
+Valentín Carboni|Inter
+Cesare Casadei|Inter
+Alessandro Bastoni|Atalanta
+Giorgio Scalvini|Atalanta
+Marco Carnesecchi|Atalanta
+Davide Zappacosta|Atalanta
+Matteo Ruggeri|Atalanta
+Dejan Kulusevski|Atalanta
+Roberto Piccoli|Atalanta
+Lorenzo Bernasconi|Atalanta
+Nicolò Barella|Cagliari
+Davide Frattesi|Roma
+Riccardo Calafiori|Roma
+Niccolò Pisilli|Roma
+Nicola Zalewski|Roma
+Cristian Volpato|Roma
+Matteo Politano|Roma
+Matteo Cancellieri|Roma
+Bryan Cristante|Milan
+Francesco Camarda|Milan
+Davide Bartesaghi|Milan
+Matteo Gabbia|Milan
+Daniel Maldini|Milan
+Tommaso Pobega|Milan
+Gianluigi Donnarumma|Milan
+Lorenzo Colombo|Milan
+Manuel Locatelli|Milan
+Nicolò Fagioli|Juventus
+Moise Kean|Juventus
+Samuel Mbangula|Juventus
+Kenan Yıldız|Juventus
+Matías Soulé|Juventus
+Andrea Cambiaso|Genoa
+Nicolò Rovella|Genoa
+Gianluca Gaetano|Napoli
+Antonio Vergara|Napoli
+Alex Meret|Udinese
+Pietro Comuzzo|Fiorentina
+Michael Kayode|Fiorentina
+Federico Chiesa|Fiorentina
+Domenico Berardi|Sassuolo
+Giacomo Raspadori|Sassuolo
+Samuele Ricci|Empoli
+Tommaso Baldanzi|Empoli
+Riccardo Orsolini|Ascoli
+Destiny Udogie|Hellas Verona
+Nicolás Paz|Real Madrid||Como
+Lamine Yamal|Barcelona
+Gavi|Barcelona
+Pedri|-|ESP
+Fermín López|Barcelona
+Pau Cubarsí|Barcelona
+Alejandro Balde|Barcelona
+Marc Casadó|Barcelona
+Ansu Fati|Barcelona
+Álex Valle|Barcelona
+Jesús Rodríguez|Real Betis
+Assane Diao|Real Betis
+Maxence Caqueret|Lyon

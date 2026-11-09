@@ -7,8 +7,9 @@ const HG_RULE={EN:'프리미어리그: 25인 명단 중 홈그로운 8명(아직
 function hgCountry(c){const lg=typeof sqrLg==='function'?sqrLg(c):null;const L=lg&&LGNAT[lg];return L?L[0]:null}
 function hgStat(p,c){if(!p||c==null||c<0||!CLUBS[c])return null;const T=(S&&S.hgT&&S.hgT[p.id])||null;
   const yc=p.youth?(p.youth.c!=null?p.youth.c:(BASE[p.id]&&BASE[p.id].club)):null;
-  if((T&&(T.c[c]||0)>=3)||(yc===c&&!p.imported))return 'c';
-  const cc=hgCountry(c);if(!cc)return null;
+  const A=G.hgAcad&&G.hgAcad[p.id];/* 유스 출신 목록(work/hg/acad.txt, Claude가 아는 범위 165명) */
+  if((T&&(T.c[c]||0)>=3)||(yc===c&&!p.imported)||(A&&A[0]===c))return 'c';
+  const cc=hgCountry(c);if(!cc)return null;if(A&&A[1]===cc)return 'a';
   if(T&&(T.a[cc]||0)>=3)return 'a';
   if(!p.imported&&(p.nat===cc||p.nat2===cc))return 'a';/* 근사치: 그 나라 국적이면 그 나라에서 자랐다고 봄 */
   return null}
