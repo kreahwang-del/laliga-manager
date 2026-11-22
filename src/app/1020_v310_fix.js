@@ -15,13 +15,13 @@ function elig(p,c){if(!p)return false;if(!resOf(p.id))return true;if(ageOf(p)>=R
   return r||_tf.apply(this,arguments)/* 자격 선수로 11명이 안 되면 예전처럼 */}}
 // ② 1군으로 올리기 확인(0440 클릭 처리보다 먼저: window 캡처)
 window.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-res]');if(!b||!S)return;const id=+b.dataset.res,q=S.ps[id];if(!q||!q.res)return;const p=pl(id);
-  let why=null;if(regSize(S.club)>=SQMAX)why=`1군 등록이 ${SQMAX}명으로 꽉 찼습니다. 다른 선수를 2군으로 내린 뒤 올리세요.`;
-  else if(sqrOn()&&isFor(p,S.club)){const R=sqrRule(S.club);const cap=R&&R.h;if(cap&&forCnt(S.club)>=cap)why=`1군 외국인이 한도(${cap}명)입니다. 외국인 선수를 2군으로 내린 뒤 올리세요.`}
+  let why=null;if(!regCanAdd(S.club,p))why=`1군 등록 한도입니다(${regTxt(S.club)}). 다른 선수를 2군으로 내린 뒤 올리세요.`;
+  else if(sqrOn()&&isFor(p,S.club)){const R=sqrRule(S.club);const cap=R&&R.h;if(cap&&forCnt(S.club)>=cap)why=`1군 외국인이 한도(${cap}명)입니다. 외국인 선수를 2군으로 내린 뒤 올리세요.`;else if(!quotaY(p,S.club))why=quotaYTxt(S.club)}
   if(why){e.stopImmediatePropagation();e.preventDefault();toast(why)}},true);
 // ③ 시작 안내
 function startWarn(){try{if(!S||S.club==null||S.club<0)return;const c=S.club,a=[];const R=sqrRule(c),cap=R&&R.h;
   if(cap&&forCnt(c)>cap)a.push(`1군 외국인 ${forCnt(c)}명 / 한도 ${cap}명 — ${forCnt(c)-cap}명을 2군으로 내리거나 내보내야 합니다(2군 외국인은 1군 경기 출전 불가).`);
-  if(regSize(c)>SQMAX)a.push(`1군 등록 ${regSize(c)}명 / ${SQMAX}명 — ${regSize(c)-SQMAX}명을 2군으로 내려야 합니다.`);
+  if(regOver(c))a.push(`${regTxt(c)} — 한도를 넘어 2군으로 내려야 합니다.`);if(lgR(c).hy&&forOldCnt(c)>sqrRule(c).h-lgR(c).hy.n)a.push(quotaYTxt(c));
   if(ownSize(c)>OWNMAX)a.push(`계약 선수(1군+2군+임대 보낸 선수) ${ownSize(c)}명 / ${OWNMAX}명 — 줄일 때까지 새 영입 제안을 할 수 없습니다.`);
   if(a.length)inbox('board','','선수단 규정 점검',`시작 시점 선수단이 규정을 넘습니다(실제 선수단·임대 반영).\n${a.join('\n')}\n선수 화면의 '2군으로 내리기'·임대·판매로 정리하세요.`)}catch(e){console.error(e)}}
 {const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);try{
@@ -40,7 +40,7 @@ function startWarn(){try{if(!S||S.club==null||S.club<0)return;const c=S.club,a=[
 if(typeof tfhHTML==='function'){const _h=tfhHTML;tfhHTML=function(id){const H=G.tfh&&G.tfh.h&&G.tfh.h[id];if(!H)return '';const keep=H.filter(x=>x[0]<SEASON_START);if(!keep.length)return '';const o=G.tfh.h[id];G.tfh.h[id]=keep;try{return _h.call(this,id)}finally{G.tfh.h[id]=o}}}
 // ⑧ 시즌 넘김 직후 재배정
 {const _ro=rollover;rollover=function(){const r=_ro.apply(this,arguments);try{CLUBS.forEach(c=>{if(c&&c.i>=0&&c.i!==S.club)try{resAssignAI(c.i)}catch(e){}});SQC=null;
-  const c=S.club;if(c!=null&&c>=0&&!(typeof unemp==='function'&&unemp())){const R=sqrRule(c),cap=R&&R.h;const over=regSize(c)>SQMAX||(cap&&forCnt(c)>cap);if(over)inbox('board','','임대 복귀 후 선수단 점검',`임대 복귀로 1군 등록 ${regSize(c)}/${SQMAX}명${cap?`, 1군 외국인 ${forCnt(c)}/${cap}명`:''}입니다. 이적시장 마감 전까지 2군 배정·임대·판매로 맞추세요.`)}}catch(e){console.error(e)}return r}}
+  const c=S.club;if(c!=null&&c>=0&&!(typeof unemp==='function'&&unemp())){const R=sqrRule(c),cap=R&&R.h;const over=regOver(c)||(cap&&forCnt(c)>cap);if(over)inbox('board','','임대 복귀 후 선수단 점검',`임대 복귀로 ${regTxt(c)}${cap?`, 1군 외국인 ${forCnt(c)}/${cap}명`:''}입니다. 이적시장 마감 전까지 2군 배정·임대·판매로 맞추세요.`)}}catch(e){console.error(e)}return r}}
 // ⑨ 성능(엔진 의견): 선수 소속이 바뀔 때마다 선수단 캐시 전체를 다시 만들던 것(1회 약 4ms × 수십~수백 번)을 바뀐 선수만 옮기도록
 {const _sp=setP;setP=function(id,o){if(!o||!('club' in o)||!SQC)return _sp.apply(this,arguments);const keep=SQC;const old=clubOf(id);const r=_sp.apply(this,arguments);const nw=clubOf(id);
   if(SQC===null&&keep){if(old!==nw){const L=keep[old];if(L){const i=L.indexOf(+id);if(i>=0)L.splice(i,1)}(keep[nw]=keep[nw]||[]).push(+id)}SQC=keep;LOUT=null}return r}}

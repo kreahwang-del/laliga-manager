@@ -8,7 +8,7 @@ function tm308Start(){if(!S)return;const T=G.tm308||{};S.mig308=1;let n=0;
   S.pre308=(T.pre||[]).map(x=>x.slice());if(n)SQC=null;
   /* 시작 정리: 소속 갱신·빠진 선수 추가로 30명·외국인 한도를 넘은 AI 구단을 바로 정리(이적시장 하루 1명 규칙을 시작 시점에 몰아서 실행) */
   /* v309: 1군 30명·외국인 한도는 2군으로 내려서 맞추고(계약 유지), 보유 40명을 넘는 구단만 정리 */
-  try{CLUBS.forEach(c=>{if(c&&c.i!==S.club&&c.i>=0)resAssignAI(c.i)});SQC=null;if(regSize(S.club)>SQMAX)resAssignAI(S.club)}catch(e){console.error(e)}
+  try{CLUBS.forEach(c=>{if(c&&c.i!==S.club&&c.i>=0)resAssignAI(c.i)});SQC=null;if(regOver(S.club))resAssignAI(S.club)}catch(e){console.error(e)}
   const _w=winNow,_nw=S.news.slice();try{winNow=()=>true;/* 시작일(7/1)은 이적시장 시작 전이라 잠깐 열린 것으로 봄 */for(let k=0;k<20;k++){S.aiSqD=null;S.aiDomD=null;if(typeof aiSqTrimDay==='function')aiSqTrimDay()}}catch(e){console.error(e)}finally{winNow=_w;S.news=_nw;/* 시작 정리 소식은 남기지 않음 */S.aiSqD=null;S.aiDomD=null;SQC=null}
   return n}
 function mig308(){if(!S||S.mig308)return;S.mig308=1;const P=(G.tm308||{}).prev||{};let n=0;
