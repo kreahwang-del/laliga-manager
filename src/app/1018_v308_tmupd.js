@@ -5,7 +5,10 @@
 // ③ 선수 정보 창: 최근 이적 기록(날짜·구단·방식·이적료)
 function tm308Start(){if(!S)return;const T=G.tm308||{};S.mig308=1;let n=0;
   for(const id in (T.loan0||{})){const [par,end]=T.loan0[id];if(!BASE[id]||!CLUBS[par])continue;const q=S.ps[id]=S.ps[id]||{};if(q.loanFrom!=null)continue;q.loanFrom=par;q.lnEnd=end;n++}
-  S.pre308=(T.pre||[]).map(x=>x.slice());if(n)SQC=null;return n}
+  S.pre308=(T.pre||[]).map(x=>x.slice());if(n)SQC=null;
+  /* 시작 정리: 소속 갱신·빠진 선수 추가로 30명·외국인 한도를 넘은 AI 구단을 바로 정리(이적시장 하루 1명 규칙을 시작 시점에 몰아서 실행) */
+  const _w=winNow,_nw=S.news.slice();try{winNow=()=>true;/* 시작일(7/1)은 이적시장 시작 전이라 잠깐 열린 것으로 봄 */for(let k=0;k<20;k++){S.aiSqD=null;S.aiDomD=null;if(typeof aiSqTrimDay==='function')aiSqTrimDay();if(typeof aiDomDay==='function')aiDomDay()}}catch(e){console.error(e)}finally{winNow=_w;S.news=_nw;/* 시작 정리 소식은 남기지 않음 */S.aiSqD=null;S.aiDomD=null;SQC=null}
+  return n}
 function mig308(){if(!S||S.mig308)return;S.mig308=1;const P=(G.tm308||{}).prev||{};let n=0;
   for(const id in P){if(!BASE[id])continue;const [c,ce]=P[id];const q=S.ps[id]=S.ps[id]||{};if(q.club===undefined&&c!==BASE[id].club){q.club=c;n++}if(q.cEnd===undefined&&ce&&ce!==BASE[id].cEnd)q.cEnd=ce}
   SQC=null;return n}
