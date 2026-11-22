@@ -4,11 +4,15 @@
 // 2군 경기: 시즌 중 매주 토요일(1군 리그 기간) 2군 선수끼리 경기 → 2군 순위권 11명 선발 90분, 다음 5명은 절반 확률로 교체 30분
 // 성장 반영: 출전 비율(playShare)에 2군 출전 비율 × RES_W를 더함(1군 출전이 적을수록 비중↑). RES_W 0.5 — 2군 리그(스페인 3~4부) 수준이 1군보다 낮아 1군 출전의 절반으로 봄(설정값)
 // AI 구단: 여름·겨울 이적시장 직후 22세 이하이면서 팀 내 능력치 23위 밖 선수를 2군으로, 그 외는 1군으로 자동 배정. 유스 입단 선수는 모든 구단 2군에서 시작
-const RES_W=.5,RES_AGE=23,RES_REG=25;
+const RES_W=.5,RES_AGE=23,RES_REG=30;/* v309 1군 등록 30명(사용자 결정 2026-11-23, 리그별 25명 등은 다음 단계) */
 function resOf(id){const q=S.ps[id];return !!(q&&q.res)}
 function resList(c){return squadOf(c).filter(p=>resOf(p.id))}
 function resFirstReg(c){return squadOf(c).filter(p=>!resOf(p.id)).length}
-function resAssignAI(c){const sq=squadOf(c).slice().sort((a,b)=>b.ovr-a.ovr);sq.forEach((p,i)=>{const q0=S.ps[p.id];const want=!(q0&&q0.loanFrom!=null&&q0.loanFrom!==c)&&ageOf(p)<=22&&i>=23;if(want){(S.ps[p.id]=S.ps[p.id]||{}).res=true}else if(q0&&q0.res)delete q0.res})}
+/* v309: 22세 이하 팀 내 23위 밖은 2군 + 1군 등록 30명·외국인 보유 한도(등록 기준)를 넘는 선수는 나이와 관계없이 능력 낮은 순으로 2군(계약 유지). 임대 온 선수는 항상 1군 */
+function resAssignAI(c){const sq=squadOf(c).slice().sort((a,b)=>b.ovr-a.ovr);const cap=typeof aiCap==='function'&&sqrOn()?aiCap(c):null;let reg=0,fo=0;
+  const loanIn=p=>{const q=S.ps[p.id];return !!(q&&q.loanFrom!=null&&q.loanFrom!==c)};reg=sq.filter(loanIn).length;fo=sq.filter(p=>loanIn(p)&&typeof isFor==='function'&&isFor(p,c)).length;
+  sq.forEach((p,i)=>{const q0=S.ps[p.id];if(loanIn(p)){if(q0&&q0.res)delete q0.res;return}const f=typeof isFor==='function'&&isFor(p,c);
+    const want=(ageOf(p)<=22&&i>=23)||reg>=RES_REG||(f&&cap&&fo>=cap);if(want){(S.ps[p.id]=S.ps[p.id]||{}).res=true}else{if(q0&&q0.res)delete q0.res;reg++;if(f)fo++}})}
 // 1군 출전 제한: 2군의 23세 이상은 1군 선발·교체 불가(우리 팀 선발 화면·자동 선발)
 {const _cu=canUse;canUse=function(p){if(S&&clubOf(p.id)===S.club&&resOf(p.id)&&ageOf(p)>=RES_AGE)return false;return _cu.apply(this,arguments)}}
 // 2군 경기(매주 토요일, 8~5월): 시뮬레이션되는 리그의 모든 구단

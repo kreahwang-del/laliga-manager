@@ -12,7 +12,7 @@ function aiDomDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiDomD===S.date)retur
   let fa=null;const faDom=c=>{fa=fa||squadOf(FA);const L=LGNAT[sqrLg(c)]||[];return fa.filter(p=>L.includes(p.nat)&&clubOf(p.id)===FA&&ageOf(p)<=33).sort((a,b)=>b.ovr-a.ovr)[0]||null};
   for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;const cap=aiCap(C.i);if(!cap)continue;if(forCnt(C.i)<=cap)continue;
     try{if(sqSize(C.i)<=21){const d=faDom(C.i);if(d){completeTransfer(d.id,C.i,0,{wage:d.wage,cEnd:`${S.season+2}-06-30`});fa=null}}
-      if(sqSize(C.i)>=19){const w=sqrWeakFor(C.i);if(w)completeTransfer(w.id,FA,0,{wage:w.wage})}}catch(e){console.error(e)}}}
+      if(sqSize(C.i)>=19){const w=sqrWeakFor(C.i);if(w){if(ownSize(C.i)<OWNMAX&&ageOf(w)<32)(S.ps[w.id]=S.ps[w.id]||{}).res=true;/* v309 보유 여유가 있으면 2군으로(계약 유지) */else completeTransfer(w.id,FA,0,{wage:w.wage})}}}catch(e){console.error(e)}}}
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{aiDomDay()}catch(e){console.error(e)}return r}}
 // ③ 세이브 이전
 function mig295y(){if(!S||S.mig295y||!S.gen)return;let n=0;for(const id in S.gen){const p=S.gen[id];if(!p||p.nat!=='ESP'||!p.youth)continue;const c0=p.youth.c!=null?p.youth.c:p.club;const C=CLUBS[c0];if(!C)continue;
@@ -26,7 +26,7 @@ function aiFAok(p,c){if(!sqrOn()||c==null||c<0||c===S.club||!CLUBS[c])return tru
 // v296 AI 1군 30명 초과 정리(QA 지적·새 게임 3시즌 검증: 레알 35·바르사 33 — 유스 입단·임대 복귀로 늘고 줄이는 장치가 없음)
 // 이적시장 기간에 하루 1명씩 24세 이상 가장 약한 선수(임대 온 선수 제외)와 계약 해지. 유망주는 남김
 function aiSqTrimDay(){if(!sqrOn()||!S||!winNow())return;if(S.aiSqD===S.date)return;S.aiSqD=S.date;
-  for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;if(sqSize(C.i)<=SQMAX)continue;
+  for(const C of CLUBS){if(!C||C.i===S.club||C.i===FA||C.i===RET||!S.aiBudget||S.aiBudget[C.i]===undefined)continue;if(ownSize(C.i)<=OWNMAX)continue;/* v309 보유 40명 기준(1군 30명 초과는 2군으로 — resAssignAI) */
     try{const sq=squadOf(C.i).filter(p=>!p.loanFrom);const old=sq.filter(p=>ageOf(p)>=24).sort((a,b)=>a.ovr-b.ovr);const young=sq.filter(p=>ageOf(p)<24).sort((a,b)=>a.ovr-b.ovr);
       /* 24세 이상 하위권(팀 내 22위 밖)은 해지, 아니면 가장 약한 유망주를 하위 구단으로 임대(빅클럽 방식) */const rk=sq.slice().sort((a,b)=>b.ovr-a.ovr);const w=old.find(p=>rk.indexOf(p)>=22);
       if(w){completeTransfer(w.id,FA,0,{wage:w.wage});continue}const y=young[0];if(!y)continue;
