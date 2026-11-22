@@ -22,7 +22,7 @@ function startView(){const saved=loadSave();
   <p>2026년 7월 1일 프리시즌부터 시작합니다. 전술은 3단계 엔진(15칸 매치업)으로 돌아갑니다. 첫 시즌은 여름 이적시장이 없고, 2027년 1월 겨울 이적시장부터 영입·판매가 가능합니다.</p></section>
   ${saved?`<button class="btn" data-act="resume">이어하기 · ${esc(CLUBS[saved.club].name)} · ${fmtD(saved.date)}</button><p class="note">아래에서 구단을 고르면 새 게임이 시작되고 저장된 진행은 지워집니다.</p>`:''}
   <div class="pick">${teams.map(t=>`<button data-new="${t.i}">${crest(t.i)}<span><b>${esc(CLUBS[t.i].name)}</b><small>에이스 ${esc(t.star.name)} · 이적 예산 ${mM(CLUBS[t.i].budget)}</small></span><span class="ovr num ${ovrCls(t.avg)}">${t.avg}</span></button>`).join('')}</div>
-  <div class="chips" style="margin-top:14px"><button class="chip" data-imgtog aria-pressed="${IMG.on}">선수 사진·로고 표시 ${IMG.on?'켬':'끔'}</button></div><p class="note" style="margin-top:10px;line-height:1.6">사진·로고는 Transfermarkt 이미지 주소를 인터넷으로 불러옵니다(오프라인이면 이니셜 배지). 숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가치·계약: Transfermarkt 기반 공개 데이터셋. 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추정치입니다.</p></main>`}
+  <div class="chips" style="margin-top:14px"><button class="chip" data-imgtog aria-pressed="${IMG.on}">선수 사진·로고 표시 ${IMG.on?'켬':'끔'}</button></div><p class="note" style="margin-top:10px;line-height:1.6">사진·로고는 Transfermarkt 이미지 주소를 인터넷으로 불러옵니다(오프라인이면 이니셜 배지). 숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가치·계약·이적 기록·국적(이중국적)·유스 이력·일부 선수 명단: Transfermarkt 기반 데이터(공개 데이터셋 + 사용자 제공 자료, 개인용). 유스 출신 일부는 Claude 지식으로 보충(미검증). 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추정치입니다.</p></main>`}
 function squadOfBase(c){return Object.values(BASE).filter(p=>p.club===c)}
 
 function homeView(){

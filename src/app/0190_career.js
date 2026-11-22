@@ -205,7 +205,7 @@ function startCareerView(){const saved=loadSave();const mode=UI.mode||'club';
   <h2>시작 방식</h2><div class="chips"><button class="chip" data-mode="club" aria-pressed="${mode==='club'}">구단 선택</button><button class="chip" data-mode="challenge" aria-pressed="${mode==='challenge'}">도전 모드</button></div>
   <p class="note" style="margin-top:6px">${mode==='club'?'원하는 구단에 바로 부임합니다. 평판은 그 구단 요구 수준에서 시작합니다.':'평판 22의 무명 감독으로 시작합니다. 전력 하위 10개 구단 중 한 곳의 제안을 골라 부임합니다.'}</p>
   <div class="pick">${list.map(t=>`<button data-new="${t.i}">${crest(t.i)}<span><b>${esc(CLUBS[t.i].name)}</b><small>${mode==='challenge'?'요구 평판 '+reqRep(t.i)+' · ':''}에이스 ${esc(t.star.name)} · 이적 예산 ${mM(CLUBS[t.i].budget)}</small></span><span class="ovr num ${ovrCls(t.avg)}">${t.avg}</span></button>`).join('')}</div>
-  <p class="note" style="margin-top:18px;line-height:1.6">숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가치·계약: Transfermarkt 기반 공개 데이터셋. 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추정치입니다.</p></main>`}
+  <p class="note" style="margin-top:18px;line-height:1.6">숫자는 상위 16명 평균 능력치. 선수 기록: FBref 기반 5대 리그 데이터(2024-25 세부, 2025-26·2026-27 기본). 시장가치·계약·이적 기록·국적(이중국적)·유스 이력·일부 선수 명단: Transfermarkt 기반 데이터(공개 데이터셋 + 사용자 제공 자료, 개인용). 유스 출신 일부는 Claude 지식으로 보충(미검증). 매출: 딜로이트 풋볼 머니 리그 2026(상위 구단), 나머지는 스쿼드 가치로 추정. 연봉·바이아웃은 추정치입니다.</p></main>`}
 startView=startCareerView;
 document.addEventListener('input',e=>{if(e.target.id==='mgname')UI.nm=e.target.value});
 document.addEventListener('click',e=>{const b=e.target.closest('button');if(!b)return;const d=b.dataset;
