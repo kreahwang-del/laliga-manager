@@ -44,7 +44,7 @@ for p in PL:
   if not L:stat['이적 기록 없음']+=1;continue
   dob=D(p[5]);w0=dob.replace(year=dob.year+15) if not(dob.month==2 and dob.day==29) else dt.date(dob.year+15,3,1);w1=dt.date(w0.year+6,w0.month,w0.day)
   st=[];s0=L[0];start=D(s0['date'])
-  if YOUTH.search(s0['fromClub'].strip()) or 'Youth' in s0['fromClub']:start0=min(start,w0);
+  if s0['transferType']=='internal':start0=min(start,w0)  # 첫 기록이 같은 구단 내부 승격이면 그 전부터 재적 → 15세부터로 봄(다른 구단에서 온 기록은 날짜부터)
   else:start0=start
   if start0<start:st.append((parent(s0['fromClub']),s0['fromCountry'],start0,start));assumed+=start0<w0+dt.timedelta(1) and start>w0
   for i,x in enumerate(L):
