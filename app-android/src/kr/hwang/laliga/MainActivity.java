@@ -6,6 +6,7 @@ package kr.hwang.laliga;
 //   "지금 적용 / 나중에" 안내. 받아 둔 버전이 있으면 다음 실행 때 자동 적용
 // - 뒤로가기: 게임의 window.appBack()(창 닫기 → 홈 탭) → false면 앱을 뒤로 보냄
 // - 저장 내보내기: AndroidApp.saveFile(이름, 내용) → 저장 위치 선택 창, 불러오기: 파일 선택 창
+// - v260(2026-11-23): 저장소 비공개 전환 대비 — 업데이트 요청에 읽기 전용 토큰(사용자가 게임 '업데이트 확인'에서 입력, 앱 안에만 저장)을 붙임. 토큰 없으면 공개 주소 그대로
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -39,7 +40,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 public class MainActivity extends Activity {
-    static final int BUNDLED = 258;               // 이 APK에 묶인 웹 버전
+    static final int BUNDLED = 310;               // 이 APK에 묶인 웹 버전
     static final String HOME = "https://laliga.local/index.html";
     static final String RAW = "https://raw.githubusercontent.com/kreahwang-del/laliga-manager/main/";
     static final long CHECK_MS = 10 * 60 * 1000L;
@@ -63,6 +64,7 @@ public class MainActivity extends Activity {
     @Override protected void onCreate(Bundle b) {
         super.onCreate(b);
         prefs = getSharedPreferences("upd", MODE_PRIVATE);
+        TOK = prefs.getString("tok", "");
         getWindow().setStatusBarColor(Color.parseColor("#0A0B0D"));
         getWindow().setNavigationBarColor(Color.parseColor("#0A0B0D"));
         // 받아 둔 새 버전이 있으면 시작할 때 적용
@@ -175,7 +177,8 @@ public class MainActivity extends Activity {
                     }
                 }
             } catch (final Exception e) {
-                ui.post(new Runnable() { public void run() { if (banner.getVisibility() == View.VISIBLE && bApply.getVisibility() != View.VISIBLE) { showText("업데이트 확인 실패(인터넷 연결 확인)"); ui.postDelayed(new Runnable() { public void run() { banner.setVisibility(View.GONE); } }, 4000); } } });
+                final boolean noTok = !(TOK != null && TOK.length() > 0) && String.valueOf(e.getMessage()).contains("404");
+                ui.post(new Runnable() { public void run() { if (noTok) { showText("업데이트 토큰이 필요합니다(게임 홈 아래 '업데이트 확인'에서 입력)"); ui.postDelayed(new Runnable() { public void run() { banner.setVisibility(View.GONE); } }, 6000); return; } if (banner.getVisibility() == View.VISIBLE && bApply.getVisibility() != View.VISIBLE) { showText("업데이트 확인 실패(인터넷 연결 확인)"); ui.postDelayed(new Runnable() { public void run() { banner.setVisibility(View.GONE); } }, 4000); } } });
             } finally { checking = false; }
         } }).start();
     }
@@ -194,8 +197,14 @@ public class MainActivity extends Activity {
         } }, 800);
     }
 
-    static String readText(String u) throws Exception {
+    static String TOK = "";
+    static HttpURLConnection open(String u) throws Exception {
         HttpURLConnection c = (HttpURLConnection) new URL(u).openConnection();
+        if (TOK != null && TOK.length() > 0) c.setRequestProperty("Authorization", "token " + TOK);
+        return c;
+    }
+    static String readText(String u) throws Exception {
+        HttpURLConnection c = open(u);
         c.setConnectTimeout(15000); c.setReadTimeout(60000); c.setUseCaches(false);
         InputStream in = c.getInputStream();
         java.io.ByteArrayOutputStream bo = new java.io.ByteArrayOutputStream();
@@ -205,7 +214,7 @@ public class MainActivity extends Activity {
         return bo.toString("UTF-8");
     }
     static void download(String u, File f) throws Exception {
-        HttpURLConnection c = (HttpURLConnection) new URL(u).openConnection();
+        HttpURLConnection c = open(u);
         c.setConnectTimeout(15000); c.setReadTimeout(60000); c.setUseCaches(false);
         InputStream in = c.getInputStream(); OutputStream out = new FileOutputStream(f);
         byte[] b = new byte[65536]; int n;
@@ -250,6 +259,9 @@ public class MainActivity extends Activity {
             return "저장 위치를 고르세요";
         }
         @JavascriptInterface public int version() { return curV(); }
+        // v260: 업데이트용 토큰(저장소 비공개 후 필요). 앱 안 설정에만 저장, 게임 저장 파일에는 넣지 않음
+        @JavascriptInterface public boolean hasToken() { return TOK != null && TOK.length() > 0; }
+        @JavascriptInterface public void setToken(String t) { TOK = t == null ? "" : t.trim(); prefs.edit().putString("tok", TOK).apply(); }
         // v259: 게임의 '업데이트 확인' 버튼 — 10분 간격 제한 없이 바로 확인(받아 둔 새 버전이 있으면 바로 적용 안내)
         @JavascriptInterface public void checkUpdate() {
             ui.post(new Runnable() { public void run() {
