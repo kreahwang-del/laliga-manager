@@ -2061,7 +2061,7 @@ function aiRotate(c,sq){try{let eu;if(S.bRank&&Object.keys(S.bRank).length)eu=(S
   const rest=new Set();fit.forEach(p=>{if(!top.has(p.id))return;let pr=base*(ageOf(p)>=31?ROT.old:1)*(p.g==='GK'?ROT.gk:1);if(hsh(p.id+'rot'+S.date+c)<pr)rest.add(p.id)});
   if(fit.length-rest.size<14)return sq;return sq.filter(p=>!rest.has(p.id))}catch(e){return sq}}
 function teamFor(c){const mine=c===S.club;
-  const benchOf=(xi)=>squadOf(c).filter(p=>!xi.some(x=>x.id===p.id)&&!((S.ps[p.id]||{}).injD>0)&&!(p.ban>0)).sort((a,b)=>b.ovr-a.ovr).slice(0,9);
+  const benchOf=(xi)=>squadOf(c).filter(p=>!xi.some(x=>x.id===p.id)&&!((S.ps[p.id]||{}).injD>0)&&!(p.ban>0)).sort((a,b)=>b.ovr-a.ovr).slice(0,typeof benchN==='function'?benchN(c):9);
   if(mine){const players=ensureXI();const T=S.tac;return {club:c,xi:players,bench:benchOf(players),form:T.form,pos:(typeof posZMig==='function'?(posZMig(),T.pos):T.pos),posZ:T.posZ,roles:[...T.roles],duties:[...T.duties],marks:T.marks.map(m=>({...m})),preset:T.preset,ti:[...T.ti],fam:T.fam,ment:T.ment,pi:Object.assign({},T.pi||{}),slotAs:Object.assign({},T.slotAs||{}),focus:T.focus,af:T.af||null,setp:{...(T.setp||{})},sp:{...(T.sp||{})}}}
   const T=S.aiTac[c]||(S.aiTac[c]=aiTacFor(c));const sq=aiRotate(c,squadOf(c));const xi=E3.autoPick(sq,T.form.base).map(id=>id!=null?pl(id):null).filter(Boolean);
   if(xi.length<11)return null;
@@ -3988,7 +3988,7 @@ function finSheet(){const c=CLUBS[S.club],wb=wageBill(S.club),cap=c.wageCap*1e6;
   <div class="lbl">거래 내역</div>${S.fin.log.slice(0,30).map(x=>`<div class="li" style="padding:6px 0"><span class="nm"><b>${esc(x.t)}</b><span>${fmtD(x.d)}</span></span><span class="num" style="color:${x.v<0?'var(--bad)':'var(--good)'}">${money(x.v)}</span></div>`).join('')||'<p class="note">아직 거래가 없습니다.</p>'}</div>`)}
 // 사전 계약 합류(7월 1일)
 const _roll=rollover;rollover=function(){_roll();(S.pre||[]).forEach(x=>{setP(x.id,{club:S.club,wage:x.wage,cEnd:x.cEnd,promise:x.role,joined:S.date});inbox('contract','',`${pl(x.id).name} 합류`,'사전 계약한 선수가 팀에 합류했습니다.')});S.pre=[]};
-const APPV=310;
+const APPV=311;
 
 // ================= 4-3단계: 감독 커리어 =================
 // 평판·이사회 신뢰(주간 평가, 경고·최후통첩·경질)·계약·제안·지원·사임, AI 감독(실명·은퇴·신인 등장)
@@ -5840,12 +5840,18 @@ function aiLoanWeek(){S.aiLn=S.aiLn||[];const lenders=CLUBS.filter(c=>c&&c.i!==S
 const RES_W=.5,RES_AGE=23,RES_REG=30;/* v309 1군 등록 30명(사용자 결정 2026-11-23, 리그별 25명 등은 다음 단계) */
 function resOf(id){const q=S.ps[id];return !!(q&&q.res)}
 function resList(c){return squadOf(c).filter(p=>resOf(p.id))}
-function resFirstReg(c){return squadOf(c).filter(p=>!resOf(p.id)).length}
+function resFirstReg(c){return regSize(c)}
 /* v309: 22세 이하 팀 내 23위 밖은 2군 + 1군 등록 30명·외국인 보유 한도(등록 기준)를 넘는 선수는 나이와 관계없이 능력 낮은 순으로 2군(계약 유지). 임대 온 선수는 항상 1군 */
-function resAssignAI(c){const sq=squadOf(c).slice().sort((a,b)=>b.ovr-a.ovr);const cap=typeof aiCap==='function'&&sqrOn()?aiCap(c):null;let reg=0,fo=0;
-  const loanIn=p=>{const q=S.ps[p.id];return !!(q&&q.loanFrom!=null&&q.loanFrom!==c)};reg=sq.filter(loanIn).length;fo=sq.filter(p=>loanIn(p)&&typeof isFor==='function'&&isFor(p,c)).length;
-  sq.forEach((p,i)=>{const q0=S.ps[p.id];if(loanIn(p)){if(q0&&q0.res)delete q0.res;return}const f=typeof isFor==='function'&&isFor(p,c);
-    const want=(ageOf(p)<=22&&i>=23)||reg>=RES_REG||(f&&cap&&fo>=cap);if(want){(S.ps[p.id]=S.ps[p.id]||{}).res=true}else{if(q0&&q0.res)delete q0.res;reg++;if(f)fo++}})}
+/* v311 리그별 등록(lgRule: 인원 25/30·홈그로운 몫·나이 예외·외국인 어린 선수 몫)을 능력 순으로 채움 */
+function resAssignAI(c){const sq=squadOf(c).slice().sort((a,b)=>b.ovr-a.ovr);const on=sqrOn();const cap=typeof aiCap==='function'&&on?aiCap(c):null;const L=on?lgR(c):{};const mx=on?regBase(c):RES_REG;const hy=L.hy&&cap?cap-L.hy.n:null;
+  const st={n:0,a:0,ch:0,ah:0,fo:0,fy:0};const ex=p=>on&&regEx(p,c);
+  const hk=p=>L.hg?hgK(p,c):null;const ok=(p,f,yg)=>{if(f&&cap&&st.fo>=cap)return false;if(f&&hy!=null&&!yg&&st.fo-st.fy>=hy)return false;if(ex(p))return true;if(st.n>=mx)return false;
+    if(L.hg){const k=hk(p);const a=st.a+(k?0:1),ch=st.ch+(k==='c'?1:0),ah=st.ah+(k==='a'?1:0);const co=Math.max(0,ch-L.hg.c),ao=Math.max(0,ah+co-L.hg.a);if(a+ao>mx-L.hg.c-L.hg.a)return false}return true};
+  const add=(p,f,yg)=>{if(f){st.fo++;if(yg)st.fy++}if(ex(p))return;st.n++;const k=hk(p);if(k==='c')st.ch++;else if(k==='a')st.ah++;else st.a++};
+  const loanIn=p=>{const q=S.ps[p.id];return !!(q&&q.loanFrom!=null&&q.loanFrom!==c)};const F=p=>typeof isFor==='function'&&isFor(p,c),Y=p=>on&&fyoung(p,c);
+  sq.filter(loanIn).forEach(p=>add(p,F(p),Y(p)));
+  sq.forEach((p,i)=>{const q0=S.ps[p.id];if(loanIn(p)){if(q0&&q0.res)delete q0.res;return}const f=F(p),yg=Y(p);
+    const want=(ageOf(p)<=22&&i>=23)||!ok(p,f,yg);if(want){(S.ps[p.id]=S.ps[p.id]||{}).res=true}else{if(q0&&q0.res)delete q0.res;add(p,f,yg)}})}
 // 1군 출전 제한: 2군의 23세 이상은 1군 선발·교체 불가(우리 팀 선발 화면·자동 선발)
 {const _cu=canUse;canUse=function(p){if(S&&clubOf(p.id)===S.club&&resOf(p.id)&&ageOf(p)>=RES_AGE)return false;return _cu.apply(this,arguments)}}
 // 2군 경기(매주 토요일, 8~5월): 시뮬레이션되는 리그의 모든 구단
@@ -5855,8 +5861,8 @@ function resMatchday(){S.resDays=(S.resDays||0)+1;const by={};for(const id in S.
 {const _d=daily;daily=function(){const r=_d.apply(this,arguments);try{if(!S)return r;const mo=+S.date.slice(5,7);
   if((mo>=8||mo<=5)&&D(S.date).getUTCDay()===6)resMatchday();
   if(S.date.endsWith('-07-02')||S.date.endsWith('-09-02')||S.date.endsWith('-02-02')){CLUBS.forEach(c=>{if(c.i!==S.club&&c.i!=null)try{resAssignAI(c.i)}catch(e){}});
-    if(!(typeof unemp==='function'&&unemp())){const old=resList(S.club).filter(p=>ageOf(p)>=RES_AGE);const n1=resFirstReg(S.club);
-      if(old.length||n1>RES_REG)inbox('board','',`1군 등록 점검`,`1군 등록 ${n1}명 / ${RES_REG}명(2군의 23세 미만 제외).${n1>RES_REG?' 등록 한도를 넘었습니다 — 2군으로 내리거나 정리하세요.':''}${old.length?` 2군의 23세 이상 ${old.length}명(${old.map(p=>esc(p.name)).join(', ')})은 1군에 올려야 1군 경기에 나설 수 있습니다.`:''}`)}}}catch(e){console.error(e)}return r}}
+    if(!(typeof unemp==='function'&&unemp())){const old=resList(S.club).filter(p=>ageOf(p)>=RES_AGE);const n1=resFirstReg(S.club),ov=regOver(S.club);
+      if(old.length||ov)inbox('board','',`1군 등록 점검`,`${regTxt(S.club)}.${ov?' 등록 한도를 넘었습니다 — 2군으로 내리거나 정리하세요.':''}${old.length?` 2군의 23세 이상 ${old.length}명(${old.map(p=>esc(p.name)).join(', ')})은 1군에 올려야 1군 경기에 나설 수 있습니다.`:''}`)}}}catch(e){console.error(e)}return r}}
 // 성장용 출전 비율에 2군 출전 반영
 {const _ps=playShare;playShare=function(p){const b=_ps.apply(this,arguments);try{const q=S.ps[p.id];if(q&&q.rmins&&S.resDays){const rs=Math.min(1,q.rmins/(S.resDays*90));return Math.min(1,b+RES_W*rs*(1-b))}}catch(e){}return b}}
 // 시즌 종료: 2군 기록은 성장 반영 뒤 초기화
@@ -5865,13 +5871,13 @@ function resMatchday(){S.resDays=(S.resDays||0)+1;const by={};for(const id in S.
 {const _my=makeYouth;makeYouth=function(c){const p=_my.apply(this,arguments);try{if(p&&p.id!=null&&ageOf(p)<=19){const q=S.ps[p.id]=S.ps[p.id]||{};q.res=true}}catch(e){}return p}}
 // 선수 화면: 2군으로 내리기 / 1군으로 올리기
 {const _ps2=playerSheet;playerSheet=function(id){const r=_ps2.apply(this,arguments);try{if(clubOf(id)===S.club){const b=document.querySelector('[data-act="loanout"]');const row=b&&b.parentElement;if(row&&!document.querySelector('[data-res]')){const p=pl(id),on=resOf(id);
-  const div=document.createElement('div');div.className='row2';div.innerHTML=`<button class="btn ghost" data-res="${id}">${on?'1군으로 올리기':'2군으로 내리기'}</button><span class="note" style="align-self:center">${on?`2군 ${S.ps[id].rapps||0}경기 ${S.ps[id].rmins||0}분${ageOf(p)<RES_AGE?' · 23세 미만이라 1군 소집 가능':' · 23세 이상: 1군 출전 불가'}`:`1군 등록 ${resFirstReg(S.club)}/${RES_REG}`}</span>`;row.after(div)}}}catch(e){console.error(e)}return r}}
+  const div=document.createElement('div');div.className='row2';div.innerHTML=`<button class="btn ghost" data-res="${id}">${on?'1군으로 올리기':'2군으로 내리기'}</button><span class="note" style="align-self:center">${on?`2군 ${S.ps[id].rapps||0}경기 ${S.ps[id].rmins||0}분${ageOf(p)<RES_AGE?' · 23세 미만이라 1군 소집 가능':' · 23세 이상: 1군 출전 불가'}`:regTxt(S.club)}</span>`;row.after(div)}}}catch(e){console.error(e)}return r}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-res]');if(!b||!S)return;e.stopPropagation();e.preventDefault();const id=+b.dataset.res,q=S.ps[id]=S.ps[id]||{},p=pl(id);
   if(!q.res&&q.loanFrom!=null&&q.loanFrom!==S.club){toast('임대 온 선수는 2군으로 내릴 수 없습니다');return}
   q.res=!q.res;if(q.res&&ageOf(p)>=RES_AGE&&S.xi)S.xi=S.xi.filter(x=>x!==id);save();playerSheet(id);render();toast(q.res?`${p.name}을 2군으로 내렸습니다${ageOf(p)<RES_AGE?'(23세 미만이라 1군 소집은 가능)':''}`:`${p.name}을 1군으로 올렸습니다`)},true);
 // 스쿼드 화면: 2군 명단·기록
 {const _sv=squadView;squadView=function(){let h=_sv.apply(this,arguments);try{if(UI.sqv==='trn'||UI.sqv==='mgmt')return h;const R=resList(S.club).sort((a,b)=>b.ovr-a.ovr);
-  h+=`<h2>2군 (${R.length}명) · 1군 등록 ${resFirstReg(S.club)}/${RES_REG}</h2><p class="note">2군 경기는 시즌 중 매주 토요일 열리고, 출전 시간은 성장에 1군 출전의 절반 비중으로 반영됩니다. 23세 미만은 2군 소속이어도 1군 소집 가능.</p><div class="card list">${R.map(p=>rowP(p,`<span class="pill">${ageOf(p)<RES_AGE?'U23':'23+'} · ${S.ps[p.id].rapps||0}경기 ${S.ps[p.id].rmins||0}분</span>`)).join('')||'<div class="li note">2군 선수가 없습니다. 선수 화면에서 \'2군으로 내리기\'를 누르세요. 유스 입단 선수는 2군에서 시작합니다.</div>'}</div>`}catch(e){console.error(e)}return h}}
+  h+=`<h2>2군 (${R.length}명) · ${regTxt(S.club,1)}</h2><p class="note">2군 경기는 시즌 중 매주 토요일 열리고, 출전 시간은 성장에 1군 출전의 절반 비중으로 반영됩니다. 23세 미만은 2군 소속이어도 1군 소집 가능.</p><div class="card list">${R.map(p=>rowP(p,`<span class="pill">${ageOf(p)<RES_AGE?'U23':'23+'} · ${S.ps[p.id].rapps||0}경기 ${S.ps[p.id].rmins||0}분</span>`)).join('')||'<div class="li note">2군 선수가 없습니다. 선수 화면에서 \'2군으로 내리기\'를 누르세요. 유스 입단 선수는 2군에서 시작합니다.</div>'}</div>`}catch(e){console.error(e)}return h}}
 // 첫 적용(기존 저장 포함): AI 구단 배정이 없으면 한 번 배정
 {const _dl=devLoad;devLoad=function(){_dl.apply(this,arguments);try{if(S&&!S.resInit){S.resInit=1;CLUBS.forEach(c=>{if(c.i!==S.club&&c.i!=null)try{resAssignAI(c.i)}catch(e){}})}}catch(e){console.error(e)}}}
 
@@ -6310,7 +6316,7 @@ function aiPlan2(T,O,home){if(!AIP.on||!AIP.plan||!T||!O||!T._aiMark||T.club===S
   try{const m=typeof mgrOf==='function'?mgrOf(T.club):null;const fd=(mgrFD(m)||[]).map(x=>x[0]).filter(f=>E3.FORMS[f]);
     if(AIP.pf&&fd.length>=2&&Math.abs(d)>=Math.max(1,4-1.5*sl2)&&hsh('apf'+T.club+':'+O.club+':'+S.date)<q){const dfN=f=>E3.FORMS[f].filter(k=>{const g=E3.SLOT[k][0];return g==='CB'||g==='FB'||g==='DM'}).length;const pick=fd.slice().sort((a,b)=>d<0?dfN(b)-dfN(a):dfN(a)-dfN(b))[0];
       if(pick&&pick!==T.form.base){const pool=T.xi.concat(T.bench||[]);const ids=E3.autoPick(pool,pick);const xi=ids.map(id=>pool.find(p=>p&&p.id===id)).filter(Boolean);
-        if(xi.length===11){T.xi=xi;T.bench=pool.filter(p=>p&&!xi.includes(p)).slice(0,9);T.form={base:pick,atk:pick,def:pick};T.roles=E3.defaultRoles(xi,pick);T.duties=xi.map(()=>1);T.marks=xi.map(()=>({on:false,tight:false,t:null}));T._planF=pick;if(T.pi)T.pi=aiPI(xi,T.preset)}}}
+        if(xi.length===11){T.xi=xi;T.bench=pool.filter(p=>p&&!xi.includes(p)).slice(0,typeof benchN==='function'?benchN(T.club):9);T.form={base:pick,atk:pick,def:pick};T.roles=E3.defaultRoles(xi,pick);T.duties=xi.map(()=>1);T.marks=xi.map(()=>({on:false,tight:false,t:null}));T._planF=pick;if(T.pi)T.pi=aiPI(xi,T.preset)}}}
     const fwP=Math.max(0,...O.xi.filter(p=>p.g==='ST'||p.g==='W').map(p=>p.pace||10));T.ti=[...T.ti];if(!AIP.line);else if(fwP>=17)T.ti[0]=Math.max(1,T.ti[0]-1);else if(fwP<=12)T.ti[0]=Math.min(5,T.ti[0]+1);
     const star=O.xi.filter(p=>p.g==='ST'||p.g==='W'||p.g==='AM').sort((a,b)=>b.ovr-a.ovr)[0];if(AIP.mk&&star&&star.ovr>=84-2*sl2&&hsh('amk'+T.club+':'+S.date)<q){let bi=-1,bv=-1;T.xi.forEach((p,i)=>{if((p.g==='CB'||p.g==='FB')&&(p.pace||0)+(p.tackle||0)>bv){bv=(p.pace||0)+(p.tackle||0);bi=i}});if(bi>=0){T.marks=T.marks.map(x=>x&&x.on?{on:false,tight:false,t:null}:x);T.marks[bi]={on:true,tight:false,t:star.id};T._planM=star.name}}}catch(e){console.error(e)}}
 {const _am=aiMarking;aiMarking=function(T,opp){if(AIP.on&&AIP.plan&&T&&T._aiMark)return;return _am.apply(this,arguments)}}
@@ -8421,7 +8427,7 @@ function sqrRuleTxt(c){const R=sqrRule(c);const a=[];if(R&&R.m)a.push(`경기 �
   return box+h}catch(e){return h}}}
 document.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-sqrfix],[data-sqron]');if(!b)return;e.preventDefault();e.stopPropagation();
   if(b.dataset.sqrfix){sqrAutoFix(false);save();render();return}if(!sqrCanToggle()){toast('규정 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다');return}S.sqr=S.sqr===false?true:false;save();render();toast(S.sqr!==false?'현실 선수단 규정을 켰습니다(AI 구단 포함)':'현실 선수단 규정을 껐습니다(AI 구단 포함)')},true);
-{const _cv=careerView;careerView=function(){let h=_cv();try{h+=`<h2>현실 선수단 규정</h2><div class="card pad"><p class="note" style="margin:0 0 8px">리그별 외국인 출전·보유 한도와 1군 최대 인원(${SQMAX}명). 영입 전에 막고, 경기 전에는 선발을 자동으로 맞춥니다. AI 구단에도 똑같이 적용됩니다. 처음 선수단은 그대로 인정합니다. 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다.</p><button class="chip" data-sqron="1" aria-pressed="${S.sqr!==false}">${S.sqr!==false?'켜짐':'꺼짐'}</button></div>`}catch(e){}return h}}
+{const _cv=careerView;careerView=function(){let h=_cv();try{h+=`<h2>현실 선수단 규정</h2><div class="card pad"><p class="note" style="margin:0 0 8px">리그별 외국인 출전·보유 한도, 1군 등록 인원(리그별 25~30명)·홈그로운 몫, 벤치 인원, 경고 누적 출장정지. 영입 전에 막고, 경기 전에는 선발을 자동으로 맞춥니다. AI 구단에도 똑같이 적용됩니다. 처음 선수단은 그대로 인정합니다. 켜기·끄기는 시즌 첫 리그 경기 전에만 바꿀 수 있습니다.</p><button class="chip" data-sqron="1" aria-pressed="${S.sqr!==false}">${S.sqr!==false?'켜짐':'꺼짐'}</button></div>`}catch(e){}return h}}
 // 리그 규정 안내: 그 리그 구단을 처음 맡았을 때 한 번
 function sqrIntro(){try{if(!S||unemp()||!sqrOn())return;const lg=sqrLg(S.club);if(!lg)return;S.sqrSeen=S.sqrSeen||{};if(S.sqrSeen[lg])return;S.sqrSeen[lg]=1;
   inbox('news','',`${LGN[lg]||lg} 선수단 규정`,`${sqrRuleTxt(S.club)}. 전술 탭 위에서 현재 인원을 볼 수 있고, 넘으면 경기 전에 자동으로 맞춥니다. 감독 탭에서 끌 수 있습니다.`)}catch(e){}}
@@ -8446,8 +8452,8 @@ function natTag(p,c){const lg=sqrLg(c);if(!lg||!p||!p.nat)return null;const has=
   const tg={};sq.forEach(p=>{const t=natTag(p,c);if(t)tg[p.id]=t});const n=Object.keys(tg).length,eu=NT_EU_LG.has(lg);
   const hg={};if(typeof hgStat==='function')sq.forEach(p=>{const t=hgStat(p,c);if(t)hg[p.id]=t});const bd=t=>`<span class="pill n" style="font-size:10px;padding:0 5px;vertical-align:1px">${t}</span>`;
   h=h.replace(/(data-player="(\d+)">[\s\S]{0,800}?<span class="nm"><b>)([^<]*)/g,(m,a,id,nm)=>tg[id]||hg[id]?`${a}${nm}${tg[id]?' '+bd(tg[id]):''}${hg[id]?' '+bd(hg[id]==='c'?'HG':'HG협'):''}`:m);
-  const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`1군 외국인 한도 ${R.h}명`);parts.push(`1군 등록 ${regSize(c)}/${SQMAX} · 계약 선수 ${ownSize(c)}/${OWNMAX}명`);const hc=Object.values(hg).filter(x=>x==='c').length,ha=Object.values(hg).length-hc;const hgNote=typeof HG_RULE!=='undefined'&&HG_RULE[lg]?HG_RULE[lg]:'';if(hgNote||hc)parts.push(`홈그로운 ${hc+ha}명(구단 ${hc}·협회 ${ha})`);
-  const note=eu?' · 이중국적(EU 여권) 반영 · 참고용, 아직 제한 없음 · HG=구단 육성, HG협=협회(같은 나라) 육성':!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
+  const parts=[`${eu?'비EU':'외국인'} ${n}명`];if(R&&R.m)parts.push(`경기 명단 한도 ${R.m}명`);if(R&&R.h)parts.push(`1군 외국인 한도 ${R.h}명`);parts.push(`${regTxt(c)} · 계약 선수 ${ownSize(c)}/${OWNMAX}명`);const hc=Object.values(hg).filter(x=>x==='c').length,ha=Object.values(hg).length-hc;const hgNote=typeof HG_RULE!=='undefined'&&HG_RULE[lg]?HG_RULE[lg]:'';if(hgNote||hc)parts.push(`홈그로운 ${hc+ha}명(구단 ${hc}·협회 ${ha})`);
+  const note=eu?` · 이중국적(EU 여권) 반영${R&&R.h?' · 규정 시행 전부터 있던 비EU 선수는 한도에서 빠짐':' · 이 리그는 비EU 제한 없음'} · HG=구단 육성, HG협=협회(같은 나라) 육성`:!(R&&(R.m||R.h))?' · 이 리그는 외국인 제한이 없습니다':'';
   const box=`<div class="card pad" style="margin:8px 0;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center"><b>${parts.join(' · ')}</b><span class="note" style="margin:0">${note}${hgNote?' · '+hgNote:''}</span></div>`;
   const i=h.indexOf('<div class="card list"');h=i>=0?h.slice(0,i)+box+h.slice(i):box+h}catch(e){console.error(e)}return h}}
 // ================= v295 A매치·대륙 대회 소집(사용자 결정 2026-11-05) =================
@@ -8618,7 +8624,7 @@ function tm308Start(){if(!S)return;const T=G.tm308||{};S.mig308=1;let n=0;
   S.pre308=(T.pre||[]).map(x=>x.slice());if(n)SQC=null;
   /* 시작 정리: 소속 갱신·빠진 선수 추가로 30명·외국인 한도를 넘은 AI 구단을 바로 정리(이적시장 하루 1명 규칙을 시작 시점에 몰아서 실행) */
   /* v309: 1군 30명·외국인 한도는 2군으로 내려서 맞추고(계약 유지), 보유 40명을 넘는 구단만 정리 */
-  try{CLUBS.forEach(c=>{if(c&&c.i!==S.club&&c.i>=0)resAssignAI(c.i)});SQC=null;if(regSize(S.club)>SQMAX)resAssignAI(S.club)}catch(e){console.error(e)}
+  try{CLUBS.forEach(c=>{if(c&&c.i!==S.club&&c.i>=0)resAssignAI(c.i)});SQC=null;if(regOver(S.club))resAssignAI(S.club)}catch(e){console.error(e)}
   const _w=winNow,_nw=S.news.slice();try{winNow=()=>true;/* 시작일(7/1)은 이적시장 시작 전이라 잠깐 열린 것으로 봄 */for(let k=0;k<20;k++){S.aiSqD=null;S.aiDomD=null;if(typeof aiSqTrimDay==='function')aiSqTrimDay()}}catch(e){console.error(e)}finally{winNow=_w;S.news=_nw;/* 시작 정리 소식은 남기지 않음 */S.aiSqD=null;S.aiDomD=null;SQC=null}
   return n}
 function mig308(){if(!S||S.mig308)return;S.mig308=1;const P=(G.tm308||{}).prev||{};let n=0;
@@ -8644,8 +8650,8 @@ function tfhHTML(id){const H=G.tfh&&G.tfh.h&&G.tfh.h[id];if(!H||!H.length)return
   try{/* AI 외국인 영입: 한도가 차 있으면 가장 약한 등록 외국인을 먼저 2군으로(1014의 계약 해지 대신) */
     if(sqrOn()&&p&&to!==S.club&&to>=0&&CLUBS[to]&&!(o&&o.loan)&&clubOf(id)!==to&&isFor(p,to)){const cap=aiCap(to);if(cap&&forCnt(to)>=cap&&ownSize(to)<OWNMAX){const w=sqrWeakFor(to,id);if(w&&w.ovr<p.ovr)(S.ps[w.id]=S.ps[w.id]||{}).res=true}}}catch(e){console.error(e)}
   const r=_ct.apply(this,arguments);
-  try{if(sqrOn()&&to>=0&&CLUBS[to]&&clubOf(id)===to){if(to!==S.club){if(regSize(to)>SQMAX)resAssignAI(to)}
-    else if(regSize(S.club)>SQMAX){const q=S.ps[id]=S.ps[id]||{};const ln=q.loanFrom!=null&&q.loanFrom!==S.club;if(!ln){q.res=true;if(!(typeof unemp==='function'&&unemp()))inbox('board','','1군 등록 인원 초과',`1군 등록이 ${SQMAX}명으로 꽉 차 ${p?p.name:'새 선수'}을(를) 2군에 등록했습니다. 선수 화면에서 1군으로 올리려면 다른 선수를 2군으로 내리세요(23세 미만은 2군에 있어도 1군 소집 가능).`)}}}}catch(e){console.error(e)}
+  try{if(sqrOn()&&to>=0&&CLUBS[to]&&clubOf(id)===to){if(to!==S.club){if(regOver(to)||lgQuotaOver(to))resAssignAI(to)}
+    else if(regOver(S.club)){const q=S.ps[id]=S.ps[id]||{};const ln=q.loanFrom!=null&&q.loanFrom!==S.club;if(!ln){q.res=true;if(!(typeof unemp==='function'&&unemp()))inbox('board','','1군 등록 인원 초과',`1군 등록이 꽉 차(${regTxt(S.club)}) ${p?p.name:'새 선수'}을(를) 2군에 등록했습니다. 선수 화면에서 1군으로 올리려면 다른 선수를 2군으로 내리세요(23세 미만은 2군에 있어도 1군 소집 가능).`)}}}}catch(e){console.error(e)}
   return r}}
 // 기존 세이브: 첫 불러오기 때 AI 구단 한 번 다시 배정(새 기준)
 {const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);try{if(S&&!S.mig309){S.mig309=1;CLUBS.forEach(c=>{if(c&&c.i!==S.club&&c.i>=0)try{resAssignAI(c.i)}catch(e){}});SQC=null}}catch(e){console.error(e)}return r}}
@@ -8667,13 +8673,13 @@ function elig(p,c){if(!p)return false;if(!resOf(p.id))return true;if(ageOf(p)>=R
   return r||_tf.apply(this,arguments)/* 자격 선수로 11명이 안 되면 예전처럼 */}}
 // ② 1군으로 올리기 확인(0440 클릭 처리보다 먼저: window 캡처)
 window.addEventListener('click',e=>{const b=e.target.closest&&e.target.closest('[data-res]');if(!b||!S)return;const id=+b.dataset.res,q=S.ps[id];if(!q||!q.res)return;const p=pl(id);
-  let why=null;if(regSize(S.club)>=SQMAX)why=`1군 등록이 ${SQMAX}명으로 꽉 찼습니다. 다른 선수를 2군으로 내린 뒤 올리세요.`;
-  else if(sqrOn()&&isFor(p,S.club)){const R=sqrRule(S.club);const cap=R&&R.h;if(cap&&forCnt(S.club)>=cap)why=`1군 외국인이 한도(${cap}명)입니다. 외국인 선수를 2군으로 내린 뒤 올리세요.`}
+  let why=null;if(!regCanAdd(S.club,p))why=`1군 등록 한도입니다(${regTxt(S.club)}). 다른 선수를 2군으로 내린 뒤 올리세요.`;
+  else if(sqrOn()&&isFor(p,S.club)){const R=sqrRule(S.club);const cap=R&&R.h;if(cap&&forCnt(S.club)>=cap)why=`1군 외국인이 한도(${cap}명)입니다. 외국인 선수를 2군으로 내린 뒤 올리세요.`;else if(!quotaY(p,S.club))why=quotaYTxt(S.club)}
   if(why){e.stopImmediatePropagation();e.preventDefault();toast(why)}},true);
 // ③ 시작 안내
 function startWarn(){try{if(!S||S.club==null||S.club<0)return;const c=S.club,a=[];const R=sqrRule(c),cap=R&&R.h;
   if(cap&&forCnt(c)>cap)a.push(`1군 외국인 ${forCnt(c)}명 / 한도 ${cap}명 — ${forCnt(c)-cap}명을 2군으로 내리거나 내보내야 합니다(2군 외국인은 1군 경기 출전 불가).`);
-  if(regSize(c)>SQMAX)a.push(`1군 등록 ${regSize(c)}명 / ${SQMAX}명 — ${regSize(c)-SQMAX}명을 2군으로 내려야 합니다.`);
+  if(regOver(c))a.push(`${regTxt(c)} — 한도를 넘어 2군으로 내려야 합니다.`);if(lgR(c).hy&&forOldCnt(c)>sqrRule(c).h-lgR(c).hy.n)a.push(quotaYTxt(c));
   if(ownSize(c)>OWNMAX)a.push(`계약 선수(1군+2군+임대 보낸 선수) ${ownSize(c)}명 / ${OWNMAX}명 — 줄일 때까지 새 영입 제안을 할 수 없습니다.`);
   if(a.length)inbox('board','','선수단 규정 점검',`시작 시점 선수단이 규정을 넘습니다(실제 선수단·임대 반영).\n${a.join('\n')}\n선수 화면의 '2군으로 내리기'·임대·판매로 정리하세요.`)}catch(e){console.error(e)}}
 {const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);try{
@@ -8692,7 +8698,7 @@ function startWarn(){try{if(!S||S.club==null||S.club<0)return;const c=S.club,a=[
 if(typeof tfhHTML==='function'){const _h=tfhHTML;tfhHTML=function(id){const H=G.tfh&&G.tfh.h&&G.tfh.h[id];if(!H)return '';const keep=H.filter(x=>x[0]<SEASON_START);if(!keep.length)return '';const o=G.tfh.h[id];G.tfh.h[id]=keep;try{return _h.call(this,id)}finally{G.tfh.h[id]=o}}}
 // ⑧ 시즌 넘김 직후 재배정
 {const _ro=rollover;rollover=function(){const r=_ro.apply(this,arguments);try{CLUBS.forEach(c=>{if(c&&c.i>=0&&c.i!==S.club)try{resAssignAI(c.i)}catch(e){}});SQC=null;
-  const c=S.club;if(c!=null&&c>=0&&!(typeof unemp==='function'&&unemp())){const R=sqrRule(c),cap=R&&R.h;const over=regSize(c)>SQMAX||(cap&&forCnt(c)>cap);if(over)inbox('board','','임대 복귀 후 선수단 점검',`임대 복귀로 1군 등록 ${regSize(c)}/${SQMAX}명${cap?`, 1군 외국인 ${forCnt(c)}/${cap}명`:''}입니다. 이적시장 마감 전까지 2군 배정·임대·판매로 맞추세요.`)}}catch(e){console.error(e)}return r}}
+  const c=S.club;if(c!=null&&c>=0&&!(typeof unemp==='function'&&unemp())){const R=sqrRule(c),cap=R&&R.h;const over=regOver(c)||(cap&&forCnt(c)>cap);if(over)inbox('board','','임대 복귀 후 선수단 점검',`임대 복귀로 ${regTxt(c)}${cap?`, 1군 외국인 ${forCnt(c)}/${cap}명`:''}입니다. 이적시장 마감 전까지 2군 배정·임대·판매로 맞추세요.`)}}catch(e){console.error(e)}return r}}
 // ⑨ 성능(엔진 의견): 선수 소속이 바뀔 때마다 선수단 캐시 전체를 다시 만들던 것(1회 약 4ms × 수십~수백 번)을 바뀐 선수만 옮기도록
 {const _sp=setP;setP=function(id,o){if(!o||!('club' in o)||!SQC)return _sp.apply(this,arguments);const keep=SQC;const old=clubOf(id);const r=_sp.apply(this,arguments);const nw=clubOf(id);
   if(SQC===null&&keep){if(old!==nw){const L=keep[old];if(L){const i=L.indexOf(+id);if(i>=0)L.splice(i,1)}(keep[nw]=keep[nw]||[]).push(+id)}SQC=keep;LOUT=null}return r}}
@@ -8709,6 +8715,71 @@ document.addEventListener('click',e=>{const t=e.target.closest&&e.target.closest
   const v=(document.getElementById('tokIn')||{}).value||'';if(v.trim().length<20){toast('토큰을 확인하세요');return}A.setToken(v.trim());closeSheet();toast('토큰 저장 — 업데이트를 확인합니다');try{A.checkUpdate()}catch(e2){}},true);
 {const _vt=verTag;verTag=function(){const h=_vt.apply(this,arguments);const A=window.AndroidApp;if(!h||!A||typeof A.setToken!=='function')return h;return h.replace('</p>',' <button class="chip" data-tokopen style="padding:2px 10px;font-size:12px">토큰</button></p>')}}
 // 토큰이 없을 때 비공개 저장소면 앱 배너가 '업데이트 토큰이 필요합니다'로 알려 줌(APK v260)
+// ================= v311 리그별 실제 규정(사용자 결정 2026-11-23: 확정 ✓는 반영, △는 지금 값 유지 — ops/05_리그규정_조사.md) =================
+// 등록 인원: 라리가·라리가2·EPL·세리에A·덴마크·사우디 25명, 그 밖 30명(게임 기본값)
+// 홈그로운 몫(모자라면 명단 축소): EPL 25명 중 비홈그로운 17명까지 / 세리에A·덴마크 8명(그중 구단 육성 4명)
+// 나이 예외(등록 인원에 안 셈): EPL·덴마크·사우디 21세 이하(시즌-21년 이후 출생), 세리에A 22세 이하(시즌-22년 이후 출생)
+// 비EU 한도(1군 등록): 라리가 3·라리가2 2·리그1 4 — 이중국적(EU 여권) 반영, 처음부터 그 구단에 있던 선수·v311 이전 영입 선수는 한도에서 뺌(데이터에 없는 EU 여권 대신)
+// 외국인 어린 선수 몫: 튀르키예 14명 중 4명은 2003년 이후 출생(시즌-23) / 사우디 10명 중 2명은 2004년 이후 출생(시즌-22), 사우디 경기 명단 외국인 8명
+// 벤치: 라리가·라리가2·네덜란드·아르헨티나 12, 리그2 7, 그 밖 9
+// 경고 누적: 아르헨티나 5장마다 / MLS 5장마다 + 5경기 연속 무경고면 누적 1장 감소(시즌 3번까지, 구단 리그 경기 수로 셈) / 스코틀랜드 6장마다 / 덴마크 5·9·13장, 이후 4장마다
+// AI 구단도 같은 규정. 기존 세이브: 영입·1군 올리기 검사는 바로, AI 2군 배정은 다음 이적시장(7/2·9/2·2/2·시즌 넘김)부터
+const LGR={ES:{reg:25,bench:12,eu:1},ES2:{reg:25,bench:12,eu:1},FR:{eu:1},FR2:{bench:7},
+  EN:{reg:25,u:21,hg:{c:0,a:8}},IT:{reg:25,u:22,hg:{c:4,a:4}},DK:{reg:25,u:21,hg:{c:4,a:4}},
+  SA:{reg:25,u:21,hy:{n:2,a:22}},TR:{hy:{n:4,a:23}},NL:{bench:12},AR:{bench:12}};
+const LGR_EST={EN2:1,IT2:1,PT:1,CH:1,BE:1};/* 등록·외국인 규정을 공식 문서로 확인 못 함 → 기존 값 유지('추정') */
+const BAN_EST={PT:1,AT:1,CN:1,BE:1,SA:1};
+Object.assign(SQR,{ES:{h:3},ES2:{h:2},FR:{h:4},FR2:null/* 리그2 비EU 2명은 △ → 제한 없음 유지(리그1 규정을 물려받지 않게) */,SA:{h:10,m:8}});
+Object.assign(BAN_R,{AR:{every:5},US:{every:5,gb:1},SC:{every:6},DK:{thr:[5,9,13],tail:4}});
+function lgRaw(c){const C=CLUBS[c];return C?C.lg:null}
+function lgR(c){return LGR[lgRaw(c)]||{}}
+/* 라리가2는 baseLg로 라리가 규정을 물려받던 것 → 자기 리그 규정 먼저 */
+{const _r=sqrRule;sqrRule=function(c){const lg=lgRaw(c);if(lg&&(lg in SQR))return SQR[lg];return _r.apply(this,arguments)}}
+function regBase(c){return sqrOn()?(lgR(c).reg||30):99}
+function regEx(p,c){const L=lgR(c);return !!(L.u&&p&&p.dob&&+p.dob.slice(0,4)>=S.season-L.u)}
+function fyoung(p,c){const L=lgR(c);return !!(L.hy&&p&&p.dob&&+p.dob.slice(0,4)>=S.season-L.hy.a)}
+function hgK(p,c){return typeof hgStat==='function'?hgStat(p,c):null}
+function benchN(c){return lgR(c).bench||9}
+// 비EU 모드(라리가·라리가2·리그1): '외국인' = EU·EEA·스위스 여권이 없고 규정 이전부터 있던 선수가 아닌 선수
+function euGf(p,c){if(!p)return false;const q=S.ps[p.id];if(q&&q.gf===c)return true;const b=BASE[p.id];return !!(b&&b.club===c&&!(q&&q.loanFrom!=null&&q.loanFrom!==c))}
+{const _f=isFor;isFor=function(p,c){if(lgR(c).eu){if(!p||!p.nat)return false;if(NT_EU_NAT.has(p.nat)||(p.nat2&&NT_EU_NAT.has(p.nat2)))return false;return !euGf(p,c)}return _f.apply(this,arguments)}}
+// 등록 인원·홈그로운
+{const _rs=regSize;regSize=function(c){if(!sqrOn())return _rs.apply(this,arguments);return squadOf(c).filter(p=>!resOf(p.id)&&!regEx(p,c)).length}}
+function regList(c){return squadOf(c).filter(p=>!resOf(p.id)&&!regEx(p,c))}
+function regFeas(c,list){const L=lgR(c),mx=regBase(c);if(list.length>mx)return false;if(!L.hg)return true;let a=0,ch=0,ah=0;for(const p of list){const k=hgK(p,c);if(k==='c')ch++;else if(k==='a')ah++;else a++}
+  const co=Math.max(0,ch-L.hg.c),ao=Math.max(0,ah+co-L.hg.a);return a+ao<=mx-L.hg.c-L.hg.a}
+function regCanAdd(c,p){if(!sqrOn())return true;if(regEx(p,c))return true;return regFeas(c,regList(c).filter(x=>x.id!==p.id).concat([p]))}
+function regOver(c){return sqrOn()&&!regFeas(c,regList(c))}
+function regMax(c){const L=lgR(c),mx=regBase(c);if(!L.hg)return mx;let ch=0,ah=0;for(const p of squadOf(c)){if(regEx(p,c))continue;const k=hgK(p,c);if(k==='c')ch++;else if(k==='a')ah++}
+  return mx-L.hg.c-L.hg.a+Math.min(L.hg.c,ch)+Math.min(L.hg.a,ah+Math.max(0,ch-L.hg.c))}
+function regTxt(c,short){const L=lgR(c);let t=`1군 등록 ${regSize(c)}/${regMax(c)}명`;if(L.hg&&!short){const list=regList(c);const non=list.filter(p=>!hgK(p,c)).length;t+=` (비홈그로운 ${non}/${regBase(c)-L.hg.c-L.hg.a})`}
+  if(L.u&&!short)t+=` · ${S.season-L.u}년 이후 출생 ${squadOf(c).filter(p=>!resOf(p.id)&&regEx(p,c)).length}명 별도`;return t}
+// 외국인 어린 선수 몫(튀르키예·사우디)
+function forOldCnt(c,ex){return squadOf(c).filter(q=>q.id!==ex&&!resOf(q.id)&&isFor(q,c)&&!fyoung(q,c)).length}
+function quotaY(p,c){if(!sqrOn()||c==null||c<0||!CLUBS[c])return true;const L=lgR(c),R=sqrRule(c);if(!L.hy||!R||!R.h||!isFor(p,c)||fyoung(p,c)||clubOf(p.id)===c)return true;return forOldCnt(c,p.id)<R.h-L.hy.n}
+function quotaYTxt(c){const L=lgR(c),R=sqrRule(c);return `${LGN[lgRaw(c)]||'리그'} 규정상 1군 외국인 ${R.h}명 중 ${L.hy.n}명은 ${S.season-L.hy.a}년 이후 출생이어야 합니다(그보다 나이 많은 외국인 ${forOldCnt(c)}/${R.h-L.hy.n}명).`}
+function lgQuotaOver(c){const R=sqrRule(c),L=lgR(c);if(!sqrOn()||!R||!R.h)return false;if(forCnt(c)>R.h)return true;return !!(L.hy&&forOldCnt(c)>R.h-L.hy.n)}
+{const _q=quotaOK;quotaOK=function(p,to,ai){if(!_q.apply(this,arguments))return false;if(quotaY(p,to))return true;
+  /* AI: 더 나은 선수면 영입 후 가장 약한 나이 많은 외국인을 2군으로(completeTransfer → resAssignAI) */if(ai??(to!==S.club)){const w=squadOf(to).filter(q=>q.id!==p.id&&!resOf(q.id)&&isFor(q,to)&&!fyoung(q,to)&&!q.loanFrom).sort((a,b)=>a.ovr-b.ovr)[0];return !!w&&p.ovr>=w.ovr+3}return false}}
+{const _os=offerSheet;offerSheet=function(id){try{const p=pl(id);if(p&&clubOf(id)!==S.club&&!quotaY(p,S.club)){sheet(`<button class="x" data-close>닫기</button><h3>${esc(p.name)}</h3><p class="note" style="margin:8px 0">${esc(quotaYTxt(S.club))} 나이 많은 외국인을 2군으로 내리거나 내보낸 뒤 제안할 수 있습니다.</p><button class="btn ghost" data-player="${id}" style="display:block;width:100%">선수 보기</button>`);return}}catch(e){console.error(e)}return _os.apply(this,arguments)}}
+// MLS 무경고 감경: 마지막 경고 뒤 구단 리그 경기 5경기마다 누적 1장 감소(시즌 3번까지, 이미 받은 징계 단계 아래로는 안 내려감)
+{const _bp=banProc;banProc=function(sc,clubs,cards,f){try{if(sc==='lg')for(const x of cards||[]){if(!x.y)continue;const c=clubOf(x.pid);if(c==null||c<0||!BAN_R[lgRaw(c)]||!BAN_R[lgRaw(c)].gb)continue;const cd=S.ps[x.pid]&&S.ps[x.pid].cd;
+    if(!cd||cd.s!==S.season||!(cd.lg>0)||!cd.ly)continue;const k=(typeof fxLg==='function'?fxLg(lgRaw(c)):[]).filter(g=>g.res&&(g.h===c||g.a===c)&&g.d>cd.ly&&g.d<S.date).length;
+    const red=Math.min(Math.floor(k/5),3-(cd.gb||0),cd.lg%5);if(red>0){cd.lg-=red;cd.gb=(cd.gb||0)+red}}}catch(e){console.error(e)}
+  const r=_bp.apply(this,arguments);try{for(const x of cards||[]){if(!x.y)continue;const q=S.ps[x.pid];if(q&&q.cd&&q.cd.s===S.season)q.cd.ly=S.date}}catch(e){}return r}}
+// 규정 안내 문구
+function banTxt(c){const R=banRule(c);if(R.en)return '경고 5·10·15장(정해진 기간 안) 1·2·3경기';let t=R.thr?`경고 ${R.thr.join('·')}장${R.tail?`, 이후 ${R.tail}장마다`:''}`:`경고 ${R.every}장마다`;t+=R.lens?' 1경기(두 번째부터 2경기)':' 1경기';if(R.gb)t+=' · 5경기 연속 무경고면 1장 감소(시즌 3번)';return t}
+sqrRuleTxt=function(c){const R=sqrRule(c),L=lgR(c),lg=lgRaw(c),a=[];const fn=L.eu?'비EU':'외국인';
+  if(R&&R.h)a.push(`1군 ${fn} ${R.h}명${L.hy?`(그중 ${L.hy.n}명은 ${S.season-L.hy.a}년 이후 출생)`:''}${L.eu?'(규정 이전 소속 선수 제외)':''}`);
+  if(R&&R.m)a.push(`경기 명단(선발+벤치) 외국인 ${R.m}명`);
+  a.push(`1군 등록 ${regBase(c)}명${L.hg?(L.hg.c?` 중 ${L.hg.c+L.hg.a}명은 홈그로운(구단 육성 ${L.hg.c}명), 모자라면 명단 축소`:` 중 비홈그로운 ${regBase(c)-L.hg.a}명까지`):''}${L.u?` · ${S.season-L.u}년 이후 출생은 등록 인원 밖`:''}`);
+  a.push(`계약 선수 ${OWNMAX}명 · 벤치 ${benchN(c)}명 · ${banTxt(c)}${BAN_EST[lg]?'(추정)':''}`);if(LGR_EST[lg])a.push('외국인·등록 규정 일부 추정');return a.join(' · ')};
+// 기존 세이브: v311 이전에 비EU 모드 리그 구단으로 온 비EU 선수는 인정(바로 불이익 없음) + 사용자 안내
+function mig311(){if(!S||S.mig311)return;S.mig311=1;let n=0;for(const C of CLUBS){if(!C||C.i<0||!LGR[C.lg]||!LGR[C.lg].eu)continue;for(const p of squadOf(C.i)){if(NT_EU_NAT.has(p.nat)||(p.nat2&&NT_EU_NAT.has(p.nat2)))continue;if(euGf(p,C.i))continue;(S.ps[p.id]=S.ps[p.id]||{}).gf=C.i;n++}}
+  try{if(S.club!=null&&S.club>=0&&!(typeof unemp==='function'&&unemp())){const c=S.club,w=[];if(regOver(c))w.push(`${regTxt(c)} — 다음 이적시장 마감 전까지 2군으로 내려 맞춰야 합니다.`);if(lgQuotaOver(c))w.push(lgR(c).hy?quotaYTxt(c):`1군 외국인 ${forCnt(c)}/${sqrRule(c).h}명`);
+    inbox('board','',`${LGN[lgRaw(c)]||'리그'} 실제 규정 적용`,`리그별 실제 선수단 규정이 들어갔습니다: ${sqrRuleTxt(c)}.${w.length?'\n'+w.join('\n'):''}\nAI 구단도 같은 규정을 따르며, 다음 이적시장부터 2군 배정에 반영됩니다.`)}}catch(e){console.error(e)}return n}
+{const _dl=devLoad;devLoad=function(){const r=_dl.apply(this,arguments);try{mig311()}catch(e){console.error(e)}return r}}
+{const _sg=startGame;startGame=function(){const r=_sg.apply(this,arguments);try{if(S)S.mig311=1}catch(e){}return r}}
 </script>
 <script type="text/x-three" id="threeSrc">void 0,
 /**
