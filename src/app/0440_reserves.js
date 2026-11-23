@@ -12,9 +12,9 @@ function resFirstReg(c){return regSize(c)}
 /* v311 리그별 등록(lgRule: 인원 25/30·홈그로운 몫·나이 예외·외국인 어린 선수 몫)을 능력 순으로 채움 */
 function resAssignAI(c){const sq=squadOf(c).slice().sort((a,b)=>b.ovr-a.ovr);const on=sqrOn();const cap=typeof aiCap==='function'&&on?aiCap(c):null;const L=on?lgR(c):{};const mx=on?regBase(c):RES_REG;const hy=L.hy&&cap?cap-L.hy.n:null;
   const st={n:0,a:0,ch:0,ah:0,fo:0,fy:0};const ex=p=>on&&regEx(p,c);
-  const hk=p=>L.hg?hgK(p,c):null;const ok=(p,f,yg)=>{if(f&&cap&&st.fo>=cap)return false;if(f&&hy!=null&&!yg&&st.fo-st.fy>=hy)return false;if(ex(p))return true;if(st.n>=mx)return false;
+  const hk=p=>L.hg?hgK(p,c):null;const ok=(p,f,yg)=>{if(f&&cap&&st.fo>=cap)return false;if(on&&typeof regXOK==='function'&&!regXOK(c,p,f,st))return false;if(f&&hy!=null&&!yg&&st.fo-st.fy>=hy)return false;if(ex(p))return true;if(st.n>=mx)return false;
     if(L.hg){const k=hk(p);const a=st.a+(k?0:1),ch=st.ch+(k==='c'?1:0),ah=st.ah+(k==='a'?1:0);const co=Math.max(0,ch-L.hg.c),ao=Math.max(0,ah+co-L.hg.a);if(a+ao>mx-L.hg.c-L.hg.a)return false}return true};
-  const add=(p,f,yg)=>{if(f){st.fo++;if(yg)st.fy++}if(ex(p))return;st.n++;const k=hk(p);if(k==='c')st.ch++;else if(k==='a')st.ah++;else st.a++};
+  const add=(p,f,yg)=>{if(f){st.fo++;if(yg)st.fy++;if(p.g==='GK')st.fg=(st.fg||0)+1}if(ex(p))return;st.n++;const k=hk(p);if(k==='c')st.ch++;else if(k==='a')st.ah++;else st.a++};
   const loanIn=p=>{const q=S.ps[p.id];return !!(q&&q.loanFrom!=null&&q.loanFrom!==c)};const F=p=>typeof isFor==='function'&&isFor(p,c),Y=p=>on&&fyoung(p,c);
   sq.filter(loanIn).forEach(p=>add(p,F(p),Y(p)));
   sq.forEach((p,i)=>{const q0=S.ps[p.id];if(loanIn(p)){if(q0&&q0.res)delete q0.res;return}const f=F(p),yg=Y(p);

@@ -102,7 +102,7 @@ function aiLoanWeek(){S.aiLn=S.aiLn||[];const lenders=CLUBS.filter(c=>c&&c.i!==S
   for(const L of lenders){if(hsh(S.date+'al'+L.i)>.35)continue;const sq=squadOf(L.i).slice().sort((a,b)=>b.ovr-a.ovr);
     const cand=sq.filter((p,i)=>{const q=S.ps[p.id]||{};return ageOf(p)<=23&&(i>=18||q.res)&&q.loanFrom==null&&!(p.injD>0)});if(!cand.length)continue;
     const p=cand[Math.floor(hsh(S.date+'ac'+L.i)*cand.length)];if(!(ageOf(p)<=21)&&aiLnOutCnt(L.i)>=LN_MAX)continue;
-    const NE=new Set(['AR','BR','US','MX','KR','JP','CN','SA']),eu=x=>!NE.has(x);const B=CLUBS.filter(c=>c&&c.i!==L.i&&c.i!==S.club&&c.i!=null&&!(c.par!=null)&&eu(c.lg)===eu(L.lg)&&c.rep<L.rep-4&&c.rep>=L.rep-45&&fxLg(c.lg).filter(f=>!f.res&&f.d>S.date&&(f.h===c.i||f.a===c.i)).length>=8).map(c=>[c,lnRole(p,c.i)]).filter(x=>x[1]>=1);
+    const NE=new Set(['AR','BR','US','MX','KR','JP','CN','SA']),eu=x=>!NE.has(x);const B=CLUBS.filter(c=>c&&c.i!==L.i&&c.i!==S.club&&c.i!=null&&!(c.par!=null)&&eu(c.lg)===eu(L.lg)&&c.rep<L.rep-4&&c.rep>=L.rep-45&&fxLg(c.lg).filter(f=>!f.res&&f.d>S.date&&(f.h===c.i||f.a===c.i)).length>=8).map(c=>[c,lnRole(p,c.i)]).filter(x=>x[1]>=1&&!(typeof lnLgOK==='function'&&lnLgOK(p,L.i,x[0].i)));
     if(!B.length)continue;const [to,role]=B[Math.floor(hsh(S.date+'ab'+p.id)*B.length)];if((S.aiLn||[]).filter(id=>(S.ps[id]||{}).loanFrom===L.i&&clubOf(id)===to.i).length>=LN_PER)continue;
     if(typeof sqSize==='function'&&sqSize(L.i)<=20)continue;
     completeTransfer(p.id,to.i,0,{loan:true});const q=S.ps[p.id];q.loanFrom=L.i;q.lnRole=role;q.res=false;S.aiLn.push(p.id);made++;

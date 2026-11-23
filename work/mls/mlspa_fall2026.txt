@@ -1,0 +1,679 @@
+# MLSPA Fall 2026 Salary Guide (guaranteed comp, $천) — sixonefivesoccer.com 정리본(2026-11-19 발표) 경유, 2026-11-24 수집. 개인용
+# 이름;구단;지정(DP/TAM/U22/HG/—);보장연봉($k)
+Lionel Messi;Inter Miami;DP;28333
+Robert Lewandowski;Chicago Fire;DP;19510
+Antoine Griezmann;Orlando City SC;DP;13938
+Heung-min Son;LAFC;DP;11153
+Breel Embolo;Atlanta United;DP;10811
+Rodrigo De Paul;Inter Miami;DP;9688
+Hirving Lozano;LA Galaxy;DP;9333
+Miguel Almirón;Atlanta United;DP;7871
+Allan Saint-Maximin;Charlotte FC;DP;7199
+Emil Forsberg;New York Red Bulls;DP;6036
+Sam Surridge;Nashville SC;DP;5933
+Ricard Puig Martí;LA Galaxy;DP;5792
+Jonathan Bamba;Chicago Fire;DP;5582
+Hany Mukhtar;Nashville SC;DP;5412
+Josh Sargent;Toronto FC;DP;5266
+Brais Méndez;Columbus Crew;DP;5200
+Thomas Müller;Vancouver Whitecaps;DP;5153
+Aleksey Miranchuk;Atlanta United;DP;5085
+Rafael Navarro Leal;St. Louis City SC;DP;4952
+Carles Gil;New England Revolution;DP;4952
+Denis Bouanga;LAFC;DP;4939
+Evander da Silva Ferreira;FC Cincinnati;DP;4736
+Joseph Paintsil;LA Galaxy;DP;4502
+Facundo Torres;Austin FC;DP;4405
+Timo Werner;San Jose Earthquakes;DP;4268
+Miles Robinson;FC Cincinnati;DP;3950
+Santiago Rodríguez;Columbus Crew;DP;3897
+Germán Berterame;Inter Miami;DP;3824
+Philip Zinckernagel;Chicago Fire;DP;3813
+Kévin Denkey;FC Cincinnati;DP;3810
+Emmanuel Latte Lath;Atlanta United;DP;3736
+Brandon Vazquez;Austin FC;DP;3702
+Ryan Gauld;Vancouver Whitecaps;DP;3695
+Dejan Joveljić;Seattle Sounders FC;DP;3695
+Eduard Löwen;San Jose Earthquakes;DP;3672
+Jack Harrison;New England Revolution;DP;3650
+Nicolás Fernández Mercau;New York City FC;DP;3650
+Wessam Abou Ali;Columbus Crew;DP;3612
+Anders Dreyer;San Diego FC;DP;3561
+Casemiro;Inter Miami;TAM;3538
+Eric-Maxim Choupo-Moting;New York Red Bulls;DP;3531
+David Da Costa;Portland Timbers;DP;3425
+André Luiz Inácio da Silva;Sporting Kansas City;DP;3319
+Kristoffer Velde;Portland Timbers;DP;3027
+Pep Biel;Charlotte FC;DP;3016
+Alexis Sánchez;CF Montreal;DP;2965
+João Klauss de Mello;LA Galaxy;DP;2915
+Petar Musa;FC Dallas;DP;2880
+Djordje Mihailovic;Toronto FC;DP;2828
+Roman Bürki;St. Louis City SC;DP;2750
+Liel Abada;Charlotte FC;DP;2649
+Elias Achouri;San Diego FC;DP;2633
+Carlo Holse;St. Louis City SC;DP;2611
+Mateusz Bogusz;Houston Dynamo;DP;2521
+Bénie Traoré;New York City FC;DP;2509
+Jordan Morris;Seattle Sounders FC;DP;2373
+Cristian Espinoza;Nashville SC;DP;2344
+Myrto Uzuni;Austin FC;DP;2305
+Tai Baribo;DC United;DP;2301
+Thiago Martins;New York City FC;TAM;2262
+Albert Rusnák;Seattle Sounders FC;TAM;2257
+Paxten Aaronson;Colorado Rapids;DP;2228
+Morgan Guilavogui;Real Salt Lake;DP;2226
+Morgan Whittaker;Colorado Rapids;DP;2018
+Guilherme Augusto Vieira dos Santos;Houston Dynamo;DP;1925
+Jesús Ferreira;Seattle Sounders FC;TAM;1883
+Lewis Morgan;Toronto FC;—;1869
+Obinna Nwobodo;FC Cincinnati;TAM;1850
+Marcus Ingvartsen;San Diego FC;DP;1800
+Sergio Reguilón;Inter Miami;TAM;1800
+Lyle Foster;Houston Dynamo;TAM;1789
+Martín Ojeda;Orlando City SC;DP;1776
+Cristian Roldán;Seattle Sounders FC;TAM;1766
+Vincent Janssen;Portland Timbers;TAM;1747
+Elias Saad;Nashville SC;TAM;1727
+Walker Zimmerman;Toronto FC;TAM;1708
+Júnior Alonso;Atlanta United;TAM;1693
+Marco Pasalic;Orlando City SC;DP;1651
+Damion Downs;St. Louis City SC;TAM;1644
+Kai Wagner;Philadelphia Union;DP;1642
+Matt Miazga;New York City FC;—;1639
+Angus Gunn;San Jose Earthquakes;TAM;1619
+Leonardo Campana;New England Revolution;TAM;1617
+Luca de la Torre;Charlotte FC;TAM;1612
+Louis Munteanu;DC United;DP;1570
+Kelvin Yeboah;Minnesota United;DP;1563
+Enea Mihaj;Atlanta United;TAM;1557
+Matt Turner;New England Revolution;TAM;1523
+Hannes Wolf;New York City FC;TAM;1510
+Tyler Boyd;LAFC;—;1435
+Lucas Halter;Houston Dynamo;TAM;1417
+Cheikh Sabaly;Vancouver Whitecaps;TAM;1415
+Dániel Sallói;Toronto FC;TAM;1413
+Sam Adekugbe;Vancouver Whitecaps;TAM;1388
+Pedro de la Vega;Seattle Sounders FC;DP;1379
+Steven Alzate;Atlanta United;TAM;1377
+Talles Magno Bacelar Martins;New York City FC;DP;1365
+Justen Glad;Real Salt Lake;DP;1330
+Prince Owusu;CF Montreal;TAM;1329
+Paulo Díaz;Atlanta United;TAM;1320
+André Franco;Chicago Fire;TAM;1307
+James Sands;New York City FC;TAM;1274
+Tomás Chancalay;Minnesota United;TAM;1272
+Jakob Glesnes;LA Galaxy;TAM;1262
+Teenage Hadebe;FC Cincinnati;TAM;1230
+Cade Cowell;New York Red Bulls;TAM;1224
+Richie Laryea;Toronto FC;TAM;1214
+Julian Gressel;Minnesota United;TAM;1204
+Rob Holding;Colorado Rapids;TAM;1200
+Leo Walta;LAFC;TAM;1200
+Mathías Laborda;Vancouver Whitecaps;TAM;1194
+Lasse Berg Johnsen;Sporting Kansas City;TAM;1191
+Andre Blake;Philadelphia Union;TAM;1181
+Emmanuel Sabbi;Vancouver Whitecaps;TAM;1168
+Sergi Roberto;LA Galaxy;TAM;1161
+Dániel Gazdag;New England Revolution;TAM;1154
+Andrés Cubas;Vancouver Whitecaps;TAM;1153
+Gonzalo Tapia;Columbus Crew;TAM;1149
+Cédric Bakambu;San Diego FC;TAM;1144
+Bongokuhle Hlongwane;Minnesota United;TAM;1143
+Paul Arriola;Seattle Sounders FC;TAM;1143
+Jackson Yueill;New England Revolution;TAM;1141
+Tim Ream;Charlotte FC;TAM;1140
+Keaton Parks;New York City FC;TAM;1130
+Alexandru Matan;St. Louis City SC;TAM;1125
+Kyogo Furuhashi;LA Galaxy;TAM;1106
+Niklas Dorsch;Toronto FC;DP;1104
+Zack Steffen;Colorado Rapids;TAM;1100
+Jeisson Palacios;Nashville SC;TAM;1098
+Jeppe Tverskov;San Diego FC;TAM;1097
+Joaquín Pereyra;Minnesota United;DP;1089
+Jonathan Osorio;Toronto FC;TAM;1083
+José Caicedo;Portland Timbers;TAM;1075
+Shapi Suleymanov;Sporting Kansas City;TAM;1065
+Brian White;Vancouver Whitecaps;TAM;1065
+Maurice Malone;Minnesota United;TAM;1057
+Mark Delgado;LAFC;TAM;1055
+Jack Elliott;Chicago Fire;TAM;1054
+Youssef Maziz;Colorado Rapids;TAM;1051
+Aaron Long;LAFC;TAM;1050
+Tyrell Malacia;FC Cincinnati;—;1042
+Patrick Schulte;Columbus Crew;TAM;1032
+Facundo Mura;Inter Miami;TAM;1027
+Alexander Aravena;Portland Timbers;TAM;1026
+Henry Kessler;Charlotte FC;TAM;1023
+Harry Toffolo;Charlotte FC;TAM;1020
+Hernán López Muñoz;San Jose Earthquakes;DP;1020
+Abdoulaye Doucouré;Charlotte FC;—;1012
+Tadeo Allende;Inter Miami;TAM;1000
+Saba Lobjanidze;Real Salt Lake;TAM;999
+Jack Maher;Nashville SC;TAM;995
+Alhassan Yusuf;New England Revolution;TAM;995
+Yeimar Gómez Andrade;Seattle Sounders FC;TAM;983
+Julian Hall;New York Red Bulls;U22;976
+Tristan Blackmon;Vancouver Whitecaps;TAM;975
+Loïc Williams;Colorado Rapids;TAM;974
+André Gomes;Columbus Crew;TAM;972
+Dave Romney;San Jose Earthquakes;TAM;962
+Daniel Job;FC Dallas;U22;961
+José Artur de Lima Júnior;Houston Dynamo;TAM;958
+Marcelo Saracchi;Houston Dynamo;TAM;948
+Eric Bailly;Columbus Crew;TAM;943
+Santiago Moreno;FC Dallas;DP;938
+Andreas Hanche-Olsen;Chicago Fire;TAM;930
+Andre Dozzell;DC United;TAM;928
+Michael Boxall;Minnesota United;TAM;928
+Moisés Mosquera;Sporting Kansas City;TAM;925
+Steven Moreira;Columbus Crew;TAM;922
+Gonzalo Luján;Inter Miami;TAM;922
+Duncan McGuire;Houston Dynamo;TAM;921
+Mamadou Fofana;New England Revolution;TAM;916
+Sam Vines;San Diego FC;HG;913
+Pablo Ruiz;LA Galaxy;TAM;912
+Braian Ojeda;Orlando City SC;TAM;908
+Marco Reus;LA Galaxy;TAM;902
+Sean Zawadzki;Columbus Crew;TAM;901
+DeJuan Jones;San Jose Earthquakes;TAM;898
+Hamzat Ojediran;Colorado Rapids;TAM;898
+Dominik Fitz;Minnesota United;TAM;893
+Micael dos Santos Silva;Inter Miami;TAM;892
+Sean Johnson;DC United;TAM;883
+Timothy Tillman;LAFC;TAM;881
+Shaq Moore;FC Dallas;TAM;880
+Matti Peltola;DC United;TAM;876
+Gabriel Cordeiro Pirani;San Diego FC;U22;867
+Ibrahim Sadiq;Colorado Rapids;TAM;867
+Robin Lod;Chicago Fire;TAM;867
+Joshua Wynder;New England Revolution;TAM;866
+Brayan Ceballos;CF Montreal;TAM;856
+Ronaldo Vieira;San Jose Earthquakes;TAM;854
+Alonso Martínez;New York City FC;TAM;850
+Cole Bassett;Portland Timbers;U22;850
+Bruno Damiani;Philadelphia Union;DP;848
+Benjamín Kuscevic;Toronto FC;TAM;844
+Yohei Takaoka;Vancouver Whitecaps;TAM;842
+Reggie Cannon;Colorado Rapids;TAM;842
+Nouhou Tolo;Seattle Sounders FC;—;835
+Ashley Westwood;Charlotte FC;TAM;833
+Antônio Carlos Cunha Capocasali Junior;Houston Dynamo;TAM;833
+Lukas Engel;Real Salt Lake;TAM;830
+Daryl Dike;Orlando City SC;—;830
+Hassani Dotson;Seattle Sounders FC;TAM;828
+Eduard Atuesta;Orlando City SC;TAM;825
+Kamal Miller;Portland Timbers;TAM;822
+Darren Yapi;Colorado Rapids;U22;820
+Anderson Julio;FC Dallas;TAM;820
+Kristijan Kahlina;Charlotte FC;TAM;814
+Griffin Yow;New England Revolution;TAM;811
+Justin Haak;LA Galaxy;TAM;811
+Jonathan Bond;Houston Dynamo;—;810
+Dayne St. Clair;Inter Miami;TAM;809
+Lucas Sanabria;LA Galaxy;U22;808
+Anass Zaroury;Columbus Crew;TAM;807
+Luis Suárez;Inter Miami;TAM;803
+Owen Wolff;Sporting Kansas City;U22;803
+Tomas Ostrák;St. Louis City SC;TAM;801
+Sayed Abu Farkhi;Colorado Rapids;U22;800
+Hugo Lloris;LAFC;—;800
+Dor Turgeman;New England Revolution;U22;800
+Cristian Arango;San Jose Earthquakes;—;800
+Julián Malatini;FC Cincinnati;TAM;798
+Alejandro Piedrahita;Toronto FC;TAM;797
+Henry Wingo;Toronto FC;—;796
+Matt Freese;New York City FC;TAM;796
+Dominik Marczuk;Real Salt Lake;U22;796
+Daniel Pereira;CF Montreal;TAM;794
+Sebastien Ibeagha;FC Dallas;—;794
+Raul Gustavo Pereira Bicalho;New York City FC;TAM;793
+Sang-bin Jeong;St. Louis City SC;U22;792
+Jorge Ruvalcaba;New York Red Bulls;DP;789
+Luca Langoni;New England Revolution;U22;787
+Julián Fernández;New York City FC;U22;784
+Stijn Spierings;Real Salt Lake;TAM;783
+Ranko Veselinović;Vancouver Whitecaps;—;782
+Onni Valakari;San Diego FC;TAM;782
+Idan Toklomati;Charlotte FC;U22;782
+Hugo Picard;Columbus Crew;U22;781
+Telasco Segovia;Inter Miami;TAM;781
+Andrés Perea;New York City FC;—;777
+Diadié Samassékou;Houston Dynamo;TAM;772
+David Ayala;Inter Miami;U22;771
+Daniel de Sousa Britto;FC Dallas;—;770
+Jeremy Ebobisse;LAFC;TAM;769
+Griffin Dorsey;Orlando City SC;—;768
+Sergio Vásquez;LAFC;U22;763
+Ryan Porteous;LAFC;TAM;760
+Jalen Neal;CF Montreal;U22;756
+David Schnegg;Charlotte FC;—;756
+Niko Tsakiris;San Jose Earthquakes;U22;755
+Or Blorian;Sporting Kansas City;—;754
+Kye Rowles;DC United;TAM;752
+Anton Salétros;Chicago Fire;TAM;750
+Brayan Vera;CF Montreal;—;748
+Malte Amundsen;Columbus Crew;—;748
+Sergi Palencia;LAFC;TAM;745
+Fallou Fall;St. Louis City SC;U22;744
+Herman Johansson;FC Dallas;TAM;740
+Jovan Mijatovic;New York City FC;U22;738
+Edvard Tagseth;Nashville SC;—;737
+Erik Thommy;LA Galaxy;—;736
+Matt Polster;New England Revolution;—;733
+Danny Musovski;Seattle Sounders FC;—;733
+Nectarios Triantis;Minnesota United;U22;733
+DeAndre Yedlin;Real Salt Lake;HG;727
+Mathieu Choinière;LAFC;HG;725
+Sean Nealis;DC United;—;724
+Eddie Segura;LAFC;—;723
+Giuliano Galoppo;Atlanta United;TAM;720
+Andrés Herrera;Columbus Crew;TAM;719
+Maya Yoshida;LA Galaxy;—;716
+Mauricio Amaro;Atlanta United;U22;713
+Noah Allen;Chicago Fire;U22;708
+Agustín Bouzat;Houston Dynamo;TAM;706
+Rafael Cabral Barbosa;Real Salt Lake;—;704
+Danley Jean Jacques;Philadelphia Union;TAM;703
+Jackson Hopkins;DC United;U22;700
+David Doudera;FC Cincinnati;TAM;698
+Yevgen Cheberko;LAFC;TAM;698
+Timo Baumgartl;St. Louis City SC;—;693
+Igor Jesus Lima;LAFC;U22;692
+Dylan Chambost;Columbus Crew;—;692
+Omir Fernandez;Portland Timbers;HG;687
+Djé D'Avilla;Chicago Fire;U22;685
+Robert Voloder;New York Red Bulls;—;685
+Bryan Ramírez;FC Cincinnati;TAM;684
+David Brekalo;Orlando City SC;TAM;683
+Kimito Nono;DC United;TAM;682
+Przemysław Płacheta;Austin FC;—;681
+Josef Martínez;Columbus Crew;—;678
+Daniel Edelman;St. Louis City SC;HG;676
+Maximiliano Falcón;Inter Miami;TAM;674
+Japhet Sery Larsen;Philadelphia Union;TAM;672
+Samuel Gidi;FC Cincinnati;U22;671
+Luka Jovanović;San Jose Earthquakes;U22;670
+Chris Durkin;St. Louis City SC;HG;669
+Maxwell Woledzi;Nashville SC;TAM;668
+Antony Alves Santos;Portland Timbers;U22;666
+Armindo Sieb;LAFC;TAM;665
+Indiana Vassilev;Philadelphia Union;—;665
+Luighi Hanri Sousa Santos;New York City FC;U22;665
+Matheus Pereira de Souza;Toronto FC;TAM;664
+Tayvon Gray;New York City FC;HG;660
+Osvaldo Capemba;Sporting Kansas City;TAM;659
+Álex Roldán;Seattle Sounders FC;—;658
+Conrad Wallem;St. Louis City SC;TAM;657
+Mbekezeli Mbokazi;Chicago Fire;U22;656
+Alex Muyl;Nashville SC;HG;655
+Joel Waterman;Portland Timbers;—;652
+Besard Šabović;Austin FC;—;650
+Ahmed Qasem;Nashville SC;U22;650
+Frankie Amaya;CF Montreal;—;646
+Maren Haile-Selassie;Chicago Fire;—;646
+Amahl Pellegrino;San Diego FC;—;645
+Osaze Urhoghide;FC Dallas;TAM;644
+Tomás Jacob;Atlanta United;U22;643
+Tristan Muyumba;Atlanta United;TAM;642
+Jackson Ragen;Seattle Sounders FC;—;635
+Nariman Akhundzada;Columbus Crew;U22;633
+Robert Taylor;LA Galaxy;—;633
+Brad Stuver;Austin FC;—;632
+Aiden O'Neill;New York City FC;TAM;631
+Emir Karić;Sporting Kansas City;—;628
+Milan Iloski;Philadelphia Union;TAM;628
+Duane Holmes;Houston Dynamo;—;628
+João Gabriel Martins Peglow;DC United;TAM;626
+Victor Olatunji;Real Salt Lake;TAM;626
+Andrew Gutman;Chicago Fire;HG;625
+Samuel Piette;CF Montreal;—;621
+Taylor Booth;Real Salt Lake;—;619
+Patrick Yazbek;Nashville SC;U22;615
+Cavan Sullivan;Philadelphia Union;HG;614
+Keisuke Kurokawa;DC United;TAM;614
+Artem Smolyakov;LAFC;U22;613
+Agustín Ojeda;New York City FC;U22;608
+Gennadiy Synchuk;CF Montreal;U22;608
+Mateo Silvetti;Inter Miami;U22;607
+Andy Nájar;Nashville SC;HG;603
+Wil Trapp;Minnesota United;HG;603
+Joao Ortiz;Portland Timbers;TAM;601
+Tiago Souza de Jesus Carvalho;Orlando City SC;U22;600
+Maxime Crépeau;Orlando City SC;HG;600
+John McCarthy;New York Red Bulls;—;589
+Lucas Bartlett;DC United;—;586
+Iván Angulo;Orlando City SC;—;583
+Oleksandr Svatok;Austin FC;—;580
+Adrián Marín;Orlando City SC;—;578
+Christopher McVey;San Diego FC;—;577
+Ibrahim Aliyu;Houston Dynamo;U22;576
+Iago Teodoro da Silva Nogueira;Orlando City SC;U22;576
+Christian Ramirez;Austin FC;—;575
+Ramiro Moschen Benetti;FC Dallas;—;575
+Ilay Feingold;New England Revolution;U22;575
+Lawrence Ennali;Houston Dynamo;U22;574
+Roman Celentano;FC Cincinnati;—;574
+Daniel Munie;San Jose Earthquakes;—;574
+Luis Otávio Costa de Aquino;Orlando City SC;U22;569
+Héctor Herrera;Houston Dynamo;—;569
+Carlos Garcés;LA Galaxy;TAM;568
+Quinn Sullivan;Philadelphia Union;U22;568
+Zorhan Bassong;Sporting Kansas City;—;559
+Agustín Anello;Philadelphia Union;TAM;559
+Theodore Ku-DiPietro;Colorado Rapids;U22;556
+Wikelman Carmona;CF Montreal;—;555
+Thayllon Roberth dos Santos Rebelo;LAFC;U22;555
+Juan Jose Arias;Real Salt Lake;U22;552
+Brandt Bronico;Charlotte FC;—;552
+Mikkel Desler;Austin FC;—;550
+Thomas Gillier;CF Montreal;—;550
+Ryan Hollingshead;LAFC;—;550
+Lautaro Giaccone;Columbus Crew;TAM;550
+Miguel Navarro;Colorado Rapids;—;549
+Pavel Bucha;FC Cincinnati;TAM;549
+Wiktor Bogacz;New York Red Bulls;U22;546
+Ethan Horvath;New York Red Bulls;—;546
+Nathan Ordaz;DC United;U22;545
+Sekou Bangoura;Columbus Crew;TAM;542
+Juan Mosquera;Portland Timbers;TAM;542
+Ezekiel Alladoh;Philadelphia Union;U22;540
+Luc De Fougerolles;Real Salt Lake;—;533
+Dagur Dan Thórhallsson;San Diego FC;—;531
+Wilder Cartagena;Orlando City SC;—;530
+Jamal Thiaré;Columbus Crew;—;530
+Robin Jansson;Orlando City SC;—;530
+Mohamed Farsi;Columbus Crew;—;530
+Joseph Rosales;Austin FC;TAM;529
+Paul Rothrock;Seattle Sounders FC;—;525
+Tomás Avilés;Inter Miami;U22;523
+Jacob Shaffelburg;LAFC;HG;520
+Alexandros Katranis;Real Salt Lake;—;520
+Nikola Petković;Seattle Sounders FC;U22;516
+Johan Gómez;Chicago Fire;—;515
+Jefferson Díaz;Minnesota United;—;507
+Drake Callender;Minnesota United;HG;506
+Jovan Lukić;Philadelphia Union;—;505
+Benji Kikanović;San Jose Earthquakes;—;501
+Diego Luna;Real Salt Lake;HG;501
+Maxi Moralez;New York City FC;—;500
+Juan Manuel Sanabria;Real Salt Lake;TAM;500
+Nathan Byrne;Charlotte FC;TAM;499
+Oliver Larraz;Vancouver Whitecaps;HG;497
+Theo Corbeanu;Toronto FC;—;497
+Mamadou Mbacke;St. Louis City SC;—;496
+Lalas Abubakar;FC Dallas;—;495
+Aleksa Cvetkovic;Vancouver Whitecaps;U22;493
+Nicolás Romero;Minnesota United;U22;493
+Sebastián Ramírez;Vancouver Whitecaps;—;490
+Justin Che;New York Red Bulls;HG;486
+Sam Junqua;Real Salt Lake;—;483
+Rui Modesto;Vancouver Whitecaps;—;482
+Nkosi Tafari;LAFC;—;482
+Ralph Priso;Vancouver Whitecaps;HG;479
+Ayoub Jabbari;FC Cincinnati;TAM;475
+Jahkeele Marshall-Rutty;New York Red Bulls;HG;474
+Nelson Palacio;Toronto FC;U22;473
+Marcelo Morales;New York Red Bulls;—;472
+Jimer Fory;Portland Timbers;TAM;470
+Jared Stroud;DC United;—;468
+Yannick Bright;Inter Miami;—;464
+Vítor Costa;San Jose Earthquakes;—;463
+Josh Atencio;Colorado Rapids;HG;463
+Noel Caliskan;Real Salt Lake;—;455
+Dante Polvara;St. Louis City SC;—;454
+Édier Ocampo;Vancouver Whitecaps;U22;454
+Noah Streit;CF Montreal;—;451
+Efraín Morales;CF Montreal;HG;451
+Owen Gene;Minnesota United;U22;450
+Ian Harkes;San Jose Earthquakes;HG;450
+Riquelme Fillipi Marinho de Souza;Inter Miami;U22;450
+Ian Murphy;San Diego FC;—;448
+Geovane de Jesus Rocha;FC Dallas;—;447
+Tylon Smith;New England Revolution;—;447
+Ender Echenique;FC Cincinnati;U22;447
+Simon Becher;St. Louis City SC;—;444
+Vinícius Nogueira;Orlando City SC;—;444
+Brooklyn Raines;New England Revolution;U22;443
+Brandon Bye;Portland Timbers;—;443
+Joaquín Valiente;FC Dallas;TAM;442
+Emeka Eneli;Real Salt Lake;—;441
+Kenji Cabrera;Vancouver Whitecaps;U22;440
+Fabian Herbers;CF Montreal;—;440
+Ian Fray;Inter Miami;HG;439
+Kyle Duncan;Minnesota United;—;438
+Jake Davis;Sporting Kansas City;HG;438
+Nathan Harriel;Philadelphia Union;HG;437
+Gilberto Flores;FC Cincinnati;U22;437
+Matty Longstaff;CF Montreal;—;436
+Silvan Hefti;DC United;—;435
+Caden Clark;Seattle Sounders FC;U22;432
+Cameron Harper;New York Red Bulls;—;432
+Bruno Caicedo;Vancouver Whitecaps;U22;430
+Daniel Lovitz;Nashville SC;—;428
+John Pulskamp;Sporting Kansas City;HG;425
+Matías Galarza;Inter Miami;TAM;423
+Logan Farrington;FC Dallas;—;417
+Rudy Camacho;Columbus Crew;—;415
+Raheem Edwards;Toronto FC;—;414
+Dylan Nealis;New York Red Bulls;—;413
+Warren Madrigal;Nashville SC;—;404
+Cherrion Valerius;Minnesota United;—;402
+Jon Gallagher;Austin FC;—;400
+Anthony Markanich Jr.;Minnesota United;—;396
+Leonardo Barroso;Chicago Fire;—;396
+Sergio Oregel;Chicago Fire;HG;393
+Tomas Totland;St. Louis City SC;—;392
+Mitja Ilenic;New York City FC;—;392
+CJ dos Santos;San Diego FC;—;391
+Stefan Frei;Seattle Sounders FC;—;391
+Brooks Lennon;Columbus Crew;—;390
+Diego Chará;Portland Timbers;—;388
+Djibril Diani;Charlotte FC;—;388
+Tim Parker;New York Red Bulls;—;388
+Julián Aude;LA Galaxy;U22;385
+Paul Marie;San Jose Earthquakes;—;383
+Preston Judd;San Jose Earthquakes;—;379
+Yadaly Diaby;Vancouver Whitecaps;—;375
+Brendan Hines-Ike;Austin FC;—;375
+Žan Kolmanič;Austin FC;—;375
+Calvin Harris;Sporting Kansas City;—;375
+Derrick Etienne Jr.;Toronto FC;HG;375
+Archie Goodwin;Charlotte FC;—;366
+Elijah Wynder;LA Galaxy;—;361
+Jesús Bueno;Philadelphia Union;—;359
+Aníbal Godoy;San Diego FC;—;358
+Ariel Lassiter;Portland Timbers;HG;358
+Viktor Radojević;CF Montreal;U22;357
+Fricio Caicedo;Inter Miami;—;356
+Christian Cappis;FC Dallas;—;352
+John Nelson;LA Galaxy;—;350
+Tanner Beason;New England Revolution;—;350
+Ousseni Bouda;San Jose Earthquakes;—;350
+Ariath Piol;Real Salt Lake;U22;349
+Chris Brady;Chicago Fire;HG;348
+Nicolás Dubersarsky;Austin FC;U22;348
+Emilio Aristizábal;Toronto FC;U22;347
+Lucas Hoyos;Atlanta United;—;343
+Felipe de Andrade Vieira;Houston Dynamo;—;343
+Zac McGraw;Portland Timbers;—;342
+Ran Binyamin;FC Dallas;U22;341
+Philippe Ndinga;Philadelphia Union;U22;340
+Wayne Frederick;Colorado Rapids;—;338
+Kevin O'Toole;New York City FC;—;338
+Mateja Djordjević;Austin FC;U22;335
+Alonso Coello;Toronto FC;—;335
+Famara Camara;Nashville SC;TAM;334
+Will Sands;New England Revolution;HG;333
+Alex Mighten;San Diego FC;—;332
+Diego Henrique Borges da Silva;Sporting Kansas City;U22;330
+Baye Coulibaly;Charlotte FC;U22;330
+Alvas Powell;FC Cincinnati;—;326
+Pedro Soma;San Diego FC;U22;325
+Guilherme da Trindade Dubas;Austin FC;—;325
+Ethan Kohler;New England Revolution;—;323
+James Pantemis;Portland Timbers;HG;321
+Bode Hidalgo;CF Montreal;HG;321
+Mauricio Pineda;Chicago Fire;HG;320
+Carlos Harvey;Minnesota United;—;317
+Diego Fagúndez;New England Revolution;HG;316
+Julián Bazán;New York Red Bulls;U22;313
+Tyrese Spicer;Orlando City SC;—;312
+Kai Trewin;New York City FC;—;312
+Célio Antonio Pompeu Pinheiro Martins;St. Louis City SC;—;309
+Osaze De Rosario;Seattle Sounders FC;—;304
+Brandon Servania;DC United;HG;304
+Geiner Martínez;Philadelphia Union;—;304
+Finn Surman;Portland Timbers;—;303
+Dusan Zagar;Real Salt Lake;U22;302
+JT Marcinkowski;LA Galaxy;HG;302
+Keegan Rosenberry;Colorado Rapids;—;300
+Elías Báez;Atlanta United;U22;294
+Kaick da Silva Ferreira;FC Dallas;U22;293
+Peyton Miller;New England Revolution;HG;292
+Kyle Hiebert;St. Louis City SC;—;289
+Patrickson Delgado;FC Dallas;U22;286
+Anzor Mekvabishvili;Chicago Fire;TAM;286
+Puso Dithejane;Chicago Fire;—;283
+Reed Baker-Whiting;Nashville SC;U22;283
+Andrew Privett;Charlotte FC;—;281
+Bernard Kamungo;FC Dallas;—;281
+Jonathan González;San Jose Earthquakes;—;276
+Morrison Agyemang;Charlotte FC;—;268
+Jonathan Sirois;FC Dallas;HG;268
+Dawid Bugaj;CF Montreal;—;268
+Alex Bonetig;Portland Timbers;—;267
+Alex Bono;DC United;—;263
+Tah Anunga;FC Cincinnati;—;263
+Evan Louro;FC Cincinnati;HG;260
+Josh Bauer;Nashville SC;—;254
+Andrew Thomas;Seattle Sounders FC;—;253
+Rodolfo Aloko;Charlotte FC;U22;252
+Tyler Miller;Charlotte FC;—;251
+Beau Leroux;San Jose Earthquakes;—;250
+Luka Gavran;Toronto FC;—;249
+Ivan Losenko;CF Montreal;—;248
+Sam Rogers;Chicago Fire;—;244
+AJ Marcucci;New York Red Bulls;—;240
+D.J. Taylor;Minnesota United;—;240
+Mauricio González;Minnesota United;U22;240
+Wilson Harris;New England Revolution;HG;239
+Daniel Ríos;CF Montreal;—;237
+Stefan Cleveland;Sporting Kansas City;—;237
+Osvald Søe;San Diego FC;—;235
+Pablo Sisniega;San Diego FC;—;234
+Serge Ngoma;New York Red Bulls;HG;234
+José Martínez;FC Cincinnati;—;233
+David Ruíz;New York Red Bulls;HG;232
+Nolan Norris;FC Dallas;HG;231
+Ronald Hernández;Portland Timbers;—;231
+Nicolás Rodríguez;Orlando City SC;U22;231
+Joshua Yaro;St. Louis City SC;—;228
+Alejandro Bedoya;Philadelphia Union;—;227
+Sergi Solans;Real Salt Lake;—;226
+Rafael Santos;St. Louis City SC;—;226
+Zach Booth;Real Salt Lake;—;226
+Ilie Sánchez;Austin FC;—;225
+Jon Bell;Austin FC;—;225
+Jimmy Maurer;Houston Dynamo;—;225
+Jack Skahan;San Jose Earthquakes;—;225
+Ben Lundt;St. Louis City SC;—;225
+Rocco Ríos Novo;Inter Miami;—;224
+Belal Halbouni;Vancouver Whitecaps;—;223
+Peter Stroud;Minnesota United;HG;223
+Earl Edwards Jr.;San Jose Earthquakes;—;220
+Lucas Felipe Calegari;LA Galaxy;—;220
+Ryan Raposo;LAFC;—;220
+Lukas MacNaughton;St. Louis City SC;—;219
+Neil Pierre;Philadelphia Union;HG;218
+Joe Willis;Nashville SC;—;216
+Mason Stajduhar;Real Salt Lake;HG;216
+Amar Sejdić;Columbus Crew;—;215
+Andy Rojas;New York Red Bulls;—;213
+Manu Duah;San Diego FC;—;212
+Jonathan Dean;Chicago Fire;—;211
+Thomas Hasal;LAFC;—;210
+Nick Markanich;Houston Dynamo;—;203
+Bryan Acosta;Nashville SC;—;201
+Novak Mićović;LA Galaxy;—;200
+Cruz Medina;San Jose Earthquakes;HG;198
+Mohammed Sofo;New York Red Bulls;—;197
+Jaziel Orozco;St. Louis City SC;HG;195
+Nehuén Benedetti;New York Red Bulls;—;195
+Benji Flowers;FC Dallas;HG;195
+Máximo Carrizo;New York City FC;HG;194
+Morris Duggan;Minnesota United;—;192
+Juan Mina;New York Red Bulls;—;190
+Oscar Verhoeven;San Diego FC;HG;188
+Jeremy Rafanello;Philadelphia Union;HG;186
+Brian Romero;Charlotte FC;HG;186
+Emmanuel Boateng;San Diego FC;—;185
+Nicholas Hagen;Columbus Crew;—;184
+Josh Cohen;Chicago Fire;—;181
+Devin Padelford;New York Red Bulls;HG;180
+Ronald Donkor;New York Red Bulls;—;175
+Damian Las;Austin FC;HG;175
+Philip Quinton;Real Salt Lake;—;175
+Isaac Boehmer;Vancouver Whitecaps;HG;174
+Luis Rivera;Real Salt Lake;HG;171
+Sergio Santos;Atlanta United;—;171
+Ho-yeon Jung;Minnesota United;—;168
+Dante Sealy;CF Montreal;HG;168
+AZ Jackson;Minnesota United;HG;167
+Brian Schwake;Nashville SC;—;167
+Jeff Gal;Chicago Fire;—;165
+Nimfasha Berchimas;Charlotte FC;HG;165
+Thomas Williams;Nashville SC;HG;164
+Javier Otero;Orlando City SC;HG;164
+Tomás Romero;New York City FC;HG;164
+Kobe Franklin;Toronto FC;HG;161
+Nicolas Hansen;Colorado Rapids;—;160
+Tyler Wolff;Real Salt Lake;HG;160
+Adri Mehmeti;New York Red Bulls;HG;159
+Robert Turdean;Chicago Fire;HG;158
+Jamar Ricketts;San Jose Earthquakes;—;158
+Jules-Anthony Vilsaint;Toronto FC;—;157
+David Vazquez;San Diego FC;HG;156
+Caden Glover;St. Louis City SC;HG;155
+Hunter Sulte;Portland Timbers;HG;153
+Reid Roberts;San Jose Earthquakes;—;153
+Taha Habroune;Columbus Crew;HG;152
+Noel Buck;San Jose Earthquakes;HG;150
+William Yarbrough;Toronto FC;—;150
+Jude Terry;LAFC;HG;150
+Ben Bender;Philadelphia Union;—;150
+Luca Petrasso;CF Montreal;HG;147
+Victor Loturi;CF Montreal;—;147
+Fabian Mrozek;FC Cincinnati;—;146
+Roald Mitchell;New York Red Bulls;HG;145
+Kosi Thompson;Colorado Rapids;HG;145
+Adam Pearlman;Toronto FC;HG;143
+Ethan Bartlow;Sporting Kansas City;—;143
+Gerardo Valenzuela;FC Cincinnati;HG;143
+Omar Valencia;New York Red Bulls;—;142
+Fafà Picault;Atlanta United;—;142
+Adem Sipic;Nashville SC;HG;142
+Jack Neeley;Charlotte FC;HG;142
+Jack Panayotou;New England Revolution;HG;142
+Markus Anderson;Philadelphia Union;—;142
+Allan Oyirwoth;New England Revolution;—;141
+George Marks;Philadelphia Union;—;141
+Tahir Reid-Brown;St. Louis City SC;HG;140
+Nelson Pierre;Vancouver Whitecaps;HG;139
+Chituru Odunze;Charlotte FC;—;139
+Santi Morales;Inter Miami;HG;138
+Giuseppe Bovalina;Vancouver Whitecaps;—;138
+Zane Monlouis;Toronto FC;—;138
+Sal Olivas;Philadelphia Union;HG;137
+Micah Burton;Austin FC;HG;136
+Matthew Corcoran;Nashville SC;—;136
+Marcos Zambrano;New England Revolution;—;136
+Kwasi Poku;Vancouver Whitecaps;—;135
+Kristian Fletcher;FC Cincinnati;HG;133
+Emrick Fotsing;Vancouver Whitecaps;—;133
+Santiago Suárez;New England Revolution;HG;133
+Clay Holstad;FC Dallas;—;132
+Edwyn Mendoza;San Jose Earthquakes;HG;132
+MyKhi Joyner;St. Louis City SC;HG;131
+Jordan Adebayo-Smith;Minnesota United;—;131
+Aidan Stokes;New York Red Bulls;HG;130

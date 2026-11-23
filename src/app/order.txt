@@ -101,3 +101,4 @@ app/1019_v309_regsquad.js
 app/1020_v310_fix.js
 app/1021_v310_token.js
 app/1022_v311_lgrule.js
+app/1023_v312_lgrule2.js

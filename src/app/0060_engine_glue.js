@@ -63,7 +63,7 @@ function aiRotate(c,sq){try{let eu;if(S.bRank&&Object.keys(S.bRank).length)eu=(S
   const rest=new Set();fit.forEach(p=>{if(!top.has(p.id))return;let pr=base*(ageOf(p)>=31?ROT.old:1)*(p.g==='GK'?ROT.gk:1);if(hsh(p.id+'rot'+S.date+c)<pr)rest.add(p.id)});
   if(fit.length-rest.size<14)return sq;return sq.filter(p=>!rest.has(p.id))}catch(e){return sq}}
 function teamFor(c){const mine=c===S.club;
-  const benchOf=(xi)=>squadOf(c).filter(p=>!xi.some(x=>x.id===p.id)&&!((S.ps[p.id]||{}).injD>0)&&!(p.ban>0)).sort((a,b)=>b.ovr-a.ovr).slice(0,typeof benchN==='function'?benchN(c):9);
+  const benchOf=(xi)=>typeof benchPick==='function'?benchPick(c,xi,mine):squadOf(c).filter(p=>!xi.some(x=>x.id===p.id)&&!((S.ps[p.id]||{}).injD>0)&&!(p.ban>0)).sort((a,b)=>b.ovr-a.ovr).slice(0,typeof benchN==='function'?benchN(c):9);
   if(mine){const players=ensureXI();const T=S.tac;return {club:c,xi:players,bench:benchOf(players),form:T.form,pos:(typeof posZMig==='function'?(posZMig(),T.pos):T.pos),posZ:T.posZ,roles:[...T.roles],duties:[...T.duties],marks:T.marks.map(m=>({...m})),preset:T.preset,ti:[...T.ti],fam:T.fam,ment:T.ment,pi:Object.assign({},T.pi||{}),slotAs:Object.assign({},T.slotAs||{}),focus:T.focus,af:T.af||null,setp:{...(T.setp||{})},sp:{...(T.sp||{})}}}
   const T=S.aiTac[c]||(S.aiTac[c]=aiTacFor(c));const sq=aiRotate(c,squadOf(c));const xi=E3.autoPick(sq,T.form.base).map(id=>id!=null?pl(id):null).filter(Boolean);
   if(xi.length<11)return null;

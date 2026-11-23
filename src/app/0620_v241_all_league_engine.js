@@ -179,7 +179,7 @@ function scrTrimDay(){if(!SCRON())return;const w=winNow();if(!w)return;const dLe
     completeTransfer(cand.id,b.i,fee,{cEnd:`${S.season+(ageOf(cand)<28?3:2)}-06-30`,wage:cand.wage});done=true;break}
   if(done)continue;
   if(dLeft>7){for(const b of CLUBS){if(!b||b.i===c.i||b.i===S.club||b.i===FA||b.i===RET||S.aiBudget[b.i]===undefined||!b.rev)continue;if((b.rep||0)>(c.rep||0)||(b.rep||0)<(c.rep||0)-20||sqSize(b.i)>=26)continue;const bs=squadOf(b.i).map(p=>p.ovr).sort((x,y)=>y-x);if((bs[13]||0)>cand.ovr)continue;if(!scrOK(cand,b.i,0))continue;
-      completeTransfer(cand.id,b.i,0,{loan:true});const qq=S.ps[cand.id];qq.lnRole=1;qq.res=false;(S.aiLn=S.aiLn||[]).push(cand.id);done=true;break}if(done)continue;if(dLeft>7)continue}
+      if((typeof lnLgOK==='function'&&lnLgOK(cand,c.i,b.i)))continue;completeTransfer(cand.id,b.i,0,{loan:true});const qq=S.ps[cand.id];qq.lnRole=1;qq.res=false;(S.aiLn=S.aiLn||[]).push(cand.id);done=true;break}if(done)continue;if(dLeft>7)continue}
   completeTransfer(cand.id,FA,0,{wage:cand.wage})}}catch(e){console.error(e)}}
 {const _dTr=daily;daily=function(){const r=_dTr.apply(this,arguments);try{scrTrimDay()}catch(e){}return r}}
 
